@@ -1,0 +1,17 @@
+# Site settings
+title: Alex Martinez
+email: alex@istrategylabs.com
+description: > # this means to ignore newlines until "baseurl:"
+  Alex Martinez is a Washington, D.C. based web designer that plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username: alx_mrtnz
+github_username:  alxmrtnz
+linkedin_username: alxmrtnz
+facebook_username: alexandermiguelmartinez
+dribbble_username: alxmrtnz
+
+
+# Build settings
+markdown: kramdown

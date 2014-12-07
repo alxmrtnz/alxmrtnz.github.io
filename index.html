@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+<div class="home-wrapper">
+
+  <div class="home--bio">
+    <h1 class="home--bio-h1">Alex Martinez</h1>
+    <p class="home--bio-copy">
+      is a Washington, D.C. based web designer that dabbles in front-end development and currently works at <a href="http://www.istrategylabs.com/" target="_blank">iStrategyLabs</a>. 
+    </p>
+    <p class="home--bio-copy">
+      Likes include French bulldogs, baby pandas, and a good burrito.
+    </p>
+  <ul class="home--bio-social-media-list">
+    
+
+    {% if site.twitter_username %}
+    <li>
+      <a href="https://twitter.com/{{ site.twitter_username }}">
+        <div class="icon-social-twitter"></div>
+
+        
+      </a>
+    </li>
+    {% endif %}
+    {% if site.dribbble_username %}
+    <li>
+      <a href="https://dribbble.com/{{ site.dribbble_username }}">
+        <div class="icon-dribbble"></div>
+
+        
+      </a>
+    </li>
+    {% endif %}
+    {% if site.github_username %}
+    <li>
+      <a href="https://github.com/{{ site.github_username }}">
+        <div class="icon-github"></div>
+
+        
+      </a>
+    </li>
+    {% endif %}
+    <!--
+    {% if site.facebook_username %}
+    <li>
+      <a href="https://facebook.com/{{ site.facebook_username }}">
+        <div class="icon-facebook"></div>
+
+        
+      </a>
+    </li>
+    {% endif %}-->
+    
+    <!--
+    {% if site.linkedin_username %}
+    <li>
+      <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+        <div class="icon-linkedin"></div>
+
+        
+      </a>
+    </li>
+    {% endif %}-->
+  </ul>
+  </div>
+  
+
+  <!-- <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>  
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+  
+
+</div>
+

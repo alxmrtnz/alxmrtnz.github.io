@@ -1,0 +1,53 @@
+
+.home--bio-h1{
+    font-family: 	'Dosis', sans-serif;
+    font-weight: 	700px;
+    font-size: 		3em;
+    margin-bottom:  0rem;
+}
+
+p{
+	font-family: 	'Karla', sans-serif;
+	font-size: 		$home-font-size;
+}
+
+.site-footer, .push{
+	height: 300px;
+}
+
+.home--pup-container{
+	width: 100%;
+
+	
+	height:300px;
+	margin: 0 auto;
+	
+}
+.home--pup-container-image{
+	
+	max-width: 976px;
+	width:100%;
+	margin: 0 auto;
+	height: 300px;
+}
+
+.home--bio-social-media-list{
+
+	margin:0px;
+	li{
+		margin-top: 15px;
+		float: left;
+		list-style: none;
+		font-size: 1.75rem;
+		margin-right: .5em;
+		a{
+			transition: all .25s ease;
+			color: $grey-color-light;
+			&:hover{
+				text-decoration: none;
+				color: $brand-color;
+			}
+		}
+		
+	}
+}
