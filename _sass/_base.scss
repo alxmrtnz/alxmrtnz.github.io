@@ -17,6 +17,9 @@ dl, dd, ol, ul, figure {
  html, body{
     
  }
+ html {
+    height: 100%;
+ }
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -27,6 +30,12 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+::selection {
+  background: $hover-color; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $hover-color; /* Gecko Browsers */
+}
 
 
 /**
@@ -84,10 +93,19 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    
+    font-family: $heading-font-family;
 
 }
 
+
+/**
+ * Paragraphs
+ */
+p {
+    font-family: $serif;
+    font-size: 22px;
+    line-height: 38px;
+}
 
 
 
@@ -157,8 +175,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(635px - (#{$spacing-unit} * 2));
-    max-width:         calc(635px - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc($on-laptop - (#{$spacing-unit} * 2));
+    max-width:         calc($on-laptop - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -166,8 +184,8 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(635px - (#{$spacing-unit}));
-        max-width:         calc(635px - (#{$spacing-unit}));
+        max-width: -webkit-calc($on-laptop - (#{$spacing-unit}));
+        max-width:         calc($on-laptop - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }

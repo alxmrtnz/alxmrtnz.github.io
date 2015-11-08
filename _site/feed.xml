@@ -6,9 +6,9 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 17 Feb 2015 16:02:47 -0500</pubDate>
-    <lastBuildDate>Tue, 17 Feb 2015 16:02:47 -0500</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Sat, 07 Nov 2015 22:31:55 -0500</pubDate>
+    <lastBuildDate>Sat, 07 Nov 2015 22:31:55 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Welcome to Jekyll!</title>

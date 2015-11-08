@@ -1,15 +1,41 @@
+.body--homepage {
+	height: 100%;
+}
+
+.home-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $grey-color;
+	border: 17px solid #fff;
+	height: 100%;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.content-wrapper--homepage {
+	margin: auto;
+}
 
 .home--bio-h1{
-    font-family: 	'Dosis', sans-serif;
-    font-weight: 	700px;
-    font-size: 		3em;
-    margin-bottom:  0rem;
+    font-family: 	$monotype;
+    font-size: 14px;
+    letter-spacing: 5px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-p{
-	font-family: 	'Karla', sans-serif;
-	font-size: 		$home-font-size;
+.home--bio-copy {
+	font-family: $sans-serif;
+	font-size: 58px;
+	line-height: 69px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0px;
 }
+
 
 .site-footer, .push{
 	height: 300px;
