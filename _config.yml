@@ -15,3 +15,10 @@ dribbble_username: alxmrtnz
 
 # Build settings
 markdown: kramdown
+
+# this goes inside _config.yml. Change as required
+navigation:
+- text: Thoughts
+  url: /thoughts
+- text: About
+  url: /about

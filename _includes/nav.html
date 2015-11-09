@@ -1,0 +1,25 @@
+<nav class="nav--primary">
+    <div class="nav-title text--mono">
+        <a href="/" class="link--text">
+            Alex Martinez
+        </a>
+    </div>
+
+    <ul class="nav-list">
+        <li>
+            <a href="/thoughts" class="
+                {% if page.layout == 'post' %}
+                    active
+                {% elsif page.url == '/thoughts/index.html' %}
+                    active
+                {% endif %} link--text text--mono">
+                Thoughts
+            </a>
+        </li>
+        <li>
+            <a href="/about" class="{% if page.url == "/about/index.html" %}active{% endif %} link--text text--mono">
+                About
+            </a>
+        </li>
+    </ul>
+</nav>

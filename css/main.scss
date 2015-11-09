@@ -20,16 +20,18 @@ $heading-font-family: $sans-serif;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fff;
-$brand-color:      #419BF9;
+$text-color:       	#111;
+$white: 			#fff;
+$background-color: 	$white;
+$brand-color:      	#8A70DB;
 
 $hover-color:		#E0DDF0;
 
-$grey-color:       #F2F5F4;
-$grey-color-light: lighten($grey-color, 20%);
-$grey-color-dark:  darken($grey-color, 25%);
-$blue-color:	   #419BF9;
+$black:				#262626;
+$grey-color:       	#F2F5F4;
+$grey-color-light: 	lighten($grey-color, 20%);
+$grey-color-dark:  	darken($grey-color, 25%);
+$blue-color:	   	#419BF9;
 
 $on-palm:          600px;
 $on-laptop:        1200px;
@@ -56,5 +58,7 @@ $on-laptop:        1200px;
         "base",
         "layout",
         "syntax-highlighting",
-        "styles"
+        "styles",
+        "nav",
+        "posts"
 ;

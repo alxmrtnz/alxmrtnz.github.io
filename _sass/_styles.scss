@@ -1,30 +1,41 @@
+$home-mono-type-margin-vertical: 60px;
+
 .body--homepage {
 	height: 100%;
+}
+
+.wrapper-bg-and-border {
+	
+	background: $grey-color;
+	border: 17px solid #fff;
+	
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .home-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: $grey-color;
-	border: 17px solid #fff;
 	height: 100%;
-	box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
 .content-wrapper--homepage {
 	margin: auto;
 }
 
-.home--bio-h1{
+.home--bio-h1 {
+	margin-bottom: $home-mono-type-margin-vertical;
+	text-align: center;
+}
+
+.text--mono{
     font-family: 	$monotype;
     font-size: 14px;
     letter-spacing: 5px;
     line-height: 15px;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .home--bio-copy {
@@ -35,6 +46,26 @@
 	text-align: center;
 	margin-bottom: 0px;
 }
+
+ul.list--home-links {
+
+	margin-top: $home-mono-type-margin-vertical;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		list-style: none;
+		margin: 0px 15px;
+
+	}
+}
+
+
+
+
+
+
+
 
 
 .site-footer, .push{

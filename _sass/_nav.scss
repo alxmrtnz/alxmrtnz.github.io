@@ -1,0 +1,28 @@
+.nav--primary {
+	background: #F2F5F4;
+    border: 17px solid #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-list {
+	margin: 0;
+	margin-left: auto;
+	display: flex;
+	flex-flow: row wrap;
+	/* This aligns items to the end line on main-axis */
+	justify-content: flex-end;
+
+	li {
+		list-style: none;
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+}
