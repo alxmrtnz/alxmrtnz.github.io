@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 12 Nov 2015 13:34:14 -0500</pubDate>
-    <lastBuildDate>Thu, 12 Nov 2015 13:34:14 -0500</lastBuildDate>
+    <pubDate>Thu, 12 Nov 2015 13:41:29 -0500</pubDate>
+    <lastBuildDate>Thu, 12 Nov 2015 13:41:29 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -20,8 +20,6 @@
 &lt;p&gt;The talk that inspired me the most came from &lt;a href=&quot;https://twitter.com/garthdb&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Garth Braithwaite&lt;/a&gt;, a product designer and front-end developer on PhoneGap at Adobe.&lt;/p&gt;
 
 &lt;p&gt;Garth discussed the benefits of open source design and detailed some of his work on &lt;a href=&quot;http://www.nightscout.info/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;NightScout&lt;/a&gt;, an app developed by parents of children with Type 1 Diabetes to remotely help monitor blood sugar levels (and save lives). By connecting data from a monitoring device called the Dexcom G4, parents can send live updates to their phones and smartwatches.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/posts/11-09-15/test-img.jpg&quot; alt=&quot;Test Screenshot&quot; /&gt; &lt;span class=&quot;img-caption&quot;&gt;This is the caption.&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;His advice for getting into open source?&lt;/p&gt;
 
@@ -38,19 +36,6 @@
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/Jennison&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion&lt;/a&gt;, Co-Director of the Adaptech Research Network, spoke about how producing accessible content means designing and developing user experiences that everyone, including people with disabilities, can independently consume and interact with. From touching on resources for &lt;a href=&quot;http://jxnblk.com/colorable/demos/text/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;sufficient color contrast&lt;/a&gt; to walking us through the experience of using a screenreader on &lt;a href=&quot;https://www.united.com/ual/en/us/?root=1&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;United.com&lt;/a&gt;, Jennison got me thinking about how web professionals can (and should) improve accessibility across their work.&lt;/p&gt;
 
 &lt;p&gt;For a first web conference experience, it was a blast and extremely inspiring. If you’re a web professional or have just been thinking about putting yourself out there and learning how we creatives can help impact the world around us, I’d recommend attending a conference like FOWD. I’m already planning my next steps of finding and contributing to an open source project, working to make my sites more accessible, and might even be thinking about my own beard oil… well, we’ll see about that last one. Now get out there and get learning!&lt;/p&gt;
-
-&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
 </description>
         <pubDate>Mon, 09 Nov 2015 14:46:27 -0500</pubDate>
         <link>/2015/11/09/conference-recap-fowd-sf.html</link>
