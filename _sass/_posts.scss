@@ -4,6 +4,7 @@
 .page-content {
     padding: $spacing-unit 0 0 0;
     height: 100%;
+
 }
 
 .page-heading {
@@ -40,10 +41,15 @@
 }
 
 .post-featured-icon {
+    margin: 0 auto 30px auto;
     max-width: 110px;
-    position: absolute;
-    left: -130px;
-    top: 24px;
+    
+
+    @media screen and (min-width: $on-laptop) {
+        // position: absolute;
+        // left: -150px;
+        // top: 24px;
+    }
 
     img {
         width: 100%;
@@ -55,20 +61,19 @@
 }
 
 .post-title {
-    font-size: 39px;
-    line-height: 46px;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+    
 }
 
 $post-image-padding-top: 20px;
 
 .post-content {
     max-width: 760px;
-    padding: 90px 150px;
+    padding: 0px 20px;
     margin: 0 auto;
+
+    @media screen and (min-width: $on-laptop) {
+        // padding: 90px 150px;
+    }
 
     p {
         img {
@@ -77,12 +82,13 @@ $post-image-padding-top: 20px;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 22px;
         margin-top: 60px;
 
-        @include media-query($on-laptop) {
-            font-size: 28px;
+        @media screen and (min-width: $on-palm) {
+            font-size: 30px;
         }
+
     }
 
     h3 {

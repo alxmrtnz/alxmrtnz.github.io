@@ -1,0 +1,54 @@
+$home-mono-type-margin-vertical: 60px;
+
+.body--homepage {
+	height: 100%;
+}
+
+.home-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.content-wrapper--homepage {
+	margin: auto;
+}
+
+.home--bio-h1 {
+	margin-bottom: $home-mono-type-margin-vertical;
+	text-align: center;
+}
+
+.home--bio-copy {
+	font-family: $sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0px;
+
+	@media screen and (max-width: $on-palm) {
+	    font-size: 28px;
+		line-height: 36px;
+	}
+	@media screen and (min-width: $on-palm) {
+	    font-size: 40px;
+		line-height: 48px;
+	}
+	@media screen and (min-width: $on-laptop) {
+		font-size: 58px;
+		line-height: 69px;
+	}
+}
+
+ul.list--home-links {
+
+	margin-top: $home-mono-type-margin-vertical;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		list-style: none;
+		margin: 0px 15px;
+
+	}
+}

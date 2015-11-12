@@ -1,9 +1,3 @@
-$home-mono-type-margin-vertical: 60px;
-
-.body--homepage {
-	height: 100%;
-}
-
 .wrapper-bg-and-border {
 	
 	background: $grey-color;
@@ -14,21 +8,23 @@ $home-mono-type-margin-vertical: 60px;
     -webkit-box-sizing: border-box;
 }
 
-.home-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
+
+.header--large {
+	
+    font-size: 28px;
+	line-height: 36px;
+
+	@media screen and (min-width: $on-palm) {
+    	font-size: 39px;
+    	line-height: 46px;
+	    
+	}
+	@media screen and (min-width: $on-laptop) {
+		
+	}
 }
 
-.content-wrapper--homepage {
-	margin: auto;
-}
 
-.home--bio-h1 {
-	margin-bottom: $home-mono-type-margin-vertical;
-	text-align: center;
-}
 
 .text--mono{
     font-family: 	$monotype;
@@ -38,27 +34,6 @@ $home-mono-type-margin-vertical: 60px;
     text-transform: uppercase;
 }
 
-.home--bio-copy {
-	font-family: $sans-serif;
-	font-size: 58px;
-	line-height: 69px;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 0px;
-}
-
-ul.list--home-links {
-
-	margin-top: $home-mono-type-margin-vertical;
-	text-align: center;
-
-	li {
-		display: inline-block;
-		list-style: none;
-		margin: 0px 15px;
-
-	}
-}
 
 
 

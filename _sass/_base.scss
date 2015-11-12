@@ -97,14 +97,23 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+h2 {
+    
+}
+
 
 /**
  * Paragraphs
  */
 p {
     font-family: $serif;
-    font-size: 22px;
-    line-height: 38px;
+    
+    font-size: 18px;
+    line-height: 32px;
+    @media screen and (min-width: $on-palm) {
+        font-size: 22px;
+        line-height: 38px;
+    }
     position: relative;
 }
 
@@ -127,22 +136,22 @@ a {
 a.link--text {
     position: relative;
     text-align: center;
-    &:before {
-        content: '';
-        position: absolute;
-        bottom: 40%;
-        left: 0;
-        height: 2px;
-        background-color: $brand-color;
-        // transition: all .1s;
-        width: 0px;
-    }
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     bottom: 40%;
+    //     left: 0;
+    //     height: 2px;
+    //     background-color: $brand-color;
+    //     // transition: all .1s;
+    //     width: 0px;
+    // }
     &:hover, &.active {
         color: $brand-color;
-        
-        &:before {
-            width: 95%;
-        } 
+        text-decoration: line-through;
+        // &:before {
+            // width: 95%;
+        // } 
     }
 }
 

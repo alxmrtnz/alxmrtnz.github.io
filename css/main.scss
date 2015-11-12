@@ -34,7 +34,8 @@ $grey-color-dark:  	darken($grey-color, 25%);
 $blue-color:	   	#419BF9;
 
 $on-palm:          600px;
-$on-laptop:        1200px;
+$on-tablet:        768px;
+$on-laptop:        900px;
 
 
 
@@ -55,10 +56,14 @@ $on-laptop:        1200px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "mixins",
         "base",
         "layout",
         "syntax-highlighting",
         "styles",
+        "homepage",
         "nav",
-        "posts"
+        "posts",
+        "thoughts",
+        "about"
 ;

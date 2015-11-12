@@ -1,0 +1,27 @@
+.content-wrapper--thoughts-archive {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.page__feature-icon {
+	margin-bottom: 30px;
+	text-align: center;
+
+	img {
+		max-width: 110px;
+	}
+}
+
+ul.ul--post-archive {
+	text-align: center;
+	li {
+		// border-top: 1px solid $grey-color;
+		padding: 30px 0px;
+		list-style: none;
+		
+	}
+}
+
+.post-archive__post-date {
+	margin-bottom: 5px;
+}

@@ -1,0 +1,45 @@
+.about__profile-pic {
+	max-width:238px;
+	margin: 0 auto;
+	position: relative;
+
+	img {
+		border-radius: 400px;
+		width: 100%;
+	}
+}
+
+.heading--bio {
+	@media screen and (min-width: $on-laptop) {
+	    font-size: 78px;
+	}
+}
+
+.bubble {
+	border-radius: 400px;
+	background-color: lighten($brand-color, 20);
+	position: absolute;
+	opacity: .9;
+	mix-blend-mode: multiply;
+}
+
+.bubble1 {
+	height: 120px;
+	width: 120px;
+	bottom: -10px;
+	left: -20px;
+	animation: rot 3s infinite linear;
+}
+
+@keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-150px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-150px) 
+		           rotate(-360deg);
+	}
+}

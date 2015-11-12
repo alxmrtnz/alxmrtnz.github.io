@@ -4,25 +4,36 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    display: flex;
     align-items: center;
     padding: 20px;
+	display: flex;
+
+
+    
 }
 
 .nav-list {
 	margin: 0;
 	margin-left: auto;
-	display: flex;
-	flex-flow: row wrap;
+	
 	/* This aligns items to the end line on main-axis */
 	justify-content: flex-end;
 
+	@media screen and (min-width: $on-palm) {
+	    display: flex;
+	    align-items: center;
+	}
+
 	li {
 		list-style: none;
-		margin-right: 30px;
+		text-align: right;
+		
+		@media screen and (min-width: $on-palm) {
+		    margin-right: 30px;
 
-		&:last-child {
-			margin-right: 0px;
+		    &:last-child {
+		    	margin-right: 0px;
+		    }
 		}
 	}
 }
