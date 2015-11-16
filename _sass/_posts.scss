@@ -1,6 +1,9 @@
 /**
- * Page content
+ * Post content
  */
+
+$post-content-max-width: 760px;
+
 .page-content {
     padding: $spacing-unit 0 0 0;
     height: 100%;
@@ -67,9 +70,9 @@
 $post-image-padding-top: 20px;
 
 .post-content {
-    max-width: 760px;
+    max-width: $post-content-max-width;
     padding: 0px 20px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 
     @media screen and (min-width: $on-laptop) {
         // padding: 90px 150px;
@@ -106,6 +109,11 @@ $post-image-padding-top: 20px;
             font-size: 18px;
         }
     }
+}
+
+.post-comments {
+    max-width: $post-content-max-width;
+    margin: 0 auto;
 }
 
 span.img-caption {
