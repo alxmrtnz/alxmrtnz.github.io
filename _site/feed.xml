@@ -5,9 +5,24 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 Nov 2015 18:10:58 -0500</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2015 18:10:58 -0500</lastBuildDate>
+    <pubDate>Mon, 16 Nov 2015 18:23:36 -0500</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2015 18:23:36 -0500</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Where We Belong</title>
+        <description>&lt;p&gt;“Hello there, how you doin’?
+I’ve got all these thoughts just floating through my brain…”&lt;/p&gt;
+
+&lt;p&gt;My name’s Alex and this is the beginning of something wonderful. It’s been a long time since I’ve picked up the ol’ keyboard. Whether you’re interested in my random musings or getting tips and tricks on all things web design, you c&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 15 Nov 2015 15:46:27 -0500</pubDate>
+        <link>/2015/11/15/hello-there.html</link>
+        <guid isPermaLink="true">/2015/11/15/hello-there.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Finding a Work Life Balance</title>
