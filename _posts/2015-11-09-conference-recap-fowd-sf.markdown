@@ -2,6 +2,7 @@
 layout: post
 title:  "To the Future (of Web Design)<br>A Conference Recap"
 date:   2015-11-09 19:46:27
+comments: true
 <!-- categories: conferences recaps -->
 featured-icon-url: /assets/posts/11-09-15/terminal-icon.png
 featured-icon-alt: "Icon of Golden Gate Bridge"

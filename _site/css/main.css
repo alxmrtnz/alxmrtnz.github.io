@@ -591,6 +591,9 @@ ul.list--home-links {
   .post-featured-icon img {
     width: 100%; }
 
+.post-date, .post-title {
+  text-align: center; }
+
 .post-content {
   max-width: 760px;
   padding: 0px 20px;
