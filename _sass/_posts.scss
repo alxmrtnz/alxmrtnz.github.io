@@ -43,21 +43,9 @@ $post-content-max-width: 760px;
     position: relative;
 }
 
-.post-featured-icon {
-    margin: 0 auto 30px auto;
-    max-width: 110px;
-    
 
-    @media screen and (min-width: $on-laptop) {
-        // position: absolute;
-        // left: -150px;
-        // top: 24px;
-    }
 
-    img {
-        width: 100%;
-    }
-}
+
 
 .post-date, .post-title {
    text-align: center;

@@ -86,6 +86,28 @@
 }
 
 
+.featured-icon, .featured-image {
+    margin: 0 auto 30px auto;
+    max-width: 110px;
+    
+
+    @media screen and (min-width: $on-laptop) {
+        // position: absolute;
+        // left: -150px;
+        // top: 24px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+.featured-image {
+    img {
+        border-radius: 400px;
+    }
+}
+
+
 
 /**
  * Site footer

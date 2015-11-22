@@ -246,6 +246,15 @@ pre {
         display: block;
         padding: 5px 10px; } }
 
+.featured-icon, .featured-image {
+  margin: 0 auto 30px auto;
+  max-width: 110px; }
+  .featured-icon img, .featured-image img {
+    width: 100%; }
+
+.featured-image img {
+  border-radius: 400px; }
+
 /**
  * Site footer
  */
@@ -445,8 +454,8 @@ pre {
   line-height: 36px; }
   @media screen and (min-width: 600px) {
     .header--large {
-      font-size: 39px;
-      line-height: 46px; } }
+      font-size: 48px;
+      line-height: 56px; } }
 
 .text--mono {
   font-family: "inconsolata", sans-serif;
@@ -585,12 +594,6 @@ ul.list--home-links {
   margin-bottom: 20px;
   position: relative; }
 
-.post-featured-icon {
-  margin: 0 auto 30px auto;
-  max-width: 110px; }
-  .post-featured-icon img {
-    width: 100%; }
-
 .post-date, .post-title {
   text-align: center; }
 
@@ -642,28 +645,14 @@ span.img-caption {
   max-width: 760px;
   margin: 0 auto; }
 
-.page__feature-icon {
-  margin-bottom: 30px;
-  text-align: center; }
-  .page__feature-icon img {
-    max-width: 110px; }
-
 ul.ul--post-archive {
   text-align: center; }
   ul.ul--post-archive li {
-    padding: 30px 0px;
+    padding: 0px 0px 60px 0px;
     list-style: none; }
 
 .post-archive__post-date {
   margin-bottom: 5px; }
-
-.about__profile-pic {
-  max-width: 238px;
-  margin: 0 auto;
-  position: relative; }
-  .about__profile-pic img {
-    border-radius: 400px;
-    width: 100%; }
 
 @media screen and (min-width: 900px) {
   .heading--bio {

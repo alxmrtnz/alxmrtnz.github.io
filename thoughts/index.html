@@ -5,16 +5,16 @@ group: 'navigation'
 ---
 
 <div class="content-wrapper">
-  <div class="page__feature-icon">
+  <div class="featured-icon">
     <img src="{{ site.url }}/assets/images/featured-icons/icon--terminal.png" alt="Terminal Icon">
   </div>
   <ul class="ul--post-archive">
     {% for post in site.posts %}
       <li>
         <div class="content-wrapper--thoughts-archive">
-          <div class="post-archive__post-date text--mono">
-            {{ post.date | date: "%B %-d %Y" }}
-          </div>
+          <p class="post-date text--mono">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </p>
           <h2 class="header--large">
             <a href="{{ post.url }}" class="link--text">
               {{ post.title }}
