@@ -10,14 +10,18 @@
             <a href="/thoughts" class="
                 {% if page.layout == 'post' %}
                     active
-                {% elsif page.url == '/thoughts/index.html' %}
+                {% elsif page.url == '/thoughts/' %}
                     active
                 {% endif %} link--text text--mono">
                 Thoughts
             </a>
         </li>
         <li>
-            <a href="/about" class="{% if page.url == "/about/index.html" %}active{% endif %} link--text text--mono">
+            <a href="/about" class="
+                {% if page.url == '/about/' %}
+                    active
+                {% endif %}
+                 link--text text--mono">
                 About
             </a>
         </li>
