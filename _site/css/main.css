@@ -124,7 +124,7 @@ a.link--text-in-p {
  * Blockquotes
  */
 blockquote {
-  color: #f9f9f9;
+  color: #f7f7f7;
   border-left: 4px solid white;
   padding-left: 15px;
   font-size: 18px;
@@ -188,7 +188,7 @@ pre {
   height: 16px;
   vertical-align: middle; }
   .icon > svg path {
-    fill: #f9f9f9; }
+    fill: #f7f7f7; }
 
 /**
 * Test
@@ -226,7 +226,7 @@ pre {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #b9b9b9; }
+    color: #b7b7b7; }
 
 .site-nav {
   float: right;
@@ -259,7 +259,7 @@ pre {
           width: 18px;
           height: 15px; }
           .site-nav .menu-icon > svg path {
-            fill: #b9b9b9; }
+            fill: #b7b7b7; }
       .site-nav .trigger {
         clear: both;
         display: none; }
@@ -286,7 +286,7 @@ pre {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #f9f9f9;
+  color: #f7f7f7;
   margin-left: -15px; }
 
 .footer-col {
@@ -460,7 +460,7 @@ pre {
     color: #099; }
 
 .wrapper-bg-and-border {
-  background: #f9f9f9;
+  background: #f7f7f7;
   border: 17px solid #fff;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -551,7 +551,7 @@ ul.social-icon-list {
         color: #8A70DB; }
 
 .nav--primary {
-  background: #f9f9f9;
+  background: #f7f7f7;
   border: 17px solid #fff;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -596,7 +596,7 @@ ul.social-icon-list {
 
 .post-meta {
   font-size: 14px;
-  color: #f9f9f9; }
+  color: #f7f7f7; }
 
 .post-link {
   display: block;
@@ -620,10 +620,10 @@ ul.social-icon-list {
 
 .post-origin {
   padding: 10px 0px;
-  border-top: 1px solid #f9f9f9;
-  border-bottom: 1px solid #f9f9f9;
+  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
   font-style: italic;
-  color: #b9b9b9;
+  color: #b7b7b7;
   text-align: center; }
 
 .post-content {
@@ -651,7 +651,7 @@ ul.social-icon-list {
 
 .post-nav {
   overflow: hidden;
-  border-top: 1px solid #f9f9f9;
+  border-top: 1px solid #f7f7f7;
   padding-top: 20px;
   max-width: 700px;
   margin: 20px auto; }
@@ -743,7 +743,7 @@ ul.ul--post-archive {
   padding: 0px 37px; }
 
 .footer__content {
-  border-top: 1px solid #f9f9f9;
+  border-top: 1px solid #f7f7f7;
   padding: 20px 0 0 0; }
 
 .footer__credits {
