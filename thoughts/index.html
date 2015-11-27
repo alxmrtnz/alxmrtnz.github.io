@@ -6,7 +6,7 @@ group: 'navigation'
 
 <div class="content-wrapper">
   <div class="featured-icon">
-    <img src="{{ site.url }}/assets/images/featured-icons/icon-lightbulb2.png" alt="Lightbulb Icon">
+    <img src="{{ site.url }}/assets/images/featured-icons/icon-dialog-box.png" alt="Lightbulb Icon">
   </div>
   <ul class="ul--post-archive">
     {% for post in site.posts %}
@@ -15,7 +15,7 @@ group: 'navigation'
           <p class="post-date text--mono">
             {{ post.date | date: "%B %-d, %Y" }}
           </p>
-          <h2 class="header--large">
+          <h2 class="heading--large">
             <a href="{{ post.url }}" class="link--text">
               {{ post.title }}
             </a>

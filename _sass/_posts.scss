@@ -2,7 +2,7 @@
  * Post content
  */
 
-$post-content-max-width: 760px;
+$post-content-max-width: 700px;
 
 .page-content {
     padding: $spacing-unit 0 0 0;
@@ -51,8 +51,21 @@ $post-content-max-width: 760px;
    text-align: center;
 }
 
+.post-date {
+    margin-bottom: 10px;
+}
+
 .post-title {
-    
+    margin-bottom: 40px;
+}
+
+.post-origin {
+    padding: 10px 0px;
+    border-top: 1px solid $grey-color;
+    border-bottom: 1px solid $grey-color;
+    font-style: italic;
+    color: $grey-color-dark;
+    text-align: center;
 }
 
 $post-image-padding-top: 20px;
@@ -60,7 +73,7 @@ $post-image-padding-top: 20px;
 .post-content {
     max-width: $post-content-max-width;
     padding: 0px 20px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 70px auto;
 
     @media screen and (min-width: $on-laptop) {
         // padding: 90px 150px;
@@ -97,6 +110,27 @@ $post-image-padding-top: 20px;
             font-size: 18px;
         }
     }
+}
+
+.post-nav {
+    overflow: hidden;
+    border-top: 1px solid $grey-color;
+    padding-top: 20px;
+    max-width: $post-content-max-width;
+    margin: 20px auto;
+}
+
+.post-nav__direction {
+   
+    width:50%;
+}
+
+.post-nav__prev-post {
+    float: left;
+}
+
+.post-nav__next-post {
+    float: right;
 }
 
 .post-comments {

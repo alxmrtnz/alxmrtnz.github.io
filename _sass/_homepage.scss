@@ -15,8 +15,12 @@ $home-mono-type-margin-vertical: 60px;
 	margin: auto;
 }
 
+.home--bio {
+	position: relative;
+}
+
 .home--bio-h1 {
-	margin-bottom: $home-mono-type-margin-vertical;
+	// margin-bottom: $home-mono-type-margin-vertical;
 	text-align: center;
 }
 
@@ -50,5 +54,29 @@ ul.list--home-links {
 		list-style: none;
 		margin: 0px 15px;
 
+	}
+}
+
+ul.social-icon-list {
+	// bottom: -60px;
+	margin-bottom: $home-mono-type-margin-vertical - 30;
+
+	// position: absolute;
+	text-align: center;
+	width: 100%;
+
+	li {
+		display: inline-block;
+		font-size: 20px;
+		list-style: none;
+		margin: 0px 8px 0px 0px;
+
+		a {
+			color: #D4DBD9;
+
+			&:hover {
+				color: $brand-color;
+			}
+		}
 	}
 }

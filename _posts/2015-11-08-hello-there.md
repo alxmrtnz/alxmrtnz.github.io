@@ -6,6 +6,7 @@ date:   2015-11-08 20:46:27
 <!-- categories: conferences recaps -->
 featured-icon-url: /assets/posts/11-08-15/icon-clouds.png
 featured-icon-alt: "Icon of Clouds"
+read-time: 1 min read
 ---
 
 

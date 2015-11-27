@@ -88,6 +88,9 @@ li {
 }
 
 
+.text--centered {
+    text-align: center;
+}
 
 /**
  * Headings
@@ -112,9 +115,11 @@ p {
     line-height: 32px;
     @media screen and (min-width: $on-palm) {
         font-size: 22px;
-        line-height: 38px;
+        line-height: 32px;
+        margin-bottom: 25px;
     }
     position: relative;
+
 }
 
 

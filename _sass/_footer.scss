@@ -1,0 +1,43 @@
+/**
+ * Site footer
+ */
+.site-footer {
+    
+}
+
+.social-list--footer {
+	list-style: none;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 0px 4px;
+
+		a {
+			font-size: 18px;
+		}
+	}
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.site-footer, .push{
+	// height: 300px;
+	margin: 0 auto;
+	padding: 0px 37px;
+}
+
+.footer__content {
+	border-top: 1px solid $grey-color;
+	padding: 20px 0 0 0;
+}
+
+.footer__credits {
+	font-family: $monotype;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+}

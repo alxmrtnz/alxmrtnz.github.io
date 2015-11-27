@@ -28,7 +28,7 @@ $brand-color:      	#8A70DB;
 $hover-color:		#E0DDF0;
 
 $black:				#262626;
-$grey-color:       	#F2F5F4;
+$grey-color:       	#f9f9f9;
 $grey-color-light: 	lighten($grey-color, 20%);
 $grey-color-dark:  	darken($grey-color, 25%);
 $blue-color:	   	#419BF9;
@@ -58,6 +58,7 @@ $on-laptop:        900px;
 @import
         "mixins",
         "base",
+        "type",
         "layout",
         "syntax-highlighting",
         "styles",
@@ -65,5 +66,6 @@ $on-laptop:        900px;
         "nav",
         "posts",
         "thoughts",
-        "about"
+        "about",
+        "footer"
 ;

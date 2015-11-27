@@ -9,43 +9,6 @@
 }
 
 
-.header--large {
-	
-    font-size: 28px;
-	line-height: 36px;
-
-	@media screen and (min-width: $on-palm) {
-    	font-size: 48px;
-    	line-height: 56px;
-	    
-	}
-	@media screen and (min-width: $on-laptop) {
-		
-	}
-}
-
-
-
-.text--mono{
-    font-family: 	$monotype;
-    font-size: 14px;
-    letter-spacing: 5px;
-    line-height: 15px;
-    text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-
-
-.site-footer, .push{
-	height: 300px;
-}
 
 .home--pup-container{
 	width: 100%;

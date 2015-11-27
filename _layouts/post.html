@@ -14,15 +14,34 @@
             <img src="{{ site.url }}{{ page.featured-icon-url }}" alt="{{ page.featured-icon-alt }}">
           </div> 
           <p class="post-date text--mono">{{ page.date | date: "%B %-d, %Y" }}</p>
-          <h1 class="post-title header--large">{{ page.title }}</h1>
+          <h1 class="post-title heading--large">{{ page.title }}</h1>
+          {% if page.origin %} 
+            <p class="post-origin">
+              This post originally appeared on <a href="{{ page.origin-link }}" target="_blank" class="link--text-in-p">{{ page.origin }}</a> on {{ page.origin-date | date: "%B %-d, %Y" }}
+            </p>
+          {% endif %}
+
           
         </header>
         {{ content }}
-     
+        
     </div>
+    
     <div class="post-comments">
       {% include comments.html %}
     </div>
+    <!-- <div class="post-nav">
+      <div class="post-nav__direction post-nav__prev-post">
+        {% if page.previous.url %}
+          <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+        {% endif %}
+      </div>
+      <div class="post-nav__direction post-nav__next-post">
+        {% if page.next.url %}
+          <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+        {% endif %}
+      </div>
+    </div> -->
         
   </div>
     
