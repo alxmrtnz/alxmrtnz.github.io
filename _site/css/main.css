@@ -39,6 +39,10 @@ ul, ol, dl, figure,
 .highlight {
   margin-bottom: 15px; }
 
+hr {
+  border: 1px solid #f7f7f7;
+  margin-bottom: 35px; }
+
 /**
  * Images
  */
@@ -76,14 +80,15 @@ h1, h2, h3, h4, h5, h6 {
  */
 p {
   font-family: "athelas", serif;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 19px;
+  line-height: 28px;
+  margin-bottom: 20px;
   position: relative; }
   @media screen and (min-width: 600px) {
     p {
       font-size: 22px;
       line-height: 32px;
-      margin-bottom: 45px; } }
+      margin-bottom: 35px; } }
 
 /**
  * Links
@@ -94,12 +99,15 @@ a {
   a:hover {
     color: #8A70DB; }
 
-a.link--text {
+a.link--text, a.link--heading {
   position: relative;
   text-align: center; }
-  a.link--text:hover, a.link--text.active {
+  a.link--text:hover, a.link--text.active, a.link--heading:hover, a.link--heading.active {
     color: #8A70DB;
     text-decoration: line-through; }
+
+a.link--heading {
+  text-decoration: underline; }
 
 a.link--text-in-p {
   color: #8A70DB;
@@ -631,7 +639,9 @@ ul.social-icon-list {
   padding: 0px 20px;
   margin: 0 auto 70px auto; }
   .post-content p img {
-    padding: 20px 0px; }
+    padding: 20px 0px 0px 0px;
+    display: block;
+    margin: 0 auto; }
   .post-content h2 {
     font-size: 22px;
     margin-top: 60px; }
@@ -648,6 +658,23 @@ ul.social-icon-list {
     @media screen and (max-width: 900px) {
       .post-content h4 {
         font-size: 18px; } }
+  .post-content ol {
+    font-family: "athelas", serif;
+    margin-bottom: 35px;
+    padding-left: 1em;
+    font-size: 19px;
+    line-height: 28px; }
+    @media screen and (min-width: 600px) {
+      .post-content ol {
+        font-size: 22px;
+        line-height: 32px; } }
+    .post-content ol li {
+      margin-bottom: 15px; }
+      .post-content ol li ul {
+        list-style-type: square;
+        margin-left: 20px;
+        font-size: .9em;
+        line-height: 1.5em; }
 
 .post-nav {
   overflow: hidden;

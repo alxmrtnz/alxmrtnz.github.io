@@ -49,6 +49,10 @@ ul, ol, dl, figure,
 }
 
 
+hr {
+    border: 1px solid $grey-color;
+    margin-bottom: $paragraph-margin-bottom;
+}
 
 /**
  * Images
@@ -111,12 +115,14 @@ h2 {
 p {
     font-family: $serif;
     
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 28px;
+    margin-bottom: 20px;
+
     @media screen and (min-width: $on-palm) {
         font-size: 22px;
         line-height: 32px;
-        margin-bottom: 45px;
+        margin-bottom: 35px;
     }
     position: relative;
 
@@ -138,7 +144,7 @@ a {
     }
 }
 
-a.link--text {
+a.link--text, a.link--heading {
     position: relative;
     text-align: center;
     // &:before {
@@ -158,6 +164,10 @@ a.link--text {
             // width: 95%;
         // } 
     }
+}
+
+a.link--heading {
+    text-decoration: underline;
 }
 
 a.link--text-in-p {

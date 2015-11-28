@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alex Martinez</title>
+    <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 27 Nov 2015 11:15:42 -0500</pubDate>
+    <lastBuildDate>Fri, 27 Nov 2015 11:15:42 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>To the Future (of Web Design)&lt;br&gt;A Conference Recap</title>
+        <description>
+&lt;p&gt;One of the best things about being a part of a design team at an agency like ISL is getting the opportunity to grow both creatively and professionally. Our company makes a huge effort to support our team’s growth and encourages employees to attend industry conferences.&lt;/p&gt;
+
+&lt;p&gt;Recently, I attended the Future of Web Design (FOWD) conference in San Francisco. The conference was a 3-day event for designers, front-end developers, and other creatives working to make the web a better place.&lt;/p&gt;
+
+&lt;p&gt;Here are the biggest lessons I learned:&lt;/p&gt;
+
+&lt;h2 id=&quot;open-source-design-is-a-pretty-awesome-thing&quot;&gt;Open Source Design is a (Pretty Awesome) Thing&lt;/h2&gt;
+&lt;p&gt;The most inspiring talk came from &lt;a href=&quot;https://twitter.com/garthdb&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Garth Braithwaite&lt;/a&gt;, a product designer and front-end developer on PhoneGap at Adobe.&lt;/p&gt;
+
+&lt;p&gt;Garth discussed the benefits of open source design and detailed some of his work on &lt;a href=&quot;http://www.nightscout.info/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;NightScout&lt;/a&gt;, an app developed by parents of children with Type 1 Diabetes to remotely help track blood sugar levels (and save lives). By connecting data from a monitoring device, parents can send live updates to their phones and smartwatches.&lt;/p&gt;
+
+&lt;p&gt;His advice for getting into open source?&lt;/p&gt;
+
+&lt;p&gt;Whether it’s designing a logo, contributing code, or just adding a new perspective to the conversation, he recommends finding something you’re passionate about. There are also some &lt;a href=&quot;http://opendesign.foundation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;https://github.com/opensourcedesign&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;places&lt;/a&gt; you can go to get started.&lt;/p&gt;
+
+&lt;h2 id=&quot;side-projects-are-stupid-and-theyre-supposed-to-be&quot;&gt;Side Projects are Stupid… and They’re Supposed to Be&lt;/h2&gt;
+&lt;p&gt;I had been looking forward to meeting &lt;a href=&quot;https://twitter.com/schneidertobias&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tobias van Schneider&lt;/a&gt; (and his luscious beard) for some time. Tobias is a German-born designer that recently led the Spotify brand refresh.&lt;/p&gt;
+
+&lt;p&gt;He talked about keeping side projects fun and stupid. This way, you can keep from overthinking the work. From &lt;a href=&quot;http://authenticweather.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Authentic Weather&lt;/a&gt; to his own &lt;a href=&quot;http://www.beardbrand.com/products/black-marble-beard-oil&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;line of beard oil&lt;/a&gt;, Tobias has followed through on some downright silly ideas. Some guiding principles for successful side projects? Let yourself be stupid, ignore everybody (they all have their own ideas and opinions of how things should be), trust your gut, and stay busy.&lt;/p&gt;
+
+&lt;h2 id=&quot;web-accessibility-is-more-than-accessible-code&quot;&gt;Web Accessibility is More than Accessible Code&lt;/h2&gt;
+&lt;p&gt;As practitioners of web design and development, it’s our job to make our websites usable, visually pleasing, and accessible – and that doesn’t mean just developers/engineers implementing accessible code.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/Jennison&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion&lt;/a&gt;, Co-Director of the Adaptech Research Network, spoke about how producing accessible content means designing and developing user experiences that everyone, including people with disabilities, can independently consume and interact with. From touching on resources for &lt;a href=&quot;http://jxnblk.com/colorable/demos/text/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;sufficient color contrast&lt;/a&gt; to walking us through the experience of using a screenreader on &lt;a href=&quot;https://www.united.com/ual/en/us/?root=1&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;United.com&lt;/a&gt;, Jennison got me thinking about how web professionals can (and should) improve accessibility across their work.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-conclusion&quot;&gt;In Conclusion&lt;/h2&gt;
+&lt;p&gt;For a first web conference experience, FOWD was a blast and extremely inspiring. If you’re a web professional or have just been thinking about putting yourself out there and learning how we creatives can help impact the world around us, I’d highly recommend attending a conference like FOWD.&lt;/p&gt;
+
+&lt;p&gt;I’m already planning my next steps of finding and contributing to an open source project, working to make my sites more accessible, and might even be thinking about my own beard oil – well, we’ll see about that last one.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Nov 2015 14:46:27 -0500</pubDate>
+        <link>/2015/11/11/conference-recap-fowd-sf.html</link>
+        <guid isPermaLink="true">/2015/11/11/conference-recap-fowd-sf.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Where We Belong</title>
+        <description>&lt;p&gt;“Hello there, how you doin’?
+I’ve got all these thoughts just floating through my brain…” - &lt;a href=&quot;https://www.youtube.com/watch?v=pISPVfRQiOo&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;MCS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We had something back in high school we referred to as the JEP (Junior English Project). Taught by the wonderful, yet eccentric, Darrin Broadway, the junior english struck fear into the hearts of many. The project consisted of a string of readings, assignments, and essays throughout the school year that culminated in each student developing a final project – whether that project be a short story, poem, interpretive dance, documentary, film, etc.&lt;/p&gt;
+
+&lt;p&gt;The writing exercises, the constant pressure, the unrelenting deadlines forced out some of our most creative work of our young lives. The insurmountable idea of having to pump out thousands and thousands of words for a 10-page paper on the themes of Fahrenheit 451 dwindled over time and instead turned into a fuel that fed our minds and our fingers as we wrote (or typed) late into the weeknights.&lt;/p&gt;
+
+&lt;p&gt;For me, it was some of my best writing. Crafting outlines for essays became second nature and filling them in with carefully considered dabs of light hearted banter with logically executed conclusions became an art at which (at least thought) I thrived.&lt;/p&gt;
+
+&lt;p&gt;This isn’t to say that I was really that great of a writer. For all intents and purposes, I was a 17 year old kid writing a standard 5 paragraph essay on a book we had been assigned to read. But at times, through the many assignments and long nights, I felt that words were truly a medium of unbounded expression.&lt;/p&gt;
+
+&lt;p&gt;Now, I may be setting myself and this catalogue of thoughts up for failure with that prologue, however, I’m hoping that the result will be quite the opposite. My goal? Pen my thoughts on design, code, happiness, and life. Thanks for tuning in.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 08 Nov 2015 15:46:27 -0500</pubDate>
+        <link>/2015/11/08/hello-there.html</link>
+        <guid isPermaLink="true">/2015/11/08/hello-there.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
