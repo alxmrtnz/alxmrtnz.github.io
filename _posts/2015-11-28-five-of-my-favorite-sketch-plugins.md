@@ -20,7 +20,7 @@ Before I switched over from Photoshop to Sketch as my primary web design tool, I
 Sketch Toolbox
 ----------------------------------------------
 ![Sketch Toolbox Screenshot]({{ site.url }}/assets/posts/11-28-15/sketch-toolbox.png)
-Before we dive into my favorite plugins, if you use Sketch and you haven't installed <a href='http://sketchtoolbox.com/' target="_blank" class="link--text-in-p">Sketch Toolbox</a> yet, prepare to get excited. Sketch Toolbox is an application created by members of the Sketch community that lets you easily manage your Sketch plugins.
+Before we dive into my favorite plugins, if you use Sketch and you haven't installed <a href='http://sketchtoolbox.com/' target="_blank" class="link--text-in-p">Sketch Toolbox</a> yet, prepare to get excited. Sketch Toolbox is an application created by members of the Sketch community that lets you easily manage your Sketch plugins. Definitely check it out.
 
 ----
 
