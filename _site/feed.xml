@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 29 Nov 2015 22:06:33 -0500</pubDate>
-    <lastBuildDate>Sun, 29 Nov 2015 22:06:33 -0500</lastBuildDate>
+    <pubDate>Mon, 30 Nov 2015 19:32:55 -0500</pubDate>
+    <lastBuildDate>Mon, 30 Nov 2015 19:32:55 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -18,7 +18,7 @@
 
 &lt;h2 id=&quot;sketch-toolbox&quot;&gt;Sketch Toolbox&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-toolbox.png&quot; alt=&quot;Sketch Toolbox Screenshot&quot; /&gt;
-Before we dive into my favorite plugins, if you use Sketch and you haven’t installed &lt;a href=&quot;http://sketchtoolbox.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sketch Toolbox&lt;/a&gt; yet, prepare to get excited. Sketch Toolbox is an application created by members of the Sketch community that lets you easily manage your Sketch plugins. Definitely check it out.&lt;/p&gt;
+Before we dive into my favorite plugins, if you use Sketch and you haven’t installed &lt;a href=&quot;http://sketchtoolbox.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sketch Toolbox&lt;/a&gt; yet, prepare to be excited. Sketch Toolbox is an application created by members of the Sketch community that lets you easily manage your plugins. Definitely check it out.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -45,7 +45,7 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 
 &lt;p&gt;Have you ever created a button with the perfect size but then had to change the text and readjust its padding? Fret no more.&lt;/p&gt;
 
-&lt;p&gt;Dynamic Buttons allows you to specify the padding of your button and then, whenever you change the text within, you can use a simple keyboard shortcut dynamically readjust its padding. Pixel perfect button padding made simple. &lt;a href=&quot;https://medium.com/@poohbers/dynamic-button-sketch-plugin-946638e73398#.t29zevs6g&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;Oh, and here’s a quick how-to!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dynamic Buttons allows you to specify the padding of your button and then, whenever you change the text within, you can use a simple keyboard shortcut dynamically readjust its padding. Pixel perfect button padding made simple. Oh, and &lt;a href=&quot;https://medium.com/@poohbers/dynamic-button-sketch-plugin-946638e73398#.t29zevs6g&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;here’s a quick how-to!&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;a-hrefhttpsgithubcomshahruzsend-to-slack-targetblank-classlink--headingsend-to-slacka&quot;&gt;4. &lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Send to Slack&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot;&gt;
@@ -54,14 +54,14 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 
 &lt;p&gt;At &lt;a href=&quot;https://isl.co&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;ISL&lt;/a&gt;, we constantly use Slack to message each other about anything and everything. Slack has also become a fast way to share and discuss designs.&lt;/p&gt;
 
-&lt;p&gt;With the Send to Slack plugin, you can quickly send an artboard in Sketch to anyone on your Slack team. Instead of having to export and then upload artboards, the plugin lets you select a user or channel to export and upload to all at once.&lt;/p&gt;
+&lt;p&gt;With the Send to Slack plugin, you can quickly send an art board in Sketch to anyone on your Slack team. Instead of having to export and upload art boards, the plugin lets you select a user or channel to export and upload to all at once.&lt;/p&gt;
 
 &lt;h2 id=&quot;a-hrefhttpsgithubcomgetflourishsketch-color-contrast-analyser-targetblank-classlink--headingcolor-contrast-analyser-for-sketcha&quot;&gt;5. &lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Color Contrast Analyser for Sketch&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot;&gt;
 	&lt;img src=&quot;/assets/posts/11-28-15/sketch-color-analyser-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Ever since &lt;a href=&quot;/2015/11/11/conference-recap-fowd-sf.html#web-accessibility-is-more-than-accessible-code&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion’s talk at the FOWD conference&lt;/a&gt;, accessible design has been on my mind. The Color Contrast Analyzer plugin lets you find out if the colors in your design have a high enough contrast for users with low vision.&lt;/p&gt;
+&lt;p&gt;Ever since &lt;a href=&quot;/2015/11/11/conference-recap-fowd-sf.html#web-accessibility-is-more-than-accessible-code&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion’s talk&lt;/a&gt;  at the FOWD conference, accessible design has been on my mind. The Color Contrast Analyzer plugin lets you find out if the colors in your design have a high enough contrast for users with low vision.&lt;/p&gt;
 
 &lt;p&gt;The plugin adheres to the &lt;a href=&quot;http://www.w3.org/TR/WCAG20/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;W3’s accessibility guidelines&lt;/a&gt; and instantly shows you what rating your work would receive (A, AA, AAA).&lt;/p&gt;
 
