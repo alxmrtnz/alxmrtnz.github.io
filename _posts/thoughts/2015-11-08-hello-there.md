@@ -7,8 +7,10 @@ date:   2015-11-08 20:46:27
 featured-icon-url: /assets/posts/11-08-15/icon-clouds.png
 featured-icon-alt: "Icon of Clouds"
 read-time: 1 min read
+category: thoughts
+permalink: /:categories/:title.html
 ---
-
+ 
 
 "Hello there, how you doin'?
 I've got all these thoughts just floating through my brain..." - <a href='https://www.youtube.com/watch?v=pISPVfRQiOo' target="_blank" class="link--text-in-p">MCS</a>

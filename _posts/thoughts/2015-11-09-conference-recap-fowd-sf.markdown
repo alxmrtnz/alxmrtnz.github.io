@@ -10,6 +10,8 @@ read-time: 2 min read
 origin: the isl.co blog
 origin-date: 2015-11-11 19:46:27
 origin-link: https://isl.co/2015/11/to-the-future-of-web-design-a-conference-recap/
+category: thoughts
+permalink: /:categories/:title.html
 ---
 
 [garth]: 		https://twitter.com/garthdb
