@@ -5,47 +5,9 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 11 Feb 2016 11:57:35 -0500</pubDate>
-    <lastBuildDate>Thu, 11 Feb 2016 11:57:35 -0500</lastBuildDate>
+    <pubDate>Thu, 11 Feb 2016 12:32:36 -0500</pubDate>
+    <lastBuildDate>Thu, 11 Feb 2016 12:32:36 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
-    
-      <item>
-        <title>Working with Agile</title>
-        <description>&lt;h2 id=&quot;definition-of-agile&quot;&gt;Definition of Agile&lt;/h2&gt;
-
-&lt;h2 id=&quot;its-place-on-service-year-2-short-paragraphs&quot;&gt;It’s place on Service Year (2 short paragraphs)&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;brief overview of Service Year&lt;/li&gt;
-  &lt;li&gt;history of methods
-– always been agile, but being ISL’s first large scale application build, our process has also gone through many iterations and is always evolving
-– Sprints broken up by team at first, then alternated, now together&lt;/li&gt;
-  &lt;li&gt;Determination of Resources, LOE-ing:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;advantages&quot;&gt;Advantages&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Ability to identify problems and change methods&lt;/li&gt;
-  &lt;li&gt;Shorter lifecycles for features means being able to refine them over time&lt;/li&gt;
-  &lt;li&gt;Opportunity to learn, change, and grow, both as individuals and team members&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;disadvantages&quot;&gt;Disadvantages&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Quick turnaround time for each sprint can often lead to a lack of documentation (style guide) and sometimes miscommunication&lt;/li&gt;
-  &lt;li&gt;Many many meetings: In order to plan and execute each two-week sprint, there are many meetings both internally and with our client.&lt;/li&gt;
-  &lt;li&gt;The need to really complete each feature 100% within each iteration: this can become tiring for both developers and designers. Luckily, building a tight knit relationship with our client allows us to reevaluate and modify processes as needed.&lt;/li&gt;
-  &lt;li&gt;(Initial) Difficulty onboarding new team members&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Working on a large software and design system can be a challenging and rewarding task.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 Feb 2016 14:46:27 -0500</pubDate>
-        <link>/2016/02/01/working-in-an-agile-process.html</link>
-        <guid isPermaLink="true">/2016/02/01/working-in-an-agile-process.html</guid>
-        
-        
-      </item>
     
       <item>
         <title>Five of My Favorite Sketch Plugins</title>
@@ -117,471 +79,69 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
       </item>
     
       <item>
-        <title>Service Year</title>
+        <title>To the Future (of Web Design)&lt;br&gt;A Conference Recap</title>
         <description>
-&lt;p&gt;Intro paragraph describing service year as the nation’s best way to connect volunteers with national service opportunities.
-A website redesign that combines the old everyoneon.org and connect2compete.org. EveryoneOn aims to bridge the digital divide by providing affordable internet access. Our targeted audiences were K-12 families, seniors, and job-seekers, providing a difficult challenge for a wide range of age groups, backgrounds, and goals.&lt;/p&gt;
+&lt;p&gt;One of the best things about being a part of a design team at an agency like ISL is getting the opportunity to grow both creatively and professionally. Our company makes a huge effort to support our team’s growth and encourages employees to attend industry conferences.&lt;/p&gt;
 
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;Recently, I attended the Future of Web Design (FOWD) conference in San Francisco. The conference was a 3-day event for designers, front-end developers, and other creatives working to make the web a better place.&lt;/p&gt;
 
-&lt;h2 id=&quot;information-architecture&quot;&gt;Information Architecture&lt;/h2&gt;
-&lt;p&gt;Talk about working with Ali on sitemap and wireframes. Talk about how the system as a whole was to be huge – multiple user types, public facing application mixed with dashboard utility for each user type. System has to cater to both recruiting organizations and exploring corps members.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And now, some of my favorite plugins:&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomutomsketch-measure-targetblank-classlink--headingsketch-measurea&quot;&gt;1. &lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Measure&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-measure-example.gif&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Sketch Measure is an invaluable tool for annotating your design comps. The plugin helps you create markings to show heights, widths, paddings, and margins of elements. It’s great for sharing designs with developers or fellow designers.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomandrewfiorillosketch-palettes-targetblank-classlink--headingsketch-palettesa&quot;&gt;2. &lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Palettes&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-palettes-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you’ve used Photoshop, then you’re familiar with how you can save out and load sets of color swatches. This kind of color management is especially useful if you’re working on a project with a lot of other designers.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, Sketch doesn’t come with the same functionality. Each new file requires you to re-add colors one-by-one. Setting up colors in file after file can get old pretty fast.&lt;/p&gt;
-
-&lt;p&gt;Luckily, the Sketch Palettes plugin lets you export and later load sets of colors into your new Sketch files. Save, load, and presto! Quick color palettes in Sketch.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomddwhtsketch-dynamic-button-targetblank-classlink--headingdynamic-buttonsa&quot;&gt;3. &lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Dynamic Buttons&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/dynamic-buttons-screenshot.gif&quot; alt=&quot;Dynamic Buttons Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Have you ever created a button with the perfect size but then had to change the text and readjust its padding? Fret no more.&lt;/p&gt;
-
-&lt;p&gt;Dynamic Buttons allows you to specify the padding of your button and then, whenever you change the text within, you can use a simple keyboard shortcut dynamically readjust its padding. Pixel perfect button padding made simple. Oh, and &lt;a href=&quot;https://medium.com/@poohbers/dynamic-button-sketch-plugin-946638e73398#.t29zevs6g&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;here’s a quick how-to!&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomshahruzsend-to-slack-targetblank-classlink--headingsend-to-slacka&quot;&gt;4. &lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Send to Slack&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/send-to-slack-example.gif&quot; alt=&quot;Send to Slack Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;At &lt;a href=&quot;https://isl.co&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;ISL&lt;/a&gt;, we constantly use Slack to message each other about anything and everything. Slack has also become a fast way to share and discuss designs.&lt;/p&gt;
-
-&lt;p&gt;With the Send to Slack plugin, you can quickly send an art board in Sketch to anyone on your Slack team. Instead of having to export and upload art boards, the plugin lets you select a user or channel to export and upload to all at once.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomgetflourishsketch-color-contrast-analyser-targetblank-classlink--headingcolor-contrast-analyser-for-sketcha&quot;&gt;5. &lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Color Contrast Analyser for Sketch&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/sketch-color-analyser-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ever since &lt;a href=&quot;/2015/11/11/conference-recap-fowd-sf.html#web-accessibility-is-more-than-accessible-code&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion’s talk&lt;/a&gt;  at the FOWD conference, accessible design has been on my mind. The Color Contrast Analyzer plugin lets you find out if the colors in your design have a high enough contrast for users with low vision.&lt;/p&gt;
-
-&lt;p&gt;The plugin adheres to the &lt;a href=&quot;http://www.w3.org/TR/WCAG20/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;W3’s accessibility guidelines&lt;/a&gt; and instantly shows you what rating your work would receive (A, AA, AAA).&lt;/p&gt;
-
-&lt;h2 id=&quot;and-theres-more&quot;&gt;And there’s more…&lt;/h2&gt;
-&lt;p&gt;The number of Sketch plugins is growing every day thanks to a thriving Sketch community. Do you have any favorite plugins? Let me know below!&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/work/service-year.html</link>
-        <guid isPermaLink="true">/work/service-year.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Outlook Relationship Management System</title>
-        <description>
-&lt;p&gt;You know what’s awesome about Sketch? Quite a lot of things. One of my favorites? Plugins.&lt;/p&gt;
-
-&lt;p&gt;Before I switched over from Photoshop to Sketch as my primary web design tool, I had used Photoshop plugins. However, I often found myself frustrated with how to find, download, install, and configure them. With Sketch, it’s a breeze.&lt;/p&gt;
-
-&lt;h2 id=&quot;sketch-toolbox&quot;&gt;Sketch Toolbox&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-toolbox.png&quot; alt=&quot;Sketch Toolbox Screenshot&quot; /&gt;
-Before we dive into my favorite plugins, if you use Sketch and you haven’t installed &lt;a href=&quot;http://sketchtoolbox.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sketch Toolbox&lt;/a&gt; yet, prepare to be excited. Sketch Toolbox is an application created by members of the Sketch community that lets you easily manage your plugins. Definitely check it out.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And now, some of my favorite plugins:&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomutomsketch-measure-targetblank-classlink--headingsketch-measurea&quot;&gt;1. &lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Measure&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-measure-example.gif&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Sketch Measure is an invaluable tool for annotating your design comps. The plugin helps you create markings to show heights, widths, paddings, and margins of elements. It’s great for sharing designs with developers or fellow designers.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomandrewfiorillosketch-palettes-targetblank-classlink--headingsketch-palettesa&quot;&gt;2. &lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Palettes&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-palettes-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you’ve used Photoshop, then you’re familiar with how you can save out and load sets of color swatches. This kind of color management is especially useful if you’re working on a project with a lot of other designers.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, Sketch doesn’t come with the same functionality. Each new file requires you to re-add colors one-by-one. Setting up colors in file after file can get old pretty fast.&lt;/p&gt;
-
-&lt;p&gt;Luckily, the Sketch Palettes plugin lets you export and later load sets of colors into your new Sketch files. Save, load, and presto! Quick color palettes in Sketch.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomddwhtsketch-dynamic-button-targetblank-classlink--headingdynamic-buttonsa&quot;&gt;3. &lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Dynamic Buttons&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/dynamic-buttons-screenshot.gif&quot; alt=&quot;Dynamic Buttons Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Have you ever created a button with the perfect size but then had to change the text and readjust its padding? Fret no more.&lt;/p&gt;
-
-&lt;p&gt;Dynamic Buttons allows you to specify the padding of your button and then, whenever you change the text within, you can use a simple keyboard shortcut dynamically readjust its padding. Pixel perfect button padding made simple. Oh, and &lt;a href=&quot;https://medium.com/@poohbers/dynamic-button-sketch-plugin-946638e73398#.t29zevs6g&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;here’s a quick how-to!&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomshahruzsend-to-slack-targetblank-classlink--headingsend-to-slacka&quot;&gt;4. &lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Send to Slack&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/send-to-slack-example.gif&quot; alt=&quot;Send to Slack Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;At &lt;a href=&quot;https://isl.co&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;ISL&lt;/a&gt;, we constantly use Slack to message each other about anything and everything. Slack has also become a fast way to share and discuss designs.&lt;/p&gt;
-
-&lt;p&gt;With the Send to Slack plugin, you can quickly send an art board in Sketch to anyone on your Slack team. Instead of having to export and upload art boards, the plugin lets you select a user or channel to export and upload to all at once.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomgetflourishsketch-color-contrast-analyser-targetblank-classlink--headingcolor-contrast-analyser-for-sketcha&quot;&gt;5. &lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Color Contrast Analyser for Sketch&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/sketch-color-analyser-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ever since &lt;a href=&quot;/2015/11/11/conference-recap-fowd-sf.html#web-accessibility-is-more-than-accessible-code&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion’s talk&lt;/a&gt;  at the FOWD conference, accessible design has been on my mind. The Color Contrast Analyzer plugin lets you find out if the colors in your design have a high enough contrast for users with low vision.&lt;/p&gt;
-
-&lt;p&gt;The plugin adheres to the &lt;a href=&quot;http://www.w3.org/TR/WCAG20/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;W3’s accessibility guidelines&lt;/a&gt; and instantly shows you what rating your work would receive (A, AA, AAA).&lt;/p&gt;
-
-&lt;h2 id=&quot;and-theres-more&quot;&gt;And there’s more…&lt;/h2&gt;
-&lt;p&gt;The number of Sketch plugins is growing every day thanks to a thriving Sketch community. Do you have any favorite plugins? Let me know below!&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/work/orms.html</link>
-        <guid isPermaLink="true">/work/orms.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Free My Beer</title>
-        <description>
-&lt;p&gt;You know what’s awesome about Sketch? Quite a lot of things. One of my favorites? Plugins.&lt;/p&gt;
-
-&lt;p&gt;Before I switched over from Photoshop to Sketch as my primary web design tool, I had used Photoshop plugins. However, I often found myself frustrated with how to find, download, install, and configure them. With Sketch, it’s a breeze.&lt;/p&gt;
-
-&lt;h2 id=&quot;sketch-toolbox&quot;&gt;Sketch Toolbox&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-toolbox.png&quot; alt=&quot;Sketch Toolbox Screenshot&quot; /&gt;
-Before we dive into my favorite plugins, if you use Sketch and you haven’t installed &lt;a href=&quot;http://sketchtoolbox.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sketch Toolbox&lt;/a&gt; yet, prepare to be excited. Sketch Toolbox is an application created by members of the Sketch community that lets you easily manage your plugins. Definitely check it out.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And now, some of my favorite plugins:&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomutomsketch-measure-targetblank-classlink--headingsketch-measurea&quot;&gt;1. &lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Measure&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-measure-example.gif&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Sketch Measure is an invaluable tool for annotating your design comps. The plugin helps you create markings to show heights, widths, paddings, and margins of elements. It’s great for sharing designs with developers or fellow designers.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomandrewfiorillosketch-palettes-targetblank-classlink--headingsketch-palettesa&quot;&gt;2. &lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Palettes&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-palettes-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you’ve used Photoshop, then you’re familiar with how you can save out and load sets of color swatches. This kind of color management is especially useful if you’re working on a project with a lot of other designers.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, Sketch doesn’t come with the same functionality. Each new file requires you to re-add colors one-by-one. Setting up colors in file after file can get old pretty fast.&lt;/p&gt;
-
-&lt;p&gt;Luckily, the Sketch Palettes plugin lets you export and later load sets of colors into your new Sketch files. Save, load, and presto! Quick color palettes in Sketch.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomddwhtsketch-dynamic-button-targetblank-classlink--headingdynamic-buttonsa&quot;&gt;3. &lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Dynamic Buttons&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/dynamic-buttons-screenshot.gif&quot; alt=&quot;Dynamic Buttons Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Have you ever created a button with the perfect size but then had to change the text and readjust its padding? Fret no more.&lt;/p&gt;
-
-&lt;p&gt;Dynamic Buttons allows you to specify the padding of your button and then, whenever you change the text within, you can use a simple keyboard shortcut dynamically readjust its padding. Pixel perfect button padding made simple. Oh, and &lt;a href=&quot;https://medium.com/@poohbers/dynamic-button-sketch-plugin-946638e73398#.t29zevs6g&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;here’s a quick how-to!&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomshahruzsend-to-slack-targetblank-classlink--headingsend-to-slacka&quot;&gt;4. &lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Send to Slack&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/send-to-slack-example.gif&quot; alt=&quot;Send to Slack Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;At &lt;a href=&quot;https://isl.co&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;ISL&lt;/a&gt;, we constantly use Slack to message each other about anything and everything. Slack has also become a fast way to share and discuss designs.&lt;/p&gt;
-
-&lt;p&gt;With the Send to Slack plugin, you can quickly send an art board in Sketch to anyone on your Slack team. Instead of having to export and upload art boards, the plugin lets you select a user or channel to export and upload to all at once.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomgetflourishsketch-color-contrast-analyser-targetblank-classlink--headingcolor-contrast-analyser-for-sketcha&quot;&gt;5. &lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Color Contrast Analyser for Sketch&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/sketch-color-analyser-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ever since &lt;a href=&quot;/2015/11/11/conference-recap-fowd-sf.html#web-accessibility-is-more-than-accessible-code&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion’s talk&lt;/a&gt;  at the FOWD conference, accessible design has been on my mind. The Color Contrast Analyzer plugin lets you find out if the colors in your design have a high enough contrast for users with low vision.&lt;/p&gt;
-
-&lt;p&gt;The plugin adheres to the &lt;a href=&quot;http://www.w3.org/TR/WCAG20/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;W3’s accessibility guidelines&lt;/a&gt; and instantly shows you what rating your work would receive (A, AA, AAA).&lt;/p&gt;
-
-&lt;h2 id=&quot;and-theres-more&quot;&gt;And there’s more…&lt;/h2&gt;
-&lt;p&gt;The number of Sketch plugins is growing every day thanks to a thriving Sketch community. Do you have any favorite plugins? Let me know below!&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/work/free-my-beer.html</link>
-        <guid isPermaLink="true">/work/free-my-beer.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Family Online Safety Institute</title>
-        <description>
-&lt;p&gt;::User Experience, Visual Design&lt;/p&gt;
-
-&lt;!-- A website redesign for fosi.org that combines industry news, resources, and events with a new platform, Good Digital Parenting. The Family Online Safety Institute is an international, non-profit organization which works to make the online world safer for kids and their families. Our intended audiences were K-12 families, policy-makers, and industry professionals. --&gt;
-
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-&lt;p&gt;The &lt;a href=&quot;http://www.fosi.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Family Online Safety Institute&lt;/a&gt; (FOSI) came to &lt;a href=&quot;http://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to redesign and rebuild their website. Our mission was twofold —to combine fosi.org and aplaftormforgood.org (now Good Digital Parenting) under one umbrella, and to create a beautiful design and a user friendly experience&lt;/p&gt;
-
-&lt;p&gt;The redesign process involved diving deep into Google Analytics, conducting user testing with key audiences, and unifying the two sites through detailed wireframing and design.&lt;/p&gt;
-
-&lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
-
-&lt;h2 id=&quot;information-architecture&quot;&gt;Information Architecture&lt;/h2&gt;
-&lt;p&gt;The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
-
-&lt;h3 id=&quot;understanding-the-audience&quot;&gt;Understanding the Audience&lt;/h3&gt;
-
-&lt;h4 id=&quot;personas&quot;&gt;Personas&lt;/h4&gt;
-&lt;p&gt;In order to better understand each type of user, we created five personas to serve as references throughout the design process.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-        &lt;img src=&quot;/assets/work/fosi/persona-mary.jpg&quot; /&gt;
-    &lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;grid__item grid__item--half&quot;&gt;
-        &lt;img src=&quot;/assets/posts/11-28-15/sketch-measure-example.gif&quot; /&gt; 
-    &lt;/div&gt;
-    &lt;div class=&quot;grid__item grid__item--half&quot;&gt;
-        &lt;img src=&quot;/assets/posts/11-28-15/sketch-measure-example.gif&quot; /&gt; 
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;user-flows&quot;&gt;User Flows&lt;/h4&gt;
-&lt;p&gt;By working closely with the FOSI team, we were able to ensure that the personas were accurate and helpful. These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
-
-&lt;p&gt;[screenshots of user flows here]&lt;/p&gt;
-
-&lt;h3 id=&quot;site-structure&quot;&gt;Site Structure&lt;/h3&gt;
-&lt;p&gt;Due to the understanding of our user flows, we reorganized content into three main buckets: family resources (Good Digital Parenting), policy and research, and events. Supporting pages with more information about the institute as a whole finished out the site’s new structure.&lt;/p&gt;
-
-&lt;p&gt;[sitemap here]&lt;/p&gt;
-
-&lt;h3 id=&quot;wireframes&quot;&gt;Wireframes&lt;/h3&gt;
-&lt;p&gt;Due to some of the functionality we wanted to include in the site, such as a sticky navigation, fixed filters, and are often difficult to describe using static wireframes, we created a set of animated wireframes in order to show off the small details that were to make the site awesome [ this paragraph kind of sucks, rewrite it]&lt;/p&gt;
-
-&lt;p&gt;[ video of animated wireframes – vimeo hosted? ]&lt;/p&gt;
-
-&lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
-
-&lt;h3 id=&quot;typography&quot;&gt;Typography&lt;/h3&gt;
-&lt;p&gt;In order to be inviting to parents, yet authoritative and reliable to professionals, I choose a set of mixed organic sans-serif typefaces with more traditional serifed text.&lt;/p&gt;
-
-&lt;p&gt;[screenshot of type here]&lt;/p&gt;
-
-&lt;h4 id=&quot;aaux-next&quot;&gt;Aaux Next&lt;/h4&gt;
-
-&lt;h4 id=&quot;minion-pro&quot;&gt;Minion Pro&lt;/h4&gt;
-
-&lt;h1 id=&quot;colors&quot;&gt;Colors&lt;/h1&gt;
-&lt;p&gt;FOSI’s primary green showed through in their organization logo.&lt;/p&gt;
-
-&lt;p&gt;[screenshots of the site]&lt;/p&gt;
-
-&lt;h2 id=&quot;creating-a-flexible-publishing-platform&quot;&gt;Creating a Flexible Publishing Platform&lt;/h2&gt;
-&lt;p&gt;At its core, the new FOSI.org is a publishing platform. From online safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age.&lt;/p&gt;
-
-&lt;p&gt;Both Good Digital Parenting, the branded platform for parents within FOSI.org, and the Policy &amp;amp; Research section of the site required we design and build a flexible system that FOSI employees could update and manage after project handoff. The creation of custom templates, such as a monthly collection of articles and resources, and a robust filtering system gives FOSI a powerful publishing platform that can be easily managed.&lt;/p&gt;
-
-&lt;p&gt;[screenshot of monthly series - caption “Monthly Series collections in Good Digital Parenting were one way we customized content delivery”]&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/work/fosi.html</link>
-        <guid isPermaLink="true">/work/fosi.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Battle of the Hands</title>
-        <description>
-&lt;p&gt;You know what’s awesome about Sketch? Quite a lot of things. One of my favorites? Plugins.&lt;/p&gt;
-
-&lt;p&gt;Before I switched over from Photoshop to Sketch as my primary web design tool, I had used Photoshop plugins. However, I often found myself frustrated with how to find, download, install, and configure them. With Sketch, it’s a breeze.&lt;/p&gt;
-
-&lt;h2 id=&quot;sketch-toolbox&quot;&gt;Sketch Toolbox&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-toolbox.png&quot; alt=&quot;Sketch Toolbox Screenshot&quot; /&gt;
-Before we dive into my favorite plugins, if you use Sketch and you haven’t installed &lt;a href=&quot;http://sketchtoolbox.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sketch Toolbox&lt;/a&gt; yet, prepare to be excited. Sketch Toolbox is an application created by members of the Sketch community that lets you easily manage your plugins. Definitely check it out.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And now, some of my favorite plugins:&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomutomsketch-measure-targetblank-classlink--headingsketch-measurea&quot;&gt;1. &lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Measure&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-measure-example.gif&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Sketch Measure is an invaluable tool for annotating your design comps. The plugin helps you create markings to show heights, widths, paddings, and margins of elements. It’s great for sharing designs with developers or fellow designers.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomandrewfiorillosketch-palettes-targetblank-classlink--headingsketch-palettesa&quot;&gt;2. &lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Palettes&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-palettes-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you’ve used Photoshop, then you’re familiar with how you can save out and load sets of color swatches. This kind of color management is especially useful if you’re working on a project with a lot of other designers.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, Sketch doesn’t come with the same functionality. Each new file requires you to re-add colors one-by-one. Setting up colors in file after file can get old pretty fast.&lt;/p&gt;
-
-&lt;p&gt;Luckily, the Sketch Palettes plugin lets you export and later load sets of colors into your new Sketch files. Save, load, and presto! Quick color palettes in Sketch.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomddwhtsketch-dynamic-button-targetblank-classlink--headingdynamic-buttonsa&quot;&gt;3. &lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Dynamic Buttons&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/dynamic-buttons-screenshot.gif&quot; alt=&quot;Dynamic Buttons Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Have you ever created a button with the perfect size but then had to change the text and readjust its padding? Fret no more.&lt;/p&gt;
-
-&lt;p&gt;Dynamic Buttons allows you to specify the padding of your button and then, whenever you change the text within, you can use a simple keyboard shortcut dynamically readjust its padding. Pixel perfect button padding made simple. Oh, and &lt;a href=&quot;https://medium.com/@poohbers/dynamic-button-sketch-plugin-946638e73398#.t29zevs6g&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;here’s a quick how-to!&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomshahruzsend-to-slack-targetblank-classlink--headingsend-to-slacka&quot;&gt;4. &lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Send to Slack&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/send-to-slack-example.gif&quot; alt=&quot;Send to Slack Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;At &lt;a href=&quot;https://isl.co&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;ISL&lt;/a&gt;, we constantly use Slack to message each other about anything and everything. Slack has also become a fast way to share and discuss designs.&lt;/p&gt;
-
-&lt;p&gt;With the Send to Slack plugin, you can quickly send an art board in Sketch to anyone on your Slack team. Instead of having to export and upload art boards, the plugin lets you select a user or channel to export and upload to all at once.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomgetflourishsketch-color-contrast-analyser-targetblank-classlink--headingcolor-contrast-analyser-for-sketcha&quot;&gt;5. &lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Color Contrast Analyser for Sketch&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/sketch-color-analyser-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ever since &lt;a href=&quot;/2015/11/11/conference-recap-fowd-sf.html#web-accessibility-is-more-than-accessible-code&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion’s talk&lt;/a&gt;  at the FOWD conference, accessible design has been on my mind. The Color Contrast Analyzer plugin lets you find out if the colors in your design have a high enough contrast for users with low vision.&lt;/p&gt;
-
-&lt;p&gt;The plugin adheres to the &lt;a href=&quot;http://www.w3.org/TR/WCAG20/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;W3’s accessibility guidelines&lt;/a&gt; and instantly shows you what rating your work would receive (A, AA, AAA).&lt;/p&gt;
-
-&lt;h2 id=&quot;and-theres-more&quot;&gt;And there’s more…&lt;/h2&gt;
-&lt;p&gt;The number of Sketch plugins is growing every day thanks to a thriving Sketch community. Do you have any favorite plugins? Let me know below!&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/work/battle-of-the-hands.html</link>
-        <guid isPermaLink="true">/work/battle-of-the-hands.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Finding a Work Life Balance</title>
-        <description>&lt;p&gt;You know what’s awesome about Sketch? Quite a lot of things. One of my favorites? Plugins.&lt;/p&gt;
-
-&lt;p&gt;Before I switched over from Photoshop to Sketch as my primary web design tool, I had used Photoshop plugins. However, I often found myself frustrated with how to find, download, install, and generally configure them to get them to do what I wanted. With Sketch, it’s a breeze.&lt;/p&gt;
-
-&lt;h2 id=&quot;but-first-sketch-toolbox&quot;&gt;But First… Sketch Toolbox&lt;/h2&gt;
-&lt;p&gt;Before we dive into my favorite plugins, if you use Sketch and you haven’t installed &lt;a href=&quot;http://sketchtoolbox.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sketch Toolbox&lt;/a&gt; yet, prepare to get excited. Sketch Toolbox is an amazing application created by members of the Sketch community that lets you easily manage your Sketch plugins.&lt;/p&gt;
-
-&lt;p&gt;It does three HUGE things for you:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Lets you browse the most popular plugins available for Sketch
-    &lt;ul&gt;
-      &lt;li&gt;Sketch Toolbox connects directly to GitHub repositories of the latest plugins generated by members of the Sketch community&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Downloads and installs new plugins with a single click
-    &lt;ul&gt;
-      &lt;li&gt;No more downloading and moving plugin files around within your app directories. One-click-install and you’re done&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Automatically keeps all your plugins up to date
-    &lt;ul&gt;
-      &lt;li&gt;Being connected to a plugin’s GitHub repo means that Sketch Toolbox can simply download the latest sourcecode and keep you up to date&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;After you’ve got Sketch Toolbox installed, you’ll be rolling with plugins in no time. And now, some of my favorite plugins:&lt;/p&gt;
-
-&lt;h2 id=&quot;sketch-measure&quot;&gt;1) Sketch Measure&lt;/h2&gt;
-
-&lt;h2 id=&quot;dynamic-buttons&quot;&gt;2) Dynamic Buttons&lt;/h2&gt;
-
-&lt;p&gt;Whether it’s designing a logo for the project, contributing source code, or just adding to the conversation, find the thing you’re most passionate about and contribute. There are also some &lt;a href=&quot;http://opendesign.foundation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;https://github.com/opensourcedesign&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;places&lt;/a&gt; you can go to get started.&lt;/p&gt;
-
-&lt;h2 id=&quot;side-projects-are-stupid-and-theyre-supposed-to-be&quot;&gt;Side Projects are Stupid… and They’re Supposed to Be&lt;/h2&gt;
-&lt;p&gt;I had been looking forward to being introduced to &lt;a href=&quot;https://twitter.com/schneidertobias&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tobias van Schneider&lt;/a&gt; (and his luscious beard) for some time. Tobias is a German-born designer that recently led the Spotify brand refresh.&lt;/p&gt;
-
-&lt;p&gt;His talk focused on how keeping side projects focused around fun and stupid ideas helps us from freezing up and over thinking about our work. From &lt;a href=&quot;http://authenticweather.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Authentic Weather&lt;/a&gt; to his own &lt;a href=&quot;http://www.beardbrand.com/products/black-marble-beard-oil&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;line of beard oil&lt;/a&gt;, Tobias has always thought small instead and followed through on some downright silly ideas that have turned into (sometimes viral) side projects. Some guiding principles for successful side projects? Let yourself be stupid, ignore everybody (they all have their own ideas and opinions of how things should be), trust your gut, and stay busy.&lt;/p&gt;
-
-&lt;h2 id=&quot;web-accessibility-is-more-than-accessible-code&quot;&gt;Web Accessibility is More than Accessible Code&lt;/h2&gt;
-&lt;p&gt;As practitioners of web design and development, it’s our job to make our websites usable, visually pleasing, and accessible – and that doesn’t mean just developers/engineers implementing accessible code.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/Jennison&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion&lt;/a&gt;, Co-Director of the Adaptech Research Network, spoke about how producing accessible content means designing and developing user experiences that everyone, including people with disabilities, can independently consume and interact with. From touching on resources for &lt;a href=&quot;http://jxnblk.com/colorable/demos/text/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;sufficient color contrast&lt;/a&gt; to walking us through the experience of using a screenreader on &lt;a href=&quot;https://www.united.com/ual/en/us/?root=1&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;United.com&lt;/a&gt;, Jennison got me thinking about how web professionals can (and should) improve accessibility across their work.&lt;/p&gt;
-
-&lt;p&gt;For a first web conference experience, it was a blast and extremely inspiring. If you’re a web professional or have just been thinking about putting yourself out there and learning how we creatives can help impact the world around us, I’d recommend attending a conference like FOWD. I’m already planning my next steps of finding and contributing to an open source project, working to make my sites more accessible, and might even be thinking about my own beard oil… well, we’ll see about that last one. Now get out there and get learning!&lt;/p&gt;
-</description>
-        <pubDate>Sun, 15 Nov 2015 15:46:27 -0500</pubDate>
-        <link>/2015/11/15/finding-a-work-life-balance.html</link>
-        <guid isPermaLink="true">/2015/11/15/finding-a-work-life-balance.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Switching to Sketch</title>
-        <description>
-&lt;p&gt;About a year ago, I made the switch over from using Photoshop as my primary design tool to using Sketch. At first, the transition was a bit awkward. I found myself lacking in the shortcut department and many times found the simplest things, such as grouping and using layers properly, difficult. However, over time, I began to see the value in having a program built specifically for UI design by web designers.&lt;/p&gt;
-
-&lt;p&gt;Here are some of my top takeaways:&lt;/p&gt;
+&lt;p&gt;Here are the biggest lessons I learned:&lt;/p&gt;
 
 &lt;h2 id=&quot;open-source-design-is-a-pretty-awesome-thing&quot;&gt;Open Source Design is a (Pretty Awesome) Thing&lt;/h2&gt;
-&lt;p&gt;The talk that inspired me the most came from &lt;a href=&quot;https://twitter.com/garthdb&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Garth Braithwaite&lt;/a&gt;, a product designer and front-end developer on PhoneGap at Adobe.&lt;/p&gt;
+&lt;p&gt;The most inspiring talk came from &lt;a href=&quot;https://twitter.com/garthdb&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Garth Braithwaite&lt;/a&gt;, a product designer and front-end developer on PhoneGap at Adobe.&lt;/p&gt;
 
-&lt;p&gt;Garth discussed the benefits of open source design and detailed some of his work on &lt;a href=&quot;http://www.nightscout.info/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;NightScout&lt;/a&gt;, an app developed by parents of children with Type 1 Diabetes to remotely help monitor blood sugar levels (and save lives). By connecting data from a monitoring device called the Dexcom G4, parents can send live updates to their phones and smartwatches.&lt;/p&gt;
+&lt;p&gt;Garth discussed the benefits of open source design and detailed some of his work on &lt;a href=&quot;http://www.nightscout.info/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;NightScout&lt;/a&gt;, an app developed by parents of children with Type 1 Diabetes to remotely help track blood sugar levels (and save lives). By connecting data from a monitoring device, parents can send live updates to their phones and smartwatches.&lt;/p&gt;
 
 &lt;p&gt;His advice for getting into open source?&lt;/p&gt;
 
-&lt;p&gt;Whether it’s designing a logo for the project, contributing source code, or just adding to the conversation, find the thing you’re most passionate about and contribute. There are also some &lt;a href=&quot;http://opendesign.foundation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;https://github.com/opensourcedesign&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;places&lt;/a&gt; you can go to get started.&lt;/p&gt;
+&lt;p&gt;Whether it’s designing a logo, contributing code, or just adding a new perspective to the conversation, he recommends finding something you’re passionate about. There are also some &lt;a href=&quot;http://opendesign.foundation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;https://github.com/opensourcedesign&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;places&lt;/a&gt; you can go to get started.&lt;/p&gt;
 
 &lt;h2 id=&quot;side-projects-are-stupid-and-theyre-supposed-to-be&quot;&gt;Side Projects are Stupid… and They’re Supposed to Be&lt;/h2&gt;
-&lt;p&gt;I had been looking forward to being introduced to &lt;a href=&quot;https://twitter.com/schneidertobias&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tobias van Schneider&lt;/a&gt; (and his luscious beard) for some time. Tobias is a German-born designer that recently led the Spotify brand refresh.&lt;/p&gt;
+&lt;p&gt;I had been looking forward to meeting &lt;a href=&quot;https://twitter.com/schneidertobias&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tobias van Schneider&lt;/a&gt; (and his luscious beard) for some time. Tobias is a German-born designer that recently led the Spotify brand refresh.&lt;/p&gt;
 
-&lt;p&gt;His talk focused on how keeping side projects focused around fun and stupid ideas helps us from freezing up and over thinking about our work. From &lt;a href=&quot;http://authenticweather.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Authentic Weather&lt;/a&gt; to his own &lt;a href=&quot;http://www.beardbrand.com/products/black-marble-beard-oil&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;line of beard oil&lt;/a&gt;, Tobias has always thought small instead and followed through on some downright silly ideas that have turned into (sometimes viral) side projects. Some guiding principles for successful side projects? Let yourself be stupid, ignore everybody (they all have their own ideas and opinions of how things should be), trust your gut, and stay busy.&lt;/p&gt;
+&lt;p&gt;He talked about keeping side projects fun and stupid. This way, you can keep from overthinking the work. From &lt;a href=&quot;http://authenticweather.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Authentic Weather&lt;/a&gt; to his own &lt;a href=&quot;http://www.beardbrand.com/products/black-marble-beard-oil&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;line of beard oil&lt;/a&gt;, Tobias has followed through on some downright silly ideas. Some guiding principles for successful side projects? Let yourself be stupid, ignore everybody (they all have their own ideas and opinions of how things should be), trust your gut, and stay busy.&lt;/p&gt;
 
 &lt;h2 id=&quot;web-accessibility-is-more-than-accessible-code&quot;&gt;Web Accessibility is More than Accessible Code&lt;/h2&gt;
 &lt;p&gt;As practitioners of web design and development, it’s our job to make our websites usable, visually pleasing, and accessible – and that doesn’t mean just developers/engineers implementing accessible code.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/Jennison&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion&lt;/a&gt;, Co-Director of the Adaptech Research Network, spoke about how producing accessible content means designing and developing user experiences that everyone, including people with disabilities, can independently consume and interact with. From touching on resources for &lt;a href=&quot;http://jxnblk.com/colorable/demos/text/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;sufficient color contrast&lt;/a&gt; to walking us through the experience of using a screenreader on &lt;a href=&quot;https://www.united.com/ual/en/us/?root=1&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;United.com&lt;/a&gt;, Jennison got me thinking about how web professionals can (and should) improve accessibility across their work.&lt;/p&gt;
 
-&lt;p&gt;For a first web conference experience, it was a blast and extremely inspiring. If you’re a web professional or have just been thinking about putting yourself out there and learning how we creatives can help impact the world around us, I’d recommend attending a conference like FOWD. I’m already planning my next steps of finding and contributing to an open source project, working to make my sites more accessible, and might even be thinking about my own beard oil… well, we’ll see about that last one. Now get out there and get learning!&lt;/p&gt;
+&lt;h2 id=&quot;in-conclusion&quot;&gt;In Conclusion&lt;/h2&gt;
+&lt;p&gt;For a first web conference experience, FOWD was a blast and extremely inspiring. If you’re a web professional or have just been thinking about putting yourself out there and learning how we creatives can help impact the world around us, I’d highly recommend attending a conference like FOWD.&lt;/p&gt;
+
+&lt;p&gt;I’m already planning my next steps of finding and contributing to an open source project, working to make my sites more accessible, and might even be thinking about my own beard oil – well, we’ll see about that last one.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/2015/11/15/switching-to-sketch.html</link>
-        <guid isPermaLink="true">/2015/11/15/switching-to-sketch.html</guid>
+        <pubDate>Wed, 11 Nov 2015 14:46:27 -0500</pubDate>
+        <link>/thoughts/conference-recap-fowd-sf.html</link>
+        <guid isPermaLink="true">/thoughts/conference-recap-fowd-sf.html</guid>
         
+        
+        <category>thoughts</category>
         
       </item>
     
       <item>
-        <title>Open Sourcing My Personal Goals</title>
-        <description>&lt;p&gt;In the summer of 2014, I interned as a UX Designer at Viget in Boulder, CO. It was that summer that I (virtually) met fellow intern Una Kravets, who was interning as a front-end developer at Viget’s HQ in Falls Church, VA.&lt;/p&gt;
+        <title>Where We Belong</title>
+        <description>&lt;p&gt;“Hello there, how you doin’?
+I’ve got all these thoughts just floating through my brain…” - &lt;a href=&quot;https://www.youtube.com/watch?v=pISPVfRQiOo&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;MCS&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Since our paths crossed, I’ve been following her work (she’s pretty awesome and one of the hardest workers I know), and saw her begin open sourcing her personal goals, both as a way to keep herself accountable and as a means of inspiring others to do the same.&lt;/p&gt;
+&lt;p&gt;We had something back in high school we referred to as the JEP (Junior English Project). Taught by the wonderful, yet eccentric, Darrin Broadway, the junior english struck fear into the hearts of many. The project consisted of a string of readings, assignments, and essays throughout the school year that culminated in each student developing a final project – whether that project be a short story, poem, interpretive dance, documentary, film, etc.&lt;/p&gt;
 
-&lt;p&gt;Well, I was inspired. Often times, it’s difficult to stay disciplined when it comes to what you want to do outside of your normal 9-5 workday. Did you finally read that book on product design techniques? What about that yoga class you’ve been meaning to get to for 4 months? It’s hard. We all find ourselves busy with work and life and more often than not, it’s easier to put off the small things that you’ve been meaning to get done.&lt;/p&gt;
+&lt;p&gt;The writing exercises, the constant pressure, the unrelenting deadlines forced out some of our most creative work of our young lives. The insurmountable idea of having to pump out thousands and thousands of words for a 10-page paper on the themes of Fahrenheit 451 dwindled over time and instead turned into a fuel that fed our minds and our fingers as we wrote (or typed) late into the weeknights.&lt;/p&gt;
 
-&lt;p&gt;It’s now week three of me having open sourced my goals. I’ve Una’s GitHub repo and am working to make it my own. While I still have a ways to go in organize what I want to do, it’s definitely a start and has got me thinking about the mini accomplishments that can be made each and every day.&lt;/p&gt;
+&lt;p&gt;For me, it was some of my best writing. Crafting outlines for essays became second nature and filling them in with carefully considered dabs of light hearted banter with logically executed conclusions became an art at which (at least thought) I thrived.&lt;/p&gt;
+
+&lt;p&gt;This isn’t to say that I was really that great of a writer. For all intents and purposes, I was a 17 year old kid writing a standard 5 paragraph essay on a book we had been assigned to read. But at times, through the many assignments and long nights, I felt that words were truly a medium of unbounded expression.&lt;/p&gt;
+
+&lt;p&gt;Now, I may be setting myself and this catalogue of thoughts up for failure with that prologue, however, I’m hoping that the result will be quite the opposite. My goal? Pen my thoughts on design, code, happiness, and life. Thanks for tuning in.&lt;/p&gt;
+
 </description>
-        <pubDate>Sun, 15 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/2015/11/15/open-sourcing-my-personal-goals.html</link>
-        <guid isPermaLink="true">/2015/11/15/open-sourcing-my-personal-goals.html</guid>
+        <pubDate>Sun, 08 Nov 2015 15:46:27 -0500</pubDate>
+        <link>/thoughts/hello-there.html</link>
+        <guid isPermaLink="true">/thoughts/hello-there.html</guid>
         
+        
+        <category>thoughts</category>
         
       </item>
     
