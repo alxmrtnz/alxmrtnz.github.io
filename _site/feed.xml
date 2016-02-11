@@ -5,9 +5,47 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 11 Feb 2016 07:59:43 -0500</pubDate>
-    <lastBuildDate>Thu, 11 Feb 2016 07:59:43 -0500</lastBuildDate>
+    <pubDate>Thu, 11 Feb 2016 09:11:46 -0500</pubDate>
+    <lastBuildDate>Thu, 11 Feb 2016 09:11:46 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Working with Agile</title>
+        <description>&lt;h2 id=&quot;definition-of-agile&quot;&gt;Definition of Agile&lt;/h2&gt;
+
+&lt;h2 id=&quot;its-place-on-service-year-2-short-paragraphs&quot;&gt;It’s place on Service Year (2 short paragraphs)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;brief overview of Service Year&lt;/li&gt;
+  &lt;li&gt;history of methods
+– always been agile, but being ISL’s first large scale application build, our process has also gone through many iterations and is always evolving
+– Sprints broken up by team at first, then alternated, now together&lt;/li&gt;
+  &lt;li&gt;Determination of Resources, LOE-ing:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;advantages&quot;&gt;Advantages&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ability to identify problems and change methods&lt;/li&gt;
+  &lt;li&gt;Shorter lifecycles for features means being able to refine them over time&lt;/li&gt;
+  &lt;li&gt;Opportunity to learn, change, and grow, both as individuals and team members&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;disadvantages&quot;&gt;Disadvantages&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Quick turnaround time for each sprint can often lead to a lack of documentation (style guide) and sometimes miscommunication&lt;/li&gt;
+  &lt;li&gt;Many many meetings: In order to plan and execute each two-week sprint, there are many meetings both internally and with our client.&lt;/li&gt;
+  &lt;li&gt;The need to really complete each feature 100% within each iteration: this can become tiring for both developers and designers. Luckily, building a tight knit relationship with our client allows us to reevaluate and modify processes as needed.&lt;/li&gt;
+  &lt;li&gt;(Initial) Difficulty onboarding new team members&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Working on a large software and design system can be a challenging and rewarding task.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Feb 2016 14:46:27 -0500</pubDate>
+        <link>/2016/02/01/working-in-an-agile-process.html</link>
+        <guid isPermaLink="true">/2016/02/01/working-in-an-agile-process.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Five of My Favorite Sketch Plugins</title>
@@ -307,7 +345,20 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 &lt;h4 id=&quot;personas&quot;&gt;Personas&lt;/h4&gt;
 &lt;p&gt;In order to better understand each type of user, we created five personas to serve as references throughout the design process.&lt;/p&gt;
 
-&lt;p&gt;[screenshots of personas - caption: “Meet Name, Name, and Name”]&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+        &lt;img src=&quot;/assets/work/fosi/persona-mary.jpg&quot; /&gt;
+    &lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item grid__item--half&quot;&gt;
+        &lt;img src=&quot;/assets/posts/11-28-15/sketch-measure-example.gif&quot; /&gt; 
+    &lt;/div&gt;
+    &lt;div class=&quot;grid__item grid__item--half&quot;&gt;
+        &lt;img src=&quot;/assets/posts/11-28-15/sketch-measure-example.gif&quot; /&gt; 
+    &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h4 id=&quot;user-flows&quot;&gt;User Flows&lt;/h4&gt;
 &lt;p&gt;By working closely with the FOSI team, we were able to ensure that the personas were accurate and helpful. These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
@@ -531,48 +582,6 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
         <link>/2015/11/15/open-sourcing-my-personal-goals.html</link>
         <guid isPermaLink="true">/2015/11/15/open-sourcing-my-personal-goals.html</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>To the Future (of Web Design)&lt;br&gt;A Conference Recap</title>
-        <description>
-&lt;p&gt;One of the best things about being a part of a design team at an agency like ISL is getting the opportunity to grow both creatively and professionally. Our company makes a huge effort to support our team’s growth and encourages employees to attend industry conferences.&lt;/p&gt;
-
-&lt;p&gt;Recently, I attended the Future of Web Design (FOWD) conference in San Francisco. The conference was a 3-day event for designers, front-end developers, and other creatives working to make the web a better place.&lt;/p&gt;
-
-&lt;p&gt;Here are the biggest lessons I learned:&lt;/p&gt;
-
-&lt;h2 id=&quot;open-source-design-is-a-pretty-awesome-thing&quot;&gt;Open Source Design is a (Pretty Awesome) Thing&lt;/h2&gt;
-&lt;p&gt;The most inspiring talk came from &lt;a href=&quot;https://twitter.com/garthdb&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Garth Braithwaite&lt;/a&gt;, a product designer and front-end developer on PhoneGap at Adobe.&lt;/p&gt;
-
-&lt;p&gt;Garth discussed the benefits of open source design and detailed some of his work on &lt;a href=&quot;http://www.nightscout.info/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;NightScout&lt;/a&gt;, an app developed by parents of children with Type 1 Diabetes to remotely help track blood sugar levels (and save lives). By connecting data from a monitoring device, parents can send live updates to their phones and smartwatches.&lt;/p&gt;
-
-&lt;p&gt;His advice for getting into open source?&lt;/p&gt;
-
-&lt;p&gt;Whether it’s designing a logo, contributing code, or just adding a new perspective to the conversation, he recommends finding something you’re passionate about. There are also some &lt;a href=&quot;http://opendesign.foundation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;https://github.com/opensourcedesign&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;places&lt;/a&gt; you can go to get started.&lt;/p&gt;
-
-&lt;h2 id=&quot;side-projects-are-stupid-and-theyre-supposed-to-be&quot;&gt;Side Projects are Stupid… and They’re Supposed to Be&lt;/h2&gt;
-&lt;p&gt;I had been looking forward to meeting &lt;a href=&quot;https://twitter.com/schneidertobias&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tobias van Schneider&lt;/a&gt; (and his luscious beard) for some time. Tobias is a German-born designer that recently led the Spotify brand refresh.&lt;/p&gt;
-
-&lt;p&gt;He talked about keeping side projects fun and stupid. This way, you can keep from overthinking the work. From &lt;a href=&quot;http://authenticweather.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Authentic Weather&lt;/a&gt; to his own &lt;a href=&quot;http://www.beardbrand.com/products/black-marble-beard-oil&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;line of beard oil&lt;/a&gt;, Tobias has followed through on some downright silly ideas. Some guiding principles for successful side projects? Let yourself be stupid, ignore everybody (they all have their own ideas and opinions of how things should be), trust your gut, and stay busy.&lt;/p&gt;
-
-&lt;h2 id=&quot;web-accessibility-is-more-than-accessible-code&quot;&gt;Web Accessibility is More than Accessible Code&lt;/h2&gt;
-&lt;p&gt;As practitioners of web design and development, it’s our job to make our websites usable, visually pleasing, and accessible – and that doesn’t mean just developers/engineers implementing accessible code.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/Jennison&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion&lt;/a&gt;, Co-Director of the Adaptech Research Network, spoke about how producing accessible content means designing and developing user experiences that everyone, including people with disabilities, can independently consume and interact with. From touching on resources for &lt;a href=&quot;http://jxnblk.com/colorable/demos/text/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;sufficient color contrast&lt;/a&gt; to walking us through the experience of using a screenreader on &lt;a href=&quot;https://www.united.com/ual/en/us/?root=1&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;United.com&lt;/a&gt;, Jennison got me thinking about how web professionals can (and should) improve accessibility across their work.&lt;/p&gt;
-
-&lt;h2 id=&quot;in-conclusion&quot;&gt;In Conclusion&lt;/h2&gt;
-&lt;p&gt;For a first web conference experience, FOWD was a blast and extremely inspiring. If you’re a web professional or have just been thinking about putting yourself out there and learning how we creatives can help impact the world around us, I’d highly recommend attending a conference like FOWD.&lt;/p&gt;
-
-&lt;p&gt;I’m already planning my next steps of finding and contributing to an open source project, working to make my sites more accessible, and might even be thinking about my own beard oil – well, we’ll see about that last one.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 11 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/thoughts/conference-recap-fowd-sf.html</link>
-        <guid isPermaLink="true">/thoughts/conference-recap-fowd-sf.html</guid>
-        
-        
-        <category>thoughts</category>
         
       </item>
     

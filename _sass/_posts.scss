@@ -72,10 +72,10 @@ $post-content-max-width: 700px;
 
 $post-image-padding-top: 20px;
 
-.post-content {
-    max-width: $post-content-max-width;
-    padding: 0px 20px;
-    margin: 0 auto 70px auto;
+
+
+.post-content, .work-content {
+    
 
     @media screen and (min-width: $on-laptop) {
         // padding: 90px 150px;
@@ -141,6 +141,58 @@ $post-image-padding-top: 20px;
     }
 }
 
+.post-content {
+    max-width: $post-content-max-width;
+    padding: 0px 20px;
+    margin: 0 auto 70px auto;
+}
+
+// This work-content class is used to contain all text within case studies.
+// Here we set max-widths on all text so that we can have images in 
+// case studies break the width of the surrounding text.
+.work-content {
+    h1, h2, h3, h4, h5, p {
+        max-width: $post-content-max-width;
+        padding: 0px 20px;
+    }
+
+    h1, h2, h3, h4, h5, p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid {
+        display: flex;
+        max-width: 1400px;
+        margin: 70px auto;
+        padding: 0px 50px;
+    }
+
+    .grid__item {
+        box-sizing: border-box;
+        margin-right: 2%;
+    }
+
+    .grid__item--full {
+        flex-basis: 100%;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .grid__item--half {
+        flex-basis: 50%;
+        width: auto;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
 .post-nav {
     overflow: hidden;
     border-top: 1px solid $grey-color;
@@ -164,7 +216,7 @@ $post-image-padding-top: 20px;
 
 .post-comments {
     max-width: $post-content-max-width;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
 }
 
 span.img-caption {
