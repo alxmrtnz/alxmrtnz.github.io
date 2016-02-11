@@ -110,23 +110,16 @@ a.link--heading {
   text-decoration: underline; }
 
 a.link--text-in-p {
+  transition: all 0.2s;
+  background-image: linear-gradient(to bottom, #E0DDF0 0%, #E0DDF0 100%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 1em;
   color: #8A70DB;
-  position: relative;
-  transition: all .2s;
-  display: inline-block; }
-  a.link--text-in-p:hover:after {
-    height: calc(100% - 5px);
-    background-color: #E0DDF0; }
-  a.link--text-in-p:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    bottom: 3px;
-    background-color: #E0DDF0;
-    height: 1px;
-    width: 100%;
-    left: 0px;
-    transition: all .15s; }
+  overflow: hidden; }
+  a.link--text-in-p:hover {
+    background-image: linear-gradient(to bottom, #E0DDF0 0%, #E0DDF0 100%);
+    background-position: 0 0em; }
 
 /**
  * Blockquotes

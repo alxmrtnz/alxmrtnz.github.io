@@ -171,31 +171,50 @@ a.link--heading {
 }
 
 a.link--text-in-p {
-    color: $brand-color;
-    position: relative;
-    transition: all .2s;
-    display: inline-block;
+    transition: all 0.2s;
+      background-image: linear-gradient(to bottom, $hover-color 0%, $hover-color 100%);
+      // background-size: 100% 0.1em;
+      // background-size: 100% 0.1em;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 0 1em;
+      color: $brand-color;
+      overflow: hidden;
 
-    &:hover {
-        // color: $white;
+      &:hover {
+        background-image: linear-gradient(to bottom, $hover-color 0%, $hover-color 100%);
+        background-position: 0 0em;
+      }
 
-        &:after {
-            height: calc(100% - 5px);
-            background-color: $hover-color;
-        }
-    }
 
-    &:after {
-        z-index: -1;
-        content: '';
-        position: absolute;
-        bottom: 3px;
-        background-color: $hover-color;
-        height: 1px;
-        width: 100%;
-        left: 0px;
-        transition: all .15s;
-    }
+    // color: $brand-color;
+    // position: relative;
+    // transition: all .2s;
+    // display: inline-block;
+    // // background-image: linear-gradient(to top, rgba(0, 0, 1, 0) 0%, $hover-color 2px, rgba(0, 0, 0, 0) 0%);
+
+    // &:hover {
+
+    //     // background-image: linear-gradient(to top, $hover-color 0%, $hover-color 100%, rgba(0, 0, 0, 0) 0%);
+    //     // color: $white;
+
+    //     &:after {
+    //         height: calc(100% - 5px);
+    //         background-color: $hover-color;
+    //     }
+    // }
+
+    // &:after {
+    //     z-index: -1;
+    //     content: '';
+    //     position: absolute;
+    //     bottom: 3px;
+    //     background-color: $hover-color;
+    //     height: 1px;
+    //     width: 100%;
+    //     left: 0px;
+    //     transition: all .15s;
+    // }
 }
 
 
