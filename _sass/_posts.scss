@@ -2,7 +2,9 @@
  * Post content
  */
 
-$post-content-max-width: 700px;
+$post-content-max-width: 720px;
+$media-max-width: 1400px;
+$media-padding: 0px 50px;
 
 .page-content {
     padding: $spacing-unit 0 0 0;
@@ -151,39 +153,75 @@ $post-image-padding-top: 20px;
 // Here we set max-widths on all text so that we can have images in 
 // case studies break the width of the surrounding text.
 .work-content {
-    h1, h2, h3, h4, h5, p {
+    h1, h2, h3, h4, h5, p, ol, ul {
         max-width: $post-content-max-width;
         padding: 0px 20px;
-    }
-
-    h1, h2, h3, h4, h5, p {
         margin-left: auto;
         margin-right: auto;
     }
 
+    ol, ul {
+        // font-size: 20px;
+        background: $grey-color-light;
+        padding: 35px 50px;
+        max-width: 625px;
+
+        li {
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    
+    .video-container {
+        max-width: $media-max-width; 
+        margin: 0 auto;
+        padding: $media-padding;
+    }
+    .embed-container { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: 
+        hidden; max-width: 100%; 
+    } 
+
+    .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+    }
     .grid {
         display: flex;
-        max-width: 1400px;
+        max-width: $media-max-width;
         margin: 70px auto;
-        padding: 0px 50px;
+        padding: $media-padding;
+        flex-wrap: wrap;
+        position: relative;
     }
 
     .grid__item {
         box-sizing: border-box;
         margin-right: 2%;
+        margin-bottom: 20px;
+        text-align: center;
+        width: auto;
+
     }
 
     .grid__item--full {
         flex-basis: 100%;
         margin: 0 auto;
-        width: auto;
+        text-align: center;
     }
 
     .grid__item--half {
-        flex-basis: 50%;
-        width: auto;
+        flex-basis: 49%;
 
-        &:last-child {
+        &.end {
             margin-right: 0;
         }
     }

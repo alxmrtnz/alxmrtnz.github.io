@@ -28,6 +28,9 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+
+    -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
@@ -121,7 +124,7 @@ p {
 
     @media screen and (min-width: $on-palm) {
         font-size: 22px;
-        line-height: 32px;
+        line-height: 35px;
         margin-bottom: 35px;
     }
     position: relative;
