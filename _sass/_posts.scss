@@ -29,7 +29,7 @@ $media-padding: 0px 50px;
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $gray-color;
 }
 
 .post-link {
@@ -65,10 +65,10 @@ $media-padding: 0px 50px;
 
 .post-origin {
     padding: 10px 0px;
-    border-top: 1px solid $grey-color;
-    border-bottom: 1px solid $grey-color;
+    border-top: 1px solid $gray-color;
+    border-bottom: 1px solid $gray-color;
     font-style: italic;
-    color: $grey-color-dark;
+    color: $gray-color-dark;
     text-align: center;
 }
 
@@ -93,7 +93,7 @@ $post-image-padding-top: 20px;
 
     h2 {
         font-size: 22px;
-        margin-top: 60px;
+        // margin-top: 60px;
 
         @media screen and (min-width: $on-palm) {
             font-size: 30px;
@@ -110,10 +110,12 @@ $post-image-padding-top: 20px;
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
 
-        @include media-query($on-laptop) {
-            font-size: 18px;
+        @media screen and (min-width:$on-laptop) {
+            // font-size: 56px;
+
         }
     }
     ol {
@@ -162,7 +164,7 @@ $post-image-padding-top: 20px;
 
     ol, ul {
         // font-size: 20px;
-        background: $grey-color-light;
+        background: $gray-color-light;
         padding: 35px 50px;
         max-width: 625px;
 
@@ -176,7 +178,7 @@ $post-image-padding-top: 20px;
     }
     
     .video-container {
-        max-width: $media-max-width; 
+        max-width: 1000px; 
         margin: 0 auto;
         padding: $media-padding;
     }
@@ -229,11 +231,46 @@ $post-image-padding-top: 20px;
     img {
         max-width: 100%;
     }
+
+
 }
+
+.bg--gray {
+    background: $gray-color;
+}
+
+.bg--purple {
+    background: $hover-color;
+    color: #542e71;
+
+    p {
+        color: #542e71;
+    }
+}
+
+.content-section {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    border: 17px solid #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.fin-tip {
+    width: 40px;
+    height: 7px;
+    background: $black;
+    margin: 0 auto 50px auto;
+}
+
 
 .post-nav {
     overflow: hidden;
-    border-top: 1px solid $grey-color;
+    border-top: 1px solid $gray-color;
     padding-top: 20px;
     max-width: $post-content-max-width;
     margin: 20px auto;

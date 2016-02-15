@@ -1,6 +1,6 @@
 .wrapper-bg-and-border {
 	
-	background: $grey-color;
+	background: $gray-color;
 	border: 17px solid #fff;
 	
 	box-sizing: border-box;
@@ -37,7 +37,7 @@
 		margin-right: .5em;
 		a{
 			transition: all .25s ease;
-			color: $grey-color-light;
+			color: $gray-color-light;
 			&:hover{
 				text-decoration: none;
 				color: $brand-color;

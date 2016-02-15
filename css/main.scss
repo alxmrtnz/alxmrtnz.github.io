@@ -7,7 +7,7 @@
 
 // Our variables
 $sans-serif: "aktiv-grotesk",sans-serif;
-$serif: "athelas",serif;
+$serif: "freight-text-pro",serif;
 $monotype: "inconsolata",sans-serif;
 
 $base-font-family: Helvetica, Arial, sans-serif;
@@ -20,17 +20,17 @@ $heading-font-family: $sans-serif;
 
 $spacing-unit:     30px;
 
-$text-color:       	#111;
+$text-color:       	#2e2e2e;
 $white: 			#fff;
 $background-color: 	$white;
 $brand-color:      	#8A70DB;
 
 $hover-color:		#E0DDF0;
 
-$black:				#262626;
-$grey-color:       	#F0F1F3;
-$grey-color-light: 	lighten($grey-color, 3%);
-$grey-color-dark:  	darken($grey-color, 25%);
+$black:				rgba(0,0,0,0.77);
+$gray-color:       	#F0F1F3;
+$gray-color-light: 	lighten($gray-color, 3%);
+$gray-color-dark:  	darken($gray-color, 25%);
 $blue-color:	   	#419BF9;
 
 $on-palm:          600px;

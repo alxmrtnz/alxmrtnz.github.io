@@ -29,8 +29,8 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 
-    -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+    // -webkit-font-smoothing: antialiased;
+    //     -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
@@ -53,7 +53,7 @@ ul, ol, dl, figure,
 
 
 hr {
-    border: 1px solid $grey-color;
+    border: 1px solid $gray-color;
     margin-bottom: $paragraph-margin-bottom;
 }
 
@@ -117,7 +117,7 @@ h2 {
  */
 p {
     font-family: $serif;
-    
+    color: rgba(0,0,0,0.75);
     font-size: 19px;
     line-height: 28px;
     margin-bottom: 20px;
@@ -225,8 +225,8 @@ a.link--text-in-p {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $gray-color;
+    border-left: 4px solid $gray-color-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -245,7 +245,7 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $gray-color-light;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -317,7 +317,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $gray-color;
         }
     }
 }
@@ -331,4 +331,8 @@ pre {
     font-size: 1em;
     &.hello{
     }
+}
+
+.text-center {
+    text-align: center;
 }
