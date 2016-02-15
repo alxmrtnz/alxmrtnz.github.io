@@ -7,9 +7,9 @@
 
     {% include header.html %}
     {% include nav.html %}
-    <div class="page-content">
-      <div class="work-content">
-          <header class="post-header">
+    <div class="page-content page-content--work">
+      
+          <header class="hero">
             <div class="featured-icon">
               <img src="{{ site.url }}{{ page.featured-icon-url }}" alt="{{ page.featured-icon-alt }}">
             </div> 
@@ -23,8 +23,9 @@
 
             
           </header>
+
+      <div class="work-content">
           {{ content }}
-          
       </div>
       
       <div class="post-comments">

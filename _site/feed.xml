@@ -5,13 +5,22 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 14 Feb 2016 19:00:18 -0500</pubDate>
-    <lastBuildDate>Sun, 14 Feb 2016 19:00:18 -0500</lastBuildDate>
+    <pubDate>Mon, 15 Feb 2016 14:58:09 -0500</pubDate>
+    <lastBuildDate>Mon, 15 Feb 2016 14:58:09 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>Working with Agile</title>
-        <description>&lt;h2 id=&quot;definition-of-agile&quot;&gt;Definition of Agile&lt;/h2&gt;
+        <description>&lt;p&gt;From building a car to producing a website, the waterfall method has long been one of the most popular processes for production industries. Comprised of a discrete series of steps completed in succession, one could say that waterfall is the production line of processes of all work processes.&lt;/p&gt;
+
+&lt;p&gt;In theory, the waterfall method is efficient. There is a clear start and finish to each phase of a project and everyone is on the same page.&lt;/p&gt;
+
+&lt;p&gt;In the realm of digital products, where MVPs (minimum vialable products), user testing, and iteration are used to gauge the success of new features and produce a road map for the product itself, the waterfall method has its flaws. A lack of collaboration and communication between teams members due to a segmented waterfall process can lead to miscommunication, a less successful project, and overall sadness.&lt;/p&gt;
+
+&lt;h2 id=&quot;enter-agile&quot;&gt;Enter Agile&lt;/h2&gt;
+&lt;p&gt;A newer methodology, the agile process, aims to fix some of the problems caused by is a process created by software engineers in the early 2000’s that helps teams design, build, and iterate faster than ever before.&lt;/p&gt;
+
+&lt;p&gt;http://www.howdesign.com/editors-picks/dont-go-chasing-waterfalls-agile-web-design/&lt;/p&gt;
 
 &lt;h2 id=&quot;its-place-on-service-year-2-short-paragraphs&quot;&gt;It’s place on Service Year (2 short paragraphs)&lt;/h2&gt;
 &lt;ul&gt;
@@ -330,7 +339,6 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 
 &lt;!-- A website redesign for fosi.org that combines industry news, resources, and events with a new platform, Good Digital Parenting. The Family Online Safety Institute is an international, non-profit organization which works to make the online world safer for kids and their families. Our intended audiences were K-12 families, policy-makers, and industry professionals. --&gt;
 
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
 &lt;p&gt;The &lt;a href=&quot;http://www.fosi.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Family Online Safety Institute&lt;/a&gt; (FOSI) came to &lt;a href=&quot;http://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to redesign and rebuild their website. Our mission was twofold —to combine fosi.org and aplaftormforgood.org (now Good Digital Parenting) under one umbrella, and to create a beautiful design and a user friendly experience&lt;/p&gt;
 
 &lt;p&gt;The redesign process involved diving deep into Google Analytics, conducting user testing with key audiences, and unifying the two sites through detailed wireframing and design.&lt;/p&gt;

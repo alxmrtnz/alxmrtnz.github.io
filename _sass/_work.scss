@@ -1,0 +1,126 @@
+// This work-content class is used to contain all text within case studies.
+// Here we set max-widths on all text so that we can have images in 
+// case studies break the width of the surrounding text.
+
+.page-content--work {
+    padding-top: 0px;
+}
+
+.hero {
+    background: teal;
+    margin: 0px 17px 17px 17px;
+    height:300px;
+}
+
+.work-content {
+    h1, h2, h3, h4, h5, p, ol, ul {
+        max-width: $post-content-max-width;
+        padding: 0px 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ol, ul {
+        // font-size: 20px;
+        background: $gray-color-light;
+        padding: 35px 50px;
+        max-width: 625px;
+
+        li {
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    
+    .video-container {
+        max-width: 1000px; 
+        margin: 0 auto;
+        padding: $media-padding;
+    }
+    .embed-container { 
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: 
+        hidden; max-width: 100%; 
+    } 
+
+    .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+    }
+    .grid {
+        display: flex;
+        max-width: $media-max-width;
+        margin: 70px auto;
+        padding: $media-padding;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .grid__item {
+        box-sizing: border-box;
+        margin-right: 2%;
+        margin-bottom: 20px;
+        text-align: center;
+        width: auto;
+
+    }
+
+    .grid__item--full {
+        flex-basis: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .grid__item--half {
+        flex-basis: 49%;
+
+        &.end {
+            margin-right: 0;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+}
+
+.bg--gray {
+    background: $gray-color;
+}
+
+.bg--purple {
+    background: $hover-color;
+    color: #542e71;
+
+    p {
+        color: #542e71;
+    }
+}
+
+.content-section {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+    border: 17px solid #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.fin-tip {
+    width: 40px;
+    height: 7px;
+    background: $black;
+    margin: 0 auto 50px auto;
+}

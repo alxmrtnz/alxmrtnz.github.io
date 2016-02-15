@@ -7,13 +7,22 @@ comments: true
 featured-icon-url: /assets/posts/11-09-15/icon-bridge.png
 featured-icon-alt: "Icon of Golden Gate Bridge"
 read-time: 2 min read
-origin: the isl.co blog
 origin-date: 2015-11-11 19:46:27
 origin-link: https://isl.co/2015/11/to-the-future-of-web-design-a-conference-recap/
 ---
 
-Definition of Agile
-----------------------------------------------
+From building a car to producing a website, the waterfall method has long been one of the most popular processes for production industries. Comprised of a discrete series of steps completed in succession, one could say that waterfall is the production line of processes of all work processes.
+
+In theory, the waterfall method is efficient. There is a clear start and finish to each phase of a project and everyone is on the same page. 
+
+In the realm of digital products, where MVPs (minimum vialable products), user testing, and iteration are used to gauge the success of new features and produce a road map for the product itself, the waterfall method has its flaws. A lack of collaboration and communication between teams members due to a segmented waterfall process can lead to miscommunication, a less successful project, and overall sadness.
+
+Enter Agile 
+--------------
+A newer methodology, the agile process, aims to fix some of the problems caused by is a process created by software engineers in the early 2000’s that helps teams design, build, and iterate faster than ever before.
+
+http://www.howdesign.com/editors-picks/dont-go-chasing-waterfalls-agile-web-design/ 
+
 
 It's place on Service Year (2 short paragraphs)
 ----------------------------------------------
