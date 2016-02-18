@@ -1,87 +1,92 @@
 ---
-layout: post
+layout: case-study
 title:  "Service Year"
 date:   2015-11-28 19:46:27
-<!-- categories: conferences recaps -->
-featured-icon-url: /assets/posts/11-28-15/icon-sketch-plugin.png
-featured-icon-alt: "Sketch Plugin"
-comments: true
+comments: false
 category: work
 permalink: /:categories/:title.html
+work-type: UX/UI, Product Design
+work-summary: Service Year is an platform that connects volunteers with the best of America's non-profits in order to take on national years of service.
+external-link: http://www.serviceyr.org/
 ---
 
-[garth]: 		https://twitter.com/garthdb
-[nightscout]: 	http://www.nightscout.info/
+<div class="grid grid--featured-image grid--no-bg">
+	<div class="grid__item grid__item--full">
+	    <img class="item-img--full" src="{{ site.url }}/assets/work/serviceyear/featured-image-sy.jpg">
+	</div> 
+</div>
+
+Intro
+- The problem at hand: There are far many more young americans that want to volunteer and give back to their communities than there are positions available.
+- The Service Year platform is trying to solve that problem by bringing the nation's best service opportunities into one place. Not only that, but by creating a clear unified system for discovering and connecting with host organizations, Service Year provides future "corps members" with an easier path to service opportunities (instead of all of the difficult to manage government sites of yesterday).
+- Service Year also gives organizations the ability to find individuals with interests that match their needs, giving both parties a means of connecting with one another
+- Stats (get these from Chad):
+-- # Orgs
+-- # Users
+-- # SYs begun
+
+My Role
+- Brought onto the Service Year project just as an identity and branding was being established. My role was to serve as the lead visual designer and also contribute to user experience design alongside our team's UX lead.
+- Over the past year, I designed various public facing pages (user profiles, search), user flows (profile creation, editing, etc), and established a style guide that serves as a source of truth for the project's many design tasks documenting everything from buttons to forms to type to various UI elements
+
+Shaping Complexity
+- Talk about how big the platform really is
+-- Made up of Corps Members (users looking for service opportunities), Organization Users (that create positions, listings for opportunities, and search for CMs), and Admins (the team that manages the orgs and user in the system).
+-- All three of these user types interact with their own unique dashboard and mapping the flows of different interactions, models, and objects can prove a difficult challenge, especially with the need to certify various things that orgs post (positions and whatnot)
+
+- Corps Members
+Talk about shaping their process, from signing up to profile creation to finding and being matched with an organization and then documenting their service journey. 
+-- Here, highlight the CM profile that changes over time as a CM progresses through their year(s) of service
+
+- Organizations
+Talk about positions and listings and the challenge of creating a job posting site that kind of works like a job listing site but not really
+
+- Search
+Talk about solving complexity around searching for the different types of content on the SY platform to allow various user types to find what they need.
+
+Working in an Agile process (An Ever Evolving Platform)
+- Talk about our Agile process. It's evolved over time as both the design and development team have discovered things that work and don't work. 
+- Talk about going from a single unified sprint to split sprints, back to a unified sprint
+
+Lessons Learned
+- Agile
+- Large system planning is more difficult than meets the eye
+- Working both with a small (design) team and large (whole) team
+- Learning how to fail, recognize the failure, and make changes to improve moving forward
+
+Conclusion
+SY is an ongoing and ever evolving project that aims to become the nation's leader in national service opportunities
 
 
 
-Intro paragraph describing service year as the nation's best way to connect volunteers with national service opportunities.
-A website redesign that combines the old everyoneon.org and connect2compete.org. EveryoneOn aims to bridge the digital divide by providing affordable internet access. Our targeted audiences were K-12 families, seniors, and job-seekers, providing a difficult challenge for a wide range of age groups, backgrounds, and goals.
 
+<div class="grid">
+	<div class="grid__item grid__item--half">
+	    <img src="{{ site.url }}/assets/work/fosi/persona-david.jpg">
+	    
+	</div> 
+	<div class="grid__item grid__item--half end">
+	    <img src="{{ site.url }}/assets/work/fosi/persona-mary.jpg">
+	</div> 
+</div>
 
-Project Overview
-----------------------------------------------
+###User Flows
+These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.
 
-Information Architecture
-----------------------------------------------
-Talk about working with Ali on sitemap and wireframes. Talk about how the system as a whole was to be huge – multiple user types, public facing application mixed with dashboard utility for each user type. System has to cater to both recruiting organizations and exploring corps members.
+<div class="grid">
+    <div class="grid__item grid__item--full">
+    	<img src="{{ site.url }}/assets/work/fosi/fosi-user-flow-david.png">
+    </div>
+</div>
 
+<div class="fin-tip">		
+</div>
 
+<h2 class="text-center">
+	A Flexible, Responsive Publishing Platform
+</h2>
 
-----
-
-And now, some of my favorite plugins:
-
-1\. <a href="https://github.com/utom/sketch-measure" target="_blank" class="link--heading">Sketch Measure</a>
-----------------------------------------------
-<a href="https://github.com/utom/sketch-measure" target="_blank" class="">![Sketch Measure Animated Screenshot]({{ site.url }}/assets/posts/11-28-15/sketch-measure-example.gif)</a>
-
-Sketch Measure is an invaluable tool for annotating your design comps. The plugin helps you create markings to show heights, widths, paddings, and margins of elements. It's great for sharing designs with developers or fellow designers.
-
-2\. <a href="https://github.com/andrewfiorillo/sketch-palettes" target="_blank" class="link--heading">Sketch Palettes</a>
-----------------------------------------------
-<a href="https://github.com/andrewfiorillo/sketch-palettes" target="_blank" class="">![Sketch Measure Animated Screenshot]({{ site.url }}/assets/posts/11-28-15/sketch-palettes-screenshot.png)</a>
-
-If you've used Photoshop, then you're familiar with how you can save out and load sets of color swatches. This kind of color management is especially useful if you're working on a project with a lot of other designers. 
-
-Unfortunately, Sketch doesn't come with the same functionality. Each new file requires you to re-add colors one-by-one. Setting up colors in file after file can get old pretty fast.
-
-Luckily, the Sketch Palettes plugin lets you export and later load sets of colors into your new Sketch files. Save, load, and presto! Quick color palettes in Sketch.
-
-3\. <a href="https://github.com/ddwht/sketch-dynamic-button" target="_blank" class="link--heading">Dynamic Buttons<a>
-----------------------------------------------
-<a href="https://github.com/ddwht/sketch-dynamic-button" target="_blank">
-	![Dynamic Buttons Animated Screenshot]({{ site.url }}/assets/posts/11-28-15/dynamic-buttons-screenshot.gif)
-</a>
-
-Have you ever created a button with the perfect size but then had to change the text and readjust its padding? Fret no more. 
-
-Dynamic Buttons allows you to specify the padding of your button and then, whenever you change the text within, you can use a simple keyboard shortcut dynamically readjust its padding. Pixel perfect button padding made simple. Oh, and <a href="https://medium.com/@poohbers/dynamic-button-sketch-plugin-946638e73398#.t29zevs6g" class="link--text-in-p" target="_blank">here's a quick how-to!</a>
-
-4\. <a href="https://github.com/shahruz/Send-to-Slack" target="_blank" class="link--heading">Send to Slack</a>
-----------------------------------------------
-<a href="https://github.com/shahruz/Send-to-Slack" target="_blank">
-	![Send to Slack Animated Screenshot]({{ site.url }}/assets/posts/11-28-15/send-to-slack-example.gif)
-</a>
-
-At <a href="https://isl.co" class="link--text-in-p" target="_blank">ISL</a>, we constantly use Slack to message each other about anything and everything. Slack has also become a fast way to share and discuss designs. 
-
-With the Send to Slack plugin, you can quickly send an art board in Sketch to anyone on your Slack team. Instead of having to export and upload art boards, the plugin lets you select a user or channel to export and upload to all at once.
-
-5\. <a href="https://github.com/getflourish/Sketch-Color-Contrast-Analyser" target="_blank" class="link--heading">Color Contrast Analyser for Sketch</a>
-----------------------------------------------
-<a href="https://github.com/getflourish/Sketch-Color-Contrast-Analyser" target="_blank">
-	![Sketch Measure Animated Screenshot]({{ site.url }}/assets/posts/11-28-15/sketch-color-analyser-screenshot.png)
-</a>
-
-Ever since <a href="/2015/11/11/conference-recap-fowd-sf.html#web-accessibility-is-more-than-accessible-code" class="link--text-in-p">Jennison Asuncion's talk</a>  at the FOWD conference, accessible design has been on my mind. The Color Contrast Analyzer plugin lets you find out if the colors in your design have a high enough contrast for users with low vision.
-
-The plugin adheres to the <a href="http://www.w3.org/TR/WCAG20/" target="_blank" class="link--text-in-p">W3's accessibility guidelines</a> and instantly shows you what rating your work would receive (A, AA, AAA).
-
-And there's more...
--------------------
-The number of Sketch plugins is growing every day thanks to a thriving Sketch community. Do you have any favorite plugins? Let me know below!
-
+At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at 
 
 
 

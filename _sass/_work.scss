@@ -7,10 +7,46 @@
 }
 
 .hero {
-    background: teal;
     margin: 0px 17px 17px 17px;
-    height:300px;
 }
+
+.hero__content {
+    max-width: 1070px;
+    margin: 150px auto;
+}
+
+.hero__title-container, .hero__summary-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.hero__title-container {
+    width: 38%;
+    margin-right: 3%
+}
+
+.work-type {
+    margin-bottom: 10px;
+}
+
+.work-title {
+    font-size: 38px;
+    line-height: 45px;
+}
+
+.hero__summary-container {
+    width: 58%;
+    max-width: 600px;
+}
+
+.work-summary {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
 
 .work-content {
     h1, h2, h3, h4, h5, p, ol, ul {
@@ -37,7 +73,7 @@
     
     .video-container {
         max-width: 1000px; 
-        margin: 0 auto;
+        margin: 0 auto 50px auto;
         padding: $media-padding;
     }
     .embed-container { 
@@ -54,47 +90,67 @@
         width: 100%; 
         height: 100%; 
     }
-    .grid {
-        display: flex;
-        max-width: $media-max-width;
-        margin: 70px auto;
-        padding: $media-padding;
-        flex-wrap: wrap;
-        position: relative;
-    }
-
-    .grid__item {
-        box-sizing: border-box;
-        margin-right: 2%;
-        margin-bottom: 20px;
-        text-align: center;
-        width: auto;
-
-    }
-
-    .grid__item--full {
-        flex-basis: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .grid__item--half {
-        flex-basis: 49%;
-
-        &.end {
-            margin-right: 0;
-        }
-    }
-
-    img {
-        max-width: 100%;
-    }
+    
 
 
 }
 
+.grid {
+    background: $gray-color;
+    display: flex;
+    // max-width: $media-max-width;
+    margin: 70px 17px;
+    padding: 80px 40px 60px 40px;
+    flex-wrap: wrap;
+    position: relative;
+
+    &.grid--featured-image {
+        padding: 100px 20px;
+    }
+
+    &.grid--no-bg {
+        padding:0px;
+        background: none;
+    }
+}
+
+.grid__item {
+    box-sizing: border-box;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    text-align: center;
+    width: auto;
+
+}
+
+.grid__item--full {
+    flex-basis: 100%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.grid__item--half {
+    flex-basis: 49%;
+
+    &.end {
+        margin-right: 0;
+    }
+}
+
+.item-img--full {
+   width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
 .bg--gray {
     background: $gray-color;
+}
+
+.bg--navy {
+    background: #1D2433;
 }
 
 .bg--purple {

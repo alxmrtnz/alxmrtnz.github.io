@@ -10,18 +10,22 @@
     <div class="page-content page-content--work">
       
           <header class="hero">
-            <div class="featured-icon">
-              <img src="{{ site.url }}{{ page.featured-icon-url }}" alt="{{ page.featured-icon-alt }}">
-            </div> 
-            <p class="post-date text--mono">{{ page.date | date: "%B %-d, %Y" }}</p>
-            <h1 class="post-title heading--large">{{ page.title }}</h1>
-            {% if page.origin %} 
-              <p class="post-origin">
-                This post originally appeared on <a href="{{ page.origin-link }}" target="_blank" class="link--text-in-p">{{ page.origin }}</a> on {{ page.origin-date | date: "%B %-d, %Y" }}
-              </p>
-            {% endif %}
+            <div class="hero__content">
+              <p class="work-type text--mono">{{ page.work-type }}</p>
+              <div class="hero__title-container">
+                <h1 class="work-title heading--large">{{ page.title }}</h1>
+              </div>  
+              <div class="hero__summary-container">
+                <p class="work-summary">
+                  {{ page.work-summary }}
+                </p>
+                <p class="work-summary">
+                  <a href="{{ page.external-link }}" target="_blank" class="link--text-in-p">Visit the Website</a>
+                </p>
 
-            
+              </div> <!-- end .hero__summary-container -->
+              
+            </div>
           </header>
 
       <div class="work-content">

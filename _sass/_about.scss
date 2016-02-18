@@ -1,4 +1,11 @@
-
+.grid.grid--about {
+	background: #E2E5EC;
+	padding: 0px;
+	.grid__item--full {
+		padding: 0px;
+		margin: 0 auto;
+	}
+}
 
 .heading--bio {
 	@media screen and (min-width: $on-laptop) {

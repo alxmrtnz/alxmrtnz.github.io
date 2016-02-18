@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 15 Feb 2016 14:58:09 -0500</pubDate>
-    <lastBuildDate>Mon, 15 Feb 2016 14:58:09 -0500</lastBuildDate>
+    <pubDate>Wed, 17 Feb 2016 23:33:26 -0500</pubDate>
+    <lastBuildDate>Wed, 17 Feb 2016 23:33:26 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -127,62 +127,86 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
     
       <item>
         <title>Service Year</title>
-        <description>
-&lt;p&gt;Intro paragraph describing service year as the nation’s best way to connect volunteers with national service opportunities.
-A website redesign that combines the old everyoneon.org and connect2compete.org. EveryoneOn aims to bridge the digital divide by providing affordable internet access. Our targeted audiences were K-12 families, seniors, and job-seekers, providing a difficult challenge for a wide range of age groups, backgrounds, and goals.&lt;/p&gt;
+        <description>&lt;div class=&quot;grid grid--featured-image grid--no-bg&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img class=&quot;item-img--full&quot; src=&quot;/assets/work/serviceyear/featured-image-sy.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
 
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;Intro
+- The problem at hand: There are far many more young americans that want to volunteer and give back to their communities than there are positions available.
+- The Service Year platform is trying to solve that problem by bringing the nation’s best service opportunities into one place. Not only that, but by creating a clear unified system for discovering and connecting with host organizations, Service Year provides future “corps members” with an easier path to service opportunities (instead of all of the difficult to manage government sites of yesterday).
+- Service Year also gives organizations the ability to find individuals with interests that match their needs, giving both parties a means of connecting with one another
+- Stats (get these from Chad):
+– # Orgs
+– # Users
+– # SYs begun&lt;/p&gt;
 
-&lt;h2 id=&quot;information-architecture&quot;&gt;Information Architecture&lt;/h2&gt;
-&lt;p&gt;Talk about working with Ali on sitemap and wireframes. Talk about how the system as a whole was to be huge – multiple user types, public facing application mixed with dashboard utility for each user type. System has to cater to both recruiting organizations and exploring corps members.&lt;/p&gt;
+&lt;p&gt;My Role
+- Brought onto the Service Year project just as an identity and branding was being established. My role was to serve as the lead visual designer and also contribute to user experience design alongside our team’s UX lead.
+- Over the past year, I designed various public facing pages (user profiles, search), user flows (profile creation, editing, etc), and established a style guide that serves as a source of truth for the project’s many design tasks documenting everything from buttons to forms to type to various UI elements&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;Shaping Complexity
+- Talk about how big the platform really is
+– Made up of Corps Members (users looking for service opportunities), Organization Users (that create positions, listings for opportunities, and search for CMs), and Admins (the team that manages the orgs and user in the system).
+– All three of these user types interact with their own unique dashboard and mapping the flows of different interactions, models, and objects can prove a difficult challenge, especially with the need to certify various things that orgs post (positions and whatnot)&lt;/p&gt;
 
-&lt;p&gt;And now, some of my favorite plugins:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Corps Members
+Talk about shaping their process, from signing up to profile creation to finding and being matched with an organization and then documenting their service journey. 
+– Here, highlight the CM profile that changes over time as a CM progresses through their year(s) of service&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Organizations
+Talk about positions and listings and the challenge of creating a job posting site that kind of works like a job listing site but not really&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Search
+Talk about solving complexity around searching for the different types of content on the SY platform to allow various user types to find what they need.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;a-hrefhttpsgithubcomutomsketch-measure-targetblank-classlink--headingsketch-measurea&quot;&gt;1. &lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Measure&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-measure-example.gif&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Working in an Agile process (An Ever Evolving Platform)
+- Talk about our Agile process. It’s evolved over time as both the design and development team have discovered things that work and don’t work. 
+- Talk about going from a single unified sprint to split sprints, back to a unified sprint&lt;/p&gt;
 
-&lt;p&gt;Sketch Measure is an invaluable tool for annotating your design comps. The plugin helps you create markings to show heights, widths, paddings, and margins of elements. It’s great for sharing designs with developers or fellow designers.&lt;/p&gt;
+&lt;p&gt;Lessons Learned
+- Agile
+- Large system planning is more difficult than meets the eye
+- Working both with a small (design) team and large (whole) team
+- Learning how to fail, recognize the failure, and make changes to improve moving forward&lt;/p&gt;
 
-&lt;h2 id=&quot;a-hrefhttpsgithubcomandrewfiorillosketch-palettes-targetblank-classlink--headingsketch-palettesa&quot;&gt;2. &lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Palettes&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-palettes-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Conclusion
+SY is an ongoing and ever evolving project that aims to become the nation’s leader in national service opportunities&lt;/p&gt;
 
-&lt;p&gt;If you’ve used Photoshop, then you’re familiar with how you can save out and load sets of color swatches. This kind of color management is especially useful if you’re working on a project with a lot of other designers.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/persona-david.jpg&quot; /&gt;
+	    
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/persona-mary.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
 
-&lt;p&gt;Unfortunately, Sketch doesn’t come with the same functionality. Each new file requires you to re-add colors one-by-one. Setting up colors in file after file can get old pretty fast.&lt;/p&gt;
+&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
+&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
 
-&lt;p&gt;Luckily, the Sketch Palettes plugin lets you export and later load sets of colors into your new Sketch files. Save, load, and presto! Quick color palettes in Sketch.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    	&lt;img src=&quot;/assets/work/fosi/fosi-user-flow-david.png&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h2 id=&quot;a-hrefhttpsgithubcomddwhtsketch-dynamic-button-targetblank-classlink--headingdynamic-buttonsa&quot;&gt;3. &lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Dynamic Buttons&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/dynamic-buttons-screenshot.gif&quot; alt=&quot;Dynamic Buttons Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;fin-tip&quot;&gt;		
+&lt;/div&gt;
 
-&lt;p&gt;Have you ever created a button with the perfect size but then had to change the text and readjust its padding? Fret no more.&lt;/p&gt;
+&lt;h2 class=&quot;text-center&quot;&gt;
+	A Flexible, Responsive Publishing Platform
+&lt;/h2&gt;
 
-&lt;p&gt;Dynamic Buttons allows you to specify the padding of your button and then, whenever you change the text within, you can use a simple keyboard shortcut dynamically readjust its padding. Pixel perfect button padding made simple. Oh, and &lt;a href=&quot;https://medium.com/@poohbers/dynamic-button-sketch-plugin-946638e73398#.t29zevs6g&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;here’s a quick how-to!&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomshahruzsend-to-slack-targetblank-classlink--headingsend-to-slacka&quot;&gt;4. &lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Send to Slack&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/send-to-slack-example.gif&quot; alt=&quot;Send to Slack Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;At &lt;a href=&quot;https://isl.co&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;ISL&lt;/a&gt;, we constantly use Slack to message each other about anything and everything. Slack has also become a fast way to share and discuss designs.&lt;/p&gt;
-
-&lt;p&gt;With the Send to Slack plugin, you can quickly send an art board in Sketch to anyone on your Slack team. Instead of having to export and upload art boards, the plugin lets you select a user or channel to export and upload to all at once.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-hrefhttpsgithubcomgetflourishsketch-color-contrast-analyser-targetblank-classlink--headingcolor-contrast-analyser-for-sketcha&quot;&gt;5. &lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Color Contrast Analyser for Sketch&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/sketch-color-analyser-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Ever since &lt;a href=&quot;/2015/11/11/conference-recap-fowd-sf.html#web-accessibility-is-more-than-accessible-code&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion’s talk&lt;/a&gt;  at the FOWD conference, accessible design has been on my mind. The Color Contrast Analyzer plugin lets you find out if the colors in your design have a high enough contrast for users with low vision.&lt;/p&gt;
-
-&lt;p&gt;The plugin adheres to the &lt;a href=&quot;http://www.w3.org/TR/WCAG20/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;W3’s accessibility guidelines&lt;/a&gt; and instantly shows you what rating your work would receive (A, AA, AAA).&lt;/p&gt;
-
-&lt;h2 id=&quot;and-theres-more&quot;&gt;And there’s more…&lt;/h2&gt;
-&lt;p&gt;The number of Sketch plugins is growing every day thanks to a thriving Sketch community. Do you have any favorite plugins? Let me know below!&lt;/p&gt;
+&lt;p&gt;At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
@@ -196,62 +220,106 @@ A website redesign that combines the old everyoneon.org and connect2compete.org.
     
       <item>
         <title>Outlook Relationship Management System</title>
-        <description>
-&lt;p&gt;You know what’s awesome about Sketch? Quite a lot of things. One of my favorites? Plugins.&lt;/p&gt;
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/featured-image-fosi.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
 
-&lt;p&gt;Before I switched over from Photoshop to Sketch as my primary web design tool, I had used Photoshop plugins. However, I often found myself frustrated with how to find, download, install, and configure them. With Sketch, it’s a breeze.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.fosi.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Family Online Safety Institute&lt;/a&gt; (FOSI) came to &lt;a href=&quot;http://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to redesign and rebuild their website. Our mission was twofold —to combine fosi.org and aplaftormforgood.org (now Good Digital Parenting) under one umbrella, and to create a beautiful design and a user friendly experience&lt;/p&gt;
 
-&lt;h2 id=&quot;sketch-toolbox&quot;&gt;Sketch Toolbox&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-toolbox.png&quot; alt=&quot;Sketch Toolbox Screenshot&quot; /&gt;
-Before we dive into my favorite plugins, if you use Sketch and you haven’t installed &lt;a href=&quot;http://sketchtoolbox.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sketch Toolbox&lt;/a&gt; yet, prepare to be excited. Sketch Toolbox is an application created by members of the Sketch community that lets you easily manage your plugins. Definitely check it out.&lt;/p&gt;
+&lt;p&gt;The redesign process involved diving deep into Google Analytics, conducting user testing with key audiences, and unifying the two sites through detailed wireframing and design.&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
 
-&lt;p&gt;And now, some of my favorite plugins:&lt;/p&gt;
+&lt;h2 id=&quot;understanding-the-audience&quot;&gt;Understanding the Audience&lt;/h2&gt;
+&lt;p&gt;The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
 
-&lt;h2 id=&quot;a-hrefhttpsgithubcomutomsketch-measure-targetblank-classlink--headingsketch-measurea&quot;&gt;1. &lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Measure&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/utom/sketch-measure&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-measure-example.gif&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;personas&quot;&gt;Personas&lt;/h3&gt;
+&lt;p&gt;In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
 
-&lt;p&gt;Sketch Measure is an invaluable tool for annotating your design comps. The plugin helps you create markings to show heights, widths, paddings, and margins of elements. It’s great for sharing designs with developers or fellow designers.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/persona-david.jpg&quot; /&gt;
+	    
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/persona-mary.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
 
-&lt;h2 id=&quot;a-hrefhttpsgithubcomandrewfiorillosketch-palettes-targetblank-classlink--headingsketch-palettesa&quot;&gt;2. &lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Sketch Palettes&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/andrewfiorillo/sketch-palettes&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;&lt;img src=&quot;/assets/posts/11-28-15/sketch-palettes-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
+&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
 
-&lt;p&gt;If you’ve used Photoshop, then you’re familiar with how you can save out and load sets of color swatches. This kind of color management is especially useful if you’re working on a project with a lot of other designers.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    	&lt;img src=&quot;/assets/work/fosi/fosi-user-flow-david.png&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Unfortunately, Sketch doesn’t come with the same functionality. Each new file requires you to re-add colors one-by-one. Setting up colors in file after file can get old pretty fast.&lt;/p&gt;
+&lt;h2 id=&quot;site-structure&quot;&gt;Site Structure&lt;/h2&gt;
+&lt;p&gt;After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
 
-&lt;p&gt;Luckily, the Sketch Palettes plugin lets you export and later load sets of colors into your new Sketch files. Save, load, and presto! Quick color palettes in Sketch.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
+  &lt;li&gt;Policy and Research&lt;/li&gt;
+  &lt;li&gt;Events&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h2 id=&quot;a-hrefhttpsgithubcomddwhtsketch-dynamic-button-targetblank-classlink--headingdynamic-buttonsa&quot;&gt;3. &lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Dynamic Buttons&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/ddwht/sketch-dynamic-button&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/dynamic-buttons-screenshot.gif&quot; alt=&quot;Dynamic Buttons Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Concentrating of FOSI’s pre-existing content into three main buckets simplified the process of finding content for the end user. Not only that, but the structure allowed us to make content a priority something something here…&lt;/p&gt;
 
-&lt;p&gt;Have you ever created a button with the perfect size but then had to change the text and readjust its padding? Fret no more.&lt;/p&gt;
+&lt;p&gt;[sitemap here]&lt;/p&gt;
 
-&lt;p&gt;Dynamic Buttons allows you to specify the padding of your button and then, whenever you change the text within, you can use a simple keyboard shortcut dynamically readjust its padding. Pixel perfect button padding made simple. Oh, and &lt;a href=&quot;https://medium.com/@poohbers/dynamic-button-sketch-plugin-946638e73398#.t29zevs6g&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;here’s a quick how-to!&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;prototyping&quot;&gt;Prototyping&lt;/h2&gt;
+&lt;p&gt;Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
 
-&lt;h2 id=&quot;a-hrefhttpsgithubcomshahruzsend-to-slack-targetblank-classlink--headingsend-to-slacka&quot;&gt;4. &lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Send to Slack&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/shahruz/Send-to-Slack&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/send-to-slack-example.gif&quot; alt=&quot;Send to Slack Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;div class=&quot;video-container&quot;&gt;
+			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/155266319?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;img src=&quot;/assets/work/fosi/fosi-wireframes.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;At &lt;a href=&quot;https://isl.co&quot; class=&quot;link--text-in-p&quot; target=&quot;_blank&quot;&gt;ISL&lt;/a&gt;, we constantly use Slack to message each other about anything and everything. Slack has also become a fast way to share and discuss designs.&lt;/p&gt;
+&lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
 
-&lt;p&gt;With the Send to Slack plugin, you can quickly send an art board in Sketch to anyone on your Slack team. Instead of having to export and upload art boards, the plugin lets you select a user or channel to export and upload to all at once.&lt;/p&gt;
+&lt;h3 id=&quot;typography&quot;&gt;Typography&lt;/h3&gt;
+&lt;p&gt;In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
 
-&lt;h2 id=&quot;a-hrefhttpsgithubcomgetflourishsketch-color-contrast-analyser-targetblank-classlink--headingcolor-contrast-analyser-for-sketcha&quot;&gt;5. &lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot; class=&quot;link--heading&quot;&gt;Color Contrast Analyser for Sketch&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/getflourish/Sketch-Color-Contrast-Analyser&quot; target=&quot;_blank&quot;&gt;
-	&lt;img src=&quot;/assets/posts/11-28-15/sketch-color-analyser-screenshot.png&quot; alt=&quot;Sketch Measure Animated Screenshot&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;img src=&quot;/assets/work/fosi/fosi-type-example.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Ever since &lt;a href=&quot;/2015/11/11/conference-recap-fowd-sf.html#web-accessibility-is-more-than-accessible-code&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion’s talk&lt;/a&gt;  at the FOWD conference, accessible design has been on my mind. The Color Contrast Analyzer plugin lets you find out if the colors in your design have a high enough contrast for users with low vision.&lt;/p&gt;
+&lt;h4 id=&quot;aaux-next&quot;&gt;Aaux Next&lt;/h4&gt;
+&lt;p&gt;Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
 
-&lt;p&gt;The plugin adheres to the &lt;a href=&quot;http://www.w3.org/TR/WCAG20/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;W3’s accessibility guidelines&lt;/a&gt; and instantly shows you what rating your work would receive (A, AA, AAA).&lt;/p&gt;
+&lt;h4 id=&quot;minion-pro&quot;&gt;Minion Pro&lt;/h4&gt;
+&lt;p&gt;Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
 
-&lt;h2 id=&quot;and-theres-more&quot;&gt;And there’s more…&lt;/h2&gt;
-&lt;p&gt;The number of Sketch plugins is growing every day thanks to a thriving Sketch community. Do you have any favorite plugins? Let me know below!&lt;/p&gt;
+&lt;h3 id=&quot;colors&quot;&gt;Colors&lt;/h3&gt;
+&lt;p&gt;With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;img src=&quot;/assets/work/fosi/fosi-colors.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;fin-tip&quot;&gt;	
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+	A Flexible, Responsive Publishing Platform
+&lt;/h2&gt;
+
+&lt;p&gt;At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age.&lt;/p&gt;
+
+&lt;p&gt;By creating flexible layouts, a new design system, and an integration with Wagtail, a Django-based CMS, we were able to provide FOSI with a rethought and redesigned responsive experience.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
@@ -334,10 +402,11 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
     
       <item>
         <title>Family Online Safety Institute</title>
-        <description>
-&lt;p&gt;::User Experience, Visual Design&lt;/p&gt;
-
-&lt;!-- A website redesign for fosi.org that combines industry news, resources, and events with a new platform, Good Digital Parenting. The Family Online Safety Institute is an international, non-profit organization which works to make the online world safer for kids and their families. Our intended audiences were K-12 families, policy-makers, and industry professionals. --&gt;
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/featured-image-fosi.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
 
 &lt;p&gt;The &lt;a href=&quot;http://www.fosi.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Family Online Safety Institute&lt;/a&gt; (FOSI) came to &lt;a href=&quot;http://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to redesign and rebuild their website. Our mission was twofold —to combine fosi.org and aplaftormforgood.org (now Good Digital Parenting) under one umbrella, and to create a beautiful design and a user friendly experience&lt;/p&gt;
 
@@ -345,77 +414,53 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 
 &lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
 
-&lt;section class=&quot;content-section bg--gray&quot;&gt;
-	&lt;h2&gt;
-		Understanding the Audience
-	&lt;/h2&gt;
-	&lt;p&gt;
-		The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI&#39;s many research articles in everyday work.
-	&lt;/p&gt;
+&lt;h2 id=&quot;understanding-the-audience&quot;&gt;Understanding the Audience&lt;/h2&gt;
+&lt;p&gt;The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
 
-	&lt;h3&gt;
-		Personas
-	&lt;/h3&gt;
-	&lt;p&gt;
-		In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.
-	&lt;/p&gt;
-	
-	&lt;div class=&quot;grid&quot;&gt;
-		&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
-		    &lt;img src=&quot;/assets/work/fosi/persona-david.jpg&quot; /&gt;
-		    
-		&lt;/div&gt; 
-		&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
-		    &lt;img src=&quot;/assets/work/fosi/persona-mary.jpg&quot; /&gt;
-		&lt;/div&gt; 
-	&lt;/div&gt;
+&lt;h3 id=&quot;personas&quot;&gt;Personas&lt;/h3&gt;
+&lt;p&gt;In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
 
-	&lt;h3&gt;
-		User Flows
-	&lt;/h3&gt;
-	&lt;p&gt;
-		 These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.
-	&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/persona-david.jpg&quot; /&gt;
+	    
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/persona-mary.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
 
-	&lt;div class=&quot;grid&quot;&gt;
-	    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    	&lt;img src=&quot;/assets/work/fosi/fosi-user-flow-david.png&quot; /&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;
+&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
+&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
 
-	&lt;h2&gt;
-		Site Structure
-	&lt;/h2&gt; 
-	&lt;p&gt;
-		After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:
-	&lt;/p&gt;
-	
-	&lt;ol&gt;
-		&lt;li&gt;
-			Family Resources (Good Digital Parenting)
-		&lt;/li&gt;
-		&lt;li&gt;
-			Policy and Research
-		&lt;/li&gt;
-		&lt;li&gt;
-			Events
-		&lt;/li&gt;
-	&lt;/ol&gt;
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    	&lt;img src=&quot;/assets/work/fosi/fosi-user-flow-david.png&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-	&lt;p&gt;Concentrating of FOSI&#39;s pre-existing content into three main buckets simplified the process of finding content for the end user. Not only that, but the structure allowed us to make content a priority something something here...&lt;/p&gt;
+&lt;h2 id=&quot;site-structure&quot;&gt;Site Structure&lt;/h2&gt;
+&lt;p&gt;After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
 
-	[sitemap here - need to open in omnigraffle and rearrange]
+&lt;ol&gt;
+  &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
+  &lt;li&gt;Policy and Research&lt;/li&gt;
+  &lt;li&gt;Events&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;/section&gt;
+&lt;p&gt;Concentrating of FOSI’s pre-existing content into three main buckets simplified the process of finding content for the end user. Not only that, but the structure allowed us to make content a priority something something here…&lt;/p&gt;
+
+&lt;p&gt;[sitemap here]&lt;/p&gt;
 
 &lt;h2 id=&quot;prototyping&quot;&gt;Prototyping&lt;/h2&gt;
 &lt;p&gt;Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
 
-&lt;div class=&quot;video-container&quot;&gt;
-	&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/155266319?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;div class=&quot;video-container&quot;&gt;
+			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/155266319?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
 		&lt;img src=&quot;/assets/work/fosi/fosi-wireframes.jpg&quot; alt=&quot;&quot; /&gt;
 	&lt;/div&gt;
@@ -447,21 +492,16 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;section class=&quot;content-section &quot;&gt;
-	&lt;div class=&quot;fin-tip&quot;&gt;
-		
-	&lt;/div&gt;
-	&lt;h2 class=&quot;text-center&quot;&gt;
-		A Flexible, Responsive Publishing Platform
-	&lt;/h2&gt;
+&lt;div class=&quot;fin-tip&quot;&gt;	
+&lt;/div&gt;
 
-	&lt;p&gt;
-		At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age. 
-	&lt;/p&gt;
-	&lt;p&gt;
-		By creating flexible layouts, a new design system, and an integration with Wagtail, a Django-based CMS, we were able to provide FOSI with a rethought and redesigned responsive experience.
-	&lt;/p&gt;
-&lt;/section&gt;
+&lt;h2 class=&quot;text-center&quot;&gt;
+	A Flexible, Responsive Publishing Platform
+&lt;/h2&gt;
+
+&lt;p&gt;At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age.&lt;/p&gt;
+
+&lt;p&gt;By creating flexible layouts, a new design system, and an integration with Wagtail, a Django-based CMS, we were able to provide FOSI with a rethought and redesigned responsive experience.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
