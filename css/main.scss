@@ -20,18 +20,20 @@ $heading-font-family: $sans-serif;
 
 $spacing-unit:     30px;
 
-$text-color:       	#2e2e2e;
+$black:             #161616;
+$gray-color:        #F9F9FA;
+$gray-color-light:  lighten($gray-color, 3%);
+$gray-color-dark:   darken($gray-color, 25%);
+$blue-color:        #419BF9;
+
+$text-color:       	$black;
 $white: 			#fff;
 $background-color: 	$white;
 $brand-color:      	#8A70DB;
 
 $hover-color:		#E0DDF0;
 
-$black:				rgba(0,0,0,0.77);
-$gray-color:       	#F9F9FA;
-$gray-color-light: 	lighten($gray-color, 3%);
-$gray-color-dark:  	darken($gray-color, 25%);
-$blue-color:	   	#419BF9;
+
 
 $on-palm:          600px;
 $on-tablet:        768px;

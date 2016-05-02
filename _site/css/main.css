@@ -18,7 +18,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  color: #2e2e2e;
+  color: #161616;
   background-color: #fff;
   -webkit-text-size-adjust: 100%; }
 
@@ -128,7 +128,7 @@ h3 {
  */
 p {
   font-family: "athelas", "freight-text-pro", serif;
-  color: rgba(0, 0, 0, 0.75);
+  color: #161616;
   font-size: 19px;
   line-height: 28px;
   margin-bottom: 20px;
@@ -136,7 +136,7 @@ p {
   @media screen and (min-width: 600px) {
     p {
       font-size: 22px;
-      line-height: 35px;
+      line-height: 32px;
       margin-bottom: 35px; } }
 
 /**
@@ -177,7 +177,7 @@ pre {
  * Links
  */
 a {
-  color: rgba(0, 0, 0, 0.77);
+  color: #161616;
   text-decoration: none; }
   a:hover {
     color: #8A70DB; }
@@ -209,8 +209,8 @@ a.link--text-in-p {
   line-height: 36px; }
   @media screen and (min-width: 600px) {
     .heading--large {
-      font-size: 48px;
-      line-height: 56px; } }
+      font-size: 42px;
+      line-height: 50px; } }
 
 .text--mono {
   font-family: "inconsolata", sans-serif;
@@ -245,7 +245,7 @@ a.link--text-in-p {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #2e2e2e;
+    color: #161616;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -840,7 +840,7 @@ img {
 .fin-tip {
   width: 40px;
   height: 7px;
-  background: rgba(0, 0, 0, 0.77);
+  background: #161616;
   margin: 0 auto 50px auto; }
 
 .content-wrapper--thoughts-archive {
@@ -856,36 +856,23 @@ ul.ul--post-archive {
 .post-archive__post-date {
   margin-bottom: 5px; }
 
+.heading--about {
+  margin-bottom: 50px; }
+
 .grid.grid--about {
   background: #E2E5EC;
-  padding: 0px; }
+  padding: 0px;
+  margin-top: 0px; }
   .grid.grid--about .grid__item--full {
     padding: 0px;
     margin: 0 auto; }
+    .grid.grid--about .grid__item--full img {
+      max-height: 550px; }
 
 @media screen and (min-width: 900px) {
   .heading--bio {
     font-size: 78px; } }
 
-.bubble {
-  border-radius: 400px;
-  background-color: #cdc1f0;
-  position: absolute;
-  opacity: .9;
-  mix-blend-mode: multiply; }
-
-.bubble1 {
-  height: 120px;
-  width: 120px;
-  bottom: -10px;
-  left: -20px;
-  animation: rot 3s infinite linear; }
-
-@keyframes rot {
-  from {
-    transform: rotate(0deg) translate(-150px) rotate(0deg); }
-  to {
-    transform: rotate(360deg) translate(-150px) rotate(-360deg); } }
 /**
  * Site footer
  */
