@@ -8,12 +8,15 @@ group: 'navigation'
   <div class="featured-icon">
     <img src="{{ site.url }}/assets/images/featured-icons/icon-dialog-box.png" alt="Lightbulb Icon">
   </div>
-  <ul class="ul--post-archive">
+  <ul class="ul--work-list">
     {% for post in site.categories.work %}
-      <li>
-        <div class="content-wrapper--thoughts-archive">
+      <li class="work-list__article">
+        <div class="article__image">
+          
+        </div>
+        <div class="article__summary">
           <p class="post-date text--mono">
-            {{ post.date | date: "%B %-d, %Y" }}
+            {{ post.work-type }}
           </p>
           <h2 class="heading--large">
             <a href="{{ post.url }}" class="link--text">
