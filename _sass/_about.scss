@@ -14,11 +14,10 @@
 .grid.grid--about {
 	background: #E2E5EC;
 	padding: 0px;
-	margin-top: 0px;
-	margin-bottom: 35px;
+    margin: 0px 0px 35px 0px;
 
 	@media screen and (min-width: $on-palm) {
-	    margin-bottom: 70px;
+        margin: 0px 0px 70px 0px;
 	}
 	.grid__item--full {
 		padding: 0px;

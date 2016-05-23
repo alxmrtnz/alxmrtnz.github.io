@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    
+
 }
 
 h3 {
@@ -27,7 +27,7 @@ p {
 
     @media screen and (min-width: $on-palm) {
         font-size: 22px;
-        line-height: 32px;
+        line-height: 33px;
         margin-bottom: 35px;
     }
     position: relative;
@@ -92,7 +92,7 @@ a {
     color: $black;
     text-decoration: none;
     // transition: all .25s ease;
-    
+
 
     &:hover {
         color: $brand-color;
@@ -117,7 +117,7 @@ a.link--text, a.link--heading {
         text-decoration: line-through;
         // &:before {
             // width: 95%;
-        // } 
+        // }
     }
 }
 
@@ -174,17 +174,17 @@ a.link--text-in-p {
 
 
 .heading--large {
-	
+
     font-size: 28px;
 	line-height: 36px;
 
 	@media screen and (min-width: $on-palm) {
     	font-size: 42px;
     	line-height: 50px;
-	    
+
 	}
 	@media screen and (min-width: $on-laptop) {
-		
+
 	}
 }
 

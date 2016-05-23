@@ -5,13 +5,53 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 23 May 2016 11:04:34 -0400</pubDate>
-    <lastBuildDate>Mon, 23 May 2016 11:04:34 -0400</lastBuildDate>
+    <pubDate>Mon, 23 May 2016 14:10:10 -0400</pubDate>
+    <lastBuildDate>Mon, 23 May 2016 14:10:10 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>Working with Agile</title>
-        <description>&lt;p&gt;From building a car to producing a website, the waterfall method has long been one of the most popular processes for production industries. Comprised of a discrete series of steps completed in succession, one could say that waterfall is the production line of processes of all work processes.&lt;/p&gt;
+        <title>What Does Agile Mean to Me?</title>
+        <description>&lt;p&gt;http://hackerchick.com/kanban-is-the-new-scrum
+https://medium.com/@rjs/vital-elements-of-the-product-design-process-3db9cdaedc8b#.jfr7r9v6k
+http://www.howdesign.com/editors-picks/dont-go-chasing-waterfalls-agile-web-design/
+https://medium.com/swlh/agile-is-the-new-waterfall-f7baef5d026d#.8p5qj0x5m
+https://medium.com/startup-study-group/how-to-combine-design-thinking-and-agile-in-practice-36c9fc75c6e6#.ktizyj5yq
+http://gradle.org/blog/agile-is-dead/?utm_source=designernews
+https://teamgaslight.com/blog/agile-design-how-to-iteratively-create-an-amazing-ui?utm_source=designernews
+https://pragdave.me/blog/2014/03/04/time-to-kill-agile/
+http://continuousdelivery.com/&lt;/p&gt;
+
+&lt;p&gt;For the past two years, I’ve been working closely with a team of designers, developers, and project managers at &lt;a href=&quot;https://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; on &lt;a href=&quot;https://www.serviceyr.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Service Year&lt;/a&gt;, a platform that connects individuals with national service opportunities across the United States.&lt;/p&gt;
+
+&lt;p&gt;From day one, our team set out to design, build, and iterate withing an agile framework. But what exactly did that mean and, after two years, what does it mean now?&lt;/p&gt;
+
+&lt;h2 id=&quot;get-past-terminology&quot;&gt;Get Past Terminology&lt;/h2&gt;
+
+&lt;p&gt;Regardless of which industry you may fall into, it makes sense that teams want to work as efficiently as possible to put out the best product they can.&lt;/p&gt;
+
+&lt;p&gt;With articles talking about anything from agile methodology to lean processes to continuous delivery and all of the rises and falls of each, it’s easy to get bogged down by terminology instead of focusing on the process.&lt;/p&gt;
+
+&lt;p&gt;If I’ve learned anything from our work on Service Year, it’s that design and development processes evolve to suit both the team working on a project and its stakeholders.&lt;/p&gt;
+
+&lt;p&gt;How do we design, build, test, ship, and iterate on a digital product?&lt;/p&gt;
+
+&lt;p&gt;There are many articles out there proclaiming that “&lt;a href=&quot;https://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;agile is dead&lt;/a&gt;,” “continuous delivery” is where we’re heading.&lt;/p&gt;
+
+&lt;h2 id=&quot;stick-to-principles&quot;&gt;Stick to Principles&lt;/h2&gt;
+
+&lt;p&gt;If it sounds like an ambitious project, it’s because it is. Our team partnered with the Service Year Alliance, to create a source of truth for anyone looking to serve with a nonprofit or other organization in the US.&lt;/p&gt;
+
+&lt;h2 id=&quot;never-settle&quot;&gt;Never Settle&lt;/h2&gt;
+
+&lt;p&gt;When getting started creating anything for the web, it’s easy to think of a project in terms of a linear process. A team is given a problem to solve, the designer creates a solution to that problem, and a developer implements that solution. Your team celebrates the solution’s launch and everyone is happy.&lt;/p&gt;
+
+&lt;p&gt;But as we all know, that’s simply not true.&lt;/p&gt;
+
+&lt;h2 id=&quot;never-settle-1&quot;&gt;Never Settle&lt;/h2&gt;
+
+&lt;p&gt;A designer and hands off to a developer you’ve likely heard of a variety of design processes with some funky names. From waterfall to lean to agile to what may now be a move toward “Continuous Delivery,” being a product designer means figuring out what works best for your team and your project.&lt;/p&gt;
+
+&lt;p&gt;From building a car to producing a website, the waterfall method has long been one of the most popular processes for production industries. Comprised of a discrete series of steps completed in succession, one could say that waterfall is the production line of processes of all work processes.&lt;/p&gt;
 
 &lt;p&gt;In theory, the waterfall method is efficient. There is a clear start and finish to each phase of a project and everyone is on the same page.&lt;/p&gt;
 
@@ -49,9 +89,71 @@
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Working on a large software and design system can be a challenging and rewarding task.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 01 Feb 2016 14:46:27 -0500</pubDate>
-        <link>/2016/02/01/working-in-an-agile-process.html</link>
-        <guid isPermaLink="true">/2016/02/01/working-in-an-agile-process.html</guid>
+        <pubDate>Mon, 23 May 2016 06:46:27 -0400</pubDate>
+        <link>/2016/05/23/design-process.html</link>
+        <guid isPermaLink="true">/2016/05/23/design-process.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Designing with Agile</title>
+        <description>&lt;p&gt;For the past two years, I’ve been working closely with a team of designers, developers, and project managers at &lt;a href=&quot;https://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; on &lt;a href=&quot;https://www.serviceyr.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Service Year&lt;/a&gt;, a platform that connects individuals with national service opportunities across the United States.&lt;/p&gt;
+
+&lt;p&gt;From day one, our team set out to design, build, and iterate withing an agile framework. But what exactly did that mean and, after two years, what does it mean now?&lt;/p&gt;
+
+&lt;h2 id=&quot;defining-the-process&quot;&gt;Defining the Process&lt;/h2&gt;
+&lt;p&gt;Agile is a methodology created by software engineers in the early 2000’s to help teams design, build, and iterate faster.&lt;/p&gt;
+
+&lt;p&gt;The values that make up the process for web projects includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Individuals and interactions over processes and tools&lt;/li&gt;
+  &lt;li&gt;Working software over comprehensive documentation&lt;/li&gt;
+  &lt;li&gt;Customer collaboration over contract negotiation&lt;/li&gt;
+  &lt;li&gt;Responding to change over following a plan&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At its core, using the agile process means that a team (and its client) defines problems to solve, designs and builds solutions to those problems, tests those solutions with real users, and refines those solutions over time.&lt;/p&gt;
+
+&lt;p&gt;You can read up about agile &lt;a href=&quot;http://www.howdesign.com/editors-picks/dont-go-chasing-waterfalls-agile-web-design/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;here&lt;/a&gt;, but in terms of our process on Service Year&lt;/p&gt;
+
+&lt;h2 id=&quot;but-isnt-agile-dying&quot;&gt;But isn’t agile… dying?&lt;/h2&gt;
+
+&lt;p&gt;A newer methodology, the agile process, aims to fix some of the problems caused by is a process created by software engineers in the early 2000’s that helps teams design, build, and iterate faster than ever before.&lt;/p&gt;
+
+&lt;p&gt;http://www.howdesign.com/editors-picks/dont-go-chasing-waterfalls-agile-web-design/&lt;/p&gt;
+
+&lt;h2 id=&quot;its-place-on-service-year-2-short-paragraphs&quot;&gt;It’s place on Service Year (2 short paragraphs)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;brief overview of Service Year&lt;/li&gt;
+  &lt;li&gt;history of methods
+– always been agile, but being ISL’s first large scale application build, our process has also gone through many iterations and is always evolving
+– Sprints broken up by team at first, then alternated, now together&lt;/li&gt;
+  &lt;li&gt;Determination of Resources, LOE-ing:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;advantages&quot;&gt;Advantages&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ability to identify problems and change methods&lt;/li&gt;
+  &lt;li&gt;Shorter lifecycles for features means being able to refine them over time&lt;/li&gt;
+  &lt;li&gt;Opportunity to learn, change, and grow, both as individuals and team members&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;disadvantages&quot;&gt;Disadvantages&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Quick turnaround time for each sprint can often lead to a lack of documentation (style guide) and sometimes miscommunication&lt;/li&gt;
+  &lt;li&gt;Many many meetings: In order to plan and execute each two-week sprint, there are many meetings both internally and with our client.&lt;/li&gt;
+  &lt;li&gt;The need to really complete each feature 100% within each iteration: this can become tiring for both developers and designers. Luckily, building a tight knit relationship with our client allows us to reevaluate and modify processes as needed.&lt;/li&gt;
+  &lt;li&gt;(Initial) Difficulty onboarding new team members&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Working on a large software and design system can be a challenging and rewarding task.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 May 2016 06:46:27 -0400</pubDate>
+        <link>/2016/05/23/agile-and-service-year.html</link>
+        <guid isPermaLink="true">/2016/05/23/agile-and-service-year.html</guid>
         
         
       </item>
@@ -669,23 +771,6 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
         <pubDate>Sun, 15 Nov 2015 14:46:27 -0500</pubDate>
         <link>/2015/11/15/switching-to-sketch.html</link>
         <guid isPermaLink="true">/2015/11/15/switching-to-sketch.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Open Sourcing My Personal Goals</title>
-        <description>&lt;p&gt;In the summer of 2014, I interned as a UX Designer at Viget in Boulder, CO. It was that summer that I (virtually) met fellow intern Una Kravets, who was interning as a front-end developer at Viget’s HQ in Falls Church, VA.&lt;/p&gt;
-
-&lt;p&gt;Since our paths crossed, I’ve been following her work (she’s pretty awesome and one of the hardest workers I know), and saw her begin open sourcing her personal goals, both as a way to keep herself accountable and as a means of inspiring others to do the same.&lt;/p&gt;
-
-&lt;p&gt;Well, I was inspired. Often times, it’s difficult to stay disciplined when it comes to what you want to do outside of your normal 9-5 workday. Did you finally read that book on product design techniques? What about that yoga class you’ve been meaning to get to for 4 months? It’s hard. We all find ourselves busy with work and life and more often than not, it’s easier to put off the small things that you’ve been meaning to get done.&lt;/p&gt;
-
-&lt;p&gt;It’s now week three of me having open sourced my goals. I’ve Una’s GitHub repo and am working to make it my own. While I still have a ways to go in organize what I want to do, it’s definitely a start and has got me thinking about the mini accomplishments that can be made each and every day.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 15 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/2015/11/15/open-sourcing-my-personal-goals.html</link>
-        <guid isPermaLink="true">/2015/11/15/open-sourcing-my-personal-goals.html</guid>
         
         
       </item>

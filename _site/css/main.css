@@ -22,7 +22,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  color: #161616;
+  color: #333;
   background-color: #fff;
   -webkit-text-size-adjust: 100%; }
 
@@ -132,7 +132,7 @@ h3 {
  */
 p {
   font-family: "athelas", "freight-text-pro", serif;
-  color: #161616;
+  color: #333;
   font-size: 19px;
   line-height: 28px;
   margin-bottom: 20px;
@@ -140,7 +140,7 @@ p {
   @media screen and (min-width: 600px) {
     p {
       font-size: 22px;
-      line-height: 32px;
+      line-height: 33px;
       margin-bottom: 35px; } }
 
 /**
@@ -181,7 +181,7 @@ pre {
  * Links
  */
 a {
-  color: #161616;
+  color: #333;
   text-decoration: none; }
   a:hover {
     color: #8A70DB; }
@@ -249,7 +249,7 @@ a.link--text-in-p {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #161616;
+    color: #333;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -677,7 +677,7 @@ ul.social-icon-list {
       line-height: 1.5em; }
 
 .post-content {
-  max-width: 720px;
+  max-width: 700px;
   padding: 0px 20px;
   margin: 0 auto 70px auto; }
 
@@ -685,7 +685,7 @@ ul.social-icon-list {
   overflow: hidden;
   border-top: 1px solid #F9F9FA;
   padding-top: 20px;
-  max-width: 720px;
+  max-width: 700px;
   margin: 20px auto; }
 
 .post-nav__direction {
@@ -698,7 +698,7 @@ ul.social-icon-list {
   float: right; }
 
 .post-comments {
-  max-width: 720px;
+  max-width: 700px;
   margin: 0 auto 100px auto; }
 
 span.img-caption {
@@ -754,7 +754,7 @@ span.img-caption {
   margin-bottom: 10px; }
 
 .work-content h1, .work-content h2, .work-content h3, .work-content h4, .work-content h5, .work-content p, .work-content ol, .work-content ul {
-  max-width: 720px;
+  max-width: 700px;
   padding: 0px 20px;
   margin-left: auto;
   margin-right: auto; }
@@ -844,7 +844,7 @@ img {
 .fin-tip {
   width: 40px;
   height: 7px;
-  background: #161616;
+  background: #333;
   margin: 0 auto 50px auto; }
 
 .content-wrapper--thoughts-archive {
@@ -870,11 +870,10 @@ ul.ul--post-archive {
 .grid.grid--about {
   background: #E2E5EC;
   padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 35px; }
+  margin: 0px 0px 35px 0px; }
   @media screen and (min-width: 600px) {
     .grid.grid--about {
-      margin-bottom: 70px; } }
+      margin: 0px 0px 70px 0px; } }
   .grid.grid--about .grid__item--full {
     padding: 0px;
     margin: 0 auto; }
