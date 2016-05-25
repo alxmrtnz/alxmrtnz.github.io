@@ -5,9 +5,9 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 23 May 2016 14:10:10 -0400</pubDate>
-    <lastBuildDate>Mon, 23 May 2016 14:10:10 -0400</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <pubDate>Tue, 24 May 2016 21:23:47 -0400</pubDate>
+    <lastBuildDate>Tue, 24 May 2016 21:23:47 -0400</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>What Does Agile Mean to Me?</title>
@@ -235,25 +235,40 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;p&gt;Intro
-- The problem at hand: There are far many more young americans that want to volunteer and give back to their communities than there are positions available.
-- The Service Year platform is trying to solve that problem by bringing the nation’s best service opportunities into one place. Not only that, but by creating a clear unified system for discovering and connecting with host organizations, Service Year provides future “corps members” with an easier path to service opportunities (instead of all of the difficult to manage government sites of yesterday).
-- Service Year also gives organizations the ability to find individuals with interests that match their needs, giving both parties a means of connecting with one another
-- Stats (get these from Chad):
-– # Orgs
-– # Users
-– # SYs begun&lt;/p&gt;
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;The Service Year Alliance teamed up with &lt;a href=&quot;http://sketchtoolbox.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to design and develop a digital platform for young Americans to connect and serve with the nation’s best nonprofits. Service Year aims to make a year of service a common expectation and opportunity for every young American.&lt;/p&gt;
 
-&lt;p&gt;My Role
-- Brought onto the Service Year project just as an identity and branding was being established. My role was to serve as the lead visual designer and also contribute to user experience design alongside our team’s UX lead.
-- Over the past year, I designed various public facing pages (user profiles, search), user flows (profile creation, editing, etc), and established a style guide that serves as a source of truth for the project’s many design tasks documenting everything from buttons to forms to type to various UI elements&lt;/p&gt;
-
-&lt;p&gt;Shaping Complexity
-- Talk about how big the platform really is
-– Made up of Corps Members (users looking for service opportunities), Organization Users (that create positions, listings for opportunities, and search for CMs), and Admins (the team that manages the orgs and user in the system).
-– All three of these user types interact with their own unique dashboard and mapping the flows of different interactions, models, and objects can prove a difficult challenge, especially with the need to certify various things that orgs post (positions and whatnot)&lt;/p&gt;
+&lt;p&gt;An ongoing and ever-evolving project, the site brings the nation’s best service opportunities into one place, allowing both organizations and service members to more easily connect with one another.&lt;/p&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;Stats (get these from Chad):
+– # Orgs
+– # Users
+– # SYs begun&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;my-role&quot;&gt;My Role&lt;/h2&gt;
+&lt;p&gt;On the Service Year project, I served as the lead visual designer and also worked closely with our team’s UX lead on various user flows, wireframes, user testing, and design refinement.&lt;/p&gt;
+
+&lt;p&gt;I designed various public facing pages, user flows, and established a style guide that serves as a source of truth for the project’s many design tasks –- documenting everything from buttons to forms to type.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-service-year-universe&quot;&gt;The Service Year Universe&lt;/h2&gt;
+&lt;p&gt;One of the biggest of this project is the management of various user and content types and determining how they interact with one another.&lt;/p&gt;
+
+&lt;p&gt;The platform needed to cater to three various user types:
+- Organization administrators that manage the org entity
+- Organization users that manage recruitment for individual listings
+- Individuals searching and serving in service opportunities&lt;/p&gt;
+
+&lt;p&gt;Designing the nation’s largest collection 
+Service Year is the nation’s largest single collection of year long service opportunities.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Talk about how big the platform really is
+– Made up of Corps Members (users looking for service opportunities), Organization Users (that create positions, listings for opportunities, and search for CMs), and Admins (the team that manages the orgs and user in the system).
+– All three of these user types interact with their own unique dashboard and mapping the flows of different interactions, models, and objects can prove a difficult challenge, especially with the need to certify various things that orgs post (positions and whatnot)&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Corps Members
 Talk about shaping their process, from signing up to profile creation to finding and being matched with an organization and then documenting their service journey. 
@@ -269,15 +284,24 @@ Talk about solving complexity around searching for the different types of conten
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Working in an Agile process (An Ever Evolving Platform)
-- Talk about our Agile process. It’s evolved over time as both the design and development team have discovered things that work and don’t work. 
-- Talk about going from a single unified sprint to split sprints, back to a unified sprint&lt;/p&gt;
+&lt;h2 id=&quot;user-centered-design&quot;&gt;User Centered Design&lt;/h2&gt;
+&lt;p&gt;##headline two&lt;/p&gt;
 
-&lt;p&gt;Lessons Learned
-- Agile
-- Large system planning is more difficult than meets the eye
-- Working both with a small (design) team and large (whole) team
-- Learning how to fail, recognize the failure, and make changes to improve moving forward&lt;/p&gt;
+&lt;h2 id=&quot;prototyping-and-testing&quot;&gt;Prototyping and Testing&lt;/h2&gt;
+
+&lt;h2 id=&quot;agile-iteration&quot;&gt;Agile Iteration&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Talk about our Agile process. It’s evolved over time as both the design and development team have discovered things that work and don’t work.&lt;/li&gt;
+  &lt;li&gt;Talk about going from a single unified sprint to split sprints, back to a unified sprint&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Agile&lt;/li&gt;
+  &lt;li&gt;Large system planning is more difficult than meets the eye&lt;/li&gt;
+  &lt;li&gt;Working both with a small (design) team and large (whole) team&lt;/li&gt;
+  &lt;li&gt;Learning how to fail, recognize the failure, and make changes to improve moving forward&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Conclusion
 SY is an ongoing and ever evolving project that aims to become the nation’s leader in national service opportunities&lt;/p&gt;
@@ -292,8 +316,8 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;p&gt;###User Flows
-These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
+&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
+&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
     &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -334,11 +358,11 @@ These fictional personas allowed us to create user flows that aided in the ident
 
 &lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
 
-&lt;p&gt;##Understanding the Audience
-The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
+&lt;h2 id=&quot;understanding-the-audience&quot;&gt;Understanding the Audience&lt;/h2&gt;
+&lt;p&gt;The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
 
-&lt;p&gt;###Personas
-In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
+&lt;h3 id=&quot;personas&quot;&gt;Personas&lt;/h3&gt;
+&lt;p&gt;In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
@@ -350,8 +374,8 @@ In order to better understand each type of user, we created a variety personas t
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;p&gt;###User Flows
-These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
+&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
+&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
     &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -359,8 +383,8 @@ These fictional personas allowed us to create user flows that aided in the ident
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;##Site Structure
-After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
+&lt;h2 id=&quot;site-structure&quot;&gt;Site Structure&lt;/h2&gt;
+&lt;p&gt;After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
@@ -372,8 +396,8 @@ After analyzing user flows and also interviewing stakeholders, we reorganized co
 
 &lt;p&gt;[sitemap here]&lt;/p&gt;
 
-&lt;p&gt;##Prototyping
-Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
+&lt;h2 id=&quot;prototyping&quot;&gt;Prototyping&lt;/h2&gt;
+&lt;p&gt;Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -388,8 +412,8 @@ Some of the functionality we wanted to include in the site, such as a sticky nav
 
 &lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
 
-&lt;p&gt;###Typography
-In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
+&lt;h3 id=&quot;typography&quot;&gt;Typography&lt;/h3&gt;
+&lt;p&gt;In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -397,14 +421,14 @@ In order to be inviting to parents, yet authoritative and reliable to profession
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;####Aaux Next
-Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
+&lt;h4 id=&quot;aaux-next&quot;&gt;Aaux Next&lt;/h4&gt;
+&lt;p&gt;Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
 
-&lt;p&gt;####Minion Pro
-Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
+&lt;h4 id=&quot;minion-pro&quot;&gt;Minion Pro&lt;/h4&gt;
+&lt;p&gt;Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
 
-&lt;p&gt;###Colors
-With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
+&lt;h3 id=&quot;colors&quot;&gt;Colors&lt;/h3&gt;
+&lt;p&gt;With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -516,11 +540,11 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 
 &lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
 
-&lt;p&gt;##Understanding the Audience
-The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
+&lt;h2 id=&quot;understanding-the-audience&quot;&gt;Understanding the Audience&lt;/h2&gt;
+&lt;p&gt;The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
 
-&lt;p&gt;###Personas
-In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
+&lt;h3 id=&quot;personas&quot;&gt;Personas&lt;/h3&gt;
+&lt;p&gt;In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
@@ -532,8 +556,8 @@ In order to better understand each type of user, we created a variety personas t
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;p&gt;###User Flows
-These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
+&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
+&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
     &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -541,8 +565,8 @@ These fictional personas allowed us to create user flows that aided in the ident
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;##Site Structure
-After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
+&lt;h2 id=&quot;site-structure&quot;&gt;Site Structure&lt;/h2&gt;
+&lt;p&gt;After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
@@ -554,8 +578,8 @@ After analyzing user flows and also interviewing stakeholders, we reorganized co
 
 &lt;p&gt;[sitemap here]&lt;/p&gt;
 
-&lt;p&gt;##Prototyping
-Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
+&lt;h2 id=&quot;prototyping&quot;&gt;Prototyping&lt;/h2&gt;
+&lt;p&gt;Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -570,8 +594,8 @@ Some of the functionality we wanted to include in the site, such as a sticky nav
 
 &lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
 
-&lt;p&gt;###Typography
-In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
+&lt;h3 id=&quot;typography&quot;&gt;Typography&lt;/h3&gt;
+&lt;p&gt;In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -579,14 +603,14 @@ In order to be inviting to parents, yet authoritative and reliable to profession
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;####Aaux Next
-Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
+&lt;h4 id=&quot;aaux-next&quot;&gt;Aaux Next&lt;/h4&gt;
+&lt;p&gt;Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
 
-&lt;p&gt;####Minion Pro
-Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
+&lt;h4 id=&quot;minion-pro&quot;&gt;Minion Pro&lt;/h4&gt;
+&lt;p&gt;Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
 
-&lt;p&gt;###Colors
-With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
+&lt;h3 id=&quot;colors&quot;&gt;Colors&lt;/h3&gt;
+&lt;p&gt;With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;

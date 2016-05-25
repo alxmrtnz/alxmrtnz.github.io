@@ -6,7 +6,7 @@ comments: false
 category: work
 permalink: /:categories/:title.html
 work-type: UX/UI, Product Design
-work-summary: Service Year is an platform that connects volunteers with the best of America's non-profits in order to take on national years of service.
+work-summary: A platform that serves as a one-stop shop for connecting young Americans with year long service opportunities.
 external-link: http://www.serviceyr.org/
 ---
 
@@ -16,20 +16,37 @@ external-link: http://www.serviceyr.org/
 	</div> 
 </div>
 
-Intro
-- The problem at hand: There are far many more young americans that want to volunteer and give back to their communities than there are positions available.
-- The Service Year platform is trying to solve that problem by bringing the nation's best service opportunities into one place. Not only that, but by creating a clear unified system for discovering and connecting with host organizations, Service Year provides future "corps members" with an easier path to service opportunities (instead of all of the difficult to manage government sites of yesterday).
-- Service Year also gives organizations the ability to find individuals with interests that match their needs, giving both parties a means of connecting with one another
+Project Overview
+--------------------------------------------------------------------------
+The Service Year Alliance teamed up with <a href='http://sketchtoolbox.com/' target="_blank" class="link--text-in-p">ISL</a> to design and develop a digital platform for young Americans to connect and serve with the nation's best nonprofits. Service Year aims to make a year of service a common expectation and opportunity for every young American.
+
+An ongoing and ever-evolving project, the site brings the nation's best service opportunities into one place, allowing both organizations and service members to more easily connect with one another.
+
+
 - Stats (get these from Chad):
 -- # Orgs
 -- # Users
 -- # SYs begun
 
 My Role
-- Brought onto the Service Year project just as an identity and branding was being established. My role was to serve as the lead visual designer and also contribute to user experience design alongside our team's UX lead.
-- Over the past year, I designed various public facing pages (user profiles, search), user flows (profile creation, editing, etc), and established a style guide that serves as a source of truth for the project's many design tasks documenting everything from buttons to forms to type to various UI elements
+-------
+On the Service Year project, I served as the lead visual designer and also worked closely with our team's UX lead on various user flows, wireframes, user testing, and design refinement.
 
-Shaping Complexity
+I designed various public facing pages, user flows, and established a style guide that serves as a source of truth for the project's many design tasks –- documenting everything from buttons to forms to type.
+
+
+The Service Year Universe
+------------------
+One of the biggest of this project is the management of various user and content types and determining how they interact with one another.
+
+The platform needed to cater to three various user types:
+- Organization administrators that manage the org entity
+- Organization users that manage recruitment for individual listings
+- Individuals searching and serving in service opportunities
+
+Designing the nation's largest collection 
+Service Year is the nation's largest single collection of year long service opportunities. 
+
 - Talk about how big the platform really is
 -- Made up of Corps Members (users looking for service opportunities), Organization Users (that create positions, listings for opportunities, and search for CMs), and Admins (the team that manages the orgs and user in the system).
 -- All three of these user types interact with their own unique dashboard and mapping the flows of different interactions, models, and objects can prove a difficult challenge, especially with the need to certify various things that orgs post (positions and whatnot)
@@ -44,11 +61,23 @@ Talk about positions and listings and the challenge of creating a job posting si
 - Search
 Talk about solving complexity around searching for the different types of content on the SY platform to allow various user types to find what they need.
 
-Working in an Agile process (An Ever Evolving Platform)
+
+User Centered Design
+---------------------------------
+##headline two
+
+Prototyping and Testing 
+-----------------------
+
+Agile Iteration
+-----------------------------
 - Talk about our Agile process. It's evolved over time as both the design and development team have discovered things that work and don't work. 
 - Talk about going from a single unified sprint to split sprints, back to a unified sprint
 
+
+
 Lessons Learned
+---------------
 - Agile
 - Large system planning is more difficult than meets the eye
 - Working both with a small (design) team and large (whole) team
