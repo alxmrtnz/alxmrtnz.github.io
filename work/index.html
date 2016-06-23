@@ -1,30 +1,55 @@
 ---
-layout: page
+layout: page-interior
 Title: Work
 group: 'navigation'
 ---
 
-<div class="content-wrapper">
-  <div class="featured-icon">
-    <img src="{{ site.url }}/assets/images/featured-icons/icon-dialog-box.png" alt="Lightbulb Icon">
-  </div>
-  <ul class="ul--work-list">
+<div class="content-wrapper bg--painted">
+    <div class="work-list">
+        <h1 class="h-mono">
+            Work
+        </h1>
     {% for post in site.categories.work %}
-      <li class="work-list__article">
-        <div class="article__image">
-          
-        </div>
-        <div class="article__summary">
-          <p class="post-date text--mono">
-            {{ post.work-type }}
-          </p>
-          <h2 class="heading--large">
-            <a href="{{ post.url }}" class="link--text">
-              {{ post.title }}
-            </a>
-          </h2>
-        </div>
-      </li>
+      {% assign loopindex = forloop.index | modulo: 2 %}
+      {% if loopindex == 1 %}
+        <div class="work-list__row">
+            <div class="work-list__article">
+                <a href="{{ post.url }}" class="">
+                    <div class="work-list__article-inner">
+                        <div class="article__image">
+                            <img src="http://placekitten.com/600/520">
+                        </div>
+                        <div class="article__summary">
+                            <h2 class="article__title">
+                                {{ post.title }}
+                            </h2>
+                            <p class="article__category text--mono">
+                                {{ post.work-type }}
+                            </p>
+                        </div>
+                    </div> <!-- end .work-list__article-inner -->
+                </a>
+            </div> <!-- end .work-list__article -->
+      {% else %}
+            <div class="work-list__article">
+                <a href="{{ post.url }}" class="">
+                    <div class="work-list__article-inner">
+                        <div class="article__image">
+                            <img src="http://placekitten.com/600/520">
+                        </div>
+                        <div class="article__summary">
+                            <h2 class="article__title">
+                                {{ post.title }}
+                            </h2>
+                            <p class="article__category text--mono">
+                                {{ post.work-type }}
+                            </p>
+                        </div>
+                    </div> <!-- end .work-list__article-inner -->
+                </a>
+          </div> <!-- end .work-list__article -->
+        </div> <!-- end .work-list__row -->
+      {% endif %}
     {% endfor %}
-  </ul>
-</div> 
+    </div>
+</div>

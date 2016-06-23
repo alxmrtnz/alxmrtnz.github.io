@@ -188,6 +188,14 @@ a.link--text-in-p {
 	}
 }
 
+.h-mono {
+    font-family:    $monotype;
+    letter-spacing: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: rgba(0,0,0,.4);
+}
 
 
 .text--mono{
@@ -205,5 +213,9 @@ a.link--text-in-p {
 }
 
 .mono-heading-top {
+    margin-bottom: 0px;
+}
+
+.mb-none {
     margin-bottom: 0px;
 }

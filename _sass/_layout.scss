@@ -89,7 +89,7 @@
 .featured-icon, .featured-image {
     margin: 0 auto 30px auto;
     max-width: 140px;
-    
+
 
     @media screen and (min-width: $on-laptop) {
         // position: absolute;
@@ -108,7 +108,9 @@
 }
 
 
-
+.bg--painted {
+    background: $gray-color;
+}
 
 
 .contact-list,

@@ -5,9 +5,9 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 24 May 2016 22:02:34 -0400</pubDate>
-    <lastBuildDate>Tue, 24 May 2016 22:02:34 -0400</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <pubDate>Wed, 22 Jun 2016 20:23:36 -0400</pubDate>
+    <lastBuildDate>Wed, 22 Jun 2016 20:23:36 -0400</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>What Does Agile Mean to Me?</title>
@@ -316,8 +316,8 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
-&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
+&lt;p&gt;###User Flows
+These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
     &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -358,11 +358,11 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 
 &lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
 
-&lt;h2 id=&quot;understanding-the-audience&quot;&gt;Understanding the Audience&lt;/h2&gt;
-&lt;p&gt;The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
+&lt;p&gt;##Understanding the Audience
+The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
 
-&lt;h3 id=&quot;personas&quot;&gt;Personas&lt;/h3&gt;
-&lt;p&gt;In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
+&lt;p&gt;###Personas
+In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
@@ -374,8 +374,8 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
-&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
+&lt;p&gt;###User Flows
+These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
     &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -383,8 +383,8 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;site-structure&quot;&gt;Site Structure&lt;/h2&gt;
-&lt;p&gt;After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
+&lt;p&gt;##Site Structure
+After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
@@ -396,8 +396,8 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 
 &lt;p&gt;[sitemap here]&lt;/p&gt;
 
-&lt;h2 id=&quot;prototyping&quot;&gt;Prototyping&lt;/h2&gt;
-&lt;p&gt;Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
+&lt;p&gt;##Prototyping
+Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -412,8 +412,8 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 
 &lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
 
-&lt;h3 id=&quot;typography&quot;&gt;Typography&lt;/h3&gt;
-&lt;p&gt;In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
+&lt;p&gt;###Typography
+In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -421,14 +421,14 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h4 id=&quot;aaux-next&quot;&gt;Aaux Next&lt;/h4&gt;
-&lt;p&gt;Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
+&lt;p&gt;####Aaux Next
+Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
 
-&lt;h4 id=&quot;minion-pro&quot;&gt;Minion Pro&lt;/h4&gt;
-&lt;p&gt;Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
+&lt;p&gt;####Minion Pro
+Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
 
-&lt;h3 id=&quot;colors&quot;&gt;Colors&lt;/h3&gt;
-&lt;p&gt;With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
+&lt;p&gt;###Colors
+With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -497,11 +497,11 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 
 &lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
 
-&lt;h2 id=&quot;understanding-the-audience&quot;&gt;Understanding the Audience&lt;/h2&gt;
-&lt;p&gt;The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
+&lt;p&gt;##Understanding the Audience
+The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
 
-&lt;h3 id=&quot;personas&quot;&gt;Personas&lt;/h3&gt;
-&lt;p&gt;In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
+&lt;p&gt;###Personas
+In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
@@ -513,8 +513,8 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
-&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
+&lt;p&gt;###User Flows
+These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
     &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -522,8 +522,8 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;site-structure&quot;&gt;Site Structure&lt;/h2&gt;
-&lt;p&gt;After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
+&lt;p&gt;##Site Structure
+After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
@@ -535,8 +535,8 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 
 &lt;p&gt;[sitemap here]&lt;/p&gt;
 
-&lt;h2 id=&quot;prototyping&quot;&gt;Prototyping&lt;/h2&gt;
-&lt;p&gt;Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
+&lt;p&gt;##Prototyping
+Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -551,8 +551,8 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 
 &lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
 
-&lt;h3 id=&quot;typography&quot;&gt;Typography&lt;/h3&gt;
-&lt;p&gt;In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
+&lt;p&gt;###Typography
+In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -560,14 +560,14 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h4 id=&quot;aaux-next&quot;&gt;Aaux Next&lt;/h4&gt;
-&lt;p&gt;Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
+&lt;p&gt;####Aaux Next
+Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
 
-&lt;h4 id=&quot;minion-pro&quot;&gt;Minion Pro&lt;/h4&gt;
-&lt;p&gt;Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
+&lt;p&gt;####Minion Pro
+Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
 
-&lt;h3 id=&quot;colors&quot;&gt;Colors&lt;/h3&gt;
-&lt;p&gt;With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
+&lt;p&gt;###Colors
+With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -657,11 +657,11 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 
 </description>
         <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/work/battle-of-the-hands.html</link>
-        <guid isPermaLink="true">/work/battle-of-the-hands.html</guid>
+        <link>/blah/battle-of-the-hands.html</link>
+        <guid isPermaLink="true">/blah/battle-of-the-hands.html</guid>
         
         
-        <category>work</category>
+        <category>blah</category>
         
       </item>
     

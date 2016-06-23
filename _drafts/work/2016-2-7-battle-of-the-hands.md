@@ -6,7 +6,7 @@ date:   2015-11-28 19:46:27
 featured-icon-url: /assets/posts/11-28-15/icon-sketch-plugin.png
 featured-icon-alt: "Sketch Plugin"
 comments: true
-category: work
+category: blah
 permalink: /:categories/:title.html
 ---
 
