@@ -185,6 +185,12 @@
     text-align: center;
 }
 
+.grid__item--featured {
+    img {
+        max-height: 723px;
+    }
+}
+
 .grid__item--half {
     flex-basis: 49%;
 

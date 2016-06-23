@@ -580,13 +580,13 @@ ul.social-icon-list {
         color: #8A70DB; }
 
 .nav--primary {
-  border: 17px solid #fff;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0px;
   display: flex;
+  max-width: 1070px;
   margin: 0 auto; }
 
 .nav-list {
@@ -855,6 +855,9 @@ span.img-caption {
   flex-basis: 100%;
   margin: 0 auto 20px auto;
   text-align: center; }
+
+.grid__item--featured img {
+  max-height: 723px; }
 
 .grid__item--half {
   flex-basis: 49%; }

@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 22 Jun 2016 20:23:36 -0400</pubDate>
-    <lastBuildDate>Wed, 22 Jun 2016 20:23:36 -0400</lastBuildDate>
+    <pubDate>Thu, 23 Jun 2016 18:03:47 -0400</pubDate>
+    <lastBuildDate>Thu, 23 Jun 2016 18:03:47 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -224,6 +224,43 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
         
         
         <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>Washington Leadership Academy</title>
+        <description>&lt;div class=&quot;grid grid--featured-image grid--no-bg&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full &quot;&gt;
+	    &lt;img class=&quot;item-img--full&quot; src=&quot;/assets/work/wla/featured-image-wla.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;Over seventy-five years ago, Prohibition was repealed in the United States and once again beer was sold openly to the public. What’s hard to believe is that after all of that time, while almost every other state in our nation embraces consumer convenience, Pennsylvania is still no closer to reforming Prohibition-era beer laws.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, this means you still can’t buy a six-pack of beer conveniently in Pennsylvania.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.freemybeer.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Free My Beer&lt;/a&gt; is an advocacy group that supports any proposed legislation that would allow convenience and grocery stores to sell beer in the same fashion as restaurants and taverns and they came to us to design and develop their platform’s website.&lt;/p&gt;
+
+&lt;h2 id=&quot;designing-for-the-keystone-state&quot;&gt;Designing for the Keystone State&lt;/h2&gt;
+&lt;p&gt;I served as the principal visual designer for the project. After evaluating project goals with our client, I was able to assess that from in terms of a visual language, the site needed to reference the past while looking to the future.&lt;/p&gt;
+
+&lt;p&gt;I used a mix of historical photography, Pennsylvania-themed symbolism (it’s the Keystone State, after all!), and bold typography that referenced Prohibition-era newspapers, to connect the past with the future and the state of Pennsylvania with this ever-important issue.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/freemybeer/freemybeer-one-page-comp.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;Sign the petition here to help support HB 466 and bring beer convenience to the masses.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
+        <link>/work/wla.html</link>
+        <guid isPermaLink="true">/work/wla.html</guid>
+        
+        
+        <category>work</category>
         
       </item>
     
@@ -460,16 +497,27 @@ With content being broken up into several main sections, I defined colors that w
       <item>
         <title>Free My Beer</title>
         <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/fosi/featured-image-fosi.jpg&quot; /&gt;
+	&lt;div class=&quot;grid__item grid__item--full grid__item--featured&quot;&gt;
+	    &lt;img src=&quot;/assets/work/freemybeer/featured-image-freemybeer.jpg&quot; /&gt;
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;p&gt;The &lt;a href=&quot;http://www.fosi.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Family Online Safety Institute&lt;/a&gt; (FOSI) came to &lt;a href=&quot;http://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to redesign and rebuild their website. Our mission was twofold —to combine fosi.org and aplaftormforgood.org (now Good Digital Parenting) under one umbrella, and to create a beautiful design and a user friendly experience&lt;/p&gt;
-
 &lt;p&gt;Over seventy-five years ago, Prohibition was repealed in the United States and once again beer was sold openly to the public. What’s hard to believe is that after all of that time, while almost every other state in our nation embraces consumer convenience, Pennsylvania is still no closer to reforming Prohibition-era beer laws.&lt;/p&gt;
 
-&lt;p&gt;Ultimately, this means you still can’t buy a six-pack of beer conveniently in Pennsylvania. Free My Beer is an advocacy group that supports any proposed legislation that would allow convenience and grocery stores to sell beer in the same fashion as restaurants and taverns.&lt;/p&gt;
+&lt;p&gt;Ultimately, this means you still can’t buy a six-pack of beer conveniently in Pennsylvania.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.freemybeer.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Free My Beer&lt;/a&gt; is an advocacy group that supports any proposed legislation that would allow convenience and grocery stores to sell beer in the same fashion as restaurants and taverns and they came to us to design and develop their platform’s website.&lt;/p&gt;
+
+&lt;h2 id=&quot;designing-for-the-keystone-state&quot;&gt;Designing for the Keystone State&lt;/h2&gt;
+&lt;p&gt;I served as the principal visual designer for the project. After evaluating project goals with our client, I was able to assess that from in terms of a visual language, the site needed to reference the past while looking to the future.&lt;/p&gt;
+
+&lt;p&gt;I used a mix of historical photography, Pennsylvania-themed symbolism (it’s the Keystone State, after all!), and bold typography that referenced Prohibition-era newspapers, to connect the past with the future and the state of Pennsylvania with this ever-important issue.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/freemybeer/freemybeer-one-page-comp.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
 
 &lt;p&gt;Sign the petition here to help support HB 466 and bring beer convenience to the masses.&lt;/p&gt;
 
@@ -717,41 +765,6 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
         <pubDate>Sun, 15 Nov 2015 15:46:27 -0500</pubDate>
         <link>/2015/11/15/finding-a-work-life-balance.html</link>
         <guid isPermaLink="true">/2015/11/15/finding-a-work-life-balance.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Switching to Sketch</title>
-        <description>
-&lt;p&gt;About a year ago, I made the switch over from using Photoshop as my primary design tool to using Sketch. At first, the transition was a bit awkward. I found myself lacking in the shortcut department and many times found the simplest things, such as grouping and using layers properly, difficult. However, over time, I began to see the value in having a program built specifically for UI design by web designers.&lt;/p&gt;
-
-&lt;p&gt;Here are some of my top takeaways:&lt;/p&gt;
-
-&lt;h2 id=&quot;open-source-design-is-a-pretty-awesome-thing&quot;&gt;Open Source Design is a (Pretty Awesome) Thing&lt;/h2&gt;
-&lt;p&gt;The talk that inspired me the most came from &lt;a href=&quot;https://twitter.com/garthdb&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Garth Braithwaite&lt;/a&gt;, a product designer and front-end developer on PhoneGap at Adobe.&lt;/p&gt;
-
-&lt;p&gt;Garth discussed the benefits of open source design and detailed some of his work on &lt;a href=&quot;http://www.nightscout.info/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;NightScout&lt;/a&gt;, an app developed by parents of children with Type 1 Diabetes to remotely help monitor blood sugar levels (and save lives). By connecting data from a monitoring device called the Dexcom G4, parents can send live updates to their phones and smartwatches.&lt;/p&gt;
-
-&lt;p&gt;His advice for getting into open source?&lt;/p&gt;
-
-&lt;p&gt;Whether it’s designing a logo for the project, contributing source code, or just adding to the conversation, find the thing you’re most passionate about and contribute. There are also some &lt;a href=&quot;http://opendesign.foundation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;https://github.com/opensourcedesign&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;places&lt;/a&gt; you can go to get started.&lt;/p&gt;
-
-&lt;h2 id=&quot;side-projects-are-stupid-and-theyre-supposed-to-be&quot;&gt;Side Projects are Stupid… and They’re Supposed to Be&lt;/h2&gt;
-&lt;p&gt;I had been looking forward to being introduced to &lt;a href=&quot;https://twitter.com/schneidertobias&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tobias van Schneider&lt;/a&gt; (and his luscious beard) for some time. Tobias is a German-born designer that recently led the Spotify brand refresh.&lt;/p&gt;
-
-&lt;p&gt;His talk focused on how keeping side projects focused around fun and stupid ideas helps us from freezing up and over thinking about our work. From &lt;a href=&quot;http://authenticweather.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Authentic Weather&lt;/a&gt; to his own &lt;a href=&quot;http://www.beardbrand.com/products/black-marble-beard-oil&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;line of beard oil&lt;/a&gt;, Tobias has always thought small instead and followed through on some downright silly ideas that have turned into (sometimes viral) side projects. Some guiding principles for successful side projects? Let yourself be stupid, ignore everybody (they all have their own ideas and opinions of how things should be), trust your gut, and stay busy.&lt;/p&gt;
-
-&lt;h2 id=&quot;web-accessibility-is-more-than-accessible-code&quot;&gt;Web Accessibility is More than Accessible Code&lt;/h2&gt;
-&lt;p&gt;As practitioners of web design and development, it’s our job to make our websites usable, visually pleasing, and accessible – and that doesn’t mean just developers/engineers implementing accessible code.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/Jennison&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Jennison Asuncion&lt;/a&gt;, Co-Director of the Adaptech Research Network, spoke about how producing accessible content means designing and developing user experiences that everyone, including people with disabilities, can independently consume and interact with. From touching on resources for &lt;a href=&quot;http://jxnblk.com/colorable/demos/text/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;sufficient color contrast&lt;/a&gt; to walking us through the experience of using a screenreader on &lt;a href=&quot;https://www.united.com/ual/en/us/?root=1&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;United.com&lt;/a&gt;, Jennison got me thinking about how web professionals can (and should) improve accessibility across their work.&lt;/p&gt;
-
-&lt;p&gt;For a first web conference experience, it was a blast and extremely inspiring. If you’re a web professional or have just been thinking about putting yourself out there and learning how we creatives can help impact the world around us, I’d recommend attending a conference like FOWD. I’m already planning my next steps of finding and contributing to an open source project, working to make my sites more accessible, and might even be thinking about my own beard oil… well, we’ll see about that last one. Now get out there and get learning!&lt;/p&gt;
-</description>
-        <pubDate>Sun, 15 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/2015/11/15/switching-to-sketch.html</link>
-        <guid isPermaLink="true">/2015/11/15/switching-to-sketch.html</guid>
         
         
       </item>
