@@ -1,48 +1,141 @@
+$work-break: 800px;
+
 // This is for styling the work summary page
 
+.work-list__title {
+    text-align: center;
+}
+
+.work-list__heading {
+    position: relative;
+    padding-top: 45px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    display: inline-block;
+
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 95%;
+        height: 4px;
+        background: $iron;
+        bottom: 0px;
+    }
+
+    @media screen and (min-width: $work-break) {
+        padding-top: 70px;
+    }
+}
+
 .work-list {
-    max-width: 1240px;
+    max-width: 540px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0px 15px 30px 15px;
+
+    @media screen and (min-width: $work-break) {
+        padding: 0 30px 50px 30px;
+        max-width: 1240px;
+    }
 }
 
 .work-list__row {
     display: flex;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $work-break) {
+        flex-wrap: nowrap;
+        margin-bottom: 30px;
+    }
 }
 
 .work-list__article {
-    // flex-grow: 1;
-    width: 50%;
-    padding: 10px;
+    margin-bottom: 30px;
+    width: 100%;
 
     &:hover {
         .article__summary {
             background: $white;
             color: $black;
+
+            .summary__arrow {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+    }
+
+    @media screen and (min-width: $work-break) {
+        margin-bottom: 0px;
+        padding: 10px;
+        width: 50%;
+
+        &:nth-child(1) {
+            padding-left: 0px;
+        }
+
+        &:nth-child(2) {
+            padding-right: 0px;
         }
     }
 }
 
 .work-list__article-inner {
-
+    position: relative;
 }
 
 .article__image {
     border: 8px solid $white;
-    margin-bottom: 10px;
+    
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (min-width: $work-break) {
+        margin-bottom: 10px;
+    }
 }
 
 .article__summary {
     text-align: left;
     padding: 20px;
     transition: background .25s ease;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: $white;
+
+    .summary__text {
+        width: 90%;
+    }
+
+    .summary__arrow {
+        width: 10%;
+
+        @media screen and (min-width: $work-break) {
+            transform: translateY(80px);
+            transition: all .2s;
+            opacity: .5;
+        }
+    }
+
+    @media screen and (min-width: $work-break) {
+        background: none;
+    }
 }
 
 .article__title {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 26px;
     margin-bottom: 5px;
+
+    @media screen and (min-width: $work-break) {
+        font-size: 26px;
+        line-height: 29px;
+        margin-bottom: 5px;
+    }
 }
 
 .article__category {

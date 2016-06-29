@@ -1,12 +1,14 @@
 .nav--primary {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+
     align-items: center;
-    padding: 20px 0px;
+    padding: 20px 15px;
 	display: flex;
-    max-width: 1070px;
+    max-width: 1240px;
     margin: 0 auto;
+
+    @media screen and (min-width: $on-tablet) {
+        padding: 20px 30px;
+    }
 }
 
 .nav-list {
