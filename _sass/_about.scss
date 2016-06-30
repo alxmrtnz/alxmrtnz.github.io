@@ -1,8 +1,28 @@
+.about-wrapper {
+	background: $gray-color;
+	display: flex;
+	padding: 80px 0px 0px 0px;
+}
+
+.about__copy {
+	width: 60%;
+	max-width: 650px;
+	padding: 50px 30px 0px 0px;
+	top: 70px;
+	right: 30px;
+}
+
+.about__image {
+	height: 100%;
+	width: 50%;
+	min-width: 600px;
+}
+
 .heading--about {
 	margin-bottom: 20px;
 
 	@media screen and (min-width: $on-palm) {
-	    text-align: center;
+	    // text-align: center;
 	    margin-bottom: 30px;
 	}
 
@@ -33,3 +53,4 @@
 	    font-size: 78px;
 	}
 }
+

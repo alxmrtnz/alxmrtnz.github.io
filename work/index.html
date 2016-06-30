@@ -4,17 +4,44 @@ Title: Work
 group: 'navigation'
 ---
 
-<div class="content-wrapper bg--painted">
-    <div class="work-list">
-        <div class="work-list__title">
-            <h1 class="h-mono work-list__heading">
-                Work
-            </h1>
-        </div>
-    {% for post in site.categories.work %}
-      {% assign loopindex = forloop.index | modulo: 2 %}
-      {% if loopindex == 1 %}
-            <div class="work-list__row">
+<div class="page-content wrapper">
+    <div class="bg--painted">
+        <div class="work-list">
+            <div class="work-list__title">
+                <h1 class="h-mono work-list__heading">
+                    Work
+                </h1>
+            </div>
+        {% for post in site.categories.work %}
+          {% assign loopindex = forloop.index | modulo: 2 %}
+          {% if loopindex == 1 %}
+                <div class="work-list__row">
+                    <div class="work-list__article">
+                        <a href="{{ post.url }}" class="">
+                            <div class="work-list__article-inner">
+                                <div class="article__image">
+                                    <img src="http://placekitten.com/600/520">
+                                </div>
+                                <div class="article__summary">
+                                    <div class="summary__text">
+                                        <h2 class="article__title">
+                                            {{ post.title }}
+                                        </h2>
+                                        <p class="article__category text--mono">
+                                            {{ post.work-type }}
+                                        </p>
+                                    </div>
+                                    <div class="summary__arrow">
+                                        <img class="" src="{{ site.url }}/assets/images/arrow.svg" alt="->">
+                                    </div>
+                                </div>
+                            </div> <!-- end .work-list__article-inner -->
+                        </a>
+                    </div> <!-- end .work-list__article -->
+                {% if forloop.last == true %}
+                    </div> <!-- end .work-list__row -->
+                {% endif %}
+          {% else %}
                 <div class="work-list__article">
                     <a href="{{ post.url }}" class="">
                         <div class="work-list__article-inner">
@@ -36,35 +63,11 @@ group: 'navigation'
                             </div>
                         </div> <!-- end .work-list__article-inner -->
                     </a>
-                </div> <!-- end .work-list__article -->
-            {% if forloop.last == true %}
-                </div> <!-- end .work-list__row -->
-            {% endif %}
-      {% else %}
-            <div class="work-list__article">
-                <a href="{{ post.url }}" class="">
-                    <div class="work-list__article-inner">
-                        <div class="article__image">
-                            <img src="http://placekitten.com/600/520">
-                        </div>
-                        <div class="article__summary">
-                            <div class="summary__text">
-                                <h2 class="article__title">
-                                    {{ post.title }}
-                                </h2>
-                                <p class="article__category text--mono">
-                                    {{ post.work-type }}
-                                </p>
-                            </div>
-                            <div class="summary__arrow">
-                                <img class="" src="{{ site.url }}/assets/images/arrow.svg" alt="->">
-                            </div>
-                        </div>
-                    </div> <!-- end .work-list__article-inner -->
-                </a>
-          </div> <!-- end .work-list__article -->
-        </div> <!-- end .work-list__row -->
-      {% endif %}
-    {% endfor %}
-    </div>
+              </div> <!-- end .work-list__article -->
+            </div> <!-- end .work-list__row -->
+          {% endif %}
+        {% endfor %}
+        </div>
+    </div> <!-- end .bg--painted -->
+    
 </div>
