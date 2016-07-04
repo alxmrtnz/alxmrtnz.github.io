@@ -988,7 +988,7 @@ ul.ul--post-archive {
   @media screen and (min-width: 600px) {
     .about-wrapper {
       padding: 70px 0px 0px 0px; } }
-  @media screen and (min-width: 1050px) {
+  @media screen and (min-width: 1070px) {
     .about-wrapper {
       flex-direction: row-reverse;
       padding: 40px 0px 0px 0px; } }
@@ -1000,7 +1000,7 @@ ul.ul--post-archive {
   margin: 0 auto;
   max-width: 600px;
   padding: 0px 30px; }
-  @media screen and (min-width: 1050px) {
+  @media screen and (min-width: 1070px) {
     .about__copy {
       width: 60%;
       max-width: 650px;
@@ -1032,7 +1032,7 @@ ul.ul--post-archive {
 .about__image {
   max-width: 490px;
   margin: 0 auto; }
-  @media screen and (min-width: 1050px) {
+  @media screen and (min-width: 1070px) {
     .about__image {
       width: 50%;
       max-width: 50%;
