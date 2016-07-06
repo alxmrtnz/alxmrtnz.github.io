@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 04 Jul 2016 19:44:31 -0400</pubDate>
-    <lastBuildDate>Mon, 04 Jul 2016 19:44:31 -0400</lastBuildDate>
+    <pubDate>Wed, 06 Jul 2016 10:48:05 -0400</pubDate>
+    <lastBuildDate>Wed, 06 Jul 2016 10:48:05 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -235,24 +235,73 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;p&gt;Over seventy-five years ago, Prohibition was repealed in the United States and once again beer was sold openly to the public. What’s hard to believe is that after all of that time, while almost every other state in our nation embraces consumer convenience, Pennsylvania is still no closer to reforming Prohibition-era beer laws.&lt;/p&gt;
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;The Washington Leadership Academy is a public charter school working to change the way we think about high school education. With a mission to provide sutdents in the District of Columbia with the knowledge, skills and habits required for success in college and lives of public leadership, WLA came to our team at &lt;a href=&quot;http://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; for a branding and website overhaul.&lt;/p&gt;
 
-&lt;p&gt;Ultimately, this means you still can’t buy a six-pack of beer conveniently in Pennsylvania.&lt;/p&gt;
+&lt;p&gt;The project presented our team with a unique opportunity to create a site from the ground up on Squarespace, design and build a client project in the open, give back to our local community, and help lead the way for a new kind high school education.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.freemybeer.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Free My Beer&lt;/a&gt; is an advocacy group that supports any proposed legislation that would allow convenience and grocery stores to sell beer in the same fashion as restaurants and taverns and they came to us to design and develop their platform’s website.&lt;/p&gt;
+&lt;h2 id=&quot;creating-a-modular-design-system&quot;&gt;Creating a Modular Design System&lt;/h2&gt;
 
-&lt;h2 id=&quot;designing-for-the-keystone-state&quot;&gt;Designing for the Keystone State&lt;/h2&gt;
-&lt;p&gt;I served as the principal visual designer for the project. After evaluating project goals with our client, I was able to assess that from in terms of a visual language, the site needed to reference the past while looking to the future.&lt;/p&gt;
+&lt;p&gt;In order to create custom Squarespace site that would be easily customizeable and maintainable in the future, our team set out to craft a set of reusable and modular components.&lt;/p&gt;
 
-&lt;p&gt;I used a mix of historical photography, Pennsylvania-themed symbolism (it’s the Keystone State, after all!), and bold typography that referenced Prohibition-era newspapers, to connect the past with the future and the state of Pennsylvania with this ever-important issue.&lt;/p&gt;
+&lt;p&gt;Designing and building in components would enabled us to think of the site block by block instead of page by page and in turn, creating greater future flexibility for the WLA team.&lt;/p&gt;
+
+&lt;h3 id=&quot;wireframing-and-prototyping&quot;&gt;Wireframing and Prototyping&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Initially set out to create a set of 4-5 template pages, each with their own purpose/use. However, it quickly became clear that creating a set of moveable modules would allow for greater custimization down the line.&lt;/li&gt;
+  &lt;li&gt;We held several internal wireframing workshops. Including one where we identified the most important reusable blocks, cut them out, and documented them using Github issues&lt;/li&gt;
+  &lt;li&gt;Allowed us to account for a variety of modules and convey to the client how they would fit together.&lt;/li&gt;
+  &lt;li&gt;Next, we put together an Invision prototype of the wireframes to show the client how the different components could come together in a page&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
+	    &lt;img src=&quot;/assets/work/wla/wla-wireframe-homepage.png&quot; alt=&quot;Wireframe of WLA&#39;s Home Page&quot; /&gt;
+	    
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
+	    &lt;img src=&quot;/assets/work/wla/wla-wireframe-about.png&quot; alt=&quot;Wireframe of WLA&#39;s About Page&quot; /&gt;
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/wla/team-wireframe-workshop1.jpg&quot; alt=&quot;ISL team wireframing workshop&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h3 id=&quot;documentation&quot;&gt;Documentation&lt;/h3&gt;
+&lt;p&gt;Sketch, Photoshop, Omnigraffle, Illustrator, Balsamiq… the list goes on and on. It’s a bit too easy to jump straight into your favorite design tool and start cranking out wireframes for a project without assessing the real needs of the site.&lt;/p&gt;
+
+&lt;p&gt;The excercise we found most useful was printing out and then cutting apart wireframes to determine which components to keep and which to toss. Then, in order to keep track of each component, both for future visual design and development, we photographed each and saved it as an issue on Github.&lt;/p&gt;
+
+&lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
+&lt;p&gt;Our team was presented with a set of exciting challenges. It’s not often that a client With the WLA website, our team had the opportunity to explore three things that aren’t often explored on client projects:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create for good (pro bono work)&lt;/li&gt;
+  &lt;li&gt;Create a custom site using Squarespace&lt;/li&gt;
+  &lt;li&gt;Design and build in the open&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;designing--developing-in-the-open&quot;&gt;Designing (&amp;amp; Developing) in the Open&lt;/h2&gt;
+
+&lt;h3 id=&quot;the-tools-we-used&quot;&gt;The Tools We Used&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Github&lt;/li&gt;
+  &lt;li&gt;Waffle&lt;/li&gt;
+  &lt;li&gt;Invision&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;brand-creation&quot;&gt;Brand Creation&lt;/h2&gt;
+&lt;p&gt;My colleague &lt;a href=&quot;http://www.dribbble.com/thepaleshadow/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;James Bonilla&lt;/a&gt; worked closely with WLA to create the brand for both online and offline prescence. Participating in internal critiques and sessions with the client, I lent support for the branding process in order to create a cohesion between the brand and the website itself.&lt;/p&gt;
+
+&lt;h2 id=&quot;key-takeaways&quot;&gt;Key Takeaways&lt;/h2&gt;
+&lt;p&gt;Through the entire process&lt;/p&gt;
 
 &lt;div class=&quot;grid grid--featured-image&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
 	    &lt;img src=&quot;/assets/work/freemybeer/freemybeer-one-page-comp.jpg&quot; /&gt;
 	&lt;/div&gt; 
 &lt;/div&gt;
-
-&lt;p&gt;Sign the petition here to help support HB 466 and bring beer convenience to the masses.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>

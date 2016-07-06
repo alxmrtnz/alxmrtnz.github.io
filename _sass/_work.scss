@@ -198,12 +198,6 @@ $work-break: 800px;
 
 
 .work-content {
-    h1, h2, h3, h4, h5, p, ol, ul {
-        max-width: $post-content-max-width;
-        padding: 0px 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     ol, ul {
         // font-size: 20px;
@@ -221,9 +215,8 @@ $work-break: 800px;
     }
 
     .video-container {
-        max-width: 1000px;
+        max-width: 1375px;
         margin: 0 auto 50px auto;
-        padding: $media-padding;
     }
     .embed-container {
         position: relative;
@@ -247,58 +240,88 @@ $work-break: 800px;
 .grid {
     background: $gray-color;
     display: flex;
-    // max-width: $media-max-width;
-    margin: 70px 17px;
-    padding: 80px 40px 60px 40px;
+    margin: 70px 0px;
+    padding: 20px;
     flex-wrap: wrap;
     position: relative;
 
     &.grid--featured-image {
         padding: 100px 20px;
+
+        img {
+            width: auto;
+            box-shadow: 0px 0px 0px 0px;
+            -moz-box-shadow: 0px 0px 0px 0px;
+            -webkit-box-shadow: 0px 0px 0px 0px;
+        }
+
+        .item-img--full {
+           width: 100%;
+        }
+
     }
 
     &.grid--no-bg {
         padding:0px;
         background: none;
     }
+
+    @media screen and (min-width: $on-palm) {
+        padding: 45px 40px;
+        margin: 70px 17px;
+    }
+
 }
 
 .grid__item {
     box-sizing: border-box;
-    margin-right: 2%;
     margin-bottom: 20px;
     text-align: center;
     width: auto;
 
 }
 
+.grid__item--full, .grid__item--half {
+    img {
+        width: 100%;
+        box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
+    }
+}
+
 .grid__item--full {
     flex-basis: 100%;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 30px auto;
     text-align: center;
 }
 
 .grid__item--featured {
     img {
         max-height: 723px;
+
     }
 }
 
 .grid__item--half {
-    flex-basis: 49%;
+    flex-basis: 100%;
+    
 
     &.end {
         margin-right: 0;
     }
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (min-width: $on-tablet) {
+        flex-basis: 49%;
+        margin-right: 2%;
+    }
 }
 
-.item-img--full {
-   width: 100%;
-}
 
-img {
-    max-width: 100%;
-}
 
 .bg--gray {
     background: $gray-color;
