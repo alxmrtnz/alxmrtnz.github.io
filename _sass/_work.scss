@@ -276,8 +276,27 @@ $work-break: 800px;
 .grid__item {
     box-sizing: border-box;
     margin-bottom: 20px;
-    text-align: center;
     width: auto;
+    text-align: center;
+
+    .img-caption {
+        font-family: $sans-serif;
+        font-size: 15px;
+        line-height: 18px;
+        padding-top: 20px;
+        text-align: left;
+        display: block;
+        color: $gray-color-darker;
+
+        a {
+            color: $gray-color-darker;
+            text-decoration: underline;
+
+            &:hover {
+                color: $gray-color-darker;
+            }
+        }
+    }
 
 }
 
@@ -293,7 +312,6 @@ $work-break: 800px;
 .grid__item--full {
     flex-basis: 100%;
     margin: 0 auto 30px auto;
-    text-align: center;
 }
 
 .grid__item--featured {

@@ -24,11 +24,12 @@ $black:             #333;
 $gray-color:        #EAEFF2;
 $gray-color-light:  lighten($gray-color, 3%);
 $gray-color-dark:   darken($gray-color, 25%);
+$gray-color-darker: darken($gray-color, 40%);
 $blue-color:        #419BF9;
 $iron:              #D2D9DE;
 
 $text-color:       	$black;
-$heading-color-light:  #A5A7AA;
+$heading-color-light:  #a6b0c3;
 $white: 			#fff;
 $background-color: 	$white;
 $brand-color:      	#8A70DB;
