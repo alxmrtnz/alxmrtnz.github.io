@@ -161,7 +161,15 @@ $work-break: 800px;
 
 .hero__content {
     max-width: 1070px;
-    margin: 150px auto;
+    margin: 10px auto;
+    padding-top: 40px;
+    border-top: 1px solid $gray-color;
+
+    @media screen and (min-width: $on-tablet) {
+        margin: 150px auto;
+        border-top: 0px;
+        padding-top: 0px;
+    }
 }
 
 .hero__title-container, .hero__summary-container {
@@ -170,8 +178,11 @@ $work-break: 800px;
 }
 
 .hero__title-container {
-    width: 38%;
-    margin-right: 3%
+
+    @media screen and (min-width: $on-tablet) {
+        width: 38%;
+        margin-right: 3%;
+    }
 }
 
 .work-type {
@@ -179,13 +190,22 @@ $work-break: 800px;
 }
 
 .work-title {
-    font-size: 38px;
-    line-height: 45px;
+    font-size: 32px;
+    line-height: 38px;
+
+    @media screen and (min-width: $on-tablet) {
+        font-size: 38px;
+        line-height: 45px;
+    }
 }
 
 .hero__summary-container {
-    width: 58%;
-    max-width: 600px;
+    
+
+    @media screen and (min-width: $on-tablet) {
+        width: 58%;
+        max-width: 600px;
+    }
 }
 
 .work-summary {
@@ -240,7 +260,7 @@ $work-break: 800px;
 .grid {
     background: $gray-color;
     display: flex;
-    margin: 70px 0px;
+    margin: 30px 0px;
     padding: 20px;
     flex-wrap: wrap;
     position: relative;
@@ -270,6 +290,8 @@ $work-break: 800px;
         padding: 45px 40px;
         margin: 70px 17px;
     }
+
+
 
 }
 
