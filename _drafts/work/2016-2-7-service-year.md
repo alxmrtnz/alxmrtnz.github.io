@@ -5,7 +5,7 @@ date:   2015-11-28 19:46:27
 comments: false
 category: work
 permalink: /:categories/:title.html
-work-type: UX/UI, Product Design
+work-type: Product Design, UX/UI
 work-summary: A platform that serves as a one-stop shop for connecting young Americans with year long service opportunities.
 external-link: http://www.serviceyr.org/
 ---
