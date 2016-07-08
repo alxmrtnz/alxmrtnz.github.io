@@ -9,10 +9,13 @@ $home-mono-type-margin-vertical: 60px;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 .content-wrapper--homepage {
 	margin: auto;
+	z-index: 2;
 }
 
 .home--bio {
@@ -78,5 +81,57 @@ ul.social-icon-list {
 				color: $brand-color;
 			}
 		}
+	}
+}
+
+.homepage-bg-imgs {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	opacity: .1;
+}
+
+.bg-img {
+
+
+	-webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
+	filter: grayscale(1) contrast(1.1) brightness(1.1);
+
+	img {
+		width: 100%;
+		z-index: 1;
+	}
+
+	&:before {
+		content: '';
+	    display: block;
+	    height: 100%;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    position: absolute;
+	    pointer-events: none;
+	    z-index: 2;
+
+	    background: #a0a0a0;
+        mix-blend-mode: soft-light;
+	}
+
+	&:after {
+		z-index: 3;
+		content: '';
+	    display: block;
+	    height: 100%;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    position: absolute;
+	    pointer-events: none;
+
+	    background: #383838;
+        mix-blend-mode: lighten;
 	}
 }

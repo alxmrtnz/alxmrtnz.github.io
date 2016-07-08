@@ -528,10 +528,13 @@ a.link--text-in-p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%; }
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
 
 .content-wrapper--homepage {
-  margin: auto; }
+  margin: auto;
+  z-index: 2; }
 
 .home--bio {
   position: relative; }
@@ -578,6 +581,46 @@ ul.social-icon-list {
       color: #9bb3c1; }
       ul.social-icon-list li a:hover {
         color: #8A70DB; }
+
+.homepage-bg-imgs {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  opacity: .1; }
+
+.bg-img {
+  -webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
+  filter: grayscale(1) contrast(1.1) brightness(1.1); }
+  .bg-img img {
+    width: 100%;
+    z-index: 1; }
+  .bg-img:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    background: #a0a0a0;
+    mix-blend-mode: soft-light; }
+  .bg-img:after {
+    z-index: 3;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    background: #383838;
+    mix-blend-mode: lighten; }
 
 .nav--primary {
   align-items: center;
