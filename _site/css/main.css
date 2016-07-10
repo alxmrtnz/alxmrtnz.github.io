@@ -582,22 +582,30 @@ ul.social-icon-list {
       ul.social-icon-list li a:hover {
         color: #8A70DB; }
 
-.homepage-bg-imgs {
+.homepage-images {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
-  opacity: .1; }
+  opacity: .3; }
 
-.bg-img {
+.homepage-image-container {
+  height: 100%;
+  width: 100%;
   -webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
   filter: grayscale(1) contrast(1.1) brightness(1.1); }
-  .bg-img img {
+  .homepage-image-container .homepage-background-image {
+    height: 100%;
     width: 100%;
-    z-index: 1; }
-  .bg-img:before {
+    z-index: 1;
+    background: url(../assets/images/alexis1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .homepage-image-container:before {
     content: '';
     display: block;
     height: 100%;
@@ -609,7 +617,7 @@ ul.social-icon-list {
     z-index: 2;
     background: #a0a0a0;
     mix-blend-mode: soft-light; }
-  .bg-img:after {
+  .homepage-image-container:after {
     z-index: 3;
     content: '';
     display: block;

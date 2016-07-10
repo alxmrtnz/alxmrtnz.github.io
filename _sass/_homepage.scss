@@ -84,25 +84,32 @@ ul.social-icon-list {
 	}
 }
 
-.homepage-bg-imgs {
+.homepage-images {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	z-index: 1;
-	opacity: .1;
+	opacity: .3;
 }
 
-.bg-img {
-
+.homepage-image-container {
+	height: 100%;
+	width: 100%;
 
 	-webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
 	filter: grayscale(1) contrast(1.1) brightness(1.1);
 
-	img {
+	.homepage-background-image {
+		height: 100%;
 		width: 100%;
 		z-index: 1;
+		background: url(../assets/images/alexis1.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
 	}
 
 	&:before {
