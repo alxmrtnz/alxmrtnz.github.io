@@ -894,7 +894,7 @@ ul.social-icon-list {
       margin-bottom: 0px; }
 .work-content .video-container {
   max-width: 1375px;
-  margin: 0 auto 50px auto; }
+  margin: 0 auto; }
 .work-content .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -909,28 +909,32 @@ ul.social-icon-list {
   height: 100%; }
 
 .grid {
-  background: #EAEFF2;
   display: flex;
-  margin: 30px 0px;
-  padding: 20px;
   flex-wrap: wrap;
   position: relative; }
-  .grid.grid--featured-image {
-    padding: 100px 20px; }
-    .grid.grid--featured-image img {
-      width: auto;
-      box-shadow: 0px 0px 0px 0px;
-      -moz-box-shadow: 0px 0px 0px 0px;
-      -webkit-box-shadow: 0px 0px 0px 0px; }
-    .grid.grid--featured-image .item-img--full {
-      width: 100%; }
+  .grid.grid--featured-image img {
+    width: auto;
+    box-shadow: 0px 0px 0px 0px;
+    -moz-box-shadow: 0px 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 0px 0px; }
+  .grid.grid--featured-image .item-img--full {
+    width: 100%; }
   .grid.grid--no-bg {
     padding: 0px;
     background: none; }
   @media screen and (min-width: 600px) {
     .grid {
-      padding: 45px 40px;
-      margin: 70px 17px; } }
+      margin: 0px 17px; } }
+  .grid.grid-mt {
+    margin-top: 40px; }
+    @media screen and (min-width: 600px) {
+      .grid.grid-mt {
+        margin-top: 70px; } }
+  .grid.grid-mb {
+    margin-bottom: 30px; }
+    @media screen and (min-width: 600px) {
+      .grid.grid-mb {
+        margin-bottom: 70px; } }
 
 .grid__item {
   box-sizing: border-box;
@@ -963,17 +967,26 @@ ul.social-icon-list {
 
 .grid__item--full {
   flex-basis: 100%;
-  margin: 0 auto 30px auto; }
+  background: #EAEFF2;
+  padding: 20px; }
+  @media screen and (min-width: 600px) {
+    .grid__item--full {
+      padding: 45px 40px; } }
 
 .grid__item--featured img {
   max-height: 723px; }
 
 .grid__item--half {
-  flex-basis: 100%; }
+  flex-basis: 100%;
+  padding: 20px;
+  background: #EAEFF2; }
   .grid__item--half.end {
     margin-right: 0; }
   .grid__item--half img {
     width: 100%; }
+  @media screen and (min-width: 600px) {
+    .grid__item--half {
+      padding: 45px 40px; } }
   @media screen and (min-width: 768px) {
     .grid__item--half {
       flex-basis: 49%;

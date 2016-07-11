@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 09 Jul 2016 22:30:58 -0400</pubDate>
-    <lastBuildDate>Sat, 09 Jul 2016 22:30:58 -0400</lastBuildDate>
+    <pubDate>Sun, 10 Jul 2016 20:32:04 -0400</pubDate>
+    <lastBuildDate>Sun, 10 Jul 2016 20:32:04 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -247,7 +247,7 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 &lt;h3 id=&quot;wireframing-and-prototyping&quot;&gt;Wireframing and Prototyping&lt;/h3&gt;
 &lt;p&gt;We started the project with the goal of creating 4 to 5 unique template pages. In order to rapidly wireframe and prototype (due to the tight project timeline), I ended up created wireframes using a set of several repeated components.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
 	    &lt;img src=&quot;/assets/work/wla/wla-wireframe-homepage.png&quot; alt=&quot;Wireframe of WLA&#39;s Home Page&quot; /&gt;
 	&lt;/div&gt; 
@@ -262,7 +262,7 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 
 &lt;p&gt;After several internal wireframing workshops to validate the value of each component, I created several &lt;a href=&quot;https://invisionapp.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Invision&lt;/a&gt; prototypes to share with the client and receive any necessary feedback.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid grid-mt&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
 	    &lt;img src=&quot;/assets/work/wla/team-wireframe-workshop1.jpg&quot; alt=&quot;ISL team wireframing workshop&quot; /&gt;
 	    &lt;span class=&quot;img-caption&quot;&gt;We held several internal wireframing workshops to identify reusable components and used &lt;a href=&quot;https://www.invisionapp.com/&quot; target=&quot;_blank&quot;&gt;Invision&lt;/a&gt; to create interactive prototypes.&lt;/span&gt;
@@ -275,7 +275,7 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 
 &lt;p&gt;In addition to incorporating the James’s branding into the site, it was at this time that I focused on responsive states of each individual component. I worked closely with our front-end developer to evaluate the design solution for each component and used Github to track our progress.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
 	    &lt;img src=&quot;/assets/work/wla/responsive-screenshots.jpg&quot; alt=&quot;Responsive Blocks&quot; /&gt;
 	&lt;/div&gt; 
@@ -298,7 +298,7 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 &lt;h4 id=&quot;waffle&quot;&gt;Waffle&lt;/h4&gt;
 &lt;p&gt;In addition, we integrated our Github repository with &lt;a href=&quot;http://waffle.io/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Waffle.io&lt;/a&gt;. Using Github issues and Waffle allowed us to create a Kanban board to track progress and collaborate on each feature.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid grid-mt&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
 	    &lt;img src=&quot;/assets/work/wla/waffle-and-github.jpg&quot; alt=&quot;Screenshots of Waffle and Github&quot; /&gt;
 	    &lt;span class=&quot;img-caption text--centered&quot;&gt;We held several internal wireframing workshops to identify reusable components and used &lt;a href=&quot;https://www.invisionapp.com/&quot; target=&quot;_blank&quot;&gt;Invision&lt;/a&gt; to create interactive prototypes.&lt;/span&gt;
@@ -321,12 +321,18 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 
 &lt;p&gt;Often, we don’t have the opportunity to work on a project that will benefit so many young individuals. WLA has some exciting things in store and if you haven’t already, make sure to check out their &lt;a href=&quot;http://washingtonleadershipacademy.org&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid grid-mt&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
 	    &lt;img src=&quot;/assets/work/wla/wla-homepage.jpg&quot; alt=&quot;Screenshot of WLA Home Page&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half no-shadow&quot;&gt;
+	    &lt;img src=&quot;/assets/work/wla/wla-student-life-page-mobile.jpg&quot; alt=&quot;Screenshot of WLA Student Life Page (mobile)&quot; /&gt;
 	&lt;/div&gt; 
-	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-		 &lt;img src=&quot;/assets/work/wla/wla-tablet-and-mobile.jpg&quot; alt=&quot;Screenshot of WLA About and Student Life pages (responsive)&quot; /&gt;
+	&lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
+		 &lt;img src=&quot;/assets/work/wla/wla-about-page-tablet.jpg&quot; alt=&quot;Screenshot of WLA About Page (tablet)&quot; /&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
@@ -348,7 +354,7 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
     
       <item>
         <title>Family Online Safety Institute</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+        <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
 	    &lt;img src=&quot;/assets/work/fosi/featured-image-fosi.jpg&quot; /&gt;
 	&lt;/div&gt; 
@@ -361,12 +367,12 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 &lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
 
 &lt;h2 id=&quot;understanding-the-audience&quot;&gt;Understanding the Audience&lt;/h2&gt;
-&lt;p&gt;The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
+&lt;p&gt;The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater professionals seeking out industry conferences and events to policy makers who utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
 
 &lt;h3 id=&quot;personas&quot;&gt;Personas&lt;/h3&gt;
-&lt;p&gt;In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
+&lt;p&gt;In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we could ensure that the personas accurately reflected the intended audiences. We used these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid grid-mt&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
 	    &lt;img src=&quot;/assets/work/fosi/persona-david.jpg&quot; /&gt;
 	    
@@ -377,9 +383,9 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 &lt;/div&gt;
 
 &lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
-&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
+&lt;p&gt;Fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid grid-mt&quot;&gt;
     &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
     	&lt;img src=&quot;/assets/work/fosi/fosi-user-flow-david.png&quot; /&gt;
     &lt;/div&gt;
@@ -389,26 +395,35 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 &lt;p&gt;After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
+  &lt;li&gt;Family Resources (a.k.a. “Good Digital Parenting”)&lt;/li&gt;
   &lt;li&gt;Policy and Research&lt;/li&gt;
   &lt;li&gt;Events&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Concentrating FOSI’s pre-existing content into three main buckets simplified the process of finding content for the end user. Not only that, but the structure allowed us to make content a priority something something here…&lt;/p&gt;
+&lt;p&gt;The reorganization and consolidation of the site’s content makes it easier than ever for each audience to discover what they need.&lt;/p&gt;
 
-&lt;p&gt;[sitemap here]&lt;/p&gt;
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+		&lt;img src=&quot;/assets/work/fosi/fosi-sitemap-pt1.png&quot; alt=&quot;FOSI.org Sitemap pt. 1&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+		&lt;img src=&quot;/assets/work/fosi/fosi-sitemap-pt2.png&quot; alt=&quot;FOSI.org Sitemap pt. 2&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h2 id=&quot;low-fidelity-prototyping&quot;&gt;Low-Fidelity Prototyping&lt;/h2&gt;
-&lt;p&gt;Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
+&lt;h2 id=&quot;prototyping&quot;&gt;Prototyping&lt;/h2&gt;
+&lt;p&gt;Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;p&gt;To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
 		&lt;div class=&quot;video-container&quot;&gt;
 			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/155266319?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;img src=&quot;/assets/work/fosi/fosi-wireframes.jpg&quot; alt=&quot;&quot; /&gt;
+		&lt;img src=&quot;/assets/work/fosi/fosi-wireframes.jpg&quot; alt=&quot;FOSI.org Wireframes&quot; /&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
@@ -417,7 +432,7 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 &lt;h3 id=&quot;typography&quot;&gt;Typography&lt;/h3&gt;
 &lt;p&gt;In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
 		&lt;img src=&quot;/assets/work/fosi/fosi-type-example.jpg&quot; alt=&quot;&quot; /&gt;
 	&lt;/div&gt;
@@ -432,7 +447,7 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 &lt;h3 id=&quot;colors&quot;&gt;Colors&lt;/h3&gt;
 &lt;p&gt;With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
 		&lt;img src=&quot;/assets/work/fosi/fosi-colors.jpg&quot; alt=&quot;&quot; /&gt;
 	&lt;/div&gt;
@@ -448,6 +463,22 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 &lt;p&gt;At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age.&lt;/p&gt;
 
 &lt;p&gt;By creating flexible layouts, a new design system, and an integration with Wagtail, a Django-based CMS, we were able to provide FOSI with a rethought and redesigned responsive experience.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt &quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;img src=&quot;/assets/work/fosi/fosi-homepage.jpg&quot; alt=&quot;FOSI.org Homepage&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half no-shadow&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/fosi-gdp-tablet.jpg&quot; /&gt;
+	    
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/persona-mary.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
 
 </description>
         <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>

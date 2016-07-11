@@ -240,7 +240,7 @@ $work-break: 800px;
 
     .video-container {
         max-width: 1375px;
-        margin: 0 auto 50px auto;
+        margin: 0 auto;
     }
     .embed-container {
         position: relative;
@@ -262,15 +262,13 @@ $work-break: 800px;
 }
 
 .grid {
-    background: $gray-color;
+    
     display: flex;
-    margin: 30px 0px;
-    padding: 20px;
+    // margin: 30px 0px;
     flex-wrap: wrap;
     position: relative;
 
     &.grid--featured-image {
-        padding: 100px 20px;
 
         img {
             width: auto;
@@ -291,12 +289,26 @@ $work-break: 800px;
     }
 
     @media screen and (min-width: $on-palm) {
-        padding: 45px 40px;
-        margin: 70px 17px;
+        margin: 0px 17px;
     }
 
+    &.grid-mt {
+        margin-top: 40px;
 
+        @media screen and (min-width: $on-palm) {
+            margin-top: 70px;
 
+        }
+    }
+
+    &.grid-mb {
+        margin-bottom: 30px;
+
+        @media screen and (min-width: $on-palm) {
+            margin-bottom: 70px;
+
+        }
+    }
 }
 
 .grid__item {
@@ -345,7 +357,13 @@ $work-break: 800px;
 
 .grid__item--full {
     flex-basis: 100%;
-    margin: 0 auto 30px auto;
+    // margin: 0 auto 30px auto;
+    background: $gray-color;
+    padding: 20px;
+
+    @media screen and (min-width: $on-palm) {
+        padding: 45px 40px;
+    }
 }
 
 .grid__item--featured {
@@ -357,7 +375,8 @@ $work-break: 800px;
 
 .grid__item--half {
     flex-basis: 100%;
-    
+    padding: 20px;
+    background: $gray-color;
 
     &.end {
         margin-right: 0;
@@ -365,6 +384,10 @@ $work-break: 800px;
 
     img {
         width: 100%;
+    }
+
+    @media screen and (min-width: $on-palm) {
+        padding: 45px 40px;
     }
 
     @media screen and (min-width: $on-tablet) {
