@@ -55,6 +55,10 @@ $work-break: 800px;
     width: 100%;
 
     &:hover {
+        .article__image {
+            border-color: $white;
+        }
+
         .article__summary {
             background: $white;
             color: $black;
@@ -88,6 +92,7 @@ $work-break: 800px;
 .article__image {
     border: 8px solid $white;
     
+    transition: all .2s;
 
     img {
         width: 100%;
