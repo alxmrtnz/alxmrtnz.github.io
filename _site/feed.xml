@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 10 Jul 2016 20:32:04 -0400</pubDate>
-    <lastBuildDate>Sun, 10 Jul 2016 20:32:04 -0400</lastBuildDate>
+    <pubDate>Sun, 10 Jul 2016 20:51:44 -0400</pubDate>
+    <lastBuildDate>Sun, 10 Jul 2016 20:51:44 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -472,11 +472,11 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--half no-shadow&quot;&gt;
-	    &lt;img src=&quot;/assets/work/fosi/fosi-gdp-tablet.jpg&quot; /&gt;
+	    &lt;img src=&quot;/assets/work/fosi/fosi-gdp-tablet.jpg&quot; alt=&quot;FOSI.org Good Digital Parenting Page screenshot (tablet)&quot; /&gt;
 	    
 	&lt;/div&gt; 
-	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
-	    &lt;img src=&quot;/assets/work/fosi/persona-mary.jpg&quot; /&gt;
+	&lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
+	    &lt;img src=&quot;/assets/work/fosi/fosi-events-phone.jpg&quot; alt=&quot;FOSI.org Events Page screenshot (mobile)&quot; /&gt;
 	&lt;/div&gt; 
 &lt;/div&gt;
 
