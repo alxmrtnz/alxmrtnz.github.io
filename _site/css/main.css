@@ -118,6 +118,9 @@ li > ol {
 .text-center {
   text-align: center; }
 
+.hidden {
+  display: none; }
+
 /**
  * Headings
  */
