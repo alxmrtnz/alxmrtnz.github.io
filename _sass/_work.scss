@@ -225,20 +225,30 @@ $work-break: 800px;
 .work-content {
 
     ol, ul {
-        color: $gray-color-darker;
+        background: $gray-color-light;
+        color: $black;
         font-family: $sans-serif;
         font-size: 16px;
         font-weight: normal;
-        background: $gray-color-light;
-        padding: 35px 50px;
+        margin-bottom: 30px;
         max-width: 625px;
+        padding: 35px 50px;
 
         li {
             margin-bottom: 5px;
-            list-style-type: square;
+            list-style-type: circle;
+
+            ul {
+                padding: 0px 0px 0px 20px;
+                margin-bottom: 10px;
+            }
 
             &:last-child {
                 margin-bottom: 0px;
+
+                ul {
+                    margin-bottom: 0px;
+                }
             }
         }
     }
