@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 11 Jul 2016 00:08:06 -0400</pubDate>
-    <lastBuildDate>Mon, 11 Jul 2016 00:08:06 -0400</lastBuildDate>
+    <pubDate>Wed, 13 Jul 2016 22:35:28 -0400</pubDate>
+    <lastBuildDate>Wed, 13 Jul 2016 22:35:28 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -722,23 +722,79 @@ SY is an ongoing and ever evolving project that aims to become the nation’s le
     
       <item>
         <title>Outlook Relationship Management System</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+        <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/fosi/featured-image-fosi.jpg&quot; /&gt;
+	    &lt;img src=&quot;/assets/work/orms/featured-image-orms.jpg&quot; /&gt;
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;p&gt;The &lt;a href=&quot;http://www.fosi.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Family Online Safety Institute&lt;/a&gt; (FOSI) came to &lt;a href=&quot;http://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to redesign and rebuild their website. Our mission was twofold —to combine fosi.org and aplaftormforgood.org (now Good Digital Parenting) under one umbrella, and to create a beautiful design and a user friendly experience&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.theoutlookgroup.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Outlook Group&lt;/a&gt; is one of the nation’s largest marketing firms in the preneed* funeral industry and has a national team of sales representatives who work with individual funeral homes to maintain and develop their own customer bases.&lt;/p&gt;
 
-&lt;p&gt;The redesign process involved diving deep into Google Analytics, conducting user testing with key audiences, and unifying the two sites through detailed wireframing and design.&lt;/p&gt;
+&lt;p&gt;I worked with the group and a small team to create the Outlook Relationship Management System (ORMS), a web application that improves the workflow of The Outlook Group’s sales representatives and client funeral homes.&lt;/p&gt;
 
-&lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
+&lt;p&gt;I focused on establishing the overall visual language and user experience of the platform and also worked closely with project developers throughout implementation.&lt;/p&gt;
 
-&lt;h2 id=&quot;understanding-the-audience&quot;&gt;Understanding the Audience&lt;/h2&gt;
-&lt;p&gt;The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;
+  * Preneed services include things such as preneed life insurance policies that cover the cost of predetermined expense of a funeral, cremation, or burial.
+&lt;/p&gt;
 
-&lt;h3 id=&quot;personas&quot;&gt;Personas&lt;/h3&gt;
-&lt;p&gt;In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
+&lt;!--
+## Identifying Product Needs
+
+Because The Outlook Group has a national team of sales representatives who work with individual funeral homes, the group wanted us to develop a tool for their team to help clients maintain and develop their own customer base.
+
+After conversations with The Outlook Group and an analysis of their team structure, we identified the core product features that would not only provide benefit to the end user, but also fit into the workflow of the company as a whole.
+
+ : 
+
+* **Contact Management**
+	* To allow for recording potential customers and moving them through the acquisition funnel
+* **Filtering and Tagging**
+	* To monitor and evaluate customers
+* **Calendar Integration**
+	* To allow sales representatives to record interactions and meetings with customers
+* **System Administration**
+	* The creation of a centralized hub for system administrators to manage sales representatives
+
+ --&gt;
+
+&lt;h2 id=&quot;contact-management&quot;&gt;Contact Management&lt;/h2&gt;
+
+&lt;p&gt;To allow for recording potential customers and moving them through the acquisition funnel&lt;/p&gt;
+
+&lt;h3 id=&quot;filtering-and-tagging&quot;&gt;Filtering and Tagging&lt;/h3&gt;
+
+&lt;h3 id=&quot;notes-and-alerts&quot;&gt;Notes and Alerts&lt;/h3&gt;
+
+&lt;h2 id=&quot;calendar-integration&quot;&gt;Calendar Integration&lt;/h2&gt;
+
+&lt;h2 id=&quot;system-administration&quot;&gt;System Administration&lt;/h2&gt;
+
+&lt;p&gt;Problems Solved:
+Tags
+Notes, categorize notes and create a timeline to track each individual lead&lt;/p&gt;
+
+&lt;p&gt;Problem
+Turnover is
+From the very beginning, we want to monitor everything because leads could stay in the system for multiple years
+Baby boomers are those being tracked, either for the person or their loved ones&lt;/p&gt;
+
+&lt;p&gt;Due to nature of leads, needed long term tracking&lt;/p&gt;
+
+&lt;p&gt;Wanted custom built&lt;/p&gt;
+
+&lt;p&gt;Responsive bar graph, responsive profiles&lt;/p&gt;
+
+&lt;p&gt;Data entry&lt;/p&gt;
+
+&lt;p&gt;amrit_admin@reachws.com
+AniAkash1&lt;/p&gt;
+
+&lt;p&gt;Admin
+Can manage sales representatives
+AFP = Advanced Funeral Planner&lt;/p&gt;
+
+&lt;p&gt;Direct Mail&lt;/p&gt;
 
 &lt;div class=&quot;grid&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
