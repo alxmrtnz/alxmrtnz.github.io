@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 14 Jul 2016 17:02:17 -0400</pubDate>
-    <lastBuildDate>Thu, 14 Jul 2016 17:02:17 -0400</lastBuildDate>
+    <pubDate>Thu, 14 Jul 2016 17:22:21 -0400</pubDate>
+    <lastBuildDate>Thu, 14 Jul 2016 17:22:21 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -757,6 +757,16 @@ After conversations with The Outlook Group and an analysis of their team structu
 	* The creation of a centralized hub for system administrators to manage sales representatives
 
  --&gt;
+
+&lt;h2 id=&quot;wireframing&quot;&gt;Wireframing&lt;/h2&gt;
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-wireframe-sketches__opportunities.jpg&quot; alt=&quot;ORMS Wireframe Sketch - Opportunities Table&quot; /&gt;
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-wireframe-sketches__opportunity-detail.jpg&quot; alt=&quot;ORMS Wireframe Sketch - Opportunity Detail Page&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
 
 &lt;h2 id=&quot;contact-management&quot;&gt;Contact Management&lt;/h2&gt;
 
