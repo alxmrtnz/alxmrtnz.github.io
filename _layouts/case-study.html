@@ -19,12 +19,12 @@
                 <p class="work-summary">
                   {{ page.work-summary }}
                 </p>
-                <p class="work-summary">
-                  <a href="{{ page.external-link }}" target="_blank" class="link--text-in-p">Visit the Website</a>
-                </p>
-
+                {% if page.external-link %} 
+                  <p class="work-summary">
+                    <a href="{{ page.external-link }}" target="_blank" class="link--text-in-p">Visit the Website</a>
+                  </p>
+                {% endif %}
               </div> <!-- end .hero__summary-container -->
-              
             </div>
           </header>
 
