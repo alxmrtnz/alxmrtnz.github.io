@@ -775,14 +775,14 @@ ul.social-icon-list {
 .work-list__article {
   margin-bottom: 30px;
   width: 100%; }
-  .work-list__article:hover .article__image {
-    border-color: #fff; }
   .work-list__article:hover .article__summary {
-    background: #fff;
     color: #333; }
-    .work-list__article:hover .article__summary .summary__arrow {
-      transform: translateY(0px);
-      opacity: 1; }
+  @media screen and (min-width: 800px) {
+    .work-list__article:hover .article__image {
+      transform: translateY(-5px);
+      box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13); } }
   @media screen and (min-width: 800px) {
     .work-list__article {
       margin-bottom: 0px;
