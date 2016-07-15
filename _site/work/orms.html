@@ -144,14 +144,14 @@
 	</div> 
 </div>
 
-<p><a href="http://www.theoutlookgroup.com/" target="_blank" class="link--text-in-p">The Outlook Group</a> is one of the nation’s largest marketing firms in the preneed* funeral industry and has a national team of sales representatives who work with individual funeral homes to maintain and develop their own customer bases.</p>
+<p><a href="http://www.theoutlookgroup.com/" target="_blank" class="link--text-in-p">The Outlook Group</a> is one of the nation’s largest marketing firms in the pre-need* funeral industry and has a national team of sales representatives who work with individual funeral homes to maintain and develop their own customer bases.</p>
 
 <p>I worked with the group and a small team to create the Outlook Relationship Management System (ORMS), a web application that improves the workflow of The Outlook Group’s sales representatives and client funeral homes.</p>
 
 <p>I focused on establishing the overall visual language and user experience of the platform and also worked closely with project developers throughout implementation.</p>
 
 <p class="footnote">
-  * Preneed services include things such as preneed life insurance policies that cover the cost of predetermined expense of a funeral, cremation, or burial.
+  * pre-need services include things such as pre-need life insurance policies that cover the cost of predetermined expense of a funeral, cremation, or burial.
 </p>
 
 <!--
@@ -174,34 +174,72 @@ After conversations with The Outlook Group and an analysis of their team structu
 
  -->
 
-<h2 id="wireframing">Wireframing</h2>
+<!-- ## Project Goals
+
+Through interviews with group leadership and employees, we learned that The Outlook Group has a national team of sales representatives who work with individual funeral homes in order to maintain and develop their own customer bases.
+
+We worked to accomplish several goals within this project:
+
+* **Contact Management**
+	* To allow for recording potential customers and moving them through the acquisition funnel
+* **Filtering and Tagging**
+	* To monitor and evaluate customers
+* **Calendar Integration**
+	* To allow sales representatives to record interactions and meetings with customers
+* **System Administration**
+	* The creation of a centralized hub for system administrators to manage sales representatives
+
+The CRM we created gives their company a custom experience that is tailored to their internal structure, improving employee workflow and increasing overall productivity.
+
+### Wireframing
+We quickly learned that the Outlook Group needed a 
+
+After learning the structure of their organization and business strategy, we then sketched a set of initial wireframes.
+
+ -->
+
+<h2 id="opportunity-management">Opportunity Management</h2>
+
+<p>To allow Outlook Group sales representatives to record and monitor potential customers, we designed a robust opportunities management page.</p>
+
+<p>Beginning with simple sketches, we were able to validate functionality with Outlook Group stakeholders before moving into visual design.</p>
+
 <div class="grid grid-mt grid-mb">
-	<div class="grid__item grid__item--half">
+	<div class="grid__item grid__item--full">
 	    <img src="/assets/work/orms/orms-wireframe-sketches__opportunities.jpg" alt="ORMS Wireframe Sketch - Opportunities Table" />
-	</div> 
-	<div class="grid__item grid__item--half end">
-	    <img src="/assets/work/orms/orms-wireframe-sketches__opportunity-detail.jpg" alt="ORMS Wireframe Sketch - Opportunity Detail Page" />
-	</div> 
+	    <span class="img-caption">One of our first wireframe iterations for managing customer prospects, leads, and accounts (credit: <a href="https://www.zachkuzmic.com/" target="_blank">Zach Kuzmic</a>).</span>
+	</div>
 </div>
 
-<h2 id="contact-management">Contact Management</h2>
-
-<p>To allow for recording potential customers and moving them through the acquisition funnel</p>
+<p>Through iteration, we designed and implemented essential functionality for filtering, searching, and sorting opportunities.</p>
 
 <div class="grid grid-mt grid-mb">
 	<div class="grid__item grid__item--full">
 	    <img src="/assets/work/orms/orms-screenshot__opportunities@2x.png" alt="ORMS Application Screenshot - Opportunities Table" />
+	    <span class="img-caption">Several iterations of wireframes and visual design lead to a robust page for managing sales opportunities.</span>
 	</div> 
 </div>
 
-<h3 id="notes-and-alerts">Notes and Alerts</h3>
+<h2 id="task-management-and-collaboration">Task Management and Collaboration</h2>
+
+<p>We paid special attention to how Outlook Group sales reps collaborate around individual opportunities.</p>
+
+<p>Users can add and categorize notes in a timeline format for easy future reference, create custom tasks, and schedule appointments that tie into the app’s calendar.</p>
+
+<p>All of this functionality is available between multiple system users, allowing sales reps to collaboratively record and monitor information on each opportunity.</p>
+
 <div class="grid grid-mt grid-mb">
 	<div class="grid__item grid__item--full">
 	    <img src="/assets/work/orms/orms-screenshot__opportunity-detail@2x.png" alt="ORMS Application Screenshot - Opportunity Detail Page" />
+	    <span class="img-caption">Users can collaborate on individual opportunities through the use of notes, tasks, and appointments.</span>
 	</div> 
 </div>
 
-<h3 id="filtering-and-tagging">Filtering and Tagging</h3>
+<h3 id="system-vs-custom-tagging">System vs Custom Tagging</h3>
+
+<p>Another piece of functionality we were added to ORMS was tagging. ORMS allows users to create custom tags for each opportunity in addition to the base set of tags that Outlook Group admins create.</p>
+
+<p>The “Outlook Tags,” not only help guide their sales reps in the creation of their own custom tags, but also provides valuable usage data to Outlook Group admins for future iteration.</p>
 
 <div class="grid grid-mt grid-mb">
 	<div class="grid__item grid__item--full no-shadow">
@@ -211,50 +249,39 @@ After conversations with The Outlook Group and an analysis of their team structu
 
 <h2 id="calendar-integration">Calendar Integration</h2>
 
-<div class="grid grid-mt grid-mb">
+<p>A Google integrated calendar proved an important part of the ORMS system.</p>
+
+<p>Both sales reps and Outlook Group admins needed the ability to track appointments with potential opportunities and current customers. Additionally, admins are able to access employee calendars to help coordinate business.</p>
+
+<p>The calendar we designed and implemented integrates with Google and allows for everyone within the Outlook Group to stay on the same page.</p>
+
+<div class="grid grid-mt">
 	<div class="grid__item grid__item--full">
 	    <img src="/assets/work/orms/orms-screenshot__calendar@2x.png" alt="ORMS Application Screenshot - Calendar" />
 	</div> 
 </div>
 
-<h2 id="system-administration">System Administration</h2>
+<h2 id="a-responsive-visual-system">A Responsive, Visual System</h2>
 
-<p>Problems Solved:
-Tags
-Notes, categorize notes and create a timeline to track each individual lead</p>
+<p>From the beginning of the project, we focused on creating a responsive web application experience.</p>
 
-<p>Problem
-Turnover is
-From the very beginning, we want to monitor everything because leads could stay in the system for multiple years
-Baby boomers are those being tracked, either for the person or their loved ones</p>
+<p>As I began the visual design process, I worked on identifying some base styles and flexible components that could be reused across the system.</p>
 
-<p>Due to nature of leads, needed long term tracking</p>
-
-<p>Wanted custom built</p>
-
-<p>Responsive bar graph, responsive profiles</p>
-
-<p>Data entry</p>
-
-<p>amrit_admin@reachws.com
-AniAkash1</p>
-
-<p>Admin
-Can manage sales representatives
-AFP = Advanced Funeral Planner</p>
-
-<p>Direct Mail</p>
+<div class="grid grid-mt grid-mb">
+	<div class="grid__item grid__item--full no-shadow">
+	    <img src="/assets/work/orms/orms-detail__responsive@2x.png" alt="ORMS Application Screenshot - Various Responsive Mobile Screens" />
+	    <span class="img-caption text--centered">I worked on creating a responsive card system that could accomodate graphs, tables, calendars, and more.</span>
+	</div> 
+</div>
 
 <div class="fin-tip">	
 </div>
 
 <h2 class="text-center">
-	Takeaways
+	Conclusion
 </h2>
 
-<p>At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age.</p>
-
-<p>By creating flexible layouts, a new design system, and an integration with Wagtail, a Django-based CMS, we were able to provide FOSI with a rethought and redesigned responsive experience.</p>
+<p>ORMS has become a robust internal tool for a national workforce. With a small team and close collaboration with our client, we were able to deliver a fully-responsive CRM that suits the Outlook Group’s specific needs.</p>
 
 
       </div>
