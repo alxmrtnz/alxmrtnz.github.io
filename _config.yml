@@ -21,3 +21,5 @@ navigation:
   url: /thoughts
 - text: About
   url: /about
+
+future: true
