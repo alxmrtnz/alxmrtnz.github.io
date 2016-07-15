@@ -7,6 +7,15 @@
 
     <ul class="nav-list">
         <li>
+            <a href="/work" class="
+                {% if page.url == '/work/' %}
+                    active
+                {% endif %}
+                 link--text text--mono">
+                Work
+            </a>
+        </li>
+        <li>
             <a href="/thoughts" class="
                 {% if page.layout == 'post' %}
                     active

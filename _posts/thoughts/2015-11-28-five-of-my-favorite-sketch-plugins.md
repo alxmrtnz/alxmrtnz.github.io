@@ -2,11 +2,10 @@
 layout: post
 title:  "Five of My Favorite Sketch Plugins"
 date:   2015-11-28 19:46:27
-<!-- categories: conferences recaps -->
+category: thoughts
 featured-icon-url: /assets/posts/11-28-15/icon-sketch-plugin.png
 featured-icon-alt: "Sketch Plugin"
 comments: true
-category: thoughts
 permalink: /:categories/:title.html
 ---
 

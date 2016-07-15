@@ -16,7 +16,7 @@ group: 'navigation'
           {% assign loopindex = forloop.index | modulo: 2 %}
           {% if loopindex == 1 %}
                 <div class="work-list__row">
-                    <div class="work-list__article">
+                    <div class="work-list__article {% if post.hidden == true %}hidden{% endif%}">
                         <a href="{{ post.url }}" class="">
                             <div class="work-list__article-inner">
                                 <div class="article__image">
@@ -42,11 +42,11 @@ group: 'navigation'
                     </div> <!-- end .work-list__row -->
                 {% endif %}
           {% else %}
-                <div class="work-list__article">
+                <div class="work-list__article {% if post.hidden == true %}hidden{% endif%}">
                     <a href="{{ post.url }}" class="">
                         <div class="work-list__article-inner">
                             <div class="article__image">
-                                <img src="http://placekitten.com/600/520">
+                                <img src="{{ site.url }}/assets/work/{{ post.thumbnail-image }}" alt=" {{ post.title }} ">
                             </div>
                             <div class="article__summary">
                                 <div class="summary__text">

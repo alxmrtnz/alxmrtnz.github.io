@@ -55,13 +55,17 @@ $work-break: 800px;
     width: 100%;
 
     &:hover {
+        
         .article__summary {
-            background: $white;
             color: $black;
+        }
 
-            .summary__arrow {
-                transform: translateY(0px);
-                opacity: 1;
+        @media screen and (min-width: $work-break) {
+            .article__image {
+                transform: translateY(-5px);
+                box-shadow: $box-shadow-standard;
+                -webkit-box-shadow: $box-shadow-standard;
+                -moz-box-shadow: $box-shadow-standard;
             }
         }
     }
@@ -88,6 +92,7 @@ $work-break: 800px;
 .article__image {
     border: 8px solid $white;
     
+    transition: all .2s;
 
     img {
         width: 100%;
@@ -220,27 +225,37 @@ $work-break: 800px;
 .work-content {
 
     ol, ul {
-        color: $gray-color-darker;
+        background: $gray-color-light;
+        color: $black;
         font-family: $sans-serif;
         font-size: 16px;
         font-weight: normal;
-        background: $gray-color-light;
-        padding: 35px 50px;
+        margin-bottom: 30px;
         max-width: 625px;
+        padding: 35px 50px;
 
         li {
             margin-bottom: 5px;
-            list-style-type: square;
+            list-style-type: circle;
+
+            ul {
+                padding: 0px 0px 0px 20px;
+                margin-bottom: 10px;
+            }
 
             &:last-child {
                 margin-bottom: 0px;
+
+                ul {
+                    margin-bottom: 0px;
+                }
             }
         }
     }
 
     .video-container {
         max-width: 1375px;
-        margin: 0 auto 50px auto;
+        margin: 0 auto;
     }
     .embed-container {
         position: relative;
@@ -262,15 +277,22 @@ $work-break: 800px;
 }
 
 .grid {
-    background: $gray-color;
+    
     display: flex;
-    margin: 30px 0px;
-    padding: 20px;
     flex-wrap: wrap;
     position: relative;
 
+    @media screen and (min-width: $on-palm) {
+        margin: 0px 17px;
+    }
+
+    @media screen and (min-width: 1350px) {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+
     &.grid--featured-image {
-        padding: 100px 20px;
 
         img {
             width: auto;
@@ -283,6 +305,11 @@ $work-break: 800px;
            width: 100%;
         }
 
+        @media screen and (min-width: 1350px) {
+            max-width: 100%;
+            margin: 0 30px;
+        }
+
     }
 
     &.grid--no-bg {
@@ -290,13 +317,25 @@ $work-break: 800px;
         background: none;
     }
 
-    @media screen and (min-width: $on-palm) {
-        padding: 45px 40px;
-        margin: 70px 17px;
+
+
+    &.grid-mt {
+        margin-top: 40px;
+
+        @media screen and (min-width: $on-palm) {
+            margin-top: 70px;
+
+        }
     }
 
+    &.grid-mb {
+        margin-bottom: 30px;
 
+        @media screen and (min-width: $on-palm) {
+            margin-bottom: 70px;
 
+        }
+    }
 }
 
 .grid__item {
@@ -329,9 +368,9 @@ $work-break: 800px;
 .grid__item--full, .grid__item--half {
     img {
         width: 100%;
-        box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
-        -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
-        -moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
+        box-shadow: $box-shadow-standard;
+        -webkit-box-shadow: $box-shadow-standard;
+        -moz-box-shadow: $box-shadow-standard;
     }
 
     &.no-shadow {
@@ -345,7 +384,13 @@ $work-break: 800px;
 
 .grid__item--full {
     flex-basis: 100%;
-    margin: 0 auto 30px auto;
+    // margin: 0 auto 30px auto;
+    background: $gray-color;
+    padding: 20px;
+
+    @media screen and (min-width: $on-palm) {
+        padding: 45px 40px;
+    }
 }
 
 .grid__item--featured {
@@ -357,7 +402,8 @@ $work-break: 800px;
 
 .grid__item--half {
     flex-basis: 100%;
-    
+    padding: 20px;
+    background: $gray-color;
 
     &.end {
         margin-right: 0;
@@ -365,6 +411,10 @@ $work-break: 800px;
 
     img {
         width: 100%;
+    }
+
+    @media screen and (min-width: $on-palm) {
+        padding: 45px 40px;
     }
 
     @media screen and (min-width: $on-tablet) {
