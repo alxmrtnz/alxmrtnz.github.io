@@ -549,11 +549,9 @@ a.link--text-in-p {
   font-family: "aktiv-grotesk", sans-serif;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 0px; }
-  @media screen and (max-width: 600px) {
-    .home--bio-copy {
-      font-size: 28px;
-      line-height: 36px; } }
+  margin-bottom: 0px;
+  font-size: 28px;
+  line-height: 36px; }
   @media screen and (min-width: 600px) {
     .home--bio-copy {
       font-size: 40px;
@@ -607,7 +605,11 @@ ul.social-icon-list {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; }
+    background-size: cover;
+    background-position-x: 70%; }
+    @media screen and (min-width: 600px) {
+      .homepage-image-container .homepage-background-image {
+        background-position-x: auto; } }
   .homepage-image-container:before {
     content: '';
     display: block;
@@ -634,7 +636,17 @@ ul.social-icon-list {
     mix-blend-mode: lighten; }
 
 .football-trigger:hover {
-  color: blue; }
+  cursor: help; }
+
+.js-homepage-img-toggle {
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -ms-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in; }
+  .js-homepage-img-toggle.show-opacity {
+    opacity: 1; }
 
 .nav--primary {
   align-items: center;

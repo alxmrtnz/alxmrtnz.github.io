@@ -32,11 +32,9 @@ $home-mono-type-margin-vertical: 60px;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 0px;
+    font-size: 28px;
+	line-height: 36px;
 
-	@media screen and (max-width: $on-palm) {
-	    font-size: 28px;
-		line-height: 36px;
-	}
 	@media screen and (min-width: $on-palm) {
 	    font-size: 40px;
 		line-height: 48px;
@@ -105,10 +103,15 @@ ul.social-icon-list {
 		-webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
 		filter: grayscale(1) contrast(1.1) brightness(1.1);
 		background: url(../assets/images/alexis1.jpg) no-repeat center center fixed; 
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	    background-position-x: 70%;
+
+	    @media screen and (min-width: $on-palm) {
+	        background-position-x: auto;
+	    }
 	}
 
 	&:before {
@@ -144,6 +147,19 @@ ul.social-icon-list {
 
 .football-trigger {
 	&:hover {
-		color: blue;
+		cursor: help;
+	}
+}
+
+.js-homepage-img-toggle {
+	opacity: 0;
+	-webkit-transition: opacity .2s ease-in;
+	-moz-transition: opacity .2s ease-in;
+	-ms-transition: opacity .2s ease-in;
+	-o-transition: opacity .2s ease-in;
+	transition: opacity .2s ease-in;
+
+	&.show-opacity {
+		opacity: 1;
 	}
 }
