@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 15 Jul 2016 12:06:22 -0400</pubDate>
-    <lastBuildDate>Fri, 15 Jul 2016 12:06:22 -0400</lastBuildDate>
+    <pubDate>Fri, 15 Jul 2016 12:58:13 -0400</pubDate>
+    <lastBuildDate>Fri, 15 Jul 2016 12:58:13 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -290,50 +290,6 @@
   * pre-need services include things such as pre-need life insurance policies that cover the cost of predetermined expense of a funeral, cremation, or burial.
 &lt;/p&gt;
 
-&lt;!--
-## Identifying Product Needs
-
-Because The Outlook Group has a national team of sales representatives who work with individual funeral homes, the group wanted us to develop a tool for their team to help clients maintain and develop their own customer base.
-
-After conversations with The Outlook Group and an analysis of their team structure, we identified the core product features that would not only provide benefit to the end user, but also fit into the workflow of the company as a whole.
-
- : 
-
-* **Contact Management**
-	* To allow for recording potential customers and moving them through the acquisition funnel
-* **Filtering and Tagging**
-	* To monitor and evaluate customers
-* **Calendar Integration**
-	* To allow sales representatives to record interactions and meetings with customers
-* **System Administration**
-	* The creation of a centralized hub for system administrators to manage sales representatives
-
- --&gt;
-
-&lt;!-- ## Project Goals
-
-Through interviews with group leadership and employees, we learned that The Outlook Group has a national team of sales representatives who work with individual funeral homes in order to maintain and develop their own customer bases.
-
-We worked to accomplish several goals within this project:
-
-* **Contact Management**
-	* To allow for recording potential customers and moving them through the acquisition funnel
-* **Filtering and Tagging**
-	* To monitor and evaluate customers
-* **Calendar Integration**
-	* To allow sales representatives to record interactions and meetings with customers
-* **System Administration**
-	* The creation of a centralized hub for system administrators to manage sales representatives
-
-The CRM we created gives their company a custom experience that is tailored to their internal structure, improving employee workflow and increasing overall productivity.
-
-### Wireframing
-We quickly learned that the Outlook Group needed a 
-
-After learning the structure of their organization and business strategy, we then sketched a set of initial wireframes.
-
- --&gt;
-
 &lt;h2 id=&quot;opportunity-management&quot;&gt;Opportunity Management&lt;/h2&gt;
 
 &lt;p&gt;To allow Outlook Group sales representatives to record and monitor potential customers, we designed a robust opportunities management page.&lt;/p&gt;
@@ -352,7 +308,7 @@ After learning the structure of their organization and business strategy, we the
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
 	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__opportunities@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunities Table&quot; /&gt;
-	    &lt;span class=&quot;img-caption&quot;&gt;Several iterations of wireframes and visual design lead to a robust page for managing sales opportunities.&lt;/span&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;Several iterations of wireframes and visual design led to a robust page for managing sales opportunities.&lt;/span&gt;
 	&lt;/div&gt; 
 &lt;/div&gt;
 
@@ -385,7 +341,7 @@ After learning the structure of their organization and business strategy, we the
 
 &lt;h2 id=&quot;calendar-integration&quot;&gt;Calendar Integration&lt;/h2&gt;
 
-&lt;p&gt;A Google integrated calendar proved an important part of the ORMS system.&lt;/p&gt;
+&lt;p&gt;An in-app calendar that can integrate with any major calendar provider proved an important part of the ORMS system.&lt;/p&gt;
 
 &lt;p&gt;Both sales reps and Outlook Group admins needed the ability to track appointments with potential opportunities and current customers. Additionally, admins are able to access employee calendars to help coordinate business.&lt;/p&gt;
 

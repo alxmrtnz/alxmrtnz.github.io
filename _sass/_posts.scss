@@ -110,8 +110,6 @@ $post-image-padding-top: 20px;
     h3 {
         font-size: 18px;
         color: $heading-color-light;
-        border-left: 5px solid $gray-color;
-        padding-left: 15px;
         line-height: 28px;
 
         @media screen and (min-width:$on-laptop) {

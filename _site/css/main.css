@@ -677,8 +677,6 @@ ul.social-icon-list {
 .post-content h3, .work-content h3 {
   font-size: 18px;
   color: #a6b0c3;
-  border-left: 5px solid #EAEFF2;
-  padding-left: 15px;
   line-height: 28px; }
   @media screen and (min-width: 900px) {
     .post-content h3, .work-content h3 {
