@@ -596,13 +596,13 @@ ul.social-icon-list {
 
 .homepage-image-container {
   height: 100%;
-  width: 100%;
-  -webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
-  filter: grayscale(1) contrast(1.1) brightness(1.1); }
+  width: 100%; }
   .homepage-image-container .homepage-background-image {
     height: 100%;
     width: 100%;
     z-index: 1;
+    -webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
+    filter: grayscale(1) contrast(1.1) brightness(1.1);
     background: url(../assets/images/alexis1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -618,7 +618,7 @@ ul.social-icon-list {
     position: absolute;
     pointer-events: none;
     z-index: 2;
-    background: #a0a0a0;
+    background: #EAEFF2;
     mix-blend-mode: soft-light; }
   .homepage-image-container:after {
     z-index: 3;
@@ -630,8 +630,11 @@ ul.social-icon-list {
     left: 0;
     position: absolute;
     pointer-events: none;
-    background: #383838;
+    background: #050110;
     mix-blend-mode: lighten; }
+
+.football-trigger:hover {
+  color: blue; }
 
 .nav--primary {
   align-items: center;
