@@ -9,10 +9,13 @@ $home-mono-type-margin-vertical: 60px;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 .content-wrapper--homepage {
 	margin: auto;
+	z-index: 2;
 }
 
 .home--bio {
@@ -29,11 +32,9 @@ $home-mono-type-margin-vertical: 60px;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 0px;
+    font-size: 28px;
+	line-height: 36px;
 
-	@media screen and (max-width: $on-palm) {
-	    font-size: 28px;
-		line-height: 36px;
-	}
 	@media screen and (min-width: $on-palm) {
 	    font-size: 40px;
 		line-height: 48px;
@@ -78,5 +79,87 @@ ul.social-icon-list {
 				color: $brand-color;
 			}
 		}
+	}
+}
+
+.homepage-images {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	opacity: .3;
+}
+
+.homepage-image-container {
+	height: 100%;
+	width: 100%;
+
+	.homepage-background-image {
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		-webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
+		filter: grayscale(1) contrast(1.1) brightness(1.1);
+		background: url(../assets/images/alexis1.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	    background-position-x: 70%;
+
+	    @media screen and (min-width: $on-palm) {
+	        background-position-x: auto;
+	    }
+	}
+
+	&:before {
+		content: '';
+	    display: block;
+	    height: 100%;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    position: absolute;
+	    pointer-events: none;
+	    z-index: 2;
+
+	    background: $gray-color;
+        mix-blend-mode: soft-light;
+	}
+
+	&:after {
+		z-index: 3;
+		content: '';
+	    display: block;
+	    height: 100%;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    position: absolute;
+	    pointer-events: none;
+
+	    background: #050110;
+        mix-blend-mode: lighten;
+	}
+}
+
+.football-trigger {
+	&:hover {
+		cursor: help;
+	}
+}
+
+.js-homepage-img-toggle {
+	opacity: 0;
+	-webkit-transition: opacity .2s ease-in;
+	-moz-transition: opacity .2s ease-in;
+	-ms-transition: opacity .2s ease-in;
+	-o-transition: opacity .2s ease-in;
+	transition: opacity .2s ease-in;
+
+	&.show-opacity {
+		opacity: 1;
 	}
 }
