@@ -5,122 +5,9 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 20 Jul 2016 11:18:42 -0400</pubDate>
-    <lastBuildDate>Wed, 20 Jul 2016 11:18:42 -0400</lastBuildDate>
+    <pubDate>Wed, 20 Jul 2016 15:26:20 -0400</pubDate>
+    <lastBuildDate>Wed, 20 Jul 2016 15:26:20 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
-    
-      <item>
-        <title>Outlook Relationship Management System</title>
-        <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/featured-image-orms.jpg&quot; /&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.theoutlookgroup.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Outlook Group&lt;/a&gt; is one of the nation’s largest marketing firms in the pre-need* funeral industry and has a national team of sales representatives who work with individual funeral homes to maintain and develop their own customer bases.&lt;/p&gt;
-
-&lt;p&gt;I worked with the group and a small team to create the Outlook Relationship Management System (ORMS), a web application that improves the workflow of The Outlook Group’s sales representatives and client funeral homes.&lt;/p&gt;
-
-&lt;p&gt;I focused on establishing the overall visual language and user experience of the platform and also worked closely with project developers throughout implementation.&lt;/p&gt;
-
-&lt;p class=&quot;footnote&quot;&gt;
-  * pre-need services include things such as pre-need life insurance policies that cover the cost of predetermined expense of a funeral, cremation, or burial.
-&lt;/p&gt;
-
-&lt;h2 id=&quot;opportunity-management&quot;&gt;Opportunity Management&lt;/h2&gt;
-
-&lt;p&gt;To allow Outlook Group sales representatives to record and monitor potential customers, we designed a robust opportunities management page.&lt;/p&gt;
-
-&lt;p&gt;Beginning with simple sketches, we were able to validate functionality with Outlook Group stakeholders before moving into visual design.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-wireframe-sketches__opportunities.jpg&quot; alt=&quot;ORMS Wireframe Sketch - Opportunities Table&quot; /&gt;
-	    &lt;span class=&quot;img-caption&quot;&gt;One of our first wireframe iterations for managing customer prospects, leads, and accounts (credit: &lt;a href=&quot;https://www.zachkuzmic.com/&quot; target=&quot;_blank&quot;&gt;Zach Kuzmic&lt;/a&gt;).&lt;/span&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Through iteration, we designed and implemented essential functionality for filtering, searching, and sorting opportunities.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__opportunities@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunities Table&quot; /&gt;
-	    &lt;span class=&quot;img-caption&quot;&gt;Several iterations of wireframes and visual design led to a robust page for managing sales opportunities.&lt;/span&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;h2 id=&quot;task-management-and-collaboration&quot;&gt;Task Management and Collaboration&lt;/h2&gt;
-
-&lt;p&gt;We paid special attention to how Outlook Group sales reps collaborate around individual opportunities.&lt;/p&gt;
-
-&lt;p&gt;Users can add and categorize notes in a timeline format for easy future reference, create custom tasks, and schedule appointments that tie into the app’s calendar.&lt;/p&gt;
-
-&lt;p&gt;All of this functionality is available between multiple system users, allowing sales reps to collaboratively record and monitor information on each opportunity.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__opportunity-detail@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunity Detail Page&quot; /&gt;
-	    &lt;span class=&quot;img-caption&quot;&gt;Users can collaborate on individual opportunities through the use of notes, tasks, and appointments.&lt;/span&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;h3 id=&quot;system-vs-custom-tagging&quot;&gt;System vs Custom Tagging&lt;/h3&gt;
-
-&lt;p&gt;Another piece of functionality we were added to ORMS was tagging. ORMS allows users to create custom tags for each opportunity in addition to the base set of tags that Outlook Group admins create.&lt;/p&gt;
-
-&lt;p&gt;The “Outlook Tags,” not only help guide their sales reps in the creation of their own custom tags, but also provides valuable usage data to Outlook Group admins for future iteration.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-detail__tags.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;h2 id=&quot;calendar-integration&quot;&gt;Calendar Integration&lt;/h2&gt;
-
-&lt;p&gt;An in-app calendar that can integrate with any major calendar provider proved an important part of the ORMS system.&lt;/p&gt;
-
-&lt;p&gt;Both sales reps and Outlook Group admins needed the ability to track appointments with potential opportunities and current customers. Additionally, admins are able to access employee calendars to help coordinate business.&lt;/p&gt;
-
-&lt;p&gt;The calendar we designed and implemented integrates with Google and allows for everyone within the Outlook Group to stay on the same page.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__calendar@2x.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;h2 id=&quot;a-responsive-visual-system&quot;&gt;A Responsive, Visual System&lt;/h2&gt;
-
-&lt;p&gt;From the beginning of the project, we focused on creating a responsive web application experience.&lt;/p&gt;
-
-&lt;p&gt;As I began the visual design process, I worked on identifying some base styles and flexible components that could be reused across the system.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-detail__responsive@2x.png&quot; alt=&quot;ORMS Application Screenshot - Various Responsive Mobile Screens&quot; /&gt;
-	    &lt;span class=&quot;img-caption text--centered&quot;&gt;I worked on creating a responsive card system that could accomodate graphs, tables, calendars, and more.&lt;/span&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;div class=&quot;fin-tip&quot;&gt;	
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-	Conclusion
-&lt;/h2&gt;
-
-&lt;p&gt;ORMS has become a robust internal tool for a national workforce. With a small team and close collaboration with our client, we were able to deliver a fully-responsive CRM that suits the Outlook Group’s specific needs.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/work/orms.html</link>
-        <guid isPermaLink="true">/work/orms.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
     
       <item>
         <title>Washington Leadership Academy</title>
@@ -458,6 +345,119 @@
         <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
         <link>/work/fosi.html</link>
         <guid isPermaLink="true">/work/fosi.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Outlook Relationship Management System</title>
+        <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/featured-image-orms.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.theoutlookgroup.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Outlook Group&lt;/a&gt; is one of the nation’s largest marketing firms in the pre-need* funeral industry and has a national team of sales representatives who work with individual funeral homes to maintain and develop their own customer bases.&lt;/p&gt;
+
+&lt;p&gt;I worked with the group and a small team to create the Outlook Relationship Management System (ORMS), a web application that improves the workflow of The Outlook Group’s sales representatives and client funeral homes.&lt;/p&gt;
+
+&lt;p&gt;I focused on establishing the overall visual language and user experience of the platform and also worked closely with project developers throughout implementation.&lt;/p&gt;
+
+&lt;p class=&quot;footnote&quot;&gt;
+  * pre-need services include things such as pre-need life insurance policies that cover the cost of predetermined expense of a funeral, cremation, or burial.
+&lt;/p&gt;
+
+&lt;h2 id=&quot;opportunity-management&quot;&gt;Opportunity Management&lt;/h2&gt;
+
+&lt;p&gt;To allow Outlook Group sales representatives to record and monitor potential customers, we designed a robust opportunities management page.&lt;/p&gt;
+
+&lt;p&gt;Beginning with simple sketches, we were able to validate functionality with Outlook Group stakeholders before moving into visual design.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-wireframe-sketches__opportunities.jpg&quot; alt=&quot;ORMS Wireframe Sketch - Opportunities Table&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;One of our first wireframe iterations for managing customer prospects, leads, and accounts (credit: &lt;a href=&quot;https://www.zachkuzmic.com/&quot; target=&quot;_blank&quot;&gt;Zach Kuzmic&lt;/a&gt;).&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Through iteration, we designed and implemented essential functionality for filtering, searching, and sorting opportunities.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__opportunities@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunities Table&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;Several iterations of wireframes and visual design led to a robust page for managing sales opportunities.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;task-management-and-collaboration&quot;&gt;Task Management and Collaboration&lt;/h2&gt;
+
+&lt;p&gt;We paid special attention to how Outlook Group sales reps collaborate around individual opportunities.&lt;/p&gt;
+
+&lt;p&gt;Users can add and categorize notes in a timeline format for easy future reference, create custom tasks, and schedule appointments that tie into the app’s calendar.&lt;/p&gt;
+
+&lt;p&gt;All of this functionality is available between multiple system users, allowing sales reps to collaboratively record and monitor information on each opportunity.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__opportunity-detail@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunity Detail Page&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;Users can collaborate on individual opportunities through the use of notes, tasks, and appointments.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h3 id=&quot;system-vs-custom-tagging&quot;&gt;System vs Custom Tagging&lt;/h3&gt;
+
+&lt;p&gt;Another piece of functionality we were added to ORMS was tagging. ORMS allows users to create custom tags for each opportunity in addition to the base set of tags that Outlook Group admins create.&lt;/p&gt;
+
+&lt;p&gt;The “Outlook Tags,” not only help guide their sales reps in the creation of their own custom tags, but also provides valuable usage data to Outlook Group admins for future iteration.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-detail__tags.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;calendar-integration&quot;&gt;Calendar Integration&lt;/h2&gt;
+
+&lt;p&gt;An in-app calendar that can integrate with any major calendar provider proved an important part of the ORMS system.&lt;/p&gt;
+
+&lt;p&gt;Both sales reps and Outlook Group admins needed the ability to track appointments with potential opportunities and current customers. Additionally, admins are able to access employee calendars to help coordinate business.&lt;/p&gt;
+
+&lt;p&gt;The calendar we designed and implemented integrates with Google and allows for everyone within the Outlook Group to stay on the same page.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__calendar@2x.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;a-responsive-visual-system&quot;&gt;A Responsive, Visual System&lt;/h2&gt;
+
+&lt;p&gt;From the beginning of the project, we focused on creating a responsive web application experience.&lt;/p&gt;
+
+&lt;p&gt;As I began the visual design process, I worked on identifying some base styles and flexible components that could be reused across the system.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-detail__responsive@2x.png&quot; alt=&quot;ORMS Application Screenshot - Various Responsive Mobile Screens&quot; /&gt;
+	    &lt;span class=&quot;img-caption text--centered&quot;&gt;I worked on creating a responsive card system that could accomodate graphs, tables, calendars, and more.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;fin-tip&quot;&gt;	
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+	Conclusion
+&lt;/h2&gt;
+
+&lt;p&gt;ORMS has become a robust internal tool for a national workforce. With a small team and close collaboration with our client, we were able to deliver a fully-responsive CRM that suits the Outlook Group’s specific needs.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
+        <link>/work/orms.html</link>
+        <guid isPermaLink="true">/work/orms.html</guid>
         
         
         <category>work</category>
