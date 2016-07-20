@@ -272,7 +272,11 @@ $work-break: 800px;
         height: 100%;
     }
 
-
+    .work-content__codepen-container {
+        margin: 0px auto 30px auto;
+        max-width: 100%;
+        padding: 35px 50px;
+    }
 
 }
 
@@ -343,6 +347,7 @@ $work-break: 800px;
     margin-bottom: 20px;
     width: auto;
     text-align: center;
+    background: $gray-color;
 
     .img-caption {
         font-family: $sans-serif;
@@ -385,7 +390,7 @@ $work-break: 800px;
 .grid__item--full {
     flex-basis: 100%;
     // margin: 0 auto 30px auto;
-    background: $gray-color;
+    
     padding: 20px;
 
     @media screen and (min-width: $on-palm) {
@@ -415,6 +420,9 @@ $work-break: 800px;
 
     @media screen and (min-width: $on-palm) {
         padding: 45px 40px;
+
+        &.end {
+        }
     }
 
     @media screen and (min-width: $on-tablet) {
