@@ -988,8 +988,13 @@ ul.social-icon-list {
   left: 0;
   width: 100%;
   height: 100%; }
+.work-content .work-content__codepen-container {
+  margin: 0px auto 30px auto;
+  max-width: 100%;
+  padding: 35px 50px; }
 
 .grid {
+  background: #EAEFF2;
   display: flex;
   flex-wrap: wrap;
   position: relative; }
@@ -1056,7 +1061,6 @@ ul.social-icon-list {
 
 .grid__item--full {
   flex-basis: 100%;
-  background: #EAEFF2;
   padding: 20px; }
   @media screen and (min-width: 600px) {
     .grid__item--full {

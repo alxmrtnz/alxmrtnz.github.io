@@ -272,12 +272,16 @@ $work-break: 800px;
         height: 100%;
     }
 
-
+    .work-content__codepen-container {
+        margin: 0px auto 30px auto;
+        max-width: 100%;
+        padding: 35px 50px;
+    }
 
 }
 
 .grid {
-    
+    background: $gray-color;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -385,7 +389,7 @@ $work-break: 800px;
 .grid__item--full {
     flex-basis: 100%;
     // margin: 0 auto 30px auto;
-    background: $gray-color;
+    
     padding: 20px;
 
     @media screen and (min-width: $on-palm) {
