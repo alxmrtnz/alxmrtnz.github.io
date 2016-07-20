@@ -994,7 +994,6 @@ ul.social-icon-list {
   padding: 35px 50px; }
 
 .grid {
-  background: #EAEFF2;
   display: flex;
   flex-wrap: wrap;
   position: relative; }
@@ -1034,7 +1033,8 @@ ul.social-icon-list {
   box-sizing: border-box;
   margin-bottom: 20px;
   width: auto;
-  text-align: center; }
+  text-align: center;
+  background: #EAEFF2; }
   .grid__item .img-caption {
     font-family: "aktiv-grotesk", sans-serif;
     font-size: 15px;

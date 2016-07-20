@@ -281,7 +281,7 @@ $work-break: 800px;
 }
 
 .grid {
-    background: $gray-color;
+    
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -347,6 +347,7 @@ $work-break: 800px;
     margin-bottom: 20px;
     width: auto;
     text-align: center;
+    background: $gray-color;
 
     .img-caption {
         font-family: $sans-serif;
@@ -419,6 +420,9 @@ $work-break: 800px;
 
     @media screen and (min-width: $on-palm) {
         padding: 45px 40px;
+
+        &.end {
+        }
     }
 
     @media screen and (min-width: $on-tablet) {
