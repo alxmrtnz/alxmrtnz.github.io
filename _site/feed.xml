@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 20 Jul 2016 15:26:20 -0400</pubDate>
-    <lastBuildDate>Wed, 20 Jul 2016 15:26:20 -0400</lastBuildDate>
+    <pubDate>Wed, 20 Jul 2016 15:34:33 -0400</pubDate>
+    <lastBuildDate>Wed, 20 Jul 2016 15:34:33 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -331,7 +331,7 @@
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;grid grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--half no-shadow&quot;&gt;
 	    &lt;img src=&quot;/assets/work/fosi/fosi-gdp-tablet.jpg&quot; alt=&quot;FOSI.org Good Digital Parenting Page screenshot (tablet)&quot; /&gt;
 	    
@@ -339,6 +339,12 @@
 	&lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
 	    &lt;img src=&quot;/assets/work/fosi/fosi-events-phone.jpg&quot; alt=&quot;FOSI.org Events Page screenshot (mobile)&quot; /&gt;
 	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;text--centered&quot;&gt;
+	&lt;p&gt;
+		Visit &lt;a href=&quot;http://washingtonleadershipacademy.org&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;FOSI.org&lt;/a&gt;
+	&lt;/p&gt;
 &lt;/div&gt;
 
 </description>
