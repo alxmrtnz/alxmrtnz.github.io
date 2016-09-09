@@ -1243,3 +1243,11 @@ ul.ul--post-archive {
   font-size: 14px;
   text-transform: uppercase;
   text-align: center; }
+
+.resume-container, .body-resume {
+  width: 100%;
+  height: 100%; }
+
+.resume-container iframe {
+  width: 100%;
+  height: 100%; }
