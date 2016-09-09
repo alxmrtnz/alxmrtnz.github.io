@@ -36,11 +36,6 @@ As of this writing (July 2016), the Service Year platform has registered over 50
 
 Over the course of the project, I worked with several other designers and touched many aspects of the platform. From conducting initial user research to iterating on variouinformation architecture and user flows and also worked closely with our team's UX lead on various user flows, wireframes, user testing, and design refinement.
 
-Now in its second year, Service Year has been an ever-evolving project that I have been involved in. I work with a small team of designers and developers in an iterative agile workflow.
-
-From user research to diagraming the information architecture and user flows of various processes, I have touched many parts of the Service Year platform in terms of both visual and UX design.
-
-
 
 ## User Experience
 
