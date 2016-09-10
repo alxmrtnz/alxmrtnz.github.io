@@ -5,9 +5,182 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 09 Sep 2016 16:16:17 -0400</pubDate>
-    <lastBuildDate>Fri, 09 Sep 2016 16:16:17 -0400</lastBuildDate>
+    <pubDate>Sat, 10 Sep 2016 12:54:53 -0400</pubDate>
+    <lastBuildDate>Sat, 10 Sep 2016 12:54:53 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Service Year</title>
+        <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;div class=&quot;video-container&quot;&gt;
+			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/181189760?color=00fbe6&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;The Service Year Alliance teamed up with &lt;a href=&quot;http://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to design and develop a digital platform for young Americans to connect and serve with the nation’s best nonprofits. Service Year aims to make a year of service a common expectation and opportunity for every young American.&lt;/p&gt;
+
+&lt;p&gt;An ongoing and ever-evolving project, the site brings the nation’s best service opportunities into one place, allowing both organizations and service corps members to more easily connect with one another.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-role&quot;&gt;My Role&lt;/h2&gt;
+
+&lt;p&gt;I served as a lead visual and user experience designer on Service Year. While working with a team of designers, developers, and project managers within ISL, we also worked closely with our client, the Service Year Alliance to bring their vision to life.&lt;/p&gt;
+
+&lt;p&gt;Over the course of the project, I worked on anything from initial user research to the creation of user flows, wireframes, and interactive prototypes to the final visual and interaction design of both the marketing site and web application.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-service-year-ecosystem&quot;&gt;Creating the Service Year Ecosystem&lt;/h2&gt;
+
+&lt;p&gt;While Service Year is built on the idea of connecting organizations with American youth, we needed to create a platform that catered to a variety of users and content types.&lt;/p&gt;
+
+&lt;p&gt;Whether you’re the administrator that manages your organization’s profile and prescense on Service Year, someone recruiting service members for an organization, or an individual looking for a service opportunity, Service Year needs to connect you to where you want to be.&lt;/p&gt;
+
+&lt;h3 id=&quot;information-architecture&quot;&gt;Information Architecture&lt;/h3&gt;
+
+&lt;p&gt;Beginning in the kickoff meeting with our client, we began to assess everything that would make up the Service Year Exchange platform.&lt;/p&gt;
+
+&lt;p&gt;Initial sitemaps helped our team lay out initial screens for everything from the marketing pages to the various interactions users would take when listing and discovering service opportunities.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/serviceyear/sy-site-map-august-2015.png&quot; alt=&quot;Service Year Sitemap (August 2015)&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;Initial sitemaps can give an idea of the number of screens/interactions needed for a project of this scale.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
+
+&lt;p&gt;We then began creating user flows for the paths each user type would take when being brought onto the system, browsing opportunities, or recruiting corps members.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/serviceyear/org-enroll-corps-member-flow-5-11-16.png&quot; alt=&quot;Screenshot of Userflow&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;User flows allowed our team to define the paths users would take to accomplish tasks.&lt;br /&gt;This user flow shows a corps member expressing interest in a position and an organization&#39;s path to taking action on that interest.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;While user flows were an essential part to getting the project started, it wasn’t always such a linear process. Our team worked within an agile process, using two-week sprints to accomplish tasks on a story-by-story basis. We iterated on different parts of the UX and design process depending on the task at hand.&lt;/p&gt;
+
+&lt;h3 id=&quot;wireframes--prototypes&quot;&gt;Wireframes &amp;amp; Prototypes&lt;/h3&gt;
+
+&lt;p&gt;With each new page or interaction being added to the system, our team would create sets of wireframes in Sketch, Balsamiq, Omnigraffle, or even just pen-and-paper sketchs. Often, we linked these wireframes together in &lt;a href=&quot;http://invisionapp.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Invision&lt;/a&gt; in order to get a sense of how the screens would connect.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;img src=&quot;/assets/work/serviceyear/sy-invision-screenshot.png&quot; alt=&quot;Service Year Invision Prototype Screenshot&quot; /&gt;
+		&lt;span class=&quot;img-caption&quot;&gt;
+			Prototypes allowed us to think through flows for different user interactions. Here is an early prototype of onboarding new corps members to Service Year. 
+			&lt;br /&gt;
+			(&lt;a href=&quot;/assets/invision/sy-cm-onboarding-wireframe-prototype/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Prototype in New Window&lt;/a&gt;)	
+		&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Prototyping allowed us to see when certain interactions felt great (or just awkward). Not only that, but it also allowed us to share in-progress work with our client and receive quick feedback.&lt;/p&gt;
+
+&lt;h3 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h3&gt;
+
+&lt;p&gt;Due to the scale of Service Year, our team worked around the idea of component-based design. Each part of a page not only needed consideration in terms of responsive design, but also necessitated the creation of assets for multiple states. Each component then had to work alongside other components in the page.&lt;/p&gt;
+
+&lt;p&gt;The use of component-based design helped us to define atoms and molecules that could then be used to build organisms, templates, and finally, pages (&lt;a href=&quot;http://bradfrost.com/blog/post/atomic-web-design/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;See Brad Frost’s Atomic Design&lt;/a&gt;).&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt &quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+	    &lt;img src=&quot;/assets/work/serviceyear/sy-narrative-components.jpg&quot; alt=&quot;Service Year Component Screenshot - Serving Status Cards&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;
+	    	A look at the different states for the serving status block within a Corps Member&#39;s public profile.
+	    &lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h4 id=&quot;a-living-design-system&quot;&gt;A Living Design System&lt;/h4&gt;
+
+&lt;p&gt;While web style guides and frameworks have been around for several years, the explosion of large-scale web applications brings an extra focus on creating design systems. Style guides like Salesforce’s &lt;a href=&quot;https://www.lightningdesignsystem.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Lightning Design System&lt;/a&gt; or Dropbox’s &lt;a href=&quot;http://dropbox.github.io/scooter/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Scooter&lt;/a&gt; have set a standard for the design community.&lt;/p&gt;
+
+&lt;p&gt;Our design and development teams collaborated to create our own living style guide for the Service Year platform. The style guide is ever-evolving and allows for better design/dev collaboration.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;img src=&quot;/assets/work/serviceyear/sy-style-guide.png&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
+		&lt;span class=&quot;img-caption&quot;&gt;
+			The Service Year Style Guide helps designers and developers to collaborate when designing, building, and iterating on components. (&lt;a href=&quot;https://serviceyear.org/styleguide/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Style Guide&lt;/a&gt;)
+		&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;working-in-agile&quot;&gt;Working in Agile&lt;/h2&gt;
+
+&lt;p&gt;Service Year is the largest web application that has ever come through ISL. With such new territory came the need to figure out new and effective processes for managing, designing, and developing.&lt;/p&gt;
+
+&lt;p&gt;From the onset, our team implemented an &lt;a href=&quot;http://agilemanifesto.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;agile workflow&lt;/a&gt; in order to quickly design, build, and ship iterations of the Service Year platform.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+		&lt;img src=&quot;/assets/work/serviceyear/sy-sprint-tracker-and-waffle.jpg&quot; alt=&quot;Screenshot of Sprint Tracker and Waffle Board&quot; /&gt;
+		&lt;span class=&quot;img-caption&quot;&gt;
+			A backlog of user stories were defined in collaboration with the client and saved in a Google Spreadsheet. During each sprint cycle, we then used Github and Waffle to monitor progress on each task.
+		&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Collaborating with the client, our workflow began with the creation of user stories that defined functionality for the platform. Both the design and development teams would take these user stories from a Google Spreadseet backlog and work on them in 2 to 3 week sprint cycles.&lt;/p&gt;
+
+&lt;p&gt;Not only were we iterating on Service Year as a platform, but we were constantly learning what worked best within our own workflow and modifying our processes accordingly.&lt;/p&gt;
+
+&lt;div class=&quot;fin-tip&quot;&gt;		
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+	Conclusion &amp;amp; Lessons Learned
+&lt;/h2&gt;
+
+&lt;p&gt;Working on a product that makes such a positive impact is a very rewarding experience. Service Year is an ever-evolving platform and the largest web application that I’ve been involved in.&lt;/p&gt;
+
+&lt;p&gt;A couple of things stuck out to me during my work on Service Year:&lt;/p&gt;
+
+&lt;h3 id=&quot;building-large-scale-applications&quot;&gt;Building Large Scale Applications&lt;/h3&gt;
+
+&lt;p&gt;Design systems for large scale applications take a lot more work than you may think. I learned through Service Year how important collaboration between design, development, and project managers is key to a successful project.&lt;/p&gt;
+
+&lt;h3 id=&quot;learning-to-fail-and-improve&quot;&gt;Learning to Fail and Improve&lt;/h3&gt;
+
+&lt;p&gt;You’re never going to get a design 100% right the first time and that’s ok. The iterative process of short design and development sprints allow room for testing new ideas, learning their shortcomings through user-testing, and then improving on the next go-round.&lt;/p&gt;
+
+&lt;h3 id=&quot;new-design-processes&quot;&gt;New Design Processes&lt;/h3&gt;
+
+&lt;p&gt;Service Year helped me learn how to work within a new type of workflow. Before this project, I had most often been involved in more traditional waterfall workflows. With Service Year, I learned more about the cyclical and collaborative nature of an agile sprint process.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/serviceyear/sy-homepage.jpg&quot; alt=&quot;Screenshot of Service Year Home Page&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
+		 &lt;img src=&quot;/assets/work/serviceyear/sy-comps-profile-tablet.jpg&quot; alt=&quot;Screenshot of Service Year Corps Member Profile (Tablet)&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
+	    &lt;img src=&quot;/assets/work/serviceyear/sy-comps-sign-in.jpg&quot; alt=&quot;Screenshot of Service Year Sign In Pages (Desktop)&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;text--centered&quot;&gt;
+	&lt;p&gt;
+		Visit &lt;a href=&quot;https://serviceyear.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ServiceYear.org&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 09 Sep 2016 15:46:27 -0400</pubDate>
+        <link>/work/service-year.html</link>
+        <guid isPermaLink="true">/work/service-year.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
     
       <item>
         <title>Alex Martinez – Resume</title>
@@ -138,7 +311,7 @@
 &lt;/div&gt;
 
 </description>
-        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
+        <pubDate>Mon, 18 Jul 2016 15:46:27 -0400</pubDate>
         <link>/work/wla.html</link>
         <guid isPermaLink="true">/work/wla.html</guid>
         
@@ -148,78 +321,112 @@
       </item>
     
       <item>
-        <title>PAW (Puppies at Work)</title>
+        <title>Outlook Relationship Management System</title>
         <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;div class=&quot;video-container&quot;&gt;
-			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/160030363?color=00fbe6&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;At ISL, we’re constantly exploring ways to take advantage of new technologies. In honor of &lt;a href=&quot;http://www.nationalpuppyday.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;National Puppy Day&lt;/a&gt;, we created PAW, or “Puppies at Work,” a Slack-integrated tracking system to keep track of dogs in the workspace.&lt;/p&gt;
-
-&lt;p&gt;The project comprised of connecting the physical and digital worlds through a bluetooth tracking system that linked to a web application for viewing the location of dogs in the office.&lt;/p&gt;
-
-&lt;p&gt;For an in-depth look at how it works, &lt;a href=&quot;https://isl.co/2016/03/a-slack-based-internet-of-things-iot-tracking-system-for-your-dog-hello-paw/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;read more here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-&lt;p&gt;As the latest ISL experiment, PAW was comprised of a small internal team that brought the product to life in a few short weeks.&lt;/p&gt;
-
-&lt;p&gt;I served as front-end developer for the public facing marketing page and also helped in the styling of the internal dashboard application.&lt;/p&gt;
-
-&lt;p&gt;I also had the opportunity to explore animating SVGs through CSS (thanks to the illustrative work of &lt;a href=&quot;https://www.behance.net/sarahsugarman&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sarah Sugarman&lt;/a&gt;) and worked with &lt;a href=&quot;https://twitter.com/krawchyk&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Andrew Krawchyk&lt;/a&gt;, the project’s development lead, to implement some of the front-end application.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--half no-shadow&quot;&gt;
-	    &lt;img src=&quot;/assets/work/paw/paw-marketing-page-screenshot.jpg&quot; /&gt;
-	    
-	&lt;/div&gt; 
-	&lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
-	    &lt;img src=&quot;/assets/work/paw/paw-dashboard-screenshots.jpg&quot; /&gt;
+	    &lt;img src=&quot;/assets/work/orms/featured-image-orms.jpg&quot; /&gt;
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;h2 id=&quot;animating-svgs&quot;&gt;Animating SVGs&lt;/h2&gt;
-&lt;p&gt;As soon as I began development, I wanted to work on animating the various components of the marketing page’s hero illustration in order to create a playful and interesting experience.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.theoutlookgroup.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Outlook Group&lt;/a&gt; is one of the nation’s largest marketing firms in the pre-need* funeral industry and has a national team of sales representatives who work with individual funeral homes to maintain and develop their own customer bases.&lt;/p&gt;
 
-&lt;p&gt;I started by exporting three parts of the scene for animation: a coffee mug, the computer screen, and, of course, Watson – our PAW mascot.&lt;/p&gt;
+&lt;p&gt;I worked with the group and a small team to create the Outlook Relationship Management System (ORMS), a web application that improves the workflow of The Outlook Group’s sales representatives and client funeral homes.&lt;/p&gt;
 
-&lt;p&gt;After combing through the SVG code, I targeted specific shapes for animation and got them moving through the use of CSS animations.&lt;/p&gt;
+&lt;p&gt;I focused on establishing the overall visual language and user experience of the platform and also worked closely with project developers throughout implementation.&lt;/p&gt;
+
+&lt;p class=&quot;footnote&quot;&gt;
+  * pre-need services include things such as pre-need life insurance policies that cover the cost of predetermined expense of a funeral, cremation, or burial.
+&lt;/p&gt;
+
+&lt;h2 id=&quot;opportunity-management&quot;&gt;Opportunity Management&lt;/h2&gt;
+
+&lt;p&gt;To allow Outlook Group sales representatives to record and monitor potential customers, we designed a robust opportunities management page.&lt;/p&gt;
+
+&lt;p&gt;Beginning with simple sketches, we were able to validate functionality with Outlook Group stakeholders before moving into visual design.&lt;/p&gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;p data-height=&quot;750&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;LGBbOv&quot; data-default-tab=&quot;result&quot; data-user=&quot;alxmrtnz&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/alxmrtnz/pen/LGBbOv/&quot;&gt;Workspace Animation&lt;/a&gt; by Alex Martinez (&lt;a href=&quot;http://codepen.io/alxmrtnz&quot;&gt;@alxmrtnz&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
-			&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
-		&lt;span class=&quot;img-caption&quot;&gt;Animating SVGs through CSS gave the landing page illustration a life of its own.&lt;/span&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-wireframe-sketches__opportunities.jpg&quot; alt=&quot;ORMS Wireframe Sketch - Opportunities Table&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;One of our first wireframe iterations for managing customer prospects, leads, and accounts (credit: &lt;a href=&quot;https://www.zachkuzmic.com/&quot; target=&quot;_blank&quot;&gt;Zach Kuzmic&lt;/a&gt;).&lt;/span&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;I explored animation loops through relatively simple CSS properties. Elements like the coffee’s steam were particularly interesting because of the need for offset timing to achieve an effect of easing in and out.&lt;/p&gt;
+&lt;p&gt;Through iteration, we designed and implemented essential functionality for filtering, searching, and sorting opportunities.&lt;/p&gt;
 
-&lt;h2 id=&quot;responsive-development&quot;&gt;Responsive Development&lt;/h2&gt;
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__opportunities@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunities Table&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;Several iterations of wireframes and visual design led to a robust page for managing sales opportunities.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
 
-&lt;p&gt;In addition to working on SVG animations, my other task at hand was to develop the public-facing marketing page and also to lend support for the internal application.&lt;/p&gt;
+&lt;h2 id=&quot;task-management-and-collaboration&quot;&gt;Task Management and Collaboration&lt;/h2&gt;
+
+&lt;p&gt;We paid special attention to how Outlook Group sales reps collaborate around individual opportunities.&lt;/p&gt;
+
+&lt;p&gt;Users can add and categorize notes in a timeline format for easy future reference, create custom tasks, and schedule appointments that tie into the app’s calendar.&lt;/p&gt;
+
+&lt;p&gt;All of this functionality is available between multiple system users, allowing sales reps to collaboratively record and monitor information on each opportunity.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__opportunity-detail@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunity Detail Page&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;Users can collaborate on individual opportunities through the use of notes, tasks, and appointments.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h3 id=&quot;system-vs-custom-tagging&quot;&gt;System vs Custom Tagging&lt;/h3&gt;
+
+&lt;p&gt;Another piece of functionality we were added to ORMS was tagging. ORMS allows users to create custom tags for each opportunity in addition to the base set of tags that Outlook Group admins create.&lt;/p&gt;
+
+&lt;p&gt;The “Outlook Tags,” not only help guide their sales reps in the creation of their own custom tags, but also provides valuable usage data to Outlook Group admins for future iteration.&lt;/p&gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-	    &lt;img src=&quot;/assets/work/paw/paw-responsive-screenshots.jpg&quot; /&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-detail__tags.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
 	&lt;/div&gt; 
 &lt;/div&gt;
+
+&lt;h2 id=&quot;calendar-integration&quot;&gt;Calendar Integration&lt;/h2&gt;
+
+&lt;p&gt;An in-app calendar that can integrate with any major calendar provider proved an important part of the ORMS system.&lt;/p&gt;
+
+&lt;p&gt;Both sales reps and Outlook Group admins needed the ability to track appointments with potential opportunities and current customers. Additionally, admins are able to access employee calendars to help coordinate business.&lt;/p&gt;
+
+&lt;p&gt;The calendar we designed and implemented integrates with Google and allows for everyone within the Outlook Group to stay on the same page.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__calendar@2x.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;a-responsive-visual-system&quot;&gt;A Responsive, Visual System&lt;/h2&gt;
+
+&lt;p&gt;From the beginning of the project, we focused on creating a responsive web application experience.&lt;/p&gt;
+
+&lt;p&gt;As I began the visual design process, I worked on identifying some base styles and flexible components that could be reused across the system.&lt;/p&gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/paw/paw-homepage-screenshot.jpg&quot; /&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+	    &lt;img src=&quot;/assets/work/orms/orms-detail__responsive@2x.png&quot; alt=&quot;ORMS Application Screenshot - Various Responsive Mobile Screens&quot; /&gt;
+	    &lt;span class=&quot;img-caption text--centered&quot;&gt;I worked on creating a responsive card system that could accomodate graphs, tables, calendars, and more.&lt;/span&gt;
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;p&gt;PAW is currently available to ISL employees only. To learn more about PAW, check out &lt;a href=&quot;https://isl.co/2016/03/a-slack-based-internet-of-things-iot-tracking-system-for-your-dog-hello-paw/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;this blog post&lt;/a&gt; or &lt;a href=&quot;https://paw.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;visit the site&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;fin-tip&quot;&gt;	
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+	Conclusion
+&lt;/h2&gt;
+
+&lt;p&gt;ORMS has become a robust internal tool for a national workforce. With a small team and close collaboration with our client, we were able to deliver a fully-responsive CRM that suits the Outlook Group’s specific needs.&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/work/paw.html</link>
-        <guid isPermaLink="true">/work/paw.html</guid>
+        <pubDate>Sun, 17 Jul 2016 15:46:27 -0400</pubDate>
+        <link>/work/orms.html</link>
+        <guid isPermaLink="true">/work/orms.html</guid>
         
         
         <category>work</category>
@@ -361,7 +568,7 @@
 &lt;/div&gt;
 
 </description>
-        <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
+        <pubDate>Sat, 16 Jul 2016 15:46:27 -0400</pubDate>
         <link>/work/fosi.html</link>
         <guid isPermaLink="true">/work/fosi.html</guid>
         
@@ -371,112 +578,78 @@
       </item>
     
       <item>
-        <title>Outlook Relationship Management System</title>
+        <title>PAW (Puppies at Work)</title>
         <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/featured-image-orms.jpg&quot; /&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.theoutlookgroup.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Outlook Group&lt;/a&gt; is one of the nation’s largest marketing firms in the pre-need* funeral industry and has a national team of sales representatives who work with individual funeral homes to maintain and develop their own customer bases.&lt;/p&gt;
-
-&lt;p&gt;I worked with the group and a small team to create the Outlook Relationship Management System (ORMS), a web application that improves the workflow of The Outlook Group’s sales representatives and client funeral homes.&lt;/p&gt;
-
-&lt;p&gt;I focused on establishing the overall visual language and user experience of the platform and also worked closely with project developers throughout implementation.&lt;/p&gt;
-
-&lt;p class=&quot;footnote&quot;&gt;
-  * pre-need services include things such as pre-need life insurance policies that cover the cost of predetermined expense of a funeral, cremation, or burial.
-&lt;/p&gt;
-
-&lt;h2 id=&quot;opportunity-management&quot;&gt;Opportunity Management&lt;/h2&gt;
-
-&lt;p&gt;To allow Outlook Group sales representatives to record and monitor potential customers, we designed a robust opportunities management page.&lt;/p&gt;
-
-&lt;p&gt;Beginning with simple sketches, we were able to validate functionality with Outlook Group stakeholders before moving into visual design.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-wireframe-sketches__opportunities.jpg&quot; alt=&quot;ORMS Wireframe Sketch - Opportunities Table&quot; /&gt;
-	    &lt;span class=&quot;img-caption&quot;&gt;One of our first wireframe iterations for managing customer prospects, leads, and accounts (credit: &lt;a href=&quot;https://www.zachkuzmic.com/&quot; target=&quot;_blank&quot;&gt;Zach Kuzmic&lt;/a&gt;).&lt;/span&gt;
+		&lt;div class=&quot;video-container&quot;&gt;
+			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/160030363?color=00fbe6&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Through iteration, we designed and implemented essential functionality for filtering, searching, and sorting opportunities.&lt;/p&gt;
+&lt;p&gt;At ISL, we’re constantly exploring ways to take advantage of new technologies. In honor of &lt;a href=&quot;http://www.nationalpuppyday.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;National Puppy Day&lt;/a&gt;, we created PAW, or “Puppies at Work,” a Slack-integrated tracking system to keep track of dogs in the workspace.&lt;/p&gt;
 
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__opportunities@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunities Table&quot; /&gt;
-	    &lt;span class=&quot;img-caption&quot;&gt;Several iterations of wireframes and visual design led to a robust page for managing sales opportunities.&lt;/span&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
+&lt;p&gt;The project comprised of connecting the physical and digital worlds through a bluetooth tracking system that linked to a web application for viewing the location of dogs in the office.&lt;/p&gt;
 
-&lt;h2 id=&quot;task-management-and-collaboration&quot;&gt;Task Management and Collaboration&lt;/h2&gt;
+&lt;p&gt;For an in-depth look at how it works, &lt;a href=&quot;https://isl.co/2016/03/a-slack-based-internet-of-things-iot-tracking-system-for-your-dog-hello-paw/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;read more here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;We paid special attention to how Outlook Group sales reps collaborate around individual opportunities.&lt;/p&gt;
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;As the latest ISL experiment, PAW was comprised of a small internal team that brought the product to life in a few short weeks.&lt;/p&gt;
 
-&lt;p&gt;Users can add and categorize notes in a timeline format for easy future reference, create custom tasks, and schedule appointments that tie into the app’s calendar.&lt;/p&gt;
+&lt;p&gt;I served as front-end developer for the public facing marketing page and also helped in the styling of the internal dashboard application.&lt;/p&gt;
 
-&lt;p&gt;All of this functionality is available between multiple system users, allowing sales reps to collaboratively record and monitor information on each opportunity.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__opportunity-detail@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunity Detail Page&quot; /&gt;
-	    &lt;span class=&quot;img-caption&quot;&gt;Users can collaborate on individual opportunities through the use of notes, tasks, and appointments.&lt;/span&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;h3 id=&quot;system-vs-custom-tagging&quot;&gt;System vs Custom Tagging&lt;/h3&gt;
-
-&lt;p&gt;Another piece of functionality we were added to ORMS was tagging. ORMS allows users to create custom tags for each opportunity in addition to the base set of tags that Outlook Group admins create.&lt;/p&gt;
-
-&lt;p&gt;The “Outlook Tags,” not only help guide their sales reps in the creation of their own custom tags, but also provides valuable usage data to Outlook Group admins for future iteration.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-detail__tags.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;h2 id=&quot;calendar-integration&quot;&gt;Calendar Integration&lt;/h2&gt;
-
-&lt;p&gt;An in-app calendar that can integrate with any major calendar provider proved an important part of the ORMS system.&lt;/p&gt;
-
-&lt;p&gt;Both sales reps and Outlook Group admins needed the ability to track appointments with potential opportunities and current customers. Additionally, admins are able to access employee calendars to help coordinate business.&lt;/p&gt;
-
-&lt;p&gt;The calendar we designed and implemented integrates with Google and allows for everyone within the Outlook Group to stay on the same page.&lt;/p&gt;
+&lt;p&gt;I also had the opportunity to explore animating SVGs through CSS (thanks to the illustrative work of &lt;a href=&quot;https://www.behance.net/sarahsugarman&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sarah Sugarman&lt;/a&gt;) and worked with &lt;a href=&quot;https://twitter.com/krawchyk&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Andrew Krawchyk&lt;/a&gt;, the project’s development lead, to implement some of the front-end application.&lt;/p&gt;
 
 &lt;div class=&quot;grid grid-mt&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-screenshot__calendar@2x.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
+	&lt;div class=&quot;grid__item grid__item--half no-shadow&quot;&gt;
+	    &lt;img src=&quot;/assets/work/paw/paw-marketing-page-screenshot.jpg&quot; /&gt;
+	    
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
+	    &lt;img src=&quot;/assets/work/paw/paw-dashboard-screenshots.jpg&quot; /&gt;
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;h2 id=&quot;a-responsive-visual-system&quot;&gt;A Responsive, Visual System&lt;/h2&gt;
+&lt;h2 id=&quot;animating-svgs&quot;&gt;Animating SVGs&lt;/h2&gt;
+&lt;p&gt;As soon as I began development, I wanted to work on animating the various components of the marketing page’s hero illustration in order to create a playful and interesting experience.&lt;/p&gt;
 
-&lt;p&gt;From the beginning of the project, we focused on creating a responsive web application experience.&lt;/p&gt;
+&lt;p&gt;I started by exporting three parts of the scene for animation: a coffee mug, the computer screen, and, of course, Watson – our PAW mascot.&lt;/p&gt;
 
-&lt;p&gt;As I began the visual design process, I worked on identifying some base styles and flexible components that could be reused across the system.&lt;/p&gt;
+&lt;p&gt;After combing through the SVG code, I targeted specific shapes for animation and got them moving through the use of CSS animations.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;p data-height=&quot;750&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;LGBbOv&quot; data-default-tab=&quot;result&quot; data-user=&quot;alxmrtnz&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/alxmrtnz/pen/LGBbOv/&quot;&gt;Workspace Animation&lt;/a&gt; by Alex Martinez (&lt;a href=&quot;http://codepen.io/alxmrtnz&quot;&gt;@alxmrtnz&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+			&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+		&lt;span class=&quot;img-caption&quot;&gt;Animating SVGs through CSS gave the landing page illustration a life of its own.&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I explored animation loops through relatively simple CSS properties. Elements like the coffee’s steam were particularly interesting because of the need for offset timing to achieve an effect of easing in and out.&lt;/p&gt;
+
+&lt;h2 id=&quot;responsive-development&quot;&gt;Responsive Development&lt;/h2&gt;
+
+&lt;p&gt;In addition to working on SVG animations, my other task at hand was to develop the public-facing marketing page and also to lend support for the internal application.&lt;/p&gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
 	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-	    &lt;img src=&quot;/assets/work/orms/orms-detail__responsive@2x.png&quot; alt=&quot;ORMS Application Screenshot - Various Responsive Mobile Screens&quot; /&gt;
-	    &lt;span class=&quot;img-caption text--centered&quot;&gt;I worked on creating a responsive card system that could accomodate graphs, tables, calendars, and more.&lt;/span&gt;
+	    &lt;img src=&quot;/assets/work/paw/paw-responsive-screenshots.jpg&quot; /&gt;
 	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;div class=&quot;fin-tip&quot;&gt;	
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/paw/paw-homepage-screenshot.jpg&quot; /&gt;
+	&lt;/div&gt; 
 &lt;/div&gt;
 
-&lt;h2 class=&quot;text-center&quot;&gt;
-	Conclusion
-&lt;/h2&gt;
-
-&lt;p&gt;ORMS has become a robust internal tool for a national workforce. With a small team and close collaboration with our client, we were able to deliver a fully-responsive CRM that suits the Outlook Group’s specific needs.&lt;/p&gt;
+&lt;p&gt;PAW is currently available to ISL employees only. To learn more about PAW, check out &lt;a href=&quot;https://isl.co/2016/03/a-slack-based-internet-of-things-iot-tracking-system-for-your-dog-hello-paw/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;this blog post&lt;/a&gt; or &lt;a href=&quot;https://paw.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;visit the site&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 28 Nov 2015 14:46:27 -0500</pubDate>
-        <link>/work/orms.html</link>
-        <guid isPermaLink="true">/work/orms.html</guid>
+        <link>/work/paw.html</link>
+        <guid isPermaLink="true">/work/paw.html</guid>
         
         
         <category>work</category>
