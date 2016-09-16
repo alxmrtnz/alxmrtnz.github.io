@@ -5,9 +5,238 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 11 Sep 2016 10:02:42 -0400</pubDate>
-    <lastBuildDate>Sun, 11 Sep 2016 10:02:42 -0400</lastBuildDate>
+    <pubDate>Thu, 15 Sep 2016 22:50:35 -0400</pubDate>
+    <lastBuildDate>Thu, 15 Sep 2016 22:50:35 -0400</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Improving and Driving Discovery on Service Year</title>
+        <description>&lt;p&gt;&lt;a href=&quot;/work/service-year&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Service Year&lt;/a&gt; is the nation’s largest marketplace for year-long, full-time, paid service opportunities. It allows young Americans to discover full-time, paid, year-long service opportunities with organizations from across the country.&lt;/p&gt;
+
+&lt;p&gt;High school students that want to contribute to something meaningful during a gap year before college, college graduates trying to find a higher calling, or any young American between the ages of 18-24 can use the platform to connect with impactful organizations.&lt;/p&gt;
+
+&lt;p&gt;The platform’s focus on connection between organizations and service corps members depends upon the ability for users to find listings and organizations that are tailored to their interests.&lt;/p&gt;
+
+&lt;p&gt;However, after the first iteration of the discovery flow, we found that building the bridge for users was not happening. Users were having difficulty understanding what a “service year” was and how to find positions and get involved.&lt;/p&gt;
+
+&lt;p&gt;Discovering the right position and getting involved with the right organization required a simpler path.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
+
+&lt;p&gt;Finding a listing for a service position should be a simple experience that’s tailored to a user’s interests. However, after conducting in-person and online usability tests with real users, it was clear that the path to discovery was foggy.&lt;/p&gt;
+
+&lt;p&gt;After creating the MVP for the platform (which including the public facing marketing pages and a log in system for corps members and organizations), our team was tasked with building out the ability to search listings, positions, organizations, and users.&lt;/p&gt;
+
+&lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Create a flexible system for displaying different content types.&lt;/p&gt;
+
+&lt;p&gt;Through usability sessions, we identified three key painpoints:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Site navigation created an unclear path&lt;/li&gt;
+  &lt;li&gt;The homepage did not clearly explain the process of getting involved&lt;/li&gt;
+  &lt;li&gt;Narrowing down search results was difficult&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;a-team-effort&quot;&gt;A Team Effort&lt;/h2&gt;
+
+&lt;p&gt;As a product being designed and built by my company, &lt;a href=&quot;https://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt;, but owned by a client, &lt;a href=&quot;https://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Service Year Alliance&lt;/a&gt;, working on this challenge involved a variety of team members.&lt;/p&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    	&lt;img src=&quot;https://placekitten.com/1400/600&quot; /&gt;
+    	&lt;span class=&quot;img-caption&quot;&gt;A look at the homepage used in testing.&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
+&lt;p&gt;These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    	&lt;img src=&quot;/assets/work/fosi/fosi-user-flow-david.png&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;site-structure&quot;&gt;Site Structure&lt;/h2&gt;
+&lt;p&gt;After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
+  &lt;li&gt;Policy and Research&lt;/li&gt;
+  &lt;li&gt;Events&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Concentrating of FOSI’s pre-existing content into three main buckets simplified the process of finding content for the end user. Not only that, but the structure allowed us to make content a priority something something here…&lt;/p&gt;
+
+&lt;p&gt;[sitemap here]&lt;/p&gt;
+
+&lt;h2 id=&quot;prototyping&quot;&gt;Prototyping&lt;/h2&gt;
+&lt;p&gt;Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;div class=&quot;video-container&quot;&gt;
+			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/155266319?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;img src=&quot;/assets/work/fosi/fosi-wireframes.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
+
+&lt;h3 id=&quot;typography&quot;&gt;Typography&lt;/h3&gt;
+&lt;p&gt;In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;img src=&quot;/assets/work/fosi/fosi-type-example.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;aaux-next&quot;&gt;Aaux Next&lt;/h4&gt;
+&lt;p&gt;Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
+
+&lt;h4 id=&quot;minion-pro&quot;&gt;Minion Pro&lt;/h4&gt;
+&lt;p&gt;Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
+
+&lt;h3 id=&quot;colors&quot;&gt;Colors&lt;/h3&gt;
+&lt;p&gt;With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
+
+&lt;div class=&quot;fin-tip&quot;&gt;	
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+	A Flexible, Responsive Publishing Platform
+&lt;/h2&gt;
+
+&lt;p&gt;At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age.&lt;/p&gt;
+
+&lt;p&gt;By creating flexible layouts, a new design system, and an integration with Wagtail, a Django-based CMS, we were able to provide FOSI with a rethought and redesigned responsive experience.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;/assets/work/benchmarcs/app-screenshots/benchmarcs-marketing-home.jpg&quot; alt=&quot;Screenshot of Benchmarcs Marketing Page&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half &quot;&gt;
+	    &lt;img src=&quot;/assets/work/benchmarcs/app-screenshots/benchmarcs-screenshot-call-volume.png&quot; alt=&quot;Screenshot of Benchmarcs app – Call Volume Chart&quot; /&gt;
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
+		 &lt;img src=&quot;/assets/work/benchmarcs/app-screenshots/benchmarcs-screenshot-market-share.png&quot; alt=&quot;Screenshot of Benchmarcs app – Market Share Graph&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 13 Sep 2016 00:00:00 -0400</pubDate>
+        <link>/zapier2/index.html</link>
+        <guid isPermaLink="true">/zapier2/index.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Improving</title>
+        <description>&lt;p&gt;Through &lt;a href=&quot;http://metto.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Metto&lt;/a&gt; , I helped design and build a web application called Benchmarcs that allows funeral homes to monitor trends in business for both their own individual homes and their competitors.&lt;/p&gt;
+
+&lt;p&gt;Traditionally, funeral homes tracked “calls,” or deaths, by skimming through obituaries in local newspapers and obituary websites. Because the calls listed in these sources also indicated which funeral home would be performing the funeral, each home could track how much business each competitor was receiving.&lt;/p&gt;
+
+&lt;p&gt;With Benchmarcs, we helped automate this process by using web spiders to crawl online data and assess when and where calls happen. In this way, a home saves time and money while also having a central place important competitive data.&lt;/p&gt;
+
+&lt;h3 id=&quot;tracking-the-competition&quot;&gt;Tracking the Competition&lt;/h3&gt;
+
+&lt;p&gt;One of the biggest advantages in moving toward an automated system like Benchmarcs is that it gives funeral homes the ability to track their competition.&lt;/p&gt;
+
+&lt;p&gt;Adding competitors allows users to see how many calls a competing home received over the last week, month, year, etc and also see trends in calls over that period of time.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
+
+&lt;p&gt;In order to educate new users about the ability to track competitors and to help populate their accounts with competitor data, we decided to integrate the ability to add competitors into the onboarding process.&lt;/p&gt;
+
+&lt;div class=&quot;pop-out-image__container&quot;&gt;
+	&lt;a href=&quot;/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+		&lt;div class=&quot;pop-out-image&quot;&gt;
+			&lt;img class=&quot;&quot; src=&quot;/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; alt=&quot;Benchmarcs Onboarding User Flow&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;span class=&quot;img-caption&quot;&gt;We created user-flow diagrams to outline functionality in the initial onboarding and setup, including the ability to add competitor funeral homes (Getting Started Step 4)&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Conversations with our product owners and several potential users led us to focus on the addition of competitors on a local, rather than regional or national level. We learned that even when the competition has multiple locations across a state or region, homes tend to focus on the competing branch closest to them.&lt;/p&gt;
+
+&lt;p&gt;Our initial iteration of adding competitors approximated the user’s location and prepopulated a zip code and radius filter in order to show an initial set of homes in their area.&lt;/p&gt;
+
+&lt;div class=&quot;pop-out-image__container&quot;&gt;
+	&lt;a href=&quot;/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+		&lt;div class=&quot;pop-out-image&quot;&gt;
+			&lt;img class=&quot;&quot; src=&quot;/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; alt=&quot;Benchmarcs Add a Competitor Wireframe and design V1&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;span class=&quot;img-caption&quot;&gt;
+		We gathered user feedback on the initial &quot;add a competitor&quot; feature from several pilot program users.
+	&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;While some aspects of the initial functionality fit the bill, the nuances of the design did not.&lt;/p&gt;
+
+&lt;p&gt;We thought that a user would pick a zip, radius, and then filter the list of results, but that didn’t happen. Instead, users chose several homes from the pre-populated list before becoming frustrated when they couldn’t find the home they were looking for.&lt;/p&gt;
+
+&lt;p&gt;It was unclear to users that the pre-populated list was offering a smaller list of suggestions rather than a complete list of competitors. In the end, this solution made the tool less useful to users and converted them with less competitors than than they really wanted.&lt;/p&gt;
+
+&lt;p&gt;While many of our pilot users got by with a few competitors added, there was definitely room to improve the design of this feature.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-solution&quot;&gt;The Solution&lt;/h2&gt;
+
+&lt;p&gt;To improve usability, we made a couple of changes to both the visual design and functionality:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;We did away with ZIP and radius&lt;/strong&gt; – user testing had shown that these fields were not being used and that users instead focused on the search input&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;We made the search bar more prominent&lt;/strong&gt; in order to guide the user to take action&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;We added the title “Suggested Competitors” to the preloaded competitors list&lt;/strong&gt; to communicate to users that this initial list wasn’t exhausted&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;We added functionality to deliver more and more relevant results on each selection.&lt;/strong&gt; Now, each time the user picks a competitor, we hit the Benchmarcs API, search for homes near the selected competitor and add them to the list of suggestions. Then, we  resort the list based on how many times a competitor is suggested in relation to the competitors selected by the user.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;pop-out-image__container&quot;&gt;
+	&lt;a href=&quot;/assets/zapier/images/benchmarcs-interaction.gif&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+		&lt;div class=&quot;pop-out-image&quot;&gt;
+			&lt;img class=&quot;&quot; src=&quot;/assets/zapier/images/benchmarcs-interaction.gif&quot; alt=&quot;Adding a Competitor - Animated GIF&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;span class=&quot;img-caption&quot;&gt;
+		Version two of the &quot;add a competitor&quot; feature led to an overall increase in competitors added by users when setting up their accounts.
+	&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;While seemingly small, the updated design makes the tool more useful to user and has increased the number of homes a new user adds during setup.&lt;/p&gt;
+
+&lt;p&gt;Users could not only find the homes they were looking for, but the designed learning to enhance suggested competitors provided users with a more useful tool.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-team&quot;&gt;The Team&lt;/h2&gt;
+
+&lt;p&gt;I work on Benchmarcs with with a small team at Metto, a small fully remote design and development studio. The core team includes two designers (myself and another product designer) and two developers who split duties on frontend and backend.&lt;/p&gt;
+
+&lt;p&gt;I also helped style the front-end side of the application and get my hands dirty when working with our Backbone framework, Marionette.&lt;/p&gt;
+
+&lt;p&gt;In addition to the team at Metto, we work closely with the application’s product owners, Tyler and Michael Anderson, the CEO and VP of Marketing and Business Development at &lt;a href=&quot;http://www.theoutlookgroup.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Outlook Group&lt;/a&gt;*, to build the standalone application that they are currently marketing to funeral homes in the midwest and across the country.&lt;/p&gt;
+
+&lt;p class=&quot;footnote&quot;&gt;
+  *Outlook Group is one of the nation’s largest marketing firms in the pre-need funeral industry.
+&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Thanks to an iterative process and a focus on user-centered design, our team can identify issues like the addition of competitors and continue to work on optimizing various aspects of the application as a whole.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Sep 2016 00:00:00 -0400</pubDate>
+        <link>/zapier/index.html</link>
+        <guid isPermaLink="true">/zapier/index.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Service Year</title>
@@ -761,44 +990,6 @@ Before we dive into my favorite plugins, if you use Sketch and you haven’t ins
         <pubDate>Wed, 11 Nov 2015 14:46:27 -0500</pubDate>
         <link>/thoughts/conference-recap-fowd-sf.html</link>
         <guid isPermaLink="true">/thoughts/conference-recap-fowd-sf.html</guid>
-        
-        
-        <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>Where We </title>
-        <description>&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFUG9VZ3NLWmt3M0k/preview&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;
-</description>
-        <pubDate>Sun, 08 Nov 2015 15:46:27 -0500</pubDate>
-        <link>/thoughts/hello.html</link>
-        <guid isPermaLink="true">/thoughts/hello.html</guid>
-        
-        
-        <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>Where We Belong</title>
-        <description>&lt;p&gt;“Hello there, how you doin’?
-I’ve got all these thoughts just floating through my brain…” - &lt;a href=&quot;https://www.youtube.com/watch?v=pISPVfRQiOo&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;MCS&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We had something back in high school we referred to as the JEP (Junior English Project). Taught by the wonderful, yet eccentric, Darrin Broadway, the junior english struck fear into the hearts of many. The project consisted of a string of readings, assignments, and essays throughout the school year that culminated in each student developing a final project – whether that project be a short story, poem, interpretive dance, documentary, film, etc.&lt;/p&gt;
-
-&lt;p&gt;The writing exercises, the constant pressure, the unrelenting deadlines forced out some of our most creative work of our young lives. The insurmountable idea of having to pump out thousands and thousands of words for a 10-page paper on the themes of Fahrenheit 451 dwindled over time and instead turned into a fuel that fed our minds and our fingers as we wrote (or typed) late into the weeknights.&lt;/p&gt;
-
-&lt;p&gt;For me, it was some of my best writing. Crafting outlines for essays became second nature and filling them in with carefully considered dabs of light hearted banter with logically executed conclusions became an art at which (at least thought) I thrived.&lt;/p&gt;
-
-&lt;p&gt;This isn’t to say that I was really that great of a writer. For all intents and purposes, I was a 17 year old kid writing a standard 5 paragraph essay on a book we had been assigned to read. But at times, through the many assignments and long nights, I felt that words were truly a medium of unbounded expression.&lt;/p&gt;
-
-&lt;p&gt;Now, I may be setting myself and this catalogue of thoughts up for failure with that prologue, however, I’m hoping that the result will be quite the opposite. My goal? Pen my thoughts on design, code, happiness, and life. Thanks for tuning in.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 08 Nov 2015 15:46:27 -0500</pubDate>
-        <link>/thoughts/hello-there.html</link>
-        <guid isPermaLink="true">/thoughts/hello-there.html</guid>
         
         
         <category>thoughts</category>

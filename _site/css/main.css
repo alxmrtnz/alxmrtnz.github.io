@@ -954,6 +954,35 @@ ul.social-icon-list {
   margin-top: 5px;
   margin-bottom: 10px; }
 
+.pop-out-image__container {
+  margin-bottom: 35px;
+  padding: 0 20px;
+  position: relative;
+  transition: all .2s; }
+
+.pop-out-image {
+  transition: all .2s;
+  position: relative; }
+  .pop-out-image:after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../assets/zapier/images/external-link.png") no-repeat 0 0;
+    background-size: 20px 20px;
+    opacity: .4;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    transition: all .2s; }
+  .pop-out-image:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13); }
+    .pop-out-image:hover:after {
+      opacity: 1; }
+
 .work-content ol, .work-content ul {
   background: #f3f6f8;
   color: #333;
@@ -1035,19 +1064,20 @@ ul.social-icon-list {
   width: auto;
   text-align: center;
   background: #EAEFF2; }
-  .grid__item .img-caption {
-    font-family: "aktiv-grotesk", sans-serif;
-    font-size: 15px;
-    line-height: 18px;
-    padding-top: 20px;
-    text-align: left;
-    display: block;
-    color: #6c8fa4; }
-    .grid__item .img-caption a {
-      color: #6c8fa4;
-      text-decoration: underline; }
-      .grid__item .img-caption a:hover {
-        color: #6c8fa4; }
+
+.img-caption {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  padding-top: 20px;
+  text-align: left;
+  display: block;
+  color: #6c8fa4; }
+  .img-caption a {
+    color: #6c8fa4;
+    text-decoration: underline; }
+    .img-caption a:hover {
+      color: #6c8fa4; }
 
 .grid__item--full img, .grid__item--half img {
   width: 100%;
