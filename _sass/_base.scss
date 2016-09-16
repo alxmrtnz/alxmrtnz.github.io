@@ -112,11 +112,15 @@ li {
     max-width:         calc($on-laptop - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    
+    @media screen and (min-width: $on-palm) {
+        padding-right: $spacing-unit;
+        padding-left: $spacing-unit;
+    }
+
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
+    @media screen and (min-width: $on-laptop) {
         max-width: -webkit-calc($on-laptop - (#{$spacing-unit}));
         max-width:         calc($on-laptop - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;

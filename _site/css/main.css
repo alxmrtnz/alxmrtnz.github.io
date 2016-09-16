@@ -80,10 +80,12 @@ li > ol {
   max-width: -webkit-calc($on-laptop - (30px * 2));
   max-width: calc($on-laptop - (30px * 2));
   margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
-  @media screen and (max-width: 900px) {
+  margin-left: auto; }
+  @media screen and (min-width: 600px) {
+    .wrapper {
+      padding-right: 30px;
+      padding-left: 30px; } }
+  @media screen and (min-width: 900px) {
     .wrapper {
       max-width: -webkit-calc($on-laptop - (30px));
       max-width: calc($on-laptop - (30px));
