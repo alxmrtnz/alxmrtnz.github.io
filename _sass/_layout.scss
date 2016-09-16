@@ -88,14 +88,8 @@
 
 .featured-icon, .featured-image {
     margin: 0 auto 30px auto;
-    max-width: 140px;
-
-
-    @media screen and (min-width: $on-laptop) {
-        // position: absolute;
-        // left: -150px;
-        // top: 24px;
-    }
+    // max-width: 140px;
+    max-width: 190px;
 
     img {
         width: 100%;

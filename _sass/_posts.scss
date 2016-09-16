@@ -159,8 +159,11 @@ $post-image-padding-top: 20px;
 
 .post-content {
     max-width: $post-content-max-width;
-    padding: 0px 20px;
     margin: 0 auto 70px auto;
+    
+    @media screen and (min-width: $on-palm) {
+        padding: 0px 20px;
+    }
 }
 
 

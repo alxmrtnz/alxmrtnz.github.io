@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="kf8-oEOzkveV_8ZnJN6P7InR5cl14Ik9R3Phxayihgk" />
 
-    <title>Improving</title>
+    <title>Question Three</title>
     <meta name="description" content="Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.<br>This site is a work in progress and is being built with Jekyll and hosted on Github.">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
@@ -122,17 +122,20 @@
             <div class="featured-icon">
               <img src="/assets/zapier/images/featured-icon-zapier.png" alt="Icon of Golden Gate Bridge">
             </div> 
-            <p class="post-date text--mono">Zapier Question III</p>
-            <h1 class="post-title heading--large">Improving</h1>
+            <p class="post-date text--mono">Zapier Product Designer Application</p>
+            <h1 class="post-title heading--large">Question Three</h1>
             
 
             
           </header>
-          <p>Through <a href="http://metto.co/" target="_blank" class="link--text-in-p">Metto</a> , I helped design and build a web application called Benchmarcs that allows funeral homes to monitor trends in business for both their own individual homes and their competitors.</p>
+          <h3 id="prompt">Prompt</h3>
+<p><em>Tell me about a time you worked on a project designed to increase conversion rates or usage of a specific feature. What was the process, who did you collaborate with, and what was the outcome? Make sure to include sketches, wireframes, mockups, screenshots, and narrative to effectively describe your design process towards designing and building this feature.</em></p>
+
+<p>Through <a href="http://metto.co/" target="_blank" class="link--text-in-p">Metto</a> , I helped design and build a web application called Benchmarcs that allows funeral homes to monitor trends in business for both their own individual homes and their competitors.</p>
 
 <p>Traditionally, funeral homes tracked “calls,” or deaths, by skimming through obituaries in local newspapers and obituary websites. Because the calls listed in these sources also indicated which funeral home would be performing the funeral, each home could track how much business each competitor was receiving.</p>
 
-<p>With Benchmarcs, we helped automate this process by using web spiders to crawl online data and assess when and where calls happen. In this way, a home saves time and money while also having a central place important competitive data.</p>
+<p>With Benchmarcs, we helped automate this process by using web spiders to crawl online data and assess when and where calls happen. This helps homes save time and money and provides a central hub of important competitive data.</p>
 
 <h3 id="tracking-the-competition">Tracking the Competition</h3>
 
@@ -150,12 +153,12 @@
 			<img class="" src="/assets/zapier/images/benchmarcs-onboarding-v3.png" alt="Benchmarcs Onboarding User Flow" />
 		</div>
 	</a>
-	<span class="img-caption">We created user-flow diagrams to outline functionality in the initial onboarding and setup, including the ability to add competitor funeral homes (Getting Started Step 4)</span>
+	<span class="img-caption">We created user-flow diagrams to outline functionality in the initial onboarding and setup, including the ability to add competitor funeral homes (Getting Started Step 3)</span>
 </div>
 
 <p>Conversations with our product owners and several potential users led us to focus on the addition of competitors on a local, rather than regional or national level. We learned that even when the competition has multiple locations across a state or region, homes tend to focus on the competing branch closest to them.</p>
 
-<p>Our initial iteration of adding competitors approximated the user’s location and prepopulated a zip code and radius filter in order to show an initial set of homes in their area.</p>
+<p>In allow users to add competing funeral homes, we started by approximating the user’s location in order to show an suggested set of homes in their area. The page displayed the user’s closest zip code and provided a radius selector to filter results.</p>
 
 <div class="pop-out-image__container">
 	<a href="/assets/zapier/images/benchmarcs-add-competitors-v1.png" target="_blank" class="">
@@ -168,13 +171,11 @@
 	</span>
 </div>
 
-<p>While some aspects of the initial functionality fit the bill, the nuances of the design did not.</p>
+<p>While some aspects of the initial functionality fit the bill, the nuances of the design did not. New users would choose several homes from the pre-populated list before becoming frustrated when they couldn’t find the home they were looking for.</p>
 
-<p>We thought that a user would pick a zip, radius, and then filter the list of results, but that didn’t happen. Instead, users chose several homes from the pre-populated list before becoming frustrated when they couldn’t find the home they were looking for.</p>
+<p>It was unclear to users that the list of homes was a smaller list of suggestions rather than a complete list of all competitors. In the end, this solution made the tool less useful to users and converted them with less competitors than than they really wanted.</p>
 
-<p>It was unclear to users that the pre-populated list was offering a smaller list of suggestions rather than a complete list of competitors. In the end, this solution made the tool less useful to users and converted them with less competitors than than they really wanted.</p>
-
-<p>While many of our pilot users got by with a few competitors added, there was definitely room to improve the design of this feature.</p>
+<p>After several of usability sessions, our team decided to improve the design of this feature.</p>
 
 <h2 id="the-solution">The Solution</h2>
 
@@ -184,7 +185,7 @@
   <li><strong>We did away with ZIP and radius</strong> – user testing had shown that these fields were not being used and that users instead focused on the search input</li>
   <li><strong>We made the search bar more prominent</strong> in order to guide the user to take action</li>
   <li><strong>We added the title “Suggested Competitors” to the preloaded competitors list</strong> to communicate to users that this initial list wasn’t exhausted</li>
-  <li><strong>We added functionality to deliver more and more relevant results on each selection.</strong> Now, each time the user picks a competitor, we hit the Benchmarcs API, search for homes near the selected competitor and add them to the list of suggestions. Then, we  resort the list based on how many times a competitor is suggested in relation to the competitors selected by the user.</li>
+  <li><strong>We added functionality to deliver more and more relevant results on each selection.</strong> Now, each time the user picks a competitor, we hit the Benchmarcs API, search for homes near the selected competitor and add them to the list of suggestions. Then, we  re-sort the list based on how many times a competitor is suggested in relation to the competitors selected by the user.</li>
 </ol>
 
 <div class="pop-out-image__container">
@@ -198,15 +199,15 @@
 	</span>
 </div>
 
-<p>While seemingly small, the updated design makes the tool more useful to user and has increased the number of homes a new user adds during setup.</p>
+<p>While seemingly small, the updated design makes the tool more useful to user and has increased the number of homes a new user would add during setup.</p>
 
-<p>Users could not only find the homes they were looking for, but the designed learning to enhance suggested competitors provided users with a more useful tool.</p>
+<p>Not only could users find the homes they were looking for, but the updated functionality helped give them better suggestions.</p>
 
 <h2 id="the-team">The Team</h2>
 
-<p>I work on Benchmarcs with with a small team at Metto, a small fully remote design and development studio. The core team includes two designers (myself and another product designer) and two developers who split duties on frontend and backend.</p>
+<p>I worked on Benchmarcs with with a small team at <a href="http://www.metto.co/" target="_blank" class="link--text-in-p">Metto</a>, a fully remote design and development studio. The core team includes two designers (another product designer and me) and two developers who split duties on frontend and backend.</p>
 
-<p>I also helped style the front-end side of the application and get my hands dirty when working with our Backbone framework, Marionette.</p>
+<p>I also helped style the front-end side of the application and worked with the application’s Backbone framework, Marionette.</p>
 
 <p>In addition to the team at Metto, we work closely with the application’s product owners, Tyler and Michael Anderson, the CEO and VP of Marketing and Business Development at <a href="http://www.theoutlookgroup.com/" target="_blank" class="link--text-in-p">The Outlook Group</a>*, to build the standalone application that they are currently marketing to funeral homes in the midwest and across the country.</p>
 
@@ -214,9 +215,14 @@
   *Outlook Group is one of the nation’s largest marketing firms in the pre-need funeral industry.
 </p>
 
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="takeaways">Takeaways</h2>
 
-<p>Thanks to an iterative process and a focus on user-centered design, our team can identify issues like the addition of competitors and continue to work on optimizing various aspects of the application as a whole.</p>
+<ol>
+  <li><strong>When it comes to the design of a feature, the smallest details can create a big impact.</strong> Even if it’s simply modifying a label or moving an input, a change in design can drastically affect the end user’s experience with your product.</li>
+  <li><strong>User test throughout the design and development process</strong> in order to uncover areas for improvement.</li>
+  <li><strong>Always be iterating.</strong> It’s easy to become complacent, but the best solutions come through thoughtful refinements.</li>
+</ol>
+
 
           
       </div>
