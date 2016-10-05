@@ -1,35 +1,27 @@
 ---
-layout: post-zapier
-title: "Question Three"
-subtitle:   Zapier Product Designer Application
-comments: false
-permalink: /zapier/index.html
+layout: post
+title:  "Optimizing Onboarding for Benchmarcs"
+date:   2016-10-05 19:46:27
+category: thoughts
 featured-icon-url: /assets/posts/optimizing-onboarding-benchmarcs/featured-icon-search-and-add.png
-featured-icon-alt: "Icon of Golden Gate Bridge"
-read-time: 2 min read
+featured-icon-alt: "Icon - Search"
+comments: true
+permalink: /:categories/:title.html
 ---
 
-### Prompt
-*Tell me about a time you worked on a project designed to increase conversion rates or usage of a specific feature. What was the process, who did you collaborate with, and what was the outcome? Make sure to include sketches, wireframes, mockups, screenshots, and narrative to effectively describe your design process towards designing and building this feature.*
-
-
-Through <a href="http://metto.co/" target="_blank" class="link--text-in-p">Metto</a> , I helped design and build a web application called Benchmarcs that allows funeral homes to monitor trends in business for both their own individual homes and their competitors. 
+Through <a href="http://metto.co/" target="_blank" class="link--text-in-p">Metto</a> , I helped design and build a web application called <a href="http://benchmarcs.com/" target="_blank" class="link--text-in-p">Benchmarcs</a> that allows funeral homes to monitor trends in business for both their own individual homes and their competitors. 
 
 Traditionally, funeral homes tracked “calls,” or deaths, by skimming through obituaries in local newspapers and obituary websites. Because the calls listed in these sources also indicated which funeral home would be performing the funeral, each home could track how much business each competitor was receiving.
 
 With Benchmarcs, we helped automate this process by using web spiders to crawl online data and assess when and where calls happen. This helps homes save time and money and provides a central hub of important competitive data.
 
-
-
-### Tracking the Competition
+## Setting Up New Users with Actionable Content
 
 One of the biggest advantages in moving toward an automated system like Benchmarcs is that it gives funeral homes the ability to track their competition. 
 
 Adding competitors allows users to see how many calls a competing home received over the last week, month, year, etc and also see trends in calls over that period of time.
 
-## The Problem
-
-In order to educate new users about the ability to track competitors and to help populate their accounts with competitor data, we decided to integrate the ability to add competitors into the onboarding process.
+In order to educate new users about the ability to track competitors and to help populate their accounts with competitor data, *we decided to integrate the ability to add competitors into the onboarding process*.
 
 <div class="pop-out-image__container">
 	<a href="{{ site.url }}/assets/zapier/images/benchmarcs-onboarding-v3.png" target="_blank" class="">
@@ -40,9 +32,10 @@ In order to educate new users about the ability to track competitors and to help
 	<span class="img-caption">We created user-flow diagrams to outline functionality in the initial onboarding and setup, including the ability to add competitor funeral homes (Getting Started Step 3)</span>
 </div>
 
-Conversations with our product owners and several potential users led us to focus on the addition of competitors on a local, rather than regional or national level. We learned that even when the competition has multiple locations across a state or region, homes tend to focus on the competing branch closest to them.
+### Evaluating Funeral Home Needs
+Conversations with our product owners and several potential users led us to focus on the addition of competitors on a local, rather than regional or national level. We learned that even when a competitor has multiple locations across a state or region, funeral homes tend to focus on the competing branch closest to them.
 
-In allow users to add competing funeral homes, we started by approximating the user's location in order to show an suggested set of homes in their area. The page displayed the user's closest zip code and provided a radius selector to filter results.
+To allow users to add competing funeral homes, we started by approximating the user's location to show a suggested set of homes in their area. The page displayed the user's closest zip code and provided a radius selector to filter results.
 
 <div class="pop-out-image__container">
 	<a href="{{ site.url }}/assets/zapier/images/benchmarcs-add-competitors-v1.png" target="_blank" class="">
@@ -56,6 +49,7 @@ In allow users to add competing funeral homes, we started by approximating the u
 </div>
 
 
+### Improving the Initial Design
 
 While some aspects of the initial functionality fit the bill, the nuances of the design did not. New users would choose several homes from the pre-populated list before becoming frustrated when they couldn’t find the home they were looking for. 
 
@@ -63,7 +57,7 @@ It was unclear to users that the list of homes was a smaller list of suggestions
 
 After several of usability sessions, our team decided to improve the design of this feature.
 
-## The Solution
+## Iterating to Improve Usability
 
 To improve usability, we made a couple of changes to both the visual design and functionality: 
 
@@ -86,18 +80,6 @@ To improve usability, we made a couple of changes to both the visual design and 
 While seemingly small, the updated design makes the tool more useful to user and has increased the number of homes a new user would add during setup. 
 
 Not only could users find the homes they were looking for, but the updated functionality helped give them better suggestions.
-
-## The Team
-
-I worked on Benchmarcs with with a small team at <a href="http://www.metto.co/" target="_blank" class="link--text-in-p">Metto</a>, a fully remote design and development studio. The core team includes two designers (another product designer and me) and two developers who split duties on frontend and backend. 
-
-I also helped style the front-end side of the application and worked with the application's Backbone framework, Marionette. 
-
-In addition to the team at Metto, we work closely with the application’s product owners, Tyler and Michael Anderson, the CEO and VP of Marketing and Business Development at <a href="http://www.theoutlookgroup.com/" target="_blank" class="link--text-in-p">The Outlook Group</a>*, to build the standalone application that they are currently marketing to funeral homes in the midwest and across the country. 
-
-<p class="footnote">
-  *Outlook Group is one of the nation’s largest marketing firms in the pre-need funeral industry.
-</p> 
 
 
 ## Takeaways
