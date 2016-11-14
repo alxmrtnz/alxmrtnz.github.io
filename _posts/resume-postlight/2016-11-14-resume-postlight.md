@@ -1,6 +1,6 @@
 ---
 layout: pdf
-title: "Alex Martinez – Meet Edgar"
+title: "Alex Martinez – Postlight"
 date:   2016-11-14
 comments: false
 permalink: /resume-postlight/index.html
