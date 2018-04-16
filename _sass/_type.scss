@@ -57,30 +57,40 @@ blockquote {
 
 
 
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $gray-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+// /**
+//  * Code formatting
+//  */
+p, li {
+    pre,
+    code {
+        font-size: 15px;
+        border: 1px solid $gray-color-light;
+        border-radius: 3px;
+        background-color: #eef;
+    }
+
+    code {
+        padding: 1px 5px;
+    }
 }
 
-code {
-    padding: 1px 5px;
-}
+
+
 
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
     > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 1.5em 2em;
+        border-radius: 0.5em;
     }
+}
+
+code, .code {
+    font-family: Consolas, monaco, monospace;
+    font-weight: bold;
+}
+
+.f7, .hljs, code {
+    font-size: 0.75rem;
 }
 
 
