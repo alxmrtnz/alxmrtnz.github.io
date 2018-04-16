@@ -5,450 +5,9 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 Apr 2018 18:30:32 -0400</pubDate>
-    <lastBuildDate>Mon, 16 Apr 2018 18:30:32 -0400</lastBuildDate>
+    <pubDate>Mon, 16 Apr 2018 18:33:11 -0400</pubDate>
+    <lastBuildDate>Mon, 16 Apr 2018 18:33:11 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
-    
-      <item>
-        <title>My Journey with Forms in React</title>
-        <description>&lt;p&gt;This is the story of my introduction to forms with both React and Redux. Although I’ve worked on designing and building websites and apps for years, it’s been a shorter time that I’ve been working as a front-end developer.&lt;/p&gt;
-
-&lt;p&gt;Before becoming a full-time developer, I designed many web and mobile apps but had only contributed to small portions of codes on the front-end of web applications. When it came to learning and building with an actual front-end library/framework, the learning curve for me was actually pretty high. The beginning was not pretty, but after a few React projects, I’ve developed a better personal workflow for managing and working with forms in React.&lt;/p&gt;
-
-&lt;h2 id=&quot;part-i-a-rough-beginning&quot;&gt;Part I: A Rough Beginning&lt;/h2&gt;
-
-&lt;p&gt;I began my adventure with forms in React through &lt;a href=&quot;https://reactjs.org/docs/forms.html#controlled-components&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;controlled components&lt;/a&gt;, storing input values for elements like &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;textarea&amp;gt;&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt; in a parent form component’s state. It made sense enough.&lt;/p&gt;
-
-&lt;p&gt;Create a state for the component that holds each input’s value and update that value whenever the user interacts with the input. Here’s an example of some early work for a Login Form comprised of two inputs, an email and a password:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from 'react'
-
-class LoginForm extends Component {
-
-  // &quot;Alright, here's that state I've been talking about.&quot;
-  state = {
-    input: {
-      email: '',
-      password: ''
-    }
-  }
-
-  // &quot;Oh, and gotta update it whenever we change the input&quot;
-  handleInputChange(newPartialInput) {
-    this.setState(state =&amp;gt; ({
-      ...state,
-      input: {
-        ...state.input,
-        ...newPartialInput
-      }
-    }))
-  }
-
-  handleSubmit = (event) =&amp;gt; {
-    // &quot;We'll get to you later&quot;
-  }
-
-  // &quot;And finally, just render the form!&quot;
-  render() {
-    const { input } = this.state
-
-    return (
-      &amp;lt;div&amp;gt;
-        &amp;lt;form
-          className=&quot;sessions-form&quot;
-          onSubmit={this.handleSubmit}
-        &amp;gt;
-          &amp;lt;div
-            className='input-container'
-          &amp;gt;
-            &amp;lt;label&amp;gt;
-              Email Address
-            &amp;lt;/label&amp;gt;
-            &amp;lt;input
-              name=&quot;email&quot;
-              type=&quot;email&quot;
-              placeholder=&quot;you@youremail.com&quot;
-              value={input.email.value}
-              onChange={event =&amp;gt; this.handleInputChange(
-                {email: event.target.value}
-              )}
-            /&amp;gt;
-          &amp;lt;/div&amp;gt;
-          &amp;lt;div
-            className='input-container'
-          &amp;gt;
-            &amp;lt;label&amp;gt;
-              Password
-            &amp;lt;/label&amp;gt;
-            &amp;lt;div className=&quot;password-input-container&quot;&amp;gt;
-              &amp;lt;input
-                name=&quot;password&quot;
-                type=&quot;password&quot;
-                placeholder=&quot;password&quot;
-                value={input.password.value}
-                onChange={event =&amp;gt; this.handleInputChange(
-                    {password: event.target.value}
-                )}
-              /&amp;gt;
-            &amp;lt;/div&amp;gt;
-          &amp;lt;/div&amp;gt;
-          &amp;lt;input className=&quot;cta&quot; type=&quot;submit&quot; value=&quot;Login&quot; /&amp;gt;
-        &amp;lt;/form&amp;gt;
-      &amp;lt;/div&amp;gt;
-    )
-  }
-}
-
-export default LoginForm
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;“Awesome!”, I thought. “But… how do I validate the form once the user fills it out?”&lt;/p&gt;
-
-&lt;p&gt;I’ll spare you too much of the step-by-step detail, but let’s say my initial pass at front-end validation was… crude.&lt;/p&gt;
-
-&lt;p&gt;The code will follow, but as a basic jist, here’s what’s going on:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;I expanded the form’s &lt;code class=&quot;highlighter-rouge&quot;&gt;state&lt;/code&gt; to hold both the value of an input and a boolean &lt;code class=&quot;highlighter-rouge&quot;&gt;hasError&lt;/code&gt; to indicate whether or not it had an error. This would be used to set a class of &lt;code class=&quot;highlighter-rouge&quot;&gt;error&lt;/code&gt; on the input’s containing div (for styling purposes)&lt;/li&gt;
-  &lt;li&gt;I added a function to determine if the form was valid, &lt;code class=&quot;highlighter-rouge&quot;&gt;isFormValid()&lt;/code&gt;, and set the &lt;code class=&quot;highlighter-rouge&quot;&gt;hasError&lt;/code&gt; bool to true for any input that had an error&lt;/li&gt;
-  &lt;li&gt;I added a function &lt;code class=&quot;highlighter-rouge&quot;&gt;renderErrorMessage()&lt;/code&gt; to render an error message for the form as a whole or a specific message individual fields if passed in a string of &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;password&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;And lastly, an &lt;code class=&quot;highlighter-rouge&quot;&gt;accessError&lt;/code&gt; bool to the component state to determine whether or not to show the combined form error message above the form&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-
-// Utils
-import { validateEmail } from '../../utils/helpers';
-import * as API  from '../../utils/api';
-
-class LoginForm extends Component {
-  state = {
-    input: {
-      email: {
-        value: &quot;&quot;,
-        hasError: false
-      },
-      password: {
-        value: &quot;&quot;,
-        hasError: false
-      }
-    },
-    accessError: false
-  }
-
-  handleInputChange(newPartialInput) {
-    this.setState(state =&amp;gt; ({
-      ...state,
-      input: {
-        ...state.input,
-        ...newPartialInput
-      }
-    }))
-  }
-
-  handleSubmit = (event) =&amp;gt; {
-    event.preventDefault();
-    const userCanidate = {
-      'email': this.state.input.email.value,
-      'password': this.state.input.password.value
-    }
-
-    if (this.isFormValid()) {
-      API.login(userCanidate).then(response =&amp;gt; {
-        if (response.success)) {
-          // Do some stuff! The form worked :)
-        } else {
-          this.setState(state =&amp;gt; ({
-            ...state,
-            accessError: true
-          }))
-        }
-      });
-    }
-  }
-
-  isFormValid = () =&amp;gt; {
-    let newInputState = {...this.state.input};
-    let errorsArePresent = false;
-
-    if (!validateEmail(newInputState.email.value)) {
-      newInputState.email.hasError = true;
-      errorsArePresent = true;
-    }
-
-    if (newInputState.password.value === '') {
-      newInputState.password.hasError = true;
-      errorsArePresent = true;
-    }
-
-    if (errorsArePresent) {
-      this.setState(state =&amp;gt; ({
-        ...state,
-        input: newInputState
-      }))
-    } else {
-      return true;
-    }
-  }
-
-  renderErrorMessage = (input) =&amp;gt; {
-    let message = '';
-
-    if (input === 'email') {
-      message = 'Please enter a valid email';
-    } else if (input === 'password') {
-      message = 'Please enter a password'
-    } else {
-      message = 'Invalid email or password';
-    }
-    return (
-      &amp;lt;div className=&quot;input-error-message&quot;&amp;gt;
-        {message}
-      &amp;lt;/div&amp;gt;
-    )
-  }
-
-  render() {
-    const { input, accessError } = this.state;
-
-    return (
-      &amp;lt;div&amp;gt;
-        {accessError &amp;amp;&amp;amp;
-          &amp;lt;div className='input-container error'&amp;gt;
-            {this.renderErrorMessage()}
-          &amp;lt;/div&amp;gt;
-        }
-        &amp;lt;form className=&quot;sessions-form&quot; onSubmit={(event) =&amp;gt; this.handleSubmit(event)}&amp;gt;
-          &amp;lt;div
-            className={`input-container${input.email.hasError ? ' error' : ''}`}
-          &amp;gt;
-            &amp;lt;label&amp;gt;Email Address&amp;lt;/label&amp;gt;
-            &amp;lt;input
-              name=&quot;email&quot;
-              type=&quot;email&quot;
-              placeholder=&quot;you@youremail.com&quot;
-              value={input.email.value}
-              onChange={event =&amp;gt; this.handleInputChange(
-                {email: {value: event.target.value, hasError: false}}
-              )}
-            /&amp;gt;
-            {input.email.hasError ? this.renderErrorMessage('email') : null}
-          &amp;lt;/div&amp;gt;
-          &amp;lt;div
-            className={`input-container${input.password.hasError ? ' error' : ''}`}
-          &amp;gt;
-            &amp;lt;label&amp;gt;Password&amp;lt;/label&amp;gt;
-            &amp;lt;div className=&quot;password-input-container&quot;&amp;gt;
-              &amp;lt;input
-                className={`${input.password.hasError ? 'error' : ''}`}
-                name=&quot;password&quot;
-                type=&quot;password&quot;
-                placeholder=&quot;password&quot;
-                value={input.password.value}
-                onChange={event =&amp;gt; this.handleInputChange(
-                    {password: {value: event.target.value, hasError: false}}
-                )}
-              /&amp;gt;
-              &amp;lt;Link
-                className=&quot;forgot-password-link&quot;
-                to=&quot;/reset-password&quot;
-              &amp;gt;
-                Forgot?
-              &amp;lt;/Link&amp;gt;
-            &amp;lt;/div&amp;gt;
-            {input.password.hasError ? this.renderErrorMessage('password') : null}
-          &amp;lt;/div&amp;gt;
-          &amp;lt;input className=&quot;cta&quot; type=&quot;submit&quot; value=&quot;Login&quot; /&amp;gt;
-        &amp;lt;/form&amp;gt;
-      &amp;lt;/div&amp;gt;
-    );
-  }
-}
-
-export default LoginForm;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;It wasn’t great, but it worked. Even before the project was over, I knew that the way I was building and managing forms was unsustainable. The code I was writing wasn’t DRY. Each form caused unnecessary duplication in validation and error message functions and there was a lack of abstraction for reapeated components like inputs with error messages.&lt;/p&gt;
-
-&lt;h2 id=&quot;part-ii-it-got-a-little-better&quot;&gt;Part II: It Got (a Little) Better&lt;/h2&gt;
-&lt;h3 id=&quot;building-abstractions-for-repeated-elements&quot;&gt;Building Abstractions for Repeated Elements&lt;/h3&gt;
-
-&lt;p&gt;Much like the &lt;a href=&quot;https://medium.com/javascript-inside/some-thoughts-on-forms-in-react-9ca2d9078c20&quot;&gt;view driven approach discussed by A. Sharif&lt;/a&gt;, I began to break out repeated input elements into their own components. This allowed me to pass props such as an input’s label and error message into the component as well as onchange function&lt;/p&gt;
-
-&lt;p&gt;It made an input like this…&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div
-  className={`input-container${input.email.hasError ? ' error' : ''}`}
-&amp;gt;
-  &amp;lt;label&amp;gt;Email Address&amp;lt;/label&amp;gt;
-  &amp;lt;input
-    name=&quot;email&quot;
-    type=&quot;email&quot;
-    placeholder=&quot;you@youremail.com&quot;
-    value={input.email.value}
-    onChange={event =&amp;gt; this.handleInputChange(
-      {email: {value: event.target.value, hasError: false}}
-    )}
-  /&amp;gt;
-  {input.email.hasError ? this.renderErrorMessage('email') : null}
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;into a more manageable component, like this…&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;Input
-  onChange={doSomething}
-  label='Name Field'
-  errorMessage={getSomeMessage()}
-/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Building components for different types of inputs helped solve the repetitive nature of managing inputs’ labels and error messages, but still didn’t solve the issue of actually validating the form as a whole.&lt;/p&gt;
-
-&lt;h2 id=&quot;part-iii-redux-forms&quot;&gt;Part III: Redux Forms&lt;/h2&gt;
-&lt;h3 id=&quot;learning-to-love-forms-again&quot;&gt;Learning to Love Forms Again&lt;/h3&gt;
-
-&lt;p&gt;After my first project using React, I had gotten the hang of building out forms using abstracted components, but I knew there had to be an easier way.&lt;/p&gt;
-
-&lt;p&gt;My coworker, Jake, suggested I look into &lt;a href=&quot;https://redux-form.com&quot;&gt;redux-form&lt;/a&gt;. He had been using it on some of his React projects and&lt;/p&gt;
-
-&lt;p&gt;https://changelog.com/reactpodcast/2 - Formik&lt;/p&gt;
-</description>
-        <pubDate>Mon, 16 Apr 2018 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/thoughts/2018/04/16/form-management-in-react-and-redux.html</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/2018/04/16/form-management-in-react-and-redux.html</guid>
-        
-        
-        <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>Locker Linked</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/fosi/featured-image-fosi.jpg&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The &lt;a href=&quot;http://www.fosi.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Family Online Safety Institute&lt;/a&gt; (FOSI) came to &lt;a href=&quot;http://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to redesign and rebuild their website. Our mission was twofold —to combine fosi.org and aplaftormforgood.org (now Good Digital Parenting) under one umbrella, and to create a beautiful design and a user friendly experience&lt;/p&gt;
-
-&lt;p&gt;The redesign process involved diving deep into Google Analytics, conducting user testing with key audiences, and unifying the two sites through detailed wireframing and design.&lt;/p&gt;
-
-&lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
-
-&lt;p&gt;##Understanding the Audience
-The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
-
-&lt;p&gt;###Personas
-In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/fosi/persona-david.jpg&quot; /&gt;
-
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/fosi/persona-mary.jpg&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;###User Flows
-These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    	&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-user-flow-david.png&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;##Site Structure
-After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
-  &lt;li&gt;Policy and Research&lt;/li&gt;
-  &lt;li&gt;Events&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Concentrating of FOSI’s pre-existing content into three main buckets simplified the process of finding content for the end user. Not only that, but the structure allowed us to make content a priority something something here…&lt;/p&gt;
-
-&lt;p&gt;[sitemap here]&lt;/p&gt;
-
-&lt;p&gt;##Prototyping
-Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;div class=&quot;video-container&quot;&gt;
-			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/155266319?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-wireframes.jpg&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
-
-&lt;p&gt;###Typography
-In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-type-example.jpg&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;####Aaux Next
-Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
-
-&lt;p&gt;####Minion Pro
-Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
-
-&lt;p&gt;###Colors
-With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
-
-&lt;div class=&quot;fin-tip&quot;&gt;
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-	A Flexible, Responsive Publishing Platform
-&lt;/h2&gt;
-
-&lt;p&gt;At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age.&lt;/p&gt;
-
-&lt;p&gt;By creating flexible layouts, a new design system, and an integration with Wagtail, a Django-based CMS, we were able to provide FOSI with a rethought and redesigned responsive experience.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-marketing-home.jpg&quot; alt=&quot;Screenshot of Benchmarcs Marketing Page&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;grid grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--half &quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-screenshot-call-volume.png&quot; alt=&quot;Screenshot of Benchmarcs app – Call Volume Chart&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
-		 &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-screenshot-market-share.png&quot; alt=&quot;Screenshot of Benchmarcs app – Market Share Graph&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Sat, 14 Apr 2018 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/work/locker-linked.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
     
       <item>
         <title>Alex Martinez – Postlight</title>
@@ -1097,6 +656,210 @@ With content being broken up into several main sections, I defined colors that w
         <pubDate>Thu, 08 Sep 2016 15:46:27 -0400</pubDate>
         <link>http://localhost:4000/work/orms.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/orms.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>PAW (Puppies at Work)</title>
+        <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;div class=&quot;video-container&quot;&gt;
+			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/160030363?color=00fbe6&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;At ISL, we’re constantly exploring ways to take advantage of new technologies. In honor of &lt;a href=&quot;http://www.nationalpuppyday.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;National Puppy Day&lt;/a&gt;, we created PAW, or “Puppies at Work,” a Slack-integrated tracking system to keep track of dogs in the workspace.&lt;/p&gt;
+
+&lt;p&gt;The project comprised of connecting the physical and digital worlds through a bluetooth tracking system that linked to a web application for viewing the location of dogs in the office.&lt;/p&gt;
+
+&lt;p&gt;For an in-depth look at how it works, &lt;a href=&quot;https://isl.co/2016/03/a-slack-based-internet-of-things-iot-tracking-system-for-your-dog-hello-paw/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;read more here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;As the latest ISL experiment, PAW was comprised of a small internal team that brought the product to life in a few short weeks.&lt;/p&gt;
+
+&lt;p&gt;I served as front-end developer for the public facing marketing page and also helped in the styling of the internal dashboard application.&lt;/p&gt;
+
+&lt;p&gt;I also had the opportunity to explore animating SVGs through CSS (thanks to the illustrative work of &lt;a href=&quot;https://www.behance.net/sarahsugarman&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sarah Sugarman&lt;/a&gt;) and worked with &lt;a href=&quot;https://twitter.com/krawchyk&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Andrew Krawchyk&lt;/a&gt;, the project’s development lead, to implement some of the front-end application.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half no-shadow&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/paw/paw-marketing-page-screenshot.jpg&quot; /&gt;
+	    
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/paw/paw-dashboard-screenshots.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;animating-svgs&quot;&gt;Animating SVGs&lt;/h2&gt;
+&lt;p&gt;As soon as I began development, I wanted to work on animating the various components of the marketing page’s hero illustration in order to create a playful and interesting experience.&lt;/p&gt;
+
+&lt;p&gt;I started by exporting three parts of the scene for animation: a coffee mug, the computer screen, and, of course, Watson – our PAW mascot.&lt;/p&gt;
+
+&lt;p&gt;After combing through the SVG code, I targeted specific shapes for animation and got them moving through the use of CSS animations.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+		&lt;p data-height=&quot;750&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;LGBbOv&quot; data-default-tab=&quot;result&quot; data-user=&quot;alxmrtnz&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/alxmrtnz/pen/LGBbOv/&quot;&gt;Workspace Animation&lt;/a&gt; by Alex Martinez (&lt;a href=&quot;http://codepen.io/alxmrtnz&quot;&gt;@alxmrtnz&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+			&lt;script async=&quot;&quot; src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+		&lt;span class=&quot;img-caption&quot;&gt;Animating SVGs through CSS gave the landing page illustration a life of its own.&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I explored animation loops through relatively simple CSS properties. Elements like the coffee’s steam were particularly interesting because of the need for offset timing to achieve an effect of easing in and out.&lt;/p&gt;
+
+&lt;h2 id=&quot;responsive-development&quot;&gt;Responsive Development&lt;/h2&gt;
+
+&lt;p&gt;In addition to working on SVG animations, my other task at hand was to develop the public-facing marketing page and also to lend support for the internal application.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/paw/paw-responsive-screenshots.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/paw/paw-homepage-screenshot.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;PAW is currently available to ISL employees only. To learn more about PAW, check out &lt;a href=&quot;https://isl.co/2016/03/a-slack-based-internet-of-things-iot-tracking-system-for-your-dog-hello-paw/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;this blog post&lt;/a&gt; or &lt;a href=&quot;https://paw.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;visit the site&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 28 Aug 2016 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/paw.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/paw.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Washington Leadership Academy</title>
+        <description>&lt;div class=&quot;grid grid--featured-image grid--no-bg&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full &quot;&gt;
+	    &lt;img class=&quot;item-img--full&quot; src=&quot;http://localhost:4000/assets/work/wla/featured-image-wla.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;The Washington Leadership Academy is a public charter school working to change the way we think about high school education. With a mission to provide sutdents in the District of Columbia with the knowledge, skills and habits required for success in college and lives of public leadership, WLA came to our team at &lt;a href=&quot;http://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; for a branding and website overhaul.&lt;/p&gt;
+
+&lt;p&gt;The project presented our team with a unique opportunity to create a site from the ground up on Squarespace, design and build a client project in the open, give back to our local community, and help lead the way for a new kind high school education.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-a-modular-design-system&quot;&gt;Creating a Modular Design System&lt;/h2&gt;
+
+&lt;p&gt;In order to create a custom Squarespace site that would be easily customizeable and maintainable in the future, our team crafted a set of reusable and modular components.&lt;/p&gt;
+
+&lt;h3 id=&quot;wireframing-and-prototyping&quot;&gt;Wireframing and Prototyping&lt;/h3&gt;
+&lt;p&gt;We started the project with the goal of creating 4 to 5 unique template pages. In order to rapidly wireframe and prototype (due to the tight project timeline), I ended up created wireframes using a set of several repeated components.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/wla/wla-wireframe-homepage.png&quot; alt=&quot;Wireframe of WLA's Home Page&quot; /&gt;
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/wla/wla-wireframe-about.png&quot; alt=&quot;Wireframe of WLA's About Page&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;The repeated components comprising our initial wireframes evolved through collaboration with &lt;a href=&quot;http://heyitsolivia.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Olivia Cheng&lt;/a&gt;, our lead developer on the project.&lt;/p&gt;
+
+&lt;p&gt;Her exploration of Squarespace as a development platform made it clear that we could use Squarespace as a CMS to implement the site on a component by component basis and provide WLA with a more flexible and customizable end experience.&lt;/p&gt;
+
+&lt;p&gt;After several internal wireframing workshops to validate the value of each component, I created several &lt;a href=&quot;https://invisionapp.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Invision&lt;/a&gt; prototypes to share with the client and receive any necessary feedback.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/wla/team-wireframe-workshop1.jpg&quot; alt=&quot;ISL team wireframing workshop&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;We held several internal wireframing workshops to identify reusable components and used &lt;a href=&quot;https://www.invisionapp.com/&quot; target=&quot;_blank&quot;&gt;Invision&lt;/a&gt; to create interactive prototypes.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h3 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h3&gt;
+
+&lt;p&gt;As I worked through the IA/UX of the project, my colleague &lt;a href=&quot;http://www.dribbble.com/thepaleshadow/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;James Bonilla&lt;/a&gt; simultaneously worked with WLA to create a brand for their online and offline presence.&lt;/p&gt;
+
+&lt;p&gt;In addition to incorporating the James’s branding into the site, it was at this time that I focused on responsive states of each individual component. I worked closely with our front-end developer to evaluate the design solution for each component and used Github to track our progress.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/wla/responsive-screenshots.jpg&quot; alt=&quot;Responsive Blocks&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;It was important that the site reflect the new brand and also expand upon it. Using the new brand’s cool colors and elegant sans-serif and serif typefaces created a feeling of modern prestige.&lt;/p&gt;
+
+&lt;p&gt;Other elements, such as offset image and text blocks and use of diagonal lines, make the site and the WLA brand feel more dynamic and forward-thinking.&lt;/p&gt;
+
+&lt;h2 id=&quot;designing--developing-in-the-open&quot;&gt;Designing &amp;amp; Developing in the Open&lt;/h2&gt;
+&lt;p&gt;With approval from the WLA team, we were able to open source both the design and development of the project on &lt;a href=&quot;http://github.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our initial goal was to use Github as an internal tool for collaboration but it also ended up allowing our team to document design and development decisions for future contributors to the project.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-tools-we-used&quot;&gt;The Tools We Used&lt;/h3&gt;
+
+&lt;h4 id=&quot;github&quot;&gt;Github&lt;/h4&gt;
+&lt;p&gt;In order to track each individual component, from design to development, we used Github’s issues feature. Using issues allowed both design and development to add comments, screenshots, and statuses to each component as it made its way through our process.&lt;/p&gt;
+
+&lt;h4 id=&quot;waffle&quot;&gt;Waffle&lt;/h4&gt;
+&lt;p&gt;In addition, we integrated our Github repository with &lt;a href=&quot;http://waffle.io/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Waffle.io&lt;/a&gt;. Using Github issues and Waffle allowed us to create a Kanban board to track progress and collaborate on each feature.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/wla/waffle-and-github.jpg&quot; alt=&quot;Screenshots of Waffle and Github&quot; /&gt;
+	    &lt;span class=&quot;img-caption text--centered&quot;&gt;We held several internal wireframing workshops to identify reusable components and used &lt;a href=&quot;https://www.invisionapp.com/&quot; target=&quot;_blank&quot;&gt;Invision&lt;/a&gt; to create interactive prototypes.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h3 id=&quot;documentation&quot;&gt;Documentation&lt;/h3&gt;
+&lt;p&gt;If we didn’t love Github enough already, we even took advantage of Github’s wiki functionality to create and delivered a &lt;a href=&quot;https://github.com/washington-leadership-academy/wla/wiki/WLA-Squarespace-User-Guide&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;user guide&lt;/a&gt; to WLA for future reference.&lt;/p&gt;
+
+&lt;p&gt;This iterative, Kanban style process made it easy for our team to track design and development progress and effectively meet a tight deadline.&lt;/p&gt;
+
+&lt;div class=&quot;fin-tip top-margin-large&quot;&gt;	
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+	Takeaways
+&lt;/h2&gt;
+
+&lt;p&gt;From exploring new workflows and processes to iterating on a design at a component-by-component level to furthering my understanding of what it means to collaborate, working on the new WLA site was a very educational and fulfilling experience.&lt;/p&gt;
+
+&lt;p&gt;Often, we don’t have the opportunity to work on a project that will benefit so many young individuals. WLA has some exciting things in store and if you haven’t already, make sure to check out their &lt;a href=&quot;http://washingtonleadershipacademy.org&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/wla/wla-homepage.jpg&quot; alt=&quot;Screenshot of WLA Home Page&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--half no-shadow&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/wla/wla-student-life-page-mobile.jpg&quot; alt=&quot;Screenshot of WLA Student Life Page (mobile)&quot; /&gt;
+	&lt;/div&gt; 
+	&lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
+		 &lt;img src=&quot;http://localhost:4000/assets/work/wla/wla-about-page-tablet.jpg&quot; alt=&quot;Screenshot of WLA About Page (tablet)&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;text--centered&quot;&gt;
+	&lt;p&gt;
+		Visit &lt;a href=&quot;http://washingtonleadershipacademy.org&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;WashingtonLeadershipAcademy.org&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 18 Jul 2016 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/wla.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/wla.html</guid>
         
         
         <category>work</category>
