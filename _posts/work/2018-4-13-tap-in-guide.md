@@ -42,7 +42,7 @@ As it turned out, they were glad to have me on board and I came on as a <strong>
 ### Technologies
 Tap In is built using React, React Native, JavaScript, Python, and Django. While I mainly contribute to the React web app, I also helped launch the initial React Native app and now maintain it along with developer David Pett.
 
-The Tap In API, built by <a href="https://twitter.com/minnepixel" target="_blank" class="link--text-in-p">Clint McMahon</a>, supplies data via <a href="https://football-api.com/" target="_blank" class="link--text-in-p">Football API</a> in order to provide users with live match events such as goals, yellow/red cards, and stubstitutions.
+The Tap In API, built by <a href="https://twitter.com/minnepixel" target="_blank" class="link--text-in-p">Clint McMahon</a>, supplies data via <a href="https://football-api.com/" target="_blank" class="link--text-in-p">Football API</a> in order to provide users with live match events such as goals, yellow/red cards, and substitutions.
 
 React has proved to be a very useful library for building and managing components. Not only that, but by building our app in React Native, much of the front-end structure translates between the two environments, allowing us to quickly ship new features.
 
@@ -63,7 +63,7 @@ As Tap In added coverage for more leagues (such as MLS in the U.S. and Liga MX i
 ### Working with a Dispersed Team
 At Tap In, we have team members living in Minnesota, Texas, Ohio, and even Norway. Thanks to platforms like Slack and Trello, we're all able to keep in touch, even when many of us have never even met in person.
 
-It's been a blast building a project like this. Every team member contributes due to their passion for soccer and even if we haven't met on the playing field, we've built a sense of comradery that transcends sport and technology.
+It's been a blast building a project like this. Every team member contributes due to their passion for soccer and even if we haven't met on the playing field, we've built a sense of camaraderie that transcends sport and technology.
 
 
 
