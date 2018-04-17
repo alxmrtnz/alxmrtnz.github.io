@@ -55,7 +55,7 @@ $work-break: 800px;
     width: 100%;
 
     &:hover {
-        
+
         .article__summary {
             color: $black;
         }
@@ -91,7 +91,7 @@ $work-break: 800px;
 
 .article__image {
     border: 8px solid $white;
-    
+
     transition: all .2s;
 
     img {
@@ -205,7 +205,7 @@ $work-break: 800px;
 }
 
 .hero__summary-container {
-    
+
 
     @media screen and (min-width: $on-tablet) {
         width: 58%;
@@ -256,7 +256,7 @@ $work-break: 800px;
             opacity: 1;
         }
     }
-} 
+}
 
 .work-content {
 
@@ -317,7 +317,7 @@ $work-break: 800px;
 }
 
 .grid {
-    
+
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -347,7 +347,7 @@ $work-break: 800px;
 
         @media screen and (min-width: 1350px) {
             max-width: 100%;
-            margin: 0 30px;
+            margin: 0 30px 60px;
         }
 
     }
@@ -391,10 +391,12 @@ $work-break: 800px;
     font-family: $sans-serif;
     font-size: 15px;
     line-height: 18px;
-    padding-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 10px;
     text-align: left;
     display: block;
-    color: $gray-color-darker;
+    color: #a6b0c3;
+
 
     a {
         color: $gray-color-darker;
@@ -426,7 +428,7 @@ $work-break: 800px;
 .grid__item--full {
     flex-basis: 100%;
     // margin: 0 auto 30px auto;
-    
+
     padding: 20px;
 
     @media screen and (min-width: $on-palm) {

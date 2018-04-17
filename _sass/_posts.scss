@@ -96,6 +96,12 @@ $post-image-padding-top: 20px;
         }
     }
 
+    p + .grid--featured-image {
+        @media screen and (min-width: $on-laptop) {
+            margin-top: 80px;
+        }
+    }
+
     h2 {
         font-size: 22px;
         margin-top: 20px;
@@ -117,7 +123,14 @@ $post-image-padding-top: 20px;
             margin-top: 50px;
             margin-bottom: 20px;
         }
+    }
 
+    h2 + h3 {
+        @media screen and (min-width:$on-laptop) {
+            font-size: 22px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
     }
 
     h4 {
@@ -160,7 +173,7 @@ $post-image-padding-top: 20px;
 .post-content {
     max-width: $post-content-max-width;
     margin: 0 auto 70px auto;
-    
+
     @media screen and (min-width: $on-palm) {
         padding: 0px 20px;
     }
@@ -195,7 +208,7 @@ $post-image-padding-top: 20px;
 
 
 .footnote {
-    font-size: 15px; 
+    font-size: 15px;
     line-height: 20px;
     color: $heading-color-light;
 }

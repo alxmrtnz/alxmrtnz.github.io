@@ -205,7 +205,7 @@ a.link--text-in-p {
   background-image: linear-gradient(to bottom, #E0DDF0 0%, #E0DDF0 100%);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 0 1.1em;
+  background-position: 0 1em;
   color: #8A70DB;
   overflow: hidden; }
   a.link--text-in-p:hover {
@@ -595,6 +595,9 @@ ul.social-icon-list {
   padding: 20px 0px 0px 0px;
   display: block;
   margin: 0 auto; }
+@media screen and (min-width: 900px) {
+  .post-content p + .grid--featured-image, .work-content p + .grid--featured-image {
+    margin-top: 80px; } }
 .post-content h2, .work-content h2 {
   font-size: 22px;
   margin-top: 20px; }
@@ -611,6 +614,11 @@ ul.social-icon-list {
       font-size: 22px;
       margin-top: 50px;
       margin-bottom: 20px; } }
+@media screen and (min-width: 900px) {
+  .post-content h2 + h3, .work-content h2 + h3 {
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 20px; } }
 .post-content h4, .work-content h4 {
   font-size: 16px;
   margin-bottom: 10px; }
@@ -907,7 +915,7 @@ ul.social-icon-list {
   @media screen and (min-width: 1350px) {
     .grid.grid--featured-image {
       max-width: 100%;
-      margin: 0 30px; } }
+      margin: 0 30px 60px; } }
   .grid.grid--no-bg {
     padding: 0px;
     background: none; }
@@ -933,10 +941,11 @@ ul.social-icon-list {
   font-family: "aktiv-grotesk", sans-serif;
   font-size: 15px;
   line-height: 18px;
-  padding-top: 20px;
+  padding-top: 8px;
+  padding-bottom: 10px;
   text-align: left;
   display: block;
-  color: #6c8fa4; }
+  color: #a6b0c3; }
   .img-caption a {
     color: #6c8fa4;
     text-decoration: underline; }
