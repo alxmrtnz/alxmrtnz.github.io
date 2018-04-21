@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="kf8-oEOzkveV_8ZnJN6P7InR5cl14Ik9R3Phxayihgk" />
+
+    <title>React + Redux Form</title>
+    <meta name="description" content="Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.<br>This site is a work in progress and is being built with Jekyll and hosted on Github.">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:4000/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://localhost:4000/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="http://localhost:4000/favicons/manifest.json">
+    <link rel="mask-icon" href="http://localhost:4000/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://localhost:4000/thoughts/2018/04/16/form-management-in-react-and-redux.html">
+    <link href="https://fontastic.s3.amazonaws.com/HaZ5yL6SCfhWxMgeXyixTS/icons.css" rel="stylesheet">
+    <link href="https://file.myfontastic.com/HaZ5yL6SCfhWxMgeXyixTS/icons.css" rel="stylesheet">
+
+    <script src="https://use.typekit.net/jsu0zei.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="/js/docready.js" type="text/javascript"></script>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46815802-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <!--<a class="site-title" href="/">Alex Martinez</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>-->
+
+  </div>
+
+</header>
+
+    <nav class="nav--primary">
+    <div class="nav-title text--mono">
+        <a href="/" class="link--text">
+            AlxMrtnz
+        </a>
+    </div>
+
+    <ul class="nav-list">
+        <li>
+            <a href="/work" class="
+                
+                 link--text text--mono">
+                Work
+            </a>
+        </li>
+        <li>
+            <a href="/about" class="
+                
+                 link--text text--mono">
+                About
+            </a>
+        </li>
+        <li>
+            <a href="/thoughts" class="
+                
+                 link--text text--mono">
+                Thoughts
+            </a>
+        </li>
+    </ul>
+</nav>
+
+    <div class="page-content">
+      <div class="post-content">
+          <header class="post-header">
+            <div class="featured-icon">
+              <img src="http://localhost:4000/assets/posts/11-09-15/terminal-icon.png" alt="Icon of Golden Gate Bridge">
+            </div> 
+            <p class="post-date text--mono">April 16, 2018</p>
+            <h1 class="post-title heading--large">React + Redux Form</h1>
+            
+
+            
+          </header>
+          <p>After just a few React projects, I grew to loathe setting up and managing forms. Having only developed CMS-based sites (think Wordpress) or helped with front-end styling, I was new to the world of app development, data-binding, and state management.</p>
+
+<p>Using <a href="https://reactjs.org/docs/forms.html#controlled-components" target="_blank" class="link--text-in-p">controlled components</a> to store and update the values of input fields before a form even submitted was a completely foreign concept to me. After a few projects, a coworker suggested I try <a href="https://redux-form.com" target="_blank" class="link--text-in-p">Redux Form</a> instead. I found my happy place ♥.</p>
+
+<h2 id="what-is-redux-form">What is Redux Form?</h2>
+<p>Redux Form is a Redux-based method for managing form state. The library uses a reducer (<code class="highlighter-rouge">formReducer</code>) and a <a href="https://reactjs.org/docs/higher-order-components.html" target="_blank" class="link--text-in-p">React HOC</a> (<code class="highlighter-rouge">reduxForm()</code>) that wraps your <code class="highlighter-rouge">form</code> component to store and manage any interactions with your form as part of your Redux store.</p>
+
+<p>In practice, this meant that I could take the state of my form out of my form component and let Redux Form handle any changes in Redux.</p>
+
+<h3 id="disclaimer">Disclaimer</h3>
+<p>As stated in the Redux form documentation, in order to get the most out of library, you’ll need a basic understanding of:</p>
+<ul>
+  <li>Redux state container</li>
+  <li>React and Higher-Order Components (HOCs)</li>
+</ul>
+
+<h2 id="an-example-form">An Example Form</h2>
+<h3 id="before">Before</h3>
+<p>Here we have one of my earliest login forms <strong>without Redux Form</strong>. Do yourself a favor and don’t do what I did here.</p>
+
+<p>The form inputs’ values and error states were stored in the form component’s <code class="highlighter-rouge">state</code>, while a <code class="highlighter-rouge">handleInputChange()</code> method handled updates to individual fields and two functions, <code class="highlighter-rouge">formIsValid()</code> and <code class="highlighter-rouge">renderErrorMessage()</code>, managed validation and error messages.</p>
+
+<p>None of this was very DRY and made it difficult to build new forms. All of the following code is for a form only two inputs: <code class="highlighter-rouge">email</code> and <code class="highlighter-rouge">password</code>. Imagine an even more complicated form and you can see that this method isn’t sustainable.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
+// Components
+import Button from '../../components/Button'
+
+// Utils
+import { validateEmail } from '../../utils/helpers'
+import * as API  from '../../utils/api'
+
+class SignInForm extends Component {
+  state = {
+    input: {
+      email: {
+        value: "",
+        hasError: false
+      },
+      password: {
+        value: "",
+        hasError: false
+      }
+    },
+    accessError: false
+  }
+
+  handleInputChange(newPartialInput) {
+    this.setState(state =&gt; ({
+      ...state,
+      input: {
+        ...state.input,
+        ...newPartialInput
+      }
+    }))
+  }
+
+  handleSubmit = (event) =&gt; {
+    event.preventDefault()
+    const userCanidate = {
+      'email': this.state.input.email.value,
+      'password': this.state.input.password.value
+    }
+
+    if (this.isFormValid()) {
+      API.login(userCanidate).then(response =&gt; {
+        if (response.success)) {
+          // Do some stuff! The form worked :)
+        } else {
+          this.setState(state =&gt; ({
+            ...state,
+            accessError: true
+          }))
+        }
+      })
+    }
+  }
+
+  isFormValid = () =&gt; {
+    let newInputState = {...this.state.input}
+    let errorsArePresent = false
+
+    if (!validateEmail(newInputState.email.value)) {
+      newInputState.email.hasError = true
+      errorsArePresent = true
+    }
+
+    if (newInputState.password.value === '') {
+      newInputState.password.hasError = true
+      errorsArePresent = true
+    }
+
+    if (errorsArePresent) {
+      this.setState(state =&gt; ({
+        ...state,
+        input: newInputState
+      }))
+    } else {
+      return true
+    }
+  }
+
+  renderErrorMessage = (input) =&gt; {
+    let message = ''
+
+    if (input === 'email') {
+      message = 'Please enter a valid email'
+    } else if (input === 'password') {
+      message = 'Please enter a password'
+    } else {
+      message = 'Invalid email or password'
+    }
+    return (
+      &lt;div className="input-error-message"&gt;
+        {message}
+      &lt;/div&gt;
+    )
+  }
+
+  render() {
+    const { input, accessError } = this.state
+
+    return (
+      &lt;div&gt;
+        {accessError &amp;&amp;
+          &lt;div className='input-container error'&gt;
+            {this.renderErrorMessage()}
+          &lt;/div&gt;
+        }
+        &lt;form className="sessions-form" onSubmit={(event) =&gt; this.handleSubmit(event)}&gt;
+          &lt;div
+            className={`input-container${input.email.hasError ? ' error' : ''}`}
+          &gt;
+            &lt;label&gt;Email Address&lt;/label&gt;
+            &lt;input
+              name="email"
+              type="email"
+              placeholder="you@youremail.com"
+              value={input.email.value}
+              onChange={event =&gt; this.handleInputChange(
+                {email: {value: event.target.value, hasError: false}}
+              )}
+            /&gt;
+            {input.email.hasError ? this.renderErrorMessage('email') : null}
+          &lt;/div&gt;
+          &lt;div
+            className={`input-container${input.password.hasError ? ' error' : ''}`}
+          &gt;
+            &lt;label&gt;Password&lt;/label&gt;
+            &lt;div className="password-input-container"&gt;
+              &lt;input
+                className={`${input.password.hasError ? 'error' : ''}`}
+                name="password"
+                type="password"
+                placeholder="password"
+                value={input.password.value}
+                onChange={event =&gt; this.handleInputChange(
+                    {password: {value: event.target.value, hasError: false}}
+                )}
+              /&gt;
+              &lt;Link
+                className="forgot-password-link"
+                to="/reset-password"
+              &gt;
+                Forgot?
+              &lt;/Link&gt;
+            &lt;/div&gt;
+            {input.password.hasError ? this.renderErrorMessage('password') : null}
+          &lt;/div&gt;
+          &lt;Button
+            className='cta full-width invert'
+            submitting={true}
+          &gt;
+            Submit
+          &lt;/Button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+
+export default SignInForm
+</code></pre>
+</div>
+
+<h3 id="after">After</h3>
+<p>Using <code class="highlighter-rouge">redux-form</code> simplifies form management by storing values in redux, handling any input’s <code class="highlighter-rouge">onChange</code> interaction and also helps with individual field validation.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { reduxForm, Field } from 'redux-form'
+
+// Components
+import ReduxFormInput from '../../../components/Inputs/ReduxFormInput'
+import Button from '../../../components/Button'
+
+// Utils
+import {
+  required,
+  email,
+} from '../../../utils/formValidators'
+import * as API  from '../../utils/api'
+
+class SignInForm extends Component {
+  state = {
+    submitting: false
+  }
+
+  handleSubmit = (user) =&gt; {
+    // `user` is the object of values passed in from Redux Form
+    // user = {
+    //   email: user.email,
+    //   password: user.password
+    // }
+
+    if (this.isFormValid()) {
+      API.login(user).then(response =&gt; {
+        if (response.success)) {
+          // Do some stuff! The form worked :)
+        } else {
+          // Set an error message
+        }
+      })
+    }
+  }
+
+  render() {
+    const { submitting } = this.state
+    const { handleSubmit } = this.props
+
+    return (
+      &lt;form onSubmit={handleSubmit(this.handleSubmit)}&gt;
+        &lt;Field
+          component={ReduxFormInput}
+          label='Email'
+          name='email'
+          placeholder='Enter your email'
+          type='email'
+          validate={[required, email]}
+        /&gt;
+        &lt;Field
+          component={ReduxFormInput}
+          label='Password'
+          name='password'
+          placeholder='Enter a password'
+          type='password'
+          validate={required}
+        /&gt;
+        &lt;Button
+          className='cta full-width invert'
+          submitting={true}
+        &gt;
+          Submit
+        &lt;/Button&gt;
+      &lt;/form&gt;
+    )
+  }
+}
+
+// Connect to redux-form
+SignInForm = reduxForm({
+  form: 'SignInForm'
+})(SignInForm)
+
+export default SignInForm
+</code></pre>
+</div>
+<p>Using <code class="highlighter-rouge">redux-form</code> the code for that single login form component goes from about 159 lines to 76.</p>
+
+<p>Although there is some initial overhead when setting it up, I’ve found this method to significantly speed up development due to the fact that I’m not needlessly repeating code. It feels like magic.</p>
+
+<h2 id="redux-form-under-the-hood">Redux Form: Under the Hood</h2>
+<p>After setting up Redux Form, you’ll be able to see it at work using <a href="https://github.com/reduxjs/redux-devtools" target="_blank" class="link--text-in-p">Redux DevTools</a>:</p>
+<div class="video-container">
+  <div class="embed-container"><iframe src="https://player.vimeo.com/video/265891862?autoplay=1&amp;loop=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
+</div>
+
+<p>The form is stored under the name you give it, in this case <code class="highlighter-rouge">SignInForm</code>, while input data is stored under <code class="highlighter-rouge">values</code> and errors under <code class="highlighter-rouge">syncErrors</code>. Redux Form then provides meta information like those error messages, whether an input has been <code class="highlighter-rouge">touched</code>, and whether the form is or isn’t <code class="highlighter-rouge">dirty</code> as props in your form and input components.</p>
+
+<h3 id="custom-field-components">Custom Field Components</h3>
+
+<p>Speaking of input components, you’ll see that the above example contains <code class="highlighter-rouge">Field</code> component imported from <code class="highlighter-rouge">redux-form</code>. <code class="highlighter-rouge">Field</code> takes its own <code class="highlighter-rouge">component</code> prop that should be either a <code class="highlighter-rouge">Component</code>, a stateless function, or a string name of one of the default supported DOM inputs (<code class="highlighter-rouge">input</code>, <code class="highlighter-rouge">textarea</code> or <code class="highlighter-rouge">select</code>).</p>
+
+<p>In my case, I created a <code class="highlighter-rouge">ReduxFormInput</code> component. Creating a fleshed out input component allows you to create some custom structure such as the placement and styling of the error message generated by redux-form.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// from ReduxFormInput's render function:
+render() {
+  // Provided by Redux Form:
+  // { input, label, type, meta: { touched, error } }
+  const {
+    input,
+    label,
+    meta: {
+      touched,
+      error
+    },
+    placeholder,
+    type,
+    disabled,
+    handleInputRemoval,
+    optionalClasses,
+  } = this.props
+
+  return (
+    &lt;div
+      className={`input-container${optionalClasses ? ' ' + optionalClasses : ''}${touched &amp;&amp; error ? ' error' : ''}`}
+    &gt;
+      { label &amp;&amp;
+        &lt;label&gt;{label}&lt;/label&gt;
+      }
+      &lt;div className={`input-container-inner${handleInputRemoval ? ' removable' : ''}`}&gt;
+        &lt;input
+          {...input}
+          type={type}
+          placeholder={placeholder || label}
+          disabled={disabled || false}
+        /&gt;
+      &lt;/div&gt;
+      {touched &amp;&amp; error &amp;&amp;
+        &lt;div className="input-container-error-message"&gt;
+          {error}
+        &lt;/div&gt;
+      }
+    &lt;/div&gt;
+  )
+}
+</code></pre>
+</div>
+
+<h3 id="field-level-validation">Field-Level Validation</h3>
+<p>One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (Sync, Submit, Async Blur, and more), I mainly make use of Field-Level Validation.</p>
+
+<p><code class="highlighter-rouge">Field</code>’s <code class="highlighter-rouge">validate</code> prop accepts one or more functions to validate the value of the given field. If any field in a form doesn’t pass its field-level validation, this prevents the form from submitting.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+import { reduxForm, Field } from 'redux-form'
+
+// Components
+import ReduxFormInput from '../../../components/Inputs/ReduxFormInput'
+
+// Utils
+import { required, email } from '../../../utils/formValidators'
+
+/* ... */
+
+&lt;Field
+  component={ReduxFormInput}
+  label='Email'
+  name='email'
+  placeholder='Enter your email'
+  type='email'
+  validate={[required, email]}
+/&gt;
+
+/* ... */
+</code></pre>
+</div>
+
+<p>While Redux Form documentation also provides examples of some basic validation functions that you can import and use on your <code class="highlighter-rouge">Field</code>s, you can always build your own.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">/*</span><span class="w"> </span><span class="err">formValidators.js</span><span class="w"> </span><span class="err">*/</span><span class="p">}</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">multipleValidations</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">(value,</span><span class="w"> </span><span class="err">validations)</span><span class="w"> </span><span class="err">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="err">const</span><span class="w"> </span><span class="err">checks</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">validations.map(validation</span><span class="w"> </span><span class="err">=&gt;</span><span class="w"> </span><span class="err">validation(value))</span><span class="w">
+  </span><span class="err">const</span><span class="w"> </span><span class="err">failedChecks</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">checks.filter(check</span><span class="w"> </span><span class="err">=&gt;</span><span class="w"> </span><span class="err">!!check)</span><span class="w">
+
+  </span><span class="err">return</span><span class="w"> </span><span class="err">failedChecks.length</span><span class="w"> </span><span class="err">===</span><span class="w"> </span><span class="err">0</span><span class="w"> </span><span class="err">?</span><span class="w"> </span><span class="err">undefined</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="err">failedChecks.join(</span><span class="nt">", "</span><span class="err">)</span><span class="w">
+</span><span class="err">}</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">required</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">=&gt;</span><span class="w"> </span><span class="err">!value</span><span class="w"> </span><span class="err">||</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">===</span><span class="w"> </span><span class="s2">""</span><span class="w"> </span><span class="err">?</span><span class="w"> </span><span class="err">'Required'</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">matchPasswords</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">(value,</span><span class="w"> </span><span class="err">allValues,</span><span class="w"> </span><span class="err">props,</span><span class="w"> </span><span class="err">name)</span><span class="w"> </span><span class="err">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="err">if</span><span class="w"> </span><span class="err">(allValues['password'])</span><span class="w"> </span><span class="err">{</span><span class="w">
+    </span><span class="err">return</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">!==</span><span class="w"> </span><span class="err">allValues['password']</span><span class="w"> </span><span class="err">?</span><span class="w"> </span><span class="nt">"Passwords Don't Match"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+  </span><span class="p">}</span><span class="w"> </span><span class="err">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="err">return</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="err">}</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">maxLength</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">max</span><span class="w"> </span><span class="err">=&gt;</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">=&gt;</span><span class="w">
+  </span><span class="err">value</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">value.length</span><span class="w"> </span><span class="err">&gt;</span><span class="w"> </span><span class="err">max</span><span class="w"> </span><span class="err">?</span><span class="w"> </span><span class="err">`Must</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="err">max</span><span class="p">}</span><span class="w"> </span><span class="err">characters</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">less`</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">maxLength</span><span class="mi">15</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">maxLength(</span><span class="mi">15</span><span class="err">)</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">minLength</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">min</span><span class="w"> </span><span class="err">=&gt;</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">=&gt;</span><span class="w">
+  </span><span class="err">value</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">value.length</span><span class="w"> </span><span class="err">&lt;</span><span class="w"> </span><span class="err">min</span><span class="w"> </span><span class="err">?</span><span class="w"> </span><span class="err">`Must</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="err">min</span><span class="p">}</span><span class="w"> </span><span class="err">characters</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">more`</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">minLength</span><span class="mi">2</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">minLength(</span><span class="mi">2</span><span class="err">)</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">number</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">=&gt;</span><span class="w">
+  </span><span class="err">value</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">isNaN(Number(value))</span><span class="w"> </span><span class="err">?</span><span class="w"> </span><span class="err">'Must</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">number'</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">minValue</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">min</span><span class="w"> </span><span class="err">=&gt;</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">=&gt;</span><span class="w">
+  </span><span class="err">value</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">&lt;</span><span class="w"> </span><span class="err">min</span><span class="w"> </span><span class="err">?</span><span class="w"> </span><span class="err">`Must</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">at</span><span class="w"> </span><span class="err">least</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="err">min</span><span class="p">}</span><span class="err">`</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">minValue</span><span class="mi">18</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">minValue(</span><span class="mi">18</span><span class="err">)</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">email</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">=&gt;</span><span class="w">
+  </span><span class="err">value</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">!/^</span><span class="p">[</span><span class="err">A-Z</span><span class="mi">0-9</span><span class="err">._%+-</span><span class="p">]</span><span class="err">+@</span><span class="p">[</span><span class="err">A-Z</span><span class="mi">0-9</span><span class="err">.-</span><span class="p">]</span><span class="err">+\.</span><span class="p">[</span><span class="err">A-Z</span><span class="p">]{</span><span class="err">2,4</span><span class="p">}</span><span class="err">$/i.test(value)</span><span class="w">
+    </span><span class="err">?</span><span class="w"> </span><span class="err">'Invalid</span><span class="w"> </span><span class="err">email</span><span class="w"> </span><span class="err">address'</span><span class="w">
+    </span><span class="err">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">tooOld</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">=&gt;</span><span class="w">
+  </span><span class="err">value</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">&gt;</span><span class="w"> </span><span class="mi">65</span><span class="w"> </span><span class="err">?</span><span class="w"> </span><span class="err">'You</span><span class="w"> </span><span class="err">might</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">too</span><span class="w"> </span><span class="err">old</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">this'</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">aol</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">=&gt;</span><span class="w">
+  </span><span class="err">value</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">/.+@aol\.com/.test(value)</span><span class="w">
+    </span><span class="err">?</span><span class="w"> </span><span class="err">'Really?</span><span class="w"> </span><span class="err">You</span><span class="w"> </span><span class="err">still</span><span class="w"> </span><span class="err">use</span><span class="w"> </span><span class="err">AOL</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">your</span><span class="w"> </span><span class="err">email?'</span><span class="w">
+    </span><span class="err">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">alphaNumeric</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">=&gt;</span><span class="w">
+  </span><span class="err">value</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">/</span><span class="p">[</span><span class="err">^a-zA-Z</span><span class="mi">0-9</span><span class="w"> </span><span class="p">]</span><span class="err">/i.test(value)</span><span class="w">
+    </span><span class="err">?</span><span class="w"> </span><span class="err">'Only</span><span class="w"> </span><span class="err">alphanumeric</span><span class="w"> </span><span class="err">characters'</span><span class="w">
+    </span><span class="err">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+</span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">phoneNumber</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">value</span><span class="w"> </span><span class="err">=&gt;</span><span class="w">
+  </span><span class="err">value</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">!/^(</span><span class="mi">0</span><span class="err">|</span><span class="p">[</span><span class="mi">1-9</span><span class="p">][</span><span class="mi">0-9</span><span class="p">]{</span><span class="err">9</span><span class="p">}</span><span class="err">)$/i.test(value)</span><span class="w">
+    </span><span class="err">?</span><span class="w"> </span><span class="err">'Invalid</span><span class="w"> </span><span class="err">phone</span><span class="w"> </span><span class="err">number,</span><span class="w"> </span><span class="err">must</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="err">digits'</span><span class="w">
+    </span><span class="err">:</span><span class="w"> </span><span class="err">undefined</span><span class="w">
+</span></code></pre>
+</div>
+
+<p>https://changelog.com/reactpodcast/2 - Formik</p>
+
+          
+      </div>
+      
+      <div class="post-comments">
+        
+     <div id="disqus_thread"></div>
+     <script>
+     /**
+     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+     /*
+     var disqus_config = function () {
+     this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+     */
+     (function() { // DON'T EDIT BELOW THIS LINE
+     var d = document, s = d.createElement('script');
+
+     s.src = '//alxmrtnz.disqus.com/embed.js';
+
+     s.setAttribute('data-timestamp', +new Date());
+     (d.head || d.body).appendChild(s);
+     })();
+     </script>
+     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+      </div>
+      <!-- <div class="post-nav">
+        <div class="post-nav__direction post-nav__prev-post">
+          
+            <a class="prev" href="/work/locker-linked.html">&laquo; Locker Linked</a>
+          
+        </div>
+        <div class="post-nav__direction post-nav__next-post">
+          
+        </div>
+      </div> -->
+          
+    </div>
+
+    <footer class="site-footer">
+	<div class="footer__content">
+			<ul class="social-list--footer">
+		      <li>
+  <a href="https://twitter.com/alx_mrtnz" target="_blank" class="icon-social-twitter"></a>
+</li>
+<li>
+  <a href="https://dribbble.com/alxmrtnz" target="_blank" class="icon-dribbble"></a>
+</li>
+<li>
+  <a href="https://github.com/alxmrtnz" target="_blank" class="icon-github"></a>
+</li>
+<li>
+	<a href="mailto:alex@alxmrtnz.com?Subject=Hello%20there!" class="icon-letter-mail"></a>
+</li>
+		    </ul>
+		    <div class="footer__about">
+		    	<p class="footer__credits">
+		    		© Alex Martinez 2018. Made with ♥ in the Midwest
+		    	</p>
+		    </div>
+	</div>
+</footer>
+
+    
+
+  </body>
+
+</html>

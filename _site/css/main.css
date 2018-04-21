@@ -646,6 +646,21 @@ ul.social-icon-list {
   @media screen and (min-width: 600px) {
     .post-content {
       padding: 0px 20px; } }
+  .post-content .video-container {
+    max-width: 1375px;
+    margin: 0 auto 2em; }
+    .post-content .video-container .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%; }
+    .post-content .video-container .embed-container iframe, .post-content .video-container .embed-container object, .post-content .video-container .embed-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 
 .post-nav {
   overflow: hidden;

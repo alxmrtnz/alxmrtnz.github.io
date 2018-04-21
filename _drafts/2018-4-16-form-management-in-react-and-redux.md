@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Journey with Forms in React"
+title:  "React + Redux Form"
 date:   2018-4-16 19:46:27
 comments: true
 categories: thoughts
@@ -8,121 +8,40 @@ featured-icon-url: /assets/posts/11-09-15/terminal-icon.png
 featured-icon-alt: "Icon of Golden Gate Bridge"
 ---
 
-This is the story of my introduction to forms with both React and Redux. Although I've worked on designing and building websites and apps for years, it's been a shorter time that I've been working as a front-end developer.
+After just a few React projects, I grew to loathe setting up and managing forms. Having only developed CMS-based sites (think Wordpress) or helped with front-end styling, I was new to the world of app development, data-binding, and state management.
 
-Before becoming a full-time developer, I designed many web and mobile apps but had only contributed to small portions of codes on the front-end of web applications. When it came to learning and building with an actual front-end library/framework, the learning curve for me was actually pretty high. The beginning was not pretty, but after a few React projects, I've developed a better personal workflow for managing and working with forms in React.
+Using <a href='https://reactjs.org/docs/forms.html#controlled-components' target="_blank" class="link--text-in-p">controlled components</a> to store and update the values of input fields before a form even submitted was a completely foreign concept to me. After a few projects, a coworker suggested I try <a href='https://redux-form.com' target="_blank" class="link--text-in-p">Redux Form</a> instead. I found my happy place ♥.
 
-## Part I: A Rough Beginning
+## What is Redux Form?
+Redux Form is a Redux-based method for managing form state. The library uses a reducer (`formReducer`) and a <a href='https://reactjs.org/docs/higher-order-components.html' target="_blank" class="link--text-in-p">React HOC</a> (`reduxForm()`) that wraps your `form` component to store and manage any interactions with your form as part of your Redux store.
 
-I began my adventure with forms in React through <a href='https://reactjs.org/docs/forms.html#controlled-components' target="_blank" class="link--text-in-p">controlled components</a>, storing input values for elements like `<input>`, `<textarea>`, and `<select>` in a parent form component's state. It made sense enough.
+In practice, this meant that I could take the state of my form out of my form component and let Redux Form handle any changes in Redux.
 
-Create a state for the component that holds each input's value and update that value whenever the user interacts with the input. Here's an example of some early work for a Login Form comprised of two inputs, an email and a password:
+### Disclaimer
+As stated in the Redux form documentation, in order to get the most out of library, you'll need a basic understanding of:
+- Redux state container
+- React and Higher-Order Components (HOCs)
+
+## An Example Form
+### Before
+Here we have one of my earliest login forms <strong>without Redux Form</strong>. Do yourself a favor and don't do what I did here.
+
+The form inputs' values and error states were stored in the form component's `state`, while a `handleInputChange()` method handled updates to individual fields and two functions, `formIsValid()` and `renderErrorMessage()`, managed validation and error messages.
+
+None of this was very DRY and made it difficult to build new forms. All of the following code is for a form only two inputs: `email` and `password`. Imagine an even more complicated form and you can see that this method isn't sustainable.
 
 ```
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
-class LoginForm extends Component {
-
-  // "Alright, here's that state I've been talking about."
-  state = {
-    input: {
-      email: '',
-      password: ''
-    }
-  }
-
-  // "Oh, and gotta update it whenever we change the input"
-  handleInputChange(newPartialInput) {
-    this.setState(state => ({
-      ...state,
-      input: {
-        ...state.input,
-        ...newPartialInput
-      }
-    }))
-  }
-
-  handleSubmit = (event) => {
-    // "We'll get to you later"
-  }
-
-  // "And finally, just render the form!"
-  render() {
-    const { input } = this.state
-
-    return (
-      <div>
-        <form
-          className="sessions-form"
-          onSubmit={this.handleSubmit}
-        >
-          <div
-            className='input-container'
-          >
-            <label>
-              Email Address
-            </label>
-            <input
-              name="email"
-              type="email"
-              placeholder="you@youremail.com"
-              value={input.email.value}
-              onChange={event => this.handleInputChange(
-                {email: event.target.value}
-              )}
-            />
-          </div>
-          <div
-            className='input-container'
-          >
-            <label>
-              Password
-            </label>
-            <div className="password-input-container">
-              <input
-                name="password"
-                type="password"
-                placeholder="password"
-                value={input.password.value}
-                onChange={event => this.handleInputChange(
-                    {password: event.target.value}
-                )}
-              />
-            </div>
-          </div>
-          <input className="cta" type="submit" value="Login" />
-        </form>
-      </div>
-    )
-  }
-}
-
-export default LoginForm
-
-```
-
-"Awesome!", I thought. "But... how do I validate the form once the user fills it out?"
-
-I'll spare you too much of the step-by-step detail, but let's say my initial pass at front-end validation was... crude.
-
-The code will follow, but as a basic jist, here's what's going on:
-
-1. I expanded the form's `state` to hold both the value of an input and a boolean `hasError` to indicate whether or not it had an error. This would be used to set a class of `error` on the input's containing div (for styling purposes)
-2. I added a function to determine if the form was valid, `isFormValid()`, and set the `hasError` bool to true for any input that had an error
-3. I added a function `renderErrorMessage()` to render an error message for the form as a whole or a specific message individual fields if passed in a string of `email` or `password`
-4. And lastly, an `accessError` bool to the component state to determine whether or not to show the combined form error message above the form
-
-
-
-```
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// Components
+import Button from '../../components/Button'
 
 // Utils
-import { validateEmail } from '../../utils/helpers';
-import * as API  from '../../utils/api';
+import { validateEmail } from '../../utils/helpers'
+import * as API  from '../../utils/api'
 
-class LoginForm extends Component {
+class SignInForm extends Component {
   state = {
     input: {
       email: {
@@ -148,7 +67,7 @@ class LoginForm extends Component {
   }
 
   handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault()
     const userCanidate = {
       'email': this.state.input.email.value,
       'password': this.state.input.password.value
@@ -164,22 +83,22 @@ class LoginForm extends Component {
             accessError: true
           }))
         }
-      });
+      })
     }
   }
 
   isFormValid = () => {
-    let newInputState = {...this.state.input};
-    let errorsArePresent = false;
+    let newInputState = {...this.state.input}
+    let errorsArePresent = false
 
     if (!validateEmail(newInputState.email.value)) {
-      newInputState.email.hasError = true;
-      errorsArePresent = true;
+      newInputState.email.hasError = true
+      errorsArePresent = true
     }
 
     if (newInputState.password.value === '') {
-      newInputState.password.hasError = true;
-      errorsArePresent = true;
+      newInputState.password.hasError = true
+      errorsArePresent = true
     }
 
     if (errorsArePresent) {
@@ -188,19 +107,19 @@ class LoginForm extends Component {
         input: newInputState
       }))
     } else {
-      return true;
+      return true
     }
   }
 
   renderErrorMessage = (input) => {
-    let message = '';
+    let message = ''
 
     if (input === 'email') {
-      message = 'Please enter a valid email';
+      message = 'Please enter a valid email'
     } else if (input === 'password') {
       message = 'Please enter a password'
     } else {
-      message = 'Invalid email or password';
+      message = 'Invalid email or password'
     }
     return (
       <div className="input-error-message">
@@ -210,7 +129,7 @@ class LoginForm extends Component {
   }
 
   render() {
-    const { input, accessError } = this.state;
+    const { input, accessError } = this.state
 
     return (
       <div>
@@ -259,60 +178,251 @@ class LoginForm extends Component {
             </div>
             {input.password.hasError ? this.renderErrorMessage('password') : null}
           </div>
-          <input className="cta" type="submit" value="Login" />
+          <Button
+            className='cta full-width invert'
+            submitting={true}
+          >
+            Submit
+          </Button>
         </form>
       </div>
-    );
+    )
   }
 }
 
-export default LoginForm;
+export default SignInForm
 ```
 
-It wasn't great, but it worked. Even before the project was over, I knew that the way I was building and managing forms was unsustainable. The code I was writing wasn't DRY. Each form caused unnecessary duplication in validation and error message functions and there was a lack of abstraction for reapeated components like inputs with error messages.
+### After
+Using `redux-form` simplifies form management by storing values in redux, handling any input's `onChange` interaction and also helps with individual field validation.
 
-## Part II: It Got (a Little) Better
-### Building Abstractions for Repeated Elements
-
-Much like the [view driven approach discussed by A. Sharif](https://medium.com/javascript-inside/some-thoughts-on-forms-in-react-9ca2d9078c20), I began to break out repeated input elements into their own components. This allowed me to pass props such as an input's label and error message into the component as well as onchange function
-
-It made an input like this...
 ```
-<div
-  className={`input-container${input.email.hasError ? ' error' : ''}`}
->
-  <label>Email Address</label>
-  <input
-    name="email"
-    type="email"
-    placeholder="you@youremail.com"
-    value={input.email.value}
-    onChange={event => this.handleInputChange(
-      {email: {value: event.target.value, hasError: false}}
-    )}
-  />
-  {input.email.hasError ? this.renderErrorMessage('email') : null}
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { reduxForm, Field } from 'redux-form'
+
+// Components
+import ReduxFormInput from '../../../components/Inputs/ReduxFormInput'
+import Button from '../../../components/Button'
+
+// Utils
+import {
+  required,
+  email,
+} from '../../../utils/formValidators'
+import * as API  from '../../utils/api'
+
+class SignInForm extends Component {
+  state = {
+    submitting: false
+  }
+
+  handleSubmit = (user) => {
+    // `user` is the object of values passed in from Redux Form
+    // user = {
+    //   email: user.email,
+    //   password: user.password
+    // }
+
+    if (this.isFormValid()) {
+      API.login(user).then(response => {
+        if (response.success)) {
+          // Do some stuff! The form worked :)
+        } else {
+          // Set an error message
+        }
+      })
+    }
+  }
+
+  render() {
+    const { submitting } = this.state
+    const { handleSubmit } = this.props
+
+    return (
+      <form onSubmit={handleSubmit(this.handleSubmit)}>
+        <Field
+          component={ReduxFormInput}
+          label='Email'
+          name='email'
+          placeholder='Enter your email'
+          type='email'
+          validate={[required, email]}
+        />
+        <Field
+          component={ReduxFormInput}
+          label='Password'
+          name='password'
+          placeholder='Enter a password'
+          type='password'
+          validate={required}
+        />
+        <Button
+          className='cta full-width invert'
+          submitting={true}
+        >
+          Submit
+        </Button>
+      </form>
+    )
+  }
+}
+
+// Connect to redux-form
+SignInForm = reduxForm({
+  form: 'SignInForm'
+})(SignInForm)
+
+export default SignInForm
+```
+Using `redux-form` the code for that single login form component goes from about 159 lines to 76.
+
+Although there is some initial overhead when setting it up, I've found this method to significantly speed up development due to the fact that I'm not needlessly repeating code. It feels like magic.
+
+## Redux Form: Under the Hood
+After setting up Redux Form, you'll be able to see it at work using <a href='https://github.com/reduxjs/redux-devtools' target="_blank" class="link--text-in-p">Redux DevTools</a>:
+<div class="video-container">
+  <div class='embed-container'><iframe src='https://player.vimeo.com/video/265891862?autoplay=1&loop=1&loop=1&title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 </div>
+
+The form is stored under the name you give it, in this case `SignInForm`, while input data is stored under `values` and errors under `syncErrors`. Redux Form then provides meta information like those error messages, whether an input has been `touched`, and whether the form is or isn't `dirty` as props in your form and input components.
+
+### Custom Field Components
+
+Speaking of input components, you'll see that the above example contains `Field` component imported from `redux-form`. `Field` takes its own `component` prop that should be either a `Component`, a stateless function, or a string name of one of the default supported DOM inputs (`input`, `textarea` or `select`).
+
+In my case, I created a `ReduxFormInput` component. Creating a fleshed out input component allows you to create some custom structure such as the placement and styling of the error message generated by redux-form.
+
+
+```
+// from ReduxFormInput's render function:
+render() {
+  // Provided by Redux Form:
+  // { input, label, type, meta: { touched, error } }
+  const {
+    input,
+    label,
+    meta: {
+      touched,
+      error
+    },
+    placeholder,
+    type,
+    disabled,
+    handleInputRemoval,
+    optionalClasses,
+  } = this.props
+
+  return (
+    <div
+      className={`input-container${optionalClasses ? ' ' + optionalClasses : ''}${touched && error ? ' error' : ''}`}
+    >
+      { label &&
+        <label>{label}</label>
+      }
+      <div className={`input-container-inner${handleInputRemoval ? ' removable' : ''}`}>
+        <input
+          {...input}
+          type={type}
+          placeholder={placeholder || label}
+          disabled={disabled || false}
+        />
+      </div>
+      {touched && error &&
+        <div className="input-container-error-message">
+          {error}
+        </div>
+      }
+    </div>
+  )
+}
 ```
 
-into a more manageable component, like this...
+### Field-Level Validation
+One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (Sync, Submit, Async Blur, and more), I mainly make use of Field-Level Validation.
+
+`Field`'s `validate` prop accepts one or more functions to validate the value of the given field. If any field in a form doesn't pass its field-level validation, this prevents the form from submitting.
 
 ```
-<Input
-  onChange={doSomething}
-  label='Name Field'
-  errorMessage={getSomeMessage()}
+
+import { reduxForm, Field } from 'redux-form'
+
+// Components
+import ReduxFormInput from '../../../components/Inputs/ReduxFormInput'
+
+// Utils
+import { required, email } from '../../../utils/formValidators'
+
+/* ... */
+
+<Field
+  component={ReduxFormInput}
+  label='Email'
+  name='email'
+  placeholder='Enter your email'
+  type='email'
+  validate={[required, email]}
 />
+
+/* ... */
 ```
 
-Building components for different types of inputs helped solve the repetitive nature of managing inputs' labels and error messages, but still didn't solve the issue of actually validating the form as a whole.
+While Redux Form documentation also provides examples of some basic validation functions that you can import and use on your `Field`s, you can always build your own.
 
-## Part III: Redux Forms
-### Learning to Love Forms Again
+```
+{/* formValidators.js */}
+export const multipleValidations = (value, validations) => {
+  const checks = validations.map(validation => validation(value))
+  const failedChecks = checks.filter(check => !!check)
 
-After my first project using React, I had gotten the hang of building out forms using abstracted components, but I knew there had to be an easier way.
+  return failedChecks.length === 0 ? undefined : failedChecks.join(", ")
+}
+export const required = value => !value || value === "" ? 'Required' : undefined
+export const matchPasswords = (value, allValues, props, name) => {
+  if (allValues['password']) {
+    return value !== allValues['password'] ? "Passwords Don't Match" : undefined
+  } else {
+    return undefined
+  }
+}
+export const maxLength = max => value =>
+  value && value.length > max ? `Must be ${max} characters or less` : undefined
+export const maxLength15 = maxLength(15)
+export const minLength = min => value =>
+  value && value.length < min ? `Must be ${min} characters or more` : undefined
+export const minLength2 = minLength(2)
+export const number = value =>
+  value && isNaN(Number(value)) ? 'Must be a number' : undefined
+export const minValue = min => value =>
+  value && value < min ? `Must be at least ${min}` : undefined
+export const minValue18 = minValue(18)
+export const email = value =>
+  value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)
+    ? 'Invalid email address'
+    : undefined
+export const tooOld = value =>
+  value && value > 65 ? 'You might be too old for this' : undefined
+export const aol = value =>
+  value && /.+@aol\.com/.test(value)
+    ? 'Really? You still use AOL for your email?'
+    : undefined
+export const alphaNumeric = value =>
+  value && /[^a-zA-Z0-9 ]/i.test(value)
+    ? 'Only alphanumeric characters'
+    : undefined
+export const phoneNumber = value =>
+  value && !/^(0|[1-9][0-9]{9})$/i.test(value)
+    ? 'Invalid phone number, must be 10 digits'
+    : undefined
+```
 
-My coworker, Jake, suggested I look into [redux-form](https://redux-form.com). He had been using it on some of his React projects and
+
+
+
+
+
+
+
 
 
 https://changelog.com/reactpodcast/2 - Formik
