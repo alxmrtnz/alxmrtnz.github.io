@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Optimizing Onboarding for Benchmarcs"
-date:   2016-10-05 19:46:27
+date:   2017-10-05 19:46:27
 category: thoughts
 featured-icon-url: /assets/posts/optimizing-onboarding-benchmarcs/featured-icon-search-and-add.png
 featured-icon-alt: "Icon - Search"
@@ -9,7 +9,7 @@ comments: true
 permalink: /:categories/:title.html
 ---
 
-Through <a href="http://metto.co/" target="_blank" class="link--text-in-p">Metto</a> , I helped design and build a web application called <a href="http://benchmarcs.com/" target="_blank" class="link--text-in-p">Benchmarcs</a> that allows funeral homes to monitor trends in business for both their own individual homes and their competitors. 
+Through <a href="http://metto.co/" target="_blank" class="link--text-in-p">Metto</a> , I helped design and build a web application called <a href="http://benchmarcs.com/" target="_blank" class="link--text-in-p">Benchmarcs</a> that allows funeral homes to monitor trends in business for both their own individual homes and their competitors.
 
 Traditionally, funeral homes tracked “calls,” or deaths, by skimming through obituaries in local newspapers and obituary websites. Because the calls listed in these sources also indicated which funeral home would be performing the funeral, each home could track how much business each competitor was receiving.
 
@@ -17,7 +17,7 @@ With Benchmarcs, we helped automate this process by using web spiders to crawl o
 
 ## Setting Up New Users with Actionable Content
 
-One of the biggest advantages in moving toward an automated system like Benchmarcs is that it gives funeral homes the ability to track their competition. 
+One of the biggest advantages in moving toward an automated system like Benchmarcs is that it gives funeral homes the ability to track their competition.
 
 Adding competitors allows users to see how many calls a competing home received over the last week, month, year, etc and also see trends in calls over that period of time.
 
@@ -51,7 +51,7 @@ To allow users to add competing funeral homes, we started by approximating the u
 
 ### Improving the Initial Design
 
-While some aspects of the initial functionality fit the bill, the nuances of the design did not. New users would choose several homes from the pre-populated list before becoming frustrated when they couldn’t find the home they were looking for. 
+While some aspects of the initial functionality fit the bill, the nuances of the design did not. New users would choose several homes from the pre-populated list before becoming frustrated when they couldn’t find the home they were looking for.
 
 It was unclear to users that the list of homes was a smaller list of suggestions rather than a complete list of all competitors. In the end, this solution made the tool less useful to users and converted them with less competitors than than they really wanted.
 
@@ -59,7 +59,7 @@ After several of usability sessions, our team decided to improve the design of t
 
 ## Iterating to Improve Usability
 
-To improve usability, we made a couple of changes to both the visual design and functionality: 
+To improve usability, we made a couple of changes to both the visual design and functionality:
 
 1. **We did away with ZIP and radius** – user testing had shown that these fields were not being used and that users instead focused on the search input
 2. **We made the search bar more prominent** in order to guide the user to take action
@@ -77,7 +77,7 @@ To improve usability, we made a couple of changes to both the visual design and 
 	</span>
 </div>
 
-While seemingly small, the updated design makes the tool more useful to user and has increased the number of homes a new user would add during setup. 
+While seemingly small, the updated design makes the tool more useful to user and has increased the number of homes a new user would add during setup.
 
 Not only could users find the homes they were looking for, but the updated functionality helped give them better suggestions.
 
