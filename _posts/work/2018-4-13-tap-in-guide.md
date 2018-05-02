@@ -21,7 +21,7 @@ thumbnail-image: tap-in/tap-in-thumbnail.jpg
 Tap In is a simple dashboard guide to world football’s most essential matches. The application is designed to deliver all the daily information soccer fans need to know to stay on top of the beautiful game in real-time.
 
 
-### Getting Involved
+### My Involement
 It was the 2014 World Cup in Brazil that kicked off my obsession with the beautiful game. I grew up following American sports, but never had really paid any attention to the world's sport: (the real) football.
 
 I initially stumbled across a version of Tap In during the summer of 2014 produced specifically for that year's World Cup, but didn't pay it much attention after Germany were crowned champions that summer.
@@ -60,7 +60,7 @@ As Tap In added coverage for more leagues (such as MLS in the U.S. and Liga MX i
   </span>
 </div>
 
-### Working with a Dispersed Team
+### Working with a Remote Team
 At Tap In, we have team members living in Minnesota, Texas, Ohio, and even Norway. Thanks to platforms like Slack and Trello, we're all able to keep in touch, even when many of us have never even met in person.
 
 It's been a blast building a project like this. Every team member contributes due to their passion for soccer and even if we haven't met on the playing field, we've built a sense of camaraderie that transcends sport and technology.
