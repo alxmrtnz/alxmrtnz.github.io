@@ -11,28 +11,28 @@ $monotype: "inconsolata",sans-serif;
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
-$home-font-size:	$base-font-size * 1.5;
+$home-font-size:  $base-font-size * 1.5;
 $base-line-height: 1.5;
 
 $heading-font-family: $sans-serif;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$black:             #333;
-$gray-color:        #EAEFF2;
-$gray-color-light:  lighten($gray-color, 3%);
-$gray-color-dark:   darken($gray-color, 25%);
+$black: #333;
+$gray-color: #EAEFF2;
+$gray-color-light: lighten($gray-color, 3%);
+$gray-color-dark: darken($gray-color, 25%);
 $gray-color-darker: darken($gray-color, 40%);
-$blue-color:        #419BF9;
-$iron:              #D2D9DE;
+$blue-color: #419BF9;
+$iron: #D2D9DE;
 
-$text-color:       	$black;
-$heading-color-light:  #a6b0c3;
-$white: 			#fff;
-$background-color: 	$white;
-$brand-color:      	#8A70DB;
+$text-color: $black;
+$heading-color-light: #a6b0c3;
+$white: #fff;
+$background-color: $white;
+$brand-color: #8A70DB;
+$hover-color: #E0DDF0;
 
-$hover-color:		#E0DDF0;
 
 $box-shadow-standard: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
 
@@ -50,28 +50,25 @@ $paragraph-margin-bottom: 35px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "mixins",
-        "base",
-        "type",
-        "layout",
-        "syntax-highlighting",
-        "styles",
-        "homepage",
-        "nav",
-        "posts",
-        "work",
-        "thoughts",
-        "about",
-        "footer",
-        "resume",
-        "solarized-dark"
+  "mixins",
+  "base",
+  "type",
+  "layout",
+  "syntax-highlighting",
+  "styles",
+  "homepage",
+  "nav",
+  "posts",
+  "work",
+  "thoughts",
+  "about",
+  "footer",
+  "resume"
 ;

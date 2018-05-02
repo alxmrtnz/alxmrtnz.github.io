@@ -5,201 +5,46 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 21 Apr 2018 10:53:14 -0400</pubDate>
-    <lastBuildDate>Sat, 21 Apr 2018 10:53:14 -0400</lastBuildDate>
+    <pubDate>Wed, 02 May 2018 15:24:10 -0400</pubDate>
+    <lastBuildDate>Wed, 02 May 2018 15:24:10 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
         <title>React + Redux Form</title>
-        <description>&lt;p&gt;After just a few React projects, I grew to loathe setting up and managing forms. Having only developed CMS-based sites (think Wordpress) or helped with front-end styling, I was new to the world of app development, data-binding, and state management.&lt;/p&gt;
+        <description>&lt;p&gt;After just a few React projects, I grew to loathe setting up and managing forms. When I started learning and building with React, app development, data-binding, and state management were new to me and the idea of using &lt;a href=&quot;https://reactjs.org/docs/forms.html#controlled-components&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;controlled components&lt;/a&gt; to store and update input field values seemed like a lot of unnessesary overhead.&lt;/p&gt;
 
-&lt;p&gt;Using &lt;a href=&quot;https://reactjs.org/docs/forms.html#controlled-components&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;controlled components&lt;/a&gt; to store and update the values of input fields before a form even submitted was a completely foreign concept to me. After a few projects, a coworker suggested I try &lt;a href=&quot;https://redux-form.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt; instead. I found my happy place ♥.&lt;/p&gt;
+&lt;p&gt;Luckily, a coworker suggested I try out &lt;a href=&quot;https://redux-form.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that helps you manage form state and validation in redux rather than in a component.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-redux-form&quot;&gt;What is Redux Form?&lt;/h2&gt;
-&lt;p&gt;Redux Form is a Redux-based method for managing form state. The library uses a reducer (&lt;code class=&quot;highlighter-rouge&quot;&gt;formReducer&lt;/code&gt;) and a &lt;a href=&quot;https://reactjs.org/docs/higher-order-components.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React HOC&lt;/a&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt;) that wraps your &lt;code class=&quot;highlighter-rouge&quot;&gt;form&lt;/code&gt; component to store and manage any interactions with your form as part of your Redux store.&lt;/p&gt;
+&lt;p&gt;By connecting a form component to redux through Redux Form’s &lt;code class=&quot;highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; &lt;a href=&quot;https://reactjs.org/docs/higher-order-components.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;higher-order component&lt;/a&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;formReducer&lt;/code&gt;, the library keeps track of common application form state in a redux store rather in the local component.&lt;/p&gt;
 
-&lt;p&gt;In practice, this meant that I could take the state of my form out of my form component and let Redux Form handle any changes in Redux.&lt;/p&gt;
+&lt;p&gt;In fact, it helps manage things such as:&lt;/p&gt;
 
-&lt;h3 id=&quot;disclaimer&quot;&gt;Disclaimer&lt;/h3&gt;
-&lt;p&gt;As stated in the Redux form documentation, in order to get the most out of library, you’ll need a basic understanding of:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Redux state container&lt;/li&gt;
-  &lt;li&gt;React and Higher-Order Components (HOCs)&lt;/li&gt;
+  &lt;li&gt;Fields that are in the form&lt;/li&gt;
+  &lt;li&gt;Values of each field&lt;/li&gt;
+  &lt;li&gt;Focused field&lt;/li&gt;
+  &lt;li&gt;If field values are valid&lt;/li&gt;
+  &lt;li&gt;Which fields the user has interacted with&lt;/li&gt;
+  &lt;li&gt;Wheter the form is being submitted&lt;/li&gt;
+  &lt;li&gt;Any asynchronous validation
+^https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;an-example-form&quot;&gt;An Example Form&lt;/h2&gt;
-&lt;h3 id=&quot;before&quot;&gt;Before&lt;/h3&gt;
-&lt;p&gt;Here we have one of my earliest login forms &lt;strong&gt;without Redux Form&lt;/strong&gt;. Do yourself a favor and don’t do what I did here.&lt;/p&gt;
+&lt;h2 id=&quot;under-the-hood&quot;&gt;Under the Hood&lt;/h2&gt;
+&lt;p&gt;Before I began using Redux Form, I stored form input values and error states in its own component &lt;code class=&quot;highlighter-rouge&quot;&gt;state&lt;/code&gt; and created a &lt;code class=&quot;highlighter-rouge&quot;&gt;handleInputChange()&lt;/code&gt; method to handle updates for each individual field. I’d then create methods to manage validation and error messages on submit. None of this was DRY and made it difficult to build new forms.&lt;/p&gt;
 
-&lt;p&gt;The form inputs’ values and error states were stored in the form component’s &lt;code class=&quot;highlighter-rouge&quot;&gt;state&lt;/code&gt;, while a &lt;code class=&quot;highlighter-rouge&quot;&gt;handleInputChange()&lt;/code&gt; method handled updates to individual fields and two functions, &lt;code class=&quot;highlighter-rouge&quot;&gt;formIsValid()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;renderErrorMessage()&lt;/code&gt;, managed validation and error messages.&lt;/p&gt;
+&lt;p&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;redux-form&lt;/code&gt; simplified form management by allowing me to store a form’s input values in a redux store, handling inputs’ &lt;code class=&quot;highlighter-rouge&quot;&gt;onChange&lt;/code&gt; methods and providing field-level validation.&lt;/p&gt;
 
-&lt;p&gt;None of this was very DRY and made it difficult to build new forms. All of the following code is for a form only two inputs: &lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;password&lt;/code&gt;. Imagine an even more complicated form and you can see that this method isn’t sustainable.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-
-// Components
-import Button from '../../components/Button'
-
-// Utils
-import { validateEmail } from '../../utils/helpers'
-import * as API  from '../../utils/api'
-
-class SignInForm extends Component {
-  state = {
-    input: {
-      email: {
-        value: &quot;&quot;,
-        hasError: false
-      },
-      password: {
-        value: &quot;&quot;,
-        hasError: false
-      }
-    },
-    accessError: false
-  }
-
-  handleInputChange(newPartialInput) {
-    this.setState(state =&amp;gt; ({
-      ...state,
-      input: {
-        ...state.input,
-        ...newPartialInput
-      }
-    }))
-  }
-
-  handleSubmit = (event) =&amp;gt; {
-    event.preventDefault()
-    const userCanidate = {
-      'email': this.state.input.email.value,
-      'password': this.state.input.password.value
-    }
-
-    if (this.isFormValid()) {
-      API.login(userCanidate).then(response =&amp;gt; {
-        if (response.success)) {
-          // Do some stuff! The form worked :)
-        } else {
-          this.setState(state =&amp;gt; ({
-            ...state,
-            accessError: true
-          }))
-        }
-      })
-    }
-  }
-
-  isFormValid = () =&amp;gt; {
-    let newInputState = {...this.state.input}
-    let errorsArePresent = false
-
-    if (!validateEmail(newInputState.email.value)) {
-      newInputState.email.hasError = true
-      errorsArePresent = true
-    }
-
-    if (newInputState.password.value === '') {
-      newInputState.password.hasError = true
-      errorsArePresent = true
-    }
-
-    if (errorsArePresent) {
-      this.setState(state =&amp;gt; ({
-        ...state,
-        input: newInputState
-      }))
-    } else {
-      return true
-    }
-  }
-
-  renderErrorMessage = (input) =&amp;gt; {
-    let message = ''
-
-    if (input === 'email') {
-      message = 'Please enter a valid email'
-    } else if (input === 'password') {
-      message = 'Please enter a password'
-    } else {
-      message = 'Invalid email or password'
-    }
-    return (
-      &amp;lt;div className=&quot;input-error-message&quot;&amp;gt;
-        {message}
-      &amp;lt;/div&amp;gt;
-    )
-  }
-
-  render() {
-    const { input, accessError } = this.state
-
-    return (
-      &amp;lt;div&amp;gt;
-        {accessError &amp;amp;&amp;amp;
-          &amp;lt;div className='input-container error'&amp;gt;
-            {this.renderErrorMessage()}
-          &amp;lt;/div&amp;gt;
-        }
-        &amp;lt;form className=&quot;sessions-form&quot; onSubmit={(event) =&amp;gt; this.handleSubmit(event)}&amp;gt;
-          &amp;lt;div
-            className={`input-container${input.email.hasError ? ' error' : ''}`}
-          &amp;gt;
-            &amp;lt;label&amp;gt;Email Address&amp;lt;/label&amp;gt;
-            &amp;lt;input
-              name=&quot;email&quot;
-              type=&quot;email&quot;
-              placeholder=&quot;you@youremail.com&quot;
-              value={input.email.value}
-              onChange={event =&amp;gt; this.handleInputChange(
-                {email: {value: event.target.value, hasError: false}}
-              )}
-            /&amp;gt;
-            {input.email.hasError ? this.renderErrorMessage('email') : null}
-          &amp;lt;/div&amp;gt;
-          &amp;lt;div
-            className={`input-container${input.password.hasError ? ' error' : ''}`}
-          &amp;gt;
-            &amp;lt;label&amp;gt;Password&amp;lt;/label&amp;gt;
-            &amp;lt;div className=&quot;password-input-container&quot;&amp;gt;
-              &amp;lt;input
-                className={`${input.password.hasError ? 'error' : ''}`}
-                name=&quot;password&quot;
-                type=&quot;password&quot;
-                placeholder=&quot;password&quot;
-                value={input.password.value}
-                onChange={event =&amp;gt; this.handleInputChange(
-                    {password: {value: event.target.value, hasError: false}}
-                )}
-              /&amp;gt;
-              &amp;lt;Link
-                className=&quot;forgot-password-link&quot;
-                to=&quot;/reset-password&quot;
-              &amp;gt;
-                Forgot?
-              &amp;lt;/Link&amp;gt;
-            &amp;lt;/div&amp;gt;
-            {input.password.hasError ? this.renderErrorMessage('password') : null}
-          &amp;lt;/div&amp;gt;
-          &amp;lt;Button
-            className='cta full-width invert'
-            submitting={true}
-          &amp;gt;
-            Submit
-          &amp;lt;/Button&amp;gt;
-        &amp;lt;/form&amp;gt;
-      &amp;lt;/div&amp;gt;
-    )
-  }
-}
-
-export default SignInForm
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After setting up Redux Form, you’ll be able to see it at work using &lt;a href=&quot;https://github.com/reduxjs/redux-devtools&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux DevTools&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;video-container&quot;&gt;
+  &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/265891862?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;after&quot;&gt;After&lt;/h3&gt;
-&lt;p&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;redux-form&lt;/code&gt; simplifies form management by storing values in redux, handling any input’s &lt;code class=&quot;highlighter-rouge&quot;&gt;onChange&lt;/code&gt; interaction and also helps with individual field validation.&lt;/p&gt;
+&lt;p&gt;The form is stored under the name you give it, in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;SignInForm&lt;/code&gt;, while input data is stored under &lt;code class=&quot;highlighter-rouge&quot;&gt;values&lt;/code&gt; and errors under &lt;code class=&quot;highlighter-rouge&quot;&gt;syncErrors&lt;/code&gt;. Redux Form then provides meta information like those error messages, whether an input has been &lt;code class=&quot;highlighter-rouge&quot;&gt;touched&lt;/code&gt;, and whether the form is or isn’t &lt;code class=&quot;highlighter-rouge&quot;&gt;dirty&lt;/code&gt; as props in your form and input components.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-sample-redux-form&quot;&gt;A Sample Redux Form&lt;/h3&gt;
+&lt;p&gt;The following is an example form for a Sign In screen. &lt;code class=&quot;highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; connects the form component to redux while &lt;code class=&quot;highlighter-rouge&quot;&gt;redux-form&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt; component manages the actual inputs including the &lt;code class=&quot;highlighter-rouge&quot;&gt;validation&lt;/code&gt; that the field requires.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from 'react'
 import { connect } from 'react-redux'
@@ -209,38 +54,32 @@ import { reduxForm, Field } from 'redux-form'
 import ReduxFormInput from '../../../components/Inputs/ReduxFormInput'
 import Button from '../../../components/Button'
 
-// Utils
+//Utils
 import {
   required,
   email,
 } from '../../../utils/formValidators'
 import * as API  from '../../utils/api'
-
 class SignInForm extends Component {
-  state = {
-    submitting: false
-  }
-
   handleSubmit = (user) =&amp;gt; {
-    // `user` is the object of values passed in from Redux Form
-    // user = {
-    //   email: user.email,
-    //   password: user.password
-    // }
+    /*
+    * `user` is the object of values passed in from Redux Form
+    * user = {
+    *   email: user.email,
+    *   password: user.password
+    * }
+    */
 
-    if (this.isFormValid()) {
-      API.login(user).then(response =&amp;gt; {
-        if (response.success)) {
-          // Do some stuff! The form worked :)
-        } else {
-          // Set an error message
-        }
-      })
-    }
+    API.login(user).then(response =&amp;gt; {
+      if (response.success)) {
+        // Do some stuff! The form worked :)
+      } else {
+        // Set an error message
+      }
+    })
   }
 
   render() {
-    const { submitting } = this.state
     const { handleSubmit } = this.props
 
     return (
@@ -263,7 +102,6 @@ class SignInForm extends Component {
         /&amp;gt;
         &amp;lt;Button
           className='cta full-width invert'
-          submitting={true}
         &amp;gt;
           Submit
         &amp;lt;/Button&amp;gt;
@@ -280,72 +118,71 @@ SignInForm = reduxForm({
 export default SignInForm
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;redux-form&lt;/code&gt; the code for that single login form component goes from about 159 lines to 76.&lt;/p&gt;
-
-&lt;p&gt;Although there is some initial overhead when setting it up, I’ve found this method to significantly speed up development due to the fact that I’m not needlessly repeating code. It feels like magic.&lt;/p&gt;
-
-&lt;h2 id=&quot;redux-form-under-the-hood&quot;&gt;Redux Form: Under the Hood&lt;/h2&gt;
-&lt;p&gt;After setting up Redux Form, you’ll be able to see it at work using &lt;a href=&quot;https://github.com/reduxjs/redux-devtools&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux DevTools&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&quot;video-container&quot;&gt;
-  &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/265891862?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The form is stored under the name you give it, in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;SignInForm&lt;/code&gt;, while input data is stored under &lt;code class=&quot;highlighter-rouge&quot;&gt;values&lt;/code&gt; and errors under &lt;code class=&quot;highlighter-rouge&quot;&gt;syncErrors&lt;/code&gt;. Redux Form then provides meta information like those error messages, whether an input has been &lt;code class=&quot;highlighter-rouge&quot;&gt;touched&lt;/code&gt;, and whether the form is or isn’t &lt;code class=&quot;highlighter-rouge&quot;&gt;dirty&lt;/code&gt; as props in your form and input components.&lt;/p&gt;
 
 &lt;h3 id=&quot;custom-field-components&quot;&gt;Custom Field Components&lt;/h3&gt;
+&lt;p&gt;In the above example, you’ll see that &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt; takes a prop called &lt;code class=&quot;highlighter-rouge&quot;&gt;component&lt;/code&gt;. This prop allows you define your own input component and can be either a &lt;code class=&quot;highlighter-rouge&quot;&gt;Component&lt;/code&gt;, a stateless function, or a string name of one of the default supported DOM inputs (&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;textarea&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;select&lt;/code&gt;).&lt;/p&gt;
 
-&lt;p&gt;Speaking of input components, you’ll see that the above example contains &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt; component imported from &lt;code class=&quot;highlighter-rouge&quot;&gt;redux-form&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt; takes its own &lt;code class=&quot;highlighter-rouge&quot;&gt;component&lt;/code&gt; prop that should be either a &lt;code class=&quot;highlighter-rouge&quot;&gt;Component&lt;/code&gt;, a stateless function, or a string name of one of the default supported DOM inputs (&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;textarea&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;select&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;In my case, I created a component called &lt;code class=&quot;highlighter-rouge&quot;&gt;ReduxFormInput&lt;/code&gt;, allowing me to define the structure I wanted surrounding a basic &lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt; field:&lt;/p&gt;
 
-&lt;p&gt;In my case, I created a &lt;code class=&quot;highlighter-rouge&quot;&gt;ReduxFormInput&lt;/code&gt; component. Creating a fleshed out input component allows you to create some custom structure such as the placement and styling of the error message generated by redux-form.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from 'react'
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// from ReduxFormInput's render function:
-render() {
-  // Provided by Redux Form:
-  // { input, label, type, meta: { touched, error } }
-  const {
-    input,
-    label,
-    meta: {
-      touched,
-      error
-    },
-    placeholder,
-    type,
-    disabled,
-    handleInputRemoval,
-    optionalClasses,
-  } = this.props
+class ReduxFormInput extends Component {
+  render() {
+    // Provided by Redux Form:
+    // { input, label, type, meta: { touched, error } }
+    const {
+      input,
+      label,
+      meta: {
+        touched,
+        error
+      },
+      placeholder,
+      type,
+      disabled,
+      handleInputRemoval,
+      optionalClasses,
+    } = this.props
 
-  return (
-    &amp;lt;div
-      className={`input-container${optionalClasses ? ' ' + optionalClasses : ''}${touched &amp;amp;&amp;amp; error ? ' error' : ''}`}
-    &amp;gt;
-      { label &amp;amp;&amp;amp;
-        &amp;lt;label&amp;gt;{label}&amp;lt;/label&amp;gt;
-      }
-      &amp;lt;div className={`input-container-inner${handleInputRemoval ? ' removable' : ''}`}&amp;gt;
-        &amp;lt;input
-          {...input}
-          type={type}
-          placeholder={placeholder || label}
-          disabled={disabled || false}
-        /&amp;gt;
-      &amp;lt;/div&amp;gt;
-      {touched &amp;amp;&amp;amp; error &amp;amp;&amp;amp;
-        &amp;lt;div className=&quot;input-container-error-message&quot;&amp;gt;
-          {error}
+    return (
+      &amp;lt;div
+        className={buildClassName([
+          'input-container',
+          optionalClasses,
+          touched &amp;amp;&amp;amp; error ? ' error' : '',
+        ])}
+      &amp;gt;
+        { label &amp;amp;&amp;amp;
+          &amp;lt;label&amp;gt;{label}&amp;lt;/label&amp;gt;
+        }
+        &amp;lt;div className='input-container-inner'&amp;gt;
+          &amp;lt;input
+            {...input}
+            type={type}
+            placeholder={placeholder || label}
+            disabled={disabled || false}
+          /&amp;gt;
         &amp;lt;/div&amp;gt;
-      }
-    &amp;lt;/div&amp;gt;
-  )
+        {touched &amp;amp;&amp;amp; error &amp;amp;&amp;amp;
+          &amp;lt;div className=&quot;input-container-error-message&quot;&amp;gt;
+            {error}
+          &amp;lt;/div&amp;gt;
+        }
+      &amp;lt;/div&amp;gt;
+    )
+  }
 }
+
+const buildClassName = (classes) =&amp;gt; classes.filter(Boolean).join(&quot; &quot;)
+
+export default ReduxFormInput
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;field-level-validation&quot;&gt;Field-Level Validation&lt;/h3&gt;
-&lt;p&gt;One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (Sync, Submit, Async Blur, and more), I mainly make use of Field-Level Validation.&lt;/p&gt;
+&lt;p&gt;One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (&lt;a href=&quot;https://redux-form.com/7.3.0/examples/syncvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sync&lt;/a&gt;, &lt;a href=&quot;https://redux-form.com/7.3.0/examples/submitvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Submit&lt;/a&gt;, &lt;a href=&quot;https://redux-form.com/7.3.0/examples/asyncvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Async Blur&lt;/a&gt;, and more), I mainly make use of &lt;a href=&quot;https://redux-form.com/7.3.0/examples/fieldlevelvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Field-Level Validation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;validate&lt;/code&gt; prop accepts one or more functions to validate the value of the given field. If any field in a form doesn’t pass its field-level validation, this prevents the form from submitting.&lt;/p&gt;
+&lt;p&gt;Field-Level Validation focuses on &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;validate&lt;/code&gt; prop. It accepts one or more functions to validate the value of the given field. If an input doesn’t pass the requirements passed through &lt;code class=&quot;highlighter-rouge&quot;&gt;validate&lt;/code&gt;, the entire form  won’t submit and an &lt;code class=&quot;highlighter-rouge&quot;&gt;error&lt;/code&gt; prop is then passed to the input allowing you to render a message to the user.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 import { reduxForm, Field } from 'redux-form'
@@ -371,7 +208,9 @@ import { required, email } from '../../../utils/formValidators'
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;While Redux Form documentation also provides examples of some basic validation functions that you can import and use on your &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt;s, you can always build your own.&lt;/p&gt;
+&lt;p&gt;Redux Form’s documentation provides example validation functions, but you can also create custom functions to check input field values any way you want.&lt;/p&gt;
+
+&lt;p&gt;Here are a bunch of snippets that I’ve used before:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/*&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;formValidators.js&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;export&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;const&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;multipleValidations&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(value,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;validations)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
@@ -420,136 +259,21 @@ import { required, email } from '../../../utils/formValidators'
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;https://changelog.com/reactpodcast/2 - Formik&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;React Form isn’t the only package out there to manage forms in React (see &lt;a href=&quot;https://github.com/jaredpalmer/formik&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Formik&lt;/a&gt;, &lt;a href=&quot;https://github.com/davidkpiano/react-redux-form&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Redux Form&lt;/a&gt;, and &lt;a href=&quot;https://github.com/react-tools/react-form&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React-Form&lt;/a&gt; to name a few), but it’s the one that’s been making my life a whole lot easier.&lt;/p&gt;
+
+&lt;h3 id=&quot;other-resources&quot;&gt;Other Resources&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The React Podcast ft. Jared Palmer (touches on Formik)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Why Build Your Forms with Redux Form&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Mon, 16 Apr 2018 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/thoughts/2018/04/16/form-management-in-react-and-redux.html</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/2018/04/16/form-management-in-react-and-redux.html</guid>
+        <pubDate>Wed, 02 May 2018 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/thoughts/2018/05/02/form-management-in-react-and-redux.html</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/2018/05/02/form-management-in-react-and-redux.html</guid>
         
         
         <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>Locker Linked</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/fosi/featured-image-fosi.jpg&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The &lt;a href=&quot;http://www.fosi.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Family Online Safety Institute&lt;/a&gt; (FOSI) came to &lt;a href=&quot;http://www.isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to redesign and rebuild their website. Our mission was twofold —to combine fosi.org and aplaftormforgood.org (now Good Digital Parenting) under one umbrella, and to create a beautiful design and a user friendly experience&lt;/p&gt;
-
-&lt;p&gt;The redesign process involved diving deep into Google Analytics, conducting user testing with key audiences, and unifying the two sites through detailed wireframing and design.&lt;/p&gt;
-
-&lt;p&gt;Working closely with our client, we successfully created a digital hub for online safety news, research, and events. With a focus on information architecture and design, the project aimed to reorganize content and present it in a digestible, mobile-friendly format.&lt;/p&gt;
-
-&lt;p&gt;##Understanding the Audience
-The new fosi.org was a challenge due to its wide range of intended audiences. In addition to online safety information for families, the site needed to cater to a variety of individuals from professionals seeking out industry conferences and events to  policy makers that utilize FOSI’s many research articles in everyday work.&lt;/p&gt;
-
-&lt;p&gt;###Personas
-In order to better understand each type of user, we created a variety personas to serve as references throughout the design process. By working closely with the FOSI team, we were able to ensure that the personas accurately reflected their intended audiences. We could then use these personas as a reference for any debates or decisions throughout the process.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--half&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/fosi/persona-david.jpg&quot; /&gt;
-
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/fosi/persona-mary.jpg&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;###User Flows
-These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    	&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-user-flow-david.png&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;##Site Structure
-After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
-  &lt;li&gt;Policy and Research&lt;/li&gt;
-  &lt;li&gt;Events&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Concentrating of FOSI’s pre-existing content into three main buckets simplified the process of finding content for the end user. Not only that, but the structure allowed us to make content a priority something something here…&lt;/p&gt;
-
-&lt;p&gt;[sitemap here]&lt;/p&gt;
-
-&lt;p&gt;##Prototyping
-Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;div class=&quot;video-container&quot;&gt;
-			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/155266319?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-wireframes.jpg&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
-
-&lt;p&gt;###Typography
-In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-type-example.jpg&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;####Aaux Next
-Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
-
-&lt;p&gt;####Minion Pro
-Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
-
-&lt;p&gt;###Colors
-With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
-
-&lt;div class=&quot;fin-tip&quot;&gt;
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-	A Flexible, Responsive Publishing Platform
-&lt;/h2&gt;
-
-&lt;p&gt;At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age.&lt;/p&gt;
-
-&lt;p&gt;By creating flexible layouts, a new design system, and an integration with Wagtail, a Django-based CMS, we were able to provide FOSI with a rethought and redesigned responsive experience.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-marketing-home.jpg&quot; alt=&quot;Screenshot of Benchmarcs Marketing Page&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;grid grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--half &quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-screenshot-call-volume.png&quot; alt=&quot;Screenshot of Benchmarcs app – Call Volume Chart&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
-		 &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-screenshot-market-share.png&quot; alt=&quot;Screenshot of Benchmarcs app – Market Share Graph&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Sat, 14 Apr 2018 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/work/locker-linked.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
-        
-        
-        <category>work</category>
         
       </item>
     
@@ -1155,6 +879,119 @@ With content being broken up into several main sections, I defined colors that w
         <link>http://localhost:4000/meetedgar-resume/index.html</link>
         <guid isPermaLink="true">http://localhost:4000/meetedgar-resume/index.html</guid>
         
+        
+      </item>
+    
+      <item>
+        <title>Outlook Relationship Management System</title>
+        <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/featured-image-orms.jpg&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.theoutlookgroup.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Outlook Group&lt;/a&gt; is one of the nation’s largest marketing firms in the pre-need* funeral industry and has a national team of sales representatives who work with individual funeral homes to maintain and develop their own customer bases.&lt;/p&gt;
+
+&lt;p&gt;I worked with the group and a small team to create the Outlook Relationship Management System (ORMS), a web application that improves the workflow of The Outlook Group’s sales representatives and client funeral homes.&lt;/p&gt;
+
+&lt;p&gt;I focused on establishing the overall visual language and user experience of the platform and also worked closely with project developers throughout implementation.&lt;/p&gt;
+
+&lt;p class=&quot;footnote&quot;&gt;
+  * pre-need services include things such as pre-need life insurance policies that cover the cost of predetermined expense of a funeral, cremation, or burial.
+&lt;/p&gt;
+
+&lt;h2 id=&quot;opportunity-management&quot;&gt;Opportunity Management&lt;/h2&gt;
+
+&lt;p&gt;To allow Outlook Group sales representatives to record and monitor potential customers, we designed a robust opportunities management page.&lt;/p&gt;
+
+&lt;p&gt;Beginning with simple sketches, we were able to validate functionality with Outlook Group stakeholders before moving into visual design.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-wireframe-sketches__opportunities.jpg&quot; alt=&quot;ORMS Wireframe Sketch - Opportunities Table&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;One of our first wireframe iterations for managing customer prospects, leads, and accounts (credit: &lt;a href=&quot;https://www.zachkuzmic.com/&quot; target=&quot;_blank&quot;&gt;Zach Kuzmic&lt;/a&gt;).&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Through iteration, we designed and implemented essential functionality for filtering, searching, and sorting opportunities.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-screenshot__opportunities@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunities Table&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;Several iterations of wireframes and visual design led to a robust page for managing sales opportunities.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;task-management-and-collaboration&quot;&gt;Task Management and Collaboration&lt;/h2&gt;
+
+&lt;p&gt;We paid special attention to how Outlook Group sales reps collaborate around individual opportunities.&lt;/p&gt;
+
+&lt;p&gt;Users can add and categorize notes in a timeline format for easy future reference, create custom tasks, and schedule appointments that tie into the app’s calendar.&lt;/p&gt;
+
+&lt;p&gt;All of this functionality is available between multiple system users, allowing sales reps to collaboratively record and monitor information on each opportunity.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-screenshot__opportunity-detail@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunity Detail Page&quot; /&gt;
+	    &lt;span class=&quot;img-caption&quot;&gt;Users can collaborate on individual opportunities through the use of notes, tasks, and appointments.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h3 id=&quot;system-vs-custom-tagging&quot;&gt;System vs Custom Tagging&lt;/h3&gt;
+
+&lt;p&gt;Another piece of functionality we were added to ORMS was tagging. ORMS allows users to create custom tags for each opportunity in addition to the base set of tags that Outlook Group admins create.&lt;/p&gt;
+
+&lt;p&gt;The “Outlook Tags,” not only help guide their sales reps in the creation of their own custom tags, but also provides valuable usage data to Outlook Group admins for future iteration.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-detail__tags.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;calendar-integration&quot;&gt;Calendar Integration&lt;/h2&gt;
+
+&lt;p&gt;An in-app calendar that can integrate with any major calendar provider proved an important part of the ORMS system.&lt;/p&gt;
+
+&lt;p&gt;Both sales reps and Outlook Group admins needed the ability to track appointments with potential opportunities and current customers. Additionally, admins are able to access employee calendars to help coordinate business.&lt;/p&gt;
+
+&lt;p&gt;The calendar we designed and implemented integrates with Google and allows for everyone within the Outlook Group to stay on the same page.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-screenshot__calendar@2x.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;h2 id=&quot;a-responsive-visual-system&quot;&gt;A Responsive, Visual System&lt;/h2&gt;
+
+&lt;p&gt;From the beginning of the project, we focused on creating a responsive web application experience.&lt;/p&gt;
+
+&lt;p&gt;As I began the visual design process, I worked on identifying some base styles and flexible components that could be reused across the system.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-detail__responsive@2x.png&quot; alt=&quot;ORMS Application Screenshot - Various Responsive Mobile Screens&quot; /&gt;
+	    &lt;span class=&quot;img-caption text--centered&quot;&gt;I worked on creating a responsive card system that could accomodate graphs, tables, calendars, and more.&lt;/span&gt;
+	&lt;/div&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;fin-tip&quot;&gt;	
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+	Conclusion
+&lt;/h2&gt;
+
+&lt;p&gt;ORMS has become a robust internal tool for a national workforce. With a small team and close collaboration with our client, we were able to deliver a fully-responsive CRM that suits the Outlook Group’s specific needs.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 08 Sep 2016 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/orms.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/orms.html</guid>
+        
+        
+        <category>work</category>
         
       </item>
     

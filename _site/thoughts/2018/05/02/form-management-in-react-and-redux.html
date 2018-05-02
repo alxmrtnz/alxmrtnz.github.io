@@ -31,7 +31,7 @@
 
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/thoughts/2018/04/16/form-management-in-react-and-redux.html">
+    <link rel="canonical" href="http://localhost:4000/thoughts/2018/05/02/form-management-in-react-and-redux.html">
     <link href="https://fontastic.s3.amazonaws.com/HaZ5yL6SCfhWxMgeXyixTS/icons.css" rel="stylesheet">
     <link href="https://file.myfontastic.com/HaZ5yL6SCfhWxMgeXyixTS/icons.css" rel="stylesheet">
 
@@ -131,203 +131,48 @@
       <div class="post-content">
           <header class="post-header">
             <div class="featured-icon">
-              <img src="http://localhost:4000/assets/posts/11-09-15/terminal-icon.png" alt="Icon of Golden Gate Bridge">
+              <img src="http://localhost:4000/assets/posts/5-2-18/form-icon@2x.png" alt="Form Illustration">
             </div> 
-            <p class="post-date text--mono">April 16, 2018</p>
+            <p class="post-date text--mono">May 2, 2018</p>
             <h1 class="post-title heading--large">React + Redux Form</h1>
             
 
             
           </header>
-          <p>After just a few React projects, I grew to loathe setting up and managing forms. Having only developed CMS-based sites (think Wordpress) or helped with front-end styling, I was new to the world of app development, data-binding, and state management.</p>
+          <p>After just a few React projects, I grew to loathe setting up and managing forms. When I started learning and building with React, app development, data-binding, and state management were new to me and the idea of using <a href="https://reactjs.org/docs/forms.html#controlled-components" target="_blank" class="link--text-in-p">controlled components</a> to store and update input field values seemed like a lot of unnessesary overhead.</p>
 
-<p>Using <a href="https://reactjs.org/docs/forms.html#controlled-components" target="_blank" class="link--text-in-p">controlled components</a> to store and update the values of input fields before a form even submitted was a completely foreign concept to me. After a few projects, a coworker suggested I try <a href="https://redux-form.com" target="_blank" class="link--text-in-p">Redux Form</a> instead. I found my happy place ♥.</p>
+<p>Luckily, a coworker suggested I try out <a href="https://redux-form.com" target="_blank" class="link--text-in-p">Redux Form</a>, a library that helps you manage form state and validation in redux rather than in a component.</p>
 
 <h2 id="what-is-redux-form">What is Redux Form?</h2>
-<p>Redux Form is a Redux-based method for managing form state. The library uses a reducer (<code class="highlighter-rouge">formReducer</code>) and a <a href="https://reactjs.org/docs/higher-order-components.html" target="_blank" class="link--text-in-p">React HOC</a> (<code class="highlighter-rouge">reduxForm()</code>) that wraps your <code class="highlighter-rouge">form</code> component to store and manage any interactions with your form as part of your Redux store.</p>
+<p>By connecting a form component to redux through Redux Form’s <code class="highlighter-rouge">reduxForm()</code> <a href="https://reactjs.org/docs/higher-order-components.html" target="_blank" class="link--text-in-p">higher-order component</a> and <code class="highlighter-rouge">formReducer</code>, the library keeps track of common application form state in a redux store rather in the local component.</p>
 
-<p>In practice, this meant that I could take the state of my form out of my form component and let Redux Form handle any changes in Redux.</p>
+<p>In fact, it helps manage things such as:</p>
 
-<h3 id="disclaimer">Disclaimer</h3>
-<p>As stated in the Redux form documentation, in order to get the most out of library, you’ll need a basic understanding of:</p>
 <ul>
-  <li>Redux state container</li>
-  <li>React and Higher-Order Components (HOCs)</li>
+  <li>Fields that are in the form</li>
+  <li>Values of each field</li>
+  <li>Focused field</li>
+  <li>If field values are valid</li>
+  <li>Which fields the user has interacted with</li>
+  <li>Wheter the form is being submitted</li>
+  <li>Any asynchronous validation
+^https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8</li>
 </ul>
 
-<h2 id="an-example-form">An Example Form</h2>
-<h3 id="before">Before</h3>
-<p>Here we have one of my earliest login forms <strong>without Redux Form</strong>. Do yourself a favor and don’t do what I did here.</p>
+<h2 id="under-the-hood">Under the Hood</h2>
+<p>Before I began using Redux Form, I stored form input values and error states in its own component <code class="highlighter-rouge">state</code> and created a <code class="highlighter-rouge">handleInputChange()</code> method to handle updates for each individual field. I’d then create methods to manage validation and error messages on submit. None of this was DRY and made it difficult to build new forms.</p>
 
-<p>The form inputs’ values and error states were stored in the form component’s <code class="highlighter-rouge">state</code>, while a <code class="highlighter-rouge">handleInputChange()</code> method handled updates to individual fields and two functions, <code class="highlighter-rouge">formIsValid()</code> and <code class="highlighter-rouge">renderErrorMessage()</code>, managed validation and error messages.</p>
+<p>Using <code class="highlighter-rouge">redux-form</code> simplified form management by allowing me to store a form’s input values in a redux store, handling inputs’ <code class="highlighter-rouge">onChange</code> methods and providing field-level validation.</p>
 
-<p>None of this was very DRY and made it difficult to build new forms. All of the following code is for a form only two inputs: <code class="highlighter-rouge">email</code> and <code class="highlighter-rouge">password</code>. Imagine an even more complicated form and you can see that this method isn’t sustainable.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-
-// Components
-import Button from '../../components/Button'
-
-// Utils
-import { validateEmail } from '../../utils/helpers'
-import * as API  from '../../utils/api'
-
-class SignInForm extends Component {
-  state = {
-    input: {
-      email: {
-        value: "",
-        hasError: false
-      },
-      password: {
-        value: "",
-        hasError: false
-      }
-    },
-    accessError: false
-  }
-
-  handleInputChange(newPartialInput) {
-    this.setState(state =&gt; ({
-      ...state,
-      input: {
-        ...state.input,
-        ...newPartialInput
-      }
-    }))
-  }
-
-  handleSubmit = (event) =&gt; {
-    event.preventDefault()
-    const userCanidate = {
-      'email': this.state.input.email.value,
-      'password': this.state.input.password.value
-    }
-
-    if (this.isFormValid()) {
-      API.login(userCanidate).then(response =&gt; {
-        if (response.success)) {
-          // Do some stuff! The form worked :)
-        } else {
-          this.setState(state =&gt; ({
-            ...state,
-            accessError: true
-          }))
-        }
-      })
-    }
-  }
-
-  isFormValid = () =&gt; {
-    let newInputState = {...this.state.input}
-    let errorsArePresent = false
-
-    if (!validateEmail(newInputState.email.value)) {
-      newInputState.email.hasError = true
-      errorsArePresent = true
-    }
-
-    if (newInputState.password.value === '') {
-      newInputState.password.hasError = true
-      errorsArePresent = true
-    }
-
-    if (errorsArePresent) {
-      this.setState(state =&gt; ({
-        ...state,
-        input: newInputState
-      }))
-    } else {
-      return true
-    }
-  }
-
-  renderErrorMessage = (input) =&gt; {
-    let message = ''
-
-    if (input === 'email') {
-      message = 'Please enter a valid email'
-    } else if (input === 'password') {
-      message = 'Please enter a password'
-    } else {
-      message = 'Invalid email or password'
-    }
-    return (
-      &lt;div className="input-error-message"&gt;
-        {message}
-      &lt;/div&gt;
-    )
-  }
-
-  render() {
-    const { input, accessError } = this.state
-
-    return (
-      &lt;div&gt;
-        {accessError &amp;&amp;
-          &lt;div className='input-container error'&gt;
-            {this.renderErrorMessage()}
-          &lt;/div&gt;
-        }
-        &lt;form className="sessions-form" onSubmit={(event) =&gt; this.handleSubmit(event)}&gt;
-          &lt;div
-            className={`input-container${input.email.hasError ? ' error' : ''}`}
-          &gt;
-            &lt;label&gt;Email Address&lt;/label&gt;
-            &lt;input
-              name="email"
-              type="email"
-              placeholder="you@youremail.com"
-              value={input.email.value}
-              onChange={event =&gt; this.handleInputChange(
-                {email: {value: event.target.value, hasError: false}}
-              )}
-            /&gt;
-            {input.email.hasError ? this.renderErrorMessage('email') : null}
-          &lt;/div&gt;
-          &lt;div
-            className={`input-container${input.password.hasError ? ' error' : ''}`}
-          &gt;
-            &lt;label&gt;Password&lt;/label&gt;
-            &lt;div className="password-input-container"&gt;
-              &lt;input
-                className={`${input.password.hasError ? 'error' : ''}`}
-                name="password"
-                type="password"
-                placeholder="password"
-                value={input.password.value}
-                onChange={event =&gt; this.handleInputChange(
-                    {password: {value: event.target.value, hasError: false}}
-                )}
-              /&gt;
-              &lt;Link
-                className="forgot-password-link"
-                to="/reset-password"
-              &gt;
-                Forgot?
-              &lt;/Link&gt;
-            &lt;/div&gt;
-            {input.password.hasError ? this.renderErrorMessage('password') : null}
-          &lt;/div&gt;
-          &lt;Button
-            className='cta full-width invert'
-            submitting={true}
-          &gt;
-            Submit
-          &lt;/Button&gt;
-        &lt;/form&gt;
-      &lt;/div&gt;
-    )
-  }
-}
-
-export default SignInForm
-</code></pre>
+<p>After setting up Redux Form, you’ll be able to see it at work using <a href="https://github.com/reduxjs/redux-devtools" target="_blank" class="link--text-in-p">Redux DevTools</a>:</p>
+<div class="video-container">
+  <div class="embed-container"><iframe src="https://player.vimeo.com/video/265891862?autoplay=1&amp;loop=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
 </div>
 
-<h3 id="after">After</h3>
-<p>Using <code class="highlighter-rouge">redux-form</code> simplifies form management by storing values in redux, handling any input’s <code class="highlighter-rouge">onChange</code> interaction and also helps with individual field validation.</p>
+<p>The form is stored under the name you give it, in this case <code class="highlighter-rouge">SignInForm</code>, while input data is stored under <code class="highlighter-rouge">values</code> and errors under <code class="highlighter-rouge">syncErrors</code>. Redux Form then provides meta information like those error messages, whether an input has been <code class="highlighter-rouge">touched</code>, and whether the form is or isn’t <code class="highlighter-rouge">dirty</code> as props in your form and input components.</p>
+
+<h3 id="a-sample-redux-form">A Sample Redux Form</h3>
+<p>The following is an example form for a Sign In screen. <code class="highlighter-rouge">reduxForm()</code> connects the form component to redux while <code class="highlighter-rouge">redux-form</code>’s <code class="highlighter-rouge">Field</code> component manages the actual inputs including the <code class="highlighter-rouge">validation</code> that the field requires.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>import React, { Component } from 'react'
 import { connect } from 'react-redux'
@@ -337,38 +182,32 @@ import { reduxForm, Field } from 'redux-form'
 import ReduxFormInput from '../../../components/Inputs/ReduxFormInput'
 import Button from '../../../components/Button'
 
-// Utils
+//Utils
 import {
   required,
   email,
 } from '../../../utils/formValidators'
 import * as API  from '../../utils/api'
-
 class SignInForm extends Component {
-  state = {
-    submitting: false
-  }
-
   handleSubmit = (user) =&gt; {
-    // `user` is the object of values passed in from Redux Form
-    // user = {
-    //   email: user.email,
-    //   password: user.password
-    // }
+    /*
+    * `user` is the object of values passed in from Redux Form
+    * user = {
+    *   email: user.email,
+    *   password: user.password
+    * }
+    */
 
-    if (this.isFormValid()) {
-      API.login(user).then(response =&gt; {
-        if (response.success)) {
-          // Do some stuff! The form worked :)
-        } else {
-          // Set an error message
-        }
-      })
-    }
+    API.login(user).then(response =&gt; {
+      if (response.success)) {
+        // Do some stuff! The form worked :)
+      } else {
+        // Set an error message
+      }
+    })
   }
 
   render() {
-    const { submitting } = this.state
     const { handleSubmit } = this.props
 
     return (
@@ -391,7 +230,6 @@ class SignInForm extends Component {
         /&gt;
         &lt;Button
           className='cta full-width invert'
-          submitting={true}
         &gt;
           Submit
         &lt;/Button&gt;
@@ -408,72 +246,71 @@ SignInForm = reduxForm({
 export default SignInForm
 </code></pre>
 </div>
-<p>Using <code class="highlighter-rouge">redux-form</code> the code for that single login form component goes from about 159 lines to 76.</p>
-
-<p>Although there is some initial overhead when setting it up, I’ve found this method to significantly speed up development due to the fact that I’m not needlessly repeating code. It feels like magic.</p>
-
-<h2 id="redux-form-under-the-hood">Redux Form: Under the Hood</h2>
-<p>After setting up Redux Form, you’ll be able to see it at work using <a href="https://github.com/reduxjs/redux-devtools" target="_blank" class="link--text-in-p">Redux DevTools</a>:</p>
-<div class="video-container">
-  <div class="embed-container"><iframe src="https://player.vimeo.com/video/265891862?autoplay=1&amp;loop=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
-</div>
-
-<p>The form is stored under the name you give it, in this case <code class="highlighter-rouge">SignInForm</code>, while input data is stored under <code class="highlighter-rouge">values</code> and errors under <code class="highlighter-rouge">syncErrors</code>. Redux Form then provides meta information like those error messages, whether an input has been <code class="highlighter-rouge">touched</code>, and whether the form is or isn’t <code class="highlighter-rouge">dirty</code> as props in your form and input components.</p>
 
 <h3 id="custom-field-components">Custom Field Components</h3>
+<p>In the above example, you’ll see that <code class="highlighter-rouge">Field</code> takes a prop called <code class="highlighter-rouge">component</code>. This prop allows you define your own input component and can be either a <code class="highlighter-rouge">Component</code>, a stateless function, or a string name of one of the default supported DOM inputs (<code class="highlighter-rouge">input</code>, <code class="highlighter-rouge">textarea</code> or <code class="highlighter-rouge">select</code>).</p>
 
-<p>Speaking of input components, you’ll see that the above example contains <code class="highlighter-rouge">Field</code> component imported from <code class="highlighter-rouge">redux-form</code>. <code class="highlighter-rouge">Field</code> takes its own <code class="highlighter-rouge">component</code> prop that should be either a <code class="highlighter-rouge">Component</code>, a stateless function, or a string name of one of the default supported DOM inputs (<code class="highlighter-rouge">input</code>, <code class="highlighter-rouge">textarea</code> or <code class="highlighter-rouge">select</code>).</p>
+<p>In my case, I created a component called <code class="highlighter-rouge">ReduxFormInput</code>, allowing me to define the structure I wanted surrounding a basic <code class="highlighter-rouge">input</code> field:</p>
 
-<p>In my case, I created a <code class="highlighter-rouge">ReduxFormInput</code> component. Creating a fleshed out input component allows you to create some custom structure such as the placement and styling of the error message generated by redux-form.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>import React, { Component } from 'react'
 
-<div class="highlighter-rouge"><pre class="highlight"><code>// from ReduxFormInput's render function:
-render() {
-  // Provided by Redux Form:
-  // { input, label, type, meta: { touched, error } }
-  const {
-    input,
-    label,
-    meta: {
-      touched,
-      error
-    },
-    placeholder,
-    type,
-    disabled,
-    handleInputRemoval,
-    optionalClasses,
-  } = this.props
+class ReduxFormInput extends Component {
+  render() {
+    // Provided by Redux Form:
+    // { input, label, type, meta: { touched, error } }
+    const {
+      input,
+      label,
+      meta: {
+        touched,
+        error
+      },
+      placeholder,
+      type,
+      disabled,
+      handleInputRemoval,
+      optionalClasses,
+    } = this.props
 
-  return (
-    &lt;div
-      className={`input-container${optionalClasses ? ' ' + optionalClasses : ''}${touched &amp;&amp; error ? ' error' : ''}`}
-    &gt;
-      { label &amp;&amp;
-        &lt;label&gt;{label}&lt;/label&gt;
-      }
-      &lt;div className={`input-container-inner${handleInputRemoval ? ' removable' : ''}`}&gt;
-        &lt;input
-          {...input}
-          type={type}
-          placeholder={placeholder || label}
-          disabled={disabled || false}
-        /&gt;
-      &lt;/div&gt;
-      {touched &amp;&amp; error &amp;&amp;
-        &lt;div className="input-container-error-message"&gt;
-          {error}
+    return (
+      &lt;div
+        className={buildClassName([
+          'input-container',
+          optionalClasses,
+          touched &amp;&amp; error ? ' error' : '',
+        ])}
+      &gt;
+        { label &amp;&amp;
+          &lt;label&gt;{label}&lt;/label&gt;
+        }
+        &lt;div className='input-container-inner'&gt;
+          &lt;input
+            {...input}
+            type={type}
+            placeholder={placeholder || label}
+            disabled={disabled || false}
+          /&gt;
         &lt;/div&gt;
-      }
-    &lt;/div&gt;
-  )
+        {touched &amp;&amp; error &amp;&amp;
+          &lt;div className="input-container-error-message"&gt;
+            {error}
+          &lt;/div&gt;
+        }
+      &lt;/div&gt;
+    )
+  }
 }
+
+const buildClassName = (classes) =&gt; classes.filter(Boolean).join(" ")
+
+export default ReduxFormInput
 </code></pre>
 </div>
 
 <h3 id="field-level-validation">Field-Level Validation</h3>
-<p>One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (Sync, Submit, Async Blur, and more), I mainly make use of Field-Level Validation.</p>
+<p>One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (<a href="https://redux-form.com/7.3.0/examples/syncvalidation/" target="_blank" class="link--text-in-p">Sync</a>, <a href="https://redux-form.com/7.3.0/examples/submitvalidation/" target="_blank" class="link--text-in-p">Submit</a>, <a href="https://redux-form.com/7.3.0/examples/asyncvalidation/" target="_blank" class="link--text-in-p">Async Blur</a>, and more), I mainly make use of <a href="https://redux-form.com/7.3.0/examples/fieldlevelvalidation/" target="_blank" class="link--text-in-p">Field-Level Validation</a>.</p>
 
-<p><code class="highlighter-rouge">Field</code>’s <code class="highlighter-rouge">validate</code> prop accepts one or more functions to validate the value of the given field. If any field in a form doesn’t pass its field-level validation, this prevents the form from submitting.</p>
+<p>Field-Level Validation focuses on <code class="highlighter-rouge">Field</code>’s <code class="highlighter-rouge">validate</code> prop. It accepts one or more functions to validate the value of the given field. If an input doesn’t pass the requirements passed through <code class="highlighter-rouge">validate</code>, the entire form  won’t submit and an <code class="highlighter-rouge">error</code> prop is then passed to the input allowing you to render a message to the user.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>
 import { reduxForm, Field } from 'redux-form'
@@ -499,7 +336,9 @@ import { required, email } from '../../../utils/formValidators'
 </code></pre>
 </div>
 
-<p>While Redux Form documentation also provides examples of some basic validation functions that you can import and use on your <code class="highlighter-rouge">Field</code>s, you can always build your own.</p>
+<p>Redux Form’s documentation provides example validation functions, but you can also create custom functions to check input field values any way you want.</p>
+
+<p>Here are a bunch of snippets that I’ve used before:</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">/*</span><span class="w"> </span><span class="err">formValidators.js</span><span class="w"> </span><span class="err">*/</span><span class="p">}</span><span class="w">
 </span><span class="err">export</span><span class="w"> </span><span class="err">const</span><span class="w"> </span><span class="err">multipleValidations</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">(value,</span><span class="w"> </span><span class="err">validations)</span><span class="w"> </span><span class="err">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -548,7 +387,14 @@ import { required, email } from '../../../utils/formValidators'
 </span></code></pre>
 </div>
 
-<p>https://changelog.com/reactpodcast/2 - Formik</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>React Form isn’t the only package out there to manage forms in React (see <a href="https://github.com/jaredpalmer/formik" target="_blank" class="link--text-in-p">Formik</a>, <a href="https://github.com/davidkpiano/react-redux-form" target="_blank" class="link--text-in-p">React Redux Form</a>, and <a href="https://github.com/react-tools/react-form" target="_blank" class="link--text-in-p">React-Form</a> to name a few), but it’s the one that’s been making my life a whole lot easier.</p>
+
+<h3 id="other-resources">Other Resources</h3>
+<ul>
+  <li><a href="https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8" target="_blank" class="link--text-in-p">The React Podcast ft. Jared Palmer (touches on Formik)</a></li>
+  <li><a href="https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8" target="_blank" class="link--text-in-p">Why Build Your Forms with Redux Form</a></li>
+</ul>
 
           
       </div>
@@ -583,7 +429,7 @@ import { required, email } from '../../../utils/formValidators'
       <!-- <div class="post-nav">
         <div class="post-nav__direction post-nav__prev-post">
           
-            <a class="prev" href="/work/locker-linked.html">&laquo; Locker Linked</a>
+            <a class="prev" href="/work/tap-in-guide.html">&laquo; Tap In Guide</a>
           
         </div>
         <div class="post-nav__direction post-nav__next-post">
