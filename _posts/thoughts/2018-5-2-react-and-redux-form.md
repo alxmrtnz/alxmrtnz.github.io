@@ -8,7 +8,7 @@ featured-icon-url: /assets/posts/5-2-18/form-icon@2x.png
 featured-icon-alt: "Form Illustration"
 ---
 
-After just a few React projects, I grew to loathe setting up and managing forms. When I started learning and building with React, app development, data-binding, and state management were new to me and the idea of using <a href='https://reactjs.org/docs/forms.html#controlled-components' target="_blank" class="link--text-in-p">controlled components</a> to store and update input field values seemed like a lot of unnessesary overhead.
+When I started learning and building with React, app development, data-binding, and state management were new to me and the idea of using <a href='https://reactjs.org/docs/forms.html#controlled-components' target="_blank" class="link--text-in-p">controlled components</a> to store and update input field values seemed like a lot of unnessesary overhead.
 
 Luckily, a coworker suggested I try out <a href='https://redux-form.com' target="_blank" class="link--text-in-p">Redux Form</a>, a library that helps you manage form state and validation in redux rather than in a component.
 
