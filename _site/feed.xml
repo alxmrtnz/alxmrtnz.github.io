@@ -5,13 +5,13 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 02 May 2018 15:24:10 -0400</pubDate>
-    <lastBuildDate>Wed, 02 May 2018 15:24:10 -0400</lastBuildDate>
+    <pubDate>Sun, 06 May 2018 20:32:19 -0400</pubDate>
+    <lastBuildDate>Sun, 06 May 2018 20:32:19 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
         <title>React + Redux Form</title>
-        <description>&lt;p&gt;After just a few React projects, I grew to loathe setting up and managing forms. When I started learning and building with React, app development, data-binding, and state management were new to me and the idea of using &lt;a href=&quot;https://reactjs.org/docs/forms.html#controlled-components&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;controlled components&lt;/a&gt; to store and update input field values seemed like a lot of unnessesary overhead.&lt;/p&gt;
+        <description>&lt;p&gt;When I started learning and building with React, app development, data-binding, and state management were new to me and the idea of using &lt;a href=&quot;https://reactjs.org/docs/forms.html#controlled-components&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;controlled components&lt;/a&gt; to store and update input field values seemed like a lot of unnessesary overhead.&lt;/p&gt;
 
 &lt;p&gt;Luckily, a coworker suggested I try out &lt;a href=&quot;https://redux-form.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that helps you manage form state and validation in redux rather than in a component.&lt;/p&gt;
 
@@ -269,11 +269,57 @@ import { required, email } from '../../../utils/formValidators'
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 02 May 2018 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/thoughts/2018/05/02/form-management-in-react-and-redux.html</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/2018/05/02/form-management-in-react-and-redux.html</guid>
+        <link>http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html</guid>
         
         
         <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>Locker Linked</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/featured-image-locker-linked.jpg&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.lockerlinked.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Locker Linked&lt;/a&gt;  &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;front-end-development&quot;&gt;Front-End Development&lt;/h2&gt;
+
+&lt;h3 id=&quot;react--redux&quot;&gt;React + Redux&lt;/h3&gt;
+
+&lt;h4 id=&quot;profile-switcher&quot;&gt;Profile Switcher&lt;/h4&gt;
+
+&lt;h4 id=&quot;player-profile&quot;&gt;Player Profile&lt;/h4&gt;
+
+&lt;h4 id=&quot;building-in-components&quot;&gt;Building in Components&lt;/h4&gt;
+
+&lt;h3 id=&quot;redux-forms&quot;&gt;Redux Forms&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Link to &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot; class=&quot;link--text-in-p&quot;&gt;blog post&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;responsive-development&quot;&gt;Responsive Development&lt;/h2&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile.jpg&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sat, 14 Apr 2018 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/locker-linked.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
+        
+        
+        <category>work</category>
         
       </item>
     
@@ -288,7 +334,7 @@ import { required, email } from '../../../utils/formValidators'
 &lt;h3 id=&quot;a-guide-to-world-footballs-essential-matches&quot;&gt;A Guide to World Football’s Essential Matches&lt;/h3&gt;
 &lt;p&gt;Tap In is a simple dashboard guide to world football’s most essential matches. The application is designed to deliver all the daily information soccer fans need to know to stay on top of the beautiful game in real-time.&lt;/p&gt;
 
-&lt;h3 id=&quot;getting-involved&quot;&gt;Getting Involved&lt;/h3&gt;
+&lt;h3 id=&quot;my-involement&quot;&gt;My Involement&lt;/h3&gt;
 &lt;p&gt;It was the 2014 World Cup in Brazil that kicked off my obsession with the beautiful game. I grew up following American sports, but never had really paid any attention to the world’s sport: (the real) football.&lt;/p&gt;
 
 &lt;p&gt;I initially stumbled across a version of Tap In during the summer of 2014 produced specifically for that year’s World Cup, but didn’t pay it much attention after Germany were crowned champions that summer.&lt;/p&gt;
@@ -327,7 +373,7 @@ import { required, email } from '../../../utils/formValidators'
   &lt;/span&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;working-with-a-dispersed-team&quot;&gt;Working with a Dispersed Team&lt;/h3&gt;
+&lt;h3 id=&quot;working-with-a-remote-team&quot;&gt;Working with a Remote Team&lt;/h3&gt;
 &lt;p&gt;At Tap In, we have team members living in Minnesota, Texas, Ohio, and even Norway. Thanks to platforms like Slack and Trello, we’re all able to keep in touch, even when many of us have never even met in person.&lt;/p&gt;
 
 &lt;p&gt;It’s been a blast building a project like this. Every team member contributes due to their passion for soccer and even if we haven’t met on the playing field, we’ve built a sense of camaraderie that transcends sport and technology.&lt;/p&gt;
@@ -339,19 +385,6 @@ import { required, email } from '../../../utils/formValidators'
         
         
         <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Alex Martinez – Postlight</title>
-        <description>&lt;div class=&quot;resume-container&quot;&gt;
-	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFMkQyeDdSUXRSTDA/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 14 Nov 2016 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/resume-postlight/index.html</link>
-        <guid isPermaLink="true">http://localhost:4000/resume-postlight/index.html</guid>
-        
         
       </item>
     
@@ -439,12 +472,25 @@ import { required, email } from '../../../utils/formValidators'
 &lt;/ol&gt;
 
 </description>
-        <pubDate>Wed, 05 Oct 2016 15:46:27 -0400</pubDate>
+        <pubDate>Thu, 05 Oct 2017 15:46:27 -0400</pubDate>
         <link>http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</link>
         <guid isPermaLink="true">http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</guid>
         
         
         <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>Alex Martinez – Postlight</title>
+        <description>&lt;div class=&quot;resume-container&quot;&gt;
+	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFMkQyeDdSUXRSTDA/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 14 Nov 2016 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/resume-postlight/index.html</link>
+        <guid isPermaLink="true">http://localhost:4000/resume-postlight/index.html</guid>
+        
         
       </item>
     
@@ -879,119 +925,6 @@ With content being broken up into several main sections, I defined colors that w
         <link>http://localhost:4000/meetedgar-resume/index.html</link>
         <guid isPermaLink="true">http://localhost:4000/meetedgar-resume/index.html</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>Outlook Relationship Management System</title>
-        <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/featured-image-orms.jpg&quot; /&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.theoutlookgroup.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Outlook Group&lt;/a&gt; is one of the nation’s largest marketing firms in the pre-need* funeral industry and has a national team of sales representatives who work with individual funeral homes to maintain and develop their own customer bases.&lt;/p&gt;
-
-&lt;p&gt;I worked with the group and a small team to create the Outlook Relationship Management System (ORMS), a web application that improves the workflow of The Outlook Group’s sales representatives and client funeral homes.&lt;/p&gt;
-
-&lt;p&gt;I focused on establishing the overall visual language and user experience of the platform and also worked closely with project developers throughout implementation.&lt;/p&gt;
-
-&lt;p class=&quot;footnote&quot;&gt;
-  * pre-need services include things such as pre-need life insurance policies that cover the cost of predetermined expense of a funeral, cremation, or burial.
-&lt;/p&gt;
-
-&lt;h2 id=&quot;opportunity-management&quot;&gt;Opportunity Management&lt;/h2&gt;
-
-&lt;p&gt;To allow Outlook Group sales representatives to record and monitor potential customers, we designed a robust opportunities management page.&lt;/p&gt;
-
-&lt;p&gt;Beginning with simple sketches, we were able to validate functionality with Outlook Group stakeholders before moving into visual design.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-wireframe-sketches__opportunities.jpg&quot; alt=&quot;ORMS Wireframe Sketch - Opportunities Table&quot; /&gt;
-	    &lt;span class=&quot;img-caption&quot;&gt;One of our first wireframe iterations for managing customer prospects, leads, and accounts (credit: &lt;a href=&quot;https://www.zachkuzmic.com/&quot; target=&quot;_blank&quot;&gt;Zach Kuzmic&lt;/a&gt;).&lt;/span&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Through iteration, we designed and implemented essential functionality for filtering, searching, and sorting opportunities.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-screenshot__opportunities@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunities Table&quot; /&gt;
-	    &lt;span class=&quot;img-caption&quot;&gt;Several iterations of wireframes and visual design led to a robust page for managing sales opportunities.&lt;/span&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;h2 id=&quot;task-management-and-collaboration&quot;&gt;Task Management and Collaboration&lt;/h2&gt;
-
-&lt;p&gt;We paid special attention to how Outlook Group sales reps collaborate around individual opportunities.&lt;/p&gt;
-
-&lt;p&gt;Users can add and categorize notes in a timeline format for easy future reference, create custom tasks, and schedule appointments that tie into the app’s calendar.&lt;/p&gt;
-
-&lt;p&gt;All of this functionality is available between multiple system users, allowing sales reps to collaboratively record and monitor information on each opportunity.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-screenshot__opportunity-detail@2x.png&quot; alt=&quot;ORMS Application Screenshot - Opportunity Detail Page&quot; /&gt;
-	    &lt;span class=&quot;img-caption&quot;&gt;Users can collaborate on individual opportunities through the use of notes, tasks, and appointments.&lt;/span&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;h3 id=&quot;system-vs-custom-tagging&quot;&gt;System vs Custom Tagging&lt;/h3&gt;
-
-&lt;p&gt;Another piece of functionality we were added to ORMS was tagging. ORMS allows users to create custom tags for each opportunity in addition to the base set of tags that Outlook Group admins create.&lt;/p&gt;
-
-&lt;p&gt;The “Outlook Tags,” not only help guide their sales reps in the creation of their own custom tags, but also provides valuable usage data to Outlook Group admins for future iteration.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-detail__tags.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;h2 id=&quot;calendar-integration&quot;&gt;Calendar Integration&lt;/h2&gt;
-
-&lt;p&gt;An in-app calendar that can integrate with any major calendar provider proved an important part of the ORMS system.&lt;/p&gt;
-
-&lt;p&gt;Both sales reps and Outlook Group admins needed the ability to track appointments with potential opportunities and current customers. Additionally, admins are able to access employee calendars to help coordinate business.&lt;/p&gt;
-
-&lt;p&gt;The calendar we designed and implemented integrates with Google and allows for everyone within the Outlook Group to stay on the same page.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-screenshot__calendar@2x.png&quot; alt=&quot;ORMS Application Screenshot - Calendar&quot; /&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;h2 id=&quot;a-responsive-visual-system&quot;&gt;A Responsive, Visual System&lt;/h2&gt;
-
-&lt;p&gt;From the beginning of the project, we focused on creating a responsive web application experience.&lt;/p&gt;
-
-&lt;p&gt;As I began the visual design process, I worked on identifying some base styles and flexible components that could be reused across the system.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/orms/orms-detail__responsive@2x.png&quot; alt=&quot;ORMS Application Screenshot - Various Responsive Mobile Screens&quot; /&gt;
-	    &lt;span class=&quot;img-caption text--centered&quot;&gt;I worked on creating a responsive card system that could accomodate graphs, tables, calendars, and more.&lt;/span&gt;
-	&lt;/div&gt; 
-&lt;/div&gt;
-
-&lt;div class=&quot;fin-tip&quot;&gt;	
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-	Conclusion
-&lt;/h2&gt;
-
-&lt;p&gt;ORMS has become a robust internal tool for a national workforce. With a small team and close collaboration with our client, we were able to deliver a fully-responsive CRM that suits the Outlook Group’s specific needs.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 08 Sep 2016 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/work/orms.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/orms.html</guid>
-        
-        
-        <category>work</category>
         
       </item>
     

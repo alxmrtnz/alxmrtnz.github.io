@@ -548,7 +548,7 @@ ul.social-icon-list {
     z-index: 1;
     -webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
     filter: grayscale(1) contrast(1.1) brightness(1.1);
-    background: url(../assets/images/alexis1.jpg) no-repeat center center fixed;
+    background: url(../assets/images/auba.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -778,31 +778,31 @@ ul.social-icon-list {
   text-align: center; }
 
 .work-list__heading {
-  position: relative;
-  padding-top: 45px;
+  display: inline-block;
   margin-bottom: 30px;
   padding-bottom: 10px;
-  display: inline-block; }
+  padding-top: 45px;
+  position: relative; }
   .work-list__heading:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 95%;
-    height: 4px;
     background: #D2D9DE;
-    bottom: 0px; }
+    bottom: 0px;
+    content: '';
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 95%; }
   @media screen and (min-width: 800px) {
     .work-list__heading {
       padding-top: 70px; } }
 
 .work-list {
-  max-width: 540px;
   margin: 0 auto;
+  max-width: 540px;
   padding: 0px 15px 30px 15px; }
   @media screen and (min-width: 800px) {
     .work-list {
-      padding: 0 30px 50px 30px;
-      max-width: 1240px; } }
+      max-width: 1240px;
+      padding: 0 30px 50px 30px; } }
 
 .work-list__row {
   display: flex;
@@ -846,13 +846,13 @@ ul.social-icon-list {
       margin-bottom: 10px; } }
 
 .article__summary {
-  text-align: left;
-  padding: 20px;
-  transition: background .25s ease;
-  display: flex;
   align-items: center;
+  background: #fff;
+  display: flex;
   overflow: hidden;
-  background: #fff; }
+  padding: 20px;
+  text-align: left;
+  transition: background .25s ease; }
   .article__summary .summary__text {
     width: 90%; }
   .article__summary .summary__arrow {
@@ -1033,21 +1033,21 @@ ul.social-icon-list {
         margin-bottom: 70px; } }
 
 .grid__item {
+  background: #EAEFF2;
   box-sizing: border-box;
   margin-bottom: 20px;
-  width: auto;
   text-align: center;
-  background: #EAEFF2; }
+  width: auto; }
 
 .img-caption {
+  color: #a6b0c3;
+  display: block;
   font-family: "aktiv-grotesk", sans-serif;
   font-size: 15px;
   line-height: 18px;
-  padding-top: 8px;
   padding-bottom: 10px;
-  text-align: left;
-  display: block;
-  color: #a6b0c3; }
+  padding-top: 8px;
+  text-align: left; }
   .img-caption a {
     color: #6c8fa4;
     text-decoration: underline; }
