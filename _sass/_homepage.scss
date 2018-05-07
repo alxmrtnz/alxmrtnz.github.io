@@ -1,165 +1,164 @@
 $home-mono-type-margin-vertical: 60px;
 
 .body--homepage {
-	height: 100%;
+  height: 100%;
 }
 
 .home-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	position: relative;
-	overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .content-wrapper--homepage {
-	margin: auto;
-	z-index: 2;
+  margin: auto;
+  z-index: 2;
 }
 
 .home--bio {
-	position: relative;
+  position: relative;
 }
 
 .home--bio-h1 {
-	// margin-bottom: $home-mono-type-margin-vertical;
-	text-align: center;
+  // margin-bottom: $home-mono-type-margin-vertical;
+  text-align: center;
 }
 
 .home--bio-copy {
-	font-family: $sans-serif;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 0px;
+  font-family: $sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
     font-size: 28px;
-	line-height: 36px;
+  line-height: 36px;
 
-	@media screen and (min-width: $on-palm) {
-	    font-size: 40px;
-		line-height: 48px;
-	}
-	@media screen and (min-width: $on-laptop) {
-		font-size: 58px;
-		line-height: 69px;
-	}
+  @media screen and (min-width: $on-palm) {
+      font-size: 40px;
+    line-height: 48px;
+  }
+  @media screen and (min-width: $on-laptop) {
+    font-size: 58px;
+    line-height: 69px;
+  }
 }
 
 ul.list--home-links {
 
-	margin-top: $home-mono-type-margin-vertical;
-	text-align: center;
+  margin-top: $home-mono-type-margin-vertical;
+  text-align: center;
 
-	li {
-		display: inline-block;
-		list-style: none;
-		margin: 0px 15px;
+  li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
 
-	}
+  }
 }
 
 ul.social-icon-list {
-	// bottom: -60px;
-	margin-bottom: $home-mono-type-margin-vertical - 30;
+  // bottom: -60px;
+  margin-bottom: $home-mono-type-margin-vertical - 30;
 
-	// position: absolute;
-	text-align: center;
-	width: 100%;
+  // position: absolute;
+  text-align: center;
+  width: 100%;
 
-	li {
-		display: inline-block;
-		font-size: 20px;
-		list-style: none;
-		margin: 0px 8px 0px 0px;
+  li {
+    display: inline-block;
+    font-size: 20px;
+    list-style: none;
+    margin: 0px 8px 0px 0px;
 
-		a {
-			color: $gray-color-dark;
+    a {
+      color: $gray-color-dark;
 
-			&:hover {
-				color: $brand-color;
-			}
-		}
-	}
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
 }
 
 .homepage-images {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	opacity: .3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  opacity: .3;
 }
 
 .homepage-image-container {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 
-	.homepage-background-image {
-		height: 100%;
-		width: 100%;
-		z-index: 1;
-		-webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
-		filter: grayscale(1) contrast(1.1) brightness(1.1);
-		background: url(../assets/images/auba.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	    background-position-x: 70%;
+  .homepage-background-image {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
+    filter: grayscale(1) contrast(1.1) brightness(1.1);
+    background: url(../assets/images/auba.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      background-position-x: 70%;
 
-	    @media screen and (min-width: $on-palm) {
-	        background-position-x: auto;
-	    }
-	}
+      @media screen and (min-width: $on-palm) {
+          background-position-x: auto;
+      }
+  }
 
-	&:before {
-		content: '';
-	    display: block;
-	    height: 100%;
-	    width: 100%;
-	    top: 0;
-	    left: 0;
-	    position: absolute;
-	    pointer-events: none;
-	    z-index: 2;
+  &:before {
+    background: $gray-color;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    mix-blend-mode: soft-light;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
 
-	    background: $gray-color;
-        mix-blend-mode: soft-light;
-	}
+  &:after {
+    z-index: 3;
+    content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      pointer-events: none;
 
-	&:after {
-		z-index: 3;
-		content: '';
-	    display: block;
-	    height: 100%;
-	    width: 100%;
-	    top: 0;
-	    left: 0;
-	    position: absolute;
-	    pointer-events: none;
-
-	    background: #050110;
+      background: #050110;
         mix-blend-mode: lighten;
-	}
+  }
 }
 
 .football-trigger {
-	&:hover {
-		cursor: help;
-	}
+  &:hover {
+    cursor: help;
+  }
 }
 
 .js-homepage-img-toggle {
-	opacity: 0;
-	-webkit-transition: opacity .2s ease-in;
-	-moz-transition: opacity .2s ease-in;
-	-ms-transition: opacity .2s ease-in;
-	-o-transition: opacity .2s ease-in;
-	transition: opacity .2s ease-in;
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -ms-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in;
 
-	&.show-opacity {
-		opacity: 1;
-	}
+  &.show-opacity {
+    opacity: 1;
+  }
 }

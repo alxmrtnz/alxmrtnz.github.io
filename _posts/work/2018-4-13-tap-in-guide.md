@@ -17,11 +17,10 @@ thumbnail-image: tap-in/tap-in-thumbnail.jpg
   </div>
 </div>
 
-### A Guide to World Football's Essential Matches
+## A Guide to World Football's Essential Matches
 Tap In is a simple dashboard guide to world football’s most essential matches. The application is designed to deliver all the daily information soccer fans need to know to stay on top of the beautiful game in real-time.
 
-
-### My Involement
+## My Role
 It was the 2014 World Cup in Brazil that kicked off my obsession with the beautiful game. I grew up following American sports, but never had really paid any attention to the world's sport: (the real) football.
 
 I initially stumbled across a version of Tap In during the summer of 2014 produced specifically for that year's World Cup, but didn't pay it much attention after Germany were crowned champions that summer.
@@ -39,14 +38,14 @@ As it turned out, they were glad to have me on board and I came on as a <strong>
   </span>
 </div>
 
-### Technologies
+## Technologies
 Tap In is built using React, React Native, JavaScript, Python, and Django. While I mainly contribute to the React web app, I also helped launch the initial React Native app and now maintain it along with developer David Pett.
 
 The Tap In API, built by <a href="https://twitter.com/minnepixel" target="_blank" class="link--text-in-p">Clint McMahon</a>, supplies data via <a href="https://football-api.com/" target="_blank" class="link--text-in-p">Football API</a> in order to provide users with live match events such as goals, yellow/red cards, and substitutions.
 
-React has proved to be a very useful library for building and managing components. Not only that, but by building our app in React Native, much of the front-end structure translates between the two environments, allowing us to quickly ship new features.
+React proved to be a very useful library for building and managing components. Not only that, but by building our app in React Native, much of the front-end structure translates between the two environments, allowing us to quickly ship new features.
 
-### Design
+## Design
 Tap In's visual style sets it apart from other sports websites and apps. Its simple aesthetic was actually one of the things that initially drew me in. Designer <a href="https://twitter.com/mike_arney" target="_blank" class="link--text-in-p">Mike Arney</a> developed the core style, taking teams' crests and reducing them to minimal and geometric icons.
 
 As Tap In added coverage for more leagues (such as MLS in the U.S. and Liga MX in Mexico), we needed to add more teams' crests. I worked with Mike to develop about two dozen of the crests used in the app today.
@@ -60,10 +59,17 @@ As Tap In added coverage for more leagues (such as MLS in the U.S. and Liga MX i
   </span>
 </div>
 
-### Working with a Remote Team
+<h2 class="text-center">
+  Final Thoughts
+</h2>
 At Tap In, we have team members living in Minnesota, Texas, Ohio, and even Norway. Thanks to platforms like Slack and Trello, we're all able to keep in touch, even when many of us have never even met in person.
 
 It's been a blast building a project like this. Every team member contributes due to their passion for soccer and even if we haven't met on the playing field, we've built a sense of camaraderie that transcends sport and technology.
 
+<hr/>
 
-
+<div class="text--centered">
+  <p>
+    <a href="https://www.tapinguide.com/" target="_blank" class="link--text-in-p">Visit Tap In online</a> or download it on the <a href="https://itunes.apple.com/us/app/tap-in-guide/id1265129819" target="_blank" class="link--text-in-p">App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.tapinguide.matchday" target="_blank" class="link--text-in-p">Google Play</a>
+  </p>
+</div>

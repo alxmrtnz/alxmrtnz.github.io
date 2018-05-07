@@ -558,17 +558,17 @@ ul.social-icon-list {
       .homepage-image-container .homepage-background-image {
         background-position-x: auto; } }
   .homepage-image-container:before {
+    background: #EAEFF2;
     content: '';
     display: block;
     height: 100%;
-    width: 100%;
-    top: 0;
     left: 0;
-    position: absolute;
+    mix-blend-mode: soft-light;
     pointer-events: none;
-    z-index: 2;
-    background: #EAEFF2;
-    mix-blend-mode: soft-light; }
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2; }
   .homepage-image-container:after {
     z-index: 3;
     content: '';
@@ -672,7 +672,7 @@ ul.social-icon-list {
   text-align: center; }
 
 .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content p, .post-content ol, .post-content ul, .work-content h1, .work-content h2, .work-content h3, .work-content h4, .work-content h5, .work-content p, .work-content ol, .work-content ul {
-  max-width: 700px;
+  max-width: 750px;
   padding: 0px 20px;
   margin-left: auto;
   margin-right: auto; }
@@ -724,9 +724,12 @@ ul.social-icon-list {
       margin-left: 20px;
       font-size: .9em;
       line-height: 1.5em; }
+.post-content hr, .work-content hr {
+  max-width: 750px;
+  margin: 40px auto; }
 
 .post-content {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto 70px auto; }
   @media screen and (min-width: 600px) {
     .post-content {
@@ -753,7 +756,7 @@ ul.social-icon-list {
   overflow: hidden;
   border-top: 1px solid #EAEFF2;
   padding-top: 20px;
-  max-width: 700px;
+  max-width: 750px;
   margin: 20px auto; }
 
 .post-nav__direction {
@@ -766,7 +769,7 @@ ul.social-icon-list {
   float: right; }
 
 .post-comments {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto 100px auto; }
 
 .footnote {
