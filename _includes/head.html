@@ -4,7 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="kf8-oEOzkveV_8ZnJN6P7InR5cl14Ik9R3Phxayihgk" />
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>
+        {% if page.title %}
+            {{ page.title }} | Alex Martinez
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
     <meta name="description" content="{{ site.description }}">
 
     <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/favicons/apple-touch-icon-57x57.png">

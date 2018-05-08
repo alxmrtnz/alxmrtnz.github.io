@@ -34,7 +34,7 @@ Using `redux-form` simplified form management by allowing me to store a form's i
 
 After setting up Redux Form, you'll be able to see it at work using <a href='https://github.com/reduxjs/redux-devtools' target="_blank" class="link--text-in-p">Redux DevTools</a>:
 <div class="video-container">
-  <div class='embed-container'><iframe src='https://player.vimeo.com/video/265891862?autoplay=1&loop=1&loop=1&title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+  <div class='embed-container'><iframe src='https://player.vimeo.com/video/265891862?autoplay=1&loop=1&loop=1&title=0&byline=0&portrait=0&muted=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 </div>
 
 The form is stored under the name you give it, in this case `SignInForm`, while input data is stored under `values` and errors under `syncErrors`. Redux Form then provides meta information like those error messages, whether an input has been `touched`, and whether the form is or isn't `dirty` as props in your form and input components.

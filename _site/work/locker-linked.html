@@ -7,7 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="kf8-oEOzkveV_8ZnJN6P7InR5cl14Ik9R3Phxayihgk" />
 
-    <title>Locker Linked</title>
+    <title>
+        
+            Locker Linked | Alex Martinez
+        
+    </title>
     <meta name="description" content="Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.<br>This site is a work in progress and is being built with Jekyll and hosted on Github.">
 
     <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/favicons/apple-touch-icon-57x57.png">
@@ -63,7 +67,7 @@
 
   <div class="wrapper">
 
-    <!--<a class="site-title" href="/">Alex Martinez</a>
+    <!--<a class="site-title" href="/">Alex Martinez | Front-End Developer & Product Designer</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -79,9 +83,15 @@
           
         
           
-        
+          <a class="page-link" href="/about/">About</a>
           
         
+          
+          <a class="page-link" href="/work/">Work</a>
+          
+        
+          
+          <a class="page-link" href="/thoughts/">Thoughts</a>
           
         
           
@@ -164,52 +174,79 @@
 
 <p>Locker Linked simplifies the recruitment process, allowing student athletes to set up a player profile to showcase skills, connect directly with coaches and recruiters, and get exclusive access to essential resources to maximize potential recruitment.</p>
 
-<h2 id="my-role">My Role</h2>
+<h3 id="my-role">My Role</h3>
 <p>While my team at Whitelabel worked closely with Locker Linked to design and build their entire platform, from design to development, I worked specifically on the development team focusing on building the front-end of the platform in React.</p>
 
 <p>The app is built with React and Redux on the front-end, integrates with <a href="https://stripe.com/" target="_blank" class="link--text-in-p">Stripe</a> for user payment, and connects to a Rails backend. I worked closely with our lead backend developer to build a component-based UI that hooked up seamlessly with our backend database and architecture.</p>
 
-<div class="grid">
+<div class="grid grid-mt">
   <div class="grid__item grid__item--full no-shadow">
     <img src="http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-devices.jpg" alt="Locker Linked Profile shown on MacBook and iPhone" />
   </div>
 </div>
 
 <h2 id="creating-a-showcase-for-athletes">Creating a Showcase for Athletes</h2>
-<h3 id="the-intricacies-of-profile-management">The Intricacies of Profile Management</h3>
-<p>1) Talk about how Parents, Athletes and Coaches could all sign up and manage a profile
-This necessitated a complex onboarding process (which also had social auth)
-Link to <a href="/thoughts/2018/05/02/react-and-redux-form.html" class="link--text-in-p">blog post</a>
-Profile Switcher
+<h3 id="building-a-flexible-profile">Building a Flexible Profile</h3>
+<p>The athlete profile turned out to be one of my favorite parts of the app due to the variety of components needed to accomodate such a wide range of sports played by student athletes. In addition, the profile serves as the entry point for college recruiters’ evaluations of student athletes, making it a focal point of the platform.</p>
+
+<p>Locker Linked wanted to allow athletes to post photos, videos, statistics, awards, camps, and reference contact information in addition to the ability to add multiple sports they may play.</p>
+
+<div class="grid grid-mt grid-mb">
+  <div class="grid__item grid__item--full no-shadow">
+    <img src="http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-responsive.jpg" alt="Locker Linked Athlete Profile Screenshot" />
+  </div>
+</div>
+
+<h3 id="reusable-components">Reusable Components</h3>
+<p>The component-based nature of the athlete profile allowed us to focus on creating reusable elements. We were able to build the profile component by component and think about how to reuse several components in forms where users would manage the actual profile.</p>
+
+<p>Components like our <code class="highlighter-rouge">TabSelect.js</code> were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.</p>
+
+<div class="grid grid-mt grid-mb">
+  <div class="grid__item grid__item--half no-shadow ">
+     <img src="http://localhost:4000/assets/work/lockerlinked/tab-select-1.gif" alt="Tab Select Component Video Gif" />
+  </div>
+  <div class="grid__item grid__item--half no-shadow end">
+      <img src="http://localhost:4000/assets/work/lockerlinked/tab-select-2.gif" alt="Tab Select Component Video Gif" />
+  </div>
+  <span class="img-caption">
+    We built responsive components that could be repurposed in different contexts (left: athelte profile, right: user dashboard)
+  </span>
+</div>
+
+<h2 id="the-intricacies-of-profile-management">The Intricacies of Profile Management</h2>
+<p>Profile management was one of the biggest challenges in building Locker Linked. In addition to the actual student athlete, profiles can be managed by parents/guardians (and soon coaches, too!).</p>
+
+<p>Not only that, but a single user can have admin access to manage and edit any number of athlete profiles. This many-to-one relationship of profile management necessitated careful consideration when it came to both onboarding and the user dashboard.</p>
+
+<p>Profile Switcher
 How forms needed updating based on active profile</p>
 
 <h2 id="learning-to-love-forms">Learning to Love Forms</h2>
 <h3 id="form-management-with-redux-forms">Form Management with Redux-Forms</h3>
+<p>Link to <a href="/thoughts/2018/05/02/react-and-redux-form.html" class="link--text-in-p">blog post</a></p>
 
-<h2 id="a-focus-on-front-end-components">A Focus on Front-End Components</h2>
-<h3 id="customized-components">Customized Components</h3>
-<p>TabSelect.js
-Showcase user profile - made up of responsive components</p>
-<h3 id="integrating-dropshiftjs">Integrating Dropshift.js</h3>
-<p>Showcase</p>
+<div class="fin-tip">
+</div>
 
-<h2 id="lessons-learned">Lessons Learned</h2>
-
+<h2 class="text-center">
+  Conclusion &amp; Lessons Learned
+</h2>
 <div class="grid">
   <div class="grid__item grid__item--full">
     <img src="http://localhost:4000/assets/work/lockerlinked/locker-linked-homepage.jpg" alt="Locker Linked Homepage" />
-  </div>
-  <div class="grid__item grid__item--full no-shadow">
-    <img src="http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-stats.jpg" alt="Locker Linked Athlete Profile Screenshot" />
-  </div>
-  <div class="grid__item grid__item--full">
-    <img src="http://localhost:4000/assets/work/lockerlinked/locker-linked-locker-profile.jpg" alt="Locker Linked Profile Management Screenshot" />
   </div>
   <div class="grid__item grid__item--full">
     <img src="http://localhost:4000/assets/work/lockerlinked/locker-linked-dashboard.jpg" alt="Locker Linked User Dashboard Screenshot" />
   </div>
   <div class="grid__item grid__item--full">
     <img src="http://localhost:4000/assets/work/lockerlinked/locker-linked-coach-search.jpg" alt="Locker Linked Dashboard Search Screenshot" />
+  </div>
+  <div class="grid__item grid__item--full no-shadow">
+    <img src="http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-stats.jpg" alt="Locker Linked Athlete Profile Screenshot" />
+  </div>
+  <div class="grid__item grid__item--full">
+    <img src="http://localhost:4000/assets/work/lockerlinked/locker-linked-locker-profile.jpg" alt="Locker Linked Profile Management Screenshot" />
   </div>
 </div>
 
