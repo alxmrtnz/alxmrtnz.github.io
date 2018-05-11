@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
     {% include nav.html %}
     <div class="page-content page-content--work">
-
-          <header class="hero">
-            <div class="hero__content">
-              <p class="work-type text--mono">{{ page.work-type }}</p>
-              <div class="hero__title-container">
-                <h1 class="work-title heading--large">{{ page.title }}</h1>
-              </div>
-              <div class="hero__summary-container">
-                <p class="work-summary">
-                  {{ page.work-summary }}
-                </p>
-                {% if page.external-link %}
-                  <p class="work-summary">
-                    <a href="{{ page.external-link }}" target="_blank" class="link--text-in-p">Visit the Site</a>
-                  </p>
-                {% endif %}
-              </div> <!-- end .hero__summary-container -->
-            </div>
-          </header>
-
+      <header class="hero">
+        <div class="hero__content">
+          <p class="work-type text--mono">{{ page.work-type }}</p>
+          <div class="hero__title-container">
+            <h1 class="work-title heading--large">{{ page.title }}</h1>
+          </div>
+          <div class="hero__summary-container">
+            <p class="work-summary">
+              {{ page.work-summary }}
+            </p>
+            {% if page.external-link %}
+              <p class="work-summary">
+                <a href="{{ page.external-link }}" target="_blank" class="link--text-in-p">Visit the Site</a>
+              </p>
+            {% endif %}
+          </div>
+        </div>
+      </header>
       <div class="work-content">
-          {{ content }}
+        {{ content }}
       </div>
-
       <div class="post-comments">
         {% include comments.html %}
       </div>
     </div>
-
     {% include footer.html %}
-
   </body>
-
 </html>
