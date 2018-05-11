@@ -1062,6 +1062,8 @@ ul.social-icon-list {
   box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
   -webkit-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
   -moz-box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.13); }
+  .grid__item--full img.image-medium, .grid__item--half img.image-medium {
+    max-width: 960px; }
 .grid__item--full.no-shadow img, .grid__item--half.no-shadow img {
   box-shadow: none;
   -webkit-box-shadow: none;

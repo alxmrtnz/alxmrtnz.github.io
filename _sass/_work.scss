@@ -409,6 +409,10 @@ $work-break: 800px;
     box-shadow: $box-shadow-standard;
     -webkit-box-shadow: $box-shadow-standard;
     -moz-box-shadow: $box-shadow-standard;
+
+    &.image-medium {
+      max-width: 960px;
+    }
   }
 
   &.no-shadow {

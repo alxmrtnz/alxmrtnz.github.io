@@ -13,7 +13,7 @@ thumbnail-image: tap-in/tap-in-thumbnail.jpg
 
 <div class="grid grid--featured-image">
   <div class="grid__item grid__item--full">
-      <img  src="{{ site.url }}/assets/work/tap-in/featured-image-tap-in@2x.jpg">
+      <img src="{{ site.url }}/assets/work/tap-in/featured-image-tap-in@2x.jpg">
   </div>
 </div>
 
