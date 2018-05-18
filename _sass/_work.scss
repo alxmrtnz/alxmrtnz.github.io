@@ -125,6 +125,8 @@ $work-break: 800px;
 
   @media screen and (min-width: $work-break) {
     background: none;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
@@ -145,234 +147,219 @@ $work-break: 800px;
     color: #A2A6A8;
 }
 
-
-
-
-
 // This work-content class is used to contain all text within case studies.
 // Here we set max-widths on all text so that we can have images in
 // case studies break the width of the surrounding text.
 
 .page-content--work {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .hero {
-    margin: 0px 17px 17px 17px;
+  margin: 0px 17px 17px 17px;
 }
 
 .hero__content {
-    max-width: 1070px;
-    margin: 10px auto;
-    padding-top: 40px;
-    border-top: 1px solid $gray-color;
+  max-width: 1070px;
+  margin: 10px auto;
+  padding-top: 40px;
+  border-top: 1px solid $gray-color;
 
-    @media screen and (min-width: $on-tablet) {
-        margin: 150px auto;
-        border-top: 0px;
-        padding-top: 0px;
-    }
+  @media screen and (min-width: $on-tablet) {
+    border-top: 0px;
+    margin: 150px auto;
+    padding-top: 0px;
+  }
 }
 
 .hero__title-container, .hero__summary-container {
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .hero__title-container {
-
-    @media screen and (min-width: $on-tablet) {
-        width: 38%;
-        margin-right: 3%;
-    }
+  @media screen and (min-width: $on-tablet) {
+    margin-right: 3%;
+    width: 38%;
+  }
 }
 
 .work-type {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .work-title {
-    font-size: 32px;
-    line-height: 38px;
+  font-size: 32px;
+  line-height: 38px;
 
-    @media screen and (min-width: $on-tablet) {
-        font-size: 38px;
-        line-height: 45px;
-    }
+  @media screen and (min-width: $on-tablet) {
+    font-size: 38px;
+    line-height: 45px;
+  }
 }
 
 .hero__summary-container {
-
-
-    @media screen and (min-width: $on-tablet) {
-        width: 58%;
-        max-width: 600px;
-    }
+  @media screen and (min-width: $on-tablet) {
+    max-width: 600px;
+    width: 58%;
+  }
 }
 
 .work-summary {
-    font-size: 20px;
-    line-height: 28px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 .pop-out-image__container {
-    margin-bottom: 35px;
-    padding: 0 20px;
-    position: relative;
-    transition: all .2s;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  position: relative;
+  transition: all .2s;
 }
 
 .pop-out-image {
+  position: relative;
+  transition: all .2s;
+
+  &:after {
+    background-size: 20px 20px;
+    background: url("../assets/zapier/images/external-link.png") no-repeat 0 0;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    opacity: .4;
+    position: absolute;
+    right: 20px;
+    top: 20px;
     transition: all .2s;
-    position: relative;
+    width: 20px;
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-standard;
+    -webkit-box-shadow: $box-shadow-standard;
+    -moz-box-shadow: $box-shadow-standard;
+    cursor: pointer;
 
     &:after {
-        position: absolute;
-        content: "";
-        width: 20px;
-        height: 20px;
-        background: url("../assets/zapier/images/external-link.png") no-repeat 0 0;
-        background-size: 20px 20px;
-        opacity: .4;
-        top: 20px;
-        right: 20px;
-        display: inline-block;
-        transition: all .2s;
+      opacity: 1;
     }
-
-    &:hover {
-        cursor: pointer;
-
-        box-shadow: $box-shadow-standard;
-        -webkit-box-shadow: $box-shadow-standard;
-        -moz-box-shadow: $box-shadow-standard;
-
-        &:after {
-            opacity: 1;
-        }
-    }
+  }
 }
 
 .work-content {
 
-    ol, ul {
-        background: $gray-color-light;
-        color: $black;
-        font-family: $sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        margin-bottom: 30px;
-        max-width: 625px;
-        padding: 35px 50px;
+  ol, ul {
+    background: $gray-color-light;
+    color: $black;
+    font-family: $sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    max-width: 625px;
+    padding: 35px 50px;
 
-        li {
-            margin-bottom: 5px;
-            list-style-type: circle;
+    li {
+      margin-bottom: 5px;
+      list-style-type: circle;
 
-            ul {
-                padding: 0px 0px 0px 20px;
-                margin-bottom: 10px;
-            }
+      ul {
+        padding: 0px 0px 0px 20px;
+        margin-bottom: 10px;
+      }
 
-            &:last-child {
-                margin-bottom: 0px;
+      &:last-child {
+        margin-bottom: 0px;
 
-                ul {
-                    margin-bottom: 0px;
-                }
-            }
+        ul {
+          margin-bottom: 0px;
         }
+      }
     }
+  } // End ol, ul
 
-    .video-container {
-        max-width: 1375px;
-        margin: 0 auto;
-    }
-    .embed-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow:
-        hidden; max-width: 100%;
-    }
+  .video-container {
+    margin: 0 auto;
+    max-width: 1375px;
+  }
+  .embed-container {
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
 
-    .embed-container iframe, .embed-container object, .embed-container embed { position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+  .embed-container iframe, .embed-container object, .embed-container embed { position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 
-    .work-content__codepen-container {
-        margin: 0px auto 30px auto;
-        max-width: 100%;
-        padding: 35px 50px;
-    }
-
+  .work-content__codepen-container {
+    margin: 0px auto 30px auto;
+    max-width: 100%;
+    padding: 35px 50px;
+  }
 }
 
 .grid {
 
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 
-    @media screen and (min-width: $on-palm) {
-        margin: 0px 17px;
+  @media screen and (min-width: $on-palm) {
+      margin: 0px 17px;
+  }
+
+  @media screen and (min-width: 1350px) {
+      max-width: 1300px;
+      margin: 0 auto;
+  }
+
+
+  &.grid--featured-image {
+    img {
+      box-shadow: 0px 0px 0px 0px;
+      -moz-box-shadow: 0px 0px 0px 0px;
+      -webkit-box-shadow: 0px 0px 0px 0px;
+      width: auto;
+    }
+
+    .item-img--full {
+      width: 100%;
     }
 
     @media screen and (min-width: 1350px) {
-        max-width: 1300px;
-        margin: 0 auto;
+      margin: 0 30px 60px;
+      max-width: 100%;
     }
+  }
 
+  &.grid--no-bg {
+    background: none;
+    padding:0px;
+  }
 
-    &.grid--featured-image {
+  &.grid-mt {
+    margin-top: 40px;
 
-        img {
-            width: auto;
-            box-shadow: 0px 0px 0px 0px;
-            -moz-box-shadow: 0px 0px 0px 0px;
-            -webkit-box-shadow: 0px 0px 0px 0px;
-        }
-
-        .item-img--full {
-           width: 100%;
-        }
-
-        @media screen and (min-width: 1350px) {
-            max-width: 100%;
-            margin: 0 30px 60px;
-        }
-
+    @media screen and (min-width: $on-palm) {
+      margin-top: 70px;
     }
+  }
 
-    &.grid--no-bg {
-        padding:0px;
-        background: none;
+  &.grid-mb {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $on-palm) {
+      margin-bottom: 70px;
     }
-
-
-
-    &.grid-mt {
-        margin-top: 40px;
-
-        @media screen and (min-width: $on-palm) {
-            margin-top: 70px;
-
-        }
-    }
-
-    &.grid-mb {
-        margin-bottom: 30px;
-
-        @media screen and (min-width: $on-palm) {
-            margin-bottom: 70px;
-
-        }
-    }
+  }
 }
 
 .grid__item {
@@ -405,10 +392,10 @@ $work-break: 800px;
 
 .grid__item--full, .grid__item--half {
   img {
-    width: 100%;
     box-shadow: $box-shadow-standard;
     -webkit-box-shadow: $box-shadow-standard;
     -moz-box-shadow: $box-shadow-standard;
+    width: 100%;
 
     &.image-medium {
       max-width: 960px;
@@ -425,87 +412,80 @@ $work-break: 800px;
 }
 
 .grid__item--full {
-    flex-basis: 100%;
-    // margin: 0 auto 30px auto;
+  flex-basis: 100%;
+  padding: 20px;
 
-    padding: 20px;
-
-    @media screen and (min-width: $on-palm) {
-        padding: 45px 40px;
-    }
+  @media screen and (min-width: $on-palm) {
+    padding: 45px 40px;
+  }
 }
 
 .grid__item--featured {
-    img {
-        max-height: 723px;
-
-    }
+  img {
+    max-height: 723px;
+  }
 }
 
 .grid__item--half {
-    flex-basis: 100%;
-    padding: 20px;
-    background: $gray-color;
+  flex-basis: 100%;
+  padding: 20px;
+  background: $gray-color;
 
-    &.end {
-        margin-right: 0;
-    }
+  &.end {
+    margin-right: 0;
+  }
 
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 
-    @media screen and (min-width: $on-palm) {
-        padding: 45px 40px;
+  @media screen and (min-width: $on-palm) {
+    padding: 45px 40px;
+  }
 
-        &.end {
-        }
-    }
-
-    @media screen and (min-width: $on-tablet) {
-        flex-basis: 49%;
-        margin-right: 2%;
-    }
+  @media screen and (min-width: $on-tablet) {
+    flex-basis: 49%;
+    margin-right: 2%;
+  }
 }
 
 
 
 .bg--gray {
-    background: $gray-color;
+  background: $gray-color;
 }
 
 .bg--navy {
-    background: #1D2433;
+  background: #1D2433;
 }
 
 .bg--purple {
-    background: $hover-color;
-    color: #542e71;
+  background: $hover-color;
+  color: #542e71;
 
-    p {
-        color: #542e71;
-    }
+  p {
+    color: #542e71;
+  }
 }
 
 .content-section {
-    padding-top: 70px;
-    padding-bottom: 20px;
-    margin-top: 60px;
-    margin-bottom: 50px;
-
     border: 17px solid #fff;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    padding-top: 70px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 .fin-tip {
-    width: 40px;
-    height: 7px;
-    background: $gray-color;
-    margin: 0 auto 50px auto;
+  background: $gray-color;
+  height: 7px;
+  margin: 0 auto 50px auto;
+  width: 40px;
 
-    &.top-margin-large {
-        margin-top: 70px;
-    }
+  &.top-margin-large {
+    margin-top: 70px;
+  }
 }

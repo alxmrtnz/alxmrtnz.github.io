@@ -1,14 +1,13 @@
 ---
 layout: case-study
-title:  "Locker Linked"
-date:   2018-4-18 19:46:27
+title:  "Maptastic"
+date:   2018-4-16 19:46:27
 comments: false
 category: work
 permalink: /:categories/:title.html
 work-type: React + Redux, Front-End Development
-work-summary:  A recruiting system to help guide high school student athletes and their parents through the college athletic recruiting process.
-external-link: https://www.lockerlinked.com/
-thumbnail-image: lockerlinked/locker-linked-thumbnail.jpg
+work-summary:  A map census
+thumbnail-image: maptastic/maptastic-thumbnail.jpg
 ---
 
 <div class="grid grid--featured-image">
