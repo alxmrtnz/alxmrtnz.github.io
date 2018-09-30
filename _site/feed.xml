@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 18 May 2018 14:39:30 -0400</pubDate>
-    <lastBuildDate>Fri, 18 May 2018 14:39:30 -0400</lastBuildDate>
+    <pubDate>Sun, 30 Sep 2018 18:40:31 -0400</pubDate>
+    <lastBuildDate>Sun, 30 Sep 2018 18:40:31 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -405,138 +405,6 @@ import { required, email } from '../../../utils/formValidators'
         <pubDate>Wed, 18 Apr 2018 15:46:27 -0400</pubDate>
         <link>http://localhost:4000/work/locker-linked.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Maptastic</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/featured-image-locker-linked.jpg&quot; alt=&quot;Locker Linked Title Card&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-&lt;p&gt;Every year, thousands of high school athletes try to pursue their passion at the next level by searching for the perfect athletic and academic fit. Having never gone through the college athletic recruiting process, these students, and their parents, are often in uncharted waters.&lt;/p&gt;
-
-&lt;p&gt;Which coaches should they talk to? How do they gain the right exposure? Which program should they choose… and why? Even with the best work ethic and determination, every athlete could use a little help.&lt;/p&gt;
-
-&lt;p&gt;As part of the team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I helped build the digital platform for &lt;a href=&quot;https://www.lockerlinked.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Locker Linked&lt;/a&gt;, a startup that aims to provide student athletes with first-rate recruitment network services and tools to prepare them for upcoming college athletic opportunities.&lt;/p&gt;
-
-&lt;p&gt;Locker Linked simplifies the recruitment process, allowing student athletes to set up a player profile to showcase skills, connect directly with coaches and recruiters, and get exclusive access to essential resources to maximize potential recruitment.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
-&lt;p&gt;While my team at Whitelabel worked closely with Locker Linked to design and build their entire platform, from design to development, I worked specifically on the development team focusing on building the front-end of the platform in React.&lt;/p&gt;
-
-&lt;p&gt;On the frontend, Locker Linked is built with React and Redux, integrates with &lt;a href=&quot;https://stripe.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Stripe&lt;/a&gt; for user payment, and connects to a Rails backend. I worked closely with our lead backend developer, &lt;a href=&quot;https://twitter.com/toreyhickman/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Torey Hickman&lt;/a&gt;, to build a component-based UI that hooked up seamlessly with our backend database and architecture.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-devices.jpg&quot; alt=&quot;Locker Linked Profile shown on MacBook and iPhone&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;creating-a-showcase-for-athletes&quot;&gt;Creating a Showcase for Athletes&lt;/h2&gt;
-&lt;h3 id=&quot;building-a-flexible-profile&quot;&gt;Building a Flexible Profile&lt;/h3&gt;
-&lt;p&gt;The athlete profile turned out to be one of my favorite parts of the app due to the variety of components needed to accomodate such a wide range of sports played by student athletes. In addition, the profile serves as the entry point for college recruiters’ evaluations of student athletes, making it a focal point of the platform.&lt;/p&gt;
-
-&lt;p&gt;Locker Linked wanted to allow athletes to post photos, videos, statistics, awards, camps, and reference contact information in addition to the ability to add multiple sports. Whether it was making sure the stats table component resized and responded fluidly or creating a slider component that accomodated arrays of photos or videos, I enjoyed the creative coding challenge that the screen presented.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-responsive.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;focusing-on-reusable-components&quot;&gt;Focusing on Reusable Components&lt;/h3&gt;
-&lt;p&gt;The component-based nature of the athlete profile allowed us to focus on creating reusable elements. We were able to build the profile component by component and think about how to reuse several components in forms where users would manage the actual profile.&lt;/p&gt;
-
-&lt;p&gt;Components like our &lt;code class=&quot;highlighter-rouge&quot;&gt;TabSelect.js&lt;/code&gt; were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
-     &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-1.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-2.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    I built responsive components that could be repurposed in different contexts (left: athelte profile, right: user dashboard)
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;the-intricacies-of-profile-management&quot;&gt;The Intricacies of Profile Management&lt;/h2&gt;
-&lt;p&gt;Profile management was one of the biggest challenges in building Locker Linked. In addition to the actual student athlete, profiles can be managed by parents/guardians (and soon coaches, too!).&lt;/p&gt;
-
-&lt;p&gt;Not only that, but a single user can have admin access to manage and edit any number of athlete profiles. This many-to-one relationship of profile management necessitated careful consideration when it came to both onboarding and the user dashboard.&lt;/p&gt;
-
-&lt;h3 id=&quot;onboarding-different-user-types&quot;&gt;Onboarding Different User Types&lt;/h3&gt;
-&lt;p&gt;When onboarding, a user can select whether they’re an athlete or a parent/guardian. In both cases, the user can create a new athlete profile, but if a user is a parent, they also have the option to request access to a pre-existing profile (their child’s). This meant that our team had to carefully consider the user flow for multiple onboarding paths and build them accordingly.&lt;/p&gt;
-
-&lt;h3 id=&quot;managing-multiple-profiles&quot;&gt;Managing Multiple Profiles&lt;/h3&gt;
-&lt;p&gt;In order to accomodate parents/guardians with more than one child on the platform or coaches that are assisting multiple student athletes, we built Locker Link with the ability for users to manage one or more athlete profiles.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-switcher.gif&quot; class=&quot;image-medium&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    Users can easily switch between editing multiple athletes profile.
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Once a user is given admin access to multiple profiles, they can use a simple dropdown to select the profile they want to edit. By integrating the user dashboard with Redux, we could easily populate the users’ edit views with the selected profile’s data and make editing a breeze.&lt;/p&gt;
-
-&lt;h2 id=&quot;learning-to-love-forms&quot;&gt;Learning to Love Forms&lt;/h2&gt;
-&lt;h3 id=&quot;form-management-with-redux-form&quot;&gt;Form Management with Redux-Form&lt;/h3&gt;
-&lt;p&gt;I love React. But ever since I began building apps with React, I’ve had a gripe with managing forms. On top of managing the actualy values of inputs in component state, handling validation and error messaging made forms in React complex and clunky to set up and use. To make form development easier, we introduced the use of &lt;a href=&quot;https://redux-form.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that allows you to connect your forms to your Redux store in order to manage form state.&lt;/p&gt;
-
-&lt;p&gt;Redux Form let us create custom input components, decrease redundancy in terms of validation and error message handling, and build more robust, dynamic forms. For a deeper look at my experience with Redux Form (and how it convinced me to love forms again), &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot; class=&quot;link--text-in-p&quot;&gt;check out this post I wrote&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;div class=&quot;video-container&quot;&gt;
-      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/269091140?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;span class=&quot;img-caption&quot;&gt;
-      Redux-Form made form management a breeze (and pretty magical). &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot;&gt;Read more about my thoughts on Redux-Form here&lt;/a&gt;.
-    &lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-  Conclusion &amp;amp; Lessons Learned
-&lt;/h2&gt;
-
-&lt;p&gt;Locker Link was a big growing experience for me. I had used React several times to build out front-end interfaces before, but Locker Link was the first project where I used Redux for app state management and Redux Form for form management. Through Redux, I was able to create more complex interactions, such as managing modals and flash message state between screens.&lt;/p&gt;
-
-&lt;p&gt;In addition to using new technologies, working on Locker Linked also helped me refine how I build and manage React components. I spent a good amount of time trying to break screens down into smaller, manageable parts so that we could more easily maintain components and reuse components whenever possible.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-homepage.jpg&quot; alt=&quot;Locker Linked Homepage&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-dashboard.jpg&quot; alt=&quot;Locker Linked User Dashboard Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-coach-search.jpg&quot; alt=&quot;Locker Linked Dashboard Search Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-stats.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-locker-profile.jpg&quot; alt=&quot;Locker Linked Profile Management Screenshot&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Mon, 16 Apr 2018 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/work/maptastic.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/maptastic.html</guid>
         
         
         <category>work</category>
@@ -1140,6 +1008,19 @@ With content being broken up into several main sections, I defined colors that w
         <pubDate>Fri, 09 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/resume/index.html</link>
         <guid isPermaLink="true">http://localhost:4000/resume/index.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Alex Martinez – Meet Edgar</title>
+        <description>&lt;div class=&quot;resume-container&quot;&gt;
+	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFa1lzRGMyM0NEcms/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 09 Sep 2016 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/meetedgar-resume/index.html</link>
+        <guid isPermaLink="true">http://localhost:4000/meetedgar-resume/index.html</guid>
         
         
       </item>
