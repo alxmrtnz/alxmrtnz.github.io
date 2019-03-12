@@ -3,8 +3,6 @@
 	margin: 0 auto;
 }
 
-
-
 ul.ul--post-archive {
 	text-align: center;
 	li {
@@ -17,4 +15,8 @@ ul.ul--post-archive {
 
 .post-archive__post-date {
 	margin-bottom: 5px;
+}
+
+sup {
+  line-height: 0;
 }

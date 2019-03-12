@@ -5,22 +5,22 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 11 Mar 2019 17:26:23 -0400</pubDate>
-    <lastBuildDate>Mon, 11 Mar 2019 17:26:23 -0400</lastBuildDate>
+    <pubDate>Tue, 12 Mar 2019 11:18:08 -0400</pubDate>
+    <lastBuildDate>Tue, 12 Mar 2019 11:18:08 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
-        <title>Environment Variables and Workflow in Expo</title>
-        <description>&lt;p&gt;We recently expanded our service offering at &lt;a href=&quot;https://whitelabelco.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt; to include mobile apps using Expo and React Native. This technology allows us to develop native applications for both iOS and Android devices using our knowledge of JavaScript and React. As with any new framework or language, there proved to be a learning curve, specifically when it came to our project workflow.&lt;/p&gt;
+        <title>Environment Management in Expo</title>
+        <description>&lt;p&gt;We recently expanded our service offering at &lt;a href=&quot;https://whitelabelco.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt; to include mobile app development using Expo and React Native. This technology allows us to develop native applications for both iOS and Android devices using our knowledge of JavaScript and React. As with any new framework or language, there proved to be a learning curve, specifically when it came to our project workflow.&lt;/p&gt;
 
 &lt;p&gt;While our team was familiar with how to manage environment variables on an array of web projects (configuring variables such as API urls, keys, etc. for local, staging, and production environments), Expo and React Native do things slightly differently.&lt;/p&gt;
 
-&lt;p&gt;After some trial, error, and research, we created a workflow based on &lt;a href=&quot;https://medium.com/@peterpme/environment-variables-in-expo-using-release-channels-4934594c5307&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;a post from Peter Piekarczyk&lt;/a&gt;. Beginning with creating an Expo-based equivalent to a &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, we’ll show you our team’s full workflow when it comes to using React Native and Expo’s Release Channels for local, staging, and production environments.&lt;/p&gt;
+&lt;p&gt;After some trial, error, and research, we created a workflow based on &lt;a href=&quot;https://medium.com/@peterpme/environment-variables-in-expo-using-release-channels-4934594c5307&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;a post from Peter Piekarczyk&lt;/a&gt;. Beginning with creating an Expo-based equivalent to a &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, I’ll show you our team’s full workflow when it comes to using React Native and Expo’s Release Channels for local, staging, and production environments.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-expo&quot;&gt;What is Expo?&lt;/h2&gt;
 &lt;p&gt;First, I want to clarify what Expo is and why we use it.&lt;/p&gt;
 
-&lt;p&gt;“Expo is a set of tools built on top of/around React Native. These tools depend on one key belief held at Expo: it’s possible to build most apps without ever needing to write native code, provided that you have a comprehensive set of APIs exposed to JavaScript.”&lt;sup&gt;&lt;a href=&quot;https://stackoverflow.com/questions/39170622/what-is-the-difference-between-expo-and-react-native&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“Expo is a set of tools built on top of/around React Native. These tools depend on one key belief held at Expo: it’s possible to build most apps without ever needing to write native code, provided that you have a comprehensive set of APIs exposed to JavaScript.”&lt;/strong&gt;&lt;sup&gt;&lt;a href=&quot;https://stackoverflow.com/questions/39170622/what-is-the-difference-between-expo-and-react-native&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s basically Rails for React Native. It allows our team to write native applications using JavaScript in whatever code editor we want rather than having to use Xcode or Android Studio (and writing native code). Not only that, but it “provides access to the device’s system functionality (things like the camera, push notifications, contacts, local storage, and other hardware and operating system APIs) from JavaScript.”&lt;sup&gt;&lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/release-channels/#introduction&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
@@ -35,7 +35,7 @@
 
 &lt;p&gt;Here’s how we use release channels to manage our environments:&lt;/p&gt;
 
-&lt;h3 id=&quot;creating-the-environment-variable-file&quot;&gt;Creating the Environment Variable File&lt;/h3&gt;
+&lt;h3 id=&quot;create-an-environment-config-file&quot;&gt;Create an Environment Config File&lt;/h3&gt;
 &lt;p&gt;We start by creating an &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file that is also added to our &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; (so that any sensitive information is never published to GitHub). This &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; essentially serves as the project’s &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, allowing us to store api urls and other variables that change based on the app’s current environment.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
@@ -83,15 +83,17 @@ export default getEnvVars;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;You’ll see a couple of things here. First off, we check what platform the app is being run on (iOS or Android) via &lt;code class=&quot;highlighter-rouge&quot;&gt;Platform&lt;/code&gt; to determine the correct &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost&lt;/code&gt; address. We quickly found that Android requires a different address in order to correctly render images and other static assets. &lt;sup&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;You’ll see a couple of things here. First off, we check what platform the app is being run on (iOS or Android) via &lt;code class=&quot;highlighter-rouge&quot;&gt;Platform&lt;/code&gt; to determine the correct &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost&lt;/code&gt; address. We quickly found that Android requires a different address in order to correctly render images and other static assets when running locally. &lt;sup&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;Next, the &lt;code class=&quot;highlighter-rouge&quot;&gt;ENV&lt;/code&gt; object is where we add variables including each environment’s &lt;code class=&quot;highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; and, in this case, the key for Amplitude which we used for analytics tracking on each environment.&lt;/p&gt;
 
 &lt;p&gt;Lastly, the &lt;code class=&quot;highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function is what’s exported from the file. It checks which release channel the app’s compiled binary is running via Expo’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Constants&lt;/code&gt; and returns the corresponding variables.&lt;/p&gt;
 
-&lt;h3 id=&quot;accessing-the-environment-variables&quot;&gt;Accessing the Environment Variables&lt;/h3&gt;
+&lt;h3 id=&quot;accessing-environment-variables&quot;&gt;Accessing Environment Variables&lt;/h3&gt;
 
-&lt;p&gt;After the variables are set up, we import the &lt;code class=&quot;highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function from &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; in our &lt;code class=&quot;highlighter-rouge&quot;&gt;api.js&lt;/code&gt; file in order to access the proper &lt;code class=&quot;highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; for our api calls:&lt;/p&gt;
+&lt;p&gt;After the variables are set up, we import and call the &lt;code class=&quot;highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function from &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; in our &lt;code class=&quot;highlighter-rouge&quot;&gt;api.js&lt;/code&gt; file in order to access the proper &lt;code class=&quot;highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; for our api calls.&lt;/p&gt;
+
+&lt;p&gt;You’ll see that we use ES6’s &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;destructuring assignment syntax&lt;/a&gt; to get the specific variable we want (in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt;) out of the function:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
 * api.js
@@ -107,11 +109,11 @@ const { apiUrl } = getEnvVars();
 // {
 //   &quot;phone&quot; : &quot;4191231234&quot;
 // }
-export const logIn = (credentials, jwt) =&amp;gt; (
+export const logIn = (credentials, jsonWebToken) =&amp;gt; (
  fetch(`${apiUrl}/phone`, {
    method: 'POST',
    headers: {
-     'Authorization': 'Bearer ' + jwt,
+     'Authorization': 'Bearer ' + jsonWebToken,
      'Content-Type': 'application/json',
    },
    body: JSON.stringify(credentials)
@@ -127,8 +129,9 @@ export const logIn = (credentials, jwt) =&amp;gt; (
 * path: '/utils/analytics/Amplitude.js'
 ******************************/
 
-// Import getEnvVars() from environment.js
 import { Amplitude } from 'expo';
+
+// Import getEnvVars() from environment.js
 import getEnvVars from '../../environment';
 const { amplitudeApiKey } = getEnvVars();
 
@@ -148,7 +151,7 @@ const initialize = () =&amp;gt; {
 &lt;h2 id=&quot;a-suggested-workflow&quot;&gt;A Suggested Workflow&lt;/h2&gt;
 &lt;p&gt;After a few projects, we’ve come up with an Expo workflow that closely mirrors that of our web development projects. While not 1-to-1, hopefully this suggested workflow can help you and your team on your own Expo projects.&lt;/p&gt;
 
-&lt;h3 id=&quot;step-1-local-development-dev&quot;&gt;Step 1: Local Development (“dev”)&lt;/h3&gt;
+&lt;h3 id=&quot;environment-1-local-development-dev&quot;&gt;Environment 1: Local Development (“dev”)&lt;/h3&gt;
 &lt;p&gt;In development, you can run your app on your local machine via Apple Simulator or Android Studio. The latter takes a little bit more set up.&lt;/p&gt;
 
 &lt;p&gt;To run your app, run:&lt;/p&gt;
@@ -163,16 +166,39 @@ const initialize = () =&amp;gt; {
 
 &lt;p&gt;With iOS, I’ve found you can run the command with the Simulator app closed or already open, while with Android, things are smoothest if you already have the AVD (Android Virtual Device) running.&lt;/p&gt;
 
-&lt;p&gt;By running locally, the &lt;code class=&quot;highlighter-rouge&quot;&gt;__DEV__&lt;/code&gt; flag will be set to true and your &lt;code class=&quot;highlighter-rouge&quot;&gt;ENV.dev&lt;/code&gt; variables will be used.&lt;/p&gt;
+&lt;p&gt;By running locally, the &lt;code class=&quot;highlighter-rouge&quot;&gt;__DEV__&lt;/code&gt; flag will be set to true and your &lt;code class=&quot;highlighter-rouge&quot;&gt;ENV.dev&lt;/code&gt; variables will be used:&lt;/p&gt;
 
-&lt;h3 id=&quot;step-2-testflightandroid-testing-tracks-staging&quot;&gt;Step 2: TestFlight/Android Testing Tracks (“staging”)&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
+* environment.js
+* path: '/environment.js' (root of your project)
+******************************/
+
+// From ealier in this post...
+const getEnvVars = (env = Constants.manifest.releaseChannel) =&amp;gt; {
+ // What is __DEV__ ?
+ // This variable is set to true when react-native is running in Dev mode.
+ // __DEV__ is true when run locally, but false when published.
+ if (__DEV__) {
+   return ENV.dev;
+ } else if (env === 'staging') {
+   return ENV.staging;
+ } else if (env === 'prod') {
+   return ENV.prod;
+ }
+};
+
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;environment-2-testflightandroid-testing-tracks-staging&quot;&gt;Environment 2: TestFlight/Android Testing Tracks (“staging”)&lt;/h3&gt;
 &lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment includes:
-Running the app via TestFlight or an Android testing track&lt;/p&gt;
+Running the app via TestFlight or an Android testing track (more info on those &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#5-test-it-on-your-device-or&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;There are essentially two main components to the “staging” workflow:&lt;/p&gt;
 
 &lt;h4 id=&quot;1-creating-and-uploading-an-initial-build&quot;&gt;1) Creating and Uploading an Initial Build&lt;/h4&gt;
-&lt;p&gt;First, you need to &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/release-channels/#build-with-channels&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;build a binary&lt;/a&gt; that you can upload to App Store Connect (iOS) and Google Play Console (Android) with your release channel set to &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;First, you need to &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/release-channels/#build-with-channels&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;build a binary&lt;/a&gt; that you can upload to App Store Connect (iOS) and Google Play Console (Android) with your release channel set to &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt;. Setting the release channel flag allows you to then publish changes to that specific channel without having to rebuild and re-upload the binary.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:ios --release-channel staging
 &lt;/code&gt;&lt;/pre&gt;
@@ -182,9 +208,9 @@ Running the app via TestFlight or an Android testing track&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;These will build the proper binary (&lt;code class=&quot;highlighter-rouge&quot;&gt;.ipa&lt;/code&gt; for iOS and &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; for Android) that you can upload. For more info on uploading to app stores, &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/uploading-apps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;check out the Expo docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once Expo has completed building the binary (&lt;code class=&quot;highlighter-rouge&quot;&gt;.ipa&lt;/code&gt; for iOS and &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; for Android), you can then upload it to either Apple’s App Store Connect or Google’s Google Play Console. For more info on uploading to app stores, &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/uploading-apps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;check out the Expo docs&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;After that, you won’t need to rebuild and upload a new binary unless you make core changes such as updating the Expo SDK or modifying other configurations in your &lt;code class=&quot;highlighter-rouge&quot;&gt;app.json&lt;/code&gt; (you can read more on that &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#7-update-your-app&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;You won’t need to rebuild and upload a new binary unless you make core changes such as updating the Expo SDK or modifying other configurations in your &lt;code class=&quot;highlighter-rouge&quot;&gt;app.json&lt;/code&gt; (you can read more on that &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#7-update-your-app&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
 
 &lt;h4 id=&quot;2-publishing-updates-to-the-uploaded-build&quot;&gt;2) Publishing Updates to the Uploaded Build&lt;/h4&gt;
 
@@ -194,9 +220,9 @@ Running the app via TestFlight or an Android testing track&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Any changes you’ve made will publish to the &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; release channel via Expo’s &lt;a href=&quot;https://docs.expo.io/versions/latest/guides/configuring-ota-updates/ &quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;over-the-air JavaScript updates&lt;/a&gt; and be available through TestFlight or your Google Test Track as your binary was built and set to that channel.&lt;/p&gt;
+&lt;p&gt;Any changes you’ve made will publish to the &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; release channel via Expo’s &lt;a href=&quot;https://docs.expo.io/versions/latest/guides/configuring-ota-updates/ &quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;over-the-air JavaScript updates&lt;/a&gt; and be available through TestFlight or Google Play’s Test Tracks.&lt;/p&gt;
 
-&lt;h3 id=&quot;step-3-live-on-the-app-store-production&quot;&gt;Step 3: Live on the App Store (“production”)&lt;/h3&gt;
+&lt;h3 id=&quot;environment-3-app-storegoogle-play-production&quot;&gt;Environment 3: App Store/Google Play (“production”)&lt;/h3&gt;
 &lt;p&gt;Lastly, when you want to go live, building and publishing is just like that of the staging environment, however you designate your release channel as “prod”:&lt;/p&gt;
 
 &lt;p&gt;Building binary for upload:&lt;/p&gt;
@@ -213,11 +239,13 @@ Running the app via TestFlight or an Android testing track&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;p&gt;Just a note here that you can, of course, name the release channels for any of the your environments to whatever you’d like – be it &lt;code class=&quot;highlighter-rouge&quot;&gt;prod&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;my-awesome-app-is-finally-live&lt;/code&gt;. Just make sure to be consistent and set things up in your &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file.&lt;/p&gt;
+
 &lt;h3 id=&quot;digging-deeper-advanced-release-channels&quot;&gt;Digging Deeper: Advanced Release Channels&lt;/h3&gt;
 &lt;p&gt;If you want to be even more of an Expo wiz, take a look at the documentation on &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/advanced-release-channels/#promoting-a-release-to-a-new-channel&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Advanced Release Channels&lt;/a&gt;. Expo provides the option to promote and roll back channel entries between release channels – which may save you some build time in the long run&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Using Expo and Expo Release Channels, our team has built a workflow that works for us. The &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file serves as our normal &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt;, TestFlight/Google Play Test Tracks take over as our &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment, and the released app is our final &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Using Expo and Expo Release Channels, our team has built a workflow that works for us. The &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file takes the place of a &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt;, TestFlight and Testing Tracks on Google Play serve as our &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment, and the released app is our final &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;It should be said that there are alternatives to this workflow, including packages like &lt;a href=&quot;https://github.com/luggit/react-native-config&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;react-native-config&lt;/a&gt; and &lt;a href=&quot;https://github.com/brysgo/babel-plugin-inline-dotenv#readme&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;babel-plugin-inline-dotenv&lt;/a&gt;. However, the former requires ejecting from Expo in order to “link” to native code, and the latter requires additional configuration.&lt;/p&gt;
 
@@ -230,9 +258,9 @@ Running the app via TestFlight or an Android testing track&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;StackOverflow: How do you connect localhost in the Android emulator?&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Mon, 11 Mar 2019 12:11:27 -0400</pubDate>
-        <link>http://localhost:4000/thoughts/2019/03/11/environment-variables-and-workflow-in-expo.html</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/2019/03/11/environment-variables-and-workflow-in-expo.html</guid>
+        <pubDate>Tue, 12 Mar 2019 12:11:27 -0400</pubDate>
+        <link>http://localhost:4000/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</guid>
         
         
         <category>thoughts</category>
@@ -635,138 +663,6 @@ import { required, email } from '../../../utils/formValidators'
         <pubDate>Wed, 18 Apr 2018 15:46:27 -0400</pubDate>
         <link>http://localhost:4000/work/locker-linked.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Maptastic</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/featured-image-locker-linked.jpg&quot; alt=&quot;Locker Linked Title Card&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-&lt;p&gt;Every year, thousands of high school athletes try to pursue their passion at the next level by searching for the perfect athletic and academic fit. Having never gone through the college athletic recruiting process, these students, and their parents, are often in uncharted waters.&lt;/p&gt;
-
-&lt;p&gt;Which coaches should they talk to? How do they gain the right exposure? Which program should they choose… and why? Even with the best work ethic and determination, every athlete could use a little help.&lt;/p&gt;
-
-&lt;p&gt;As part of the team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I helped build the digital platform for &lt;a href=&quot;https://www.lockerlinked.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Locker Linked&lt;/a&gt;, a startup that aims to provide student athletes with first-rate recruitment network services and tools to prepare them for upcoming college athletic opportunities.&lt;/p&gt;
-
-&lt;p&gt;Locker Linked simplifies the recruitment process, allowing student athletes to set up a player profile to showcase skills, connect directly with coaches and recruiters, and get exclusive access to essential resources to maximize potential recruitment.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
-&lt;p&gt;While my team at Whitelabel worked closely with Locker Linked to design and build their entire platform, from design to development, I worked specifically on the development team focusing on building the front-end of the platform in React.&lt;/p&gt;
-
-&lt;p&gt;On the frontend, Locker Linked is built with React and Redux, integrates with &lt;a href=&quot;https://stripe.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Stripe&lt;/a&gt; for user payment, and connects to a Rails backend. I worked closely with our lead backend developer, &lt;a href=&quot;https://twitter.com/toreyhickman/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Torey Hickman&lt;/a&gt;, to build a component-based UI that hooked up seamlessly with our backend database and architecture.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-devices.jpg&quot; alt=&quot;Locker Linked Profile shown on MacBook and iPhone&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;creating-a-showcase-for-athletes&quot;&gt;Creating a Showcase for Athletes&lt;/h2&gt;
-&lt;h3 id=&quot;building-a-flexible-profile&quot;&gt;Building a Flexible Profile&lt;/h3&gt;
-&lt;p&gt;The athlete profile turned out to be one of my favorite parts of the app due to the variety of components needed to accomodate such a wide range of sports played by student athletes. In addition, the profile serves as the entry point for college recruiters’ evaluations of student athletes, making it a focal point of the platform.&lt;/p&gt;
-
-&lt;p&gt;Locker Linked wanted to allow athletes to post photos, videos, statistics, awards, camps, and reference contact information in addition to the ability to add multiple sports. Whether it was making sure the stats table component resized and responded fluidly or creating a slider component that accomodated arrays of photos or videos, I enjoyed the creative coding challenge that the screen presented.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-responsive.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;focusing-on-reusable-components&quot;&gt;Focusing on Reusable Components&lt;/h3&gt;
-&lt;p&gt;The component-based nature of the athlete profile allowed us to focus on creating reusable elements. We were able to build the profile component by component and think about how to reuse several components in forms where users would manage the actual profile.&lt;/p&gt;
-
-&lt;p&gt;Components like our &lt;code class=&quot;highlighter-rouge&quot;&gt;TabSelect.js&lt;/code&gt; were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
-     &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-1.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-2.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    I built responsive components that could be repurposed in different contexts (left: athelte profile, right: user dashboard)
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;the-intricacies-of-profile-management&quot;&gt;The Intricacies of Profile Management&lt;/h2&gt;
-&lt;p&gt;Profile management was one of the biggest challenges in building Locker Linked. In addition to the actual student athlete, profiles can be managed by parents/guardians (and soon coaches, too!).&lt;/p&gt;
-
-&lt;p&gt;Not only that, but a single user can have admin access to manage and edit any number of athlete profiles. This many-to-one relationship of profile management necessitated careful consideration when it came to both onboarding and the user dashboard.&lt;/p&gt;
-
-&lt;h3 id=&quot;onboarding-different-user-types&quot;&gt;Onboarding Different User Types&lt;/h3&gt;
-&lt;p&gt;When onboarding, a user can select whether they’re an athlete or a parent/guardian. In both cases, the user can create a new athlete profile, but if a user is a parent, they also have the option to request access to a pre-existing profile (their child’s). This meant that our team had to carefully consider the user flow for multiple onboarding paths and build them accordingly.&lt;/p&gt;
-
-&lt;h3 id=&quot;managing-multiple-profiles&quot;&gt;Managing Multiple Profiles&lt;/h3&gt;
-&lt;p&gt;In order to accomodate parents/guardians with more than one child on the platform or coaches that are assisting multiple student athletes, we built Locker Link with the ability for users to manage one or more athlete profiles.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-switcher.gif&quot; class=&quot;image-medium&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    Users can easily switch between editing multiple athletes profile.
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Once a user is given admin access to multiple profiles, they can use a simple dropdown to select the profile they want to edit. By integrating the user dashboard with Redux, we could easily populate the users’ edit views with the selected profile’s data and make editing a breeze.&lt;/p&gt;
-
-&lt;h2 id=&quot;learning-to-love-forms&quot;&gt;Learning to Love Forms&lt;/h2&gt;
-&lt;h3 id=&quot;form-management-with-redux-form&quot;&gt;Form Management with Redux-Form&lt;/h3&gt;
-&lt;p&gt;I love React. But ever since I began building apps with React, I’ve had a gripe with managing forms. On top of managing the actualy values of inputs in component state, handling validation and error messaging made forms in React complex and clunky to set up and use. To make form development easier, we introduced the use of &lt;a href=&quot;https://redux-form.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that allows you to connect your forms to your Redux store in order to manage form state.&lt;/p&gt;
-
-&lt;p&gt;Redux Form let us create custom input components, decrease redundancy in terms of validation and error message handling, and build more robust, dynamic forms. For a deeper look at my experience with Redux Form (and how it convinced me to love forms again), &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot; class=&quot;link--text-in-p&quot;&gt;check out this post I wrote&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;div class=&quot;video-container&quot;&gt;
-      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/269091140?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;span class=&quot;img-caption&quot;&gt;
-      Redux-Form made form management a breeze (and pretty magical). &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot;&gt;Read more about my thoughts on Redux-Form here&lt;/a&gt;.
-    &lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-  Conclusion &amp;amp; Lessons Learned
-&lt;/h2&gt;
-
-&lt;p&gt;Locker Link was a big growing experience for me. I had used React several times to build out front-end interfaces before, but Locker Link was the first project where I used Redux for app state management and Redux Form for form management. Through Redux, I was able to create more complex interactions, such as managing modals and flash message state between screens.&lt;/p&gt;
-
-&lt;p&gt;In addition to using new technologies, working on Locker Linked also helped me refine how I build and manage React components. I spent a good amount of time trying to break screens down into smaller, manageable parts so that we could more easily maintain components and reuse components whenever possible.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-homepage.jpg&quot; alt=&quot;Locker Linked Homepage&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-dashboard.jpg&quot; alt=&quot;Locker Linked User Dashboard Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-coach-search.jpg&quot; alt=&quot;Locker Linked Dashboard Search Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-stats.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-locker-profile.jpg&quot; alt=&quot;Locker Linked Profile Management Screenshot&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Mon, 16 Apr 2018 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/work/maptastic.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/maptastic.html</guid>
         
         
         <category>work</category>
@@ -1358,6 +1254,19 @@ With content being broken up into several main sections, I defined colors that w
         
         
         <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Alex Martinez – Resume</title>
+        <description>&lt;div class=&quot;resume-container&quot;&gt;
+	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFUG9VZ3NLWmt3M0k/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 09 Sep 2016 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/resume/index.html</link>
+        <guid isPermaLink="true">http://localhost:4000/resume/index.html</guid>
+        
         
       </item>
     

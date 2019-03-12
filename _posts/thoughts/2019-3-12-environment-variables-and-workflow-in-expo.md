@@ -1,26 +1,26 @@
 ---
 layout: post
-title:  "Environment Variables and Workflow in Expo"
-date:   2019-3-11 16:11:27
+title:  "Environment Management in Expo"
+date:   2019-3-12 16:11:27
 comments: true
 categories: thoughts
 featured-icon-url: /assets/posts/3-11-19/expo@2x.png
 featured-icon-alt: "Expo.io Logo Icon"
-origin: the Whitelabel blog
-origin-link: https://whitelabelco.com
-origin-date: 2019-3-11 19:46:27
+# origin: the Whitelabel blog
+# origin-link: https://whitelabelco.com
+# origin-date: 2019-3-11 19:46:27
 ---
 
-We recently expanded our service offering at <a href='https://whitelabelco.com' target="_blank" class="link--text-in-p">Whitelabel</a> to include mobile apps using Expo and React Native. This technology allows us to develop native applications for both iOS and Android devices using our knowledge of JavaScript and React. As with any new framework or language, there proved to be a learning curve, specifically when it came to our project workflow.
+We recently expanded our service offering at <a href='https://whitelabelco.com' target="_blank" class="link--text-in-p">Whitelabel</a> to include mobile app development using Expo and React Native. This technology allows us to develop native applications for both iOS and Android devices using our knowledge of JavaScript and React. As with any new framework or language, there proved to be a learning curve, specifically when it came to our project workflow.
 
 While our team was familiar with how to manage environment variables on an array of web projects (configuring variables such as API urls, keys, etc. for local, staging, and production environments), Expo and React Native do things slightly differently.
 
-After some trial, error, and research, we created a workflow based on <a href='https://medium.com/@peterpme/environment-variables-in-expo-using-release-channels-4934594c5307' target="_blank" class="link--text-in-p">a post from Peter Piekarczyk</a>. Beginning with creating an Expo-based equivalent to a `.env` file, we’ll show you our team’s full workflow when it comes to using React Native and Expo’s Release Channels for local, staging, and production environments.
+After some trial, error, and research, we created a workflow based on <a href='https://medium.com/@peterpme/environment-variables-in-expo-using-release-channels-4934594c5307' target="_blank" class="link--text-in-p">a post from Peter Piekarczyk</a>. Beginning with creating an Expo-based equivalent to a `.env` file, I'll show you our team’s full workflow when it comes to using React Native and Expo’s Release Channels for local, staging, and production environments.
 
 ## What is Expo?
 First, I want to clarify what Expo is and why we use it.
 
-"Expo is a set of tools built on top of/around React Native. These tools depend on one key belief held at Expo: it's possible to build most apps without ever needing to write native code, provided that you have a comprehensive set of APIs exposed to JavaScript."<sup><a href='https://stackoverflow.com/questions/39170622/what-is-the-difference-between-expo-and-react-native' target="_blank" class="link--text-in-p">1</a></sup>
+**"Expo is a set of tools built on top of/around React Native. These tools depend on one key belief held at Expo: it's possible to build most apps without ever needing to write native code, provided that you have a comprehensive set of APIs exposed to JavaScript."**<sup><a href='https://stackoverflow.com/questions/39170622/what-is-the-difference-between-expo-and-react-native' target="_blank" class="link--text-in-p">1</a></sup>
 
 It’s basically Rails for React Native. It allows our team to write native applications using JavaScript in whatever code editor we want rather than having to use Xcode or Android Studio (and writing native code). Not only that, but it "provides access to the device's system functionality (things like the camera, push notifications, contacts, local storage, and other hardware and operating system APIs) from JavaScript."<sup><a href='https://docs.expo.io/versions/latest/distribution/release-channels/#introduction' target="_blank" class="link--text-in-p">2</a></sup>
 
@@ -36,7 +36,7 @@ In fact, without external packages and/or ejecting from Expo, the primary means 
 Here’s how we use release channels to manage our environments:
 
 
-### Creating the Environment Variable File
+### Create an Environment Config File
 We start by creating an `environment.js` file that is also added to our `.gitignore` (so that any sensitive information is never published to GitHub). This `environment.js` essentially serves as the project’s `.env` file, allowing us to store api urls and other variables that change based on the app’s current environment.
 
 
@@ -85,15 +85,17 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) => {
 export default getEnvVars;
 ```
 
-You’ll see a couple of things here. First off, we check what platform the app is being run on (iOS or Android) via `Platform` to determine the correct `localhost` address. We quickly found that Android requires a different address in order to correctly render images and other static assets. <sup><a href='https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator' target="_blank" class="link--text-in-p">3</a></sup>
+You’ll see a couple of things here. First off, we check what platform the app is being run on (iOS or Android) via `Platform` to determine the correct `localhost` address. We quickly found that Android requires a different address in order to correctly render images and other static assets when running locally. <sup><a href='https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator' target="_blank" class="link--text-in-p">3</a></sup>
 
 Next, the `ENV` object is where we add variables including each environment’s `apiUrl` and, in this case, the key for Amplitude which we used for analytics tracking on each environment.
 
 Lastly, the `getEnvVars()` function is what’s exported from the file. It checks which release channel the app’s compiled binary is running via Expo’s `Constants` and returns the corresponding variables.
 
-### Accessing the Environment Variables
+### Accessing Environment Variables
 
-After the variables are set up, we import the `getEnvVars()` function from `environment.js` in our `api.js` file in order to access the proper `apiUrl` for our api calls:
+After the variables are set up, we import and call the `getEnvVars()` function from `environment.js` in our `api.js` file in order to access the proper `apiUrl` for our api calls.
+
+You'll see that we use ES6's <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment' target="_blank" class="link--text-in-p">destructuring assignment syntax</a> to get the specific variable we want (in this case `apiUrl`) out of the function:
 
 ```
 /*****************************
@@ -110,11 +112,11 @@ const { apiUrl } = getEnvVars();
 // {
 //   "phone" : "4191231234"
 // }
-export const logIn = (credentials, jwt) => (
+export const logIn = (credentials, jsonWebToken) => (
  fetch(`${apiUrl}/phone`, {
    method: 'POST',
    headers: {
-     'Authorization': 'Bearer ' + jwt,
+     'Authorization': 'Bearer ' + jsonWebToken,
      'Content-Type': 'application/json',
    },
    body: JSON.stringify(credentials)
@@ -130,8 +132,9 @@ You can see how useful this can be with multiple variables within the same envir
 * path: '/utils/analytics/Amplitude.js'
 ******************************/
 
-// Import getEnvVars() from environment.js
 import { Amplitude } from 'expo';
+
+// Import getEnvVars() from environment.js
 import getEnvVars from '../../environment';
 const { amplitudeApiKey } = getEnvVars();
 
@@ -150,7 +153,7 @@ const initialize = () => {
 ## A Suggested Workflow
 After a few projects, we’ve come up with an Expo workflow that closely mirrors that of our web development projects. While not 1-to-1, hopefully this suggested workflow can help you and your team on your own Expo projects.
 
-### Step 1: Local Development ("dev")
+### Environment 1: Local Development ("dev")
 In development, you can run your app on your local machine via Apple Simulator or Android Studio. The latter takes a little bit more set up.
 
 To run your app, run:
@@ -166,17 +169,39 @@ And then select which simulator (iOS or Android) you want to open via the expo-c
 
 With iOS, I’ve found you can run the command with the Simulator app closed or already open, while with Android, things are smoothest if you already have the AVD (Android Virtual Device) running.
 
-By running locally, the `__DEV__` flag will be set to true and your `ENV.dev` variables will be used.
+By running locally, the `__DEV__` flag will be set to true and your `ENV.dev` variables will be used:
 
+```
+/*****************************
+* environment.js
+* path: '/environment.js' (root of your project)
+******************************/
 
-### Step 2: TestFlight/Android Testing Tracks ("staging")
+// From ealier in this post...
+const getEnvVars = (env = Constants.manifest.releaseChannel) => {
+ // What is __DEV__ ?
+ // This variable is set to true when react-native is running in Dev mode.
+ // __DEV__ is true when run locally, but false when published.
+ if (__DEV__) {
+   return ENV.dev;
+ } else if (env === 'staging') {
+   return ENV.staging;
+ } else if (env === 'prod') {
+   return ENV.prod;
+ }
+};
+
+...
+```
+
+### Environment 2: TestFlight/Android Testing Tracks ("staging")
 The `staging` environment includes:
-Running the app via TestFlight or an Android testing track
+Running the app via TestFlight or an Android testing track (more info on those <a href='https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#5-test-it-on-your-device-or' target="_blank" class="link--text-in-p">here</a>).
 
 There are essentially two main components to the "staging" workflow:
 
 #### 1) Creating and Uploading an Initial Build
-First, you need to <a href='https://docs.expo.io/versions/v32.0.0/distribution/release-channels/#build-with-channels' target="_blank" class="link--text-in-p">build a binary</a> that you can upload to App Store Connect (iOS) and Google Play Console (Android) with your release channel set to `staging`:
+First, you need to <a href='https://docs.expo.io/versions/v32.0.0/distribution/release-channels/#build-with-channels' target="_blank" class="link--text-in-p">build a binary</a> that you can upload to App Store Connect (iOS) and Google Play Console (Android) with your release channel set to `staging`. Setting the release channel flag allows you to then publish changes to that specific channel without having to rebuild and re-upload the binary.
 
 ```
 expo build:ios --release-channel staging
@@ -186,9 +211,9 @@ or
 expo build:android --release-channel staging
 ```
 
-These will build the proper binary (`.ipa` for iOS and `.apk` for Android) that you can upload. For more info on uploading to app stores, <a href='https://docs.expo.io/versions/v32.0.0/distribution/uploading-apps/' target="_blank" class="link--text-in-p">check out the Expo docs</a>.
+Once Expo has completed building the binary (`.ipa` for iOS and `.apk` for Android), you can then upload it to either Apple's App Store Connect or Google's Google Play Console. For more info on uploading to app stores, <a href='https://docs.expo.io/versions/v32.0.0/distribution/uploading-apps/' target="_blank" class="link--text-in-p">check out the Expo docs</a>.
 
-After that, you won’t need to rebuild and upload a new binary unless you make core changes such as updating the Expo SDK or modifying other configurations in your `app.json` (you can read more on that <a href='https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#7-update-your-app' target="_blank" class="link--text-in-p">here</a>).
+You won’t need to rebuild and upload a new binary unless you make core changes such as updating the Expo SDK or modifying other configurations in your `app.json` (you can read more on that <a href='https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#7-update-your-app' target="_blank" class="link--text-in-p">here</a>).
 
 #### 2) Publishing Updates to the Uploaded Build
 
@@ -198,10 +223,10 @@ Whenever you do want to publish updates, you can then run:
 expo publish --release-channel staging
 ```
 
-Any changes you’ve made will publish to the `staging` release channel via Expo's <a href='https://docs.expo.io/versions/latest/guides/configuring-ota-updates/ ' target="_blank" class="link--text-in-p">over-the-air JavaScript updates</a> and be available through TestFlight or your Google Test Track as your binary was built and set to that channel.
+Any changes you’ve made will publish to the `staging` release channel via Expo's <a href='https://docs.expo.io/versions/latest/guides/configuring-ota-updates/ ' target="_blank" class="link--text-in-p">over-the-air JavaScript updates</a> and be available through TestFlight or Google Play's Test Tracks.
 
 
-### Step 3: Live on the App Store ("production")
+### Environment 3: App Store/Google Play ("production")
 Lastly, when you want to go live, building and publishing is just like that of the staging environment, however you designate your release channel as "prod":
 
 Building binary for upload:
@@ -218,11 +243,13 @@ Publishing updates:
 expo publish --release-channel prod
 ```
 
+Just a note here that you can, of course, name the release channels for any of the your environments to whatever you'd like – be it `prod`, `production`, or `my-awesome-app-is-finally-live`. Just make sure to be consistent and set things up in your `environment.js` file.
+
 ### Digging Deeper: Advanced Release Channels
 If you want to be even more of an Expo wiz, take a look at the documentation on <a href='https://docs.expo.io/versions/latest/distribution/advanced-release-channels/#promoting-a-release-to-a-new-channel' target="_blank" class="link--text-in-p">Advanced Release Channels</a>. Expo provides the option to promote and roll back channel entries between release channels – which may save you some build time in the long run
 
 ## Conclusion
-Using Expo and Expo Release Channels, our team has built a workflow that works for us. The `environment.js` file serves as our normal `.env`, TestFlight/Google Play Test Tracks take over as our `staging` environment, and the released app is our final `production`.
+Using Expo and Expo Release Channels, our team has built a workflow that works for us. The `environment.js` file takes the place of a `.env`, TestFlight and Testing Tracks on Google Play serve as our `staging` environment, and the released app is our final `production`.
 
 It should be said that there are alternatives to this workflow, including packages like <a href='https://github.com/luggit/react-native-config' target="_blank" class="link--text-in-p">react-native-config</a> and <a href='https://github.com/brysgo/babel-plugin-inline-dotenv#readme' target="_blank" class="link--text-in-p">babel-plugin-inline-dotenv</a>. However, the former requires ejecting from Expo in order to "link" to native code, and the latter requires additional configuration.
 

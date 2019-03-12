@@ -168,6 +168,7 @@ li code {
   border-radius: 3px;
   background-color: #EAEFF2; }
 p code, li code {
+  line-height: 17px;
   padding: 1px 5px; }
 
 pre > code {
@@ -1139,6 +1140,9 @@ ul.ul--post-archive {
 
 .post-archive__post-date {
   margin-bottom: 5px; }
+
+sup {
+  line-height: 0; }
 
 .about-wrapper {
   background: #EAEFF2;

@@ -55,23 +55,22 @@ blockquote {
     }
 }
 
-
-
 // /**
 //  * Code formatting
 //  */
 p, li {
-    pre,
-    code {
-        font-size: 15px;
-        border: 1px solid $gray-color-light;
-        border-radius: 3px;
-        background-color: #EAEFF2;
-    }
+  pre,
+  code {
+      font-size: 15px;
+      border: 1px solid $gray-color-light;
+      border-radius: 3px;
+      background-color: #EAEFF2;
+  }
 
-    code {
-        padding: 1px 5px;
-    }
+  code {
+    line-height: 17px;
+    padding: 1px 5px;
+  }
 }
 
 
