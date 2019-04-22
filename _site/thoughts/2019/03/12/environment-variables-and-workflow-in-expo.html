@@ -171,7 +171,7 @@
 <h3 id="create-an-environment-config-file">Create an Environment Config File</h3>
 <p>We start by creating an <code class="highlighter-rouge">environment.js</code> file that is also added to our <code class="highlighter-rouge">.gitignore</code> (so that any sensitive information is never published to GitHub). This <code class="highlighter-rouge">environment.js</code> essentially serves as the project’s <code class="highlighter-rouge">.env</code> file, allowing us to store api urls and other variables that change based on the app’s current environment.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/*****************************
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*****************************
 * environment.js
 * path: '/environment.js' (root of your project)
 ******************************/
@@ -213,8 +213,7 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) =&gt; {
 };
 
 export default getEnvVars;
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You’ll see a couple of things here. First off, we check what platform the app is being run on (iOS or Android) via <code class="highlighter-rouge">Platform</code> to determine the correct <code class="highlighter-rouge">localhost</code> address. We quickly found that Android requires a different address in order to correctly render images and other static assets when running locally. <sup><a href="https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator" target="_blank" class="link--text-in-p">3</a></sup></p>
 
@@ -228,7 +227,7 @@ export default getEnvVars;
 
 <p>You’ll see that we use ES6’s <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" class="link--text-in-p">destructuring assignment syntax</a> to get the specific variable we want (in this case <code class="highlighter-rouge">apiUrl</code>) out of the function:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/*****************************
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*****************************
 * api.js
 * path: '/utils/api.js'
 ******************************/
@@ -252,12 +251,11 @@ export const logIn = (credentials, jsonWebToken) =&gt; (
    body: JSON.stringify(credentials)
  })
 );
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You can see how useful this can be with multiple variables within the same environment. To import a key for Amplitude into its own config file, for example, we do the following from <code class="highlighter-rouge">Amplitude.js</code></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/*****************************
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*****************************
 * Amplitude.js
 * path: '/utils/analytics/Amplitude.js'
 ******************************/
@@ -278,8 +276,7 @@ const initialize = () =&gt; {
  isInitialized = true;
 };
 ...
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="a-suggested-workflow">A Suggested Workflow</h2>
 <p>After a few projects, we’ve come up with an Expo workflow that closely mirrors that of our web development projects. While not 1-to-1, hopefully this suggested workflow can help you and your team on your own Expo projects.</p>
@@ -289,9 +286,8 @@ const initialize = () =&gt; {
 
 <p>To run your app, run:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>expo start
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>expo start
+</code></pre></div></div>
 
 <p>And then select which simulator (iOS or Android) you want to open via the expo-cli in your terminal:</p>
 
@@ -301,7 +297,7 @@ const initialize = () =&gt; {
 
 <p>By running locally, the <code class="highlighter-rouge">__DEV__</code> flag will be set to true and your <code class="highlighter-rouge">ENV.dev</code> variables will be used:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/*****************************
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*****************************
 * environment.js
 * path: '/environment.js' (root of your project)
 ******************************/
@@ -321,8 +317,7 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) =&gt; {
 };
 
 ...
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="environment-2-testflightandroid-testing-tracks-staging">Environment 2: TestFlight/Android Testing Tracks (“staging”)</h3>
 <p>The <code class="highlighter-rouge">staging</code> environment includes:
@@ -333,13 +328,11 @@ Running the app via TestFlight or an Android testing track (more info on those <
 <h4 id="1-creating-and-uploading-an-initial-build">1) Creating and Uploading an Initial Build</h4>
 <p>First, you need to <a href="https://docs.expo.io/versions/v32.0.0/distribution/release-channels/#build-with-channels" target="_blank" class="link--text-in-p">build a binary</a> that you can upload to App Store Connect (iOS) and Google Play Console (Android) with your release channel set to <code class="highlighter-rouge">staging</code>. Setting the release channel flag allows you to then publish changes to that specific channel without having to rebuild and re-upload the binary.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>expo build:ios --release-channel staging
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>expo build:ios --release-channel staging
+</code></pre></div></div>
 <p>or</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>expo build:android --release-channel staging
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>expo build:android --release-channel staging
+</code></pre></div></div>
 
 <p>Once Expo has completed building the binary (<code class="highlighter-rouge">.ipa</code> for iOS and <code class="highlighter-rouge">.apk</code> for Android), you can then upload it to either Apple’s App Store Connect or Google’s Google Play Console. For more info on uploading to app stores, <a href="https://docs.expo.io/versions/v32.0.0/distribution/uploading-apps/" target="_blank" class="link--text-in-p">check out the Expo docs</a>.</p>
 
@@ -349,9 +342,8 @@ Running the app via TestFlight or an Android testing track (more info on those <
 
 <p>Whenever you do want to publish updates, you can then run:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>expo publish --release-channel staging
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>expo publish --release-channel staging
+</code></pre></div></div>
 
 <p>Any changes you’ve made will publish to the <code class="highlighter-rouge">staging</code> release channel via Expo’s <a href="https://docs.expo.io/versions/latest/guides/configuring-ota-updates/ " target="_blank" class="link--text-in-p">over-the-air JavaScript updates</a> and be available through TestFlight or Google Play’s Test Tracks.</p>
 
@@ -359,18 +351,15 @@ Running the app via TestFlight or an Android testing track (more info on those <
 <p>Lastly, when you want to go live, building and publishing is just like that of the staging environment, however you designate your release channel as “prod”:</p>
 
 <p>Building binary for upload:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>expo build:ios --release-channel prod
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>expo build:ios --release-channel prod
+</code></pre></div></div>
 <p>or</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>expo build:android --release-channel prod
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>expo build:android --release-channel prod
+</code></pre></div></div>
 
 <p>Publishing updates:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>expo publish --release-channel prod
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>expo publish --release-channel prod
+</code></pre></div></div>
 
 <p>Just a note here that you can, of course, name the release channels for any of the your environments to whatever you’d like – be it <code class="highlighter-rouge">prod</code>, <code class="highlighter-rouge">production</code>, or <code class="highlighter-rouge">my-awesome-app-is-finally-live</code>. Just make sure to be consistent and set things up in your <code class="highlighter-rouge">environment.js</code> file.</p>
 

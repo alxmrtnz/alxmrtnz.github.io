@@ -3,7 +3,6 @@ layout: post
 title:  "ContraryCon Identity Process"
 date:   2015-11-11 19:46:27
 comments: true
-<!-- categories: conferences recaps -->
 featured-icon-url: /assets/posts/11-09-15/icon-bridge.png
 featured-icon-alt: "Icon of Golden Gate Bridge"
 read-time: 2 min read
@@ -25,7 +24,7 @@ The most inspiring talk came from <a href="https://twitter.com/garthdb" target="
 
 Garth discussed the benefits of open source design and detailed some of his work on <a href='http://www.nightscout.info/' target="_blank" class="link--text-in-p">NightScout</a>, an app developed by parents of children with Type 1 Diabetes to remotely help track blood sugar levels (and save lives). By connecting data from a monitoring device, parents can send live updates to their phones and smartwatches.
 
-His advice for getting into open source? 
+His advice for getting into open source?
 
 Whether it’s designing a logo, contributing code, or just adding a new perspective to the conversation, he recommends finding something you're passionate about. There are also some <a href='http://opendesign.foundation/' target="_blank" class="link--text-in-p">great</a> <a href='https://github.com/opensourcedesign' target="_blank" class="link--text-in-p">places</a> you can go to get started.
 
@@ -37,12 +36,12 @@ He talked about keeping side projects fun and stupid. This way, you can keep fro
 
 Web Accessibility is More than Accessible Code
 ----------------------------------------------
-As practitioners of web design and development, it’s our job to make our websites usable, visually pleasing, and accessible – and that doesn’t mean just developers/engineers implementing accessible code. 
+As practitioners of web design and development, it’s our job to make our websites usable, visually pleasing, and accessible – and that doesn’t mean just developers/engineers implementing accessible code.
 
 <a href='https://twitter.com/Jennison' target="_blank" class="link--text-in-p">Jennison Asuncion</a>, Co-Director of the Adaptech Research Network, spoke about how producing accessible content means designing and developing user experiences that everyone, including people with disabilities, can independently consume and interact with. From touching on resources for <a href='http://jxnblk.com/colorable/demos/text/' target="_blank" class="link--text-in-p">sufficient color contrast</a> to walking us through the experience of using a screenreader on <a href='https://www.united.com/ual/en/us/?root=1' target="_blank" class="link--text-in-p">United.com</a>, Jennison got me thinking about how web professionals can (and should) improve accessibility across their work.
 
 In Conclusion
 -------------
-For a first web conference experience, FOWD was a blast and extremely inspiring. If you’re a web professional or have just been thinking about putting yourself out there and learning how we creatives can help impact the world around us, I’d highly recommend attending a conference like FOWD. 
+For a first web conference experience, FOWD was a blast and extremely inspiring. If you’re a web professional or have just been thinking about putting yourself out there and learning how we creatives can help impact the world around us, I’d highly recommend attending a conference like FOWD.
 
 I’m already planning my next steps of finding and contributing to an open source project, working to make my sites more accessible, and might even be thinking about my own beard oil – well, we’ll see about that last one.
