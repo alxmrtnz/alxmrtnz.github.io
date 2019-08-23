@@ -1,202 +1,195 @@
 /**
  * Post content
  */
-
 $post-content-max-width: 750px;
 $media-max-width: 1400px;
 $media-padding: 0px 50px;
 
 .page-content {
-    padding-top: 10px;
-    height: 100%;
+  height: 100%;
+  padding-top: 10px;
 }
 
 .page-heading {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .post-list {
-    margin-left: 0;
-    list-style: none;
+  margin-left: 0;
+  list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+  > li {
+    margin-bottom: $spacing-unit;
+  }
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    color: $gray-color;
+  font-size: $small-font-size;
+  color: $gray-color;
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+  display: block;
+  font-size: 24px;
 }
-
-
 
 /**
  * Posts
  */
 .post-header {
-    margin-bottom: 20px;
-    position: relative;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .post-date, .post-title {
-   text-align: center;
+  text-align: center;
 }
 
 .post-date {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .post-title {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .post-origin {
-    padding: 10px 0px;
-    border-top: 1px solid $gray-color;
-    border-bottom: 1px solid $gray-color;
-    font-style: italic;
-    color: $gray-color-dark;
-    text-align: center;
+  border-bottom: 1px solid $gray-color;
+  border-top: 1px solid $gray-color;
+  color: $gray-color-dark;
+  font-style: italic;
+  padding: 10px 0px;
+  text-align: center;
 }
 
 $post-image-padding-top: 20px;
 
 .post-content, .work-content {
-    h1, h2, h3, h4, h5, p, ol, ul {
-        max-width: $post-content-max-width;
-        padding: 0px 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  h1, h2, h3, h4, h5, p, ol, ul {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $post-content-max-width;
+    padding: 0px 20px;
+  }
 
+  p {
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: $post-image-padding-top 0px 0px 0px;
+    }
+  }
+
+  p + .grid--featured-image {
     @media screen and (min-width: $on-laptop) {
-        // padding: 90px 150px;
+      margin-top: 80px;
+    }
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-top: 20px;
+
+    @media screen and (min-width: $on-palm) {
+      font-size: 26px;
+      margin-top: 60px;
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+    color: $heading-color-light;
+    line-height: 28px;
+
+    @media screen and (min-width:$on-laptop) {
+      font-size: 22px;
+      margin-bottom: 20px;
+      margin-top: 50px;
+    }
+  }
+
+  h2 + h3 {
+    @media screen and (min-width:$on-laptop) {
+      font-size: 22px;
+      margin-bottom: 20px;
+      margin-top: 0px;
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  ol, ul {
+    font-family: $serif;
+    margin-bottom: $paragraph-margin-bottom;
+    padding-left: 1em;
+
+    font-size: 19px;
+    line-height: 28px;
+
+    @media screen and (min-width: $on-palm) {
+      font-size: 22px;
+      line-height: 32px;
     }
 
-    p {
-        img {
-            padding: $post-image-padding-top 0px 0px 0px;
-            display: block;
-            margin: 0 auto;
-        }
+    li {
+      margin-bottom: 10px;
+
+      ul {
+        font-size: 0.9em;
+        line-height: 1.5em;
+        list-style-type: square;
+        margin-left: 20px;
+      }
     }
+  }
 
-    p + .grid--featured-image {
-        @media screen and (min-width: $on-laptop) {
-            margin-top: 80px;
-        }
-    }
-
-    h2 {
-        font-size: 22px;
-        margin-top: 20px;
-
-        @media screen and (min-width: $on-palm) {
-            font-size: 26px;
-            margin-top: 60px;
-        }
-
-    }
-
-    h3 {
-        font-size: 18px;
-        color: $heading-color-light;
-        line-height: 28px;
-
-        @media screen and (min-width:$on-laptop) {
-            font-size: 22px;
-            margin-top: 50px;
-            margin-bottom: 20px;
-        }
-    }
-
-    h2 + h3 {
-        @media screen and (min-width:$on-laptop) {
-            font-size: 22px;
-            margin-top: 0px;
-            margin-bottom: 20px;
-        }
-    }
-
-    h4 {
-        font-size: 16px;
-        margin-bottom: 10px;
-
-        @media screen and (min-width:$on-laptop) {
-            // font-size: 56px;
-
-
-        }
-    }
-    ol, ul {
-        font-family: $serif;
-        margin-bottom: $paragraph-margin-bottom;
-        padding-left: 1em;
-
-        font-size: 19px;
-        line-height: 28px;
-
-        @media screen and (min-width: $on-palm) {
-            font-size: 22px;
-            line-height: 32px;
-        }
-
-        li {
-            margin-bottom: 10px;
-
-            ul {
-                list-style-type: square;
-                margin-left: 20px;
-                font-size: .9em;
-                line-height: 1.5em;
-
-            }
-        }
-    }
-
-    hr {
-        max-width: 750px;
-        margin: 40px auto;
-    }
+  hr {
+    max-width: 750px;
+    margin: 40px auto;
+  }
 }
 
 .post-content {
-    max-width: $post-content-max-width;
-    margin: 0 auto 70px auto;
+  margin: 0 auto 70px auto;
+  max-width: $post-content-max-width;
+
+  @media screen and (min-width: $on-palm) {
+    padding: 0px 20px;
+  }
+
+  ul {
+    margin-left: 1.2em;
+  }
+
+  .video-container {
+    max-width: 1375px;
+    margin: 0 auto 2em;
+
+    .embed-container {
+      height: 0;max-width: 100%;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+    }
+
+    .embed-container iframe, .embed-container object, .embed-container embed { position: absolute;
+      height: 100%;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  } // End .video-container
+
+  .highlighter-rouge {
+    margin: 0 auto;
+    padding: 0px 20px;
 
     @media screen and (min-width: $on-palm) {
-        padding: 0px 20px;
+      padding: 0px;
     }
-
-    ul {
-        margin-left: 1.2em;
-    }
-
-    .video-container {
-        max-width: 1375px;
-        margin: 0 auto 2em;
-
-        .embed-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow:
-            hidden; max-width: 100%;
-        }
-
-        .embed-container iframe, .embed-container object, .embed-container embed { position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    } // End .video-container
+  } // end .highlighter
 } // End .post-content
 
 
@@ -222,14 +215,19 @@ $post-image-padding-top: 20px;
 }
 
 .post-comments {
-    max-width: $post-content-max-width;
-    margin: 0 auto 100px auto;
+  margin: 0 auto 100px auto;
+  max-width: $post-content-max-width;
+
+  padding: 0px 20px;
+
+  @media screen and (min-width: $on-tablet) {
+    padding: 0px;
+  }
 }
 
-
 .footnote {
-    font-size: 15px;
-    line-height: 20px;
-    color: $heading-color-light;
+  color: $heading-color-light;
+  font-size: 15px;
+  line-height: 20px;
 }
 
