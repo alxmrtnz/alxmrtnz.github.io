@@ -782,6 +782,8 @@ ul.social-icon-list {
   @media screen and (min-width: 768px) {
     .post-comments {
       padding: 0px; } }
+  .post-comments #disqus_thread a {
+    color: #7d60d7 !important; }
 
 .footnote {
   color: #a6b0c3;

@@ -223,6 +223,10 @@ $post-image-padding-top: 20px;
   @media screen and (min-width: $on-tablet) {
     padding: 0px;
   }
+
+  #disqus_thread a {
+    color: darken($brand-color, 4%) !important;
+  }
 }
 
 .footnote {
