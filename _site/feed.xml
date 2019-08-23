@@ -5,17 +5,23 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 23 Aug 2019 15:56:11 -0400</pubDate>
-    <lastBuildDate>Fri, 23 Aug 2019 15:56:11 -0400</lastBuildDate>
+    <pubDate>Fri, 23 Aug 2019 16:22:33 -0400</pubDate>
+    <lastBuildDate>Fri, 23 Aug 2019 16:22:33 -0400</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
         <title>Environment Management in Expo</title>
         <description>&lt;p&gt;We recently expanded our service offering at &lt;a href=&quot;https://whitelabelco.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt; to include mobile app development using Expo and React Native. This technology allows us to develop native applications for both iOS and Android devices using our knowledge of JavaScript and React. As with any new framework or language, there proved to be a learning curve, specifically when it came to our project workflow.&lt;/p&gt;
 
-&lt;p&gt;While our team was familiar with how to manage environment variables on an array of web projects (configuring variables such as API urls, keys, etc. for local, staging, and production environments), Expo and React Native do things slightly differently.&lt;/p&gt;
+&lt;p&gt;While our team was familiar with how to manage environment variables on an array of web projects (configuring variables such as API urls for local, staging, and production environments), Expo and React Native do things slightly differently.&lt;/p&gt;
 
 &lt;p&gt;After some trial, error, and research, we created a workflow based on &lt;a href=&quot;https://medium.com/@peterpme/environment-variables-in-expo-using-release-channels-4934594c5307&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;a post from Peter Piekarczyk&lt;/a&gt;. Beginning with creating an Expo-based equivalent to a &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, I’ll show you our team’s full workflow when it comes to using React Native and Expo’s Release Channels for local, staging, and production environments.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Update: August, 23, 2019 &lt;br /&gt;
+A Note on Security – This article focuses on how to maintain variables in a workflow across Expo environments but does not include specific information on how to secure sensitive information such as secrets. &lt;br /&gt; &lt;br /&gt;
+Be aware that you will want to look into obfuscating sensitive information. Please see &lt;a class=&quot;link--text-in-p&quot; href=&quot;https://alxmrtnz.com/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html#comment-4589309119&quot;&gt;this comment&lt;/a&gt; for further information (or comment suggestions at the bottom of this article!)&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;what-is-expo&quot;&gt;What is Expo?&lt;/h2&gt;
 &lt;p&gt;First, I want to clarify what Expo is and why we use it.&lt;/p&gt;

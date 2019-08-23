@@ -142,9 +142,15 @@
         </header>
         <p>We recently expanded our service offering at <a href="https://whitelabelco.com" target="_blank" class="link--text-in-p">Whitelabel</a> to include mobile app development using Expo and React Native. This technology allows us to develop native applications for both iOS and Android devices using our knowledge of JavaScript and React. As with any new framework or language, there proved to be a learning curve, specifically when it came to our project workflow.</p>
 
-<p>While our team was familiar with how to manage environment variables on an array of web projects (configuring variables such as API urls, keys, etc. for local, staging, and production environments), Expo and React Native do things slightly differently.</p>
+<p>While our team was familiar with how to manage environment variables on an array of web projects (configuring variables such as API urls for local, staging, and production environments), Expo and React Native do things slightly differently.</p>
 
 <p>After some trial, error, and research, we created a workflow based on <a href="https://medium.com/@peterpme/environment-variables-in-expo-using-release-channels-4934594c5307" target="_blank" class="link--text-in-p">a post from Peter Piekarczyk</a>. Beginning with creating an Expo-based equivalent to a <code class="highlighter-rouge">.env</code> file, I’ll show you our team’s full workflow when it comes to using React Native and Expo’s Release Channels for local, staging, and production environments.</p>
+
+<blockquote>
+  <p>Update: August, 23, 2019 <br />
+A Note on Security – This article focuses on how to maintain variables in a workflow across Expo environments but does not include specific information on how to secure sensitive information such as secrets. <br /> <br />
+Be aware that you will want to look into obfuscating sensitive information. Please see <a class="link--text-in-p" href="https://alxmrtnz.com/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html#comment-4589309119">this comment</a> for further information (or comment suggestions at the bottom of this article!)</p>
+</blockquote>
 
 <h2 id="what-is-expo">What is Expo?</h2>
 <p>First, I want to clarify what Expo is and why we use it.</p>
