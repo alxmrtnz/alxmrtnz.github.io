@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 23 Aug 2019 16:22:33 -0400</pubDate>
-    <lastBuildDate>Fri, 23 Aug 2019 16:22:33 -0400</lastBuildDate>
+    <pubDate>Wed, 28 Aug 2019 13:21:26 -0400</pubDate>
+    <lastBuildDate>Wed, 28 Aug 2019 13:21:26 -0400</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -669,7 +669,7 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;a-guide-to-world-footballs-essential-matches&quot;&gt;A Guide to World Football’s Essential Matches&lt;/h2&gt;
-&lt;p&gt;Tap In is a simple dashboard guide to world football’s most essential matches. The application is designed to deliver all the daily information soccer fans need to know to stay on top of the beautiful game in real-time.&lt;/p&gt;
+&lt;p&gt;Tap In was a simple dashboard guide to world football’s most essential matches. The application is designed to deliver all the daily information soccer fans need to know to stay on top of the beautiful game in real-time.&lt;/p&gt;
 
 &lt;h2 id=&quot;my-role&quot;&gt;My Role&lt;/h2&gt;
 &lt;p&gt;It was the 2014 World Cup in Brazil that kicked off my obsession with the beautiful game. I grew up following American sports, but never had really paid any attention to the world’s sport: (the real) football.&lt;/p&gt;
@@ -690,14 +690,14 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;technologies&quot;&gt;Technologies&lt;/h2&gt;
-&lt;p&gt;Tap In is built using React, React Native, JavaScript, Python, and Django. While I mainly contribute to the React web app, I also helped launch the initial React Native app and now maintain it along with developer David Pett.&lt;/p&gt;
+&lt;p&gt;Tap In was built using React, React Native, JavaScript, Python, and Django. While I mainly contribute to the React web app, I also helped launch the initial React Native app and now maintain it along with developer David Pett.&lt;/p&gt;
 
 &lt;p&gt;The Tap In API, built by &lt;a href=&quot;https://twitter.com/minnepixel&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Clint McMahon&lt;/a&gt;, supplies data via &lt;a href=&quot;https://football-api.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Football API&lt;/a&gt; in order to provide users with live match events such as goals, yellow/red cards, and substitutions.&lt;/p&gt;
 
 &lt;p&gt;React proved to be a very useful library for building and managing components. Not only that, but by building our app in React Native, much of the front-end structure translates between the two environments, allowing us to quickly ship new features.&lt;/p&gt;
 
 &lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
-&lt;p&gt;Tap In’s visual style sets it apart from other sports websites and apps. Its simple aesthetic was actually one of the things that initially drew me in. Designer &lt;a href=&quot;https://twitter.com/mike_arney&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Mike Arney&lt;/a&gt; developed the core style, taking teams’ crests and reducing them to minimal and geometric icons.&lt;/p&gt;
+&lt;p&gt;Tap In’s visual style set it apart from other sports websites and apps. Its simple aesthetic was actually one of the things that initially drew me in. Designer &lt;a href=&quot;https://twitter.com/mike_arney&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Mike Arney&lt;/a&gt; developed the core style, taking teams’ crests and reducing them to minimal and geometric icons.&lt;/p&gt;
 
 &lt;p&gt;As Tap In added coverage for more leagues (such as MLS in the U.S. and Liga MX in Mexico), we needed to add more teams’ crests. I worked with Mike to develop about two dozen of the crests used in the app today.&lt;/p&gt;
 
@@ -713,15 +713,17 @@ export const phoneNumber = value =&amp;gt;
 &lt;h2 class=&quot;text-center&quot;&gt;
   Final Thoughts
 &lt;/h2&gt;
-&lt;p&gt;At Tap In, we have team members living in Minnesota, Texas, Ohio, and even Norway. Thanks to platforms like Slack and Trello, we’re all able to keep in touch, even when many of us have never even met in person.&lt;/p&gt;
+&lt;p&gt;At Tap In, we were a distributed team with members living in Minnesota, Texas, Ohio, and even Norway. Thanks to platforms like Slack and Trello, we were able to keep in touch, even when many of us had never even met in person.&lt;/p&gt;
 
-&lt;p&gt;It’s been a blast building a project like this. Every team member contributes due to their passion for soccer and even if we haven’t met on the playing field, we’ve built a sense of camaraderie that transcends sport and technology.&lt;/p&gt;
-
+&lt;p&gt;It was a blast building a project like this. Every team member contributed due to their passion for soccer and even if we hadn’t met on the playing field, we built a sense of camaraderie that transcends sport and technology.&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;div class=&quot;text--centered&quot;&gt;
   &lt;p&gt;
-    &lt;a href=&quot;https://www.tapinguide.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Visit Tap In online&lt;/a&gt; or download it on the &lt;a href=&quot;https://itunes.apple.com/us/app/tap-in-guide/id1265129819&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;App Store&lt;/a&gt; or &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.tapinguide.matchday&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Google Play&lt;/a&gt;
+    While we closed down the project in late 2018, you can still check out &lt;a href=&quot;https://www.twitter.com/tapinguide&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tap In on Twitter&lt;/a&gt; to explore some legacy content.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Please note that the live tapinguide.com is not at all related to our project (even though whoever is running it stole our logo 😅).
   &lt;/p&gt;
 &lt;/div&gt;
 </description>
@@ -833,7 +835,7 @@ export const phoneNumber = value =&amp;gt;
 	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFMkQyeDdSUXRSTDA/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 14 Nov 2016 00:00:00 -0400</pubDate>
+        <pubDate>Mon, 14 Nov 2016 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/resume-postlight/index.html</link>
         <guid isPermaLink="true">http://localhost:4000/resume-postlight/index.html</guid>
         
