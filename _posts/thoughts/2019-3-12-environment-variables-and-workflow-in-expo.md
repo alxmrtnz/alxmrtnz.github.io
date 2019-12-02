@@ -51,7 +51,7 @@ We start by creating an `environment.js` file that is also added to our `.gitign
 * path: '/environment.js' (root of your project)
 ******************************/
 
-import { Constants } from "expo";
+import Constants from "expo-constants";
 import { Platform } from "react-native";
 
 const localhost =
