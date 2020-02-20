@@ -1,0 +1,16 @@
+current directory: /Users/Alex/Code/alxmrtnz/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/Users/Alex/.rbenv/versions/2.7.0/bin/ruby -I /Users/Alex/.rbenv/versions/2.7.0/lib/ruby/2.7.0 -r ./siteconf20200213-70225-1o5t1rb.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Alex/Code/alxmrtnz/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/Alex/Code/alxmrtnz/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/Alex/Code/alxmrtnz/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20200213-70225-1s8p9kt
