@@ -254,8 +254,8 @@ $work-break: 800px;
   ol, ul {
     background: $gray-color-light;
     color: $black;
-    font-family: $sans-serif;
-    font-size: 16px;
+    font-family: $serif;
+    font-size: 22px;
     font-weight: normal;
     margin-bottom: 30px;
     max-width: 625px;
@@ -263,7 +263,8 @@ $work-break: 800px;
 
     li {
       margin-bottom: 5px;
-      list-style-type: circle;
+      // list-style-type: circle;
+      list-style-type: square;
 
       ul {
         padding: 0px 0px 0px 20px;

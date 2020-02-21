@@ -434,9 +434,9 @@ ul.social-icon-list li a:hover { color: #8A70DB; }
 
 .pop-out-image:hover:after { opacity: 1; }
 
-.work-content ol, .work-content ul { background: #f3f6f8; color: #333; font-family: "aktiv-grotesk", sans-serif; font-size: 16px; font-weight: normal; margin-bottom: 30px; max-width: 625px; padding: 35px 50px; }
+.work-content ol, .work-content ul { background: #f3f6f8; color: #333; font-family: "athelas", "freight-text-pro", serif; font-size: 22px; font-weight: normal; margin-bottom: 30px; max-width: 625px; padding: 35px 50px; }
 
-.work-content ol li, .work-content ul li { margin-bottom: 5px; list-style-type: circle; }
+.work-content ol li, .work-content ul li { margin-bottom: 5px; list-style-type: square; }
 
 .work-content ol li ul, .work-content ul li ul { padding: 0px 0px 0px 20px; margin-bottom: 10px; }
 

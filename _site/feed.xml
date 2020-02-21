@@ -5,8 +5,8 @@
     <description>Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.&lt;br&gt;This site is a work in progress and is being built with Jekyll and hosted on Github.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 20 Feb 2020 11:06:28 -0500</pubDate>
-    <lastBuildDate>Thu, 20 Feb 2020 11:06:28 -0500</lastBuildDate>
+    <pubDate>Fri, 21 Feb 2020 10:26:51 -0500</pubDate>
+    <lastBuildDate>Fri, 21 Feb 2020 10:26:51 -0500</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -661,6 +661,101 @@ export const phoneNumber = value =&amp;gt;
       </item>
     
       <item>
+        <title>Maptastic</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/featured-image-maptastic-2.jpg&quot; alt=&quot;Maptastic Title Card&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://maptastic.us/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Maptastic&lt;/a&gt; is a React web application that makes U.S. demographic data, such as population, housing characteristics, and related socioeconomic characteristics easily obtainable to local governments, nonprofits, and regional planning agencies.&lt;/p&gt;
+
+&lt;p&gt;Organizations can use the app to search demographic data for regions throughout the U.S. and save their searches for future reference.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
+&lt;p&gt;As part of a small team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I served as the lead front-end developer and worked with a designer and several backend developers to bring the project to life.&lt;/p&gt;
+
+&lt;p&gt;Maptastic gave me the opportunity try out new libraries like &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt;, used to display data obtained through &lt;a href=&quot;https://www.census.gov/data/developers/data-sets.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;U.S. Census APIs&lt;/a&gt;, and explore the Google Maps API and Geosuggest (through libraries like &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt;) for geolocation searches.&lt;/p&gt;
+
+&lt;h2 id=&quot;making-data-beautiful&quot;&gt;Making Data Beautiful&lt;/h2&gt;
+&lt;h3 id=&quot;chartist-graphs&quot;&gt;Chartist Graphs&lt;/h3&gt;
+&lt;p&gt;In order to make large amounts of demographic data easy to understand, we used &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt; to create a variety of charts, from comparison bar charts to pie charts, to visualize the data.&lt;/p&gt;
+
+&lt;p&gt;Chartist proved to be a handy library that allowed for easy customization and let me build a set of restackable, collapsible cards for the end user.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-charts.png&quot; alt=&quot;Maptastic Chart Data&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;a-flexible-responsive-layout&quot;&gt;A Flexible, Responsive Layout&lt;/h3&gt;
+&lt;p&gt;Using Flexbox, I created a responsive masonry-style layout to accomodate a range of device sizes. It was important to give the map and chart cards room to breath in order keep data digestible, but the layout also had to be flexible enough to re-stack on smaller devices.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/responsive-maptastic-2.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Responsive Animation&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    A responsive layout lets users take Maptastic with them on their phones and tablets
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;fixed-positioning&quot;&gt;Fixed Positioning&lt;/h3&gt;
+&lt;p&gt;Additionally, on desktop, we wanted to keep several elements, such as the map and main navigation, in a fixed position so that users could scroll through the cards of data, but always have easy access to these primary elements in order to refine their search location and radius.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-fixed-positioning.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Showing Scroll Animation&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Collapsible cards and a masonry-style layout makes viewing demographic data easy
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;maps-integration&quot;&gt;Maps Integration&lt;/h2&gt;
+&lt;p&gt;As the name “Maptastic” implies, maps (and location search) were a critical part of the project. Our goal was to allow users to easily search for a location, visualize it via Google Maps, and modify their search radius to hone in on their targets.&lt;/p&gt;
+
+&lt;h3 id=&quot;searching-on-maptastic&quot;&gt;Searching on Maptastic&lt;/h3&gt;
+&lt;p&gt;The search experience is comprised of three primary elements:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A geosuggest search input&lt;/li&gt;
+  &lt;li&gt;A Google Map to display the search&lt;/li&gt;
+  &lt;li&gt;A slider to refine the range of the search area&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By using &lt;a href=&quot;https://tomchentw.github.io/react-google-maps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Google Maps&lt;/a&gt; to tie into the Google Maps Javascript API, &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt; to create a suggestive search input, and Redux to allow the components access to a shared state, I was able to create a search experience that makes accessing demographic data a breeze.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/392963178?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 class=&quot;text-center&quot;&gt;
+  Conclusion &amp;amp; Lessons Learned
+&lt;/h2&gt;
+
+&lt;p&gt;While concise in scope, Maptastic helped me explore new terrain. From learning how interact with and customize map elements with Google Maps to styling large chunks of data using Chartist, this project exposed me to new front-end features. Front-end development continues to excite me as I discover how much more there is to learn every day.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-screenshots.jpg&quot; alt=&quot;Maptastic App Screenshots&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 16 Apr 2018 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/maptastic.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/maptastic.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
         <title>Tap In Guide</title>
         <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -1247,19 +1342,6 @@ With content being broken up into several main sections, I defined colors that w
         
         
         <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Alex Martinez – Resume</title>
-        <description>&lt;div class=&quot;resume-container&quot;&gt;
-	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFUG9VZ3NLWmt3M0k/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 09 Sep 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/resume/index.html</link>
-        <guid isPermaLink="true">http://localhost:4000/resume/index.html</guid>
-        
         
       </item>
     

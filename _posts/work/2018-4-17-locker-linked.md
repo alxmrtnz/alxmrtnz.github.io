@@ -5,7 +5,7 @@ date:   2018-4-18 19:46:27
 comments: false
 category: work
 permalink: /:categories/:title.html
-work-type: React + Redux, Front-End Development
+work-type: React, Redux, Front-End Development
 work-summary:  A recruiting system to help guide high school student athletes and their parents through the college athletic recruiting process.
 external-link: https://www.lockerlinked.com/
 thumbnail-image: lockerlinked/locker-linked-thumbnail.jpg
