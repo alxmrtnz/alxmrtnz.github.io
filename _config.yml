@@ -21,7 +21,8 @@
 # Site settings
 title: Alex Martinez | Front-End Developer & Product Designer
 email: alex@alxmrtnz.com
-description: "Alex Martinez is a Washington, D.C. based web designer who plays with code and currently works at iStrategyLabs. Likes include French Bulldogs, good burritos, and good company.<br>This site is a work in progress and is being built with Jekyll and hosted on Github."
+description: "Alex Martinez is a Brooklyn based front-end developer with a passion for crafting beautiful interfaces. In the past, Alex worked on awesome teams at ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. "
+
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
