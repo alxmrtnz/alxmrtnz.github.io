@@ -57,18 +57,18 @@ $paragraph-margin-bottom: 35px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "mixins",
+  "about",
   "base",
-  "type",
-  "layout",
-  "syntax-highlighting",
-  "styles",
+  "fontastic-icon-styles",
+  "footer",
   "homepage",
+  "layout",
+  "mixins",
   "nav",
   "posts",
-  "work",
+  "resume",
+  "styles",
+  "syntax-highlighting",
   "thoughts",
-  "about",
-  "footer",
-  "resume"
-;
+  "type",
+  "work";
