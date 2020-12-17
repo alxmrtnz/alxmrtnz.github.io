@@ -5,9 +5,22 @@
     <description>Alex Martinez is a Brooklyn based front-end developer with a passion for crafting beautiful interfaces. In the past, Alex worked on awesome teams at ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 17 Dec 2020 10:07:19 -0500</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2020 10:07:19 -0500</lastBuildDate>
+    <pubDate>Thu, 17 Dec 2020 10:21:39 -0500</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2020 10:21:39 -0500</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Alex Martinez – Resume</title>
+        <description>&lt;div class=&quot;resume-container&quot;&gt;
+	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/1hBaO7GyHtayQ4QPsZHs2F93E_pXhSqcR/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 17 Dec 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/resume/index.html</link>
+        <guid isPermaLink="true">http://localhost:4000/resume/index.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Environment Management in Expo</title>
@@ -1111,111 +1124,6 @@ With content being broken up into several main sections, I defined colors that w
         <pubDate>Tue, 13 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/zapier2/index.html</link>
         <guid isPermaLink="true">http://localhost:4000/zapier2/index.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Question Three</title>
-        <description>&lt;h3 id=&quot;prompt&quot;&gt;Prompt&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Tell me about a time you worked on a project designed to increase conversion rates or usage of a specific feature. What was the process, who did you collaborate with, and what was the outcome? Make sure to include sketches, wireframes, mockups, screenshots, and narrative to effectively describe your design process towards designing and building this feature.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Through &lt;a href=&quot;http://metto.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Metto&lt;/a&gt; , I helped design and build a web application called Benchmarcs that allows funeral homes to monitor trends in business for both their own individual homes and their competitors.&lt;/p&gt;
-
-&lt;p&gt;Traditionally, funeral homes tracked “calls,” or deaths, by skimming through obituaries in local newspapers and obituary websites. Because the calls listed in these sources also indicated which funeral home would be performing the funeral, each home could track how much business each competitor was receiving.&lt;/p&gt;
-
-&lt;p&gt;With Benchmarcs, we helped automate this process by using web spiders to crawl online data and assess when and where calls happen. This helps homes save time and money and provides a central hub of important competitive data.&lt;/p&gt;
-
-&lt;h3 id=&quot;tracking-the-competition&quot;&gt;Tracking the Competition&lt;/h3&gt;
-
-&lt;p&gt;One of the biggest advantages in moving toward an automated system like Benchmarcs is that it gives funeral homes the ability to track their competition.&lt;/p&gt;
-
-&lt;p&gt;Adding competitors allows users to see how many calls a competing home received over the last week, month, year, etc and also see trends in calls over that period of time.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
-
-&lt;p&gt;In order to educate new users about the ability to track competitors and to help populate their accounts with competitor data, we decided to integrate the ability to add competitors into the onboarding process.&lt;/p&gt;
-
-&lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
-		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; alt=&quot;Benchmarcs Onboarding User Flow&quot; /&gt;
-		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;span class=&quot;img-caption&quot;&gt;We created user-flow diagrams to outline functionality in the initial onboarding and setup, including the ability to add competitor funeral homes (Getting Started Step 3)&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Conversations with our product owners and several potential users led us to focus on the addition of competitors on a local, rather than regional or national level. We learned that even when the competition has multiple locations across a state or region, homes tend to focus on the competing branch closest to them.&lt;/p&gt;
-
-&lt;p&gt;In allow users to add competing funeral homes, we started by approximating the user’s location in order to show an suggested set of homes in their area. The page displayed the user’s closest zip code and provided a radius selector to filter results.&lt;/p&gt;
-
-&lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
-		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; alt=&quot;Benchmarcs Add a Competitor Wireframe and design V1&quot; /&gt;
-		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;span class=&quot;img-caption&quot;&gt;
-		We gathered user feedback on the initial &quot;add a competitor&quot; feature from several pilot program users.
-	&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;p&gt;While some aspects of the initial functionality fit the bill, the nuances of the design did not. New users would choose several homes from the pre-populated list before becoming frustrated when they couldn’t find the home they were looking for.&lt;/p&gt;
-
-&lt;p&gt;It was unclear to users that the list of homes was a smaller list of suggestions rather than a complete list of all competitors. In the end, this solution made the tool less useful to users and converted them with less competitors than than they really wanted.&lt;/p&gt;
-
-&lt;p&gt;After several of usability sessions, our team decided to improve the design of this feature.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-solution&quot;&gt;The Solution&lt;/h2&gt;
-
-&lt;p&gt;To improve usability, we made a couple of changes to both the visual design and functionality:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;We did away with ZIP and radius&lt;/strong&gt; – user testing had shown that these fields were not being used and that users instead focused on the search input&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;We made the search bar more prominent&lt;/strong&gt; in order to guide the user to take action&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;We added the title “Suggested Competitors” to the preloaded competitors list&lt;/strong&gt; to communicate to users that this initial list wasn’t exhausted&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;We added functionality to deliver more and more relevant results on each selection.&lt;/strong&gt; Now, each time the user picks a competitor, we hit the Benchmarcs API, search for homes near the selected competitor and add them to the list of suggestions. Then, we  re-sort the list based on how many times a competitor is suggested in relation to the competitors selected by the user.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-interaction.gif&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
-		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-interaction.gif&quot; alt=&quot;Adding a Competitor - Animated GIF&quot; /&gt;
-		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;span class=&quot;img-caption&quot;&gt;
-		Version two of the &quot;add a competitor&quot; feature led to an overall increase in competitors added by users when setting up their accounts.
-	&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;p&gt;While seemingly small, the updated design makes the tool more useful to user and has increased the number of homes a new user would add during setup.&lt;/p&gt;
-
-&lt;p&gt;Not only could users find the homes they were looking for, but the updated functionality helped give them better suggestions.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-team&quot;&gt;The Team&lt;/h2&gt;
-
-&lt;p&gt;I worked on Benchmarcs with with a small team at &lt;a href=&quot;http://www.metto.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Metto&lt;/a&gt;, a fully remote design and development studio. The core team includes two designers (another product designer and me) and two developers who split duties on frontend and backend.&lt;/p&gt;
-
-&lt;p&gt;I also helped style the front-end side of the application and worked with the application’s Backbone framework, Marionette.&lt;/p&gt;
-
-&lt;p&gt;In addition to the team at Metto, we work closely with the application’s product owners, Tyler and Michael Anderson, the CEO and VP of Marketing and Business Development at &lt;a href=&quot;http://www.theoutlookgroup.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Outlook Group&lt;/a&gt;*, to build the standalone application that they are currently marketing to funeral homes in the midwest and across the country.&lt;/p&gt;
-
-&lt;p class=&quot;footnote&quot;&gt;
-  *Outlook Group is one of the nation’s largest marketing firms in the pre-need funeral industry.
-&lt;/p&gt;
-
-&lt;h2 id=&quot;takeaways&quot;&gt;Takeaways&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;When it comes to the design of a feature, the smallest details can create a big impact.&lt;/strong&gt; Even if it’s simply modifying a label or moving an input, a change in design can drastically affect the end user’s experience with your product.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;User test throughout the design and development process&lt;/strong&gt; in order to uncover areas for improvement.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Always be iterating.&lt;/strong&gt; It’s easy to become complacent, but the best solutions come through thoughtful refinements.&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Tue, 13 Sep 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/zapier/index.html</link>
-        <guid isPermaLink="true">http://localhost:4000/zapier/index.html</guid>
         
         
       </item>
