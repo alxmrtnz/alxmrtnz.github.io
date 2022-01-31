@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alex Martinez | Front-End Developer &amp; Product Designer</title>
-    <description>Alex Martinez is a Brooklyn based front-end developer with a passion for crafting beautiful interfaces. In the past, Alex worked on awesome teams at ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
+    <description>Alex Martinez is a front-end developer based in Brooklyn, currently making the web more delicious at Grubhub. In the past, Alex worked on awesome teams at Whitelabel, ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 06 Jul 2021 15:09:39 -0400</pubDate>
-    <lastBuildDate>Tue, 06 Jul 2021 15:09:39 -0400</lastBuildDate>
+    <pubDate>Mon, 31 Jan 2022 10:41:21 -0500</pubDate>
+    <lastBuildDate>Mon, 31 Jan 2022 10:41:21 -0500</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>

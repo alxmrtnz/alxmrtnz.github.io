@@ -159,19 +159,9 @@ ul.social-icon-list li a:hover { color: #8A70DB; }
 
 .homepage-image-container { height: 100%; width: 100%; }
 
-.homepage-image-container .homepage-background-image { height: 100%; width: 100%; z-index: 1; -webkit-filter: grayscale(1) contrast(1.1) brightness(1.1); filter: grayscale(1) contrast(1.1) brightness(1.1); background: url(../assets/images/auba.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position-x: 70%; }
-
-@media screen and (min-width: 600px) { .homepage-image-container .homepage-background-image { background-position-x: auto; } }
-
 .homepage-image-container:before { background: #EAEFF2; content: ''; display: block; height: 100%; left: 0; mix-blend-mode: soft-light; pointer-events: none; position: absolute; top: 0; width: 100%; z-index: 2; }
 
 .homepage-image-container:after { z-index: 3; content: ''; display: block; height: 100%; width: 100%; top: 0; left: 0; position: absolute; pointer-events: none; background: #050110; mix-blend-mode: lighten; }
-
-.football-trigger:hover { cursor: help; }
-
-.js-homepage-img-toggle { opacity: 0; -webkit-transition: opacity .2s ease-in; -moz-transition: opacity .2s ease-in; -ms-transition: opacity .2s ease-in; -o-transition: opacity .2s ease-in; transition: opacity .2s ease-in; }
-
-.js-homepage-img-toggle.show-opacity { opacity: 1; }
 
 /** Site header */
 .site-title { font-size: 26px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; float: left; }

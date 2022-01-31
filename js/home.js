@@ -20,17 +20,17 @@ docReady(function() {
 
     // Main Functionality
 
-    var footballer = document.querySelector('.football-trigger');
-    var homeBG = document.querySelector('.js-homepage-img-toggle');
+    // var footballer = document.querySelector('.football-trigger');
+    // var homeBG = document.querySelector('.js-homepage-img-toggle');
 
-    footballer.onmouseover = function(){
-        console.log('hover');
-        addClass(homeBG, 'show-opacity');
-    };
+    // footballer.onmouseover = function(){
+    //     console.log('hover');
+    //     addClass(homeBG, 'show-opacity');
+    // };
 
-    footballer.onmouseout = function(){
-        console.log('hover');
-        removeClass(homeBG, 'show-opacity');
-    };
+    // footballer.onmouseout = function(){
+    //     console.log('hover');
+    //     removeClass(homeBG, 'show-opacity');
+    // };
 
 });

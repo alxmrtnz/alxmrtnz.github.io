@@ -96,23 +96,23 @@ ul.social-icon-list {
   height: 100%;
   width: 100%;
 
-  .homepage-background-image {
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    -webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
-    filter: grayscale(1) contrast(1.1) brightness(1.1);
-    background: url(../assets/images/auba.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-      background-position-x: 70%;
+  // .homepage-background-image {
+  //   height: 100%;
+  //   width: 100%;
+  //   z-index: 1;
+  //   -webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
+  //   filter: grayscale(1) contrast(1.1) brightness(1.1);
+  //   background: url(../assets/images) no-repeat center center fixed;
+  //   -webkit-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -o-background-size: cover;
+  //   background-size: cover;
+  //     background-position-x: 70%;
 
-      @media screen and (min-width: $on-palm) {
-          background-position-x: auto;
-      }
-  }
+  //     @media screen and (min-width: $on-palm) {
+  //         background-position-x: auto;
+  //     }
+  // }
 
   &:before {
     background: $gray-color;
@@ -144,21 +144,21 @@ ul.social-icon-list {
   }
 }
 
-.football-trigger {
-  &:hover {
-    cursor: help;
-  }
-}
+// .football-trigger {
+//   &:hover {
+//     cursor: help;
+//   }
+// }
 
 .js-homepage-img-toggle {
-  opacity: 0;
-  -webkit-transition: opacity .2s ease-in;
-  -moz-transition: opacity .2s ease-in;
-  -ms-transition: opacity .2s ease-in;
-  -o-transition: opacity .2s ease-in;
-  transition: opacity .2s ease-in;
+  // opacity: 0;
+  // -webkit-transition: opacity .2s ease-in;
+  // -moz-transition: opacity .2s ease-in;
+  // -ms-transition: opacity .2s ease-in;
+  // -o-transition: opacity .2s ease-in;
+  // transition: opacity .2s ease-in;
 
-  &.show-opacity {
-    opacity: 1;
-  }
+  // &.show-opacity {
+  //   opacity: 1;
+  // }
 }
