@@ -30,8 +30,9 @@ $text-color: $black;
 $heading-color-light: #a6b0c3;
 $white: #fff;
 $background-color: $white;
+$brand-background-color: #E1DDF1;
 $brand-color: #8A70DB;
-$hover-color: #E0DDF0;
+$hover-color: #8b70db3a;
 
 
 $box-shadow-standard: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
@@ -39,6 +40,7 @@ $box-shadow-standard: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
 $on-palm:          600px;
 $on-tablet:        768px;
 $on-laptop:        900px;
+$on-larger-screen: 1200px;
 
 $paragraph-margin-bottom: 35px;
 

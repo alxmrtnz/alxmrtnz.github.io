@@ -19,7 +19,7 @@ h3 {
  * Paragraphs
  */
 p {
-    font-family: $serif;
+    font-family: $sans-serif;
     color: $black;
     font-size: 19px;
     line-height: 28px;
@@ -141,7 +141,7 @@ a.link--text-in-p {
       // background-size: 100% 0.1em;
       background-size: 100%;
       background-repeat: no-repeat;
-      background-position: 0 1em;
+      background-position: 0 1.15em;
       color: $brand-color;
       overflow: hidden;
 
