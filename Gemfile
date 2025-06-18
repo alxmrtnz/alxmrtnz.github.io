@@ -18,6 +18,9 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
 
+# Logger gem for Ruby 3.5+ compatibility
+gem "logger"
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do

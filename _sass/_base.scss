@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 /**
  * Reset some basic elements
  */
@@ -132,17 +134,6 @@ li {
 
 
 
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
 
 
 

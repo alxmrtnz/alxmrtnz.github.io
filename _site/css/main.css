@@ -1,3 +1,9 @@
+.footer-col-wrapper:after, .wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .about-wrapper {
   background: #EAEFF2;
   display: flex;
@@ -217,15 +223,6 @@ li > ol {
     padding-right: 15px;
     padding-left: 15px;
   }
-}
-
-/**
- * Clearfix
- */
-.footer-col-wrapper:after, .wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /**

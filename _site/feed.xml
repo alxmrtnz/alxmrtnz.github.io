@@ -5,8 +5,8 @@
     <description>Alex Martinez is a front-end developer based in Brooklyn, currently making the web more delicious at Grubhub. In the past, Alex worked on awesome teams at Whitelabel, ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 18 Jun 2025 12:26:35 -0400</pubDate>
-    <lastBuildDate>Wed, 18 Jun 2025 12:26:35 -0400</lastBuildDate>
+    <pubDate>Wed, 18 Jun 2025 12:40:25 -0400</pubDate>
+    <lastBuildDate>Wed, 18 Jun 2025 12:40:25 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -999,132 +999,175 @@ export const phoneNumber = value =&amp;gt;
       </item>
     
       <item>
-        <title>Improving and Driving Discovery on Service Year</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://localhost:4000/work/service-year&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Service Year&lt;/a&gt; is the nation’s largest marketplace for year-long, full-time, paid service opportunities. It allows young Americans to discover full-time, paid, year-long service opportunities with organizations from across the country.&lt;/p&gt;
-
-&lt;p&gt;High school students that want to contribute to something meaningful during a gap year before college, college graduates trying to find a higher calling, or any young American between the ages of 18-24 can use the platform to connect with impactful organizations.&lt;/p&gt;
-
-&lt;p&gt;The platform’s focus on connection between organizations and service corps members depends upon the ability for users to find listings and organizations that are tailored to their interests.&lt;/p&gt;
-
-&lt;p&gt;However, after the first iteration of the discovery flow, we found that building the bridge for users was not happening. Users were having difficulty understanding what a “service year” was and how to find positions and get involved.&lt;/p&gt;
-
-&lt;p&gt;Discovering the right position and getting involved with the right organization required a simpler path.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
-
-&lt;p&gt;Finding a listing for a service position should be a simple experience that’s tailored to a user’s interests. However, after conducting in-person and online usability tests with real users, it was clear that the path to discovery was foggy.&lt;/p&gt;
-
-&lt;p&gt;After creating the MVP for the platform (which including the public facing marketing pages and a log in system for corps members and organizations), our team was tasked with building out the ability to search listings, positions, organizations, and users.&lt;/p&gt;
-
-&lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Create a flexible system for displaying different content types.&lt;/p&gt;
-
-&lt;p&gt;Through usability sessions, we identified three key painpoints:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Site navigation created an unclear path&lt;/li&gt;
-  &lt;li&gt;The homepage did not clearly explain the process of getting involved&lt;/li&gt;
-  &lt;li&gt;Narrowing down search results was difficult&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;a-team-effort&quot;&gt;A Team Effort&lt;/h2&gt;
-
-&lt;p&gt;As a product being designed and built by my company, &lt;a href=&quot;https://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt;, but owned by a client, &lt;a href=&quot;https://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Service Year Alliance&lt;/a&gt;, working on this challenge involved a variety of team members.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    	&lt;img src=&quot;https://placekitten.com/1400/600&quot; /&gt;
-    	&lt;span class=&quot;img-caption&quot;&gt;A look at the homepage used in testing.&lt;/span&gt;
+        <title>Service Year</title>
+        <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/181189760?color=00fbe6&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;###User Flows
-These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;The Service Year Alliance teamed up with &lt;a href=&quot;http://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to design and develop a digital platform for young Americans to connect and serve with the nation’s best nonprofits. Service Year aims to make a year of service a common expectation and opportunity for every young American.&lt;/p&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    	&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-user-flow-david.png&quot; /&gt;
-    &lt;/div&gt;
+&lt;p&gt;An ongoing and ever-evolving project, the site brings the nation’s best service opportunities into one place, allowing both organizations and service corps members to more easily connect with one another.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-role&quot;&gt;My Role&lt;/h2&gt;
+
+&lt;p&gt;I served as a lead visual and user experience designer on Service Year. While working with a team of designers, developers, and project managers within ISL, we also worked closely with our client, the Service Year Alliance to bring their vision to life.&lt;/p&gt;
+
+&lt;p&gt;Over the course of the project, I worked on anything from initial user research to the creation of user flows, wireframes, and interactive prototypes to the final visual and interaction design of both the marketing site and web application.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-service-year-ecosystem&quot;&gt;Creating the Service Year Ecosystem&lt;/h2&gt;
+
+&lt;p&gt;While Service Year is built on the idea of connecting organizations with American youth, we needed to create a platform that catered to a variety of users and content types.&lt;/p&gt;
+
+&lt;p&gt;Whether you’re the administrator that manages your organization’s profile and prescense on Service Year, someone recruiting service members for an organization, or an individual looking for a service opportunity, Service Year needs to connect you to where you want to be.&lt;/p&gt;
+
+&lt;h3 id=&quot;information-architecture&quot;&gt;Information Architecture&lt;/h3&gt;
+
+&lt;p&gt;Beginning in the kickoff meeting with our client, we began to assess everything that would make up the Service Year Exchange platform.&lt;/p&gt;
+
+&lt;p&gt;Initial sitemaps helped our team lay out initial screens for everything from the marketing pages to the various interactions users would take when listing and discovering service opportunities.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-site-map-august-2015.png&quot; alt=&quot;Service Year Sitemap (August 2015)&quot; /&gt;
+      &lt;span class=&quot;img-caption&quot;&gt;Initial sitemaps can give an idea of the number of screens/interactions needed for a project of this scale.&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;##Site Structure
-After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
+&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
-  &lt;li&gt;Policy and Research&lt;/li&gt;
-  &lt;li&gt;Events&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;We then began creating user flows for the paths each user type would take when being brought onto the system, browsing opportunities, or recruiting corps members.&lt;/p&gt;
 
-&lt;p&gt;Concentrating of FOSI’s pre-existing content into three main buckets simplified the process of finding content for the end user. Not only that, but the structure allowed us to make content a priority something something here…&lt;/p&gt;
-
-&lt;p&gt;[sitemap here]&lt;/p&gt;
-
-&lt;p&gt;##Prototyping
-Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;div class=&quot;video-container&quot;&gt;
-			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/155266319?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-wireframes.jpg&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/org-enroll-corps-member-flow-5-11-16.png&quot; alt=&quot;Screenshot of Userflow&quot; /&gt;
+      &lt;span class=&quot;img-caption&quot;&gt;User flows allowed our team to define the paths users would take to accomplish tasks.&lt;br /&gt;This user flow shows a corps member expressing interest in a position and an organization&apos;s path to taking action on that interest.&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
+&lt;p&gt;While user flows were an essential part to getting the project started, it wasn’t always such a linear process. Our team worked within an agile process, using two-week sprints to accomplish tasks on a story-by-story basis. We iterated on different parts of the UX and design process depending on the task at hand.&lt;/p&gt;
 
-&lt;p&gt;###Typography
-In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
+&lt;h3 id=&quot;wireframes--prototypes&quot;&gt;Wireframes &amp;amp; Prototypes&lt;/h3&gt;
 
-&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-type-example.jpg&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
+&lt;p&gt;With each new page or interaction being added to the system, our team would create sets of wireframes in Sketch, Balsamiq, Omnigraffle, or even just pen-and-paper sketchs. Often, we linked these wireframes together in &lt;a href=&quot;http://invisionapp.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Invision&lt;/a&gt; in order to get a sense of how the screens would connect.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-invision-screenshot.png&quot; alt=&quot;Service Year Invision Prototype Screenshot&quot; /&gt;
+    &lt;span class=&quot;img-caption&quot;&gt;
+      Prototypes allowed us to think through flows for different user interactions. Here is an early prototype of onboarding new corps members to Service Year.
+      &lt;br /&gt;
+      (&lt;a href=&quot;http://localhost:4000/assets/invision/sy-cm-onboarding-wireframe-prototype/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Prototype in New Window&lt;/a&gt;)
+    &lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;####Aaux Next
-Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
+&lt;p&gt;Prototyping allowed us to see when certain interactions felt great (or just awkward). Not only that, but it also allowed us to share in-progress work with our client and receive quick feedback.&lt;/p&gt;
 
-&lt;p&gt;####Minion Pro
-Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
+&lt;h3 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h3&gt;
 
-&lt;p&gt;###Colors
-With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
+&lt;p&gt;Due to the scale of Service Year, our team worked around the idea of component-based design. Each part of a page not only needed consideration in terms of responsive design, but also necessitated the creation of assets for multiple states. Each component then had to work alongside other components in the page.&lt;/p&gt;
 
-&lt;div class=&quot;fin-tip&quot;&gt;	
+&lt;p&gt;The use of component-based design helped us to define atoms and molecules that could then be used to build organisms, templates, and finally, pages (&lt;a href=&quot;http://bradfrost.com/blog/post/atomic-web-design/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;See Brad Frost’s Atomic Design&lt;/a&gt;).&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt &quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-narrative-components.jpg&quot; alt=&quot;Service Year Component Screenshot - Serving Status Cards&quot; /&gt;
+      &lt;span class=&quot;img-caption&quot;&gt;
+        A look at the different states for the serving status block within a Corps Member&apos;s public profile.
+      &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;a-living-design-system&quot;&gt;A Living Design System&lt;/h4&gt;
+
+&lt;p&gt;While web style guides and frameworks have been around for several years, the explosion of large-scale web applications brings an extra focus on creating design systems. Style guides like Salesforce’s &lt;a href=&quot;https://www.lightningdesignsystem.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Lightning Design System&lt;/a&gt; or Dropbox’s &lt;a href=&quot;http://dropbox.github.io/scooter/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Scooter&lt;/a&gt; have set a standard for the design community.&lt;/p&gt;
+
+&lt;p&gt;Our design and development teams collaborated to create our own living style guide for the Service Year platform. The style guide is ever-evolving and allows for better design/dev collaboration.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-style-guide.png&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
+    &lt;span class=&quot;img-caption&quot;&gt;
+      The Service Year Style Guide helps designers and developers to collaborate when designing, building, and iterating on components. (&lt;a href=&quot;https://serviceyear.org/styleguide/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Style Guide&lt;/a&gt;)
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;working-in-agile&quot;&gt;Working in Agile&lt;/h2&gt;
+
+&lt;p&gt;Service Year is the largest web application that has ever come through ISL. With such new territory came the need to figure out new and effective processes for managing, designing, and developing.&lt;/p&gt;
+
+&lt;p&gt;From the onset, our team implemented an &lt;a href=&quot;http://agilemanifesto.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;agile workflow&lt;/a&gt; in order to quickly design, build, and ship iterations of the Service Year platform.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-sprint-tracker-and-waffle.jpg&quot; alt=&quot;Screenshot of Sprint Tracker and Waffle Board&quot; /&gt;
+    &lt;span class=&quot;img-caption&quot;&gt;
+      A backlog of user stories were defined in collaboration with the client and saved in a Google Spreadsheet. During each sprint cycle, we then used Github and Waffle to monitor progress on each task.
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Collaborating with the client, our workflow began with the creation of user stories that defined functionality for the platform. Both the design and development teams would take these user stories from a Google Spreadseet backlog and work on them in 2 to 3 week sprint cycles.&lt;/p&gt;
+
+&lt;p&gt;Not only were we iterating on Service Year as a platform, but we were constantly learning what worked best within our own workflow and modifying our processes accordingly.&lt;/p&gt;
+
+&lt;div class=&quot;fin-tip&quot;&gt;
 &lt;/div&gt;
 
 &lt;h2 class=&quot;text-center&quot;&gt;
-	A Flexible, Responsive Publishing Platform
+  Conclusion &amp;amp; Lessons Learned
 &lt;/h2&gt;
 
-&lt;p&gt;At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age.&lt;/p&gt;
+&lt;p&gt;Working on a product that makes such a positive impact is a very rewarding experience. Service Year is an ever-evolving platform and the largest web application that I’ve been involved in.&lt;/p&gt;
 
-&lt;p&gt;By creating flexible layouts, a new design system, and an integration with Wagtail, a Django-based CMS, we were able to provide FOSI with a rethought and redesigned responsive experience.&lt;/p&gt;
+&lt;p&gt;A couple of things stuck out to me during my work on Service Year:&lt;/p&gt;
+
+&lt;h3 id=&quot;building-large-scale-applications&quot;&gt;Building Large Scale Applications&lt;/h3&gt;
+
+&lt;p&gt;Design systems for large scale applications take a lot more work than you may think. I learned through Service Year how important collaboration between design, development, and project managers is key to a successful project.&lt;/p&gt;
+
+&lt;h3 id=&quot;learning-to-fail-and-improve&quot;&gt;Learning to Fail and Improve&lt;/h3&gt;
+
+&lt;p&gt;You’re never going to get a design 100% right the first time and that’s ok. The iterative process of short design and development sprints allow room for testing new ideas, learning their shortcomings through user-testing, and then improving on the next go-round.&lt;/p&gt;
+
+&lt;h3 id=&quot;new-design-processes&quot;&gt;New Design Processes&lt;/h3&gt;
+
+&lt;p&gt;Service Year helped me learn how to work within a new type of workflow. Before this project, I had most often been involved in more traditional waterfall workflows. With Service Year, I learned more about the cyclical and collaborative nature of an agile sprint process.&lt;/p&gt;
 
 &lt;div class=&quot;grid grid-mt&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-marketing-home.jpg&quot; alt=&quot;Screenshot of Benchmarcs Marketing Page&quot; /&gt;
-	&lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-homepage.jpg&quot; alt=&quot;Screenshot of Service Year Home Page&quot; /&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;grid grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--half &quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-screenshot-call-volume.png&quot; alt=&quot;Screenshot of Benchmarcs app – Call Volume Chart&quot; /&gt;
-	&lt;/div&gt; 
-	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
-		 &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-screenshot-market-share.png&quot; alt=&quot;Screenshot of Benchmarcs app – Market Share Graph&quot; /&gt;
-	&lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
+     &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-comps-profile-tablet.jpg&quot; alt=&quot;Screenshot of Service Year Corps Member Profile (Tablet)&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-comps-sign-in.jpg&quot; alt=&quot;Screenshot of Service Year Sign In Pages (Desktop)&quot; /&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
+
+&lt;div class=&quot;text--centered&quot;&gt;
+  &lt;p&gt;
+    Visit &lt;a href=&quot;https://serviceyear.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ServiceYear.org&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+
 </description>
-        <pubDate>Tue, 13 Sep 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/zapier2/index.html</link>
-        <guid isPermaLink="true">http://localhost:4000/zapier2/index.html</guid>
+        <pubDate>Fri, 09 Sep 2016 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/service-year.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/service-year.html</guid>
         
+        
+        <category>work</category>
         
       </item>
     
