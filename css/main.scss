@@ -2,6 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@use "sass:color";
 
 // Our variables
 $sans-serif: "aktiv-grotesk",sans-serif;
@@ -20,9 +21,9 @@ $spacing-unit: 30px;
 
 $black: #140B39;
 $gray-color: #EAEFF2;
-$gray-color-light: lighten($gray-color, 3%);
-$gray-color-dark: darken($gray-color, 25%);
-$gray-color-darker: darken($gray-color, 40%);
+$gray-color-light: color.adjust($gray-color, $lightness: 3%);
+$gray-color-dark: color.adjust($gray-color, $lightness: -25%);
+$gray-color-darker: color.adjust($gray-color, $lightness: -40%);
 $blue-color: #419BF9;
 $iron: #D2D9DE;
 
@@ -33,7 +34,6 @@ $background-color: $white;
 $brand-background-color: #E1DDF1;
 $brand-color: #8A70DB;
 $hover-color: #8b70db3a;
-
 
 $box-shadow-standard: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
 

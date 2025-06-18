@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: calc($spacing-unit / 2);
 }
 
 
@@ -123,8 +123,8 @@ li {
     @media screen and (min-width: $on-laptop) {
         max-width: -webkit-calc($on-laptop - (#{$spacing-unit}));
         max-width:         calc($on-laptop - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        padding-right: calc($spacing-unit / 2);
+        padding-left: calc($spacing-unit / 2);
     }
 }
 

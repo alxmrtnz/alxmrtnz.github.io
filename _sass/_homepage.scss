@@ -159,7 +159,7 @@ ul.social-icon-list {
       transition: color 0.2s ease-in-out;
 
       &:hover {
-        color: darken($brand-color, 10%);
+        color: color.adjust($brand-color, $lightness: -10%);
       }
     }
   }

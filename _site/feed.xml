@@ -5,9 +5,9 @@
     <description>Alex Martinez is a front-end developer based in Brooklyn, currently making the web more delicious at Grubhub. In the past, Alex worked on awesome teams at Whitelabel, ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 May 2024 09:50:31 -0400</pubDate>
-    <lastBuildDate>Thu, 02 May 2024 09:50:31 -0400</lastBuildDate>
-    <generator>Jekyll v4.0.0</generator>
+    <pubDate>Wed, 18 Jun 2025 12:26:35 -0400</pubDate>
+    <lastBuildDate>Wed, 18 Jun 2025 12:26:35 -0400</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
     
       <item>
         <title>Alex Martinez – Resume</title>
@@ -28,7 +28,7 @@
 
 &lt;p&gt;While our team was familiar with how to manage environment variables on an array of web projects (configuring variables such as API urls for local, staging, and production environments), Expo and React Native do things slightly differently.&lt;/p&gt;
 
-&lt;p&gt;After some trial, error, and research, we created a workflow based on &lt;a href=&quot;https://medium.com/@peterpme/environment-variables-in-expo-using-release-channels-4934594c5307&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;a post from Peter Piekarczyk&lt;/a&gt;. Beginning with creating an Expo-based equivalent to a &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, I’ll show you our team’s full workflow when it comes to using React Native and Expo’s Release Channels for local, staging, and production environments.&lt;/p&gt;
+&lt;p&gt;After some trial, error, and research, we created a workflow based on &lt;a href=&quot;https://medium.com/@peterpme/environment-variables-in-expo-using-release-channels-4934594c5307&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;a post from Peter Piekarczyk&lt;/a&gt;. Beginning with creating an Expo-based equivalent to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, I’ll show you our team’s full workflow when it comes to using React Native and Expo’s Release Channels for local, staging, and production environments.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Update: August, 23, 2019 &lt;br /&gt;
@@ -48,18 +48,18 @@ Be aware that you will want to look into obfuscating sensitive information. Plea
 &lt;p&gt;If you’re interested in diving deeper, there is some great documentation on Expo’s site including an FAQ on the &lt;a href=&quot;https://docs.expo.io/versions/latest/introduction/faq/#what-is-the-difference-between-expo-and&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;differences between Expo and React Native&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;environment-variables-in-expo-using-release-channels&quot;&gt;Environment Variables in Expo using Release Channels&lt;/h2&gt;
-&lt;p&gt;What isn’t entirely clear when getting started with Expo is how to configure environment variables. You may be used to creating &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; files to define your API url or other variables for local, staging, and production environments, however Expo doesn’t use &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt;’s by default.&lt;/p&gt;
+&lt;p&gt;What isn’t entirely clear when getting started with Expo is how to configure environment variables. You may be used to creating &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; files to define your API url or other variables for local, staging, and production environments, however Expo doesn’t use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt;’s by default.&lt;/p&gt;
 
 &lt;p&gt;In fact, without external packages and/or ejecting from Expo, the primary means of creating environments with their own variables is by using Expo’s &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/release-channels/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Release Channels&lt;/a&gt;. These release channels allow you to “send out different versions of your application to your users by giving them a URL or configuring your standalone app.”&lt;sup&gt;&lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/release-channels/#introduction&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;Here’s how we use release channels to manage our environments:&lt;/p&gt;
 
 &lt;h3 id=&quot;create-an-environment-config-file&quot;&gt;Create an Environment Config File&lt;/h3&gt;
-&lt;p&gt;We start by creating an &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file that is also added to our &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; (so that any sensitive information is never published to GitHub). This &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; essentially serves as the project’s &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, allowing us to store api urls and other variables that change based on the app’s current environment.&lt;/p&gt;
+&lt;p&gt;We start by creating an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file that is also added to our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; (so that any sensitive information is never published to GitHub). This &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; essentially serves as the project’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, allowing us to store api urls and other variables that change based on the app’s current environment.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
 * environment.js
-* path: '/environment.js' (root of your project)
+* path: &apos;/environment.js&apos; (root of your project)
 ******************************/
 
 import Constants from &quot;expo-constants&quot;;
@@ -91,9 +91,9 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) =&amp;gt; {
  // __DEV__ is true when run locally, but false when published.
  if (__DEV__) {
    return ENV.dev;
- } else if (env === 'staging') {
+ } else if (env === &apos;staging&apos;) {
    return ENV.staging;
- } else if (env === 'prod') {
+ } else if (env === &apos;prod&apos;) {
    return ENV.prod;
  }
 };
@@ -101,24 +101,24 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) =&amp;gt; {
 export default getEnvVars;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You’ll see a couple of things here. First off, we check what platform the app is being run on (iOS or Android) via &lt;code class=&quot;highlighter-rouge&quot;&gt;Platform&lt;/code&gt; to determine the correct &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost&lt;/code&gt; address. We quickly found that Android requires a different address in order to correctly render images and other static assets when running locally. &lt;sup&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;You’ll see a couple of things here. First off, we check what platform the app is being run on (iOS or Android) via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Platform&lt;/code&gt; to determine the correct &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost&lt;/code&gt; address. We quickly found that Android requires a different address in order to correctly render images and other static assets when running locally. &lt;sup&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;Next, the &lt;code class=&quot;highlighter-rouge&quot;&gt;ENV&lt;/code&gt; object is where we add variables including each environment’s &lt;code class=&quot;highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; and, in this case, the key for Amplitude which we used for analytics tracking on each environment.&lt;/p&gt;
+&lt;p&gt;Next, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ENV&lt;/code&gt; object is where we add variables including each environment’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; and, in this case, the key for Amplitude which we used for analytics tracking on each environment.&lt;/p&gt;
 
-&lt;p&gt;Lastly, the &lt;code class=&quot;highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function is what’s exported from the file. It checks which release channel the app’s compiled binary is running via Expo’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Constants&lt;/code&gt; and returns the corresponding variables.&lt;/p&gt;
+&lt;p&gt;Lastly, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function is what’s exported from the file. It checks which release channel the app’s compiled binary is running via Expo’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Constants&lt;/code&gt; and returns the corresponding variables.&lt;/p&gt;
 
 &lt;h3 id=&quot;accessing-environment-variables&quot;&gt;Accessing Environment Variables&lt;/h3&gt;
 
-&lt;p&gt;After the variables are set up, we import and call the &lt;code class=&quot;highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function from &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; in our &lt;code class=&quot;highlighter-rouge&quot;&gt;api.js&lt;/code&gt; file in order to access the proper &lt;code class=&quot;highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; for our api calls.&lt;/p&gt;
+&lt;p&gt;After the variables are set up, we import and call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; in our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;api.js&lt;/code&gt; file in order to access the proper &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; for our api calls.&lt;/p&gt;
 
-&lt;p&gt;You’ll see that we use ES6’s &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;destructuring assignment syntax&lt;/a&gt; to get the specific variable we want (in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt;) out of the function:&lt;/p&gt;
+&lt;p&gt;You’ll see that we use ES6’s &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;destructuring assignment syntax&lt;/a&gt; to get the specific variable we want (in this case &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt;) out of the function:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
 * api.js
-* path: '/utils/api.js'
+* path: &apos;/utils/api.js&apos;
 ******************************/
 // Import getEnvVars() from environment.js
-import getEnvVars from '../environment';
+import getEnvVars from &apos;../environment&apos;;
 const { apiUrl } = getEnvVars();
 
 /******* SESSIONS::LOG IN *******/
@@ -129,27 +129,27 @@ const { apiUrl } = getEnvVars();
 // }
 export const logIn = (credentials, jsonWebToken) =&amp;gt; (
  fetch(`${apiUrl}/phone`, {
-   method: 'POST',
+   method: &apos;POST&apos;,
    headers: {
-     'Authorization': 'Bearer ' + jsonWebToken,
-     'Content-Type': 'application/json',
+     &apos;Authorization&apos;: &apos;Bearer &apos; + jsonWebToken,
+     &apos;Content-Type&apos;: &apos;application/json&apos;,
    },
    body: JSON.stringify(credentials)
  })
 );
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You can see how useful this can be with multiple variables within the same environment. To import a key for Amplitude into its own config file, for example, we do the following from &lt;code class=&quot;highlighter-rouge&quot;&gt;Amplitude.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can see how useful this can be with multiple variables within the same environment. To import a key for Amplitude into its own config file, for example, we do the following from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Amplitude.js&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
 * Amplitude.js
-* path: '/utils/analytics/Amplitude.js'
+* path: &apos;/utils/analytics/Amplitude.js&apos;
 ******************************/
 
-import { Amplitude } from 'expo';
+import { Amplitude } from &apos;expo&apos;;
 
 // Import getEnvVars() from environment.js
-import getEnvVars from '../../environment';
+import getEnvVars from &apos;../../environment&apos;;
 const { amplitudeApiKey } = getEnvVars();
 
 ...
@@ -172,7 +172,7 @@ const initialize = () =&amp;gt; {
 
 &lt;p&gt;To run your app, run:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo start
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo start
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And then select which simulator (iOS or Android) you want to open via the expo-cli in your terminal:&lt;/p&gt;
@@ -181,11 +181,11 @@ const initialize = () =&amp;gt; {
 
 &lt;p&gt;With iOS, I’ve found you can run the command with the Simulator app closed or already open, while with Android, things are smoothest if you already have the AVD (Android Virtual Device) running.&lt;/p&gt;
 
-&lt;p&gt;By running locally, the &lt;code class=&quot;highlighter-rouge&quot;&gt;__DEV__&lt;/code&gt; flag will be set to true and your &lt;code class=&quot;highlighter-rouge&quot;&gt;ENV.dev&lt;/code&gt; variables will be used:&lt;/p&gt;
+&lt;p&gt;By running locally, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__DEV__&lt;/code&gt; flag will be set to true and your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ENV.dev&lt;/code&gt; variables will be used:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
 * environment.js
-* path: '/environment.js' (root of your project)
+* path: &apos;/environment.js&apos; (root of your project)
 ******************************/
 
 // From ealier in this post...
@@ -195,9 +195,9 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) =&amp;gt; {
  // __DEV__ is true when run locally, but false when published.
  if (__DEV__) {
    return ENV.dev;
- } else if (env === 'staging') {
+ } else if (env === &apos;staging&apos;) {
    return ENV.staging;
- } else if (env === 'prod') {
+ } else if (env === &apos;prod&apos;) {
    return ENV.prod;
  }
 };
@@ -206,54 +206,54 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) =&amp;gt; {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;environment-2-testflightandroid-testing-tracks-staging&quot;&gt;Environment 2: TestFlight/Android Testing Tracks (“staging”)&lt;/h3&gt;
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment includes:
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment includes:
 Running the app via TestFlight or an Android testing track (more info on those &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#5-test-it-on-your-device-or&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;There are essentially two main components to the “staging” workflow:&lt;/p&gt;
 
 &lt;h4 id=&quot;1-creating-and-uploading-an-initial-build&quot;&gt;1) Creating and Uploading an Initial Build&lt;/h4&gt;
-&lt;p&gt;First, you need to &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/release-channels/#build-with-channels&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;build a binary&lt;/a&gt; that you can upload to App Store Connect (iOS) and Google Play Console (Android) with your release channel set to &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt;. Setting the release channel flag allows you to then publish changes to that specific channel without having to rebuild and re-upload the binary.&lt;/p&gt;
+&lt;p&gt;First, you need to &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/release-channels/#build-with-channels&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;build a binary&lt;/a&gt; that you can upload to App Store Connect (iOS) and Google Play Console (Android) with your release channel set to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt;. Setting the release channel flag allows you to then publish changes to that specific channel without having to rebuild and re-upload the binary.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:ios --release-channel staging
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:ios --release-channel staging
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;or&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:android --release-channel staging
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:android --release-channel staging
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Once Expo has completed building the binary (&lt;code class=&quot;highlighter-rouge&quot;&gt;.ipa&lt;/code&gt; for iOS and &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; for Android), you can then upload it to either Apple’s App Store Connect or Google’s Google Play Console. For more info on uploading to app stores, &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/uploading-apps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;check out the Expo docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once Expo has completed building the binary (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.ipa&lt;/code&gt; for iOS and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.apk&lt;/code&gt; for Android), you can then upload it to either Apple’s App Store Connect or Google’s Google Play Console. For more info on uploading to app stores, &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/uploading-apps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;check out the Expo docs&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;You won’t need to rebuild and upload a new binary unless you make core changes such as updating the Expo SDK or modifying other configurations in your &lt;code class=&quot;highlighter-rouge&quot;&gt;app.json&lt;/code&gt; (you can read more on that &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#7-update-your-app&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;You won’t need to rebuild and upload a new binary unless you make core changes such as updating the Expo SDK or modifying other configurations in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app.json&lt;/code&gt; (you can read more on that &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#7-update-your-app&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
 
 &lt;h4 id=&quot;2-publishing-updates-to-the-uploaded-build&quot;&gt;2) Publishing Updates to the Uploaded Build&lt;/h4&gt;
 
 &lt;p&gt;Whenever you do want to publish updates, you can then run:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo publish --release-channel staging
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo publish --release-channel staging
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Any changes you’ve made will publish to the &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; release channel via Expo’s &lt;a href=&quot;https://docs.expo.io/versions/latest/guides/configuring-ota-updates/ &quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;over-the-air JavaScript updates&lt;/a&gt; and be available through TestFlight or Google Play’s Test Tracks.&lt;/p&gt;
+&lt;p&gt;Any changes you’ve made will publish to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt; release channel via Expo’s &lt;a href=&quot;https://docs.expo.io/versions/latest/guides/configuring-ota-updates/ &quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;over-the-air JavaScript updates&lt;/a&gt; and be available through TestFlight or Google Play’s Test Tracks.&lt;/p&gt;
 
 &lt;h3 id=&quot;environment-3-app-storegoogle-play-production&quot;&gt;Environment 3: App Store/Google Play (“production”)&lt;/h3&gt;
 &lt;p&gt;Lastly, when you want to go live, building and publishing is just like that of the staging environment, however you designate your release channel as “prod”:&lt;/p&gt;
 
 &lt;p&gt;Building binary for upload:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:ios --release-channel prod
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:ios --release-channel prod
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;or&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:android --release-channel prod
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:android --release-channel prod
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Publishing updates:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo publish --release-channel prod
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo publish --release-channel prod
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Just a note here that you can, of course, name the release channels for any of the your environments to whatever you’d like – be it &lt;code class=&quot;highlighter-rouge&quot;&gt;prod&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;my-awesome-app-is-finally-live&lt;/code&gt;. Just make sure to be consistent and set things up in your &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;Just a note here that you can, of course, name the release channels for any of the your environments to whatever you’d like – be it &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prod&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;production&lt;/code&gt;, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;my-awesome-app-is-finally-live&lt;/code&gt;. Just make sure to be consistent and set things up in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file.&lt;/p&gt;
 
 &lt;h3 id=&quot;digging-deeper-advanced-release-channels&quot;&gt;Digging Deeper: Advanced Release Channels&lt;/h3&gt;
 &lt;p&gt;If you want to be even more of an Expo wiz, take a look at the documentation on &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/advanced-release-channels/#promoting-a-release-to-a-new-channel&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Advanced Release Channels&lt;/a&gt;. Expo provides the option to promote and roll back channel entries between release channels – which may save you some build time in the long run&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Using Expo and Expo Release Channels, our team has built a workflow that works for us. The &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file takes the place of a &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt;, TestFlight and Testing Tracks on Google Play serve as our &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment, and the released app is our final &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Using Expo and Expo Release Channels, our team has built a workflow that works for us. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file takes the place of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt;, TestFlight and Testing Tracks on Google Play serve as our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment, and the released app is our final &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;production&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;It should be said that there are alternatives to this workflow, including packages like &lt;a href=&quot;https://github.com/luggit/react-native-config&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;react-native-config&lt;/a&gt; and &lt;a href=&quot;https://github.com/brysgo/babel-plugin-inline-dotenv#readme&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;babel-plugin-inline-dotenv&lt;/a&gt;. However, the former requires ejecting from Expo in order to “link” to native code, and the latter requires additional configuration.&lt;/p&gt;
 
@@ -282,7 +282,7 @@ Running the app via TestFlight or an Android testing track (more info on those &
 &lt;p&gt;Luckily, a coworker suggested I try out &lt;a href=&quot;https://redux-form.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that helps you manage form state and validation in redux rather than in a component.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-redux-form&quot;&gt;What is Redux Form?&lt;/h2&gt;
-&lt;p&gt;By connecting a form component to redux through Redux Form’s &lt;code class=&quot;highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; &lt;a href=&quot;https://reactjs.org/docs/higher-order-components.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;higher-order component&lt;/a&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;formReducer&lt;/code&gt;, the library keeps track of common application form state in a redux store rather in the local component.&lt;/p&gt;
+&lt;p&gt;By connecting a form component to redux through Redux Form’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; &lt;a href=&quot;https://reactjs.org/docs/higher-order-components.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;higher-order component&lt;/a&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;formReducer&lt;/code&gt;, the library keeps track of common application form state in a redux store rather in the local component.&lt;/p&gt;
 
 &lt;p&gt;In fact, it helps manage things such as:&lt;/p&gt;
 
@@ -298,9 +298,9 @@ Running the app via TestFlight or an Android testing track (more info on those &
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;under-the-hood&quot;&gt;Under the Hood&lt;/h2&gt;
-&lt;p&gt;Before I began using Redux Form, I stored form input values and error states in its own component &lt;code class=&quot;highlighter-rouge&quot;&gt;state&lt;/code&gt; and created a &lt;code class=&quot;highlighter-rouge&quot;&gt;handleInputChange()&lt;/code&gt; method to handle updates for each individual field. I’d then create methods to manage validation and error messages on submit. None of this was DRY and made it difficult to build new forms.&lt;/p&gt;
+&lt;p&gt;Before I began using Redux Form, I stored form input values and error states in its own component &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;state&lt;/code&gt; and created a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;handleInputChange()&lt;/code&gt; method to handle updates for each individual field. I’d then create methods to manage validation and error messages on submit. None of this was DRY and made it difficult to build new forms.&lt;/p&gt;
 
-&lt;p&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;redux-form&lt;/code&gt; simplified form management by allowing me to store a form’s input values in a redux store, handling inputs’ &lt;code class=&quot;highlighter-rouge&quot;&gt;onChange&lt;/code&gt; methods and providing field-level validation.&lt;/p&gt;
+&lt;p&gt;Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;redux-form&lt;/code&gt; simplified form management by allowing me to store a form’s input values in a redux store, handling inputs’ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onChange&lt;/code&gt; methods and providing field-level validation.&lt;/p&gt;
 
 &lt;p&gt;After setting up Redux Form, you’ll be able to see it at work using &lt;a href=&quot;https://github.com/reduxjs/redux-devtools&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux DevTools&lt;/a&gt;:&lt;/p&gt;
 &lt;div class=&quot;video-container&quot;&gt;
@@ -309,25 +309,25 @@ Running the app via TestFlight or an Android testing track (more info on those &
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The form is stored under the name you give it, in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;SignInForm&lt;/code&gt;, while input data is stored under &lt;code class=&quot;highlighter-rouge&quot;&gt;values&lt;/code&gt; and errors under &lt;code class=&quot;highlighter-rouge&quot;&gt;syncErrors&lt;/code&gt;. Redux Form then provides meta information like those error messages, whether an input has been &lt;code class=&quot;highlighter-rouge&quot;&gt;touched&lt;/code&gt;, and whether the form is or isn’t &lt;code class=&quot;highlighter-rouge&quot;&gt;dirty&lt;/code&gt; as props in your form and input components.&lt;/p&gt;
+&lt;p&gt;The form is stored under the name you give it, in this case &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SignInForm&lt;/code&gt;, while input data is stored under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;values&lt;/code&gt; and errors under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;syncErrors&lt;/code&gt;. Redux Form then provides meta information like those error messages, whether an input has been &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touched&lt;/code&gt;, and whether the form is or isn’t &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dirty&lt;/code&gt; as props in your form and input components.&lt;/p&gt;
 
 &lt;h3 id=&quot;a-sample-redux-form&quot;&gt;A Sample Redux Form&lt;/h3&gt;
-&lt;p&gt;The following is an example form for a Sign In screen. &lt;code class=&quot;highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; connects the form component to redux while &lt;code class=&quot;highlighter-rouge&quot;&gt;redux-form&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt; component manages the actual inputs including the &lt;code class=&quot;highlighter-rouge&quot;&gt;validation&lt;/code&gt; that the field requires.&lt;/p&gt;
+&lt;p&gt;The following is an example form for a Sign In screen. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; connects the form component to redux while &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;redux-form&lt;/code&gt;’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Field&lt;/code&gt; component manages the actual inputs including the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validation&lt;/code&gt; that the field requires.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { reduxForm, Field } from 'redux-form'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from &apos;react&apos;
+import { connect } from &apos;react-redux&apos;
+import { reduxForm, Field } from &apos;redux-form&apos;
 
 // Components
-import ReduxFormInput from '../../../components/Inputs/ReduxFormInput'
-import Button from '../../../components/Button'
+import ReduxFormInput from &apos;../../../components/Inputs/ReduxFormInput&apos;
+import Button from &apos;../../../components/Button&apos;
 
 //Utils
 import {
   required,
   email,
-} from '../../../utils/formValidators'
-import * as API  from '../../utils/api'
+} from &apos;../../../utils/formValidators&apos;
+import * as API  from &apos;../../utils/api&apos;
 class SignInForm extends Component {
   handleSubmit = (user) =&amp;gt; {
     /*
@@ -354,22 +354,22 @@ class SignInForm extends Component {
       &amp;lt;form onSubmit={handleSubmit(this.handleSubmit)}&amp;gt;
         &amp;lt;Field
           component={ReduxFormInput}
-          label='Email'
-          name='email'
-          placeholder='Enter your email'
-          type='email'
+          label=&apos;Email&apos;
+          name=&apos;email&apos;
+          placeholder=&apos;Enter your email&apos;
+          type=&apos;email&apos;
           validate={[required, email]}
         /&amp;gt;
         &amp;lt;Field
           component={ReduxFormInput}
-          label='Password'
-          name='password'
-          placeholder='Enter a password'
-          type='password'
+          label=&apos;Password&apos;
+          name=&apos;password&apos;
+          placeholder=&apos;Enter a password&apos;
+          type=&apos;password&apos;
           validate={required}
         /&amp;gt;
         &amp;lt;Button
-          className='cta full-width invert'
+          className=&apos;cta full-width invert&apos;
         &amp;gt;
           Submit
         &amp;lt;/Button&amp;gt;
@@ -380,18 +380,18 @@ class SignInForm extends Component {
 
 // Connect to redux-form
 SignInForm = reduxForm({
-  form: 'SignInForm'
+  form: &apos;SignInForm&apos;
 })(SignInForm)
 
 export default SignInForm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;custom-field-components&quot;&gt;Custom Field Components&lt;/h3&gt;
-&lt;p&gt;In the above example, you’ll see that &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt; takes a prop called &lt;code class=&quot;highlighter-rouge&quot;&gt;component&lt;/code&gt;. This prop allows you define your own input component and can be either a &lt;code class=&quot;highlighter-rouge&quot;&gt;Component&lt;/code&gt;, a stateless function, or a string name of one of the default supported DOM inputs (&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;textarea&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;select&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;In the above example, you’ll see that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Field&lt;/code&gt; takes a prop called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;component&lt;/code&gt;. This prop allows you define your own input component and can be either a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Component&lt;/code&gt;, a stateless function, or a string name of one of the default supported DOM inputs (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;textarea&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;select&lt;/code&gt;).&lt;/p&gt;
 
-&lt;p&gt;In my case, I created a component called &lt;code class=&quot;highlighter-rouge&quot;&gt;ReduxFormInput&lt;/code&gt;, allowing me to define the structure I wanted surrounding a basic &lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt; field:&lt;/p&gt;
+&lt;p&gt;In my case, I created a component called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ReduxFormInput&lt;/code&gt;, allowing me to define the structure I wanted surrounding a basic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; field:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from 'react'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from &apos;react&apos;
 
 class ReduxFormInput extends Component {
   render() {
@@ -414,15 +414,15 @@ class ReduxFormInput extends Component {
     return (
       &amp;lt;div
         className={buildClassName([
-          'input-container',
+          &apos;input-container&apos;,
           optionalClasses,
-          touched &amp;amp;&amp;amp; error ? ' error' : '',
+          touched &amp;amp;&amp;amp; error ? &apos; error&apos; : &apos;&apos;,
         ])}
       &amp;gt;
         { label &amp;amp;&amp;amp;
           &amp;lt;label&amp;gt;{label}&amp;lt;/label&amp;gt;
         }
-        &amp;lt;div className='input-container-inner'&amp;gt;
+        &amp;lt;div className=&apos;input-container-inner&apos;&amp;gt;
           &amp;lt;input
             {...input}
             type={type}
@@ -448,25 +448,25 @@ export default ReduxFormInput
 &lt;h3 id=&quot;field-level-validation&quot;&gt;Field-Level Validation&lt;/h3&gt;
 &lt;p&gt;One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (&lt;a href=&quot;https://redux-form.com/7.3.0/examples/syncvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sync&lt;/a&gt;, &lt;a href=&quot;https://redux-form.com/7.3.0/examples/submitvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Submit&lt;/a&gt;, &lt;a href=&quot;https://redux-form.com/7.3.0/examples/asyncvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Async Blur&lt;/a&gt;, and more), I mainly make use of &lt;a href=&quot;https://redux-form.com/7.3.0/examples/fieldlevelvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Field-Level Validation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Field-Level Validation focuses on &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;validate&lt;/code&gt; prop. It accepts one or more functions to validate the value of the given field. If an input doesn’t pass the requirements passed through &lt;code class=&quot;highlighter-rouge&quot;&gt;validate&lt;/code&gt;, the entire form  won’t submit and an &lt;code class=&quot;highlighter-rouge&quot;&gt;error&lt;/code&gt; prop is then passed to the input allowing you to render a message to the user.&lt;/p&gt;
+&lt;p&gt;Field-Level Validation focuses on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Field&lt;/code&gt;’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validate&lt;/code&gt; prop. It accepts one or more functions to validate the value of the given field. If an input doesn’t pass the requirements passed through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validate&lt;/code&gt;, the entire form  won’t submit and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error&lt;/code&gt; prop is then passed to the input allowing you to render a message to the user.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-import { reduxForm, Field } from 'redux-form'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+import { reduxForm, Field } from &apos;redux-form&apos;
 
 // Components
-import ReduxFormInput from '../../../components/Inputs/ReduxFormInput'
+import ReduxFormInput from &apos;../../../components/Inputs/ReduxFormInput&apos;
 
 // Utils
-import { required, email } from '../../../utils/formValidators'
+import { required, email } from &apos;../../../utils/formValidators&apos;
 
 /* ... */
 
 &amp;lt;Field
   component={ReduxFormInput}
-  label='Email'
-  name='email'
-  placeholder='Enter your email'
-  type='email'
+  label=&apos;Email&apos;
+  name=&apos;email&apos;
+  placeholder=&apos;Enter your email&apos;
+  type=&apos;email&apos;
   validate={[required, email]}
 /&amp;gt;
 
@@ -477,17 +477,17 @@ import { required, email } from '../../../utils/formValidators'
 
 &lt;p&gt;Here are a bunch of snippets that I’ve used before:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{/* formValidators.js */}
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{/* formValidators.js */}
 export const multipleValidations = (value, validations) =&amp;gt; {
   const checks = validations.map(validation =&amp;gt; validation(value))
   const failedChecks = checks.filter(check =&amp;gt; !!check)
 
   return failedChecks.length === 0 ? undefined : failedChecks.join(&quot;, &quot;)
 }
-export const required = value =&amp;gt; !value || value === &quot;&quot; ? 'Required' : undefined
+export const required = value =&amp;gt; !value || value === &quot;&quot; ? &apos;Required&apos; : undefined
 export const matchPasswords = (value, allValues, props, name) =&amp;gt; {
-  if (allValues['password']) {
-    return value !== allValues['password'] ? &quot;Passwords Don't Match&quot; : undefined
+  if (allValues[&apos;password&apos;]) {
+    return value !== allValues[&apos;password&apos;] ? &quot;Passwords Don&apos;t Match&quot; : undefined
   } else {
     return undefined
   }
@@ -499,27 +499,27 @@ export const minLength = min =&amp;gt; value =&amp;gt;
   value &amp;amp;&amp;amp; value.length &amp;lt; min ? `Must be ${min} characters or more` : undefined
 export const minLength2 = minLength(2)
 export const number = value =&amp;gt;
-  value &amp;amp;&amp;amp; isNaN(Number(value)) ? 'Must be a number' : undefined
+  value &amp;amp;&amp;amp; isNaN(Number(value)) ? &apos;Must be a number&apos; : undefined
 export const minValue = min =&amp;gt; value =&amp;gt;
   value &amp;amp;&amp;amp; value &amp;lt; min ? `Must be at least ${min}` : undefined
 export const minValue18 = minValue(18)
 export const email = value =&amp;gt;
   value &amp;amp;&amp;amp; !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)
-    ? 'Invalid email address'
+    ? &apos;Invalid email address&apos;
     : undefined
 export const tooOld = value =&amp;gt;
-  value &amp;amp;&amp;amp; value &amp;gt; 65 ? 'You might be too old for this' : undefined
+  value &amp;amp;&amp;amp; value &amp;gt; 65 ? &apos;You might be too old for this&apos; : undefined
 export const aol = value =&amp;gt;
   value &amp;amp;&amp;amp; /.+@aol\.com/.test(value)
-    ? 'Really? You still use AOL for your email?'
+    ? &apos;Really? You still use AOL for your email?&apos;
     : undefined
 export const alphaNumeric = value =&amp;gt;
   value &amp;amp;&amp;amp; /[^a-zA-Z0-9 ]/i.test(value)
-    ? 'Only alphanumeric characters'
+    ? &apos;Only alphanumeric characters&apos;
     : undefined
 export const phoneNumber = value =&amp;gt;
   value &amp;amp;&amp;amp; !/^(0|[1-9][0-9]{9})$/i.test(value)
-    ? 'Invalid phone number, must be 10 digits'
+    ? &apos;Invalid phone number, must be 10 digits&apos;
     : undefined
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -584,7 +584,7 @@ export const phoneNumber = value =&amp;gt;
 &lt;h3 id=&quot;focusing-on-reusable-components&quot;&gt;Focusing on Reusable Components&lt;/h3&gt;
 &lt;p&gt;The component-based nature of the athlete profile allowed us to focus on creating reusable elements. We were able to build the profile component by component and think about how to reuse several components in forms where users would manage the actual profile.&lt;/p&gt;
 
-&lt;p&gt;Components like our &lt;code class=&quot;highlighter-rouge&quot;&gt;TabSelect.js&lt;/code&gt; were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.&lt;/p&gt;
+&lt;p&gt;Components like our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TabSelect.js&lt;/code&gt; were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.&lt;/p&gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;

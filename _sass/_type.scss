@@ -1,3 +1,4 @@
+
 /**
  * Headings
  */
@@ -25,12 +26,13 @@ p {
     line-height: 28px;
     margin-bottom: 20px;
 
+    position: relative;
+    
     @media screen and (min-width: $on-palm) {
         font-size: 22px;
         line-height: 30px;
         margin-bottom: 35px;
     }
-    position: relative;
 
 }
 
@@ -45,7 +47,7 @@ p {
 blockquote {
     color: $gray-color;
     border-left: 4px solid $gray-color-light;
-    padding-left: $spacing-unit / 2;
+    padding-left: calc($spacing-unit / 2);
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
