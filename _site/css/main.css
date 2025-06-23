@@ -481,12 +481,6 @@ li > ol {
     font-size: 32px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .home-bio__copy p {
-    font-size: 38px;
-  }
-}
-
 ul.social-icon-list {
   margin-top: 30px;
   width: 100%;
