@@ -110,8 +110,8 @@ li {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc($on-laptop - (#{$spacing-unit} * 2));
-    max-width:         calc($on-laptop - (#{$spacing-unit} * 2));
+    // max-width: -webkit-calc($on-laptop - (#{$spacing-unit} * 2));
+    // max-width:         calc($on-laptop - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     
@@ -123,8 +123,8 @@ li {
     @extend %clearfix;
 
     @media screen and (min-width: $on-laptop) {
-        max-width: -webkit-calc($on-laptop - (#{$spacing-unit}));
-        max-width:         calc($on-laptop - (#{$spacing-unit}));
+        // max-width: -webkit-calc($on-laptop - (#{$spacing-unit}));
+        // max-width:         calc($on-laptop - (#{$spacing-unit}));
         padding-right: calc($spacing-unit / 2);
         padding-left: calc($spacing-unit / 2);
     }

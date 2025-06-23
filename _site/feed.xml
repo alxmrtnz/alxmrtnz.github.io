@@ -5,8 +5,8 @@
     <description>Alex Martinez is a front-end developer based in Brooklyn, currently making the web more delicious at Grubhub. In the past, Alex worked on awesome teams at Whitelabel, ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 18 Jun 2025 12:40:25 -0400</pubDate>
-    <lastBuildDate>Wed, 18 Jun 2025 12:40:25 -0400</lastBuildDate>
+    <pubDate>Mon, 23 Jun 2025 13:58:51 -0500</pubDate>
+    <lastBuildDate>Mon, 23 Jun 2025 13:58:51 -0500</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -15,7 +15,7 @@
 	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/1hBaO7GyHtayQ4QPsZHs2F93E_pXhSqcR/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Thu, 17 Dec 2020 00:00:00 -0500</pubDate>
+        <pubDate>Thu, 17 Dec 2020 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/resume/index.html</link>
         <guid isPermaLink="true">http://localhost:4000/resume/index.html</guid>
         
@@ -266,7 +266,7 @@ Running the app via TestFlight or an Android testing track (more info on those &
   &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;StackOverflow: How do you connect localhost in the Android emulator?&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Tue, 12 Mar 2019 12:11:27 -0400</pubDate>
+        <pubDate>Tue, 12 Mar 2019 11:11:27 -0500</pubDate>
         <link>http://localhost:4000/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</link>
         <guid isPermaLink="true">http://localhost:4000/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</guid>
         
@@ -532,7 +532,7 @@ export const phoneNumber = value =&amp;gt;
   &lt;li&gt;&lt;a href=&quot;https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Why Build Your Forms with Redux Form&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 02 May 2018 15:46:27 -0400</pubDate>
+        <pubDate>Wed, 02 May 2018 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html</link>
         <guid isPermaLink="true">http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html</guid>
         
@@ -664,7 +664,7 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 
 </description>
-        <pubDate>Wed, 18 Apr 2018 15:46:27 -0400</pubDate>
+        <pubDate>Wed, 18 Apr 2018 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/work/locker-linked.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
         
@@ -759,7 +759,7 @@ export const phoneNumber = value =&amp;gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 16 Apr 2018 15:46:27 -0400</pubDate>
+        <pubDate>Mon, 16 Apr 2018 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/work/maptastic.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/maptastic.html</guid>
         
@@ -835,7 +835,7 @@ export const phoneNumber = value =&amp;gt;
   &lt;/p&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Fri, 13 Apr 2018 15:46:27 -0400</pubDate>
+        <pubDate>Fri, 13 Apr 2018 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/work/tap-in-guide.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/tap-in-guide.html</guid>
         
@@ -883,7 +883,7 @@ export const phoneNumber = value =&amp;gt;
 	&lt;/p&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Thu, 12 Apr 2018 15:46:27 -0400</pubDate>
+        <pubDate>Thu, 12 Apr 2018 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/work/agility.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/agility.html</guid>
         
@@ -976,7 +976,7 @@ export const phoneNumber = value =&amp;gt;
 &lt;/ol&gt;
 
 </description>
-        <pubDate>Thu, 05 Oct 2017 15:46:27 -0400</pubDate>
+        <pubDate>Thu, 05 Oct 2017 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</link>
         <guid isPermaLink="true">http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</guid>
         
@@ -991,7 +991,7 @@ export const phoneNumber = value =&amp;gt;
 	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFMkQyeDdSUXRSTDA/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 14 Nov 2016 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 14 Nov 2016 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/resume-postlight/index.html</link>
         <guid isPermaLink="true">http://localhost:4000/resume-postlight/index.html</guid>
         
@@ -1162,7 +1162,7 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 
 </description>
-        <pubDate>Fri, 09 Sep 2016 15:46:27 -0400</pubDate>
+        <pubDate>Fri, 09 Sep 2016 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/work/service-year.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/service-year.html</guid>
         
