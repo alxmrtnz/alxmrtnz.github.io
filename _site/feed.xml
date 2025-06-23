@@ -5,8 +5,8 @@
     <description>Alex Martinez is a front-end developer based in Brooklyn, currently making the web more delicious at Grubhub. In the past, Alex worked on awesome teams at Whitelabel, ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 23 Jun 2025 13:58:51 -0500</pubDate>
-    <lastBuildDate>Mon, 23 Jun 2025 13:58:51 -0500</lastBuildDate>
+    <pubDate>Mon, 23 Jun 2025 14:56:09 -0500</pubDate>
+    <lastBuildDate>Mon, 23 Jun 2025 14:56:09 -0500</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -542,6 +542,158 @@ export const phoneNumber = value =&amp;gt;
       </item>
     
       <item>
+        <title>Agility Connect</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-hero-image-3x-optim.png&quot; alt=&quot;Agility Connect Title Card&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;The tech industry is booming and there are plenty of openings to be filled with qualified candidates. Even today, referrals are the number one source of hires that employers are most satisfied with.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://agilitypartners.io/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Agility Partners&lt;/a&gt;, a tech recruiting firm, wanted to tap into the power of referral-based hiring and gain an edge against their competitors, so they came &lt;a href=&quot;https://metto.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Metto&lt;/a&gt; to build a product that could help. The result was Agility Connect, an app that gives anyone the ability to help their friends land jobs and get a little bonus in the process.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
+
+&lt;p&gt;In addition to designing Agility Partner’s &lt;a href=&quot;https://agilitypartners.io/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;marketing site&lt;/a&gt;, I served as the lead visual and UX designer for Agility Connect. I worked with two other front-end developers to implement the Connect app using React + Redux, bringing the referral marketplace to life.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-homepage.jpg&quot; alt=&quot;Agility Connect Homepage&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-jobs.jpg&quot; alt=&quot;Agility Connect Jobs Page&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-job-and-referrals.jpg&quot; alt=&quot;Agility Connect Jobs and Referrals&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;text--centered&quot;&gt;
+	&lt;p&gt;
+		Visit &lt;a href=&quot;http://agilityconnect.io&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Agility Connect&lt;/a&gt; and &lt;a href=&quot;http://agilitypartners.io&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Agility Partners&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 19 Apr 2018 14:46:27 -0500</pubDate>
+        <link>http://localhost:4000/work/agility.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/agility.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Maptastic</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/featured-image-maptastic-2.jpg&quot; alt=&quot;Maptastic Title Card&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;Maptastic was a React web application that makes U.S. demographic data, such as population, housing characteristics, and related socioeconomic characteristics easily obtainable to local governments, nonprofits, and regional planning agencies.&lt;/p&gt;
+
+&lt;p&gt;Organizations can use the app to search demographic data for regions throughout the U.S. and save their searches for future reference.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
+
+&lt;p&gt;As part of a small team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I served as the lead front-end developer and worked with a designer and several backend developers to bring the project to life.&lt;/p&gt;
+
+&lt;p&gt;Maptastic gave me the opportunity try out new libraries like &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt;, used to display data obtained through &lt;a href=&quot;https://www.census.gov/data/developers/data-sets.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;U.S. Census APIs&lt;/a&gt;, and explore the Google Maps API and Geosuggest (through libraries like &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt;) for geolocation searches.&lt;/p&gt;
+
+&lt;h2 id=&quot;making-data-beautiful&quot;&gt;Making Data Beautiful&lt;/h2&gt;
+
+&lt;h3 id=&quot;chartist-graphs&quot;&gt;Chartist Graphs&lt;/h3&gt;
+
+&lt;p&gt;In order to make large amounts of demographic data easy to understand, we used &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt; to create a variety of charts, from comparison bar charts to pie charts, to visualize the data.&lt;/p&gt;
+
+&lt;p&gt;Chartist proved to be a handy library that allowed for easy customization and let me build a set of restackable, collapsible cards for the end user.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-charts.png&quot; alt=&quot;Maptastic Chart Data&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;a-flexible-responsive-layout&quot;&gt;A Flexible, Responsive Layout&lt;/h3&gt;
+
+&lt;p&gt;Using Flexbox, I created a responsive masonry-style layout to accomodate a range of device sizes. It was important to give the map and chart cards room to breath in order keep data digestible, but the layout also had to be flexible enough to re-stack on smaller devices.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/responsive-maptastic-2.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Responsive Animation&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    A responsive layout lets users take Maptastic with them on their phones and tablets
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;fixed-positioning&quot;&gt;Fixed Positioning&lt;/h3&gt;
+
+&lt;p&gt;Additionally, on desktop, we wanted to keep several elements, such as the map and main navigation, in a fixed position so that users could scroll through the cards of data, but always have easy access to these primary elements in order to refine their search location and radius.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-fixed-positioning.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Showing Scroll Animation&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Collapsible cards and a masonry-style layout makes viewing demographic data easy
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;maps-integration&quot;&gt;Maps Integration&lt;/h2&gt;
+
+&lt;p&gt;As the name “Maptastic” implies, maps (and location search) were a critical part of the project. Our goal was to allow users to easily search for a location, visualize it via Google Maps, and modify their search radius to hone in on their targets.&lt;/p&gt;
+
+&lt;h3 id=&quot;searching-on-maptastic&quot;&gt;Searching on Maptastic&lt;/h3&gt;
+
+&lt;p&gt;The search experience is comprised of three primary elements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A geosuggest search input&lt;/li&gt;
+  &lt;li&gt;A Google Map to display the search&lt;/li&gt;
+  &lt;li&gt;A slider to refine the range of the search area&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By using &lt;a href=&quot;https://tomchentw.github.io/react-google-maps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Google Maps&lt;/a&gt; to tie into the Google Maps Javascript API, &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt; to create a suggestive search input, and Redux to allow the components access to a shared state, I was able to create a search experience that makes accessing demographic data a breeze.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/392963178?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 class=&quot;text-center&quot;&gt;
+  Conclusion &amp;amp; Lessons Learned
+&lt;/h2&gt;
+
+&lt;p&gt;While concise in scope, Maptastic helped me explore new terrain. From learning how interact with and customize map elements with Google Maps to styling large chunks of data using Chartist, this project exposed me to new front-end features. Front-end development continues to excite me as I discover how much more there is to learn every day.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-screenshots.jpg&quot; alt=&quot;Maptastic App Screenshots&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 18 Apr 2018 14:46:27 -0500</pubDate>
+        <link>http://localhost:4000/work/maptastic.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/maptastic.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
         <title>Locker Linked</title>
         <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -550,15 +702,17 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
 &lt;p&gt;Every year, thousands of high school athletes try to pursue their passion at the next level by searching for the perfect athletic and academic fit. Having never gone through the college athletic recruiting process, these students, and their parents, are often in uncharted waters.&lt;/p&gt;
 
 &lt;p&gt;Which coaches should they talk to? How do they gain the right exposure? Which program should they choose… and why? Even with the best work ethic and determination, every athlete could use a little help.&lt;/p&gt;
 
-&lt;p&gt;As part of the team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I helped build the digital platform for &lt;a href=&quot;https://www.lockerlinked.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Locker Linked&lt;/a&gt;, a startup that aims to provide student athletes with first-rate recruitment network services and tools to prepare them for upcoming college athletic opportunities.&lt;/p&gt;
+&lt;p&gt;As part of the team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I helped build the digital platform for Locker Linked, a startup that aims to provide student athletes with first-rate recruitment network services and tools to prepare them for upcoming college athletic opportunities.&lt;/p&gt;
 
 &lt;p&gt;Locker Linked simplifies the recruitment process, allowing student athletes to set up a player profile to showcase skills, connect directly with coaches and recruiters, and get exclusive access to essential resources to maximize potential recruitment.&lt;/p&gt;
 
 &lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
+
 &lt;p&gt;While my team at Whitelabel worked closely with Locker Linked to design and build their entire platform, from design to development, I worked specifically on the development team focusing on building the front-end of the platform in React.&lt;/p&gt;
 
 &lt;p&gt;On the frontend, Locker Linked is built with React and Redux, integrates with &lt;a href=&quot;https://stripe.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Stripe&lt;/a&gt; for user payment, and connects to a Rails backend. I worked closely with our lead backend developer, &lt;a href=&quot;https://twitter.com/toreyhickman/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Torey Hickman&lt;/a&gt;, to build a component-based UI that hooked up seamlessly with our backend database and architecture.&lt;/p&gt;
@@ -570,7 +724,9 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;creating-a-showcase-for-athletes&quot;&gt;Creating a Showcase for Athletes&lt;/h2&gt;
+
 &lt;h3 id=&quot;building-a-flexible-profile&quot;&gt;Building a Flexible Profile&lt;/h3&gt;
+
 &lt;p&gt;The athlete profile turned out to be one of my favorite parts of the app due to the variety of components needed to accomodate such a wide range of sports played by student athletes. In addition, the profile serves as the entry point for college recruiters’ evaluations of student athletes, making it a focal point of the platform.&lt;/p&gt;
 
 &lt;p&gt;Locker Linked wanted to allow athletes to post photos, videos, statistics, awards, camps, and reference contact information in addition to the ability to add multiple sports. Whether it was making sure the stats table component resized and responded fluidly or creating a slider component that accomodated arrays of photos or videos, I enjoyed the creative coding challenge that the screen presented.&lt;/p&gt;
@@ -582,6 +738,7 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;focusing-on-reusable-components&quot;&gt;Focusing on Reusable Components&lt;/h3&gt;
+
 &lt;p&gt;The component-based nature of the athlete profile allowed us to focus on creating reusable elements. We were able to build the profile component by component and think about how to reuse several components in forms where users would manage the actual profile.&lt;/p&gt;
 
 &lt;p&gt;Components like our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TabSelect.js&lt;/code&gt; were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.&lt;/p&gt;
@@ -599,14 +756,17 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;the-intricacies-of-profile-management&quot;&gt;The Intricacies of Profile Management&lt;/h2&gt;
+
 &lt;p&gt;Profile management was one of the biggest challenges in building Locker Linked. In addition to the actual student athlete, profiles can be managed by parents/guardians (and soon coaches, too!).&lt;/p&gt;
 
 &lt;p&gt;Not only that, but a single user can have admin access to manage and edit any number of athlete profiles. This many-to-one relationship of profile management necessitated careful consideration when it came to both onboarding and the user dashboard.&lt;/p&gt;
 
 &lt;h3 id=&quot;onboarding-different-user-types&quot;&gt;Onboarding Different User Types&lt;/h3&gt;
+
 &lt;p&gt;When onboarding, a user can select whether they’re an athlete or a parent/guardian. In both cases, the user can create a new athlete profile, but if a user is a parent, they also have the option to request access to a pre-existing profile (their child’s). This meant that our team had to carefully consider the user flow for multiple onboarding paths and build them accordingly.&lt;/p&gt;
 
 &lt;h3 id=&quot;managing-multiple-profiles&quot;&gt;Managing Multiple Profiles&lt;/h3&gt;
+
 &lt;p&gt;In order to accomodate parents/guardians with more than one child on the platform or coaches that are assisting multiple student athletes, we built Locker Link with the ability for users to manage one or more athlete profiles.&lt;/p&gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
@@ -621,7 +781,9 @@ export const phoneNumber = value =&amp;gt;
 &lt;p&gt;Once a user is given admin access to multiple profiles, they can use a simple dropdown to select the profile they want to edit. By integrating the user dashboard with Redux, we could easily populate the users’ edit views with the selected profile’s data and make editing a breeze.&lt;/p&gt;
 
 &lt;h2 id=&quot;learning-to-love-forms&quot;&gt;Learning to Love Forms&lt;/h2&gt;
+
 &lt;h3 id=&quot;form-management-with-redux-form&quot;&gt;Form Management with Redux-Form&lt;/h3&gt;
+
 &lt;p&gt;I love React. But ever since I began building apps with React, I’ve had a gripe with managing forms. On top of managing the actualy values of inputs in component state, handling validation and error messaging made forms in React complex and clunky to set up and use. To make form development easier, we introduced the use of &lt;a href=&quot;https://redux-form.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that allows you to connect your forms to your Redux store in order to manage form state.&lt;/p&gt;
 
 &lt;p&gt;Redux Form let us create custom input components, decrease redundancy in terms of validation and error message handling, and build more robust, dynamic forms. For a deeper look at my experience with Redux Form (and how it convinced me to love forms again), &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot; class=&quot;link--text-in-p&quot;&gt;check out this post I wrote&lt;/a&gt;.&lt;/p&gt;
@@ -662,339 +824,13 @@ export const phoneNumber = value =&amp;gt;
     &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-locker-profile.jpg&quot; alt=&quot;Locker Linked Profile Management Screenshot&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-
 </description>
-        <pubDate>Wed, 18 Apr 2018 14:46:27 -0500</pubDate>
+        <pubDate>Tue, 17 Apr 2018 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/work/locker-linked.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
         
         
         <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Maptastic</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/featured-image-maptastic-2.jpg&quot; alt=&quot;Maptastic Title Card&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://maptastic.us/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Maptastic&lt;/a&gt; is a React web application that makes U.S. demographic data, such as population, housing characteristics, and related socioeconomic characteristics easily obtainable to local governments, nonprofits, and regional planning agencies.&lt;/p&gt;
-
-&lt;p&gt;Organizations can use the app to search demographic data for regions throughout the U.S. and save their searches for future reference.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
-&lt;p&gt;As part of a small team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I served as the lead front-end developer and worked with a designer and several backend developers to bring the project to life.&lt;/p&gt;
-
-&lt;p&gt;Maptastic gave me the opportunity try out new libraries like &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt;, used to display data obtained through &lt;a href=&quot;https://www.census.gov/data/developers/data-sets.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;U.S. Census APIs&lt;/a&gt;, and explore the Google Maps API and Geosuggest (through libraries like &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt;) for geolocation searches.&lt;/p&gt;
-
-&lt;h2 id=&quot;making-data-beautiful&quot;&gt;Making Data Beautiful&lt;/h2&gt;
-&lt;h3 id=&quot;chartist-graphs&quot;&gt;Chartist Graphs&lt;/h3&gt;
-&lt;p&gt;In order to make large amounts of demographic data easy to understand, we used &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt; to create a variety of charts, from comparison bar charts to pie charts, to visualize the data.&lt;/p&gt;
-
-&lt;p&gt;Chartist proved to be a handy library that allowed for easy customization and let me build a set of restackable, collapsible cards for the end user.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-charts.png&quot; alt=&quot;Maptastic Chart Data&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;a-flexible-responsive-layout&quot;&gt;A Flexible, Responsive Layout&lt;/h3&gt;
-&lt;p&gt;Using Flexbox, I created a responsive masonry-style layout to accomodate a range of device sizes. It was important to give the map and chart cards room to breath in order keep data digestible, but the layout also had to be flexible enough to re-stack on smaller devices.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/responsive-maptastic-2.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Responsive Animation&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    A responsive layout lets users take Maptastic with them on their phones and tablets
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;fixed-positioning&quot;&gt;Fixed Positioning&lt;/h3&gt;
-&lt;p&gt;Additionally, on desktop, we wanted to keep several elements, such as the map and main navigation, in a fixed position so that users could scroll through the cards of data, but always have easy access to these primary elements in order to refine their search location and radius.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-fixed-positioning.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Showing Scroll Animation&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    Collapsible cards and a masonry-style layout makes viewing demographic data easy
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;maps-integration&quot;&gt;Maps Integration&lt;/h2&gt;
-&lt;p&gt;As the name “Maptastic” implies, maps (and location search) were a critical part of the project. Our goal was to allow users to easily search for a location, visualize it via Google Maps, and modify their search radius to hone in on their targets.&lt;/p&gt;
-
-&lt;h3 id=&quot;searching-on-maptastic&quot;&gt;Searching on Maptastic&lt;/h3&gt;
-&lt;p&gt;The search experience is comprised of three primary elements:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;A geosuggest search input&lt;/li&gt;
-  &lt;li&gt;A Google Map to display the search&lt;/li&gt;
-  &lt;li&gt;A slider to refine the range of the search area&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;By using &lt;a href=&quot;https://tomchentw.github.io/react-google-maps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Google Maps&lt;/a&gt; to tie into the Google Maps Javascript API, &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt; to create a suggestive search input, and Redux to allow the components access to a shared state, I was able to create a search experience that makes accessing demographic data a breeze.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;div class=&quot;video-container&quot;&gt;
-      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/392963178?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 class=&quot;text-center&quot;&gt;
-  Conclusion &amp;amp; Lessons Learned
-&lt;/h2&gt;
-
-&lt;p&gt;While concise in scope, Maptastic helped me explore new terrain. From learning how interact with and customize map elements with Google Maps to styling large chunks of data using Chartist, this project exposed me to new front-end features. Front-end development continues to excite me as I discover how much more there is to learn every day.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-screenshots.jpg&quot; alt=&quot;Maptastic App Screenshots&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 16 Apr 2018 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/work/maptastic.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/maptastic.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Tap In Guide</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/featured-image-tap-in@2x.jpg&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;a-guide-to-world-footballs-essential-matches&quot;&gt;A Guide to World Football’s Essential Matches&lt;/h2&gt;
-&lt;p&gt;Tap In was a simple dashboard guide to world football’s most essential matches. The application is designed to deliver all the daily information soccer fans need to know to stay on top of the beautiful game in real-time.&lt;/p&gt;
-
-&lt;h2 id=&quot;my-role&quot;&gt;My Role&lt;/h2&gt;
-&lt;p&gt;It was the 2014 World Cup in Brazil that kicked off my obsession with the beautiful game. I grew up following American sports, but never had really paid any attention to the world’s sport: (the real) football.&lt;/p&gt;
-
-&lt;p&gt;I initially stumbled across a version of Tap In during the summer of 2014 produced specifically for that year’s World Cup, but didn’t pay it much attention after Germany were crowned champions that summer.&lt;/p&gt;
-
-&lt;p&gt;Fast forward to 2017 and I happened upon the site again, but this time it displayed a scoreboard of “essential” soccer matches of the moment. Three years into my new soccer obsession, I reached out to the small Minneapolis-based team via Twitter to see if they could use some help.&lt;/p&gt;
-
-&lt;p&gt;As it turned out, they were glad to have me on board and I came on as a &lt;strong&gt;front-end developer focusing on the React web app and React Native mobile app&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-mobile-screens@2x.jpg&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    Tap In Guide is available via React Native on iOS and Android
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;technologies&quot;&gt;Technologies&lt;/h2&gt;
-&lt;p&gt;Tap In was built using React, React Native, JavaScript, Python, and Django. While I mainly contribute to the React web app, I also helped launch the initial React Native app and now maintain it along with developer David Pett.&lt;/p&gt;
-
-&lt;p&gt;The Tap In API, built by &lt;a href=&quot;https://twitter.com/minnepixel&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Clint McMahon&lt;/a&gt;, supplies data via &lt;a href=&quot;https://football-api.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Football API&lt;/a&gt; in order to provide users with live match events such as goals, yellow/red cards, and substitutions.&lt;/p&gt;
-
-&lt;p&gt;React proved to be a very useful library for building and managing components. Not only that, but by building our app in React Native, much of the front-end structure translates between the two environments, allowing us to quickly ship new features.&lt;/p&gt;
-
-&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
-&lt;p&gt;Tap In’s visual style set it apart from other sports websites and apps. Its simple aesthetic was actually one of the things that initially drew me in. Designer &lt;a href=&quot;https://twitter.com/mike_arney&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Mike Arney&lt;/a&gt; developed the core style, taking teams’ crests and reducing them to minimal and geometric icons.&lt;/p&gt;
-
-&lt;p&gt;As Tap In added coverage for more leagues (such as MLS in the U.S. and Liga MX in Mexico), we needed to add more teams’ crests. I worked with Mike to develop about two dozen of the crests used in the app today.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-crests@2x.png&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    A sampling of stylized crests I designed for the web and mobile app.
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-  Final Thoughts
-&lt;/h2&gt;
-&lt;p&gt;At Tap In, we were a distributed team with members living in Minnesota, Texas, Ohio, and even Norway. Thanks to platforms like Slack and Trello, we were able to keep in touch, even when many of us had never even met in person.&lt;/p&gt;
-
-&lt;p&gt;It was a blast building a project like this. Every team member contributed due to their passion for soccer and even if we hadn’t met on the playing field, we built a sense of camaraderie that transcends sport and technology.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;div class=&quot;text--centered&quot;&gt;
-  &lt;p&gt;
-    While we closed down the project in late 2018, you can still check out &lt;a href=&quot;https://www.twitter.com/tapinguide&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tap In on Twitter&lt;/a&gt; to explore some legacy content.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Please note that the live tapinguide.com is not at all related to our project (even though whoever is running it stole our logo 😅).
-  &lt;/p&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 13 Apr 2018 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/work/tap-in-guide.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/tap-in-guide.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Agility Connect</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-hero-image-3x-optim.png&quot; alt=&quot;Agility Connect Title Card&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-
-&lt;p&gt;The tech industry is booming and there are plenty of openings to be filled with qualified candidates. Even today, referrals are the number one source of hires that employers are most satisfied with.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://agilitypartners.io/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Agility Partners&lt;/a&gt;, a tech recruiting firm, wanted to tap into the power of referral-based hiring and gain an edge against their competitors, so they came &lt;a href=&quot;https://metto.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Metto&lt;/a&gt; to build a product that could help. The result was Agility Connect, an app that gives anyone the ability to help their friends land jobs and get a little bonus in the process.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
-
-&lt;p&gt;In addition to designing Agility Partner’s &lt;a href=&quot;https://agilitypartners.io/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;marketing site&lt;/a&gt;, I served as the lead visual and UX designer for Agility Connect. I worked with two other front-end developers to implement the Connect app using React + Redux, bringing the referral marketplace to life.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-homepage.jpg&quot; alt=&quot;Agility Connect Homepage&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-jobs.jpg&quot; alt=&quot;Agility Connect Jobs Page&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-job-and-referrals.jpg&quot; alt=&quot;Agility Connect Jobs and Referrals&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;text--centered&quot;&gt;
-	&lt;p&gt;
-		Visit &lt;a href=&quot;http://agilityconnect.io&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Agility Connect&lt;/a&gt; and &lt;a href=&quot;http://agilitypartners.io&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Agility Partners&lt;/a&gt;
-	&lt;/p&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 12 Apr 2018 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/work/agility.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/agility.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Optimizing Onboarding for Benchmarcs</title>
-        <description>&lt;p&gt;Through &lt;a href=&quot;http://metto.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Metto&lt;/a&gt; , I helped design and build a web application called &lt;a href=&quot;http://benchmarcs.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Benchmarcs&lt;/a&gt; that allows funeral homes to monitor trends in business for both their own individual homes and their competitors.&lt;/p&gt;
-
-&lt;p&gt;Traditionally, funeral homes tracked “calls,” or deaths, by skimming through obituaries in local newspapers and obituary websites. Because the calls listed in these sources also indicated which funeral home would be performing the funeral, each home could track how much business each competitor was receiving.&lt;/p&gt;
-
-&lt;p&gt;With Benchmarcs, we helped automate this process by using web spiders to crawl online data and assess when and where calls happen. This helps homes save time and money and provides a central hub of important competitive data.&lt;/p&gt;
-
-&lt;h2 id=&quot;setting-up-new-users-with-actionable-content&quot;&gt;Setting Up New Users with Actionable Content&lt;/h2&gt;
-
-&lt;p&gt;One of the biggest advantages in moving toward an automated system like Benchmarcs is that it gives funeral homes the ability to track their competition.&lt;/p&gt;
-
-&lt;p&gt;Adding competitors allows users to see how many calls a competing home received over the last week, month, year, etc and also see trends in calls over that period of time.&lt;/p&gt;
-
-&lt;p&gt;In order to educate new users about the ability to track competitors and to help populate their accounts with competitor data, &lt;em&gt;we decided to integrate the ability to add competitors into the onboarding process&lt;/em&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
-		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; alt=&quot;Benchmarcs Onboarding User Flow&quot; /&gt;
-		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;span class=&quot;img-caption&quot;&gt;We created user-flow diagrams to outline functionality in the initial onboarding and setup, including the ability to add competitor funeral homes (Getting Started Step 3)&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;evaluating-funeral-home-needs&quot;&gt;Evaluating Funeral Home Needs&lt;/h3&gt;
-&lt;p&gt;Conversations with our product owners and several potential users led us to focus on the addition of competitors on a local, rather than regional or national level. We learned that even when a competitor has multiple locations across a state or region, funeral homes tend to focus on the competing branch closest to them.&lt;/p&gt;
-
-&lt;p&gt;To allow users to add competing funeral homes, we started by approximating the user’s location to show a suggested set of homes in their area. The page displayed the user’s closest zip code and provided a radius selector to filter results.&lt;/p&gt;
-
-&lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
-		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; alt=&quot;Benchmarcs Add a Competitor Wireframe and design V1&quot; /&gt;
-		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;span class=&quot;img-caption&quot;&gt;
-		We gathered user feedback on the initial &quot;add a competitor&quot; feature from several pilot program users.
-	&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;improving-the-initial-design&quot;&gt;Improving the Initial Design&lt;/h3&gt;
-
-&lt;p&gt;While some aspects of the initial functionality fit the bill, the nuances of the design did not. New users would choose several homes from the pre-populated list before becoming frustrated when they couldn’t find the home they were looking for.&lt;/p&gt;
-
-&lt;p&gt;It was unclear to users that the list of homes was a smaller list of suggestions rather than a complete list of all competitors. In the end, this solution made the tool less useful to users and converted them with less competitors than than they really wanted.&lt;/p&gt;
-
-&lt;p&gt;After several of usability sessions, our team decided to improve the design of this feature.&lt;/p&gt;
-
-&lt;h2 id=&quot;iterating-to-improve-usability&quot;&gt;Iterating to Improve Usability&lt;/h2&gt;
-
-&lt;p&gt;To improve usability, we made a couple of changes to both the visual design and functionality:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;We did away with ZIP and radius&lt;/strong&gt; – user testing had shown that these fields were not being used and that users instead focused on the search input&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;We made the search bar more prominent&lt;/strong&gt; in order to guide the user to take action&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;We added the title “Suggested Competitors” to the preloaded competitors list&lt;/strong&gt; to communicate to users that this initial list wasn’t exhausted&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;We added functionality to deliver more and more relevant results on each selection.&lt;/strong&gt; Now, each time the user picks a competitor, we hit the Benchmarcs API, search for homes near the selected competitor and add them to the list of suggestions. Then, we  re-sort the list based on how many times a competitor is suggested in relation to the competitors selected by the user.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-interaction.gif&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
-		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-interaction.gif&quot; alt=&quot;Adding a Competitor - Animated GIF&quot; /&gt;
-		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;span class=&quot;img-caption&quot;&gt;
-		Version two of the &quot;add a competitor&quot; feature led to an overall increase in competitors added by users when setting up their accounts.
-	&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;p&gt;While seemingly small, the updated design makes the tool more useful to user and has increased the number of homes a new user would add during setup.&lt;/p&gt;
-
-&lt;p&gt;Not only could users find the homes they were looking for, but the updated functionality helped give them better suggestions.&lt;/p&gt;
-
-&lt;h2 id=&quot;takeaways&quot;&gt;Takeaways&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;When it comes to the design of a feature, the smallest details can create a big impact.&lt;/strong&gt; Even if it’s simply modifying a label or moving an input, a change in design can drastically affect the end user’s experience with your product.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;User test throughout the design and development process&lt;/strong&gt; in order to uncover areas for improvement.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Always be iterating.&lt;/strong&gt; It’s easy to become complacent, but the best solutions come through thoughtful refinements.&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Thu, 05 Oct 2017 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</guid>
-        
-        
-        <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>Alex Martinez – Postlight</title>
-        <description>&lt;div class=&quot;resume-container&quot;&gt;
-	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFMkQyeDdSUXRSTDA/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 14 Nov 2016 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/resume-postlight/index.html</link>
-        <guid isPermaLink="true">http://localhost:4000/resume-postlight/index.html</guid>
-        
         
       </item>
     
@@ -1009,7 +845,8 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-&lt;p&gt;The Service Year Alliance teamed up with &lt;a href=&quot;http://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to design and develop a digital platform for young Americans to connect and serve with the nation’s best nonprofits. Service Year aims to make a year of service a common expectation and opportunity for every young American.&lt;/p&gt;
+
+&lt;p&gt;The Service Year Alliance teamed up with &lt;a href=&quot;https://web.archive.org/web/20210809115609/http://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to design and develop a digital platform for young Americans to connect and serve with the nation’s best nonprofits. Service Year aims to make a year of service a common expectation and opportunity for every young American.&lt;/p&gt;
 
 &lt;p&gt;An ongoing and ever-evolving project, the site brings the nation’s best service opportunities into one place, allowing both organizations and service corps members to more easily connect with one another.&lt;/p&gt;
 
@@ -1160,14 +997,197 @@ export const phoneNumber = value =&amp;gt;
     Visit &lt;a href=&quot;https://serviceyear.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ServiceYear.org&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;
-
 </description>
-        <pubDate>Fri, 09 Sep 2016 14:46:27 -0500</pubDate>
+        <pubDate>Mon, 16 Apr 2018 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/work/service-year.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/service-year.html</guid>
         
         
         <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Tap In Guide</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/featured-image-tap-in@2x.jpg&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;a-guide-to-world-footballs-essential-matches&quot;&gt;A Guide to World Football’s Essential Matches&lt;/h2&gt;
+
+&lt;p&gt;Tap In was a simple dashboard guide to world football’s most essential matches. The application is designed to deliver all the daily information soccer fans need to know to stay on top of the beautiful game in real-time.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-role&quot;&gt;My Role&lt;/h2&gt;
+
+&lt;p&gt;It was the 2014 World Cup in Brazil that kicked off my obsession with the beautiful game. I grew up following American sports, but never had really paid any attention to the world’s sport: (the real) football.&lt;/p&gt;
+
+&lt;p&gt;I initially stumbled across a version of Tap In during the summer of 2014 produced specifically for that year’s World Cup, but didn’t pay it much attention after Germany were crowned champions that summer.&lt;/p&gt;
+
+&lt;p&gt;Fast forward to 2017 and I happened upon the site again, but this time it displayed a scoreboard of “essential” soccer matches of the moment. Three years into my new soccer obsession, I reached out to the small Minneapolis-based team via Twitter to see if they could use some help.&lt;/p&gt;
+
+&lt;p&gt;As it turned out, they were glad to have me on board and I came on as a &lt;strong&gt;front-end developer focusing on the React web app and React Native mobile app&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-mobile-screens@2x.jpg&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Tap In Guide is available via React Native on iOS and Android
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;technologies&quot;&gt;Technologies&lt;/h2&gt;
+
+&lt;p&gt;Tap In was built using React, React Native, JavaScript, Python, and Django. While I mainly contribute to the React web app, I also helped launch the initial React Native app and now maintain it along with developer David Pett.&lt;/p&gt;
+
+&lt;p&gt;The Tap In API, built by &lt;a href=&quot;https://twitter.com/minnepixel&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Clint McMahon&lt;/a&gt;, supplies data via &lt;a href=&quot;https://football-api.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Football API&lt;/a&gt; in order to provide users with live match events such as goals, yellow/red cards, and substitutions.&lt;/p&gt;
+
+&lt;p&gt;React proved to be a very useful library for building and managing components. Not only that, but by building our app in React Native, much of the front-end structure translates between the two environments, allowing us to quickly ship new features.&lt;/p&gt;
+
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+
+&lt;p&gt;Tap In’s visual style set it apart from other sports websites and apps. Its simple aesthetic was actually one of the things that initially drew me in. Designer &lt;a href=&quot;https://twitter.com/mike_arney&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Mike Arney&lt;/a&gt; developed the core style, taking teams’ crests and reducing them to minimal and geometric icons.&lt;/p&gt;
+
+&lt;p&gt;As Tap In added coverage for more leagues (such as MLS in the U.S. and Liga MX in Mexico), we needed to add more teams’ crests. I worked with Mike to develop about two dozen of the crests used in the app today.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-crests@2x.png&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    A sampling of stylized crests I designed for the web and mobile app.
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+  Final Thoughts
+&lt;/h2&gt;
+&lt;p&gt;At Tap In, we were a distributed team with members living in Minnesota, Texas, Ohio, and even Norway. Thanks to platforms like Slack and Trello, we were able to keep in touch, even when many of us had never even met in person.&lt;/p&gt;
+
+&lt;p&gt;It was a blast building a project like this. Every team member contributed due to their passion for soccer and even if we hadn’t met on the playing field, we built a sense of camaraderie that transcends sport and technology.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;text--centered&quot;&gt;
+  &lt;p&gt;
+    While we closed down the project in late 2018, you can still check out &lt;a href=&quot;https://www.twitter.com/tapinguide&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tap In on Twitter&lt;/a&gt; to explore some legacy content.
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 13 Apr 2018 14:46:27 -0500</pubDate>
+        <link>http://localhost:4000/work/tap-in-guide.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/tap-in-guide.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Optimizing Onboarding for Benchmarcs</title>
+        <description>&lt;p&gt;Through &lt;a href=&quot;http://metto.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Metto&lt;/a&gt; , I helped design and build a web application called &lt;a href=&quot;http://benchmarcs.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Benchmarcs&lt;/a&gt; that allows funeral homes to monitor trends in business for both their own individual homes and their competitors.&lt;/p&gt;
+
+&lt;p&gt;Traditionally, funeral homes tracked “calls,” or deaths, by skimming through obituaries in local newspapers and obituary websites. Because the calls listed in these sources also indicated which funeral home would be performing the funeral, each home could track how much business each competitor was receiving.&lt;/p&gt;
+
+&lt;p&gt;With Benchmarcs, we helped automate this process by using web spiders to crawl online data and assess when and where calls happen. This helps homes save time and money and provides a central hub of important competitive data.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-new-users-with-actionable-content&quot;&gt;Setting Up New Users with Actionable Content&lt;/h2&gt;
+
+&lt;p&gt;One of the biggest advantages in moving toward an automated system like Benchmarcs is that it gives funeral homes the ability to track their competition.&lt;/p&gt;
+
+&lt;p&gt;Adding competitors allows users to see how many calls a competing home received over the last week, month, year, etc and also see trends in calls over that period of time.&lt;/p&gt;
+
+&lt;p&gt;In order to educate new users about the ability to track competitors and to help populate their accounts with competitor data, &lt;em&gt;we decided to integrate the ability to add competitors into the onboarding process&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;pop-out-image__container&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+		&lt;div class=&quot;pop-out-image&quot;&gt;
+			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; alt=&quot;Benchmarcs Onboarding User Flow&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;span class=&quot;img-caption&quot;&gt;We created user-flow diagrams to outline functionality in the initial onboarding and setup, including the ability to add competitor funeral homes (Getting Started Step 3)&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;evaluating-funeral-home-needs&quot;&gt;Evaluating Funeral Home Needs&lt;/h3&gt;
+&lt;p&gt;Conversations with our product owners and several potential users led us to focus on the addition of competitors on a local, rather than regional or national level. We learned that even when a competitor has multiple locations across a state or region, funeral homes tend to focus on the competing branch closest to them.&lt;/p&gt;
+
+&lt;p&gt;To allow users to add competing funeral homes, we started by approximating the user’s location to show a suggested set of homes in their area. The page displayed the user’s closest zip code and provided a radius selector to filter results.&lt;/p&gt;
+
+&lt;div class=&quot;pop-out-image__container&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+		&lt;div class=&quot;pop-out-image&quot;&gt;
+			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; alt=&quot;Benchmarcs Add a Competitor Wireframe and design V1&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;span class=&quot;img-caption&quot;&gt;
+		We gathered user feedback on the initial &quot;add a competitor&quot; feature from several pilot program users.
+	&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;improving-the-initial-design&quot;&gt;Improving the Initial Design&lt;/h3&gt;
+
+&lt;p&gt;While some aspects of the initial functionality fit the bill, the nuances of the design did not. New users would choose several homes from the pre-populated list before becoming frustrated when they couldn’t find the home they were looking for.&lt;/p&gt;
+
+&lt;p&gt;It was unclear to users that the list of homes was a smaller list of suggestions rather than a complete list of all competitors. In the end, this solution made the tool less useful to users and converted them with less competitors than than they really wanted.&lt;/p&gt;
+
+&lt;p&gt;After several of usability sessions, our team decided to improve the design of this feature.&lt;/p&gt;
+
+&lt;h2 id=&quot;iterating-to-improve-usability&quot;&gt;Iterating to Improve Usability&lt;/h2&gt;
+
+&lt;p&gt;To improve usability, we made a couple of changes to both the visual design and functionality:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;We did away with ZIP and radius&lt;/strong&gt; – user testing had shown that these fields were not being used and that users instead focused on the search input&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;We made the search bar more prominent&lt;/strong&gt; in order to guide the user to take action&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;We added the title “Suggested Competitors” to the preloaded competitors list&lt;/strong&gt; to communicate to users that this initial list wasn’t exhausted&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;We added functionality to deliver more and more relevant results on each selection.&lt;/strong&gt; Now, each time the user picks a competitor, we hit the Benchmarcs API, search for homes near the selected competitor and add them to the list of suggestions. Then, we  re-sort the list based on how many times a competitor is suggested in relation to the competitors selected by the user.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;pop-out-image__container&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-interaction.gif&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+		&lt;div class=&quot;pop-out-image&quot;&gt;
+			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-interaction.gif&quot; alt=&quot;Adding a Competitor - Animated GIF&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;span class=&quot;img-caption&quot;&gt;
+		Version two of the &quot;add a competitor&quot; feature led to an overall increase in competitors added by users when setting up their accounts.
+	&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;While seemingly small, the updated design makes the tool more useful to user and has increased the number of homes a new user would add during setup.&lt;/p&gt;
+
+&lt;p&gt;Not only could users find the homes they were looking for, but the updated functionality helped give them better suggestions.&lt;/p&gt;
+
+&lt;h2 id=&quot;takeaways&quot;&gt;Takeaways&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;When it comes to the design of a feature, the smallest details can create a big impact.&lt;/strong&gt; Even if it’s simply modifying a label or moving an input, a change in design can drastically affect the end user’s experience with your product.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;User test throughout the design and development process&lt;/strong&gt; in order to uncover areas for improvement.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Always be iterating.&lt;/strong&gt; It’s easy to become complacent, but the best solutions come through thoughtful refinements.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Thu, 05 Oct 2017 14:46:27 -0500</pubDate>
+        <link>http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</guid>
+        
+        
+        <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>Alex Martinez – Postlight</title>
+        <description>&lt;div class=&quot;resume-container&quot;&gt;
+	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFMkQyeDdSUXRSTDA/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 14 Nov 2016 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/resume-postlight/index.html</link>
+        <guid isPermaLink="true">http://localhost:4000/resume-postlight/index.html</guid>
+        
         
       </item>
     

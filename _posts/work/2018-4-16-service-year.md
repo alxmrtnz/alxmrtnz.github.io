@@ -1,7 +1,8 @@
 ---
 layout: case-study
-title:  "Service Year"
-date:   2016-9-09 19:46:27
+title: "Service Year"
+# date:   2016-9-09 19:46:27
+date: 2018-4-16 19:46:27
 comments: false
 category: work
 permalink: /:categories/:title.html
@@ -19,10 +20,9 @@ thumbnail-image: serviceyear/sy-thumbnail.jpg
   </div>
 </div>
 
+## Project Overview
 
-Project Overview
---------------------------------------------------------------------------
-The Service Year Alliance teamed up with <a href='http://isl.co/' target="_blank" class="link--text-in-p">ISL</a> to design and develop a digital platform for young Americans to connect and serve with the nation's best nonprofits. Service Year aims to make a year of service a common expectation and opportunity for every young American.
+The Service Year Alliance teamed up with <a href='https://web.archive.org/web/20210809115609/http://isl.co/' target="_blank" class="link--text-in-p">ISL</a> to design and develop a digital platform for young Americans to connect and serve with the nation's best nonprofits. Service Year aims to make a year of service a common expectation and opportunity for every young American.
 
 An ongoing and ever-evolving project, the site brings the nation's best service opportunities into one place, allowing both organizations and service corps members to more easily connect with one another.
 
@@ -31,7 +31,6 @@ An ongoing and ever-evolving project, the site brings the nation's best service 
 I served as a lead visual and user experience designer on Service Year. While working with a team of designers, developers, and project managers within ISL, we also worked closely with our client, the Service Year Alliance to bring their vision to life.
 
 Over the course of the project, I worked on anything from initial user research to the creation of user flows, wireframes, and interactive prototypes to the final visual and interaction design of both the marketing site and web application.
-
 
 ## Creating the Service Year Ecosystem
 
@@ -63,9 +62,7 @@ We then began creating user flows for the paths each user type would take when b
   </div>
 </div>
 
-
 While user flows were an essential part to getting the project started, it wasn't always such a linear process. Our team worked within an agile process, using two-week sprints to accomplish tasks on a story-by-story basis. We iterated on different parts of the UX and design process depending on the task at hand.
-
 
 ### Wireframes & Prototypes
 
@@ -89,7 +86,6 @@ Prototyping allowed us to see when certain interactions felt great (or just awkw
 Due to the scale of Service Year, our team worked around the idea of component-based design. Each part of a page not only needed consideration in terms of responsive design, but also necessitated the creation of assets for multiple states. Each component then had to work alongside other components in the page.
 
 The use of component-based design helped us to define atoms and molecules that could then be used to build organisms, templates, and finally, pages (<a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank" class="link--text-in-p">See Brad Frost's Atomic Design</a>).
-
 
 <div class="grid grid-mt ">
   <div class="grid__item grid__item--full no-shadow">
@@ -177,6 +173,3 @@ Service Year helped me learn how to work within a new type of workflow. Before t
     Visit <a href="https://serviceyear.org/" target="_blank" class="link--text-in-p">ServiceYear.org</a>
   </p>
 </div>
-
-
-

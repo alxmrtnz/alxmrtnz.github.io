@@ -197,10 +197,6 @@
               A recruiting system to help guide high school student athletes and their parents through the college athletic recruiting process.
             </p>
             
-              <p class="work-summary">
-                <a href="https://www.lockerlinked.com/" target="_blank" class="link--text-in-p">Visit the Site</a>
-              </p>
-            
           </div>
         </div>
       </header>
@@ -212,15 +208,17 @@
 </div>
 
 <h2 id="project-overview">Project Overview</h2>
+
 <p>Every year, thousands of high school athletes try to pursue their passion at the next level by searching for the perfect athletic and academic fit. Having never gone through the college athletic recruiting process, these students, and their parents, are often in uncharted waters.</p>
 
 <p>Which coaches should they talk to? How do they gain the right exposure? Which program should they choose… and why? Even with the best work ethic and determination, every athlete could use a little help.</p>
 
-<p>As part of the team at <a href="https://whitelabelco.com/" target="_blank" class="link--text-in-p">Whitelabel</a>, I helped build the digital platform for <a href="https://www.lockerlinked.com/" target="_blank" class="link--text-in-p">Locker Linked</a>, a startup that aims to provide student athletes with first-rate recruitment network services and tools to prepare them for upcoming college athletic opportunities.</p>
+<p>As part of the team at <a href="https://whitelabelco.com/" target="_blank" class="link--text-in-p">Whitelabel</a>, I helped build the digital platform for Locker Linked, a startup that aims to provide student athletes with first-rate recruitment network services and tools to prepare them for upcoming college athletic opportunities.</p>
 
 <p>Locker Linked simplifies the recruitment process, allowing student athletes to set up a player profile to showcase skills, connect directly with coaches and recruiters, and get exclusive access to essential resources to maximize potential recruitment.</p>
 
 <h3 id="my-role">My Role</h3>
+
 <p>While my team at Whitelabel worked closely with Locker Linked to design and build their entire platform, from design to development, I worked specifically on the development team focusing on building the front-end of the platform in React.</p>
 
 <p>On the frontend, Locker Linked is built with React and Redux, integrates with <a href="https://stripe.com/" target="_blank" class="link--text-in-p">Stripe</a> for user payment, and connects to a Rails backend. I worked closely with our lead backend developer, <a href="https://twitter.com/toreyhickman/" target="_blank" class="link--text-in-p">Torey Hickman</a>, to build a component-based UI that hooked up seamlessly with our backend database and architecture.</p>
@@ -232,7 +230,9 @@
 </div>
 
 <h2 id="creating-a-showcase-for-athletes">Creating a Showcase for Athletes</h2>
+
 <h3 id="building-a-flexible-profile">Building a Flexible Profile</h3>
+
 <p>The athlete profile turned out to be one of my favorite parts of the app due to the variety of components needed to accomodate such a wide range of sports played by student athletes. In addition, the profile serves as the entry point for college recruiters’ evaluations of student athletes, making it a focal point of the platform.</p>
 
 <p>Locker Linked wanted to allow athletes to post photos, videos, statistics, awards, camps, and reference contact information in addition to the ability to add multiple sports. Whether it was making sure the stats table component resized and responded fluidly or creating a slider component that accomodated arrays of photos or videos, I enjoyed the creative coding challenge that the screen presented.</p>
@@ -244,6 +244,7 @@
 </div>
 
 <h3 id="focusing-on-reusable-components">Focusing on Reusable Components</h3>
+
 <p>The component-based nature of the athlete profile allowed us to focus on creating reusable elements. We were able to build the profile component by component and think about how to reuse several components in forms where users would manage the actual profile.</p>
 
 <p>Components like our <code class="language-plaintext highlighter-rouge">TabSelect.js</code> were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.</p>
@@ -261,14 +262,17 @@
 </div>
 
 <h2 id="the-intricacies-of-profile-management">The Intricacies of Profile Management</h2>
+
 <p>Profile management was one of the biggest challenges in building Locker Linked. In addition to the actual student athlete, profiles can be managed by parents/guardians (and soon coaches, too!).</p>
 
 <p>Not only that, but a single user can have admin access to manage and edit any number of athlete profiles. This many-to-one relationship of profile management necessitated careful consideration when it came to both onboarding and the user dashboard.</p>
 
 <h3 id="onboarding-different-user-types">Onboarding Different User Types</h3>
+
 <p>When onboarding, a user can select whether they’re an athlete or a parent/guardian. In both cases, the user can create a new athlete profile, but if a user is a parent, they also have the option to request access to a pre-existing profile (their child’s). This meant that our team had to carefully consider the user flow for multiple onboarding paths and build them accordingly.</p>
 
 <h3 id="managing-multiple-profiles">Managing Multiple Profiles</h3>
+
 <p>In order to accomodate parents/guardians with more than one child on the platform or coaches that are assisting multiple student athletes, we built Locker Link with the ability for users to manage one or more athlete profiles.</p>
 
 <div class="grid grid-mt grid-mb">
@@ -283,7 +287,9 @@
 <p>Once a user is given admin access to multiple profiles, they can use a simple dropdown to select the profile they want to edit. By integrating the user dashboard with Redux, we could easily populate the users’ edit views with the selected profile’s data and make editing a breeze.</p>
 
 <h2 id="learning-to-love-forms">Learning to Love Forms</h2>
+
 <h3 id="form-management-with-redux-form">Form Management with Redux-Form</h3>
+
 <p>I love React. But ever since I began building apps with React, I’ve had a gripe with managing forms. On top of managing the actualy values of inputs in component state, handling validation and error messaging made forms in React complex and clunky to set up and use. To make form development easier, we introduced the use of <a href="https://redux-form.com/" target="_blank" class="link--text-in-p">Redux Form</a>, a library that allows you to connect your forms to your Redux store in order to manage form state.</p>
 
 <p>Redux Form let us create custom input components, decrease redundancy in terms of validation and error message handling, and build more robust, dynamic forms. For a deeper look at my experience with Redux Form (and how it convinced me to love forms again), <a href="/thoughts/2018/05/02/react-and-redux-form.html" class="link--text-in-p">check out this post I wrote</a>.</p>
@@ -324,7 +330,6 @@
     <img src="http://localhost:4000/assets/work/lockerlinked/locker-linked-locker-profile.jpg" alt="Locker Linked Profile Management Screenshot" />
   </div>
 </div>
-
 
       </div>
       <div class="post-comments">
