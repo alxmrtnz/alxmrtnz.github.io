@@ -1,0 +1,59 @@
+// Import Sass modules
+@use "sass:color";
+@use "sass:math";
+
+// Our variables
+$sans-serif: "aktiv-grotesk",sans-serif !default;
+$serif: "athelas", "freight-text-pro",serif !default;
+$monotype: "inconsolata",sans-serif !default;
+
+$base-font-family: Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$home-font-size:  $base-font-size * 1.5 !default;
+$base-line-height: 1.5 !default;
+
+$heading-font-family: $sans-serif !default;
+
+$spacing-unit: 30px !default;
+
+$black: #140B39 !default;
+$gray-color: #EAEFF2 !default;
+$gray-color-light: color.adjust($gray-color, $lightness: 3%) !default;
+$gray-color-dark: color.adjust($gray-color, $lightness: -25%) !default;
+$gray-color-darker: color.adjust($gray-color, $lightness: -40%) !default;
+$blue-color: #419BF9 !default;
+$iron: #D2D9DE !default;
+
+$text-color: $black !default;
+$heading-color-light: #a6b0c3 !default;
+$white: #fff !default;
+$background-color: $white !default;
+$brand-background-color: #E1DDF1 !default;
+$brand-color: #8A70DB !default;
+$hover-color: #8b70db3a !default;
+
+$box-shadow-standard: 0px 0px 20px 0px rgba(50, 50, 50, 0.13) !default;
+
+$on-palm:          600px !default;
+$on-tablet:        768px !default;
+$on-laptop:        900px !default;
+$on-larger-screen: 1200px !default;
+
+$paragraph-margin-bottom: 35px !default;
+
+// Mixins
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Placeholders
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -5,9 +5,9 @@
     <description>Alex Martinez is a front-end developer based in Brooklyn, currently making the web more delicious at Grubhub. In the past, Alex worked on awesome teams at Whitelabel, ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 May 2024 09:50:31 -0400</pubDate>
-    <lastBuildDate>Thu, 02 May 2024 09:50:31 -0400</lastBuildDate>
-    <generator>Jekyll v4.0.0</generator>
+    <pubDate>Mon, 23 Jun 2025 14:59:18 -0500</pubDate>
+    <lastBuildDate>Mon, 23 Jun 2025 14:59:18 -0500</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
     
       <item>
         <title>Alex Martinez – Resume</title>
@@ -15,7 +15,7 @@
 	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/1hBaO7GyHtayQ4QPsZHs2F93E_pXhSqcR/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Thu, 17 Dec 2020 00:00:00 -0500</pubDate>
+        <pubDate>Thu, 17 Dec 2020 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/resume/index.html</link>
         <guid isPermaLink="true">http://localhost:4000/resume/index.html</guid>
         
@@ -28,7 +28,7 @@
 
 &lt;p&gt;While our team was familiar with how to manage environment variables on an array of web projects (configuring variables such as API urls for local, staging, and production environments), Expo and React Native do things slightly differently.&lt;/p&gt;
 
-&lt;p&gt;After some trial, error, and research, we created a workflow based on &lt;a href=&quot;https://medium.com/@peterpme/environment-variables-in-expo-using-release-channels-4934594c5307&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;a post from Peter Piekarczyk&lt;/a&gt;. Beginning with creating an Expo-based equivalent to a &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, I’ll show you our team’s full workflow when it comes to using React Native and Expo’s Release Channels for local, staging, and production environments.&lt;/p&gt;
+&lt;p&gt;After some trial, error, and research, we created a workflow based on &lt;a href=&quot;https://medium.com/@peterpme/environment-variables-in-expo-using-release-channels-4934594c5307&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;a post from Peter Piekarczyk&lt;/a&gt;. Beginning with creating an Expo-based equivalent to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, I’ll show you our team’s full workflow when it comes to using React Native and Expo’s Release Channels for local, staging, and production environments.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Update: August, 23, 2019 &lt;br /&gt;
@@ -48,18 +48,18 @@ Be aware that you will want to look into obfuscating sensitive information. Plea
 &lt;p&gt;If you’re interested in diving deeper, there is some great documentation on Expo’s site including an FAQ on the &lt;a href=&quot;https://docs.expo.io/versions/latest/introduction/faq/#what-is-the-difference-between-expo-and&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;differences between Expo and React Native&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;environment-variables-in-expo-using-release-channels&quot;&gt;Environment Variables in Expo using Release Channels&lt;/h2&gt;
-&lt;p&gt;What isn’t entirely clear when getting started with Expo is how to configure environment variables. You may be used to creating &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; files to define your API url or other variables for local, staging, and production environments, however Expo doesn’t use &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt;’s by default.&lt;/p&gt;
+&lt;p&gt;What isn’t entirely clear when getting started with Expo is how to configure environment variables. You may be used to creating &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; files to define your API url or other variables for local, staging, and production environments, however Expo doesn’t use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt;’s by default.&lt;/p&gt;
 
 &lt;p&gt;In fact, without external packages and/or ejecting from Expo, the primary means of creating environments with their own variables is by using Expo’s &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/release-channels/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Release Channels&lt;/a&gt;. These release channels allow you to “send out different versions of your application to your users by giving them a URL or configuring your standalone app.”&lt;sup&gt;&lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/release-channels/#introduction&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;Here’s how we use release channels to manage our environments:&lt;/p&gt;
 
 &lt;h3 id=&quot;create-an-environment-config-file&quot;&gt;Create an Environment Config File&lt;/h3&gt;
-&lt;p&gt;We start by creating an &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file that is also added to our &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; (so that any sensitive information is never published to GitHub). This &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; essentially serves as the project’s &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, allowing us to store api urls and other variables that change based on the app’s current environment.&lt;/p&gt;
+&lt;p&gt;We start by creating an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file that is also added to our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; (so that any sensitive information is never published to GitHub). This &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; essentially serves as the project’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt; file, allowing us to store api urls and other variables that change based on the app’s current environment.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
 * environment.js
-* path: '/environment.js' (root of your project)
+* path: &apos;/environment.js&apos; (root of your project)
 ******************************/
 
 import Constants from &quot;expo-constants&quot;;
@@ -91,9 +91,9 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) =&amp;gt; {
  // __DEV__ is true when run locally, but false when published.
  if (__DEV__) {
    return ENV.dev;
- } else if (env === 'staging') {
+ } else if (env === &apos;staging&apos;) {
    return ENV.staging;
- } else if (env === 'prod') {
+ } else if (env === &apos;prod&apos;) {
    return ENV.prod;
  }
 };
@@ -101,24 +101,24 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) =&amp;gt; {
 export default getEnvVars;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You’ll see a couple of things here. First off, we check what platform the app is being run on (iOS or Android) via &lt;code class=&quot;highlighter-rouge&quot;&gt;Platform&lt;/code&gt; to determine the correct &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost&lt;/code&gt; address. We quickly found that Android requires a different address in order to correctly render images and other static assets when running locally. &lt;sup&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;You’ll see a couple of things here. First off, we check what platform the app is being run on (iOS or Android) via &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Platform&lt;/code&gt; to determine the correct &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;localhost&lt;/code&gt; address. We quickly found that Android requires a different address in order to correctly render images and other static assets when running locally. &lt;sup&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;Next, the &lt;code class=&quot;highlighter-rouge&quot;&gt;ENV&lt;/code&gt; object is where we add variables including each environment’s &lt;code class=&quot;highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; and, in this case, the key for Amplitude which we used for analytics tracking on each environment.&lt;/p&gt;
+&lt;p&gt;Next, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ENV&lt;/code&gt; object is where we add variables including each environment’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; and, in this case, the key for Amplitude which we used for analytics tracking on each environment.&lt;/p&gt;
 
-&lt;p&gt;Lastly, the &lt;code class=&quot;highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function is what’s exported from the file. It checks which release channel the app’s compiled binary is running via Expo’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Constants&lt;/code&gt; and returns the corresponding variables.&lt;/p&gt;
+&lt;p&gt;Lastly, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function is what’s exported from the file. It checks which release channel the app’s compiled binary is running via Expo’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Constants&lt;/code&gt; and returns the corresponding variables.&lt;/p&gt;
 
 &lt;h3 id=&quot;accessing-environment-variables&quot;&gt;Accessing Environment Variables&lt;/h3&gt;
 
-&lt;p&gt;After the variables are set up, we import and call the &lt;code class=&quot;highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function from &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; in our &lt;code class=&quot;highlighter-rouge&quot;&gt;api.js&lt;/code&gt; file in order to access the proper &lt;code class=&quot;highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; for our api calls.&lt;/p&gt;
+&lt;p&gt;After the variables are set up, we import and call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getEnvVars()&lt;/code&gt; function from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; in our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;api.js&lt;/code&gt; file in order to access the proper &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt; for our api calls.&lt;/p&gt;
 
-&lt;p&gt;You’ll see that we use ES6’s &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;destructuring assignment syntax&lt;/a&gt; to get the specific variable we want (in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt;) out of the function:&lt;/p&gt;
+&lt;p&gt;You’ll see that we use ES6’s &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;destructuring assignment syntax&lt;/a&gt; to get the specific variable we want (in this case &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apiUrl&lt;/code&gt;) out of the function:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
 * api.js
-* path: '/utils/api.js'
+* path: &apos;/utils/api.js&apos;
 ******************************/
 // Import getEnvVars() from environment.js
-import getEnvVars from '../environment';
+import getEnvVars from &apos;../environment&apos;;
 const { apiUrl } = getEnvVars();
 
 /******* SESSIONS::LOG IN *******/
@@ -129,27 +129,27 @@ const { apiUrl } = getEnvVars();
 // }
 export const logIn = (credentials, jsonWebToken) =&amp;gt; (
  fetch(`${apiUrl}/phone`, {
-   method: 'POST',
+   method: &apos;POST&apos;,
    headers: {
-     'Authorization': 'Bearer ' + jsonWebToken,
-     'Content-Type': 'application/json',
+     &apos;Authorization&apos;: &apos;Bearer &apos; + jsonWebToken,
+     &apos;Content-Type&apos;: &apos;application/json&apos;,
    },
    body: JSON.stringify(credentials)
  })
 );
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You can see how useful this can be with multiple variables within the same environment. To import a key for Amplitude into its own config file, for example, we do the following from &lt;code class=&quot;highlighter-rouge&quot;&gt;Amplitude.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can see how useful this can be with multiple variables within the same environment. To import a key for Amplitude into its own config file, for example, we do the following from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Amplitude.js&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
 * Amplitude.js
-* path: '/utils/analytics/Amplitude.js'
+* path: &apos;/utils/analytics/Amplitude.js&apos;
 ******************************/
 
-import { Amplitude } from 'expo';
+import { Amplitude } from &apos;expo&apos;;
 
 // Import getEnvVars() from environment.js
-import getEnvVars from '../../environment';
+import getEnvVars from &apos;../../environment&apos;;
 const { amplitudeApiKey } = getEnvVars();
 
 ...
@@ -172,7 +172,7 @@ const initialize = () =&amp;gt; {
 
 &lt;p&gt;To run your app, run:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo start
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo start
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And then select which simulator (iOS or Android) you want to open via the expo-cli in your terminal:&lt;/p&gt;
@@ -181,11 +181,11 @@ const initialize = () =&amp;gt; {
 
 &lt;p&gt;With iOS, I’ve found you can run the command with the Simulator app closed or already open, while with Android, things are smoothest if you already have the AVD (Android Virtual Device) running.&lt;/p&gt;
 
-&lt;p&gt;By running locally, the &lt;code class=&quot;highlighter-rouge&quot;&gt;__DEV__&lt;/code&gt; flag will be set to true and your &lt;code class=&quot;highlighter-rouge&quot;&gt;ENV.dev&lt;/code&gt; variables will be used:&lt;/p&gt;
+&lt;p&gt;By running locally, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__DEV__&lt;/code&gt; flag will be set to true and your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ENV.dev&lt;/code&gt; variables will be used:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*****************************
 * environment.js
-* path: '/environment.js' (root of your project)
+* path: &apos;/environment.js&apos; (root of your project)
 ******************************/
 
 // From ealier in this post...
@@ -195,9 +195,9 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) =&amp;gt; {
  // __DEV__ is true when run locally, but false when published.
  if (__DEV__) {
    return ENV.dev;
- } else if (env === 'staging') {
+ } else if (env === &apos;staging&apos;) {
    return ENV.staging;
- } else if (env === 'prod') {
+ } else if (env === &apos;prod&apos;) {
    return ENV.prod;
  }
 };
@@ -206,54 +206,54 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) =&amp;gt; {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;environment-2-testflightandroid-testing-tracks-staging&quot;&gt;Environment 2: TestFlight/Android Testing Tracks (“staging”)&lt;/h3&gt;
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment includes:
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment includes:
 Running the app via TestFlight or an Android testing track (more info on those &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#5-test-it-on-your-device-or&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;There are essentially two main components to the “staging” workflow:&lt;/p&gt;
 
 &lt;h4 id=&quot;1-creating-and-uploading-an-initial-build&quot;&gt;1) Creating and Uploading an Initial Build&lt;/h4&gt;
-&lt;p&gt;First, you need to &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/release-channels/#build-with-channels&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;build a binary&lt;/a&gt; that you can upload to App Store Connect (iOS) and Google Play Console (Android) with your release channel set to &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt;. Setting the release channel flag allows you to then publish changes to that specific channel without having to rebuild and re-upload the binary.&lt;/p&gt;
+&lt;p&gt;First, you need to &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/release-channels/#build-with-channels&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;build a binary&lt;/a&gt; that you can upload to App Store Connect (iOS) and Google Play Console (Android) with your release channel set to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt;. Setting the release channel flag allows you to then publish changes to that specific channel without having to rebuild and re-upload the binary.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:ios --release-channel staging
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:ios --release-channel staging
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;or&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:android --release-channel staging
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:android --release-channel staging
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Once Expo has completed building the binary (&lt;code class=&quot;highlighter-rouge&quot;&gt;.ipa&lt;/code&gt; for iOS and &lt;code class=&quot;highlighter-rouge&quot;&gt;.apk&lt;/code&gt; for Android), you can then upload it to either Apple’s App Store Connect or Google’s Google Play Console. For more info on uploading to app stores, &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/uploading-apps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;check out the Expo docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once Expo has completed building the binary (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.ipa&lt;/code&gt; for iOS and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.apk&lt;/code&gt; for Android), you can then upload it to either Apple’s App Store Connect or Google’s Google Play Console. For more info on uploading to app stores, &lt;a href=&quot;https://docs.expo.io/versions/v32.0.0/distribution/uploading-apps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;check out the Expo docs&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;You won’t need to rebuild and upload a new binary unless you make core changes such as updating the Expo SDK or modifying other configurations in your &lt;code class=&quot;highlighter-rouge&quot;&gt;app.json&lt;/code&gt; (you can read more on that &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#7-update-your-app&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;You won’t need to rebuild and upload a new binary unless you make core changes such as updating the Expo SDK or modifying other configurations in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app.json&lt;/code&gt; (you can read more on that &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/building-standalone-apps/#7-update-your-app&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
 
 &lt;h4 id=&quot;2-publishing-updates-to-the-uploaded-build&quot;&gt;2) Publishing Updates to the Uploaded Build&lt;/h4&gt;
 
 &lt;p&gt;Whenever you do want to publish updates, you can then run:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo publish --release-channel staging
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo publish --release-channel staging
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Any changes you’ve made will publish to the &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; release channel via Expo’s &lt;a href=&quot;https://docs.expo.io/versions/latest/guides/configuring-ota-updates/ &quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;over-the-air JavaScript updates&lt;/a&gt; and be available through TestFlight or Google Play’s Test Tracks.&lt;/p&gt;
+&lt;p&gt;Any changes you’ve made will publish to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt; release channel via Expo’s &lt;a href=&quot;https://docs.expo.io/versions/latest/guides/configuring-ota-updates/ &quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;over-the-air JavaScript updates&lt;/a&gt; and be available through TestFlight or Google Play’s Test Tracks.&lt;/p&gt;
 
 &lt;h3 id=&quot;environment-3-app-storegoogle-play-production&quot;&gt;Environment 3: App Store/Google Play (“production”)&lt;/h3&gt;
 &lt;p&gt;Lastly, when you want to go live, building and publishing is just like that of the staging environment, however you designate your release channel as “prod”:&lt;/p&gt;
 
 &lt;p&gt;Building binary for upload:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:ios --release-channel prod
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:ios --release-channel prod
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;or&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:android --release-channel prod
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo build:android --release-channel prod
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Publishing updates:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo publish --release-channel prod
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;expo publish --release-channel prod
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Just a note here that you can, of course, name the release channels for any of the your environments to whatever you’d like – be it &lt;code class=&quot;highlighter-rouge&quot;&gt;prod&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;my-awesome-app-is-finally-live&lt;/code&gt;. Just make sure to be consistent and set things up in your &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;Just a note here that you can, of course, name the release channels for any of the your environments to whatever you’d like – be it &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prod&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;production&lt;/code&gt;, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;my-awesome-app-is-finally-live&lt;/code&gt;. Just make sure to be consistent and set things up in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file.&lt;/p&gt;
 
 &lt;h3 id=&quot;digging-deeper-advanced-release-channels&quot;&gt;Digging Deeper: Advanced Release Channels&lt;/h3&gt;
 &lt;p&gt;If you want to be even more of an Expo wiz, take a look at the documentation on &lt;a href=&quot;https://docs.expo.io/versions/latest/distribution/advanced-release-channels/#promoting-a-release-to-a-new-channel&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Advanced Release Channels&lt;/a&gt;. Expo provides the option to promote and roll back channel entries between release channels – which may save you some build time in the long run&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Using Expo and Expo Release Channels, our team has built a workflow that works for us. The &lt;code class=&quot;highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file takes the place of a &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt;, TestFlight and Testing Tracks on Google Play serve as our &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment, and the released app is our final &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Using Expo and Expo Release Channels, our team has built a workflow that works for us. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;environment.js&lt;/code&gt; file takes the place of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.env&lt;/code&gt;, TestFlight and Testing Tracks on Google Play serve as our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staging&lt;/code&gt; environment, and the released app is our final &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;production&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;It should be said that there are alternatives to this workflow, including packages like &lt;a href=&quot;https://github.com/luggit/react-native-config&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;react-native-config&lt;/a&gt; and &lt;a href=&quot;https://github.com/brysgo/babel-plugin-inline-dotenv#readme&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;babel-plugin-inline-dotenv&lt;/a&gt;. However, the former requires ejecting from Expo in order to “link” to native code, and the latter requires additional configuration.&lt;/p&gt;
 
@@ -266,7 +266,7 @@ Running the app via TestFlight or an Android testing track (more info on those &
   &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;StackOverflow: How do you connect localhost in the Android emulator?&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Tue, 12 Mar 2019 12:11:27 -0400</pubDate>
+        <pubDate>Tue, 12 Mar 2019 11:11:27 -0500</pubDate>
         <link>http://localhost:4000/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</link>
         <guid isPermaLink="true">http://localhost:4000/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</guid>
         
@@ -282,7 +282,7 @@ Running the app via TestFlight or an Android testing track (more info on those &
 &lt;p&gt;Luckily, a coworker suggested I try out &lt;a href=&quot;https://redux-form.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that helps you manage form state and validation in redux rather than in a component.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-redux-form&quot;&gt;What is Redux Form?&lt;/h2&gt;
-&lt;p&gt;By connecting a form component to redux through Redux Form’s &lt;code class=&quot;highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; &lt;a href=&quot;https://reactjs.org/docs/higher-order-components.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;higher-order component&lt;/a&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;formReducer&lt;/code&gt;, the library keeps track of common application form state in a redux store rather in the local component.&lt;/p&gt;
+&lt;p&gt;By connecting a form component to redux through Redux Form’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; &lt;a href=&quot;https://reactjs.org/docs/higher-order-components.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;higher-order component&lt;/a&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;formReducer&lt;/code&gt;, the library keeps track of common application form state in a redux store rather in the local component.&lt;/p&gt;
 
 &lt;p&gt;In fact, it helps manage things such as:&lt;/p&gt;
 
@@ -298,9 +298,9 @@ Running the app via TestFlight or an Android testing track (more info on those &
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;under-the-hood&quot;&gt;Under the Hood&lt;/h2&gt;
-&lt;p&gt;Before I began using Redux Form, I stored form input values and error states in its own component &lt;code class=&quot;highlighter-rouge&quot;&gt;state&lt;/code&gt; and created a &lt;code class=&quot;highlighter-rouge&quot;&gt;handleInputChange()&lt;/code&gt; method to handle updates for each individual field. I’d then create methods to manage validation and error messages on submit. None of this was DRY and made it difficult to build new forms.&lt;/p&gt;
+&lt;p&gt;Before I began using Redux Form, I stored form input values and error states in its own component &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;state&lt;/code&gt; and created a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;handleInputChange()&lt;/code&gt; method to handle updates for each individual field. I’d then create methods to manage validation and error messages on submit. None of this was DRY and made it difficult to build new forms.&lt;/p&gt;
 
-&lt;p&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;redux-form&lt;/code&gt; simplified form management by allowing me to store a form’s input values in a redux store, handling inputs’ &lt;code class=&quot;highlighter-rouge&quot;&gt;onChange&lt;/code&gt; methods and providing field-level validation.&lt;/p&gt;
+&lt;p&gt;Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;redux-form&lt;/code&gt; simplified form management by allowing me to store a form’s input values in a redux store, handling inputs’ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onChange&lt;/code&gt; methods and providing field-level validation.&lt;/p&gt;
 
 &lt;p&gt;After setting up Redux Form, you’ll be able to see it at work using &lt;a href=&quot;https://github.com/reduxjs/redux-devtools&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux DevTools&lt;/a&gt;:&lt;/p&gt;
 &lt;div class=&quot;video-container&quot;&gt;
@@ -309,25 +309,25 @@ Running the app via TestFlight or an Android testing track (more info on those &
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The form is stored under the name you give it, in this case &lt;code class=&quot;highlighter-rouge&quot;&gt;SignInForm&lt;/code&gt;, while input data is stored under &lt;code class=&quot;highlighter-rouge&quot;&gt;values&lt;/code&gt; and errors under &lt;code class=&quot;highlighter-rouge&quot;&gt;syncErrors&lt;/code&gt;. Redux Form then provides meta information like those error messages, whether an input has been &lt;code class=&quot;highlighter-rouge&quot;&gt;touched&lt;/code&gt;, and whether the form is or isn’t &lt;code class=&quot;highlighter-rouge&quot;&gt;dirty&lt;/code&gt; as props in your form and input components.&lt;/p&gt;
+&lt;p&gt;The form is stored under the name you give it, in this case &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SignInForm&lt;/code&gt;, while input data is stored under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;values&lt;/code&gt; and errors under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;syncErrors&lt;/code&gt;. Redux Form then provides meta information like those error messages, whether an input has been &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touched&lt;/code&gt;, and whether the form is or isn’t &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dirty&lt;/code&gt; as props in your form and input components.&lt;/p&gt;
 
 &lt;h3 id=&quot;a-sample-redux-form&quot;&gt;A Sample Redux Form&lt;/h3&gt;
-&lt;p&gt;The following is an example form for a Sign In screen. &lt;code class=&quot;highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; connects the form component to redux while &lt;code class=&quot;highlighter-rouge&quot;&gt;redux-form&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt; component manages the actual inputs including the &lt;code class=&quot;highlighter-rouge&quot;&gt;validation&lt;/code&gt; that the field requires.&lt;/p&gt;
+&lt;p&gt;The following is an example form for a Sign In screen. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; connects the form component to redux while &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;redux-form&lt;/code&gt;’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Field&lt;/code&gt; component manages the actual inputs including the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validation&lt;/code&gt; that the field requires.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { reduxForm, Field } from 'redux-form'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from &apos;react&apos;
+import { connect } from &apos;react-redux&apos;
+import { reduxForm, Field } from &apos;redux-form&apos;
 
 // Components
-import ReduxFormInput from '../../../components/Inputs/ReduxFormInput'
-import Button from '../../../components/Button'
+import ReduxFormInput from &apos;../../../components/Inputs/ReduxFormInput&apos;
+import Button from &apos;../../../components/Button&apos;
 
 //Utils
 import {
   required,
   email,
-} from '../../../utils/formValidators'
-import * as API  from '../../utils/api'
+} from &apos;../../../utils/formValidators&apos;
+import * as API  from &apos;../../utils/api&apos;
 class SignInForm extends Component {
   handleSubmit = (user) =&amp;gt; {
     /*
@@ -354,22 +354,22 @@ class SignInForm extends Component {
       &amp;lt;form onSubmit={handleSubmit(this.handleSubmit)}&amp;gt;
         &amp;lt;Field
           component={ReduxFormInput}
-          label='Email'
-          name='email'
-          placeholder='Enter your email'
-          type='email'
+          label=&apos;Email&apos;
+          name=&apos;email&apos;
+          placeholder=&apos;Enter your email&apos;
+          type=&apos;email&apos;
           validate={[required, email]}
         /&amp;gt;
         &amp;lt;Field
           component={ReduxFormInput}
-          label='Password'
-          name='password'
-          placeholder='Enter a password'
-          type='password'
+          label=&apos;Password&apos;
+          name=&apos;password&apos;
+          placeholder=&apos;Enter a password&apos;
+          type=&apos;password&apos;
           validate={required}
         /&amp;gt;
         &amp;lt;Button
-          className='cta full-width invert'
+          className=&apos;cta full-width invert&apos;
         &amp;gt;
           Submit
         &amp;lt;/Button&amp;gt;
@@ -380,18 +380,18 @@ class SignInForm extends Component {
 
 // Connect to redux-form
 SignInForm = reduxForm({
-  form: 'SignInForm'
+  form: &apos;SignInForm&apos;
 })(SignInForm)
 
 export default SignInForm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;custom-field-components&quot;&gt;Custom Field Components&lt;/h3&gt;
-&lt;p&gt;In the above example, you’ll see that &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt; takes a prop called &lt;code class=&quot;highlighter-rouge&quot;&gt;component&lt;/code&gt;. This prop allows you define your own input component and can be either a &lt;code class=&quot;highlighter-rouge&quot;&gt;Component&lt;/code&gt;, a stateless function, or a string name of one of the default supported DOM inputs (&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;textarea&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;select&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;In the above example, you’ll see that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Field&lt;/code&gt; takes a prop called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;component&lt;/code&gt;. This prop allows you define your own input component and can be either a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Component&lt;/code&gt;, a stateless function, or a string name of one of the default supported DOM inputs (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;textarea&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;select&lt;/code&gt;).&lt;/p&gt;
 
-&lt;p&gt;In my case, I created a component called &lt;code class=&quot;highlighter-rouge&quot;&gt;ReduxFormInput&lt;/code&gt;, allowing me to define the structure I wanted surrounding a basic &lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt; field:&lt;/p&gt;
+&lt;p&gt;In my case, I created a component called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ReduxFormInput&lt;/code&gt;, allowing me to define the structure I wanted surrounding a basic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; field:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from 'react'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from &apos;react&apos;
 
 class ReduxFormInput extends Component {
   render() {
@@ -414,15 +414,15 @@ class ReduxFormInput extends Component {
     return (
       &amp;lt;div
         className={buildClassName([
-          'input-container',
+          &apos;input-container&apos;,
           optionalClasses,
-          touched &amp;amp;&amp;amp; error ? ' error' : '',
+          touched &amp;amp;&amp;amp; error ? &apos; error&apos; : &apos;&apos;,
         ])}
       &amp;gt;
         { label &amp;amp;&amp;amp;
           &amp;lt;label&amp;gt;{label}&amp;lt;/label&amp;gt;
         }
-        &amp;lt;div className='input-container-inner'&amp;gt;
+        &amp;lt;div className=&apos;input-container-inner&apos;&amp;gt;
           &amp;lt;input
             {...input}
             type={type}
@@ -448,25 +448,25 @@ export default ReduxFormInput
 &lt;h3 id=&quot;field-level-validation&quot;&gt;Field-Level Validation&lt;/h3&gt;
 &lt;p&gt;One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (&lt;a href=&quot;https://redux-form.com/7.3.0/examples/syncvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sync&lt;/a&gt;, &lt;a href=&quot;https://redux-form.com/7.3.0/examples/submitvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Submit&lt;/a&gt;, &lt;a href=&quot;https://redux-form.com/7.3.0/examples/asyncvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Async Blur&lt;/a&gt;, and more), I mainly make use of &lt;a href=&quot;https://redux-form.com/7.3.0/examples/fieldlevelvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Field-Level Validation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Field-Level Validation focuses on &lt;code class=&quot;highlighter-rouge&quot;&gt;Field&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;validate&lt;/code&gt; prop. It accepts one or more functions to validate the value of the given field. If an input doesn’t pass the requirements passed through &lt;code class=&quot;highlighter-rouge&quot;&gt;validate&lt;/code&gt;, the entire form  won’t submit and an &lt;code class=&quot;highlighter-rouge&quot;&gt;error&lt;/code&gt; prop is then passed to the input allowing you to render a message to the user.&lt;/p&gt;
+&lt;p&gt;Field-Level Validation focuses on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Field&lt;/code&gt;’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validate&lt;/code&gt; prop. It accepts one or more functions to validate the value of the given field. If an input doesn’t pass the requirements passed through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validate&lt;/code&gt;, the entire form  won’t submit and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error&lt;/code&gt; prop is then passed to the input allowing you to render a message to the user.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-import { reduxForm, Field } from 'redux-form'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+import { reduxForm, Field } from &apos;redux-form&apos;
 
 // Components
-import ReduxFormInput from '../../../components/Inputs/ReduxFormInput'
+import ReduxFormInput from &apos;../../../components/Inputs/ReduxFormInput&apos;
 
 // Utils
-import { required, email } from '../../../utils/formValidators'
+import { required, email } from &apos;../../../utils/formValidators&apos;
 
 /* ... */
 
 &amp;lt;Field
   component={ReduxFormInput}
-  label='Email'
-  name='email'
-  placeholder='Enter your email'
-  type='email'
+  label=&apos;Email&apos;
+  name=&apos;email&apos;
+  placeholder=&apos;Enter your email&apos;
+  type=&apos;email&apos;
   validate={[required, email]}
 /&amp;gt;
 
@@ -477,17 +477,17 @@ import { required, email } from '../../../utils/formValidators'
 
 &lt;p&gt;Here are a bunch of snippets that I’ve used before:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{/* formValidators.js */}
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{/* formValidators.js */}
 export const multipleValidations = (value, validations) =&amp;gt; {
   const checks = validations.map(validation =&amp;gt; validation(value))
   const failedChecks = checks.filter(check =&amp;gt; !!check)
 
   return failedChecks.length === 0 ? undefined : failedChecks.join(&quot;, &quot;)
 }
-export const required = value =&amp;gt; !value || value === &quot;&quot; ? 'Required' : undefined
+export const required = value =&amp;gt; !value || value === &quot;&quot; ? &apos;Required&apos; : undefined
 export const matchPasswords = (value, allValues, props, name) =&amp;gt; {
-  if (allValues['password']) {
-    return value !== allValues['password'] ? &quot;Passwords Don't Match&quot; : undefined
+  if (allValues[&apos;password&apos;]) {
+    return value !== allValues[&apos;password&apos;] ? &quot;Passwords Don&apos;t Match&quot; : undefined
   } else {
     return undefined
   }
@@ -499,27 +499,27 @@ export const minLength = min =&amp;gt; value =&amp;gt;
   value &amp;amp;&amp;amp; value.length &amp;lt; min ? `Must be ${min} characters or more` : undefined
 export const minLength2 = minLength(2)
 export const number = value =&amp;gt;
-  value &amp;amp;&amp;amp; isNaN(Number(value)) ? 'Must be a number' : undefined
+  value &amp;amp;&amp;amp; isNaN(Number(value)) ? &apos;Must be a number&apos; : undefined
 export const minValue = min =&amp;gt; value =&amp;gt;
   value &amp;amp;&amp;amp; value &amp;lt; min ? `Must be at least ${min}` : undefined
 export const minValue18 = minValue(18)
 export const email = value =&amp;gt;
   value &amp;amp;&amp;amp; !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)
-    ? 'Invalid email address'
+    ? &apos;Invalid email address&apos;
     : undefined
 export const tooOld = value =&amp;gt;
-  value &amp;amp;&amp;amp; value &amp;gt; 65 ? 'You might be too old for this' : undefined
+  value &amp;amp;&amp;amp; value &amp;gt; 65 ? &apos;You might be too old for this&apos; : undefined
 export const aol = value =&amp;gt;
   value &amp;amp;&amp;amp; /.+@aol\.com/.test(value)
-    ? 'Really? You still use AOL for your email?'
+    ? &apos;Really? You still use AOL for your email?&apos;
     : undefined
 export const alphaNumeric = value =&amp;gt;
   value &amp;amp;&amp;amp; /[^a-zA-Z0-9 ]/i.test(value)
-    ? 'Only alphanumeric characters'
+    ? &apos;Only alphanumeric characters&apos;
     : undefined
 export const phoneNumber = value =&amp;gt;
   value &amp;amp;&amp;amp; !/^(0|[1-9][0-9]{9})$/i.test(value)
-    ? 'Invalid phone number, must be 10 digits'
+    ? &apos;Invalid phone number, must be 10 digits&apos;
     : undefined
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -532,315 +532,12 @@ export const phoneNumber = value =&amp;gt;
   &lt;li&gt;&lt;a href=&quot;https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Why Build Your Forms with Redux Form&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 02 May 2018 15:46:27 -0400</pubDate>
+        <pubDate>Wed, 02 May 2018 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html</link>
         <guid isPermaLink="true">http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html</guid>
         
         
         <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>Locker Linked</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/featured-image-locker-linked.jpg&quot; alt=&quot;Locker Linked Title Card&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-&lt;p&gt;Every year, thousands of high school athletes try to pursue their passion at the next level by searching for the perfect athletic and academic fit. Having never gone through the college athletic recruiting process, these students, and their parents, are often in uncharted waters.&lt;/p&gt;
-
-&lt;p&gt;Which coaches should they talk to? How do they gain the right exposure? Which program should they choose… and why? Even with the best work ethic and determination, every athlete could use a little help.&lt;/p&gt;
-
-&lt;p&gt;As part of the team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I helped build the digital platform for &lt;a href=&quot;https://www.lockerlinked.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Locker Linked&lt;/a&gt;, a startup that aims to provide student athletes with first-rate recruitment network services and tools to prepare them for upcoming college athletic opportunities.&lt;/p&gt;
-
-&lt;p&gt;Locker Linked simplifies the recruitment process, allowing student athletes to set up a player profile to showcase skills, connect directly with coaches and recruiters, and get exclusive access to essential resources to maximize potential recruitment.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
-&lt;p&gt;While my team at Whitelabel worked closely with Locker Linked to design and build their entire platform, from design to development, I worked specifically on the development team focusing on building the front-end of the platform in React.&lt;/p&gt;
-
-&lt;p&gt;On the frontend, Locker Linked is built with React and Redux, integrates with &lt;a href=&quot;https://stripe.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Stripe&lt;/a&gt; for user payment, and connects to a Rails backend. I worked closely with our lead backend developer, &lt;a href=&quot;https://twitter.com/toreyhickman/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Torey Hickman&lt;/a&gt;, to build a component-based UI that hooked up seamlessly with our backend database and architecture.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-devices.jpg&quot; alt=&quot;Locker Linked Profile shown on MacBook and iPhone&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;creating-a-showcase-for-athletes&quot;&gt;Creating a Showcase for Athletes&lt;/h2&gt;
-&lt;h3 id=&quot;building-a-flexible-profile&quot;&gt;Building a Flexible Profile&lt;/h3&gt;
-&lt;p&gt;The athlete profile turned out to be one of my favorite parts of the app due to the variety of components needed to accomodate such a wide range of sports played by student athletes. In addition, the profile serves as the entry point for college recruiters’ evaluations of student athletes, making it a focal point of the platform.&lt;/p&gt;
-
-&lt;p&gt;Locker Linked wanted to allow athletes to post photos, videos, statistics, awards, camps, and reference contact information in addition to the ability to add multiple sports. Whether it was making sure the stats table component resized and responded fluidly or creating a slider component that accomodated arrays of photos or videos, I enjoyed the creative coding challenge that the screen presented.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-responsive.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;focusing-on-reusable-components&quot;&gt;Focusing on Reusable Components&lt;/h3&gt;
-&lt;p&gt;The component-based nature of the athlete profile allowed us to focus on creating reusable elements. We were able to build the profile component by component and think about how to reuse several components in forms where users would manage the actual profile.&lt;/p&gt;
-
-&lt;p&gt;Components like our &lt;code class=&quot;highlighter-rouge&quot;&gt;TabSelect.js&lt;/code&gt; were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
-     &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-1.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-2.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    I built responsive components that could be repurposed in different contexts (left: athelte profile, right: user dashboard)
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;the-intricacies-of-profile-management&quot;&gt;The Intricacies of Profile Management&lt;/h2&gt;
-&lt;p&gt;Profile management was one of the biggest challenges in building Locker Linked. In addition to the actual student athlete, profiles can be managed by parents/guardians (and soon coaches, too!).&lt;/p&gt;
-
-&lt;p&gt;Not only that, but a single user can have admin access to manage and edit any number of athlete profiles. This many-to-one relationship of profile management necessitated careful consideration when it came to both onboarding and the user dashboard.&lt;/p&gt;
-
-&lt;h3 id=&quot;onboarding-different-user-types&quot;&gt;Onboarding Different User Types&lt;/h3&gt;
-&lt;p&gt;When onboarding, a user can select whether they’re an athlete or a parent/guardian. In both cases, the user can create a new athlete profile, but if a user is a parent, they also have the option to request access to a pre-existing profile (their child’s). This meant that our team had to carefully consider the user flow for multiple onboarding paths and build them accordingly.&lt;/p&gt;
-
-&lt;h3 id=&quot;managing-multiple-profiles&quot;&gt;Managing Multiple Profiles&lt;/h3&gt;
-&lt;p&gt;In order to accomodate parents/guardians with more than one child on the platform or coaches that are assisting multiple student athletes, we built Locker Link with the ability for users to manage one or more athlete profiles.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-switcher.gif&quot; class=&quot;image-medium&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    Users can easily switch between editing multiple athletes profile.
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Once a user is given admin access to multiple profiles, they can use a simple dropdown to select the profile they want to edit. By integrating the user dashboard with Redux, we could easily populate the users’ edit views with the selected profile’s data and make editing a breeze.&lt;/p&gt;
-
-&lt;h2 id=&quot;learning-to-love-forms&quot;&gt;Learning to Love Forms&lt;/h2&gt;
-&lt;h3 id=&quot;form-management-with-redux-form&quot;&gt;Form Management with Redux-Form&lt;/h3&gt;
-&lt;p&gt;I love React. But ever since I began building apps with React, I’ve had a gripe with managing forms. On top of managing the actualy values of inputs in component state, handling validation and error messaging made forms in React complex and clunky to set up and use. To make form development easier, we introduced the use of &lt;a href=&quot;https://redux-form.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that allows you to connect your forms to your Redux store in order to manage form state.&lt;/p&gt;
-
-&lt;p&gt;Redux Form let us create custom input components, decrease redundancy in terms of validation and error message handling, and build more robust, dynamic forms. For a deeper look at my experience with Redux Form (and how it convinced me to love forms again), &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot; class=&quot;link--text-in-p&quot;&gt;check out this post I wrote&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;div class=&quot;video-container&quot;&gt;
-      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/269091140?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;span class=&quot;img-caption&quot;&gt;
-      Redux-Form made form management a breeze (and pretty magical). &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot;&gt;Read more about my thoughts on Redux-Form here&lt;/a&gt;.
-    &lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-  Conclusion &amp;amp; Lessons Learned
-&lt;/h2&gt;
-
-&lt;p&gt;Locker Link was a big growing experience for me. I had used React several times to build out front-end interfaces before, but Locker Link was the first project where I used Redux for app state management and Redux Form for form management. Through Redux, I was able to create more complex interactions, such as managing modals and flash message state between screens.&lt;/p&gt;
-
-&lt;p&gt;In addition to using new technologies, working on Locker Linked also helped me refine how I build and manage React components. I spent a good amount of time trying to break screens down into smaller, manageable parts so that we could more easily maintain components and reuse components whenever possible.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-homepage.jpg&quot; alt=&quot;Locker Linked Homepage&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-dashboard.jpg&quot; alt=&quot;Locker Linked User Dashboard Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-coach-search.jpg&quot; alt=&quot;Locker Linked Dashboard Search Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-stats.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-locker-profile.jpg&quot; alt=&quot;Locker Linked Profile Management Screenshot&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Wed, 18 Apr 2018 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/work/locker-linked.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Maptastic</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/featured-image-maptastic-2.jpg&quot; alt=&quot;Maptastic Title Card&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://maptastic.us/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Maptastic&lt;/a&gt; is a React web application that makes U.S. demographic data, such as population, housing characteristics, and related socioeconomic characteristics easily obtainable to local governments, nonprofits, and regional planning agencies.&lt;/p&gt;
-
-&lt;p&gt;Organizations can use the app to search demographic data for regions throughout the U.S. and save their searches for future reference.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
-&lt;p&gt;As part of a small team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I served as the lead front-end developer and worked with a designer and several backend developers to bring the project to life.&lt;/p&gt;
-
-&lt;p&gt;Maptastic gave me the opportunity try out new libraries like &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt;, used to display data obtained through &lt;a href=&quot;https://www.census.gov/data/developers/data-sets.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;U.S. Census APIs&lt;/a&gt;, and explore the Google Maps API and Geosuggest (through libraries like &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt;) for geolocation searches.&lt;/p&gt;
-
-&lt;h2 id=&quot;making-data-beautiful&quot;&gt;Making Data Beautiful&lt;/h2&gt;
-&lt;h3 id=&quot;chartist-graphs&quot;&gt;Chartist Graphs&lt;/h3&gt;
-&lt;p&gt;In order to make large amounts of demographic data easy to understand, we used &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt; to create a variety of charts, from comparison bar charts to pie charts, to visualize the data.&lt;/p&gt;
-
-&lt;p&gt;Chartist proved to be a handy library that allowed for easy customization and let me build a set of restackable, collapsible cards for the end user.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-charts.png&quot; alt=&quot;Maptastic Chart Data&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;a-flexible-responsive-layout&quot;&gt;A Flexible, Responsive Layout&lt;/h3&gt;
-&lt;p&gt;Using Flexbox, I created a responsive masonry-style layout to accomodate a range of device sizes. It was important to give the map and chart cards room to breath in order keep data digestible, but the layout also had to be flexible enough to re-stack on smaller devices.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/responsive-maptastic-2.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Responsive Animation&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    A responsive layout lets users take Maptastic with them on their phones and tablets
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;fixed-positioning&quot;&gt;Fixed Positioning&lt;/h3&gt;
-&lt;p&gt;Additionally, on desktop, we wanted to keep several elements, such as the map and main navigation, in a fixed position so that users could scroll through the cards of data, but always have easy access to these primary elements in order to refine their search location and radius.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-fixed-positioning.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Showing Scroll Animation&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    Collapsible cards and a masonry-style layout makes viewing demographic data easy
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;maps-integration&quot;&gt;Maps Integration&lt;/h2&gt;
-&lt;p&gt;As the name “Maptastic” implies, maps (and location search) were a critical part of the project. Our goal was to allow users to easily search for a location, visualize it via Google Maps, and modify their search radius to hone in on their targets.&lt;/p&gt;
-
-&lt;h3 id=&quot;searching-on-maptastic&quot;&gt;Searching on Maptastic&lt;/h3&gt;
-&lt;p&gt;The search experience is comprised of three primary elements:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;A geosuggest search input&lt;/li&gt;
-  &lt;li&gt;A Google Map to display the search&lt;/li&gt;
-  &lt;li&gt;A slider to refine the range of the search area&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;By using &lt;a href=&quot;https://tomchentw.github.io/react-google-maps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Google Maps&lt;/a&gt; to tie into the Google Maps Javascript API, &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt; to create a suggestive search input, and Redux to allow the components access to a shared state, I was able to create a search experience that makes accessing demographic data a breeze.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;div class=&quot;video-container&quot;&gt;
-      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/392963178?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 class=&quot;text-center&quot;&gt;
-  Conclusion &amp;amp; Lessons Learned
-&lt;/h2&gt;
-
-&lt;p&gt;While concise in scope, Maptastic helped me explore new terrain. From learning how interact with and customize map elements with Google Maps to styling large chunks of data using Chartist, this project exposed me to new front-end features. Front-end development continues to excite me as I discover how much more there is to learn every day.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-screenshots.jpg&quot; alt=&quot;Maptastic App Screenshots&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 16 Apr 2018 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/work/maptastic.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/maptastic.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Tap In Guide</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/featured-image-tap-in@2x.jpg&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;a-guide-to-world-footballs-essential-matches&quot;&gt;A Guide to World Football’s Essential Matches&lt;/h2&gt;
-&lt;p&gt;Tap In was a simple dashboard guide to world football’s most essential matches. The application is designed to deliver all the daily information soccer fans need to know to stay on top of the beautiful game in real-time.&lt;/p&gt;
-
-&lt;h2 id=&quot;my-role&quot;&gt;My Role&lt;/h2&gt;
-&lt;p&gt;It was the 2014 World Cup in Brazil that kicked off my obsession with the beautiful game. I grew up following American sports, but never had really paid any attention to the world’s sport: (the real) football.&lt;/p&gt;
-
-&lt;p&gt;I initially stumbled across a version of Tap In during the summer of 2014 produced specifically for that year’s World Cup, but didn’t pay it much attention after Germany were crowned champions that summer.&lt;/p&gt;
-
-&lt;p&gt;Fast forward to 2017 and I happened upon the site again, but this time it displayed a scoreboard of “essential” soccer matches of the moment. Three years into my new soccer obsession, I reached out to the small Minneapolis-based team via Twitter to see if they could use some help.&lt;/p&gt;
-
-&lt;p&gt;As it turned out, they were glad to have me on board and I came on as a &lt;strong&gt;front-end developer focusing on the React web app and React Native mobile app&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-mobile-screens@2x.jpg&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    Tap In Guide is available via React Native on iOS and Android
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;technologies&quot;&gt;Technologies&lt;/h2&gt;
-&lt;p&gt;Tap In was built using React, React Native, JavaScript, Python, and Django. While I mainly contribute to the React web app, I also helped launch the initial React Native app and now maintain it along with developer David Pett.&lt;/p&gt;
-
-&lt;p&gt;The Tap In API, built by &lt;a href=&quot;https://twitter.com/minnepixel&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Clint McMahon&lt;/a&gt;, supplies data via &lt;a href=&quot;https://football-api.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Football API&lt;/a&gt; in order to provide users with live match events such as goals, yellow/red cards, and substitutions.&lt;/p&gt;
-
-&lt;p&gt;React proved to be a very useful library for building and managing components. Not only that, but by building our app in React Native, much of the front-end structure translates between the two environments, allowing us to quickly ship new features.&lt;/p&gt;
-
-&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
-&lt;p&gt;Tap In’s visual style set it apart from other sports websites and apps. Its simple aesthetic was actually one of the things that initially drew me in. Designer &lt;a href=&quot;https://twitter.com/mike_arney&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Mike Arney&lt;/a&gt; developed the core style, taking teams’ crests and reducing them to minimal and geometric icons.&lt;/p&gt;
-
-&lt;p&gt;As Tap In added coverage for more leagues (such as MLS in the U.S. and Liga MX in Mexico), we needed to add more teams’ crests. I worked with Mike to develop about two dozen of the crests used in the app today.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-crests@2x.png&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    A sampling of stylized crests I designed for the web and mobile app.
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-  Final Thoughts
-&lt;/h2&gt;
-&lt;p&gt;At Tap In, we were a distributed team with members living in Minnesota, Texas, Ohio, and even Norway. Thanks to platforms like Slack and Trello, we were able to keep in touch, even when many of us had never even met in person.&lt;/p&gt;
-
-&lt;p&gt;It was a blast building a project like this. Every team member contributed due to their passion for soccer and even if we hadn’t met on the playing field, we built a sense of camaraderie that transcends sport and technology.&lt;/p&gt;
-&lt;hr /&gt;
-
-&lt;div class=&quot;text--centered&quot;&gt;
-  &lt;p&gt;
-    While we closed down the project in late 2018, you can still check out &lt;a href=&quot;https://www.twitter.com/tapinguide&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tap In on Twitter&lt;/a&gt; to explore some legacy content.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Please note that the live tapinguide.com is not at all related to our project (even though whoever is running it stole our logo 😅).
-  &lt;/p&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 13 Apr 2018 15:46:27 -0400</pubDate>
-        <link>http://localhost:4000/work/tap-in-guide.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/tap-in-guide.html</guid>
-        
-        
-        <category>work</category>
         
       </item>
     
@@ -883,9 +580,505 @@ export const phoneNumber = value =&amp;gt;
 	&lt;/p&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Thu, 12 Apr 2018 15:46:27 -0400</pubDate>
+        <pubDate>Thu, 19 Apr 2018 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/work/agility.html</link>
         <guid isPermaLink="true">http://localhost:4000/work/agility.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Maptastic</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/featured-image-maptastic-2.jpg&quot; alt=&quot;Maptastic Title Card&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;Maptastic was a React web application that makes U.S. demographic data, such as population, housing characteristics, and related socioeconomic characteristics easily obtainable to local governments, nonprofits, and regional planning agencies.&lt;/p&gt;
+
+&lt;p&gt;Organizations can use the app to search demographic data for regions throughout the U.S. and save their searches for future reference.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
+
+&lt;p&gt;As part of a small team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I served as the lead front-end developer and worked with a designer and several backend developers to bring the project to life.&lt;/p&gt;
+
+&lt;p&gt;Maptastic gave me the opportunity try out new libraries like &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt;, used to display data obtained through &lt;a href=&quot;https://www.census.gov/data/developers/data-sets.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;U.S. Census APIs&lt;/a&gt;, and explore the Google Maps API and Geosuggest (through libraries like &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt;) for geolocation searches.&lt;/p&gt;
+
+&lt;h2 id=&quot;making-data-beautiful&quot;&gt;Making Data Beautiful&lt;/h2&gt;
+
+&lt;h3 id=&quot;chartist-graphs&quot;&gt;Chartist Graphs&lt;/h3&gt;
+
+&lt;p&gt;In order to make large amounts of demographic data easy to understand, we used &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt; to create a variety of charts, from comparison bar charts to pie charts, to visualize the data.&lt;/p&gt;
+
+&lt;p&gt;Chartist proved to be a handy library that allowed for easy customization and let me build a set of restackable, collapsible cards for the end user.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-charts.png&quot; alt=&quot;Maptastic Chart Data&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;a-flexible-responsive-layout&quot;&gt;A Flexible, Responsive Layout&lt;/h3&gt;
+
+&lt;p&gt;Using Flexbox, I created a responsive masonry-style layout to accomodate a range of device sizes. It was important to give the map and chart cards room to breath in order keep data digestible, but the layout also had to be flexible enough to re-stack on smaller devices.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/responsive-maptastic-2.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Responsive Animation&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    A responsive layout lets users take Maptastic with them on their phones and tablets
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;fixed-positioning&quot;&gt;Fixed Positioning&lt;/h3&gt;
+
+&lt;p&gt;Additionally, on desktop, we wanted to keep several elements, such as the map and main navigation, in a fixed position so that users could scroll through the cards of data, but always have easy access to these primary elements in order to refine their search location and radius.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-fixed-positioning.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Showing Scroll Animation&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Collapsible cards and a masonry-style layout makes viewing demographic data easy
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;maps-integration&quot;&gt;Maps Integration&lt;/h2&gt;
+
+&lt;p&gt;As the name “Maptastic” implies, maps (and location search) were a critical part of the project. Our goal was to allow users to easily search for a location, visualize it via Google Maps, and modify their search radius to hone in on their targets.&lt;/p&gt;
+
+&lt;h3 id=&quot;searching-on-maptastic&quot;&gt;Searching on Maptastic&lt;/h3&gt;
+
+&lt;p&gt;The search experience is comprised of three primary elements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A geosuggest search input&lt;/li&gt;
+  &lt;li&gt;A Google Map to display the search&lt;/li&gt;
+  &lt;li&gt;A slider to refine the range of the search area&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By using &lt;a href=&quot;https://tomchentw.github.io/react-google-maps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Google Maps&lt;/a&gt; to tie into the Google Maps Javascript API, &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt; to create a suggestive search input, and Redux to allow the components access to a shared state, I was able to create a search experience that makes accessing demographic data a breeze.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/392963178?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 class=&quot;text-center&quot;&gt;
+  Conclusion &amp;amp; Lessons Learned
+&lt;/h2&gt;
+
+&lt;p&gt;While concise in scope, Maptastic helped me explore new terrain. From learning how interact with and customize map elements with Google Maps to styling large chunks of data using Chartist, this project exposed me to new front-end features. Front-end development continues to excite me as I discover how much more there is to learn every day.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-screenshots.jpg&quot; alt=&quot;Maptastic App Screenshots&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 18 Apr 2018 14:46:27 -0500</pubDate>
+        <link>http://localhost:4000/work/maptastic.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/maptastic.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Locker Linked</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/featured-image-locker-linked.jpg&quot; alt=&quot;Locker Linked Title Card&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;Every year, thousands of high school athletes try to pursue their passion at the next level by searching for the perfect athletic and academic fit. Having never gone through the college athletic recruiting process, these students, and their parents, are often in uncharted waters.&lt;/p&gt;
+
+&lt;p&gt;Which coaches should they talk to? How do they gain the right exposure? Which program should they choose… and why? Even with the best work ethic and determination, every athlete could use a little help.&lt;/p&gt;
+
+&lt;p&gt;As part of the team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I helped build the digital platform for Locker Linked, a startup that aims to provide student athletes with first-rate recruitment network services and tools to prepare them for upcoming college athletic opportunities.&lt;/p&gt;
+
+&lt;p&gt;Locker Linked simplifies the recruitment process, allowing student athletes to set up a player profile to showcase skills, connect directly with coaches and recruiters, and get exclusive access to essential resources to maximize potential recruitment.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
+
+&lt;p&gt;While my team at Whitelabel worked closely with Locker Linked to design and build their entire platform, from design to development, I worked specifically on the development team focusing on building the front-end of the platform in React.&lt;/p&gt;
+
+&lt;p&gt;On the frontend, Locker Linked is built with React and Redux, integrates with &lt;a href=&quot;https://stripe.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Stripe&lt;/a&gt; for user payment, and connects to a Rails backend. I worked closely with our lead backend developer, &lt;a href=&quot;https://twitter.com/toreyhickman/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Torey Hickman&lt;/a&gt;, to build a component-based UI that hooked up seamlessly with our backend database and architecture.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-devices.jpg&quot; alt=&quot;Locker Linked Profile shown on MacBook and iPhone&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;creating-a-showcase-for-athletes&quot;&gt;Creating a Showcase for Athletes&lt;/h2&gt;
+
+&lt;h3 id=&quot;building-a-flexible-profile&quot;&gt;Building a Flexible Profile&lt;/h3&gt;
+
+&lt;p&gt;The athlete profile turned out to be one of my favorite parts of the app due to the variety of components needed to accomodate such a wide range of sports played by student athletes. In addition, the profile serves as the entry point for college recruiters’ evaluations of student athletes, making it a focal point of the platform.&lt;/p&gt;
+
+&lt;p&gt;Locker Linked wanted to allow athletes to post photos, videos, statistics, awards, camps, and reference contact information in addition to the ability to add multiple sports. Whether it was making sure the stats table component resized and responded fluidly or creating a slider component that accomodated arrays of photos or videos, I enjoyed the creative coding challenge that the screen presented.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-responsive.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;focusing-on-reusable-components&quot;&gt;Focusing on Reusable Components&lt;/h3&gt;
+
+&lt;p&gt;The component-based nature of the athlete profile allowed us to focus on creating reusable elements. We were able to build the profile component by component and think about how to reuse several components in forms where users would manage the actual profile.&lt;/p&gt;
+
+&lt;p&gt;Components like our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TabSelect.js&lt;/code&gt; were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
+     &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-1.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-2.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    I built responsive components that could be repurposed in different contexts (left: athelte profile, right: user dashboard)
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-intricacies-of-profile-management&quot;&gt;The Intricacies of Profile Management&lt;/h2&gt;
+
+&lt;p&gt;Profile management was one of the biggest challenges in building Locker Linked. In addition to the actual student athlete, profiles can be managed by parents/guardians (and soon coaches, too!).&lt;/p&gt;
+
+&lt;p&gt;Not only that, but a single user can have admin access to manage and edit any number of athlete profiles. This many-to-one relationship of profile management necessitated careful consideration when it came to both onboarding and the user dashboard.&lt;/p&gt;
+
+&lt;h3 id=&quot;onboarding-different-user-types&quot;&gt;Onboarding Different User Types&lt;/h3&gt;
+
+&lt;p&gt;When onboarding, a user can select whether they’re an athlete or a parent/guardian. In both cases, the user can create a new athlete profile, but if a user is a parent, they also have the option to request access to a pre-existing profile (their child’s). This meant that our team had to carefully consider the user flow for multiple onboarding paths and build them accordingly.&lt;/p&gt;
+
+&lt;h3 id=&quot;managing-multiple-profiles&quot;&gt;Managing Multiple Profiles&lt;/h3&gt;
+
+&lt;p&gt;In order to accomodate parents/guardians with more than one child on the platform or coaches that are assisting multiple student athletes, we built Locker Link with the ability for users to manage one or more athlete profiles.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-switcher.gif&quot; class=&quot;image-medium&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Users can easily switch between editing multiple athletes profile.
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once a user is given admin access to multiple profiles, they can use a simple dropdown to select the profile they want to edit. By integrating the user dashboard with Redux, we could easily populate the users’ edit views with the selected profile’s data and make editing a breeze.&lt;/p&gt;
+
+&lt;h2 id=&quot;learning-to-love-forms&quot;&gt;Learning to Love Forms&lt;/h2&gt;
+
+&lt;h3 id=&quot;form-management-with-redux-form&quot;&gt;Form Management with Redux-Form&lt;/h3&gt;
+
+&lt;p&gt;I love React. But ever since I began building apps with React, I’ve had a gripe with managing forms. On top of managing the actualy values of inputs in component state, handling validation and error messaging made forms in React complex and clunky to set up and use. To make form development easier, we introduced the use of &lt;a href=&quot;https://redux-form.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that allows you to connect your forms to your Redux store in order to manage form state.&lt;/p&gt;
+
+&lt;p&gt;Redux Form let us create custom input components, decrease redundancy in terms of validation and error message handling, and build more robust, dynamic forms. For a deeper look at my experience with Redux Form (and how it convinced me to love forms again), &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot; class=&quot;link--text-in-p&quot;&gt;check out this post I wrote&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/269091140?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;img-caption&quot;&gt;
+      Redux-Form made form management a breeze (and pretty magical). &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot;&gt;Read more about my thoughts on Redux-Form here&lt;/a&gt;.
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+  Conclusion &amp;amp; Lessons Learned
+&lt;/h2&gt;
+
+&lt;p&gt;Locker Link was a big growing experience for me. I had used React several times to build out front-end interfaces before, but Locker Link was the first project where I used Redux for app state management and Redux Form for form management. Through Redux, I was able to create more complex interactions, such as managing modals and flash message state between screens.&lt;/p&gt;
+
+&lt;p&gt;In addition to using new technologies, working on Locker Linked also helped me refine how I build and manage React components. I spent a good amount of time trying to break screens down into smaller, manageable parts so that we could more easily maintain components and reuse components whenever possible.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-homepage.jpg&quot; alt=&quot;Locker Linked Homepage&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-dashboard.jpg&quot; alt=&quot;Locker Linked User Dashboard Screenshot&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-coach-search.jpg&quot; alt=&quot;Locker Linked Dashboard Search Screenshot&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-stats.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-locker-profile.jpg&quot; alt=&quot;Locker Linked Profile Management Screenshot&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 17 Apr 2018 14:46:27 -0500</pubDate>
+        <link>http://localhost:4000/work/locker-linked.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Service Year</title>
+        <description>&lt;div class=&quot;grid grid--featured-image grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/181189760?color=00fbe6&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;The Service Year Alliance teamed up with &lt;a href=&quot;https://web.archive.org/web/20210809115609/http://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt; to design and develop a digital platform for young Americans to connect and serve with the nation’s best nonprofits. Service Year aims to make a year of service a common expectation and opportunity for every young American.&lt;/p&gt;
+
+&lt;p&gt;An ongoing and ever-evolving project, the site brings the nation’s best service opportunities into one place, allowing both organizations and service corps members to more easily connect with one another.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-role&quot;&gt;My Role&lt;/h2&gt;
+
+&lt;p&gt;I served as a lead visual and user experience designer on Service Year. While working with a team of designers, developers, and project managers within ISL, we also worked closely with our client, the Service Year Alliance to bring their vision to life.&lt;/p&gt;
+
+&lt;p&gt;Over the course of the project, I worked on anything from initial user research to the creation of user flows, wireframes, and interactive prototypes to the final visual and interaction design of both the marketing site and web application.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-service-year-ecosystem&quot;&gt;Creating the Service Year Ecosystem&lt;/h2&gt;
+
+&lt;p&gt;While Service Year is built on the idea of connecting organizations with American youth, we needed to create a platform that catered to a variety of users and content types.&lt;/p&gt;
+
+&lt;p&gt;Whether you’re the administrator that manages your organization’s profile and prescense on Service Year, someone recruiting service members for an organization, or an individual looking for a service opportunity, Service Year needs to connect you to where you want to be.&lt;/p&gt;
+
+&lt;h3 id=&quot;information-architecture&quot;&gt;Information Architecture&lt;/h3&gt;
+
+&lt;p&gt;Beginning in the kickoff meeting with our client, we began to assess everything that would make up the Service Year Exchange platform.&lt;/p&gt;
+
+&lt;p&gt;Initial sitemaps helped our team lay out initial screens for everything from the marketing pages to the various interactions users would take when listing and discovering service opportunities.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-site-map-august-2015.png&quot; alt=&quot;Service Year Sitemap (August 2015)&quot; /&gt;
+      &lt;span class=&quot;img-caption&quot;&gt;Initial sitemaps can give an idea of the number of screens/interactions needed for a project of this scale.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;user-flows&quot;&gt;User Flows&lt;/h3&gt;
+
+&lt;p&gt;We then began creating user flows for the paths each user type would take when being brought onto the system, browsing opportunities, or recruiting corps members.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/org-enroll-corps-member-flow-5-11-16.png&quot; alt=&quot;Screenshot of Userflow&quot; /&gt;
+      &lt;span class=&quot;img-caption&quot;&gt;User flows allowed our team to define the paths users would take to accomplish tasks.&lt;br /&gt;This user flow shows a corps member expressing interest in a position and an organization&apos;s path to taking action on that interest.&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;While user flows were an essential part to getting the project started, it wasn’t always such a linear process. Our team worked within an agile process, using two-week sprints to accomplish tasks on a story-by-story basis. We iterated on different parts of the UX and design process depending on the task at hand.&lt;/p&gt;
+
+&lt;h3 id=&quot;wireframes--prototypes&quot;&gt;Wireframes &amp;amp; Prototypes&lt;/h3&gt;
+
+&lt;p&gt;With each new page or interaction being added to the system, our team would create sets of wireframes in Sketch, Balsamiq, Omnigraffle, or even just pen-and-paper sketchs. Often, we linked these wireframes together in &lt;a href=&quot;http://invisionapp.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Invision&lt;/a&gt; in order to get a sense of how the screens would connect.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-invision-screenshot.png&quot; alt=&quot;Service Year Invision Prototype Screenshot&quot; /&gt;
+    &lt;span class=&quot;img-caption&quot;&gt;
+      Prototypes allowed us to think through flows for different user interactions. Here is an early prototype of onboarding new corps members to Service Year.
+      &lt;br /&gt;
+      (&lt;a href=&quot;http://localhost:4000/assets/invision/sy-cm-onboarding-wireframe-prototype/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Prototype in New Window&lt;/a&gt;)
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Prototyping allowed us to see when certain interactions felt great (or just awkward). Not only that, but it also allowed us to share in-progress work with our client and receive quick feedback.&lt;/p&gt;
+
+&lt;h3 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h3&gt;
+
+&lt;p&gt;Due to the scale of Service Year, our team worked around the idea of component-based design. Each part of a page not only needed consideration in terms of responsive design, but also necessitated the creation of assets for multiple states. Each component then had to work alongside other components in the page.&lt;/p&gt;
+
+&lt;p&gt;The use of component-based design helped us to define atoms and molecules that could then be used to build organisms, templates, and finally, pages (&lt;a href=&quot;http://bradfrost.com/blog/post/atomic-web-design/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;See Brad Frost’s Atomic Design&lt;/a&gt;).&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt &quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-narrative-components.jpg&quot; alt=&quot;Service Year Component Screenshot - Serving Status Cards&quot; /&gt;
+      &lt;span class=&quot;img-caption&quot;&gt;
+        A look at the different states for the serving status block within a Corps Member&apos;s public profile.
+      &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;a-living-design-system&quot;&gt;A Living Design System&lt;/h4&gt;
+
+&lt;p&gt;While web style guides and frameworks have been around for several years, the explosion of large-scale web applications brings an extra focus on creating design systems. Style guides like Salesforce’s &lt;a href=&quot;https://www.lightningdesignsystem.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Lightning Design System&lt;/a&gt; or Dropbox’s &lt;a href=&quot;http://dropbox.github.io/scooter/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Scooter&lt;/a&gt; have set a standard for the design community.&lt;/p&gt;
+
+&lt;p&gt;Our design and development teams collaborated to create our own living style guide for the Service Year platform. The style guide is ever-evolving and allows for better design/dev collaboration.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-style-guide.png&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
+    &lt;span class=&quot;img-caption&quot;&gt;
+      The Service Year Style Guide helps designers and developers to collaborate when designing, building, and iterating on components. (&lt;a href=&quot;https://serviceyear.org/styleguide/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Style Guide&lt;/a&gt;)
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;working-in-agile&quot;&gt;Working in Agile&lt;/h2&gt;
+
+&lt;p&gt;Service Year is the largest web application that has ever come through ISL. With such new territory came the need to figure out new and effective processes for managing, designing, and developing.&lt;/p&gt;
+
+&lt;p&gt;From the onset, our team implemented an &lt;a href=&quot;http://agilemanifesto.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;agile workflow&lt;/a&gt; in order to quickly design, build, and ship iterations of the Service Year platform.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-sprint-tracker-and-waffle.jpg&quot; alt=&quot;Screenshot of Sprint Tracker and Waffle Board&quot; /&gt;
+    &lt;span class=&quot;img-caption&quot;&gt;
+      A backlog of user stories were defined in collaboration with the client and saved in a Google Spreadsheet. During each sprint cycle, we then used Github and Waffle to monitor progress on each task.
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Collaborating with the client, our workflow began with the creation of user stories that defined functionality for the platform. Both the design and development teams would take these user stories from a Google Spreadseet backlog and work on them in 2 to 3 week sprint cycles.&lt;/p&gt;
+
+&lt;p&gt;Not only were we iterating on Service Year as a platform, but we were constantly learning what worked best within our own workflow and modifying our processes accordingly.&lt;/p&gt;
+
+&lt;div class=&quot;fin-tip&quot;&gt;
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+  Conclusion &amp;amp; Lessons Learned
+&lt;/h2&gt;
+
+&lt;p&gt;Working on a product that makes such a positive impact is a very rewarding experience. Service Year is an ever-evolving platform and the largest web application that I’ve been involved in.&lt;/p&gt;
+
+&lt;p&gt;A couple of things stuck out to me during my work on Service Year:&lt;/p&gt;
+
+&lt;h3 id=&quot;building-large-scale-applications&quot;&gt;Building Large Scale Applications&lt;/h3&gt;
+
+&lt;p&gt;Design systems for large scale applications take a lot more work than you may think. I learned through Service Year how important collaboration between design, development, and project managers is key to a successful project.&lt;/p&gt;
+
+&lt;h3 id=&quot;learning-to-fail-and-improve&quot;&gt;Learning to Fail and Improve&lt;/h3&gt;
+
+&lt;p&gt;You’re never going to get a design 100% right the first time and that’s ok. The iterative process of short design and development sprints allow room for testing new ideas, learning their shortcomings through user-testing, and then improving on the next go-round.&lt;/p&gt;
+
+&lt;h3 id=&quot;new-design-processes&quot;&gt;New Design Processes&lt;/h3&gt;
+
+&lt;p&gt;Service Year helped me learn how to work within a new type of workflow. Before this project, I had most often been involved in more traditional waterfall workflows. With Service Year, I learned more about the cyclical and collaborative nature of an agile sprint process.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-homepage.jpg&quot; alt=&quot;Screenshot of Service Year Home Page&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
+     &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-comps-profile-tablet.jpg&quot; alt=&quot;Screenshot of Service Year Corps Member Profile (Tablet)&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-comps-sign-in.jpg&quot; alt=&quot;Screenshot of Service Year Sign In Pages (Desktop)&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;text--centered&quot;&gt;
+  &lt;p&gt;
+    Visit &lt;a href=&quot;https://serviceyear.org/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ServiceYear.org&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 16 Apr 2018 14:46:27 -0500</pubDate>
+        <link>http://localhost:4000/work/service-year.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/service-year.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Tap In Guide</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/featured-image-tap-in@2x.jpg&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;a-guide-to-world-footballs-essential-matches&quot;&gt;A Guide to World Football’s Essential Matches&lt;/h2&gt;
+
+&lt;p&gt;Tap In was a simple dashboard guide to world football’s most essential matches. The application is designed to deliver all the daily information soccer fans need to know to stay on top of the beautiful game in real-time.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-role&quot;&gt;My Role&lt;/h2&gt;
+
+&lt;p&gt;It was the 2014 World Cup in Brazil that kicked off my obsession with the beautiful game. I grew up following American sports, but never had really paid any attention to the world’s sport: (the real) football.&lt;/p&gt;
+
+&lt;p&gt;I initially stumbled across a version of Tap In during the summer of 2014 produced specifically for that year’s World Cup, but didn’t pay it much attention after Germany were crowned champions that summer.&lt;/p&gt;
+
+&lt;p&gt;Fast forward to 2017 and I happened upon the site again, but this time it displayed a scoreboard of “essential” soccer matches of the moment. Three years into my new soccer obsession, I reached out to the small Minneapolis-based team via Twitter to see if they could use some help.&lt;/p&gt;
+
+&lt;p&gt;As it turned out, they were glad to have me on board and I came on as a &lt;strong&gt;front-end developer focusing on the React web app and React Native mobile app&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-mobile-screens@2x.jpg&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Tap In Guide is available via React Native on iOS and Android
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;technologies&quot;&gt;Technologies&lt;/h2&gt;
+
+&lt;p&gt;Tap In was built using React, React Native, JavaScript, Python, and Django. While I mainly contribute to the React web app, I also helped launch the initial React Native app and now maintain it along with developer David Pett.&lt;/p&gt;
+
+&lt;p&gt;The Tap In API, built by &lt;a href=&quot;https://twitter.com/minnepixel&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Clint McMahon&lt;/a&gt;, supplies data via &lt;a href=&quot;https://football-api.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Football API&lt;/a&gt; in order to provide users with live match events such as goals, yellow/red cards, and substitutions.&lt;/p&gt;
+
+&lt;p&gt;React proved to be a very useful library for building and managing components. Not only that, but by building our app in React Native, much of the front-end structure translates between the two environments, allowing us to quickly ship new features.&lt;/p&gt;
+
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+
+&lt;p&gt;Tap In’s visual style set it apart from other sports websites and apps. Its simple aesthetic was actually one of the things that initially drew me in. Designer &lt;a href=&quot;https://twitter.com/mike_arney&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Mike Arney&lt;/a&gt; developed the core style, taking teams’ crests and reducing them to minimal and geometric icons.&lt;/p&gt;
+
+&lt;p&gt;As Tap In added coverage for more leagues (such as MLS in the U.S. and Liga MX in Mexico), we needed to add more teams’ crests. I worked with Mike to develop about two dozen of the crests used in the app today.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-crests@2x.png&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    A sampling of stylized crests I designed for the web and mobile app.
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+  Final Thoughts
+&lt;/h2&gt;
+&lt;p&gt;At Tap In, we were a distributed team with members living in Minnesota, Texas, Ohio, and even Norway. Thanks to platforms like Slack and Trello, we were able to keep in touch, even when many of us had never even met in person.&lt;/p&gt;
+
+&lt;p&gt;It was a blast building a project like this. Every team member contributed due to their passion for soccer and even if we hadn’t met on the playing field, we built a sense of camaraderie that transcends sport and technology.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;text--centered&quot;&gt;
+  &lt;p&gt;
+    While we closed down the project in late 2018, you can still check out &lt;a href=&quot;https://www.twitter.com/tapinguide&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Tap In on Twitter&lt;/a&gt; to explore some legacy content.
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 13 Apr 2018 14:46:27 -0500</pubDate>
+        <link>http://localhost:4000/work/tap-in-guide.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/tap-in-guide.html</guid>
         
         
         <category>work</category>
@@ -976,7 +1169,7 @@ export const phoneNumber = value =&amp;gt;
 &lt;/ol&gt;
 
 </description>
-        <pubDate>Thu, 05 Oct 2017 15:46:27 -0400</pubDate>
+        <pubDate>Thu, 05 Oct 2017 14:46:27 -0500</pubDate>
         <link>http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</link>
         <guid isPermaLink="true">http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</guid>
         
@@ -991,139 +1184,9 @@ export const phoneNumber = value =&amp;gt;
 	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFMkQyeDdSUXRSTDA/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 14 Nov 2016 00:00:00 -0500</pubDate>
+        <pubDate>Mon, 14 Nov 2016 00:00:00 -0600</pubDate>
         <link>http://localhost:4000/resume-postlight/index.html</link>
         <guid isPermaLink="true">http://localhost:4000/resume-postlight/index.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Improving and Driving Discovery on Service Year</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://localhost:4000/work/service-year&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Service Year&lt;/a&gt; is the nation’s largest marketplace for year-long, full-time, paid service opportunities. It allows young Americans to discover full-time, paid, year-long service opportunities with organizations from across the country.&lt;/p&gt;
-
-&lt;p&gt;High school students that want to contribute to something meaningful during a gap year before college, college graduates trying to find a higher calling, or any young American between the ages of 18-24 can use the platform to connect with impactful organizations.&lt;/p&gt;
-
-&lt;p&gt;The platform’s focus on connection between organizations and service corps members depends upon the ability for users to find listings and organizations that are tailored to their interests.&lt;/p&gt;
-
-&lt;p&gt;However, after the first iteration of the discovery flow, we found that building the bridge for users was not happening. Users were having difficulty understanding what a “service year” was and how to find positions and get involved.&lt;/p&gt;
-
-&lt;p&gt;Discovering the right position and getting involved with the right organization required a simpler path.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
-
-&lt;p&gt;Finding a listing for a service position should be a simple experience that’s tailored to a user’s interests. However, after conducting in-person and online usability tests with real users, it was clear that the path to discovery was foggy.&lt;/p&gt;
-
-&lt;p&gt;After creating the MVP for the platform (which including the public facing marketing pages and a log in system for corps members and organizations), our team was tasked with building out the ability to search listings, positions, organizations, and users.&lt;/p&gt;
-
-&lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Create a flexible system for displaying different content types.&lt;/p&gt;
-
-&lt;p&gt;Through usability sessions, we identified three key painpoints:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Site navigation created an unclear path&lt;/li&gt;
-  &lt;li&gt;The homepage did not clearly explain the process of getting involved&lt;/li&gt;
-  &lt;li&gt;Narrowing down search results was difficult&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;a-team-effort&quot;&gt;A Team Effort&lt;/h2&gt;
-
-&lt;p&gt;As a product being designed and built by my company, &lt;a href=&quot;https://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;ISL&lt;/a&gt;, but owned by a client, &lt;a href=&quot;https://isl.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The Service Year Alliance&lt;/a&gt;, working on this challenge involved a variety of team members.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    	&lt;img src=&quot;https://placekitten.com/1400/600&quot; /&gt;
-    	&lt;span class=&quot;img-caption&quot;&gt;A look at the homepage used in testing.&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;###User Flows
-These fictional personas allowed us to create user flows that aided in the identification of discrete goals and actions for each type of user.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    	&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-user-flow-david.png&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;##Site Structure
-After analyzing user flows and also interviewing stakeholders, we reorganized content into three main buckets:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Family Resources (Good digital Parenting)&lt;/li&gt;
-  &lt;li&gt;Policy and Research&lt;/li&gt;
-  &lt;li&gt;Events&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Concentrating of FOSI’s pre-existing content into three main buckets simplified the process of finding content for the end user. Not only that, but the structure allowed us to make content a priority something something here…&lt;/p&gt;
-
-&lt;p&gt;[sitemap here]&lt;/p&gt;
-
-&lt;p&gt;##Prototyping
-Some of the functionality we wanted to include in the site, such as a sticky navigation and fixed filters, are often difficult to describe to clients using static wireframes. To better communicate the small details that would improve the new FOSI experience, our team created a set of animated wireframes in addition to our standard wireframe set.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;div class=&quot;video-container&quot;&gt;
-			&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/155266319?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-wireframes.jpg&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;visual-design&quot;&gt;Visual Design&lt;/h2&gt;
-
-&lt;p&gt;###Typography
-In order to be inviting to parents, yet authoritative and reliable to professionals, I chose typefaces that mixed organic sans-serif headings with more traditional serifed text.&lt;/p&gt;
-
-&lt;div class=&quot;grid&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-		&lt;img src=&quot;http://localhost:4000/assets/work/fosi/fosi-type-example.jpg&quot; alt=&quot;&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;####Aaux Next
-Aaux Next is an approachabe sans-serif that was chosen for headings due to its mix of solid structure and rounded, more quirky, characteristics.&lt;/p&gt;
-
-&lt;p&gt;####Minion Pro
-Minion Pro exhibits functional qualities that makes text highly readable. I chose it to give formality and legibility to the site’s main content.&lt;/p&gt;
-
-&lt;p&gt;###Colors
-With content being broken up into several main sections, I defined colors that would be related to each type of content (green for Good Digital Parenting, red for Policy &amp;amp; Research, etc). By tying specific colors to content, we were able to visually separate internal platforms each internal platform and give the user clear context to their location on the site.&lt;/p&gt;
-
-&lt;div class=&quot;fin-tip&quot;&gt;	
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-	A Flexible, Responsive Publishing Platform
-&lt;/h2&gt;
-
-&lt;p&gt;At its core, the new FOSI.org is a multi-faceted publishing platform. From online-safety print outs to the latest research on internet privacy, FOSI works to publish educational content that helps families (and the industry at large) learn and grow in the new digital age.&lt;/p&gt;
-
-&lt;p&gt;By creating flexible layouts, a new design system, and an integration with Wagtail, a Django-based CMS, we were able to provide FOSI with a rethought and redesigned responsive experience.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-marketing-home.jpg&quot; alt=&quot;Screenshot of Benchmarcs Marketing Page&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;grid grid-mb&quot;&gt;
-	&lt;div class=&quot;grid__item grid__item--half &quot;&gt;
-	    &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-screenshot-call-volume.png&quot; alt=&quot;Screenshot of Benchmarcs app – Call Volume Chart&quot; /&gt;
-	&lt;/div&gt; 
-	&lt;div class=&quot;grid__item grid__item--half end&quot;&gt;
-		 &lt;img src=&quot;http://localhost:4000/assets/work/benchmarcs/app-screenshots/benchmarcs-screenshot-market-share.png&quot; alt=&quot;Screenshot of Benchmarcs app – Market Share Graph&quot; /&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 13 Sep 2016 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/zapier2/index.html</link>
-        <guid isPermaLink="true">http://localhost:4000/zapier2/index.html</guid>
         
         
       </item>

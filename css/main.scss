@@ -3,74 +3,22 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$sans-serif: "aktiv-grotesk",sans-serif;
-$serif: "athelas", "freight-text-pro",serif;
-$monotype: "inconsolata",sans-serif;
+// Import variables and mixins first (this makes them globally available)
+@use "variables" as *;
 
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$home-font-size:  $base-font-size * 1.5;
-$base-line-height: 1.5;
-
-$heading-font-family: $sans-serif;
-
-$spacing-unit: 30px;
-
-$black: #140B39;
-$gray-color: #EAEFF2;
-$gray-color-light: lighten($gray-color, 3%);
-$gray-color-dark: darken($gray-color, 25%);
-$gray-color-darker: darken($gray-color, 40%);
-$blue-color: #419BF9;
-$iron: #D2D9DE;
-
-$text-color: $black;
-$heading-color-light: #a6b0c3;
-$white: #fff;
-$background-color: $white;
-$brand-background-color: #E1DDF1;
-$brand-color: #8A70DB;
-$hover-color: #8b70db3a;
-
-
-$box-shadow-standard: 0px 0px 20px 0px rgba(50, 50, 50, 0.13);
-
-$on-palm:          600px;
-$on-tablet:        768px;
-$on-laptop:        900px;
-$on-larger-screen: 1200px;
-
-$paragraph-margin-bottom: 35px;
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-  "about",
-  "base",
-  "fontastic-icon-styles",
-  "footer",
-  "homepage",
-  "layout",
-  "mixins",
-  "nav",
-  "posts",
-  "resume",
-  "styles",
-  "syntax-highlighting",
-  "thoughts",
-  "type",
-  "work";
+// Import all component partials
+@use "about";
+@use "base";
+@use "fontastic-icon-styles";
+@use "footer";
+@use "homepage";
+@use "layout";
+@use "mixins";
+@use "nav";
+@use "posts";
+@use "resume";
+@use "styles";
+@use "syntax-highlighting";
+@use "thoughts";
+@use "type";
+@use "work";

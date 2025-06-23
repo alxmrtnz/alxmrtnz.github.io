@@ -1,3 +1,7 @@
+
+@use "sass:color";
+@use "variables" as *;
+
 /**
  * Post content
  */
@@ -225,7 +229,7 @@ $post-image-padding-top: 20px;
   }
 
   #disqus_thread a {
-    color: darken($brand-color, 4%) !important;
+    color: color.adjust($brand-color, $lightness: -4%) !important;
   }
 }
 
