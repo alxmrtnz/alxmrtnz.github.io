@@ -3,10 +3,10 @@
   <channel>
     <title>Alex Martinez | Front-End Developer &amp; Product Designer</title>
     <description>Alex Martinez is a front-end developer based in Brooklyn, currently making the web more delicious at Grubhub. In the past, Alex worked on awesome teams at Whitelabel, ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 23 Jun 2025 14:59:18 -0500</pubDate>
-    <lastBuildDate>Mon, 23 Jun 2025 14:59:18 -0500</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 23 Jun 2025 15:07:21 -0500</pubDate>
+    <lastBuildDate>Mon, 23 Jun 2025 15:07:21 -0500</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -16,8 +16,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 17 Dec 2020 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/resume/index.html</link>
-        <guid isPermaLink="true">http://localhost:4000/resume/index.html</guid>
+        <link>/resume/index.html</link>
+        <guid isPermaLink="true">/resume/index.html</guid>
         
         
       </item>
@@ -177,7 +177,7 @@ const initialize = () =&amp;gt; {
 
 &lt;p&gt;And then select which simulator (iOS or Android) you want to open via the expo-cli in your terminal:&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/posts/3-11-19/terminal-screenshot-expo-cli.png&quot; alt=&quot;Expo Cli in Terminal&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;&quot; src=&quot;/assets/posts/3-11-19/terminal-screenshot-expo-cli.png&quot; alt=&quot;Expo Cli in Terminal&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;With iOS, I’ve found you can run the command with the Simulator app closed or already open, while with Android, things are smoothest if you already have the AVD (Android Virtual Device) running.&lt;/p&gt;
 
@@ -267,8 +267,8 @@ Running the app via TestFlight or an Android testing track (more info on those &
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 12 Mar 2019 11:11:27 -0500</pubDate>
-        <link>http://localhost:4000/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</guid>
+        <link>/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</link>
+        <guid isPermaLink="true">/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</guid>
         
         
         <category>thoughts</category>
@@ -533,8 +533,8 @@ export const phoneNumber = value =&amp;gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 02 May 2018 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html</guid>
+        <link>/thoughts/2018/05/02/react-and-redux-form.html</link>
+        <guid isPermaLink="true">/thoughts/2018/05/02/react-and-redux-form.html</guid>
         
         
         <category>thoughts</category>
@@ -545,7 +545,7 @@ export const phoneNumber = value =&amp;gt;
         <title>Agility Connect</title>
         <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-hero-image-3x-optim.png&quot; alt=&quot;Agility Connect Title Card&quot; /&gt;
+      &lt;img src=&quot;/assets/work/agility/agility-connect-hero-image-3x-optim.png&quot; alt=&quot;Agility Connect Title Card&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -561,16 +561,16 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-homepage.jpg&quot; alt=&quot;Agility Connect Homepage&quot; /&gt;
+    &lt;img src=&quot;/assets/work/agility/agility-connect-homepage.jpg&quot; alt=&quot;Agility Connect Homepage&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-jobs.jpg&quot; alt=&quot;Agility Connect Jobs Page&quot; /&gt;
+    &lt;img src=&quot;/assets/work/agility/agility-connect-jobs.jpg&quot; alt=&quot;Agility Connect Jobs Page&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-job-and-referrals.jpg&quot; alt=&quot;Agility Connect Jobs and Referrals&quot; /&gt;
+    &lt;img src=&quot;/assets/work/agility/agility-connect-job-and-referrals.jpg&quot; alt=&quot;Agility Connect Jobs and Referrals&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -581,8 +581,8 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 19 Apr 2018 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/work/agility.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/agility.html</guid>
+        <link>/work/agility.html</link>
+        <guid isPermaLink="true">/work/agility.html</guid>
         
         
         <category>work</category>
@@ -593,7 +593,7 @@ export const phoneNumber = value =&amp;gt;
         <title>Maptastic</title>
         <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/featured-image-maptastic-2.jpg&quot; alt=&quot;Maptastic Title Card&quot; /&gt;
+      &lt;img src=&quot;/assets/work/maptastic/featured-image-maptastic-2.jpg&quot; alt=&quot;Maptastic Title Card&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -619,7 +619,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-charts.png&quot; alt=&quot;Maptastic Chart Data&quot; /&gt;
+    &lt;img src=&quot;/assets/work/maptastic/maptastic-charts.png&quot; alt=&quot;Maptastic Chart Data&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -629,7 +629,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/responsive-maptastic-2.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Responsive Animation&quot; /&gt;
+    &lt;img src=&quot;/assets/work/maptastic/responsive-maptastic-2.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Responsive Animation&quot; /&gt;
   &lt;/div&gt;
   &lt;span class=&quot;img-caption&quot;&gt;
     A responsive layout lets users take Maptastic with them on their phones and tablets
@@ -642,7 +642,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-fixed-positioning.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Showing Scroll Animation&quot; /&gt;
+    &lt;img src=&quot;/assets/work/maptastic/maptastic-fixed-positioning.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Showing Scroll Animation&quot; /&gt;
   &lt;/div&gt;
   &lt;span class=&quot;img-caption&quot;&gt;
     Collapsible cards and a masonry-style layout makes viewing demographic data easy
@@ -680,13 +680,13 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-screenshots.jpg&quot; alt=&quot;Maptastic App Screenshots&quot; /&gt;
+    &lt;img src=&quot;/assets/work/maptastic/maptastic-screenshots.jpg&quot; alt=&quot;Maptastic App Screenshots&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 18 Apr 2018 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/work/maptastic.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/maptastic.html</guid>
+        <link>/work/maptastic.html</link>
+        <guid isPermaLink="true">/work/maptastic.html</guid>
         
         
         <category>work</category>
@@ -697,7 +697,7 @@ export const phoneNumber = value =&amp;gt;
         <title>Locker Linked</title>
         <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/featured-image-locker-linked.jpg&quot; alt=&quot;Locker Linked Title Card&quot; /&gt;
+      &lt;img src=&quot;/assets/work/lockerlinked/featured-image-locker-linked.jpg&quot; alt=&quot;Locker Linked Title Card&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -719,7 +719,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-devices.jpg&quot; alt=&quot;Locker Linked Profile shown on MacBook and iPhone&quot; /&gt;
+    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-profile-devices.jpg&quot; alt=&quot;Locker Linked Profile shown on MacBook and iPhone&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -733,7 +733,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-responsive.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
+    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-profile-responsive.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -745,10 +745,10 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
-     &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-1.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
+     &lt;img src=&quot;/assets/work/lockerlinked/tab-select-1.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-2.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
+      &lt;img src=&quot;/assets/work/lockerlinked/tab-select-2.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
   &lt;/div&gt;
   &lt;span class=&quot;img-caption&quot;&gt;
     I built responsive components that could be repurposed in different contexts (left: athelte profile, right: user dashboard)
@@ -771,7 +771,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-switcher.gif&quot; class=&quot;image-medium&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
+    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-profile-switcher.gif&quot; class=&quot;image-medium&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
   &lt;/div&gt;
   &lt;span class=&quot;img-caption&quot;&gt;
     Users can easily switch between editing multiple athletes profile.
@@ -809,25 +809,25 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-homepage.jpg&quot; alt=&quot;Locker Linked Homepage&quot; /&gt;
+    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-homepage.jpg&quot; alt=&quot;Locker Linked Homepage&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-dashboard.jpg&quot; alt=&quot;Locker Linked User Dashboard Screenshot&quot; /&gt;
+    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-dashboard.jpg&quot; alt=&quot;Locker Linked User Dashboard Screenshot&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-coach-search.jpg&quot; alt=&quot;Locker Linked Dashboard Search Screenshot&quot; /&gt;
+    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-coach-search.jpg&quot; alt=&quot;Locker Linked Dashboard Search Screenshot&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-stats.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
+    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-profile-stats.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-locker-profile.jpg&quot; alt=&quot;Locker Linked Profile Management Screenshot&quot; /&gt;
+    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-locker-profile.jpg&quot; alt=&quot;Locker Linked Profile Management Screenshot&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 17 Apr 2018 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/work/locker-linked.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
+        <link>/work/locker-linked.html</link>
+        <guid isPermaLink="true">/work/locker-linked.html</guid>
         
         
         <category>work</category>
@@ -870,7 +870,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-site-map-august-2015.png&quot; alt=&quot;Service Year Sitemap (August 2015)&quot; /&gt;
+      &lt;img src=&quot;/assets/work/serviceyear/sy-site-map-august-2015.png&quot; alt=&quot;Service Year Sitemap (August 2015)&quot; /&gt;
       &lt;span class=&quot;img-caption&quot;&gt;Initial sitemaps can give an idea of the number of screens/interactions needed for a project of this scale.&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -881,7 +881,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/org-enroll-corps-member-flow-5-11-16.png&quot; alt=&quot;Screenshot of Userflow&quot; /&gt;
+      &lt;img src=&quot;/assets/work/serviceyear/org-enroll-corps-member-flow-5-11-16.png&quot; alt=&quot;Screenshot of Userflow&quot; /&gt;
       &lt;span class=&quot;img-caption&quot;&gt;User flows allowed our team to define the paths users would take to accomplish tasks.&lt;br /&gt;This user flow shows a corps member expressing interest in a position and an organization&apos;s path to taking action on that interest.&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -894,11 +894,11 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-invision-screenshot.png&quot; alt=&quot;Service Year Invision Prototype Screenshot&quot; /&gt;
+    &lt;img src=&quot;/assets/work/serviceyear/sy-invision-screenshot.png&quot; alt=&quot;Service Year Invision Prototype Screenshot&quot; /&gt;
     &lt;span class=&quot;img-caption&quot;&gt;
       Prototypes allowed us to think through flows for different user interactions. Here is an early prototype of onboarding new corps members to Service Year.
       &lt;br /&gt;
-      (&lt;a href=&quot;http://localhost:4000/assets/invision/sy-cm-onboarding-wireframe-prototype/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Prototype in New Window&lt;/a&gt;)
+      (&lt;a href=&quot;/assets/invision/sy-cm-onboarding-wireframe-prototype/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Prototype in New Window&lt;/a&gt;)
     &lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -913,7 +913,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt &quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-narrative-components.jpg&quot; alt=&quot;Service Year Component Screenshot - Serving Status Cards&quot; /&gt;
+      &lt;img src=&quot;/assets/work/serviceyear/sy-narrative-components.jpg&quot; alt=&quot;Service Year Component Screenshot - Serving Status Cards&quot; /&gt;
       &lt;span class=&quot;img-caption&quot;&gt;
         A look at the different states for the serving status block within a Corps Member&apos;s public profile.
       &lt;/span&gt;
@@ -928,7 +928,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-style-guide.png&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
+    &lt;img src=&quot;/assets/work/serviceyear/sy-style-guide.png&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
     &lt;span class=&quot;img-caption&quot;&gt;
       The Service Year Style Guide helps designers and developers to collaborate when designing, building, and iterating on components. (&lt;a href=&quot;https://serviceyear.org/styleguide/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Style Guide&lt;/a&gt;)
     &lt;/span&gt;
@@ -943,7 +943,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-sprint-tracker-and-waffle.jpg&quot; alt=&quot;Screenshot of Sprint Tracker and Waffle Board&quot; /&gt;
+    &lt;img src=&quot;/assets/work/serviceyear/sy-sprint-tracker-and-waffle.jpg&quot; alt=&quot;Screenshot of Sprint Tracker and Waffle Board&quot; /&gt;
     &lt;span class=&quot;img-caption&quot;&gt;
       A backlog of user stories were defined in collaboration with the client and saved in a Google Spreadsheet. During each sprint cycle, we then used Github and Waffle to monitor progress on each task.
     &lt;/span&gt;
@@ -979,16 +979,16 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-homepage.jpg&quot; alt=&quot;Screenshot of Service Year Home Page&quot; /&gt;
+      &lt;img src=&quot;/assets/work/serviceyear/sy-homepage.jpg&quot; alt=&quot;Screenshot of Service Year Home Page&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;grid grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
-     &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-comps-profile-tablet.jpg&quot; alt=&quot;Screenshot of Service Year Corps Member Profile (Tablet)&quot; /&gt;
+     &lt;img src=&quot;/assets/work/serviceyear/sy-comps-profile-tablet.jpg&quot; alt=&quot;Screenshot of Service Year Corps Member Profile (Tablet)&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-comps-sign-in.jpg&quot; alt=&quot;Screenshot of Service Year Sign In Pages (Desktop)&quot; /&gt;
+      &lt;img src=&quot;/assets/work/serviceyear/sy-comps-sign-in.jpg&quot; alt=&quot;Screenshot of Service Year Sign In Pages (Desktop)&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -999,8 +999,8 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 16 Apr 2018 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/work/service-year.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/service-year.html</guid>
+        <link>/work/service-year.html</link>
+        <guid isPermaLink="true">/work/service-year.html</guid>
         
         
         <category>work</category>
@@ -1011,7 +1011,7 @@ export const phoneNumber = value =&amp;gt;
         <title>Tap In Guide</title>
         <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/featured-image-tap-in@2x.jpg&quot; /&gt;
+      &lt;img src=&quot;/assets/work/tap-in/featured-image-tap-in@2x.jpg&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1031,7 +1031,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-mobile-screens@2x.jpg&quot; /&gt;
+      &lt;img src=&quot;/assets/work/tap-in/tap-in-mobile-screens@2x.jpg&quot; /&gt;
   &lt;/div&gt;
   &lt;span class=&quot;img-caption&quot;&gt;
     Tap In Guide is available via React Native on iOS and Android
@@ -1054,7 +1054,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-crests@2x.png&quot; /&gt;
+      &lt;img src=&quot;/assets/work/tap-in/tap-in-crests@2x.png&quot; /&gt;
   &lt;/div&gt;
   &lt;span class=&quot;img-caption&quot;&gt;
     A sampling of stylized crests I designed for the web and mobile app.
@@ -1077,8 +1077,8 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 13 Apr 2018 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/work/tap-in-guide.html</link>
-        <guid isPermaLink="true">http://localhost:4000/work/tap-in-guide.html</guid>
+        <link>/work/tap-in-guide.html</link>
+        <guid isPermaLink="true">/work/tap-in-guide.html</guid>
         
         
         <category>work</category>
@@ -1102,9 +1102,9 @@ export const phoneNumber = value =&amp;gt;
 &lt;p&gt;In order to educate new users about the ability to track competitors and to help populate their accounts with competitor data, &lt;em&gt;we decided to integrate the ability to add competitors into the onboarding process&lt;/em&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+	&lt;a href=&quot;/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
 		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; alt=&quot;Benchmarcs Onboarding User Flow&quot; /&gt;
+			&lt;img class=&quot;&quot; src=&quot;/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; alt=&quot;Benchmarcs Onboarding User Flow&quot; /&gt;
 		&lt;/div&gt;
 	&lt;/a&gt;
 	&lt;span class=&quot;img-caption&quot;&gt;We created user-flow diagrams to outline functionality in the initial onboarding and setup, including the ability to add competitor funeral homes (Getting Started Step 3)&lt;/span&gt;
@@ -1116,9 +1116,9 @@ export const phoneNumber = value =&amp;gt;
 &lt;p&gt;To allow users to add competing funeral homes, we started by approximating the user’s location to show a suggested set of homes in their area. The page displayed the user’s closest zip code and provided a radius selector to filter results.&lt;/p&gt;
 
 &lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+	&lt;a href=&quot;/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
 		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; alt=&quot;Benchmarcs Add a Competitor Wireframe and design V1&quot; /&gt;
+			&lt;img class=&quot;&quot; src=&quot;/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; alt=&quot;Benchmarcs Add a Competitor Wireframe and design V1&quot; /&gt;
 		&lt;/div&gt;
 	&lt;/a&gt;
 	&lt;span class=&quot;img-caption&quot;&gt;
@@ -1146,9 +1146,9 @@ export const phoneNumber = value =&amp;gt;
 &lt;/ol&gt;
 
 &lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-interaction.gif&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+	&lt;a href=&quot;/assets/zapier/images/benchmarcs-interaction.gif&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
 		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-interaction.gif&quot; alt=&quot;Adding a Competitor - Animated GIF&quot; /&gt;
+			&lt;img class=&quot;&quot; src=&quot;/assets/zapier/images/benchmarcs-interaction.gif&quot; alt=&quot;Adding a Competitor - Animated GIF&quot; /&gt;
 		&lt;/div&gt;
 	&lt;/a&gt;
 	&lt;span class=&quot;img-caption&quot;&gt;
@@ -1170,8 +1170,8 @@ export const phoneNumber = value =&amp;gt;
 
 </description>
         <pubDate>Thu, 05 Oct 2017 14:46:27 -0500</pubDate>
-        <link>http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</guid>
+        <link>/thoughts/optimizing-onboarding-for-benchmarcs.html</link>
+        <guid isPermaLink="true">/thoughts/optimizing-onboarding-for-benchmarcs.html</guid>
         
         
         <category>thoughts</category>
@@ -1185,8 +1185,8 @@ export const phoneNumber = value =&amp;gt;
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 14 Nov 2016 00:00:00 -0600</pubDate>
-        <link>http://localhost:4000/resume-postlight/index.html</link>
-        <guid isPermaLink="true">http://localhost:4000/resume-postlight/index.html</guid>
+        <link>/resume-postlight/index.html</link>
+        <guid isPermaLink="true">/resume-postlight/index.html</guid>
         
         
       </item>
