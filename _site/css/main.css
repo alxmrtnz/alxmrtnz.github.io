@@ -1394,6 +1394,7 @@ a.link--text-in-p:hover {
 
 .work-type {
   margin-bottom: 10px;
+  line-height: 20px;
 }
 
 .work-title {
@@ -1572,6 +1573,14 @@ a.link--text-in-p:hover {
   padding-bottom: 10px;
   padding-top: 8px;
   text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 600px) {
+  .img-caption {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 .img-caption a {
   color: #6c8fa4;

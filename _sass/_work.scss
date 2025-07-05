@@ -188,6 +188,7 @@ $work-break: 800px;
 
 .work-type {
   margin-bottom: 10px;
+  line-height: 20px;
 }
 
 .work-title {
@@ -382,6 +383,13 @@ $work-break: 800px;
   padding-bottom: 10px;
   padding-top: 8px;
   text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: $on-palm) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
   a {
     color: $gray-color-darker;
