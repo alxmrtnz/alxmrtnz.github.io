@@ -3,11 +3,171 @@
   <channel>
     <title>Alex Martinez | Front-End Developer &amp; Product Designer</title>
     <description>Alex Martinez is a front-end developer based in Brooklyn, currently making the web more delicious at Grubhub. In the past, Alex worked on awesome teams at Whitelabel, ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 23 Jun 2025 15:21:38 -0500</pubDate>
-    <lastBuildDate>Mon, 23 Jun 2025 15:21:38 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 05 Jul 2025 12:38:00 -0400</pubDate>
+    <lastBuildDate>Sat, 05 Jul 2025 12:38:00 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
+    
+      <item>
+        <title>Zest</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;img src=&quot;http://localhost:4000/assets/work/zest/featured-image-zest.jpg&quot; alt=&quot;Zest App Hero Image&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;Learning to cook is intimidating. Between complex recipes, unfamiliar techniques, and the fear of failure, many people never develop this essential life skill. &lt;a href=&quot;https://zestapp.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Zest&lt;/a&gt; wanted to change that by creating a mobile app that makes cooking education as engaging as scrolling through social media.&lt;/p&gt;
+
+&lt;p&gt;When I joined Zest as Founding Engineer in February 2024, the company had a vision but needed someone who could bridge design and development to actually build it. The big question: how do you make cooking education stick in a world of infinite distractions?&lt;/p&gt;
+
+&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
+
+&lt;p&gt;As Founding Engineer, I wear multiple hats—mostly building the React Native app for iOS and Android while also being one of two UI/UX designers. Working with our CTO, &lt;a href=&quot;https://www.linkedin.com/in/amrit0991/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Amrit Saini&lt;/a&gt;, and lead designer, &lt;a href=&quot;https://www.linkedin.com/in/savannah-e-cooper/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Savannah Cooper&lt;/a&gt;, I help shape product decisions and turn them into features that our 13,000+ daily active users actually use.&lt;/p&gt;
+
+&lt;p&gt;In our small 6-person team, I build frontend features using React Native and TypeScript, design user interfaces and experiences, bridge the gap between what’s technically possible and what makes sense for users, and contribute to product strategy based on data and real user feedback.&lt;/p&gt;
+
+&lt;h2 id=&quot;app-highlights&quot;&gt;App Highlights&lt;/h2&gt;
+
+&lt;h3 id=&quot;integrated-learning-bridging-the-gap-between-learning-and-doing&quot;&gt;Integrated Learning: Bridging the Gap Between Learning and Doing&lt;/h3&gt;
+
+&lt;p&gt;One of our biggest challenges was getting users to go from watching lessons to actually cooking. So we built a comprehensive learning system that works on multiple levels.&lt;/p&gt;
+
+&lt;p&gt;We created structured concept lessons that users can scroll through to learn foundational cooking knowledge—everything from understanding different cooking methods to ingredient science. These lessons end with interactive quizzes that help reinforce what users just learned and make sure the concepts actually stick.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/1099010706?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Concept lessons end with quizzes to reinforce learnings
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We also experimented with different ways to deliver this content, including a TikTok-style video format where users could swipe through short videos instead of reading text-based lessons.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/1099012691?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Experiments included a TikTok-style video lesson
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But the real magic happens when users are actively cooking. We put short technique videos right into recipe instruction steps and added contextual links that cover different techniques for each step—whether it’s proper knife skills for dicing onions or the right way to fold ingredients.&lt;/p&gt;
+
+&lt;p&gt;We also connected recipe detail screens to our lesson content, so users can jump into relevant educational material and come back to their cooking seamlessly.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/1098925636?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Technique videos integrated directly into recipe instruction steps
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This turned out to be pretty important—users who actually cook recipes are way more likely to become paying subscribers, and this feature helped remove the friction between learning and doing.&lt;/p&gt;
+
+&lt;h3 id=&quot;recipe-import-bringing-the-whole-internet-to-your-kitchen&quot;&gt;Recipe Import: Bringing the Whole Internet to Your Kitchen&lt;/h3&gt;
+
+&lt;p&gt;One of our most popular features lets users import any recipe from the web. I built the entire import system, from the in-app browser to share sheet functionality. Using machine learning on the backend, we designed the user flow to make importing feel really smooth and intuitive.&lt;/p&gt;
+
+&lt;p&gt;We also pushed hard for supporting imports from social media apps like TikTok and Instagram, since we knew that’s where a lot of people discover recipes. This feature opened up basically infinite possibilities while keeping the educational structure that makes Zest special.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/zest/zest-recipe-import-screenshots.jpg&quot; alt=&quot;Zest Recipe Import Screenshots&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;
+      &lt;iframe src=&quot;https://player.vimeo.com/video/1099012595?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Complete import flow from discovery to parsed recipe
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;intelligent-dietary-management&quot;&gt;Intelligent Dietary Management&lt;/h3&gt;
+
+&lt;p&gt;We built preference management that goes way beyond simple filters, creating a system that actually personalizes the cooking experience. Users can set dietary restrictions (vegan, gluten-free, keto, etc.), specify allergies with severity levels, mark ingredients they don’t like, and get smart recipe recommendations tailored to their needs.&lt;/p&gt;
+
+&lt;p&gt;But the really cool part is our AI-powered recipe customization feature. With a single tap, users can adapt any recipe—whether it’s from our curated Zest collection or something they imported from the web—to match their dietary preferences, allergies, and dislikes. Our AI intelligently swaps out ingredients and adjusts cooking instructions on the fly, turning a regular pasta dish into a gluten-free version or converting a meat-based recipe for vegetarian users.&lt;/p&gt;
+
+&lt;p&gt;This feature bridges the gap between finding interesting recipes and actually being able to cook them safely and enjoyably, making the app work for users with all kinds of dietary needs.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt &quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;
+      &lt;iframe src=&quot;https://player.vimeo.com/video/1099009585?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/zest/zest-recipe-customization.jpg&quot; alt=&quot;Zest Recipe Customization Screenshots&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Comprehensive preferences allow users to customize any recipe
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;grocery-lists-that-actually-work&quot;&gt;Grocery Lists That Actually Work&lt;/h3&gt;
+
+&lt;p&gt;Our grocery list feature automatically pulls together ingredients from selected recipes, combines quantities smartly, and lets you add manual items—turning meal planning from a chore into something simple. But we didn’t stop at basic list-making.&lt;/p&gt;
+
+&lt;p&gt;The app sorts ingredients by grocery store aisle (produce, dairy, pantry, etc.) so you can shop efficiently, but also lets you view ingredients organized by recipe when you’re planning meals. Users can easily switch between these views depending on whether they’re meal planning or actually at the store.&lt;/p&gt;
+
+&lt;p&gt;Each ingredient is tappable too. Hit any item and you get a detail page with info about the ingredient, suggestions for substitutes if you can’t find it or it doesn’t work with your diet, tips for picking out the good stuff at the store, and advice on how to store it properly so it doesn’t go bad.&lt;/p&gt;
+
+&lt;p&gt;This turns grocery shopping from a basic errand into a chance to learn more about cooking and become a smarter shopper.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/zest/zest-list-and-menu.jpg&quot; class=&quot;image-medium&quot; alt=&quot;Zest Menu and Groceries Screenshots&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Your menu syncs seamlessly with your grocery list, making shopping a breeze
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+  Conclusion &amp;amp; Lessons Learned
+&lt;/h2&gt;
+
+&lt;p&gt;This case study just scratches the surface of what we built, but working at Zest has been an incredible learning experience, both technically and strategically. As a founding engineer, I helped build a solid React Native app that’s scaled to 13,000+ daily active users while keeping strong app store ratings.&lt;/p&gt;
+
+&lt;p&gt;This involved developing complex features like web recipe importing, integrated learning systems, and cross-platform video playback, plus influencing UX decisions around navigation flows, animation timing, and interface details that made the overall experience better.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/zest/zest-screenshots.jpg&quot; alt=&quot;Zest App Screenshots&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;text--centered&quot;&gt;
+	&lt;p&gt;
+		Check out Zest on the &lt;a href=&quot;https://apps.apple.com/us/app/zest-cooking/id1595938390&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;App Store&lt;/a&gt; and &lt;a href=&quot;https://play.google.com/store/apps/details?id=co.zestapp.mobile&amp;amp;hl=en_US&amp;amp;gl=US&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Google Play&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 03 Jul 2024 08:00:00 -0400</pubDate>
+        <link>http://localhost:4000/work/zest.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/zest.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
     
       <item>
         <title>Alex Martinez – Resume</title>
@@ -15,9 +175,9 @@
 	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/1hBaO7GyHtayQ4QPsZHs2F93E_pXhSqcR/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Thu, 17 Dec 2020 00:00:00 -0600</pubDate>
-        <link>/resume/index.html</link>
-        <guid isPermaLink="true">/resume/index.html</guid>
+        <pubDate>Thu, 17 Dec 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/resume/index.html</link>
+        <guid isPermaLink="true">http://localhost:4000/resume/index.html</guid>
         
         
       </item>
@@ -177,7 +337,7 @@ const initialize = () =&amp;gt; {
 
 &lt;p&gt;And then select which simulator (iOS or Android) you want to open via the expo-cli in your terminal:&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;&quot; src=&quot;/assets/posts/3-11-19/terminal-screenshot-expo-cli.png&quot; alt=&quot;Expo Cli in Terminal&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/posts/3-11-19/terminal-screenshot-expo-cli.png&quot; alt=&quot;Expo Cli in Terminal&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;With iOS, I’ve found you can run the command with the Simulator app closed or already open, while with Android, things are smoothest if you already have the AVD (Android Virtual Device) running.&lt;/p&gt;
 
@@ -266,9 +426,9 @@ Running the app via TestFlight or an Android testing track (more info on those &
   &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5528850/how-do-you-connect-localhost-in-the-android-emulator&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;StackOverflow: How do you connect localhost in the Android emulator?&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Tue, 12 Mar 2019 11:11:27 -0500</pubDate>
-        <link>/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</link>
-        <guid isPermaLink="true">/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</guid>
+        <pubDate>Tue, 12 Mar 2019 12:11:27 -0400</pubDate>
+        <link>http://localhost:4000/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/2019/03/12/environment-variables-and-workflow-in-expo.html</guid>
         
         
         <category>thoughts</category>
@@ -282,6 +442,7 @@ Running the app via TestFlight or an Android testing track (more info on those &
 &lt;p&gt;Luckily, a coworker suggested I try out &lt;a href=&quot;https://redux-form.com&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that helps you manage form state and validation in redux rather than in a component.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-redux-form&quot;&gt;What is Redux Form?&lt;/h2&gt;
+
 &lt;p&gt;By connecting a form component to redux through Redux Form’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; &lt;a href=&quot;https://reactjs.org/docs/higher-order-components.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;higher-order component&lt;/a&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;formReducer&lt;/code&gt;, the library keeps track of common application form state in a redux store rather in the local component.&lt;/p&gt;
 
 &lt;p&gt;In fact, it helps manage things such as:&lt;/p&gt;
@@ -298,20 +459,23 @@ Running the app via TestFlight or an Android testing track (more info on those &
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;under-the-hood&quot;&gt;Under the Hood&lt;/h2&gt;
+
 &lt;p&gt;Before I began using Redux Form, I stored form input values and error states in its own component &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;state&lt;/code&gt; and created a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;handleInputChange()&lt;/code&gt; method to handle updates for each individual field. I’d then create methods to manage validation and error messages on submit. None of this was DRY and made it difficult to build new forms.&lt;/p&gt;
 
 &lt;p&gt;Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;redux-form&lt;/code&gt; simplified form management by allowing me to store a form’s input values in a redux store, handling inputs’ &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onChange&lt;/code&gt; methods and providing field-level validation.&lt;/p&gt;
 
 &lt;p&gt;After setting up Redux Form, you’ll be able to see it at work using &lt;a href=&quot;https://github.com/reduxjs/redux-devtools&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux DevTools&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&quot;video-container&quot;&gt;
-  &lt;div class=&quot;embed-container&quot;&gt;
-    &lt;iframe src=&quot;https://player.vimeo.com/video/265891862?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;!-- &lt;div class=&quot;video-container&quot;&gt;
+  &lt;div class=&apos;embed-container&apos;&gt;
+    &lt;iframe src=&apos;https://player.vimeo.com/video/265891862?autoplay=1&amp;loop=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=1&apos; frameborder=&apos;0&apos; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
   &lt;/div&gt;
-&lt;/div&gt;
+&lt;/div&gt; --&gt;
 
 &lt;p&gt;The form is stored under the name you give it, in this case &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SignInForm&lt;/code&gt;, while input data is stored under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;values&lt;/code&gt; and errors under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;syncErrors&lt;/code&gt;. Redux Form then provides meta information like those error messages, whether an input has been &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touched&lt;/code&gt;, and whether the form is or isn’t &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dirty&lt;/code&gt; as props in your form and input components.&lt;/p&gt;
 
 &lt;h3 id=&quot;a-sample-redux-form&quot;&gt;A Sample Redux Form&lt;/h3&gt;
+
 &lt;p&gt;The following is an example form for a Sign In screen. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reduxForm()&lt;/code&gt; connects the form component to redux while &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;redux-form&lt;/code&gt;’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Field&lt;/code&gt; component manages the actual inputs including the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validation&lt;/code&gt; that the field requires.&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import React, { Component } from &apos;react&apos;
@@ -387,6 +551,7 @@ export default SignInForm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;custom-field-components&quot;&gt;Custom Field Components&lt;/h3&gt;
+
 &lt;p&gt;In the above example, you’ll see that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Field&lt;/code&gt; takes a prop called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;component&lt;/code&gt;. This prop allows you define your own input component and can be either a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Component&lt;/code&gt;, a stateless function, or a string name of one of the default supported DOM inputs (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;textarea&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;select&lt;/code&gt;).&lt;/p&gt;
 
 &lt;p&gt;In my case, I created a component called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ReduxFormInput&lt;/code&gt;, allowing me to define the structure I wanted surrounding a basic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; field:&lt;/p&gt;
@@ -446,9 +611,10 @@ export default ReduxFormInput
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;field-level-validation&quot;&gt;Field-Level Validation&lt;/h3&gt;
+
 &lt;p&gt;One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (&lt;a href=&quot;https://redux-form.com/7.3.0/examples/syncvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Sync&lt;/a&gt;, &lt;a href=&quot;https://redux-form.com/7.3.0/examples/submitvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Submit&lt;/a&gt;, &lt;a href=&quot;https://redux-form.com/7.3.0/examples/asyncvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Async Blur&lt;/a&gt;, and more), I mainly make use of &lt;a href=&quot;https://redux-form.com/7.3.0/examples/fieldlevelvalidation/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Field-Level Validation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Field-Level Validation focuses on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Field&lt;/code&gt;’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validate&lt;/code&gt; prop. It accepts one or more functions to validate the value of the given field. If an input doesn’t pass the requirements passed through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validate&lt;/code&gt;, the entire form  won’t submit and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error&lt;/code&gt; prop is then passed to the input allowing you to render a message to the user.&lt;/p&gt;
+&lt;p&gt;Field-Level Validation focuses on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Field&lt;/code&gt;’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validate&lt;/code&gt; prop. It accepts one or more functions to validate the value of the given field. If an input doesn’t pass the requirements passed through &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validate&lt;/code&gt;, the entire form won’t submit and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error&lt;/code&gt; prop is then passed to the input allowing you to render a message to the user.&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 import { reduxForm, Field } from &apos;redux-form&apos;
@@ -524,17 +690,19 @@ export const phoneNumber = value =&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
 &lt;p&gt;React Form isn’t the only package out there to manage forms in React (see &lt;a href=&quot;https://github.com/jaredpalmer/formik&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Formik&lt;/a&gt;, &lt;a href=&quot;https://github.com/davidkpiano/react-redux-form&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Redux Form&lt;/a&gt;, and &lt;a href=&quot;https://github.com/react-tools/react-form&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React-Form&lt;/a&gt; to name a few), but it’s the one that’s been making my life a whole lot easier.&lt;/p&gt;
 
 &lt;h3 id=&quot;other-resources&quot;&gt;Other Resources&lt;/h3&gt;
+
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;The React Podcast ft. Jared Palmer (touches on Formik)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Why Build Your Forms with Redux Form&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 02 May 2018 14:46:27 -0500</pubDate>
-        <link>/thoughts/2018/05/02/react-and-redux-form.html</link>
-        <guid isPermaLink="true">/thoughts/2018/05/02/react-and-redux-form.html</guid>
+        <pubDate>Wed, 02 May 2018 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html</guid>
         
         
         <category>thoughts</category>
@@ -545,7 +713,7 @@ export const phoneNumber = value =&amp;gt;
         <title>Agility Connect</title>
         <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;/assets/work/agility/agility-connect-hero-image-3x-optim.png&quot; alt=&quot;Agility Connect Title Card&quot; /&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-hero-image-3x-optim.png&quot; alt=&quot;Agility Connect Title Card&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -561,16 +729,16 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;/assets/work/agility/agility-connect-homepage.jpg&quot; alt=&quot;Agility Connect Homepage&quot; /&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-homepage.jpg&quot; alt=&quot;Agility Connect Homepage&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;/assets/work/agility/agility-connect-jobs.jpg&quot; alt=&quot;Agility Connect Jobs Page&quot; /&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-jobs.jpg&quot; alt=&quot;Agility Connect Jobs Page&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;/assets/work/agility/agility-connect-job-and-referrals.jpg&quot; alt=&quot;Agility Connect Jobs and Referrals&quot; /&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/agility/agility-connect-job-and-referrals.jpg&quot; alt=&quot;Agility Connect Jobs and Referrals&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -580,254 +748,9 @@ export const phoneNumber = value =&amp;gt;
 	&lt;/p&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Thu, 19 Apr 2018 14:46:27 -0500</pubDate>
-        <link>/work/agility.html</link>
-        <guid isPermaLink="true">/work/agility.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Maptastic</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;/assets/work/maptastic/featured-image-maptastic-2.jpg&quot; alt=&quot;Maptastic Title Card&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-
-&lt;p&gt;Maptastic was a React web application that makes U.S. demographic data, such as population, housing characteristics, and related socioeconomic characteristics easily obtainable to local governments, nonprofits, and regional planning agencies.&lt;/p&gt;
-
-&lt;p&gt;Organizations can use the app to search demographic data for regions throughout the U.S. and save their searches for future reference.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
-
-&lt;p&gt;As part of a small team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I served as the lead front-end developer and worked with a designer and several backend developers to bring the project to life.&lt;/p&gt;
-
-&lt;p&gt;Maptastic gave me the opportunity try out new libraries like &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt;, used to display data obtained through &lt;a href=&quot;https://www.census.gov/data/developers/data-sets.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;U.S. Census APIs&lt;/a&gt;, and explore the Google Maps API and Geosuggest (through libraries like &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt;) for geolocation searches.&lt;/p&gt;
-
-&lt;h2 id=&quot;making-data-beautiful&quot;&gt;Making Data Beautiful&lt;/h2&gt;
-
-&lt;h3 id=&quot;chartist-graphs&quot;&gt;Chartist Graphs&lt;/h3&gt;
-
-&lt;p&gt;In order to make large amounts of demographic data easy to understand, we used &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt; to create a variety of charts, from comparison bar charts to pie charts, to visualize the data.&lt;/p&gt;
-
-&lt;p&gt;Chartist proved to be a handy library that allowed for easy customization and let me build a set of restackable, collapsible cards for the end user.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;/assets/work/maptastic/maptastic-charts.png&quot; alt=&quot;Maptastic Chart Data&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;a-flexible-responsive-layout&quot;&gt;A Flexible, Responsive Layout&lt;/h3&gt;
-
-&lt;p&gt;Using Flexbox, I created a responsive masonry-style layout to accomodate a range of device sizes. It was important to give the map and chart cards room to breath in order keep data digestible, but the layout also had to be flexible enough to re-stack on smaller devices.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;/assets/work/maptastic/responsive-maptastic-2.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Responsive Animation&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    A responsive layout lets users take Maptastic with them on their phones and tablets
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;fixed-positioning&quot;&gt;Fixed Positioning&lt;/h3&gt;
-
-&lt;p&gt;Additionally, on desktop, we wanted to keep several elements, such as the map and main navigation, in a fixed position so that users could scroll through the cards of data, but always have easy access to these primary elements in order to refine their search location and radius.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;/assets/work/maptastic/maptastic-fixed-positioning.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Showing Scroll Animation&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    Collapsible cards and a masonry-style layout makes viewing demographic data easy
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;maps-integration&quot;&gt;Maps Integration&lt;/h2&gt;
-
-&lt;p&gt;As the name “Maptastic” implies, maps (and location search) were a critical part of the project. Our goal was to allow users to easily search for a location, visualize it via Google Maps, and modify their search radius to hone in on their targets.&lt;/p&gt;
-
-&lt;h3 id=&quot;searching-on-maptastic&quot;&gt;Searching on Maptastic&lt;/h3&gt;
-
-&lt;p&gt;The search experience is comprised of three primary elements:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A geosuggest search input&lt;/li&gt;
-  &lt;li&gt;A Google Map to display the search&lt;/li&gt;
-  &lt;li&gt;A slider to refine the range of the search area&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;By using &lt;a href=&quot;https://tomchentw.github.io/react-google-maps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Google Maps&lt;/a&gt; to tie into the Google Maps Javascript API, &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt; to create a suggestive search input, and Redux to allow the components access to a shared state, I was able to create a search experience that makes accessing demographic data a breeze.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;div class=&quot;video-container&quot;&gt;
-      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/392963178?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 class=&quot;text-center&quot;&gt;
-  Conclusion &amp;amp; Lessons Learned
-&lt;/h2&gt;
-
-&lt;p&gt;While concise in scope, Maptastic helped me explore new terrain. From learning how interact with and customize map elements with Google Maps to styling large chunks of data using Chartist, this project exposed me to new front-end features. Front-end development continues to excite me as I discover how much more there is to learn every day.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;/assets/work/maptastic/maptastic-screenshots.jpg&quot; alt=&quot;Maptastic App Screenshots&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 18 Apr 2018 14:46:27 -0500</pubDate>
-        <link>/work/maptastic.html</link>
-        <guid isPermaLink="true">/work/maptastic.html</guid>
-        
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Locker Linked</title>
-        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;/assets/work/lockerlinked/featured-image-locker-linked.jpg&quot; alt=&quot;Locker Linked Title Card&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
-
-&lt;p&gt;Every year, thousands of high school athletes try to pursue their passion at the next level by searching for the perfect athletic and academic fit. Having never gone through the college athletic recruiting process, these students, and their parents, are often in uncharted waters.&lt;/p&gt;
-
-&lt;p&gt;Which coaches should they talk to? How do they gain the right exposure? Which program should they choose… and why? Even with the best work ethic and determination, every athlete could use a little help.&lt;/p&gt;
-
-&lt;p&gt;As part of the team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I helped build the digital platform for Locker Linked, a startup that aims to provide student athletes with first-rate recruitment network services and tools to prepare them for upcoming college athletic opportunities.&lt;/p&gt;
-
-&lt;p&gt;Locker Linked simplifies the recruitment process, allowing student athletes to set up a player profile to showcase skills, connect directly with coaches and recruiters, and get exclusive access to essential resources to maximize potential recruitment.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
-
-&lt;p&gt;While my team at Whitelabel worked closely with Locker Linked to design and build their entire platform, from design to development, I worked specifically on the development team focusing on building the front-end of the platform in React.&lt;/p&gt;
-
-&lt;p&gt;On the frontend, Locker Linked is built with React and Redux, integrates with &lt;a href=&quot;https://stripe.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Stripe&lt;/a&gt; for user payment, and connects to a Rails backend. I worked closely with our lead backend developer, &lt;a href=&quot;https://twitter.com/toreyhickman/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Torey Hickman&lt;/a&gt;, to build a component-based UI that hooked up seamlessly with our backend database and architecture.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-profile-devices.jpg&quot; alt=&quot;Locker Linked Profile shown on MacBook and iPhone&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;creating-a-showcase-for-athletes&quot;&gt;Creating a Showcase for Athletes&lt;/h2&gt;
-
-&lt;h3 id=&quot;building-a-flexible-profile&quot;&gt;Building a Flexible Profile&lt;/h3&gt;
-
-&lt;p&gt;The athlete profile turned out to be one of my favorite parts of the app due to the variety of components needed to accomodate such a wide range of sports played by student athletes. In addition, the profile serves as the entry point for college recruiters’ evaluations of student athletes, making it a focal point of the platform.&lt;/p&gt;
-
-&lt;p&gt;Locker Linked wanted to allow athletes to post photos, videos, statistics, awards, camps, and reference contact information in addition to the ability to add multiple sports. Whether it was making sure the stats table component resized and responded fluidly or creating a slider component that accomodated arrays of photos or videos, I enjoyed the creative coding challenge that the screen presented.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-profile-responsive.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;focusing-on-reusable-components&quot;&gt;Focusing on Reusable Components&lt;/h3&gt;
-
-&lt;p&gt;The component-based nature of the athlete profile allowed us to focus on creating reusable elements. We were able to build the profile component by component and think about how to reuse several components in forms where users would manage the actual profile.&lt;/p&gt;
-
-&lt;p&gt;Components like our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TabSelect.js&lt;/code&gt; were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
-     &lt;img src=&quot;/assets/work/lockerlinked/tab-select-1.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
-      &lt;img src=&quot;/assets/work/lockerlinked/tab-select-2.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    I built responsive components that could be repurposed in different contexts (left: athelte profile, right: user dashboard)
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;the-intricacies-of-profile-management&quot;&gt;The Intricacies of Profile Management&lt;/h2&gt;
-
-&lt;p&gt;Profile management was one of the biggest challenges in building Locker Linked. In addition to the actual student athlete, profiles can be managed by parents/guardians (and soon coaches, too!).&lt;/p&gt;
-
-&lt;p&gt;Not only that, but a single user can have admin access to manage and edit any number of athlete profiles. This many-to-one relationship of profile management necessitated careful consideration when it came to both onboarding and the user dashboard.&lt;/p&gt;
-
-&lt;h3 id=&quot;onboarding-different-user-types&quot;&gt;Onboarding Different User Types&lt;/h3&gt;
-
-&lt;p&gt;When onboarding, a user can select whether they’re an athlete or a parent/guardian. In both cases, the user can create a new athlete profile, but if a user is a parent, they also have the option to request access to a pre-existing profile (their child’s). This meant that our team had to carefully consider the user flow for multiple onboarding paths and build them accordingly.&lt;/p&gt;
-
-&lt;h3 id=&quot;managing-multiple-profiles&quot;&gt;Managing Multiple Profiles&lt;/h3&gt;
-
-&lt;p&gt;In order to accomodate parents/guardians with more than one child on the platform or coaches that are assisting multiple student athletes, we built Locker Link with the ability for users to manage one or more athlete profiles.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-profile-switcher.gif&quot; class=&quot;image-medium&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;span class=&quot;img-caption&quot;&gt;
-    Users can easily switch between editing multiple athletes profile.
-  &lt;/span&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Once a user is given admin access to multiple profiles, they can use a simple dropdown to select the profile they want to edit. By integrating the user dashboard with Redux, we could easily populate the users’ edit views with the selected profile’s data and make editing a breeze.&lt;/p&gt;
-
-&lt;h2 id=&quot;learning-to-love-forms&quot;&gt;Learning to Love Forms&lt;/h2&gt;
-
-&lt;h3 id=&quot;form-management-with-redux-form&quot;&gt;Form Management with Redux-Form&lt;/h3&gt;
-
-&lt;p&gt;I love React. But ever since I began building apps with React, I’ve had a gripe with managing forms. On top of managing the actualy values of inputs in component state, handling validation and error messaging made forms in React complex and clunky to set up and use. To make form development easier, we introduced the use of &lt;a href=&quot;https://redux-form.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that allows you to connect your forms to your Redux store in order to manage form state.&lt;/p&gt;
-
-&lt;p&gt;Redux Form let us create custom input components, decrease redundancy in terms of validation and error message handling, and build more robust, dynamic forms. For a deeper look at my experience with Redux Form (and how it convinced me to love forms again), &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot; class=&quot;link--text-in-p&quot;&gt;check out this post I wrote&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;div class=&quot;video-container&quot;&gt;
-      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/269091140?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;span class=&quot;img-caption&quot;&gt;
-      Redux-Form made form management a breeze (and pretty magical). &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot;&gt;Read more about my thoughts on Redux-Form here&lt;/a&gt;.
-    &lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 class=&quot;text-center&quot;&gt;
-  Conclusion &amp;amp; Lessons Learned
-&lt;/h2&gt;
-
-&lt;p&gt;Locker Link was a big growing experience for me. I had used React several times to build out front-end interfaces before, but Locker Link was the first project where I used Redux for app state management and Redux Form for form management. Through Redux, I was able to create more complex interactions, such as managing modals and flash message state between screens.&lt;/p&gt;
-
-&lt;p&gt;In addition to using new technologies, working on Locker Linked also helped me refine how I build and manage React components. I spent a good amount of time trying to break screens down into smaller, manageable parts so that we could more easily maintain components and reuse components whenever possible.&lt;/p&gt;
-
-&lt;div class=&quot;grid grid-mt&quot;&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-homepage.jpg&quot; alt=&quot;Locker Linked Homepage&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-dashboard.jpg&quot; alt=&quot;Locker Linked User Dashboard Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-coach-search.jpg&quot; alt=&quot;Locker Linked Dashboard Search Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-profile-stats.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;/assets/work/lockerlinked/locker-linked-locker-profile.jpg&quot; alt=&quot;Locker Linked Profile Management Screenshot&quot; /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 17 Apr 2018 14:46:27 -0500</pubDate>
-        <link>/work/locker-linked.html</link>
-        <guid isPermaLink="true">/work/locker-linked.html</guid>
+        <pubDate>Thu, 19 Apr 2018 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/agility.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/agility.html</guid>
         
         
         <category>work</category>
@@ -870,7 +793,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;/assets/work/serviceyear/sy-site-map-august-2015.png&quot; alt=&quot;Service Year Sitemap (August 2015)&quot; /&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-site-map-august-2015.png&quot; alt=&quot;Service Year Sitemap (August 2015)&quot; /&gt;
       &lt;span class=&quot;img-caption&quot;&gt;Initial sitemaps can give an idea of the number of screens/interactions needed for a project of this scale.&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -881,7 +804,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;/assets/work/serviceyear/org-enroll-corps-member-flow-5-11-16.png&quot; alt=&quot;Screenshot of Userflow&quot; /&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/org-enroll-corps-member-flow-5-11-16.png&quot; alt=&quot;Screenshot of Userflow&quot; /&gt;
       &lt;span class=&quot;img-caption&quot;&gt;User flows allowed our team to define the paths users would take to accomplish tasks.&lt;br /&gt;This user flow shows a corps member expressing interest in a position and an organization&apos;s path to taking action on that interest.&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -894,11 +817,11 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;/assets/work/serviceyear/sy-invision-screenshot.png&quot; alt=&quot;Service Year Invision Prototype Screenshot&quot; /&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-invision-screenshot.png&quot; alt=&quot;Service Year Invision Prototype Screenshot&quot; /&gt;
     &lt;span class=&quot;img-caption&quot;&gt;
       Prototypes allowed us to think through flows for different user interactions. Here is an early prototype of onboarding new corps members to Service Year.
       &lt;br /&gt;
-      (&lt;a href=&quot;/assets/invision/sy-cm-onboarding-wireframe-prototype/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Prototype in New Window&lt;/a&gt;)
+      (&lt;a href=&quot;http://localhost:4000/assets/invision/sy-cm-onboarding-wireframe-prototype/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Prototype in New Window&lt;/a&gt;)
     &lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -913,7 +836,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt &quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-      &lt;img src=&quot;/assets/work/serviceyear/sy-narrative-components.jpg&quot; alt=&quot;Service Year Component Screenshot - Serving Status Cards&quot; /&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-narrative-components.jpg&quot; alt=&quot;Service Year Component Screenshot - Serving Status Cards&quot; /&gt;
       &lt;span class=&quot;img-caption&quot;&gt;
         A look at the different states for the serving status block within a Corps Member&apos;s public profile.
       &lt;/span&gt;
@@ -928,7 +851,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-    &lt;img src=&quot;/assets/work/serviceyear/sy-style-guide.png&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-style-guide.png&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
     &lt;span class=&quot;img-caption&quot;&gt;
       The Service Year Style Guide helps designers and developers to collaborate when designing, building, and iterating on components. (&lt;a href=&quot;https://serviceyear.org/styleguide/index.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;View Style Guide&lt;/a&gt;)
     &lt;/span&gt;
@@ -943,7 +866,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
-    &lt;img src=&quot;/assets/work/serviceyear/sy-sprint-tracker-and-waffle.jpg&quot; alt=&quot;Screenshot of Sprint Tracker and Waffle Board&quot; /&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-sprint-tracker-and-waffle.jpg&quot; alt=&quot;Screenshot of Sprint Tracker and Waffle Board&quot; /&gt;
     &lt;span class=&quot;img-caption&quot;&gt;
       A backlog of user stories were defined in collaboration with the client and saved in a Google Spreadsheet. During each sprint cycle, we then used Github and Waffle to monitor progress on each task.
     &lt;/span&gt;
@@ -979,16 +902,16 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid-mt&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;/assets/work/serviceyear/sy-homepage.jpg&quot; alt=&quot;Screenshot of Service Year Home Page&quot; /&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-homepage.jpg&quot; alt=&quot;Screenshot of Service Year Home Page&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;grid grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
-     &lt;img src=&quot;/assets/work/serviceyear/sy-comps-profile-tablet.jpg&quot; alt=&quot;Screenshot of Service Year Corps Member Profile (Tablet)&quot; /&gt;
+     &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-comps-profile-tablet.jpg&quot; alt=&quot;Screenshot of Service Year Corps Member Profile (Tablet)&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
-      &lt;img src=&quot;/assets/work/serviceyear/sy-comps-sign-in.jpg&quot; alt=&quot;Screenshot of Service Year Sign In Pages (Desktop)&quot; /&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/serviceyear/sy-comps-sign-in.jpg&quot; alt=&quot;Screenshot of Service Year Sign In Pages (Desktop)&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -998,9 +921,254 @@ export const phoneNumber = value =&amp;gt;
   &lt;/p&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 16 Apr 2018 14:46:27 -0500</pubDate>
-        <link>/work/service-year.html</link>
-        <guid isPermaLink="true">/work/service-year.html</guid>
+        <pubDate>Wed, 18 Apr 2018 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/service-year.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/service-year.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Maptastic</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/featured-image-maptastic-2.jpg&quot; alt=&quot;Maptastic Title Card&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;Maptastic was a React web application that makes U.S. demographic data, such as population, housing characteristics, and related socioeconomic characteristics easily obtainable to local governments, nonprofits, and regional planning agencies.&lt;/p&gt;
+
+&lt;p&gt;Organizations can use the app to search demographic data for regions throughout the U.S. and save their searches for future reference.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
+
+&lt;p&gt;As part of a small team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I served as the lead front-end developer and worked with a designer and several backend developers to bring the project to life.&lt;/p&gt;
+
+&lt;p&gt;Maptastic gave me the opportunity try out new libraries like &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt;, used to display data obtained through &lt;a href=&quot;https://www.census.gov/data/developers/data-sets.html&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;U.S. Census APIs&lt;/a&gt;, and explore the Google Maps API and Geosuggest (through libraries like &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt;) for geolocation searches.&lt;/p&gt;
+
+&lt;h2 id=&quot;making-data-beautiful&quot;&gt;Making Data Beautiful&lt;/h2&gt;
+
+&lt;h3 id=&quot;chartist-graphs&quot;&gt;Chartist Graphs&lt;/h3&gt;
+
+&lt;p&gt;In order to make large amounts of demographic data easy to understand, we used &lt;a href=&quot;https://gionkunz.github.io/chartist-js/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Chartist&lt;/a&gt; to create a variety of charts, from comparison bar charts to pie charts, to visualize the data.&lt;/p&gt;
+
+&lt;p&gt;Chartist proved to be a handy library that allowed for easy customization and let me build a set of restackable, collapsible cards for the end user.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-charts.png&quot; alt=&quot;Maptastic Chart Data&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;a-flexible-responsive-layout&quot;&gt;A Flexible, Responsive Layout&lt;/h3&gt;
+
+&lt;p&gt;Using Flexbox, I created a responsive masonry-style layout to accomodate a range of device sizes. It was important to give the map and chart cards room to breath in order keep data digestible, but the layout also had to be flexible enough to re-stack on smaller devices.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/responsive-maptastic-2.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Responsive Animation&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    A responsive layout lets users take Maptastic with them on their phones and tablets
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;fixed-positioning&quot;&gt;Fixed Positioning&lt;/h3&gt;
+
+&lt;p&gt;Additionally, on desktop, we wanted to keep several elements, such as the map and main navigation, in a fixed position so that users could scroll through the cards of data, but always have easy access to these primary elements in order to refine their search location and radius.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-fixed-positioning.gif&quot; class=&quot;image-medium&quot; alt=&quot;Maptastic in Browser Window Showing Scroll Animation&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Collapsible cards and a masonry-style layout makes viewing demographic data easy
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;maps-integration&quot;&gt;Maps Integration&lt;/h2&gt;
+
+&lt;p&gt;As the name “Maptastic” implies, maps (and location search) were a critical part of the project. Our goal was to allow users to easily search for a location, visualize it via Google Maps, and modify their search radius to hone in on their targets.&lt;/p&gt;
+
+&lt;h3 id=&quot;searching-on-maptastic&quot;&gt;Searching on Maptastic&lt;/h3&gt;
+
+&lt;p&gt;The search experience is comprised of three primary elements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A geosuggest search input&lt;/li&gt;
+  &lt;li&gt;A Google Map to display the search&lt;/li&gt;
+  &lt;li&gt;A slider to refine the range of the search area&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By using &lt;a href=&quot;https://tomchentw.github.io/react-google-maps/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Google Maps&lt;/a&gt; to tie into the Google Maps Javascript API, &lt;a href=&quot;https://github.com/ubilabs/react-geosuggest&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;React Geosuggest&lt;/a&gt; to create a suggestive search input, and Redux to allow the components access to a shared state, I was able to create a search experience that makes accessing demographic data a breeze.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/392963178?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 class=&quot;text-center&quot;&gt;
+  Conclusion &amp;amp; Lessons Learned
+&lt;/h2&gt;
+
+&lt;p&gt;While concise in scope, Maptastic helped me explore new terrain. From learning how interact with and customize map elements with Google Maps to styling large chunks of data using Chartist, this project exposed me to new front-end features. Front-end development continues to excite me as I discover how much more there is to learn every day.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/maptastic/maptastic-screenshots.jpg&quot; alt=&quot;Maptastic App Screenshots&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 17 Apr 2018 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/maptastic.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/maptastic.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Locker Linked</title>
+        <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/featured-image-locker-linked.jpg&quot; alt=&quot;Locker Linked Title Card&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-overview&quot;&gt;Project Overview&lt;/h2&gt;
+
+&lt;p&gt;Every year, thousands of high school athletes try to pursue their passion at the next level by searching for the perfect athletic and academic fit. Having never gone through the college athletic recruiting process, these students, and their parents, are often in uncharted waters.&lt;/p&gt;
+
+&lt;p&gt;Which coaches should they talk to? How do they gain the right exposure? Which program should they choose… and why? Even with the best work ethic and determination, every athlete could use a little help.&lt;/p&gt;
+
+&lt;p&gt;As part of the team at &lt;a href=&quot;https://whitelabelco.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Whitelabel&lt;/a&gt;, I helped build the digital platform for Locker Linked, a startup that aims to provide student athletes with first-rate recruitment network services and tools to prepare them for upcoming college athletic opportunities.&lt;/p&gt;
+
+&lt;p&gt;Locker Linked simplifies the recruitment process, allowing student athletes to set up a player profile to showcase skills, connect directly with coaches and recruiters, and get exclusive access to essential resources to maximize potential recruitment.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
+
+&lt;p&gt;While my team at Whitelabel worked closely with Locker Linked to design and build their entire platform, from design to development, I worked specifically on the development team focusing on building the front-end of the platform in React.&lt;/p&gt;
+
+&lt;p&gt;On the frontend, Locker Linked is built with React and Redux, integrates with &lt;a href=&quot;https://stripe.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Stripe&lt;/a&gt; for user payment, and connects to a Rails backend. I worked closely with our lead backend developer, &lt;a href=&quot;https://twitter.com/toreyhickman/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Torey Hickman&lt;/a&gt;, to build a component-based UI that hooked up seamlessly with our backend database and architecture.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-devices.jpg&quot; alt=&quot;Locker Linked Profile shown on MacBook and iPhone&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;creating-a-showcase-for-athletes&quot;&gt;Creating a Showcase for Athletes&lt;/h2&gt;
+
+&lt;h3 id=&quot;building-a-flexible-profile&quot;&gt;Building a Flexible Profile&lt;/h3&gt;
+
+&lt;p&gt;The athlete profile turned out to be one of my favorite parts of the app due to the variety of components needed to accomodate such a wide range of sports played by student athletes. In addition, the profile serves as the entry point for college recruiters’ evaluations of student athletes, making it a focal point of the platform.&lt;/p&gt;
+
+&lt;p&gt;Locker Linked wanted to allow athletes to post photos, videos, statistics, awards, camps, and reference contact information in addition to the ability to add multiple sports. Whether it was making sure the stats table component resized and responded fluidly or creating a slider component that accomodated arrays of photos or videos, I enjoyed the creative coding challenge that the screen presented.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-responsive.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;focusing-on-reusable-components&quot;&gt;Focusing on Reusable Components&lt;/h3&gt;
+
+&lt;p&gt;The component-based nature of the athlete profile allowed us to focus on creating reusable elements. We were able to build the profile component by component and think about how to reuse several components in forms where users would manage the actual profile.&lt;/p&gt;
+
+&lt;p&gt;Components like our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TabSelect.js&lt;/code&gt; were used both on the public profile and in the user’s profile management dashboard. Thanks to some simple styling and media queries, the structure and functionality remained the same while the visual appearance were altered.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--half no-shadow &quot;&gt;
+     &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-1.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--half no-shadow end&quot;&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/tab-select-2.gif&quot; alt=&quot;Tab Select Component Video Gif&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    I built responsive components that could be repurposed in different contexts (left: athelte profile, right: user dashboard)
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-intricacies-of-profile-management&quot;&gt;The Intricacies of Profile Management&lt;/h2&gt;
+
+&lt;p&gt;Profile management was one of the biggest challenges in building Locker Linked. In addition to the actual student athlete, profiles can be managed by parents/guardians (and soon coaches, too!).&lt;/p&gt;
+
+&lt;p&gt;Not only that, but a single user can have admin access to manage and edit any number of athlete profiles. This many-to-one relationship of profile management necessitated careful consideration when it came to both onboarding and the user dashboard.&lt;/p&gt;
+
+&lt;h3 id=&quot;onboarding-different-user-types&quot;&gt;Onboarding Different User Types&lt;/h3&gt;
+
+&lt;p&gt;When onboarding, a user can select whether they’re an athlete or a parent/guardian. In both cases, the user can create a new athlete profile, but if a user is a parent, they also have the option to request access to a pre-existing profile (their child’s). This meant that our team had to carefully consider the user flow for multiple onboarding paths and build them accordingly.&lt;/p&gt;
+
+&lt;h3 id=&quot;managing-multiple-profiles&quot;&gt;Managing Multiple Profiles&lt;/h3&gt;
+
+&lt;p&gt;In order to accomodate parents/guardians with more than one child on the platform or coaches that are assisting multiple student athletes, we built Locker Link with the ability for users to manage one or more athlete profiles.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-switcher.gif&quot; class=&quot;image-medium&quot; alt=&quot;Service Year Style Guide Screenshot&quot; /&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;img-caption&quot;&gt;
+    Users can easily switch between editing multiple athletes profile.
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once a user is given admin access to multiple profiles, they can use a simple dropdown to select the profile they want to edit. By integrating the user dashboard with Redux, we could easily populate the users’ edit views with the selected profile’s data and make editing a breeze.&lt;/p&gt;
+
+&lt;h2 id=&quot;learning-to-love-forms&quot;&gt;Learning to Love Forms&lt;/h2&gt;
+
+&lt;h3 id=&quot;form-management-with-redux-form&quot;&gt;Form Management with Redux-Form&lt;/h3&gt;
+
+&lt;p&gt;I love React. But ever since I began building apps with React, I’ve had a gripe with managing forms. On top of managing the actualy values of inputs in component state, handling validation and error messaging made forms in React complex and clunky to set up and use. To make form development easier, we introduced the use of &lt;a href=&quot;https://redux-form.com/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Redux Form&lt;/a&gt;, a library that allows you to connect your forms to your Redux store in order to manage form state.&lt;/p&gt;
+
+&lt;p&gt;Redux Form let us create custom input components, decrease redundancy in terms of validation and error message handling, and build more robust, dynamic forms. For a deeper look at my experience with Redux Form (and how it convinced me to love forms again), &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot; class=&quot;link--text-in-p&quot;&gt;check out this post I wrote&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;div class=&quot;video-container&quot;&gt;
+      &lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/269091140?autoplay=1&amp;amp;loop=1&amp;amp;loop=1&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;muted=1&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;img-caption&quot;&gt;
+      Redux-Form made form management a breeze (and pretty magical). &lt;a href=&quot;/thoughts/2018/05/02/react-and-redux-form.html&quot;&gt;Read more about my thoughts on Redux-Form here&lt;/a&gt;.
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 class=&quot;text-center&quot;&gt;
+  Conclusion &amp;amp; Lessons Learned
+&lt;/h2&gt;
+
+&lt;p&gt;Locker Link was a big growing experience for me. I had used React several times to build out front-end interfaces before, but Locker Link was the first project where I used Redux for app state management and Redux Form for form management. Through Redux, I was able to create more complex interactions, such as managing modals and flash message state between screens.&lt;/p&gt;
+
+&lt;p&gt;In addition to using new technologies, working on Locker Linked also helped me refine how I build and manage React components. I spent a good amount of time trying to break screens down into smaller, manageable parts so that we could more easily maintain components and reuse components whenever possible.&lt;/p&gt;
+
+&lt;div class=&quot;grid grid-mt&quot;&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-homepage.jpg&quot; alt=&quot;Locker Linked Homepage&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-dashboard.jpg&quot; alt=&quot;Locker Linked User Dashboard Screenshot&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-coach-search.jpg&quot; alt=&quot;Locker Linked Dashboard Search Screenshot&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full no-shadow&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-profile-stats.jpg&quot; alt=&quot;Locker Linked Athlete Profile Screenshot&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/assets/work/lockerlinked/locker-linked-locker-profile.jpg&quot; alt=&quot;Locker Linked Profile Management Screenshot&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 16 Apr 2018 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/locker-linked.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/locker-linked.html</guid>
         
         
         <category>work</category>
@@ -1011,7 +1179,7 @@ export const phoneNumber = value =&amp;gt;
         <title>Tap In Guide</title>
         <description>&lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;/assets/work/tap-in/featured-image-tap-in@2x.jpg&quot; /&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/featured-image-tap-in@2x.jpg&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1031,7 +1199,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;/assets/work/tap-in/tap-in-mobile-screens@2x.jpg&quot; /&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-mobile-screens@2x.jpg&quot; /&gt;
   &lt;/div&gt;
   &lt;span class=&quot;img-caption&quot;&gt;
     Tap In Guide is available via React Native on iOS and Android
@@ -1054,7 +1222,7 @@ export const phoneNumber = value =&amp;gt;
 
 &lt;div class=&quot;grid grid--featured-image&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
-      &lt;img src=&quot;/assets/work/tap-in/tap-in-crests@2x.png&quot; /&gt;
+      &lt;img src=&quot;http://localhost:4000/assets/work/tap-in/tap-in-crests@2x.png&quot; /&gt;
   &lt;/div&gt;
   &lt;span class=&quot;img-caption&quot;&gt;
     A sampling of stylized crests I designed for the web and mobile app.
@@ -1076,9 +1244,9 @@ export const phoneNumber = value =&amp;gt;
   &lt;/p&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Fri, 13 Apr 2018 14:46:27 -0500</pubDate>
-        <link>/work/tap-in-guide.html</link>
-        <guid isPermaLink="true">/work/tap-in-guide.html</guid>
+        <pubDate>Fri, 13 Apr 2018 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/work/tap-in-guide.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/tap-in-guide.html</guid>
         
         
         <category>work</category>
@@ -1102,9 +1270,9 @@ export const phoneNumber = value =&amp;gt;
 &lt;p&gt;In order to educate new users about the ability to track competitors and to help populate their accounts with competitor data, &lt;em&gt;we decided to integrate the ability to add competitors into the onboarding process&lt;/em&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
 		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; alt=&quot;Benchmarcs Onboarding User Flow&quot; /&gt;
+			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-onboarding-v3.png&quot; alt=&quot;Benchmarcs Onboarding User Flow&quot; /&gt;
 		&lt;/div&gt;
 	&lt;/a&gt;
 	&lt;span class=&quot;img-caption&quot;&gt;We created user-flow diagrams to outline functionality in the initial onboarding and setup, including the ability to add competitor funeral homes (Getting Started Step 3)&lt;/span&gt;
@@ -1116,9 +1284,9 @@ export const phoneNumber = value =&amp;gt;
 &lt;p&gt;To allow users to add competing funeral homes, we started by approximating the user’s location to show a suggested set of homes in their area. The page displayed the user’s closest zip code and provided a radius selector to filter results.&lt;/p&gt;
 
 &lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
 		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; alt=&quot;Benchmarcs Add a Competitor Wireframe and design V1&quot; /&gt;
+			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-add-competitors-v1.png&quot; alt=&quot;Benchmarcs Add a Competitor Wireframe and design V1&quot; /&gt;
 		&lt;/div&gt;
 	&lt;/a&gt;
 	&lt;span class=&quot;img-caption&quot;&gt;
@@ -1146,9 +1314,9 @@ export const phoneNumber = value =&amp;gt;
 &lt;/ol&gt;
 
 &lt;div class=&quot;pop-out-image__container&quot;&gt;
-	&lt;a href=&quot;/assets/zapier/images/benchmarcs-interaction.gif&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-interaction.gif&quot; target=&quot;_blank&quot; class=&quot;&quot;&gt;
 		&lt;div class=&quot;pop-out-image&quot;&gt;
-			&lt;img class=&quot;&quot; src=&quot;/assets/zapier/images/benchmarcs-interaction.gif&quot; alt=&quot;Adding a Competitor - Animated GIF&quot; /&gt;
+			&lt;img class=&quot;&quot; src=&quot;http://localhost:4000/assets/zapier/images/benchmarcs-interaction.gif&quot; alt=&quot;Adding a Competitor - Animated GIF&quot; /&gt;
 		&lt;/div&gt;
 	&lt;/a&gt;
 	&lt;span class=&quot;img-caption&quot;&gt;
@@ -1169,25 +1337,12 @@ export const phoneNumber = value =&amp;gt;
 &lt;/ol&gt;
 
 </description>
-        <pubDate>Thu, 05 Oct 2017 14:46:27 -0500</pubDate>
-        <link>/thoughts/optimizing-onboarding-for-benchmarcs.html</link>
-        <guid isPermaLink="true">/thoughts/optimizing-onboarding-for-benchmarcs.html</guid>
+        <pubDate>Thu, 05 Oct 2017 15:46:27 -0400</pubDate>
+        <link>http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/optimizing-onboarding-for-benchmarcs.html</guid>
         
         
         <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>Alex Martinez – Postlight</title>
-        <description>&lt;div class=&quot;resume-container&quot;&gt;
-	&lt;iframe src=&quot;https://drive.google.com/a/alxmrtnz.com/file/d/0BxO3zT6SvWvFMkQyeDdSUXRSTDA/preview&quot; width=&quot;&quot; height=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 14 Nov 2016 00:00:00 -0600</pubDate>
-        <link>/resume-postlight/index.html</link>
-        <guid isPermaLink="true">/resume-postlight/index.html</guid>
-        
         
       </item>
     

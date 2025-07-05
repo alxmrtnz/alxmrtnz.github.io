@@ -17,7 +17,9 @@
             </p>
             {% if page.external-link %}
               <p class="work-summary">
-                <a href="{{ page.external-link }}" target="_blank" class="link--text-in-p">Visit the Site</a>
+                <a href="{{ page.external-link }}" target="_blank" class="link--text-in-p">
+                  {{ page.external-link-text | default: "Visit the Site" }}
+                </a>
               </p>
             {% endif %}
           </div>

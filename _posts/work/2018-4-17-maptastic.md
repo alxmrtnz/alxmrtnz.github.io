@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: "Maptastic"
-date: 2018-4-18 19:46:27
+date: 2018-4-17 19:46:27
 comments: false
 category: work
 permalink: /:categories/:title.html

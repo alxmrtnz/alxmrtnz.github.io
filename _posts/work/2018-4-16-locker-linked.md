@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: "Locker Linked"
-date: 2018-4-17 19:46:27
+date: 2018-4-16 19:46:27
 comments: false
 category: work
 permalink: /:categories/:title.html

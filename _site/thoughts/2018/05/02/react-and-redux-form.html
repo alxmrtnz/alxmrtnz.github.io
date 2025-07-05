@@ -15,76 +15,76 @@
   <link
     rel="apple-touch-icon"
     sizes="57x57"
-    href="/favicons/apple-touch-icon-57x57.png"
+    href="http://localhost:4000/favicons/apple-touch-icon-57x57.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="60x60"
-    href="/favicons/apple-touch-icon-60x60.png"
+    href="http://localhost:4000/favicons/apple-touch-icon-60x60.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="72x72"
-    href="/favicons/apple-touch-icon-72x72.png"
+    href="http://localhost:4000/favicons/apple-touch-icon-72x72.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="76x76"
-    href="/favicons/apple-touch-icon-76x76.png"
+    href="http://localhost:4000/favicons/apple-touch-icon-76x76.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="114x114"
-    href="/favicons/apple-touch-icon-114x114.png"
+    href="http://localhost:4000/favicons/apple-touch-icon-114x114.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="120x120"
-    href="/favicons/apple-touch-icon-120x120.png"
+    href="http://localhost:4000/favicons/apple-touch-icon-120x120.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="144x144"
-    href="/favicons/apple-touch-icon-144x144.png"
+    href="http://localhost:4000/favicons/apple-touch-icon-144x144.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="152x152"
-    href="/favicons/apple-touch-icon-152x152.png"
+    href="http://localhost:4000/favicons/apple-touch-icon-152x152.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="180x180"
-    href="/favicons/apple-touch-icon-180x180.png"
+    href="http://localhost:4000/favicons/apple-touch-icon-180x180.png"
   />
   <link
     rel="icon"
     type="image/png"
-    href="/favicons/favicon-32x32.png"
+    href="http://localhost:4000/favicons/favicon-32x32.png"
     sizes="32x32"
   />
   <link
     rel="icon"
     type="image/png"
-    href="/favicons/android-chrome-192x192.png"
+    href="http://localhost:4000/favicons/android-chrome-192x192.png"
     sizes="192x192"
   />
   <link
     rel="icon"
     type="image/png"
-    href="/favicons/favicon-96x96.png"
+    href="http://localhost:4000/favicons/favicon-96x96.png"
     sizes="96x96"
   />
   <link
     rel="icon"
     type="image/png"
-    href="/favicons/favicon-16x16.png"
+    href="http://localhost:4000/favicons/favicon-16x16.png"
     sizes="16x16"
   />
-  <link rel="manifest" href="/favicons/manifest.json" />
+  <link rel="manifest" href="http://localhost:4000/favicons/manifest.json" />
   <link
     rel="mask-icon"
-    href="/favicons/safari-pinned-tab.svg"
+    href="http://localhost:4000/favicons/safari-pinned-tab.svg"
     color="#5bbad5"
   />
   <meta name="msapplication-TileColor" content="#da532c" />
@@ -94,7 +94,7 @@
   <link rel="stylesheet" href="/css/main.css">
   <link
     rel="canonical"
-    href="/thoughts/2018/05/02/react-and-redux-form.html"
+    href="http://localhost:4000/thoughts/2018/05/02/react-and-redux-form.html"
   />
 
   <script src="https://use.typekit.net/jsu0zei.js"></script>
@@ -189,7 +189,7 @@
       <div class="post-content">
         <header class="post-header">
           <div class="featured-icon">
-            <img src="/assets/posts/5-2-18/form-icon@2x.png" alt="Form Illustration">
+            <img src="http://localhost:4000/assets/posts/5-2-18/form-icon@2x.png" alt="Form Illustration">
           </div>
           <p class="post-date text--mono">May 2, 2018</p>
           <h1 class="post-title heading--large">React + Redux Form</h1>
@@ -200,6 +200,7 @@
 <p>Luckily, a coworker suggested I try out <a href="https://redux-form.com" target="_blank" class="link--text-in-p">Redux Form</a>, a library that helps you manage form state and validation in redux rather than in a component.</p>
 
 <h2 id="what-is-redux-form">What is Redux Form?</h2>
+
 <p>By connecting a form component to redux through Redux Form’s <code class="language-plaintext highlighter-rouge">reduxForm()</code> <a href="https://reactjs.org/docs/higher-order-components.html" target="_blank" class="link--text-in-p">higher-order component</a> and <code class="language-plaintext highlighter-rouge">formReducer</code>, the library keeps track of common application form state in a redux store rather in the local component.</p>
 
 <p>In fact, it helps manage things such as:</p>
@@ -216,20 +217,23 @@
 </ul>
 
 <h2 id="under-the-hood">Under the Hood</h2>
+
 <p>Before I began using Redux Form, I stored form input values and error states in its own component <code class="language-plaintext highlighter-rouge">state</code> and created a <code class="language-plaintext highlighter-rouge">handleInputChange()</code> method to handle updates for each individual field. I’d then create methods to manage validation and error messages on submit. None of this was DRY and made it difficult to build new forms.</p>
 
 <p>Using <code class="language-plaintext highlighter-rouge">redux-form</code> simplified form management by allowing me to store a form’s input values in a redux store, handling inputs’ <code class="language-plaintext highlighter-rouge">onChange</code> methods and providing field-level validation.</p>
 
 <p>After setting up Redux Form, you’ll be able to see it at work using <a href="https://github.com/reduxjs/redux-devtools" target="_blank" class="link--text-in-p">Redux DevTools</a>:</p>
-<div class="video-container">
-  <div class="embed-container">
-    <iframe src="https://player.vimeo.com/video/265891862?autoplay=1&amp;loop=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<!-- <div class="video-container">
+  <div class='embed-container'>
+    <iframe src='https://player.vimeo.com/video/265891862?autoplay=1&loop=1&loop=1&title=0&byline=0&portrait=0&muted=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
   </div>
-</div>
+</div> -->
 
 <p>The form is stored under the name you give it, in this case <code class="language-plaintext highlighter-rouge">SignInForm</code>, while input data is stored under <code class="language-plaintext highlighter-rouge">values</code> and errors under <code class="language-plaintext highlighter-rouge">syncErrors</code>. Redux Form then provides meta information like those error messages, whether an input has been <code class="language-plaintext highlighter-rouge">touched</code>, and whether the form is or isn’t <code class="language-plaintext highlighter-rouge">dirty</code> as props in your form and input components.</p>
 
 <h3 id="a-sample-redux-form">A Sample Redux Form</h3>
+
 <p>The following is an example form for a Sign In screen. <code class="language-plaintext highlighter-rouge">reduxForm()</code> connects the form component to redux while <code class="language-plaintext highlighter-rouge">redux-form</code>’s <code class="language-plaintext highlighter-rouge">Field</code> component manages the actual inputs including the <code class="language-plaintext highlighter-rouge">validation</code> that the field requires.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import React, { Component } from 'react'
@@ -305,6 +309,7 @@ export default SignInForm
 </code></pre></div></div>
 
 <h3 id="custom-field-components">Custom Field Components</h3>
+
 <p>In the above example, you’ll see that <code class="language-plaintext highlighter-rouge">Field</code> takes a prop called <code class="language-plaintext highlighter-rouge">component</code>. This prop allows you define your own input component and can be either a <code class="language-plaintext highlighter-rouge">Component</code>, a stateless function, or a string name of one of the default supported DOM inputs (<code class="language-plaintext highlighter-rouge">input</code>, <code class="language-plaintext highlighter-rouge">textarea</code> or <code class="language-plaintext highlighter-rouge">select</code>).</p>
 
 <p>In my case, I created a component called <code class="language-plaintext highlighter-rouge">ReduxFormInput</code>, allowing me to define the structure I wanted surrounding a basic <code class="language-plaintext highlighter-rouge">input</code> field:</p>
@@ -364,9 +369,10 @@ export default ReduxFormInput
 </code></pre></div></div>
 
 <h3 id="field-level-validation">Field-Level Validation</h3>
+
 <p>One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (<a href="https://redux-form.com/7.3.0/examples/syncvalidation/" target="_blank" class="link--text-in-p">Sync</a>, <a href="https://redux-form.com/7.3.0/examples/submitvalidation/" target="_blank" class="link--text-in-p">Submit</a>, <a href="https://redux-form.com/7.3.0/examples/asyncvalidation/" target="_blank" class="link--text-in-p">Async Blur</a>, and more), I mainly make use of <a href="https://redux-form.com/7.3.0/examples/fieldlevelvalidation/" target="_blank" class="link--text-in-p">Field-Level Validation</a>.</p>
 
-<p>Field-Level Validation focuses on <code class="language-plaintext highlighter-rouge">Field</code>’s <code class="language-plaintext highlighter-rouge">validate</code> prop. It accepts one or more functions to validate the value of the given field. If an input doesn’t pass the requirements passed through <code class="language-plaintext highlighter-rouge">validate</code>, the entire form  won’t submit and an <code class="language-plaintext highlighter-rouge">error</code> prop is then passed to the input allowing you to render a message to the user.</p>
+<p>Field-Level Validation focuses on <code class="language-plaintext highlighter-rouge">Field</code>’s <code class="language-plaintext highlighter-rouge">validate</code> prop. It accepts one or more functions to validate the value of the given field. If an input doesn’t pass the requirements passed through <code class="language-plaintext highlighter-rouge">validate</code>, the entire form won’t submit and an <code class="language-plaintext highlighter-rouge">error</code> prop is then passed to the input allowing you to render a message to the user.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 import { reduxForm, Field } from 'redux-form'
@@ -442,9 +448,11 @@ export const phoneNumber = value =&gt;
 </code></pre></div></div>
 
 <h2 id="conclusion">Conclusion</h2>
+
 <p>React Form isn’t the only package out there to manage forms in React (see <a href="https://github.com/jaredpalmer/formik" target="_blank" class="link--text-in-p">Formik</a>, <a href="https://github.com/davidkpiano/react-redux-form" target="_blank" class="link--text-in-p">React Redux Form</a>, and <a href="https://github.com/react-tools/react-form" target="_blank" class="link--text-in-p">React-Form</a> to name a few), but it’s the one that’s been making my life a whole lot easier.</p>
 
 <h3 id="other-resources">Other Resources</h3>
+
 <ul>
   <li><a href="https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8" target="_blank" class="link--text-in-p">The React Podcast ft. Jared Palmer (touches on Formik)</a></li>
   <li><a href="https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8" target="_blank" class="link--text-in-p">Why Build Your Forms with Redux Form</a></li>

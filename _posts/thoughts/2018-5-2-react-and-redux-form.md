@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "React + Redux Form"
-date:   2018-5-2 19:46:27
+title: "React + Redux Form"
+date: 2018-5-2 19:46:27
 comments: true
 categories: thoughts
 featured-icon-url: /assets/posts/5-2-18/form-icon@2x.png
@@ -13,6 +13,7 @@ When I started learning and building with React, app development, data-binding, 
 Luckily, a coworker suggested I try out <a href='https://redux-form.com' target="_blank" class="link--text-in-p">Redux Form</a>, a library that helps you manage form state and validation in redux rather than in a component.
 
 ## What is Redux Form?
+
 By connecting a form component to redux through Redux Form's `reduxForm()` <a href='https://reactjs.org/docs/higher-order-components.html' target="_blank" class="link--text-in-p">higher-order component</a> and `formReducer`, the library keeps track of common application form state in a redux store rather in the local component.
 
 In fact, it helps manage things such as:
@@ -24,24 +25,26 @@ In fact, it helps manage things such as:
 - Which fields the user has interacted with
 - Wheter the form is being submitted
 - Any asynchronous validation
-^https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8
-
+  ^https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8
 
 ## Under the Hood
+
 Before I began using Redux Form, I stored form input values and error states in its own component `state` and created a `handleInputChange()` method to handle updates for each individual field. I'd then create methods to manage validation and error messages on submit. None of this was DRY and made it difficult to build new forms.
 
 Using `redux-form` simplified form management by allowing me to store a form's input values in a redux store, handling inputs' `onChange` methods and providing field-level validation.
 
 After setting up Redux Form, you'll be able to see it at work using <a href='https://github.com/reduxjs/redux-devtools' target="_blank" class="link--text-in-p">Redux DevTools</a>:
-<div class="video-container">
+
+<!-- <div class="video-container">
   <div class='embed-container'>
     <iframe src='https://player.vimeo.com/video/265891862?autoplay=1&loop=1&loop=1&title=0&byline=0&portrait=0&muted=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
   </div>
-</div>
+</div> -->
 
 The form is stored under the name you give it, in this case `SignInForm`, while input data is stored under `values` and errors under `syncErrors`. Redux Form then provides meta information like those error messages, whether an input has been `touched`, and whether the form is or isn't `dirty` as props in your form and input components.
 
 ### A Sample Redux Form
+
 The following is an example form for a Sign In screen. `reduxForm()` connects the form component to redux while `redux-form`'s `Field` component manages the actual inputs including the `validation` that the field requires.
 
 ```
@@ -118,6 +121,7 @@ export default SignInForm
 ```
 
 ### Custom Field Components
+
 In the above example, you'll see that `Field` takes a prop called `component`. This prop allows you define your own input component and can be either a `Component`, a stateless function, or a string name of one of the default supported DOM inputs (`input`, `textarea` or `select`).
 
 In my case, I created a component called `ReduxFormInput`, allowing me to define the structure I wanted surrounding a basic `input` field:
@@ -178,9 +182,10 @@ export default ReduxFormInput
 ```
 
 ### Field-Level Validation
+
 One of my favorite parts of Redux Form is how easy it makes validation. While Redux Form provides several types of validation (<a href='https://redux-form.com/7.3.0/examples/syncvalidation/' target="_blank" class="link--text-in-p">Sync</a>, <a href='https://redux-form.com/7.3.0/examples/submitvalidation/' target="_blank" class="link--text-in-p">Submit</a>, <a href='https://redux-form.com/7.3.0/examples/asyncvalidation/' target="_blank" class="link--text-in-p">Async Blur</a>, and more), I mainly make use of <a href='https://redux-form.com/7.3.0/examples/fieldlevelvalidation/' target="_blank" class="link--text-in-p">Field-Level Validation</a>.
 
-Field-Level Validation focuses on `Field`'s `validate` prop. It accepts one or more functions to validate the value of the given field. If an input doesn't pass the requirements passed through `validate`, the entire form  won't submit and an `error` prop is then passed to the input allowing you to render a message to the user.
+Field-Level Validation focuses on `Field`'s `validate` prop. It accepts one or more functions to validate the value of the given field. If an input doesn't pass the requirements passed through `validate`, the entire form won't submit and an `error` prop is then passed to the input allowing you to render a message to the user.
 
 ```
 
@@ -258,9 +263,10 @@ export const phoneNumber = value =>
 ```
 
 ## Conclusion
+
 React Form isn't the only package out there to manage forms in React (see <a href='https://github.com/jaredpalmer/formik' target="_blank" class="link--text-in-p">Formik</a>, <a href='https://github.com/davidkpiano/react-redux-form' target="_blank" class="link--text-in-p">React Redux Form</a>, and <a href='https://github.com/react-tools/react-form' target="_blank" class="link--text-in-p">React-Form</a> to name a few), but it's the one that's been making my life a whole lot easier.
 
-
 ### Other Resources
+
 - <a href='https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8' target="_blank" class="link--text-in-p">The React Podcast ft. Jared Palmer (touches on Formik)</a>
 - <a href='https://medium.com/dailyjs/why-build-your-forms-with-redux-form-bcacbedc9e8' target="_blank" class="link--text-in-p">Why Build Your Forms with Redux Form</a>
