@@ -1248,7 +1248,7 @@ a.link--text-in-p:hover {
 }
 @media screen and (min-width: 800px) {
   .work-list {
-    max-width: 1240px;
+    max-width: 1440px;
     padding: 0 30px 50px 30px;
   }
 }
