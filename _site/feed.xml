@@ -5,8 +5,8 @@
     <description>Alex Martinez is a front-end developer based in Brooklyn, currently making the web more delicious at Grubhub. In the past, Alex worked on awesome teams at Whitelabel, ISL (iStrategyLabs), Viget, Jersey Watch, and Tap In Guide. </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 11 Sep 2025 14:07:01 -0400</pubDate>
-    <lastBuildDate>Thu, 11 Sep 2025 14:07:01 -0400</lastBuildDate>
+    <pubDate>Fri, 12 Sep 2025 08:38:15 -0400</pubDate>
+    <lastBuildDate>Fri, 12 Sep 2025 08:38:15 -0400</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -19,13 +19,18 @@
 
 &lt;p&gt;Learning to cook is intimidating. Between complex recipes, unfamiliar techniques, and the fear of failure, many people never develop this essential life skill. &lt;a href=&quot;https://zestapp.co/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Zest&lt;/a&gt; wanted to change that by creating a mobile app that makes cooking education as engaging as scrolling through social media.&lt;/p&gt;
 
-&lt;p&gt;When I joined Zest as Founding Engineer in February 2024, the company had a vision but needed someone who could bridge design and development to actually build it. The big question: how do you make cooking education stick in a world of infinite distractions?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The challenge:&lt;/strong&gt; how do you make cooking education stick in a world of infinite distractions?&lt;/p&gt;
 
 &lt;h3 id=&quot;my-role&quot;&gt;My Role&lt;/h3&gt;
 
-&lt;p&gt;As Founding Engineer, I wear multiple hats—mostly building the React Native app for iOS and Android while also being one of two UI/UX designers. Working with our CTO, &lt;a href=&quot;https://www.linkedin.com/in/amrit0991/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Amrit Saini&lt;/a&gt;, and lead designer, &lt;a href=&quot;https://www.linkedin.com/in/savannah-e-cooper/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Savannah Cooper&lt;/a&gt;, I help shape product decisions and turn them into features that our 13,000+ daily active users actually use.&lt;/p&gt;
+&lt;p&gt;As Founding Engineer and Product Designer, I worked alongside our Head of Design, &lt;a href=&quot;https://www.linkedin.com/in/savannah-e-cooper/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Savannah Cooper&lt;/a&gt; and CTO, &lt;a href=&quot;https://www.linkedin.com/in/amrit0991/&quot; target=&quot;_blank&quot; class=&quot;link--text-in-p&quot;&gt;Amrit Saini&lt;/a&gt; to shape the product vision and translate it into a mobile app used by 13,000+ people daily. In our small 6-person team, I contributed across:&lt;/p&gt;
 
-&lt;p&gt;In our small 6-person team, I build frontend features using React Native and TypeScript, design user interfaces and experiences, bridge the gap between what’s technically possible and what makes sense for users, and contribute to product strategy based on data and real user feedback.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Product design&lt;/strong&gt;: defining flows, prototyping interactions, and evolving the design system.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Development&lt;/strong&gt;: building our React Native app for iOS and Android&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;User research &amp;amp; feedback loops&lt;/strong&gt;: testing concepts, gathering insights, and iterating quickly.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cross-functional collaboration&lt;/strong&gt;: bridging design and engineering constraints to ensure feasibility without sacrificing user experience.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;app-highlights&quot;&gt;App Highlights&lt;/h2&gt;
 
@@ -33,7 +38,7 @@
 
 &lt;p&gt;One of our biggest challenges was getting users to go from watching lessons to actually cooking. So we built a comprehensive learning system that works on multiple levels.&lt;/p&gt;
 
-&lt;p&gt;We created structured concept lessons that users can scroll through to learn foundational cooking knowledge—everything from understanding different cooking methods to ingredient science. These lessons end with interactive quizzes that help reinforce what users just learned and make sure the concepts actually stick.&lt;/p&gt;
+&lt;p&gt;We created structured concept lessons that users can scroll through to learn foundational cooking knowledge; everything from understanding different cooking methods to ingredient science. These lessons end with interactive quizzes that help reinforce what users just learned and make sure the concepts actually stick.&lt;/p&gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
   &lt;div class=&quot;grid__item grid__item--full&quot;&gt;
@@ -74,7 +79,7 @@
   &lt;/span&gt;
 &lt;/div&gt;
 
-&lt;p&gt;This turned out to be pretty important—users who actually cook recipes are way more likely to become paying subscribers, and this feature helped remove the friction between learning and doing.&lt;/p&gt;
+&lt;p&gt;This turned out to be pretty important. Users who actually cook recipes are way more likely to become paying subscribers, and this feature helped remove the friction between learning and doing.&lt;/p&gt;
 
 &lt;h3 id=&quot;recipe-import-bringing-the-whole-internet-to-your-kitchen&quot;&gt;Recipe Import: Bringing the Whole Internet to Your Kitchen&lt;/h3&gt;
 
@@ -102,7 +107,7 @@
 
 &lt;p&gt;We built preference management that goes way beyond simple filters, creating a system that actually personalizes the cooking experience. Users can set dietary restrictions (vegan, gluten-free, keto, etc.), specify allergies with severity levels, mark ingredients they don’t like, and get smart recipe recommendations tailored to their needs.&lt;/p&gt;
 
-&lt;p&gt;But the really cool part is our AI-powered recipe customization feature. With a single tap, users can adapt any recipe—whether it’s from our curated Zest collection or something they imported from the web—to match their dietary preferences, allergies, and dislikes. Our AI intelligently swaps out ingredients and adjusts cooking instructions on the fly, turning a regular pasta dish into a gluten-free version or converting a meat-based recipe for vegetarian users.&lt;/p&gt;
+&lt;p&gt;But the really cool part is our AI-powered recipe customization feature. With a single tap, users can adapt any recipe — whether it’s from our curated Zest collection or something they imported from the web - to match their dietary preferences, allergies, and dislikes. Our AI intelligently swaps out ingredients and adjusts cooking instructions on the fly, turning a regular pasta dish into a gluten-free version or converting a meat-based recipe for vegetarian users.&lt;/p&gt;
 
 &lt;p&gt;This feature bridges the gap between finding interesting recipes and actually being able to cook them safely and enjoyably, making the app work for users with all kinds of dietary needs.&lt;/p&gt;
 
@@ -125,7 +130,7 @@
 
 &lt;h3 id=&quot;grocery-lists-that-actually-work&quot;&gt;Grocery Lists That Actually Work&lt;/h3&gt;
 
-&lt;p&gt;Our grocery list feature automatically pulls together ingredients from selected recipes, combines quantities smartly, and lets you add manual items—turning meal planning from a chore into something simple. But we didn’t stop at basic list-making.&lt;/p&gt;
+&lt;p&gt;Our grocery list feature automatically pulls together ingredients from selected recipes, combines quantities smartly, and lets you add manual items, turning meal planning from a chore into something simple. But we didn’t stop at basic list-making.&lt;/p&gt;
 
 &lt;p&gt;The app sorts ingredients by grocery store aisle (produce, dairy, pantry, etc.) so you can shop efficiently, but also lets you view ingredients organized by recipe when you’re planning meals. Users can easily switch between these views depending on whether they’re meal planning or actually at the store.&lt;/p&gt;
 
@@ -146,9 +151,9 @@
   Conclusion &amp;amp; Lessons Learned
 &lt;/h2&gt;
 
-&lt;p&gt;This case study just scratches the surface of what we built, but working at Zest has been an incredible learning experience, both technically and strategically. As a founding engineer, I helped build a solid React Native app that’s scaled to 13,000+ daily active users while keeping strong app store ratings.&lt;/p&gt;
+&lt;p&gt;This case study just scratches the surface of what we built, but working at Zest has been an incredible learning experience, both technically and strategically. Being part of this project taught me how to balance education with engagement, and personalization with simplicity&lt;/p&gt;
 
-&lt;p&gt;This involved developing complex features like web recipe importing, integrated learning systems, and cross-platform video playback, plus influencing UX decisions around navigation flows, animation timing, and interface details that made the overall experience better.&lt;/p&gt;
+&lt;p&gt;This involved designing and developing complex features like web recipe importing, integrated learning systems, and cross-platform video playback, plus influencing UX decisions around navigation flows, animation timing, and interface details that made an overall better experience.&lt;/p&gt;
 
 &lt;div class=&quot;grid grid-mt grid-mb&quot;&gt;
     &lt;img src=&quot;http://localhost:4000/assets/work/zest/zest-screenshots.jpg&quot; alt=&quot;Zest App Screenshots&quot; /&gt;

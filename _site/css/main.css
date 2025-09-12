@@ -455,6 +455,11 @@ li > ol {
     margin-bottom: 0.3em;
   }
 }
+@media screen and (min-width: 1200px) {
+  .home-bio__h1 {
+    font-size: clamp(54px, 12vw, 200px);
+  }
+}
 
 .home-bio__copy {
   font-family: "aktiv-grotesk", sans-serif;
@@ -469,6 +474,12 @@ li > ol {
   .home-bio__copy {
     font-size: 32px;
     max-width: 880px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home-bio__copy {
+    font-size: 32px;
+    max-width: 1080px;
   }
 }
 .home-bio__copy p {
@@ -744,6 +755,9 @@ ul.social-icon-list li a:hover {
   margin-right: auto;
   max-width: 750px;
   padding: 0px 20px;
+}
+.post-content strong, .work-content strong {
+  font-weight: 600;
 }
 .post-content p img, .work-content p img {
   display: block;
