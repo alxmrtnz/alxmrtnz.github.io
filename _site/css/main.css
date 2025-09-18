@@ -803,7 +803,7 @@ ul.social-icon-list li a:hover {
   margin-bottom: 10px;
 }
 .post-content ol, .post-content ul, .work-content ol, .work-content ul {
-  font-family: "athelas", "freight-text-pro", serif;
+  font-family: "aktiv-grotesk", sans-serif;
   margin-bottom: 35px;
   padding-left: 1em;
   font-size: 19px;
@@ -1473,7 +1473,7 @@ a.link--text-in-p:hover {
 .work-content ol, .work-content ul {
   background: rgb(243.45, 246.2, 247.85);
   color: #140B39;
-  font-family: "athelas", "freight-text-pro", serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-size: 22px;
   font-weight: normal;
   margin-bottom: 30px;
