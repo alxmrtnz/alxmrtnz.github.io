@@ -73,8 +73,6 @@ With each new page or interaction being added to the system, our team would crea
     <img  src="{{ site.url }}/assets/work/serviceyear/sy-invision-screenshot.png" alt="Service Year Invision Prototype Screenshot">
     <span class="img-caption">
       Prototypes allowed us to think through flows for different user interactions. Here is an early prototype of onboarding new corps members to Service Year.
-      <br>
-      (<a href='{{ site.url }}/assets/invision/sy-cm-onboarding-wireframe-prototype/index.html' target="_blank" class="link--text-in-p">View Prototype in New Window</a>)
     </span>
   </div>
 </div>
