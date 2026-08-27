@@ -101,7 +101,7 @@ Once a user is given admin access to multiple profiles, they can use a simple dr
 
 I love React. But ever since I began building apps with React, I've had a gripe with managing forms. On top of managing the actualy values of inputs in component state, handling validation and error messaging made forms in React complex and clunky to set up and use. To make form development easier, we introduced the use of <a href="https://redux-form.com/" target="_blank" class="link--text-in-p">Redux Form</a>, a library that allows you to connect your forms to your Redux store in order to manage form state.
 
-Redux Form let us create custom input components, decrease redundancy in terms of validation and error message handling, and build more robust, dynamic forms. For a deeper look at my experience with Redux Form (and how it convinced me to love forms again), <a href="/thoughts/2018/05/02/react-and-redux-form.html" class="link--text-in-p">check out this post I wrote</a>.
+Redux Form let us create custom input components, decrease redundancy in terms of validation and error message handling, and build more robust, dynamic forms.
 
 <div class="grid grid-mt grid-mb">
   <div class="grid__item grid__item--full">
@@ -109,7 +109,7 @@ Redux Form let us create custom input components, decrease redundancy in terms o
       <div class='embed-container'><iframe src='https://player.vimeo.com/video/269091140?autoplay=1&loop=1&loop=1&title=0&byline=0&portrait=0&muted=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
     </div>
     <span class="img-caption">
-      Redux-Form made form management a breeze (and pretty magical). <a href="/thoughts/2018/05/02/react-and-redux-form.html">Read more about my thoughts on Redux-Form here</a>.
+      Redux-Form made form management a breeze (and pretty magical).
     </span>
   </div>
 </div>
